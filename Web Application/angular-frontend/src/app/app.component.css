@@ -1,0 +1,481 @@
+/* Stile generale per il corpo */
+body {
+  font-family: Tahoma;
+  background-color: #f4f5f7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stile per la navbar */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenitore principale */
+.container {
+  display: flex;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+/* Contenuto principale */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Sezioni superiore e inferiore */
+.top-half, .bottom-half {
+  background: white;
+  border-radius: 10px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.top-half {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 39vh;
+}
+
+.overview-graph-container {
+  flex: 2;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  overflow: auto;
+}
+
+.info-tabs-container {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  overflow: auto;
+}
+
+.bottom-half {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  min-height: 45%;
+}
+
+/* Stile per il pulsante di toggle */
+.toggle-btn {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  opacity: 0.3;
+  color: white;
+  cursor: pointer;
+  padding: 15px 10px;
+  border-radius: 0 5px 5px 0;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Effetto hover sul pulsante */
+.toggle-btn:hover {
+  opacity: 1;
+}
+
+/* Nascondi il pulsante di toggle quando il filter-mask non è collassato */
+.container:not(.filter-collapsed) .toggle-btn {
+  display: none;
+}
+
+/* Contenitore per i controlli superiori */
+.top-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Contenitore per la label e lo switch */
+.label-switch-container {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.label-switch-container.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Stile per il range input */
+.range-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+}
+
+.range-input-container input[type="range"] {
+  width: 100px;
+}
+
+/* Contenitore per il toggle */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Stile per le etichette del toggle */
+.toggle-label {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.4s, color 0.4s;
+}
+
+.toggle-label.active {
+  opacity: 1;
+}
+
+.toggle-label.disabled {
+  color: #ccc;
+}
+
+.directorate {
+  color: #3CB371;
+}
+
+.representative {
+  color: #80EF80;
+}
+
+/* Stile per lo switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3CB371;
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #80EF80;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.slider.disabled {
+  background-color: #ccc;
+}
+
+.control-panel-container {
+  display: flex;
+  position: absolute;
+}
+
+.control-panel-container.collapsed{
+  position: absolute;
+}
+
+/* Contenitore per il range-selector, la label e lo switch */
+.control-panel {
+  display: flex;
+  /*flex-direction: column;*/
+  gap: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  width: 300px;
+  transform: translateX(0);
+}
+
+.control-panel.collapsed {
+  width: 0;
+  max-height: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  transform: translateY(10%);
+}
+
+.control-panel.expanded {
+  height: 80%;
+  z-index: 1;
+  width: 67vw;
+  overflow: auto;
+}
+
+/* Nuovo stile per il pulsante di toggle del control-panel */
+.control-panel-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.control-panel-toggle:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+app-temporal-view {
+  display: flex;
+  height: 38vh;
+  width: 72vw;
+  transition: width 0.3s ease;
+}
+
+app-temporal-view.control-collapsed {
+  width: 72vw;
+}
+
+app-temporal-view.histogram-collapsed {
+  width: 93vw;
+}
+
+app-temporal-view.both-collapsed {
+  width: 93vw;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  pointer-events: auto;
+}
+
+
+.histogram-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+  width: 300px;
+  transform: translateX(0);
+}
+
+.histogram-panel.collapsed {
+  width: 0;
+  max-height: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  transform: translateX(100%);
+}
+
+.histogram-panel.expanded {
+  max-height: 500px;
+  height: 90%;
+  width: 500px; /* Imposta una larghezza fissa */
+}
+
+/* Nuovo stile per il pulsante di toggle del pannello degli istogrammi */
+.histogram-panel-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.histogram-panel-toggle:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+app-histogram-view {
+  height: -webkit-fill-available;
+}
+
+/* Stile per le frecce di navigazione */
+.tab-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-left,
+.scroll-right {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+  color: #0056b3;
+}
+
+.left-half{
+  width: 98%;
+}
+
+.icon-rotate {
+  transform: rotate(270deg);
+}
+
+/* Contenitore tab-switch con meno spazio */
+.tab-switch {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+  background: transparent;
+}
+
+/* Bottoni minimalisti */
+.tab-switch button {
+  padding: 6px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Linea sottostante per il tab attivo */
+.tab-switch button.active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.tab-switch button.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #007bff;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+/* Effetto hover */
+.tab-switch button:hover {
+  color: #0056b3;
+}
+
+/* Rende la transizione più fluida */
+.tab-content {
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+.download-btn {
+  position: absolute;
+  background: #67acec;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(7, 83, 197, 0.3);
+}
+
+.download-btn .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.download-btn:hover {
+  background: #4096e7;
+  box-shadow: 0 6px 12px rgba(7, 83, 197, 0.5);
+  transform: translateY(-2px);
+}
+
+.download-btn:active {
+  transform: scale(0.9);
+}
+

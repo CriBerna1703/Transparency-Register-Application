@@ -1,0 +1,21 @@
+<div class="tab-navigation" [class.compact]="compact">
+        <button class="scroll-left" 
+                (click)="scrollTabs(-100)" 
+                [disabled]="!showScrollLeft">&#9664;</button>
+        <div class="tab-container">
+          <ul class="tab-titles" #tabTitleContainer>
+            <li *ngFor="let tab of tabs" [class.active]="tab.id === activeTabId">
+              <a (click)="setActiveTab(tab.id)">{{ tab.title }}</a>
+              <button class="close-btn" 
+                      *ngIf="closable" 
+                      (click)="closeTabClick($event, tab.id)">x</button>
+            </li>
+          </ul>
+          <!-- Gradient Indicators -->
+          <div class="gradient-left" *ngIf="showScrollLeft"></div>
+          <div class="gradient-right" *ngIf="showScrollRight"></div>
+        </div>
+        <button class="scroll-right" 
+                (click)="scrollTabs(100)" 
+                [disabled]="!showScrollRight">&#9654;</button>
+      </div>

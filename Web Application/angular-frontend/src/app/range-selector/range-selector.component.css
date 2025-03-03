@@ -1,0 +1,54 @@
+.range-selector {
+  display: flex;
+  /*flex-direction: column;*/
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation-buttons button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navigation-buttons button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.dropdowns {
+  display: flex;
+  gap: 10px;
+}
+
+.dropdowns label {
+  font-weight: bold;
+  color: #333;
+  margin-right: 5px;
+}
+
+.dropdowns select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.dropdowns select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}

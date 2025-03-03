@@ -1,0 +1,90 @@
+#visualization {
+  width: 100%;
+  display: inline-grid;
+  align-content: center;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.range-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+}
+
+.range-input-container input[type="range"] {
+  width: 100px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-label {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.4s, color 0.4s;
+}
+
+.toggle-label.active {
+  opacity: 1;
+}
+
+.directorate {
+  color: #3CB371;
+}
+
+.representative {
+  color: #80EF80;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3CB371;
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #80EF80;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}

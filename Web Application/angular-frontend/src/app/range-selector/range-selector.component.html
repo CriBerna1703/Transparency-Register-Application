@@ -1,0 +1,23 @@
+<div class="range-selector">
+  <div class="navigation-buttons">
+    <button (click)="changeRange(-1)" [disabled]="!canChangeRange(-1) || !hasMeetings">❮</button>
+    <span>{{ currentRangeLabel }}</span>
+    <button (click)="changeRange(1)" [disabled]="!canChangeRange(1) || !hasMeetings">❯</button>
+  </div>
+  <div class="dropdowns">
+    <label for="windowSize">View:</label>
+    <select id="windowSize" (change)="updateWindowSize($event)" [disabled]="!hasMeetings">
+      <option *ngFor="let size of windowSizes" [value]="size" [selected]="size === selectedWindowSize">
+        {{ size }} months
+      </option>
+    </select>
+  </div>
+  <div class="dropdowns">
+    <label for="stepSize">Step:</label>
+    <select id="stepSize" (change)="updateStepSize($event)" [disabled]="!hasMeetings">
+      <option *ngFor="let step of stepSizes" [value]="step" [selected]="step === selectedStepSize">
+        {{ step }} months
+      </option>
+    </select>
+  </div>
+</div>

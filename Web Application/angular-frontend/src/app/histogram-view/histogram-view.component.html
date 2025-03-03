@@ -1,0 +1,23 @@
+<div class="tabs" *ngIf="tabs.length > 0">
+  <app-tab-navigation 
+    [tabs]="tabs" 
+    [activeTabId]="activeTabId" 
+    [compact]="true"
+    (activeTabChange)="setActiveTab($event)" 
+    (tabClosed)="closeTab($event)">
+  </app-tab-navigation>
+
+  <div class="controls">
+    <label for="aggregation">Group by:</label>
+    <select id="aggregation" [(ngModel)]="selectedAggregation" (change)="updateHistogram()">
+      <option *ngFor="let option of aggregationOptions" [value]="option.value">{{ option.label }}</option>
+    </select>
+  </div>
+
+  <div class="tab-content" *ngFor="let tab of tabs" [hidden]="tab.id !== activeTabId">
+    <div class="scroll-container">
+      <input type="range" min="100" max="2000" step="50" [(ngModel)]="zoomLevel" (input)="updateZoom()">
+    </div>
+    <div class="histogram" [id]="'histogram-' + tab.id"></div>
+  </div>
+</div>

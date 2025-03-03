@@ -1,0 +1,87 @@
+<div class="tabs">
+  <app-tab-navigation [tabs]="tabs" [activeTabId]="activeTabId" [compact]="true" (activeTabChange)="setActiveTab($event)" (tabClosed)="closeTab($event)"></app-tab-navigation>
+  <div class="tab-content" *ngFor="let tab of tabs" [hidden]="tab.id !== activeTabId">
+    <!-- Show Loading -->
+    <div *ngIf="tab.isLoading">
+      <p>Loading...</p>
+    </div>
+    <!-- Show Error -->
+    <div *ngIf="tab.error">
+      <p class="error">{{ tab.error }}</p>
+    </div>
+    <!-- Show Lobbyist Content -->
+    <div *ngIf="!tab.isLoading && tab.type === 'lobbyist'">
+      <h2>{{ tab.data.organization_name }}</h2>
+      <p>
+        <strong>Registration:</strong> {{ tab.data.registration_number }}
+      </p>
+      <p>
+        <strong>Transparency register:</strong>
+        <a [href]="tab.data.transparency_register_url" target="_blank">{{ tab.data.transparency_register_url }}</a>
+      </p>
+      <p>
+        <strong>Registration date:</strong> {{ tab.data.registration_date | date }}
+      </p>
+      <p>
+        <strong>Website:</strong>
+        <a [href]="tab.data.website" target="_blank">{{ tab.data.website }}</a>
+      </p>
+      <p>
+        <strong>Address:</strong> {{ tab.data.head_office_address }}
+      </p>
+      <p>
+        <strong>Legal representative:</strong> {{ tab.data.legal_representative }}
+      </p>
+      <p>
+        <strong>EU representative:</strong> {{ tab.data.eu_relations_representative }}
+      </p>
+      <p>
+        <strong>Country:</strong> {{ tab.data.country }}
+      </p>
+      <h3>Fields of activity:</h3>
+      <ul>
+        <li *ngFor="let field of tab.data.Fields">
+          {{ field.field_name }}
+        </li>
+      </ul>
+      <h3>Memberships:</h3>
+      <ul>
+        <li *ngFor="let membership of tab.data.Memberships">
+          {{ membership.membership_name || 'N/A' }}
+        </li>
+      </ul>
+      <h3>Proposals:</h3>
+      <ul>
+        <li *ngFor="let proposal of tab.data.Proposals">
+          {{ proposal.proposal_description }}
+        </li>
+      </ul>
+    </div>
+    <!-- Show Contents for Meeting -->
+    <div *ngIf="!tab.isLoading && tab.type === 'meeting'">
+      <h2>Meeting on {{ tab.data.meeting_date | date }}</h2>
+      <p>
+        <strong>Topic:</strong> {{ tab.data.topic }}
+      </p>
+      <p>
+        <strong>Location:</strong> {{ tab.data.location }}
+      </p>
+      <p>
+        <strong>Commission Representative:</strong> {{ tab.data.CommissionRepresentative.name }}
+      </p>
+      <ng-container *ngIf="tab.data.CommissionRepresentative.RepresentativeAllocations && tab.data.CommissionRepresentative.RepresentativeAllocations.length > 0">
+        <h3>Allocations:</h3>
+        <ul>
+          <li *ngFor="let allocation of tab.data.CommissionRepresentative.RepresentativeAllocations">
+            {{ allocation.role }} - {{ allocation.Directorate.name }} ({{ allocation.year }})
+          </li>
+        </ul>
+      </ng-container>
+      <div *ngIf="tab.data.Lobbyist">
+        <p>
+          <strong>Lobbyist:</strong> {{ tab.data.Lobbyist.organization_name }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

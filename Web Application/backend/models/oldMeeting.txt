@@ -1,0 +1,30 @@
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/db');
+const CommissionRepresentative = require('./CommissionRepresentative');
+
+const Meeting = sequelize.define('Meeting', {
+    lobbyist_id: DataTypes.STRING,
+    meeting_number: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+    },
+    meeting_date: DataTypes.DATE,
+    topic: DataTypes.TEXT,
+    commission_representative: DataTypes.STRING,
+    location: DataTypes.STRING,
+}, {
+    tableName: 'commission_meetings',
+    timestamps: false,
+});
+
+Meeting.belongsTo(CommissionRepresentative, {
+    foreignKey: 'commission_representative',
+    targetKey: 'name',
+});
+
+CommissionRepresentative.hasMany(Meeting, {
+    foreignKey: 'commission_representative',
+    targetKey: 'name',
+});
+
+module.exports = Meeting;

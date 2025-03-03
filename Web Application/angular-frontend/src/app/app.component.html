@@ -1,0 +1,109 @@
+<div class="overlay" *ngIf="!isOverviewCollapsed"></div>
+<div class="container" [class.filter-collapsed]="isFilterCollapsed">
+  <div class="toggle-btn" (click)="toggleFilter()">
+    {{ isFilterCollapsed ? '❯' : '❮' }}
+  </div>
+  <app-filter-mask [collapsed]="isFilterCollapsed" (toggle)="toggleFilter()" (showOverview)="showOverview()"></app-filter-mask>
+  <app-meeting-summary *ngIf="!isOverviewCollapsed" [useOverviewData]="true" [collapsed]="isOverviewCollapsed" (confirm)="onConfirm()" (cancel)="onCancel()"></app-meeting-summary>
+  <div class="main-content" [class.full-width]="isFilterCollapsed">
+    <div class="top-half">
+      <div class="overview-graph-container">
+        <button (click)="downloadCSV()" class="download-btn">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3V16M12 16L8 12M12 16L16 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 20H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>          
+        <div class="tab-switch">
+          <button 
+            (click)="setActiveTab('overview')" 
+            [class.active]="activeTab === 'overview'">
+            Overview
+          </button>
+          <button 
+            (click)="setActiveTab('graph')" 
+            [class.active]="activeTab === 'graph'">
+            Graph
+          </button>        
+        </div>
+        
+        <div class="tab-content">
+          <div *ngIf="activeTab === 'graph'">
+            <app-graph-view 
+              (nodeSelected)="onNodeSelected($event)"
+            ></app-graph-view>
+          </div>
+          <div *ngIf="activeTab === 'overview'">
+            <app-overview></app-overview>
+          </div>
+        </div>
+      </div>
+    
+      <div class="info-tabs-container">
+        <app-info-tabs [selectedEntity]="selectedInfoEntity"></app-info-tabs>
+      </div>
+    </div>    
+    <div class="bottom-half">
+      <div class="left-half">
+        <app-temporal-view
+          [startDate]="startDate"
+          [endDate]="endDate" 
+          [labelSize]="labelSize"
+          [zoomLevel]="zoomLevel"
+          [showRepresentatives]="showRepresentatives"
+          (dateRangeChange)="onDateRangeUpdate($event)"
+          (nodeSelected)="onNodeSelected($event)"
+          [ngClass]="{
+            'control-collapsed': isControlPanelCollapsed && !isHistogramPanelCollapsed,
+            'histogram-collapsed': !isControlPanelCollapsed && isHistogramPanelCollapsed,
+            'both-collapsed': isControlPanelCollapsed && isHistogramPanelCollapsed
+          }">
+        </app-temporal-view>
+        <div class="control-panel-container" [class.collapsed]="isControlPanelCollapsed">
+          <div class="control-panel-toggle" (click)="toggleControlPanel()">
+            <span class="icon-rotate">{{ isControlPanelCollapsed ? '❯' : '❮' }}</span>
+          </div>
+          <div class="control-panel" [class.collapsed]="isControlPanelCollapsed" [class.expanded]="!isControlPanelCollapsed">
+            <app-range-selector 
+              [minDate]="minDate" 
+              [maxDate]="maxDate" 
+              [hasMeetings]="hasMeetings"
+              (dateRangeChange)="onDateRangeChange($event)">
+            </app-range-selector>
+            <div class="label-switch-container" [class.disabled]="!hasMeetings">
+              <div class="scroll-container">
+                <label>Drawing Size:</label>
+                <input type="range" id="drawSize" name="drawSize" min="100" max="300" step="50" [value]="zoomLevel" (input)="onDrawSizeChange($event)" [disabled]="!hasMeetings">
+              </div>
+              <div class="range-input-container">
+                <label for="labelSize">Label Size:</label>
+                <input type="range" id="labelSize" name="labelSize" min="10" max="30" 
+                      [value]="labelSize" (input)="onLabelSizeChange($event)" [disabled]="!hasMeetings">
+              </div>
+              <div class="toggle-container">
+                <span class="toggle-label directorate" 
+                      [ngClass]="{'active': !showRepresentatives, 'disabled': !hasMeetings}">
+                  Directorate
+                </span>
+                <label class="switch">
+                  <input type="checkbox" [(ngModel)]="showRepresentatives" (change)="createVisualization()" [disabled]="!hasMeetings">
+                  <span class="slider" [class.disabled]="!hasMeetings"></span>
+                </label>
+                <span class="toggle-label representative" 
+                      [ngClass]="{'active': showRepresentatives, 'disabled': !hasMeetings}">
+                  Representative
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="histogram-panel-toggle" (click)="toggleHistogramPanel()">
+        <span class="icon">{{ isHistogramPanelCollapsed ? '❮' : '❯' }}</span>
+      </div>
+      <div class="histogram-panel" [class.collapsed]="isHistogramPanelCollapsed" [class.expanded]="!isHistogramPanelCollapsed">
+        <app-histogram-view [selectedEntity]="selectedHistogramEntity"></app-histogram-view>
+      </div>
+    </div>
+  </div>
+</div>

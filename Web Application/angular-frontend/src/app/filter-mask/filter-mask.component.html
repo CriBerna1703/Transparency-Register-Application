@@ -1,0 +1,144 @@
+<div class="filter-mask" [class.collapsed]="collapsed">
+  <div class="toggle-btn" (click)="toggleFilter()">
+    {{ collapsed ? '❯' : '❮' }}
+  </div>
+  <div class="filter-container" *ngIf="!collapsed">
+    <h2 class="title">Filters</h2>
+    <div class="filter-scrollable">
+      <!-- Period -->
+      <div class="filter-group">
+        <label>Period:</label>
+        <div class="date-container">
+          <input type="date" [(ngModel)]="startDate" class="input-date" (change)="validateDates()" [class.error]="dateErrors.startDateEmpty">
+          <span class="separator"> - </span>
+          <input type="date" [(ngModel)]="endDate" class="input-date" (change)="validateDates()" [class.error]="dateErrors.endDateEmpty || dateErrors.endDateBeforeStart">
+        </div>
+        <div class="error-message" *ngIf="dateErrors.startDateEmpty"> Start date cannot be empty. </div>
+        <div class="error-message" *ngIf="dateErrors.endDateEmpty"> End date cannot be empty. </div>
+        <div class="error-message" *ngIf="dateErrors.endDateBeforeStart"> End date cannot be before start date. </div>
+      </div>
+      <!-- Accordion DG -->
+      <div class="filter-group">
+        <div class="accordion-header" (click)="toggleSection('directorates')"> DG ({{ selectedDirectorates.length }} selected) <span class="arrow">{{ expandedSections.directorates ? '▲' : '▼' }}</span>
+        </div>
+        <div *ngIf="expandedSections.directorates" class="accordion-content">
+          <input type="text" placeholder="Search DG..." [(ngModel)]="searchDirectorate" (input)="filterDirectorates()">
+          <div class="multi-select">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" [checked]="isAnySelected(selectedDirectorates)" 
+                         (change)="toggleAnySelection(selectedDirectorates)">
+                  Any
+                </label>
+              </li>
+              <li *ngFor="let dg of filteredDirectorates">
+                <label>
+                  <input type="checkbox" [checked]="isSelected(dg, selectedDirectorates, 'id')" (change)="toggleSelection(dg, selectedDirectorates, 'id')">
+                  {{ dg.name }}
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Lobbyists -->
+      <div class="filter-group">
+        <div class="accordion-header" (click)="toggleSection('lobbyists')"> Lobbyists ({{ selectedLobbyists.length }} selected) <span class="arrow">{{ expandedSections.lobbyists ? '▲' : '▼' }}</span>
+        </div>
+        <div *ngIf="expandedSections.lobbyists" class="accordion-content">
+          <input type="text" placeholder="Search Lobbyists..." [(ngModel)]="searchLobbyist" (input)="filterLobbyists()">
+          <div class="multi-select">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" [checked]="isAnySelected(selectedLobbyists)" 
+                         (change)="toggleAnySelection(selectedLobbyists)">
+                  Any
+                </label>
+              </li>
+              <li *ngFor="let lob of filteredLobbyists">
+                <label>
+                  <input type="checkbox" [checked]="isSelected(lob, selectedLobbyists, 'lobbyist_id')" (change)="toggleSelection(lob, selectedLobbyists, 'lobbyist_id')">
+                  {{ lob.organization_name }}
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Fields -->
+      <div class="filter-group">
+        <div class="accordion-header" (click)="toggleSection('fields')"> Fields of Interest ({{ selectedFields.length }} selected) <span class="arrow">{{ expandedSections.fields ? '▲' : '▼' }}</span>
+        </div>
+        <div *ngIf="expandedSections.fields" class="accordion-content">
+          <input type="text" placeholder="Search Field..." [(ngModel)]="searchField" (input)="filterFields()">
+          <div class="multi-select">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" [checked]="isAnySelected(selectedFields)" 
+                         (change)="toggleAnySelection(selectedFields)">
+                  Any
+                </label>
+              </li>
+              <li *ngFor="let field of filteredFields">
+                <label>
+                  <input type="checkbox" [checked]="isSelected(field, selectedFields, 'field_id')" (change)="toggleSelection(field, selectedFields, 'field_id')">
+                  {{ field.field_name }}
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Commissioners -->
+      <div class="filter-group">
+        <div class="accordion-header" (click)="toggleSection('commissioners')"> Commissioners ({{ selectedCommissioners.length }} selected) <span class="arrow">{{ expandedSections.commissioners ? '▲' : '▼' }}</span>
+        </div>
+        <div *ngIf="expandedSections.commissioners" class="accordion-content">
+          <input type="text" placeholder="Search Commissioner..." [(ngModel)]="searchCommissioner" (input)="filterCommissioners()">
+          <div class="multi-select">
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" [checked]="isAnySelected(selectedCommissioners)" 
+                         (change)="toggleAnySelection(selectedCommissioners)">
+                  Any
+                </label>
+              </li>
+              <li *ngFor="let comm of filteredCommissioners">
+                <label>
+                  <input type="checkbox" [checked]="isSelected(comm, selectedCommissioners, 'id')" (change)="toggleSelection(comm, selectedCommissioners, 'id')">
+                  {{ comm.name }}
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Keywords -->
+      <div class="filter-group">
+        <div class="accordion-header" (click)="toggleSection('keywords')"> Keywords ({{ keywords.length }} added) <span class="arrow">{{ expandedSections.keywords ? '▲' : '▼' }}</span>
+        </div>
+        <div *ngIf="expandedSections.keywords" class="accordion-content">
+          <div class="filter-group">
+            <label>Type of keyword filter:</label>
+            <select [(ngModel)]="filterType">
+              <option value="AND">AND</option>
+              <option value="OR">OR</option>
+            </select>
+          </div>
+          <input type="text" [(ngModel)]="keywordInput" placeholder="Add a keyword" (keydown.enter)="addKeyword()">
+          <div class="keyword-list">
+            <span *ngFor="let keyword of keywords" class="keyword">
+              {{ keyword }}
+              <span class="remove-keyword" (click)="removeKeyword(keyword)">×</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Closing scrollable filter -->
+    <button class="apply-btn" (click)="updateFilters()">Apply Filters</button>
+  </div>
+</div>

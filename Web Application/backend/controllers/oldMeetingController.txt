@@ -1,0 +1,98 @@
+const { Op, Sequelize } = require('sequelize');
+const { Meeting, CommissionRepresentative, Directorate, Lobbyist } = require('../models');
+
+module.exports = {
+    async getFilteredMeetings(req, res) {
+        try {
+            const { keywords, date_from, date_to, lobbyist_id, directorate_id, filter_type } = req.query;
+
+            const keywordFilter = keywords
+                ? (() => {
+                      const keywordArray = Array.isArray(keywords) ? keywords : [keywords];
+                      const keywordConditions = keywordArray.map((keyword) => ({
+                          topic: { [Op.like]: `%${keyword}%` },
+                      }));
+
+                      return filter_type === 'AND'
+                          ? { [Op.and]: keywordConditions }
+                          : { [Op.or]: keywordConditions };
+                  })()
+                : {};
+
+            const filters = {
+                ...keywordFilter,
+                meeting_date: {
+                    [Op.between]: [new Date(date_from), new Date(date_to)],
+                },
+            };
+
+            if (lobbyist_id) {
+                filters.lobbyist_id = lobbyist_id;
+            }
+
+            if (directorate_id) {
+                filters['$CommissionRepresentative.directorate_id$'] = directorate_id;
+            }
+
+            const meetings = await Meeting.findAll({
+                where: filters,
+                attributes: [
+                    'meeting_number',
+                    'meeting_date',
+                    'topic',
+                    'location',
+                    'commission_representative',
+                    [Sequelize.col('CommissionRepresentative.name'), 'representative_name'],
+                    [Sequelize.col('CommissionRepresentative->Directorate.id'), 'directorate_id'],
+                    [Sequelize.col('CommissionRepresentative->Directorate.name'), 'directorate_name'],
+                    [Sequelize.col('Lobbyist.lobbyist_id'), 'lobbyist_id'],
+                    [Sequelize.col('Lobbyist.organization_name'), 'lobbyist_name'],
+                ],
+                include: [
+                    {
+                        model: CommissionRepresentative,
+                        required: false,
+                        attributes: [],
+                        on: {
+                            [Op.and]: [
+                                Sequelize.where(
+                                    Sequelize.col('Meeting.commission_representative'),
+                                    '=',
+                                    Sequelize.col('CommissionRepresentative.name')
+                                ),
+                            ],
+                        },
+                        include: [
+                            {
+                                model: Directorate,
+                                attributes: [],
+                                required: false,
+                            },
+                        ],
+                    },
+                    {
+                        model: Lobbyist,
+                        required: false,
+                        attributes: [],
+                    },
+                ],
+            });
+
+            res.json(meetings);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({ error: 'Errore nel filtraggio degli incontri.' });
+        }
+    },
+
+    // Funzione esistente per recuperare gli incontri di un lobbyist
+    async getMeetingsByLobbyist(req, res) {
+        try {
+            const { lobbyist_id } = req.params;
+            const meetings = await Meeting.findAll({ where: { lobbyist_id } });
+            res.json(meetings);
+        } catch (error) {
+            res.status(500).json({ error: 'Errore nel recupero degli incontri.' });
+        }
+    },
+};

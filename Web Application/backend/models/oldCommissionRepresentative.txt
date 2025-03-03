@@ -1,0 +1,43 @@
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/db');
+const Directorate = require('./Directorate');
+const Meeting = require('./Meeting');
+
+const CommissionRepresentative = sequelize.define('CommissionRepresentative', {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+    },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    year: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+    },
+    directorate_id: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        references: {
+            model: Directorate,
+            key: 'id',
+        }
+    },
+    role: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+}, {
+    tableName: 'commission_representative',
+    timestamps: false,
+});
+
+CommissionRepresentative.belongsTo(Directorate, {
+    foreignKey: 'directorate_id',
+    targetKey: 'id',
+});
+
+
+module.exports = CommissionRepresentative;

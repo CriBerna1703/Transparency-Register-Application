@@ -1,0 +1,99 @@
+.tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tab-navigation {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  background: #f8f9fa;
+}
+
+.scroll-left,
+.scroll-right {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.scroll-left:hover,
+.scroll-right:hover {
+  color: #0056b3;
+}
+
+.tab-titles {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.tab-titles::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-titles li {
+  flex: 0 0 auto;
+  margin-right: 8px;
+  padding: 6px 12px;
+  background: #e9ecef;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.tab-titles li.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.tab-titles li:hover {
+  background: #dee2e6;
+}
+
+.tab-titles a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  margin-left: 5px;
+  color: #6c757d;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #495057;
+}
+
+.tab-content {
+  overflow-y: auto;
+  height: 0;
+  padding: 15px;
+  flex-grow: 1;
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

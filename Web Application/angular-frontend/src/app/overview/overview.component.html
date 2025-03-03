@@ -1,0 +1,21 @@
+<div class="overview-container">
+  <div class="content-container">
+    <div class="controls">
+      <label for="aggregation">Group by:</label>
+      <select id="aggregation" [(ngModel)]="selectedAggregation" (change)="updateHistogram()">
+        <option *ngFor="let option of aggregationOptions" [value]="option.value">{{ option.label }}</option>
+      </select>
+    </div>
+
+    <div class="histogram" id="overview-histogram"></div>
+
+    <div class="scroll-container">
+      <input type="range" min="100" max="2000" step="50" [(ngModel)]="zoomLevel" (input)="updateZoom()">
+    </div>
+  </div>
+
+  <app-meeting-summary 
+    [collapsed]="false"
+    [useOverviewData]="false">
+  </app-meeting-summary>
+</div>

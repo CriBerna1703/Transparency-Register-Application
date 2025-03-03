@@ -1,0 +1,35 @@
+<div *ngIf="!collapsed" class="meeting-summary-modal" [class.modal-view]="useOverviewData">
+  <h2>Meeting Summary</h2>
+
+  <table class="summary-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Total Meetings</td>
+        <td>{{ totalMeetings }}</td>
+      </tr>
+      <tr>
+        <td>Total Lobbyists</td>
+        <td>{{ totalLobbisti }}</td>
+      </tr>
+      <tr>
+        <td>Total Representatives</td>
+        <td>{{ totalRappresentanti }}</td>
+      </tr>
+      <tr>
+        <td>Total Directorates</td>
+        <td>{{ totalDirezioni }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="button-group">
+    <button *ngIf="useOverviewData" [disabled]="loading" (click)="confirmSelection()">Confirm</button>
+    <button *ngIf="useOverviewData" [disabled]="loading" (click)="cancelSelection()">Modify Filters</button>
+  </div>
+</div>
