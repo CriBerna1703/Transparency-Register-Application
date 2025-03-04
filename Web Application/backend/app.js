@@ -15,12 +15,12 @@ const cors = require('cors'); // Importa il middleware CORS
 
 // Configura CORS
 const corsOptions = {
-    origin: 'http://localhost:4200', // Permetti richieste solo da questa origine
-    methods: 'GET', // Specifica i metodi HTTP consentiti
-    allowedHeaders: 'Content-Type,Authorization', // Specifica gli header consentiti
+    origin: '*',
+    methods: 'GET', 
+    allowedHeaders: 'Content-Type,Authorization',
 };
 
-app.use(cors(corsOptions)); // Applica il middleware CORS
+app.use(cors(corsOptions));
 
 // Middleware
 app.use(bodyParser.json());

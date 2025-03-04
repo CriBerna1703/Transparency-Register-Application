@@ -1,4 +1,10 @@
-require('dotenv').config(); // Caricamento delle variabili d'ambiente dal file .env
+const dotenv = require('dotenv');
+const path = require('path');
+
+const envFile = process.env.DOCKER_ENV ? '.env.docker' : '.env.local';
+
+dotenv.config({ path: path.resolve(__dirname, envFile) });
+
 const app = require('./app');
 const sequelize = require('./config/db');
 
