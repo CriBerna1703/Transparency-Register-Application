@@ -102,7 +102,7 @@ export class D3Service {
       .attr('y', height - 10)
       .attr('width', (d, i) => this.getMonthWidth(timeScale, months, d, i))
       .attr('height', 20)
-      .attr('fill', (d, i) => (i % 2 === 0 ? '#f7f7f7' : '#eaeaea'));
+      .attr('fill', (d, i) => (i % 2 === 0 ? '#ffffda' : '#fff4cb'));
   
     svg.selectAll('.month-label')
       .data(months)
@@ -112,8 +112,8 @@ export class D3Service {
       .attr('y', height + 20)
       .attr('text-anchor', 'middle')
       .text(d => d3.timeFormat('%b')(d))
-      .attr('font-size', '12px')
-      .attr('fill', '#666');
+      .attr('font-size', '16px')
+      .attr('fill', '#000');
   
     const lastMonthEnd = new Date(months[months.length - 1].getFullYear(), months[months.length - 1].getMonth() + 1, 1);
     const lastMonthX = timeScale(lastMonthEnd);
@@ -145,19 +145,9 @@ export class D3Service {
     stroke: string,
     strokeWidth: number,
     className: string,
-    meetingIds: string[],
-    meetingCount: number
+    meetingIds: string[]
   ) {
     let node: any;
-  
-    const isDarkColor = (color: string) => {
-      const rgb = d3.color(color);
-      if (!rgb) return false;
-      const luminance = 0.299 * rgb.rgb().r + 0.587 * rgb.rgb().g + 0.114 * rgb.rgb().b;
-      return luminance < 128;
-    };
-  
-    const textColor = isDarkColor(fill) ? 'white' : 'black';
   
     node = svg.append('rect')
       .attr('x', x - size / 2)
@@ -169,22 +159,11 @@ export class D3Service {
       .attr('stroke-width', strokeWidth)
       .attr('class', className)
       .style('cursor', 'pointer');
+
+    let self = this;
   
-    let label: any = null;
-    if (meetingCount > 0) {
-      label = svg.append('text')
-        .attr('x', x)
-        .attr('y', y + 5)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', '10px')
-        .attr('fill', textColor)
-        .attr('class', `label meeting-label-${className}`)
-        .text(meetingCount)
-        .style('opacity', 0)
-        .style('pointer-events', 'none');
-    }
-  
-    function enlargeNode() {
+    node.on('mouseover',function () {
+      self.resetStrokes();
       meetingIds.forEach(meetingId => {
         d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
           d3.select(this).raise();
@@ -196,32 +175,9 @@ export class D3Service {
           .attr('stroke', '#ff7f0e')
           .attr('stroke-width', 4);
       });
-    
-      d3.select(node.node())
-        .transition()
-        .duration(200)
-        .attr('x', x - size)
-        .attr('y', y - size)
-        .attr('width', size * 2)
-        .attr('height', size * 2);
-    
-      // Rimuove eventuali label esistenti per evitare duplicati
-      d3.selectAll(`.label.meeting-label-${className}`).remove();
-    
-      // Crea una nuova label
-      svg.append('text')
-        .attr('class', `label meeting-label-${className}`)
-        .attr('x', x)
-        .attr('y', y + 5)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', '12px')
-        .attr('fill', textColor)
-        .text(meetingCount)
-        .style('opacity', 1)
-        .style('pointer-events', 'none');
-    }    
-  
-    function shrinkNode() {
+    });
+    node.on('mouseout',function () {
+      self.resetStrokes();
       d3.select(node.node())
         .transition()
         .duration(200)
@@ -231,25 +187,6 @@ export class D3Service {
         .attr('height', size)          
         .attr('stroke', '#000')
         .attr('stroke-width', 2);
-  
-      if (label) {
-        label.transition()
-          .duration(200)
-          .style('opacity', 0)
-          .attr('fill', textColor)
-          .attr('font-size', '10px');
-      }
-    }
-
-    let self = this;
-  
-    node.on('mouseover',function () {
-      self.resetStrokes();
-      enlargeNode();
-    });
-    node.on('mouseout',function () {
-      self.resetStrokes();
-      shrinkNode();
     });
   
     return node;
@@ -277,7 +214,34 @@ export class D3Service {
 
     return node;
   }
-  
+
+  drawGroupedNode(
+    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    x: number,
+    y: number,
+    size: number,
+    fill: string,
+    stroke: string,
+    strokeWidth: number,
+    className: string
+  ) {
+    let node: any;
+    node = svg.append('rect')
+      .attr('r', size)
+      .attr('fill', fill)
+      .attr('stroke', stroke)
+      .attr('stroke-width', strokeWidth)
+      .attr("x", x - 10)
+      .attr("y", y - 10)
+      .attr("width", 20)
+      .attr("height", 20)
+      .attr("rx", 5)
+      .attr("ry", 5)
+      .style("cursor", "pointer")
+      .attr('class', className);
+
+    return node;
+  }
 
   drawLabel(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, x: number, y: number, text: string, fontSize: string, fill: string, className: string) {
     return svg.append('text')
@@ -294,7 +258,7 @@ export class D3Service {
     let self = this;
     return svg.append('path')
       .attr('d', path)
-      .attr('stroke', '#9C9C9C')
+      .attr('stroke', '#cdcdcd')
       .attr('stroke-width', 2)
       .attr('fill', 'none')
       .attr('class', `link link-${entity.type}-${entity.id} meeting-link-${meetingId}`)
@@ -325,27 +289,27 @@ export class D3Service {
     d3.selectAll(`.link`)
       .transition()
       .duration(200)
-      .attr('stroke', '#9C9C9C')
+      .attr('stroke', '#cdcdcd')
       .attr('stroke-width', 2);
 
-    d3.selectAll(`.node-lobbyist`)
+    d3.selectAll(`.node-lobbyist:not(.node-selected)`)
       .transition()
       .duration(200)
       .attr('stroke', '#5b2c55')
       .attr('stroke-width', 2);
-
-    d3.selectAll(`.node-representative`)
+  
+    d3.selectAll(`.node-representative:not(.node-selected)`)
       .transition()
       .duration(200)
       .attr('stroke', '#1bd41b')
       .attr('stroke-width', 2);
-
-    d3.selectAll(`.node-directorate`)
+  
+    d3.selectAll(`.node-directorate:not(.node-selected)`)
       .transition()
       .duration(200)
       .attr('stroke', '#297a4d')
       .attr('stroke-width', 2);
-
+    
     d3.selectAll(`.meeting-node`)
       .transition()
       .duration(200)
@@ -358,5 +322,29 @@ export class D3Service {
       .attr('fill', 'white')
       .attr('font-size', '10px')
       .style('opacity', 0);
+    
+    d3.selectAll(`.node-selected`)
+      .transition()
+      .duration(200)
+      .attr('stroke', '#ff7f0e')
+      .attr('stroke-width', 2);
+
+    this.redrawLabels();
   }
+
+  redrawLabels() {
+    const labels = d3.selectAll('.label-fixed').nodes() as SVGTextElement[];
+
+    labels.sort((a, b) => {
+      const ax = (a as SVGTextElement).getBBox().x;
+      const bx = (b as SVGTextElement).getBBox().x;
+      return ax - bx;
+    });
+  
+    labels.forEach((label, index) => {
+      d3.select(label)
+        .raise();
+    });
+  }
+  
 }

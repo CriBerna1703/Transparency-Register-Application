@@ -9,7 +9,7 @@ const app = require('./app');
 const sequelize = require('./config/db');
 
 // Porta del server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8088;
 
 // Connessione al database e avvio del server
 (async () => {

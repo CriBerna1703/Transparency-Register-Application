@@ -27,6 +27,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   private directorateHeight = window.innerHeight * 0.3 + 60;
   private meetingHeight = window.innerHeight * 0.15 + 60;
   private selectedNodes: Set<string> = new Set();
+  public activeMeetingNode: { color: string, count: number, textColor: string } | null = null;
+  public lobbyistDegreeThreshold: number = 1;
+  public maxVisibleLobbyistDegree: number = 10; 
 
   private entityPositions = {
     lobbyist: this.lobbyistHeight,
@@ -65,7 +68,11 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    if (changes['startDate'] || changes['endDate']) {
+      this.meetingManager.prepareGroupingData(this.meetingManager.getFilteredMeetingsByInterval(this.startDate, this.endDate));
+    }
     if (changes['startDate'] || changes['endDate'] || changes['labelSize'] || changes['showRepresentatives'] || changes['zoomLevel']) {
+      this.updateMaxDegree();
       this.createVisualization();
     }
   }
@@ -131,13 +138,14 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       this.d3Service.drawMonths(svg, calculatedWidth, this.meetingHeight, displayStartDate, displayEndDate);
   
       this.drawDottedLines(svg, calculatedWidth, height);
-      this.drawEntities(svg, 'lobbyist', calculatedWidth, displayStartDate, displayEndDate);
+      this.drawEntities(svg, 'lobbyist', calculatedWidth, displayStartDate, displayEndDate, this.lobbyistDegreeThreshold);
       if (this.showRepresentatives) {
         this.drawEntities(svg, 'representative', calculatedWidth, displayStartDate, displayEndDate);
       } else {
         this.drawEntities(svg, 'directorate', calculatedWidth, displayStartDate, displayEndDate);
       }
     });
+    this.d3Service.resetStrokes();
   }
 
   private resetVisualization(element: HTMLElement, width: number, height: number): void {
@@ -154,21 +162,38 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     entityType: 'lobbyist' | 'representative' | 'directorate',
     width: number,
     displayStartDate: Date,
-    displayEndDate: Date
+    displayEndDate: Date,
+    minDegree: number = 1
   ): void {
     const yPosition = this.entityPositions[entityType];
     const filteredMeetings = this.meetingManager.getFilteredMeetingsByInterval(this.startDate, this.endDate);
-    const entityPositions = this.meetingManager.computeOptimizedNodePositions(entityType, width, this.startDate, this.endDate, displayStartDate, displayEndDate);
+    const entityPositions = this.meetingManager.computeOptimizedNodePositions(entityType, width, this.startDate, this.endDate, displayStartDate, displayEndDate);    
 
-    entityPositions.forEach((xPosition: number, id: string) => {
+    const sortedEntities = Array.from(entityPositions.entries()).sort((a, b) => a[1] - b[1]);
+
+    this.drawGroupingRectangles(svg, sortedEntities, filteredMeetings);
+
+    sortedEntities.forEach(([id, xPosition], index, array) => {
       const entity = { id, type: entityType };
-      const entityName = this.meetingManager.getEntityName(id, entityType);
+      const isGrouped = String(id).startsWith("grouped-");
+      const entityName = isGrouped ? "Lobbyist Group" : this.meetingManager.getEntityName(id, entityType);
 
       this.drawConnections(svg, entity, xPosition, this.d3Service.getTimeScale(width, displayStartDate, displayEndDate), yPosition, filteredMeetings);
 
+      let truncatedLength = 5;
+      if (index > 0) {
+        const prevX = array[index - 1][1];
+        if (Math.abs(xPosition - prevX) < 50) {
+          truncatedLength = 2;
+        }
+      }
+
       const labelYPosition = entityType === 'lobbyist' ? yPosition - 20 : yPosition + 30;
 
-      const labelGroup = svg.append("g").style("opacity", 0);
+      const labelGroup = svg.append("g")
+        .attr("class", "label-group")
+        .style("opacity", 0)
+        .style("pointer-events", "none");
       const backgroundRect = labelGroup.append("rect")
         .attr("fill", "rgba(255, 255, 255, 1)")
         .attr("rx", 4)
@@ -176,6 +201,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const label = labelGroup.append("text")
         .attr("x", xPosition)
         .attr("y", labelYPosition)
+        .attr("data-original-text", entityName)
         .text(this.truncateLabel(entityName))
         .attr("font-size", `${this.labelSize}px`)
         .attr("fill", entityType === 'lobbyist' ? '#004b87' : entityType === 'representative' ? '#80EF80' : '#3CB371')
@@ -185,15 +211,15 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         .style('border-radius', '4px')
         .attr('text-anchor', 'middle');
       const labelNode = label.node();
-        if (labelNode) {
-          const bbox = labelNode.getBBox();
-          backgroundRect
-            .attr("x", bbox.x - 5)
-            .attr("y", bbox.y - 2)
-            .attr("width", bbox.width + 10)
-            .attr("height", bbox.height + 4);
-        }
-
+      if (labelNode) {
+        const bbox = labelNode.getBBox();
+        backgroundRect
+          .attr("x", bbox.x - 5)
+          .attr("y", bbox.y - 2)
+          .attr("width", bbox.width + 10)
+          .attr("height", bbox.height + 4);
+      }
+  
       let isLabelFixed = this.selectedNodes.has(entity.id);
   
       const connectedMeetings = filteredMeetings
@@ -207,16 +233,96 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
 
       const self = this;
 
-      const node = this.d3Service.drawNode(
-        svg,
-        xPosition,
-        yPosition,
-        10,
-        entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#80EF80' : '#3CB371',
-        entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
-        2,
-        `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings}`
-      ).on('click', () => this.onNodeClick(entity))
+      if (entityType === "lobbyist" && isGrouped) {
+
+        const dateKey = id.replace("grouped-", "");
+        const lobbyistMeetingCount = new Map<string, number>();
+
+        filteredMeetings.forEach(meeting => {
+          const { lobbyist_id } = meeting;
+          lobbyistMeetingCount.set(lobbyist_id, (lobbyistMeetingCount.get(lobbyist_id) || 0) + 1);
+        });
+
+        const groupedLobbists = filteredMeetings
+          .filter(d => d.date.toISOString().split("T")[0] === dateKey)
+          .map(d => d.lobbyist_id)
+          .filter(lobbyistId => lobbyistMeetingCount.get(lobbyistId) === 1); 
+        const connectedMeetings = filteredMeetings
+            .filter(d => groupedLobbists.includes(d.lobbyist_id))
+            .map(d => `meeting-link-meeting_${d.lobbyist_id}_${d.meeting_number}`)
+            .join(' ');
+        const isGroupSelected = groupedLobbists.some(lobbyistId => self.selectedNodes.has(lobbyistId));
+
+        const groupedNode = this.d3Service.drawGroupedNode(
+          svg,
+          xPosition,
+          yPosition,
+          10,
+          entityType === 'lobbyist' ? '#e6c7e0' : entityType === 'representative' ? '#80EF80' : '#3CB371',
+          entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
+          2,
+          `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings}`
+        ).on("click", () => this.toggleGrouping(id.replace("grouped-", "")))
+        .on('mouseover', function (this: SVGRectElement) {
+          d3.select(this)
+              .transition()
+              .duration(200)
+              .attr('stroke', '#ff7f0e');
+  
+          labelGroup.style("opacity", 1);
+          labelGroup.raise();
+          label.text(entityName);
+  
+          const bbox = label.node()?.getBBox();
+          if (bbox) {
+              backgroundRect
+                  .attr("x", bbox.x - 5)
+                  .attr("y", bbox.y - 2)
+                  .attr("width", bbox.width + 10)
+                  .attr("height", bbox.height + 4)
+                  .style("display", "block");
+          }
+          d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
+              d3.select(this).raise();
+          });
+  
+          d3.selectAll(`.link-${entity.type}-${entity.id}`)
+              .transition()
+              .duration(200)
+              .attr('stroke', '#ff7f0e')
+              .attr('stroke-width', 4);
+        })
+        .on('mouseout', function (this: SVGRectElement) {
+            d3.select(this)
+                .transition()
+                .duration(200)
+                .attr('stroke', '#000');
+    
+            labelGroup.style("opacity", 0);
+            backgroundRect.style("display", "none");
+    
+            self.d3Service.resetStrokes();
+        }).on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
+          event.preventDefault();
+        });
+
+        if (isGroupSelected) {
+          groupedNode
+            .attr('stroke', '#ff7f0e')
+            .attr('stroke-width', 4)
+            .classed('node-selected', true);
+        }
+      } else {
+        const node = this.d3Service.drawNode(
+          svg,
+          xPosition,
+          yPosition,
+          8,
+          entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#80EF80' : '#3CB371',
+          entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
+          2,
+          `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings}`
+        ).on('click', () => this.onNodeClick(entity))
         .on('mouseover', function (this: SVGCircleElement) {
           d3.select(this)
             .transition()
@@ -255,54 +361,53 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             .attr('r', 10)
             .attr('stroke', '#000');
   
-            if (!isLabelFixed) {
-              labelGroup.style("opacity", 0);
-              backgroundRect.style("display", "none");
-            } else {
-              label.text(entityName.substring(0, 10) + "...");
-              const bbox = label.node()?.getBBox();
-              if (bbox) {
-                backgroundRect
-                  .attr("x", bbox.x - 5)
-                  .attr("y", bbox.y - 2)
-                  .attr("width", bbox.width + 10)
-                  .attr("height", bbox.height + 4)
-                  .style("display", "block");
-              }
+          if (!isLabelFixed) {
+            labelGroup.style("opacity", 0);
+            backgroundRect.style("display", "none");
+          } else {
+            label.text(entityName.substring(0, truncatedLength));
+            const bbox = label.node()?.getBBox();
+            if (bbox) {
+              backgroundRect
+                .attr("x", bbox.x - 5)
+                .attr("y", bbox.y - 2)
+                .attr("width", bbox.width + 10)
+                .attr("height", bbox.height + 4)
+                .style("display", "block");
             }
-            self.d3Service.resetStrokes();            
+          }
+          self.d3Service.resetStrokes();
         })
         .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
           event.preventDefault();
           isLabelFixed = !isLabelFixed;
         
           if (isLabelFixed) {
-            label.text(entityName.substring(0, 10) + "...");
+            label.text(entityName.substring(0, truncatedLength));
+            labelGroup.style("opacity", 1).classed('label-fixed', true);
             d3.select(this)
-              .attr('stroke', '#FF00FF')
-              .attr('stroke-width', 4)
-              .attr('stroke-dasharray', '5,5');
+              .classed('node-selected', true);
         
             self.selectedNodes.add(entity.id);
           } else {
-            labelGroup.style("opacity", 0);
+            labelGroup.style("opacity", 0).classed('label-fixed', false);
             d3.select(this)
-              .attr('stroke', '#000')
-              .attr('stroke-width', 2)
-              .attr('stroke-dasharray', '');
+              .classed('node-selected', false);
         
             self.selectedNodes.delete(entity.id);
           }
         });
 
         if (isLabelFixed) {
-          labelGroup.style("opacity", 1);
-          label.text(entityName.substring(0, 10) + "...");
-          node.attr('stroke', '#FF00FF')
+          labelGroup.style("opacity", 1).classed('label-fixed', true);
+          label.text(entityName.substring(0, truncatedLength));
+          node.attr('stroke', '#ff7f0e')
               .attr('stroke-width', 4)
-              .attr('stroke-dasharray', '5,5');
-        }        
+              .classed('node-selected', true);
 
+          self.d3Service.resetStrokes();            
+        }
+      }
     });
   
     this.drawMeetingNodes(svg, this.d3Service.getTimeScale(width, displayStartDate, displayEndDate), filteredMeetings);
@@ -316,12 +421,23 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     yStart: number,
     filteredMeetings: MeetingData[]
   ) {
+    const isGrouped = String(entity.id).startsWith("grouped-");
+    const dateKey = isGrouped ? entity.id.replace("grouped-", "") : null;
+
     filteredMeetings.forEach(d => {
-      if (
-        (entity.type === 'lobbyist' && d.lobbyist_id === entity.id) ||
-        (entity.type === 'representative' && d.representative_id === entity.id) ||
-        (entity.type === 'directorate' && d.directorate_id === entity.id)
-      ) {
+        if (isGrouped) {
+            if (d.date.toISOString().split("T")[0] !== dateKey) {
+                return;
+            }
+        } else {
+            if (
+                (entity.type === 'lobbyist' && d.lobbyist_id !== entity.id) ||
+                (entity.type === 'representative' && d.representative_id !== entity.id) ||
+                (entity.type === 'directorate' && d.directorate_id !== entity.id)
+            ) {
+                return;
+            }
+        }
         const cx2 = timeScale(d.date);
         const cy2 = this.entityPositions.meeting;
         const meetingId = `meeting_${d.lobbyist_id}_${d.meeting_number}`;
@@ -345,8 +461,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         path.lineTo(cx2, cy2);
   
         this.d3Service.drawConnection(svg, path.toString(), entity, meetingId)
-          .on('click', () => this.onNodeClick({ id: meetingId, type: 'meeting' }));
-      }
+          .on('click', () => {if(!isGrouped) this.onNodeClick({ id: meetingId, type: 'meeting' })});
     });
   }
 
@@ -377,12 +492,14 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const meetingIds = meetings.map(d => `meeting_${d.lobbyist_id}_${d.meeting_number}`);
       const meetingCount = meetings.length;
       const nodeColor = colorScale(meetings.length);
+      const textColor = this.isDarkColor(nodeColor) ? 'white' : 'black';
       const entityLinks = meetings.flatMap(d => [
         `link-lobbyist-${d.lobbyist_id}`,
         `link-representative-${d.representative_id}`,
-        `link-directorate-${d.directorate_id}`
+        `link-directorate-${d.directorate_id}`,
+        `link-lobbyist-grouped-${date}`
       ]);
-  
+      const self = this;
       const classList = [`meeting-node`, ...meetingIds.map(id => `meeting-link-${id}`), ...entityLinks].join(' ');
       const node = this.d3Service.drawMeetingNode(
         svg,
@@ -393,8 +510,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         '#000',
         2,
         classList,
-        meetingIds,
-        meetingCount
+        meetingIds
       )
       .on('click', () => {
         meetings.forEach((meeting, index) => {
@@ -403,11 +519,30 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             this.onNodeClick({ id: meetingId, type: 'meeting' });
           }, index * 10);
         });
+      })
+      .on('mouseover', () => {
+        this.activeMeetingNode = {
+          color: nodeColor,
+          count: meetingCount,
+          textColor: textColor
+        };
+        self.d3Service.resetStrokes();
+        meetingIds.forEach(meetingId => {
+          d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
+            d3.select(this).raise();
+          });
+      
+          d3.selectAll(`.meeting-link-${meetingId}`)
+            .transition()
+            .duration(200)
+            .attr('stroke', '#ff7f0e')
+            .attr('stroke-width', 4);
+        });
+        this.cdr.detectChanges();
       });
     });
   }
   
-
   private drawDottedLines(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, width: number, height: number): void {
     const yPositions = Object.values(this.entityPositions);
     yPositions.forEach(yPosition => {
@@ -416,7 +551,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private truncateLabel(label: string): string {
-    return label.length > 15 ? label.substring(0, 15) + "..." : label;
+    return label.length > 15 ? label.substring(0, 15) : label;
   }
 
   private onNodeClick(entity: { id: string; type: string }): void {
@@ -447,6 +582,113 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       height: window.innerHeight * 0.4
     };
   }
+
+  private isDarkColor(color: string): boolean {
+    const rgb = d3.color(color);
+    if (!rgb) return false;
+    const luminance = 0.299 * rgb.rgb().r + 0.587 * rgb.rgb().g + 0.114 * rgb.rgb().b;
+    return luminance < 128;
+  }
+
+  private toggleGrouping(dateKey: string) {
+    const currentState = this.meetingManager.groupedDates.get(dateKey);
+    this.meetingManager.groupedDates.set(dateKey, !currentState);
+    this.createVisualization();
+  }
+
+  private regroupNodes(dateKey: string): void {
+    console.log("Regrouping nodes for date: ", dateKey);
+    d3.selectAll(`.node-lobbyist.link-lobbyist-${dateKey}`)
+      .transition()
+      .duration(300)
+      .style("opacity", 0)
+      .remove(); 
+  
+    this.meetingManager.groupedDates.set(dateKey, true);
+    this.createVisualization();
+  }
+
+  private drawGroupingRectangles(
+    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    sortedEntities: [string, number][],
+    filteredMeetings: MeetingData[]
+  ): void {
+    const groupsToDraw = new Map<string, { minX: number; maxX: number; minY: number; maxY: number; lobbyists: string[] }>();
+  
+    const lobbyistMeetingCount = new Map<string, number>();
+    filteredMeetings.forEach(meeting => {
+      lobbyistMeetingCount.set(meeting.lobbyist_id, (lobbyistMeetingCount.get(meeting.lobbyist_id) || 0) + 1);
+    });
+  
+    const validGroups = new Map<string, Set<string>>();
+    filteredMeetings.forEach(meeting => {
+      const dateKey = meeting.date.toISOString().split("T")[0];
+  
+      if (this.meetingManager.groupedDates.get(dateKey) === false) {
+        if (lobbyistMeetingCount.get(meeting.lobbyist_id) === 1) {
+          if (!validGroups.has(dateKey)) {
+            validGroups.set(dateKey, new Set());
+          }
+          validGroups.get(dateKey)!.add(meeting.lobbyist_id);
+        }
+      }
+    });
+  
+    validGroups.forEach((lobbyists, dateKey) => {
+      if (lobbyists.size > 1) {
+        groupsToDraw.set(dateKey, { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity, lobbyists: Array.from(lobbyists) });
+      }
+    });
+  
+    sortedEntities.forEach(([id, xPosition]) => {
+      groupsToDraw.forEach((group, dateKey) => {
+        if (group.lobbyists.includes(id)) {
+          group.minX = Math.min(group.minX, xPosition);
+          group.maxX = Math.max(group.maxX, xPosition);
+          group.minY = Math.min(group.minY, this.entityPositions.lobbyist - 15);
+          group.maxY = Math.max(group.maxY, this.entityPositions.lobbyist + 15);
+        }
+      });
+    });
+  
+    groupsToDraw.forEach((group, dateKey) => {
+      if (group.lobbyists.length < 2 || group.minX === Infinity || group.maxX === -Infinity) {
+        return;
+      }
+  
+      const padding = 10;
+      console.log(group);
+  
+      svg.append("rect")
+      .attr("x", group.minX - padding)
+      .attr("y", group.minY - padding)
+      .attr("width", group.maxX - group.minX + 2 * padding)
+      .attr("height", group.maxY - group.minY + 2 * padding)
+      .attr("fill", "#f3e3ef")
+      .attr("stroke", "#ff7f0e")
+      .attr("stroke-width", 2)
+      .attr("rx", 8)
+      .attr("class", `group-box group-box-${dateKey}`)
+      .style("cursor", "pointer")
+      .style("pointer-events", "all")
+      .on("click", () => this.regroupNodes(dateKey));
+    
+      });
+  }
+
+  public updateVisualization(event: Event): void {
+    const inputElement = event.target as HTMLInputElement;
+    this.lobbyistDegreeThreshold = Number(inputElement.value);
+    this.meetingManager.lobbyistDegreeThreshold = this.lobbyistDegreeThreshold;
+    this.createVisualization();
+  }
+
+  private updateMaxDegree(): void {
+    this.maxVisibleLobbyistDegree = this.meetingManager.maxVisibleLobbyistDegree;
+    this.lobbyistDegreeThreshold = Math.min(this.lobbyistDegreeThreshold, this.maxVisibleLobbyistDegree);
+    this.meetingManager.lobbyistDegreeThreshold = this.lobbyistDegreeThreshold;
+  }
+  
 }
 
 export interface MeetingData {

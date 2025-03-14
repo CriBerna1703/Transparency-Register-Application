@@ -21,7 +21,7 @@ export class CsvService {
         .join(separator);
     });
 
-    const csvString = [headers, ...csvRows].join('\n');
+    const csvString = '\uFEFF' + [headers, ...csvRows].join('\n');
     const blob = new Blob([csvString], { type: 'text/csv;charset=utf-8;' });
     const url = window.URL.createObjectURL(blob);
     
@@ -41,6 +41,7 @@ export class CsvService {
         meeting_date: item.meeting_date,
         topic: item.topic?.replace(/\n/g, ' '),
         location: item.location?.replace(/\n/g, ' '),
+        lobbyist_id: item.Lobbyist?.lobbyist_id?.replace(/\n/g, ' ') || '',
         lobbyist_name: item.Lobbyist?.organization_name?.replace(/\n/g, ' ') || '',
         representative_name: item.CommissionRepresentative?.name?.replace(/\n/g, ' ') || '',
         directorate_name: repAlloc.Directorate?.name?.replace(/\n/g, ' ') || '',

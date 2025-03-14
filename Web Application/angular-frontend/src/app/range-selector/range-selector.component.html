@@ -1,7 +1,7 @@
 <div class="range-selector">
   <div class="navigation-buttons">
     <button (click)="changeRange(-1)" [disabled]="!canChangeRange(-1) || !hasMeetings">❮</button>
-    <span>{{ currentRangeLabel }}</span>
+    <span>{{this.startDate.toLocaleDateString()}} <br> {{this.endDate.toLocaleDateString()}}</span>
     <button (click)="changeRange(1)" [disabled]="!canChangeRange(1) || !hasMeetings">❯</button>
   </div>
   <div class="dropdowns">

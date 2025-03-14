@@ -13,10 +13,32 @@ export class MeetingManager {
     representative: new Map(),
     directorate: new Map()
   };
+  public groupedDates: Map<string, boolean> = new Map();
+  public lobbyistDegreeThreshold: number = 1;
+  public maxVisibleLobbyistDegree: number = 10;
+
+  prepareGroupingData(meetings: MeetingData[]) {
+    const dateMap = new Map<string, number>();
+
+    meetings.forEach(meeting => {
+      const dateKey = meeting.date.toISOString().split('T')[0];
+      if (!dateMap.has(dateKey)) {
+        dateMap.set(dateKey, 0);
+      }
+      dateMap.set(dateKey, dateMap.get(dateKey)! + 1);
+    });
+
+    dateMap.forEach((count, dateKey) => {
+      if (count > 1) {
+        this.groupedDates.set(dateKey, true);
+      }
+    });
+  }
 
   setMeetingsData(meetings: MeetingData[]): void {
     this.meetingsData = meetings;
     this.prepareUniqueEntities();
+    this.prepareGroupingData(meetings);
   }
 
   getMeetingsData(): Observable<MeetingData[]> {
@@ -44,8 +66,22 @@ export class MeetingManager {
   }
 
   getFilteredMeetingsByInterval(startDate: Date, endDate: Date): MeetingData[] {
-    return this.meetingsData.filter(meeting => meeting.date >= startDate && meeting.date <= endDate);
-  }
+    const lobbyistMeetingCount = new Map<string, number>();
+    this.meetingsData.forEach(meeting => {
+        if (meeting.date >= startDate && meeting.date <= endDate) {
+            lobbyistMeetingCount.set(meeting.lobbyist_id, (lobbyistMeetingCount.get(meeting.lobbyist_id) || 0) + 1);
+        }
+    });
+
+    this.maxVisibleLobbyistDegree = Math.max(...Array.from(lobbyistMeetingCount.values()), 1);
+
+    return this.meetingsData.filter(meeting => 
+        meeting.date >= startDate && 
+        meeting.date <= endDate &&
+        lobbyistMeetingCount.get(meeting.lobbyist_id)! >= this.lobbyistDegreeThreshold
+    );
+}
+
 
   computeOptimizedNodePositions(
     entityType: 'lobbyist' | 'representative' | 'directorate',
@@ -58,7 +94,12 @@ export class MeetingManager {
     const timeScale = d3.scaleTime()
         .domain([displayStartDate, displayEndDate])
         .range([50, width - 50]);
-    const filteredMeetings = this.getFilteredMeetingsByInterval(startDate, endDate);
+        
+    let filteredMeetings = this.getFilteredMeetingsByInterval(startDate, endDate);
+
+    if (entityType === "lobbyist") {
+      filteredMeetings = this.replaceLobbistsWithGroups(filteredMeetings);
+    }
 
     const entityMeetings = new Map<string, number[]>();
 
@@ -121,4 +162,52 @@ export class MeetingManager {
     return newMap;
   }
 
+  private replaceLobbistsWithGroups(meetings: MeetingData[]): MeetingData[] {
+    const groupedMeetings = new Map<string, MeetingData>();
+    const lobbyistMeetingCount = new Map<string, number>();
+    const dateGroups = new Map<string, Set<string>>();     
+
+    meetings.forEach(meeting => {
+        const { lobbyist_id } = meeting;
+        lobbyistMeetingCount.set(lobbyist_id, (lobbyistMeetingCount.get(lobbyist_id) || 0) + 1);
+    });
+
+    meetings.forEach(meeting => {
+        const { lobbyist_id, date } = meeting;
+        const dateKey = date.toISOString().split("T")[0];
+
+        if (this.groupedDates.get(dateKey) === true) {
+            if (lobbyistMeetingCount.get(lobbyist_id) === 1) {
+                if (!dateGroups.has(dateKey)) {
+                    dateGroups.set(dateKey, new Set());
+                }
+                dateGroups.get(dateKey)!.add(lobbyist_id);
+            }
+        }
+    });
+
+    const validGroups = new Map<string, Set<string>>();
+    dateGroups.forEach((lobbyists, dateKey) => {
+        if (lobbyists.size > 1) {
+            validGroups.set(dateKey, lobbyists);
+        }
+    });
+    return meetings.map(meeting => {
+        const dateKey = meeting.date.toISOString().split("T")[0];
+
+        if (validGroups.has(dateKey) && validGroups.get(dateKey)!.has(meeting.lobbyist_id)) {
+            if (!groupedMeetings.has(dateKey)) {
+                groupedMeetings.set(dateKey, {
+                    ...meeting,
+                    lobbyist_id: `grouped-${dateKey}`,
+                    lobbyist_name: `Gruppo Lobbisti ${dateKey}`
+                });
+            }
+            return groupedMeetings.get(dateKey)!;
+        }
+
+        return meeting;
+    });
+  }
+  
 }

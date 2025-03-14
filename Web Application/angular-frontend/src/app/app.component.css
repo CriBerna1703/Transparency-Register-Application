@@ -133,9 +133,7 @@ body {
 /* Stile per il range input */
 .range-input-container {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  max-width: 200px;
+  flex-direction: column;
 }
 
 .range-input-container input[type="range"] {
@@ -479,3 +477,7 @@ app-histogram-view {
   transform: scale(0.9);
 }
 
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+}

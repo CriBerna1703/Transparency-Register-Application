@@ -133,6 +133,6 @@ export class RangeSelectorComponent implements OnChanges {
   }
 
   public get currentRangeLabel(): string {
-    return `${this.startDate.toLocaleDateString()} - ${this.endDate.toLocaleDateString()}`;
+    return `${this.startDate.toLocaleDateString()} ${this.endDate.toLocaleDateString()}`;
   }
 }

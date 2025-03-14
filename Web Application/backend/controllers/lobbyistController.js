@@ -5,6 +5,7 @@ module.exports = {
         try {
             const lobbyists = await Lobbyist.findAll({
                 attributes: ['lobbyist_id', 'organization_name'],
+                order: [['organization_name', 'ASC']]
             });
             res.json(lobbyists);
         } catch (error) {

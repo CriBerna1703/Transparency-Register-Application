@@ -3,7 +3,9 @@ const { Directorate } = require('../models');
 module.exports = {
     async getAllDirectorates(req, res) {
         try {
-            const directorates = await Directorate.findAll();
+            const directorates = await Directorate.findAll({
+                order: [['name', 'ASC']]
+            });
             res.json(directorates);
         } catch (error) {
             console.error(error);

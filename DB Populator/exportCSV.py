@@ -16,7 +16,7 @@ class ExportCSV:
 
     def export_meeting_centric_csv(self, output_file, separator="$"):
         query = """
-        SELECT cm.meeting_number, cm.meeting_date, cm.topic, cm.location, 
+        SELECT cm.meeting_number, cm.meeting_date, cm.topic, cm.location, cm.lobbyist_id as lobbyist_id, 
             lp.organization_name AS lobbyist_name, 
             cr.name AS representative_name, 
             d.name AS directorate_name,
@@ -30,7 +30,7 @@ class ExportCSV:
         """
         df = pd.read_sql_query(query, self.engine)
         df = df.applymap(self.clean_text)
-        df.to_csv(output_file, index=False, sep=separator, quoting=csv.QUOTE_NONE)
+        df.to_csv(output_file, index=False, sep=separator, quoting=csv.QUOTE_NONE, encoding="utf-8-sig")
 
     def export_lobbyist_centric_csv(self, output_file, separator="$"):
         lobbyist_query = """
@@ -61,7 +61,7 @@ class ExportCSV:
         # Merge with lobbyist details
         final_df = lobbyist_df.merge(pivot_df, on='lobbyist_id', how='left').fillna(0)
         final_df = final_df.applymap(self.clean_text)
-        final_df.to_csv(output_file, index=False, sep=separator, quoting=csv.QUOTE_NONE)
+        final_df.to_csv(output_file, index=False, sep=separator, quoting=csv.QUOTE_NONE, encoding="utf-8-sig")
 
 exportCSV = ExportCSV()
 exportCSV.export_meeting_centric_csv("meeting_centric.csv")

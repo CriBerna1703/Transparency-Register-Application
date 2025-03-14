@@ -1,1 +1,22 @@
 <div id="visualization"></div>
+<div class="top-controls">
+  <div class="meeting-info-box" 
+       [ngStyle]="{ 'background-color': activeMeetingNode?.color || '#ddd' }">
+    {{ activeMeetingNode?.count ?? 0 }}
+  </div>
+  <div class="slider-container">
+    <label for="degreeThreshold">
+      Lobbyist Degree Threshold: {{ lobbyistDegreeThreshold }}
+    </label>
+    <input
+      id="lobbyistDegreeThreshold"
+      type="range"
+      min="1"
+      [max]="maxVisibleLobbyistDegree"
+      name="lobbyistDegreeThreshold" 
+      step="1"
+      [value]="lobbyistDegreeThreshold" 
+      (input)="updateVisualization($event)"
+    />
+  </div>
+</div>
