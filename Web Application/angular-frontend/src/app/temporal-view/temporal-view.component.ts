@@ -145,7 +145,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         this.drawEntities(svg, 'directorate', calculatedWidth, displayStartDate, displayEndDate);
       }
     });
-    this.d3Service.resetStrokes();
+    this.d3Service.resetStrokes();    
   }
 
   private resetVisualization(element: HTMLElement, width: number, height: number): void {
@@ -597,7 +597,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private regroupNodes(dateKey: string): void {
-    console.log("Regrouping nodes for date: ", dateKey);
     d3.selectAll(`.node-lobbyist.link-lobbyist-${dateKey}`)
       .transition()
       .duration(300)
@@ -656,9 +655,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         return;
       }
   
-      const padding = 10;
-      console.log(group);
-  
+      const padding = 10;  
       svg.append("rect")
       .attr("x", group.minX - padding)
       .attr("y", group.minY - padding)
