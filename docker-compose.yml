@@ -26,14 +26,14 @@ services:
     container_name: node_backend
     restart: always
     environment:
-      - PORT=8088
+      - PORT=8089
       - DB_HOST=database
       - DB_USER=${MYSQL_USER}
       - DB_PASSWORD=${MYSQL_PASSWORD}
       - DB_NAME=${MYSQL_DATABASE}
       - DOCKER_ENV=true
     ports:
-      - "8088:8088"
+      - "8089:8089"
     volumes:
       - ./Web Application/backend:/app
     working_dir: /app
@@ -49,7 +49,7 @@ services:
     build:
       context: ./Web Application/angular-frontend
     ports:
-      - "8089:80"
+      - "8088:80"
     depends_on:
       - backend
     networks:
