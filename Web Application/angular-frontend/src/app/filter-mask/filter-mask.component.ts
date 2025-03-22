@@ -65,6 +65,13 @@ export class FilterMaskComponent {
   constructor(private dataService: DataService, private filterService: FilterService) {}
 
   ngOnInit() {
+    const today = new Date();
+    const oneYearAgo = new Date();
+    oneYearAgo.setFullYear(today.getFullYear() - 1);
+  
+    this.endDate = today.toISOString().split('T')[0];
+    this.startDate = oneYearAgo.toISOString().split('T')[0];
+
     this.dataService.getDirectorates().subscribe(data => {
       this.directorates = data;
       this.filteredDirectorates = [...this.directorates];

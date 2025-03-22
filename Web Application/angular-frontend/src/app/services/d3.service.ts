@@ -211,6 +211,11 @@ export class D3Service {
       .attr('stroke', stroke)
       .attr('stroke-width', strokeWidth)
       .attr('class', className);
+    
+    if (className.includes('dummy-directorate')) {
+      node.attr('fill', '#c9d7d3')
+          .attr('stroke', '#e52b50');
+    }
 
     return node;
   }
@@ -327,6 +332,12 @@ export class D3Service {
       .transition()
       .duration(200)
       .attr('stroke', '#ff7f0e')
+      .attr('stroke-width', 2);
+
+    d3.selectAll(`.node-directorate.dummy-directorate:not(.node-selected)`)
+      .transition()
+      .duration(200)
+      .attr('stroke', '#e52b50')
       .attr('stroke-width', 2);
 
     this.redrawLabels();

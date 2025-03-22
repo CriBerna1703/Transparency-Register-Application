@@ -28,12 +28,12 @@
         </div>
         
         <div class="tab-content">
-          <div *ngIf="activeTab === 'graph'">
+          <div [hidden]="activeTab !== 'graph'">
             <app-graph-view 
               (nodeSelected)="onNodeSelected($event)"
             ></app-graph-view>
           </div>
-          <div *ngIf="activeTab === 'overview'">
+          <div [hidden]="activeTab !== 'overview'">
             <app-overview></app-overview>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { DataService } from './data.service';
 import { CsvService } from './csv.service';
+import { Subscription } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,7 @@ export class FilterService {
   private meetingsSubject = new BehaviorSubject<any[]>([]);
   private overviewSubject = new BehaviorSubject<any[]>([]);
   private loadingSubject = new BehaviorSubject<boolean>(false);
+  private currentRequest?: Subscription;
 
   filters$ = this.filtersSubject.asObservable();
   meetings$ = this.meetingsSubject.asObservable();
@@ -30,8 +32,13 @@ export class FilterService {
 
   // Retrieve filtered meetings from backend
   private fetchMeetings(filters: any) {
+    if (this.currentRequest) {
+      this.currentRequest.unsubscribe();
+    }
+  
     this.loadingSubject.next(true);
-    this.dataService.getFilteredMeetings(filters).subscribe(
+  
+    this.currentRequest = this.dataService.getFilteredMeetings(filters).subscribe(
       (meetings) => {
         this.overviewSubject.next(meetings);
         this.loadingSubject.next(false);
@@ -71,5 +78,13 @@ export class FilterService {
 
   downloadLobbyistCsv() {
     this.csvService.downloadCSV(this.lobbyistCsvData, 'lobbyist_centric.csv', '$');
+  }
+
+  cancelFetch() {
+    if (this.currentRequest) {
+      this.currentRequest.unsubscribe();
+      this.currentRequest = undefined;
+      this.loadingSubject.next(false);
+    }
   }
 }

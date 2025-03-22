@@ -26,13 +26,32 @@ module.exports = {
 
             if (keywords && keywords.length > 0) {
                 const keywordArray = ensureArray(keywords);
-                const topicConditions = keywordArray.map((keyword) => ({
-                    topic: { [Op.like]: `%${keyword}%` },
-                }));
+              
+                const topicConditions = keywordArray.map((keyword) => {
+                  const trimmed = keyword.trim();
+              
+                  if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
+                    const clean = trimmed.slice(1, -1).trim();
+                    const escaped = clean.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+              
+                    return Sequelize.where(
+                      Sequelize.col('topic'),
+                      {
+                        [Op.regexp]: `(^|[\\s.,;!?()/:\\-])${escaped}([\\s.,;!?()/:\\-]|$)`
+                      }
+                    );
+                  } else {
+                    return {
+                      topic: { [Op.like]: `%${trimmed}%` }
+                    };
+                  }
+                });
+              
                 filter_type === 'AND'
-                    ? (whereClause[Op.and] = topicConditions)
-                    : (whereClause[Op.or] = topicConditions);
-            }
+                  ? (whereClause[Op.and] = topicConditions)
+                  : (whereClause[Op.or] = topicConditions);
+              }
+                        
 
             if (lobbyist_ids.length > 0) {
                 whereClause.lobbyist_id = { [Op.or]: lobbyist_ids };

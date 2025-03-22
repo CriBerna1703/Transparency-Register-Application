@@ -32,13 +32,13 @@ export class HistogramViewComponent implements OnChanges {
   activeTabId: string | null = null;
   zoomLevel: number = 500;
 
-  selectedAggregation: string = 'month';  // Default: aggregazione per mese
+  selectedAggregation: string = 'month';
   aggregationOptions = [
-    { value: 'month', label: 'Mese' },
-    { value: 'quarter', label: 'Trimestre' },
-    { value: 'semester', label: 'Semestre' },
-    { value: 'year', label: 'Anno' },
-    { value: 'biennium', label: 'Biennio' }
+    { value: 'month', label: 'Month' },
+    { value: 'quarter', label: 'Quarter' },
+    { value: 'semester', label: 'Semester' },
+    { value: 'year', label: 'Year' },
+    { value: 'biennium', label: 'Biennium' }
   ];
 
   timeWindowStart: Date = new Date();

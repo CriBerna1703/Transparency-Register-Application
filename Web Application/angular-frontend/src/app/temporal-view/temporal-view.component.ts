@@ -204,7 +204,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         .attr("data-original-text", entityName)
         .text(this.truncateLabel(entityName))
         .attr("font-size", `${this.labelSize}px`)
-        .attr("fill", entityType === 'lobbyist' ? '#004b87' : entityType === 'representative' ? '#80EF80' : '#3CB371')
+        .attr("fill", entityType === 'lobbyist' ? '#004b87' : entityType === 'representative' ? '#54c459' : '#3CB371')
         .attr("class", `label-${entityType}`)
         .style("pointer-events", "none")        
         .style('padding', '2px 5px')
@@ -230,6 +230,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         )
         .map(d => `meeting-link-meeting_${d.lobbyist_id}_${d.meeting_number}`)
         .join(' ');
+
+      const isDummyDirectorate = entityType === 'directorate' && entityName === "?";
 
       const self = this;
 
@@ -321,7 +323,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#80EF80' : '#3CB371',
           entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
           2,
-          `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings}`
+          `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings} ${isDummyDirectorate ? 'dummy-directorate' : ''}`
         ).on('click', () => this.onNodeClick(entity))
         .on('mouseover', function (this: SVGCircleElement) {
           d3.select(this)

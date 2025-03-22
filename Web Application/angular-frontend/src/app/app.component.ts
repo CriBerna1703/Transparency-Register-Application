@@ -54,7 +54,8 @@ export class AppComponent {
   }
 
   onCancel() {
-    this.isOverviewCollapsed = true
+    this.filterService.cancelFetch();
+    this.isOverviewCollapsed = true;
     this.isFilterCollapsed = false;
   }
 
