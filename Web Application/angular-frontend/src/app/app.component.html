@@ -42,8 +42,13 @@
       <div class="info-tabs-container">
         <app-info-tabs [selectedEntity]="selectedInfoEntity"></app-info-tabs>
       </div>
-    </div>    
-    <div class="bottom-half">
+    </div>   
+    <button (click)="collapseBottom()" class="bottom-panel-toggle">
+      <span class="icon-rotate">
+        {{ isBottomCollapsed ? '❯' : '❮' }}
+      </span>
+    </button>    
+    <div class="bottom-half" [class.bottom-collapsed]="isBottomCollapsed">
       <div class="left-half">
         <app-temporal-view
           [startDate]="startDate"

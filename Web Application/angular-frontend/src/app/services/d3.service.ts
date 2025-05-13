@@ -1,6 +1,17 @@
 import { Injectable } from '@angular/core';
 import * as d3 from 'd3';
 
+export interface ForceGraphOptions {
+  width?: number;
+  height?: number;
+  zoomLevel?: number;
+  onNodeClick?: (d: any) => void;
+  minSim?: number; 
+  maxSim?: number;
+  onRightClick?: (node: any) => void;
+  onLinkRightClick?: (link: any) => void;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -358,4 +369,269 @@ export class D3Service {
     });
   }
   
+  private svg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null = null;
+  private zoomGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+  private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
+  private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
+  private simulation: d3.Simulation<any, any> | null = null;
+  private chargeForce: d3.ForceManyBody<any> | null = null;
+  
+  drawForceGraph(
+    element: HTMLElement,
+    nodes: any[],
+    links: any[],
+    options?: ForceGraphOptions & { selectedNodes?: Set<string> }
+  ): void {
+    const width = options?.width ?? 1000;
+    const height = options?.height ?? 600;
+    const initialZoom = (options?.zoomLevel ?? 100) / 100;
+    const minSim = options?.minSim ?? 0.1;
+    const maxSim = options?.maxSim ?? 1.0;
+
+
+    const degreeMap = new Map<string, number>();
+
+    // Conta le connessioni per ogni nodo
+    links.forEach(link => {
+      const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+      const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+
+      degreeMap.set(sourceId, (degreeMap.get(sourceId) || 0) + 1);
+      degreeMap.set(targetId, (degreeMap.get(targetId) || 0) + 1);
+    });
+
+    // Assegna il grado a ciascun nodo
+    nodes.forEach(node => {
+      node.degree = degreeMap.get(node.id) || 0;
+    });
+
+
+      
+    d3.select(element).select('svg').remove();
+  
+    this.svg = d3.select(element)
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('preserveAspectRatio', 'xMidYMid meet')
+      .attr('viewBox', `0 0 ${width} ${height}`);
+  
+    this.zoomGroup = this.svg.append('g');
+  
+    this.zoomBehavior = d3.zoom<Element, unknown>()
+      .scaleExtent([0.1, 10])
+      .on('zoom', (event) => {
+        if (this.zoomGroup) {
+          this.zoomGroup.attr('transform', event.transform);
+        }
+  
+        const zoomScale = event.transform.k;
+        const thresholdRange = maxSim - minSim;
+  
+        this.zoomGroup?.selectAll('text')
+          .style('display', (d: any) => {
+            if (options?.selectedNodes?.has(d.id)) return 'block';
+            if (thresholdRange <= 0.2) {
+              if (zoomScale >= 5.0) return 'block';
+              if (zoomScale >= 4.0) return d.degree >= 3 ? 'block' : 'none';
+              if (zoomScale >= 3.0) return d.degree >= 5 ? 'block' : 'none'; 
+              if (zoomScale >= 2.0) return d.degree >= 8 ? 'block' : 'none';
+              return 'none';
+            } else {
+              return 'none';
+            }
+          });
+      });
+  
+    this.svg.call(this.zoomBehavior as any);
+  
+    this.chargeForce = d3.forceManyBody().strength(-100);
+  
+    this.simulation = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links)
+      .id((d: any) => d.id)
+      .distance((d: any) => 150 - (d.similarity ?? 0) * 10)
+    )
+    .force('charge', this.chargeForce)
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('x', d3.forceX(width / 2).strength(0.05))
+    .force('y', d3.forceY(height / 2).strength(0.05))
+    .force('collide', d3.forceCollide(20));
+  
+    this.simulation.alpha(1).restart();
+  
+    const drag = d3.drag<SVGGElement, any>()
+      .on('start', (event, d) => {
+        if (!event.active) this.simulation!.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      })
+      .on('drag', (event, d) => {
+        d.fx = event.x;
+        d.fy = event.y;
+      })
+      .on('end', (event, d) => {
+        if (!event.active) this.simulation!.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      });
+        
+    const link = this.zoomGroup.append('g')
+      .selectAll('line')
+      .data(links.filter((d: any) => !d.__invisible))
+      .enter()
+      .append('line')
+      .attr('stroke-width', 5)
+      .attr('stroke', (d: any) => this.getLinkColor(d.similarity));
+
+    link.on('contextmenu', (event, d) => {
+        event.preventDefault();
+        event.stopPropagation();
+        options?.onLinkRightClick?.(d);
+      });
+      
+  
+    this.nodeGroup = this.zoomGroup.append('g')
+      .selectAll('g')
+      .data(nodes)
+      .enter()
+      .append('g')
+      .call(drag);
+  
+    this.nodeGroup.append('circle')
+      .attr('r', 7)
+      .attr('fill', '#ae58a3')
+      .attr('stroke', '#5b2c55')
+      .attr('stroke-width', 2)
+      .style('display', (d: any) => d.id === '__center' ? 'none' : 'block')
+      .attr('data-id', d => d.id);
+  
+    this.nodeGroup.append('text')
+      .text((d: any) => d.name)
+      .attr('text-anchor', 'middle')
+      .attr('fill', '#004b87')
+      .attr('dy', '-10')
+      .style('display', 'none');
+  
+    this.nodeGroup
+      .on('click', (event, d) => {
+        event.stopPropagation();
+        options?.onNodeClick?.(d);
+        updateStyles();
+      })
+      .on('mouseover', function (event, d) {
+        d3.select(this).select('circle').attr('stroke', '#ff7f0e');
+        d3.select(this).select('text').style('display', 'block');
+      })
+      .on('mouseout', function (event, d) {
+        const isSelected = options?.selectedNodes?.has(d.id);
+        d3.select(this).select('circle')
+          .attr('stroke', isSelected ? '#ff7f0e' : '#5b2c55');
+        d3.select(this).select('text')
+          .style('display', isSelected ? 'block' : 'none');
+      })
+      .on('contextmenu', function (event, d) {
+        event.preventDefault();
+        event.stopPropagation();
+        options?.onRightClick?.(d);
+      });
+  
+    const updateStyles = () => {
+      this.nodeGroup?.select('circle')
+        .attr('stroke', (d: any) =>
+          options?.selectedNodes?.has(d.id) ? '#ff7f0e' : '#5b2c55');
+  
+      this.nodeGroup?.select('text')
+        .style('display', (d: any) =>
+          options?.selectedNodes?.has(d.id) ? 'block' : 'none');
+  
+      link.attr('stroke', (d: any) => {
+        const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+        const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+        return options?.selectedNodes?.has(sourceId) || options?.selectedNodes?.has(targetId)
+          ? '#ff7f0e'
+          : this.getLinkColor(d.similarity);;
+      });
+    };
+  
+    this.simulation.on('tick', () => {
+      link
+        .attr('x1', (d: any) => d.source.x)
+        .attr('y1', (d: any) => d.source.y)
+        .attr('x2', (d: any) => d.target.x)
+        .attr('y2', (d: any) => d.target.y);
+  
+      this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
+      const centerNodeData = nodes.find(n => n.id === '__center');
+      if (centerNodeData) {
+        centerNodeData.x = width / 2;
+        centerNodeData.y = height / 2;
+      }
+    });
+  
+    setTimeout(() => {
+      this.svg?.transition().call(
+        this.zoomBehavior!.transform as any,
+        d3.zoomIdentity.scale(initialZoom)
+      );
+    }, 300);
+  
+    updateStyles();
+  }
+  
+  private labelFontSize: number = 12;
+  
+  public setLabelFontSize(size: number): void {
+    this.labelFontSize = size;
+    this.nodeGroup?.select('text')
+      .style('font-size', `${this.labelFontSize}px`);
+  }
+  
+  public updateForceGraphStyles(selectedNodes: Set<string>, selectedLink?: { source: string; target: string }): void {
+    if (!this.nodeGroup || !this.zoomGroup) return;
+  
+    this.nodeGroup.select('circle')
+      .attr('stroke', (d: any) => selectedNodes.has(d.id) ? '#ff7f0e' : '#5b2c55');
+  
+    this.nodeGroup.select('text')
+      .style('display', (d: any) => selectedNodes.has(d.id) ? 'block' : 'none');
+  
+    this.zoomGroup.selectAll('line')
+      .attr('stroke', (d: any) => {
+        const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+        const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+        const isSelectedNode = selectedNodes.has(sourceId) || selectedNodes.has(targetId);
+        const isSelectedLink = selectedLink &&
+          ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
+           (selectedLink.source === targetId && selectedLink.target === sourceId));
+           return isSelectedNode || isSelectedLink ? '#ff7f0e' : this.getLinkColor(d.similarity);
+        });
+  }
+
+  private getLinkColor(sim: number): string {
+    const greenShades = [
+      '#d7f9e5',
+      '#b8f2cd', 
+      '#94e8b1', 
+      '#6cda91', 
+      '#4ac873', 
+      '#34b25f', 
+      '#23974b', 
+      '#157b3b', 
+      '#085c28', 
+      '#00210c'  
+    ];
+
+    const adjustedSim = Math.max(0, Math.min(1, (sim - 0.01) / 0.99));
+    const index = Math.floor(adjustedSim * 10);
+    return greenShades[Math.min(index, 9)];
+  }
+  
+
+  public updateChargeStrength(strength: number): void {
+    if (this.chargeForce && this.simulation) {
+      this.chargeForce.strength(strength);
+      this.simulation.alpha(1).restart();
+    }
+  } 
 }

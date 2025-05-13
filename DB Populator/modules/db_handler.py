@@ -38,7 +38,7 @@ class DBHandler:
 
     def truncate_all_tables(self):
         self.delete_table_data('lobbyist_profile')
-        self.delete_table_data('fields_of_interest')
+        """self.delete_table_data('fields_of_interest')"""
         self.delete_table_data('proposals')
         self.delete_table_data('memberships')
         self.delete_table_data('commission_representative')

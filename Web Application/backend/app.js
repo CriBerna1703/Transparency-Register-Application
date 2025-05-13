@@ -7,6 +7,9 @@ const proposalRoutes = require('./routes/proposalRoutes');
 const meetingRoutes = require('./routes/meetingRoutes');
 const directorateRoutes = require('./routes/directorateRoutes');
 const commissionRepresentativeRoutes = require('./routes/commissionRepresentativeRoutes');
+const similarityRoutes = require('./routes/similarityRoutes');
+const lobbyistTextRoutes = require('./routes/lobbyistTextRoutes');
+
 
 // Creazione dell'app Express
 const app = express();
@@ -16,7 +19,7 @@ const cors = require('cors'); // Importa il middleware CORS
 // Configura CORS
 const corsOptions = {
     origin: '*',
-    methods: 'GET', 
+    methods: 'GET, POST', 
     allowedHeaders: 'Content-Type,Authorization',
 };
 
@@ -33,5 +36,8 @@ app.use('/api/proposals', proposalRoutes);
 app.use('/api/meetings', meetingRoutes);
 app.use('/api/directorates', directorateRoutes);
 app.use('/api/commission-representatives', commissionRepresentativeRoutes);
+app.use('/api/similarities', similarityRoutes);
+app.use('/api/lobbyistText', lobbyistTextRoutes);
+
 
 module.exports = app;

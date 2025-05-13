@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 import { FilterService } from '../services/filter.service';
 import { MeetingManager } from '../services/meeting-manager.service';
 import { D3Service } from '../services/d3.service';
+import { SelectionService } from '../services/selection.service';
 import * as d3 from 'd3';
 
 @Component({
@@ -43,7 +44,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     private meetingManager: MeetingManager,
     private el: ElementRef,
     private d3Service: D3Service,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
+    private selectionService: SelectionService,
+
   ) {}
 
   ngOnInit(): void {
@@ -65,6 +68,12 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       this.meetingManager.setMeetingsData(formattedMeetings);
       this.emitDateRange(formattedMeetings);
     });
+
+    this.selectionService.selectedNodes$.subscribe(nodes => {
+      this.selectedNodes = new Set(nodes.map(n => n.id));
+      this.createVisualization();
+    });
+    
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -391,14 +400,26 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
               .classed('node-selected', true);
         
             self.selectedNodes.add(entity.id);
+
+            self.selectionService.selectNode(entity);
           } else {
             labelGroup.style("opacity", 0).classed('label-fixed', false);
             d3.select(this)
               .classed('node-selected', false);
         
             self.selectedNodes.delete(entity.id);
+
+            self.selectionService.deselectNode(entity.id);
           }
+
         });
+
+        if (this.selectedNodes.has(entity.id)) {
+          node.attr('stroke', '#ff7f0e')
+              .attr('stroke-width', 2)
+              .classed('node-selected', true);
+        }
+        
 
         if (isLabelFixed) {
           labelGroup.style("opacity", 1).classed('label-fixed', true);

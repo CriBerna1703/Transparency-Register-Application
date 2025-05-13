@@ -22,6 +22,7 @@ export class AppComponent {
   isFilterCollapsed = false;
   isOverviewCollapsed = true;
   isControlPanelCollapsed = false;
+  isBottomCollapsed = false;
   isHistogramPanelCollapsed = false;
   labelSize = 14;
   zoomLevel = 100;
@@ -51,6 +52,10 @@ export class AppComponent {
     this.isOverviewCollapsed = true;
     this.isFilterCollapsed = true;
     this.filterService.showMeetings();
+  }
+
+  collapseBottom() {
+    this.isBottomCollapsed = !this.isBottomCollapsed;
   }
 
   onCancel() {

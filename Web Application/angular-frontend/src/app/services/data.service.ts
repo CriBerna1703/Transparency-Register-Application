@@ -84,7 +84,20 @@ export class DataService {
     return this.http.get(`${this.apiUrl}/meetings/filter`, { params });
   }
 
+  getLobbyistFieldOfInterest(lobbyistId: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/fields/lobbyist/${lobbyistId}`);
+  }
+  
   getMeetingByLobbyistAndNumber(lobbyistId: string, meetingNumber: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/meetings/${lobbyistId}/${meetingNumber}`);
   }
+
+  getSimilarities(texts: { id: string, text: string }[]): Observable<any> {
+    return this.http.post(`${this.apiUrl}/similarities`, { texts });
+  }  
+
+  getLobbyistText(lobbyistId: string): Observable<{ text: string }> {
+    return this.http.get<{ text: string }>(`${this.apiUrl}/lobbyistText/${lobbyistId}/text`);
+  }
+  
 }
