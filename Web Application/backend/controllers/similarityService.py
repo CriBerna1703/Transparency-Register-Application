@@ -11,19 +11,20 @@ def parse_date(date_str):
     return datetime.strptime(date_str, "%d/%m/%Y")
 
 def extract_blocks_within_dates(text, start_date, end_date):
-    lines = text.strip().split('\n')
+    lines = [line.strip() for line in text.strip().split('\n') if line.strip()]  # elimina righe vuote
     filtered = []
     i = 0
     while i < len(lines) - 1:
-        date_line = lines[i].strip()
-        content_line = lines[i + 1].strip()
+        date_line = lines[i]
+        content_line = lines[i + 1]
+
         try:
             date = datetime.strptime(date_line, "%d/%m/%Y")
             if start_date <= date <= end_date:
                 filtered.append(content_line)
+            i += 2  # salta la coppia data + contenuto
         except ValueError:
-            pass
-        i += 2
+            i += 1  # se non è una data, passa alla riga successiva
     return '\n'.join(filtered)
 
 def cosine_similarity(vec1, vec2):
@@ -46,6 +47,8 @@ def main():
     input_data = json.load(sys.stdin)
     start_date = parse_date(input_data.get("startDate"))
     end_date = parse_date(input_data.get("endDate"))
+    print(f"Start date: {start_date.strftime('%d/%m/%Y')}", file=sys.stderr)
+    print(f"End date: {end_date.strftime('%d/%m/%Y')}", file=sys.stderr)
     lobbyist_ids = set(input_data.get("lobbyist_ids", []))
 
     input_dir = 'Lemmatized_Files'
@@ -56,7 +59,7 @@ def main():
 
     D_triple_prime = {}
     for filename in all_files:
-        with open(os.path.join(input_dir, filename), 'r', encoding='utf-8') as f:
+        with open(os.path.join(input_dir, filename), 'r', encoding='utf-8-sig') as f:
             text = f.read()
             filtered = extract_blocks_within_dates(text, start_date, end_date)
             if filtered.strip():

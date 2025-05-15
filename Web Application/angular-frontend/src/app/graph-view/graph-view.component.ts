@@ -66,6 +66,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public selectAllChecked: boolean = true;
   public selectedTextMetric: 'similarity_NumJaccard' | 'similarity_cosine' | 'similarity_jaccard' = 'similarity_cosine';
   selectedLink: { source: string; target: string } | undefined = undefined;
+  filterGraphApplied: boolean = false;
   commonFields: string[] = [];
   sourceName: string = '';
   targetName: string = '';
@@ -504,7 +505,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.selectAllChecked = this.availableFilterOptions.length > 0 &&
       this.availableFilterOptions.every(opt => this.selectedFilterValues.includes(opt.id));
 
-    this.updateGraph();
   }
 
 
@@ -544,6 +544,14 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       this.selectedFilterValues = this.selectedKeywords.map(k => k);
     }
     this.updateGraph();
+  }
+
+  public applyFilters(): void {
+    this.filterGraphApplied = true;
+    if(this.filterGraphApplied){
+      this.filterGraphApplied = false;
+      this.updateGraph();
+    }
   }
 
   ngAfterViewInit(): void {

@@ -106,11 +106,18 @@
       <div *ngIf="availableFilterOptions.length > 0" class="dropdown-wrapper" style="margin-top: 15px; position: relative;">
         <label><strong>Filter by {{ graphType === 'interest' ? 'Field of Interest' : 'Keyword' }}</strong></label>
 
-        <!-- Bottone dropdown -->
-        <div (click)="dropdownOpen = !dropdownOpen"
-            style="border: 1px solid #ccc; border-radius: 4px; padding: 6px; background: white; cursor: pointer;">
-          {{ selectedFilterValues.length }} selected
-          <span style="float: right;">▼</span>
+        <div style="display: flex; align-items: center; gap: 5px; margin-top: 5px;">
+          <!-- Bottone dropdown -->
+          <div (click)="dropdownOpen = !dropdownOpen"
+              style="flex: 1; border: 1px solid #ccc; border-radius: 4px; padding: 6px; background: white; cursor: pointer;">
+            {{ selectedFilterValues.length }} selected
+            <span style="float: right;">▼</span>
+          </div>
+
+          <!-- Bottone Apply -->
+          <button (click)="applyFilters()" style="padding: 6px 10px; font-size: 13px; cursor: pointer; background-color: #28a745; color: white; border: none; border-radius: 4px;">
+            Apply
+          </button>
         </div>
 
         <!-- Contenuto del menu -->
