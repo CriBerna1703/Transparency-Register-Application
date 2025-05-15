@@ -95,13 +95,13 @@ dsm
 Safe Harbour
 
 19/01/2016
-safe harbour datum center EU
+safe harbour datum center
 
 19/01/2016
 digitalisation banking sector use technology
 
 19/01/2016
-follow launch EU Internet Forum
+follow launch internet Forum
 
 19/01/2016
 dsm
@@ -131,7 +131,7 @@ innovation policy
 innovation policy
 
 25/05/2016
-use technology context security migration crisis EU Internet Forum follow
+use technology context security migration crisis internet Forum follow
 
 27/05/2016
 dsm
@@ -170,7 +170,7 @@ Digital Market
 Code Conduct
 
 30/11/2016
-ICT standard set international context EU US China
+ICT standard set international context US China
 
 08/12/2016
 preparation internet Forum
@@ -191,7 +191,7 @@ Commission ’s digital evidence initiative
 Security Research
 
 27/03/2017
-presentation study public opinion EU
+presentation study public opinion
 
 28/03/2017
 Discussion White Paper Future Europe
@@ -203,7 +203,7 @@ e privacy review directive
 dinner Estonian Ambassador Kaja Tael
 
 24/05/2017
-EU Internet Forum
+internet Forum
 
 30/05/2017
 e evidence
@@ -248,13 +248,13 @@ ePrivacy AI gdpr
 GDPR Privacy Shield
 
 16/11/2017
-EU Cybersecurity package future initiative
+cybersecurity package future initiative
 
 23/11/2017
 digitalisation
 
 29/11/2017
-e evidence GDPR EU US relation
+e evidence GDPR US relation
 
 30/11/2017
 e privacy regulation
@@ -344,7 +344,7 @@ datum artificial intelligence ePrivacy
 Digital policy
 
 20/01/2020
-EU internal security challenge ahead law enforcement cooperation perspective industry
+internal security challenge ahead law enforcement cooperation perspective industry
 
 20/01/2020
 e evidence AI
@@ -392,7 +392,7 @@ e Debate Regulatory model online platform
 trade issue
 
 01/07/2020
-discuss EU digital policy
+discuss digital policy
 
 14/07/2020
 Green deal digital issue
@@ -410,7 +410,7 @@ videoconference meeting skill
 biodiversity green recovery
 
 22/09/2020
-EU Internet Forum
+internet Forum
 
 25/09/2020
 discuss GDPR Misinformation commercial scam AI AI liability
@@ -467,7 +467,7 @@ datum privacy
 Digital taxation
 
 29/06/2021
-main topic meet transatlantic relation focus US EU Trade Technology Council digital trade WTO e commerce negotiation Digital angle economic recovery
+main topic meet transatlantic relation focus US Trade Technology Council digital trade WTO e commerce negotiation Digital angle economic recovery
 
 29/06/2021
 recovery Twintransition Digital Regulatory agenda
@@ -491,7 +491,7 @@ Developments Trade Technology Council
 Digital connectivity Africa programming
 
 20/09/2021
-EU development agenda
+development agenda
 
 23/09/2021
 exchange view initiative Green Deal particular area circular economy zero pollution sustainable finance
@@ -503,7 +503,7 @@ datum protection safe datum transfer
 Green Deal
 
 28/02/2022
-current development digital policy particular Europe isupdate EU competition rule tool digital age
+current development digital policy particular Europe isupdate competition rule tool digital age
 
 15/03/2022
 Microsoft approach Europe ’s digital plan
@@ -521,7 +521,7 @@ Code Practice Privacy Shield DSA political advertising
 digital policy
 
 02/06/2022
-participant ’s EU effort prevent tackle child sexual abuse
+participant ’s effort prevent tackle child sexual abuse
 
 16/06/2022
 disinformation
@@ -533,7 +533,7 @@ data protection privacy workstream concern war crime Ukraine
 disinformation
 
 27/06/2022
-EU US Trade Technology Council TTC
+US Trade Technology Council TTC
 
 07/07/2022
 Ukraine war crime
@@ -575,7 +575,7 @@ large language model search
 data protection AI
 
 06/06/2023
-EU policy regulatory measure accessibility Microsoft accessibility relate policy initiative
+policy regulatory measure accessibility Microsoft accessibility relate policy initiative
 
 29/06/2023
 technological development AI Cloud Cybersecurity Privacy Public Sector
@@ -605,7 +605,7 @@ tech russian independent medium
 roundtable national authority election
 
 24/05/2024
-fact Fiction combat disinformation deepfake ahead EU election Microsoft Roundtable Luncheon eui sou2024
+fact Fiction combat disinformation deepfake ahead election Microsoft Roundtable Luncheon eui sou2024
 
 04/06/2024
 competition AI wide tech sector
@@ -614,7 +614,7 @@ competition AI wide tech sector
 artificial intelligence election disinformation
 
 02/07/2024
-EU US cooperation Trade Technology Council Microsoft ’s support Ukraine fight disinformation
+US cooperation Trade Technology Council Microsoft ’s support Ukraine fight disinformation
 
 02/07/2024
 EU ’s competitiveness transatlantic relationship
@@ -629,7 +629,7 @@ physical meeting Discussion Microsoft could support DG TAXUD general go forward
 discuss late activity consumer area particular Digital Fairness Act
 
 22/01/2025
-EU tech agenda
+tech agenda
 
 06/02/2025
 first meeting Commission Signatories implementation Code conduct counter illegal hate speech online code conduct integration DSA framework

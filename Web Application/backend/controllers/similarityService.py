@@ -5,6 +5,7 @@ from datetime import datetime
 import numpy as np
 from collections import Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
+from math import sqrt
 
 def parse_date(date_str):
     return datetime.strptime(date_str, "%d/%m/%Y")
@@ -25,6 +26,22 @@ def extract_blocks_within_dates(text, start_date, end_date):
         i += 2
     return '\n'.join(filtered)
 
+def cosine_similarity(vec1, vec2):
+    all_words = set(vec1.keys()).union(vec2.keys())
+    dot_product = sum(vec1.get(w, 0) * vec2.get(w, 0) for w in all_words)
+    norm1 = sqrt(sum(v ** 2 for v in vec1.values()))
+    norm2 = sqrt(sum(v ** 2 for v in vec2.values()))
+    if norm1 == 0 or norm2 == 0:
+        return 0.0
+    return dot_product / (norm1 * norm2)
+
+def jaccard_similarity(vec1, vec2):
+    intersection = sum(min(vec1.get(w, 0), vec2.get(w, 0)) for w in set(vec1) | set(vec2))
+    union = sum(max(vec1.get(w, 0), vec2.get(w, 0)) for w in set(vec1) | set(vec2))
+    if union == 0:
+        return 0.0
+    return intersection / union
+
 def main():
     input_data = json.load(sys.stdin)
     start_date = parse_date(input_data.get("startDate"))
@@ -32,8 +49,6 @@ def main():
     lobbyist_ids = set(input_data.get("lobbyist_ids", []))
 
     input_dir = 'Lemmatized_Files'
-
-    # ✅ Cerca solo i file il cui nome (senza estensione) è in lobbyist_ids
     all_files = sorted([
         f for f in os.listdir(input_dir)
         if f.endswith('.txt') and os.path.splitext(f)[0] in lobbyist_ids
@@ -65,6 +80,8 @@ def main():
     threshold = mean + 0.5 * std
     selected_indices = np.where(tfidf_scores >= threshold)[0]
     selected_words = set(feature_names[i] for i in selected_indices)
+    selected_keywords = sorted(selected_words)
+
 
     file_vectors = {}
     for filename, text in D_triple_prime.items():
@@ -80,13 +97,19 @@ def main():
         for j in range(i + 1, len(file_list)):
             file2, vec2 = file_list[j]
             common_words = set(vec1.keys()) & set(vec2.keys())
-            similarity_score = sum(min(vec1[w], vec2[w]) for w in common_words)
+
+            sim_raw = sum(min(vec1[w], vec2[w]) for w in common_words)
+            sim_cosine = cosine_similarity(vec1, vec2)
+            sim_jaccard = jaccard_similarity(vec1, vec2)
+
             shared_keywords = sorted(common_words)[:8]
 
             results.append({
                 "lobbyist1": os.path.splitext(file1)[0],
                 "lobbyist2": os.path.splitext(file2)[0],
-                "similarity_raw": similarity_score,
+                "similarity_raw": sim_raw,
+                "similarity_cosine": round(sim_cosine, 4),
+                "similarity_jaccard": round(sim_jaccard, 4),
                 "shared_keywords": shared_keywords
             })
 
@@ -96,9 +119,12 @@ def main():
     range_sim = max_sim - min_sim if max_sim > min_sim else 1
 
     for r in results:
-        r["similarity"] = round((r.pop("similarity_raw") - min_sim) / range_sim, 4)
+        r["similarity_NumJaccard"] = round((r.pop("similarity_raw") - min_sim) / range_sim, 4)
 
-    json.dump({"similarities": results}, sys.stdout)
+    json.dump({
+        "similarities": results,
+        "selected_keywords": selected_keywords
+    }, sys.stdout)
 
 if __name__ == "__main__":
     main()

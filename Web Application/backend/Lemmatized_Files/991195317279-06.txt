@@ -5,7 +5,7 @@ salesforce
 dsm
 
 12/11/2015
-ongoing negociation conclusion framework EU US
+ongoing negociation conclusion framework US
 
 01/12/2015
 dsm strategy
@@ -29,7 +29,7 @@ competition
 GDPR
 
 03/03/2017
-discussion recent Communication Building Data Economy EU US Privacy Shild
+discussion recent Communication Building Data Economy US Privacy Shild
 
 07/12/2017
 Privacy Shield International Data Flows
@@ -74,7 +74,7 @@ general presentation activity Group
 DSA DMA
 
 26/04/2022
-Digital regulation namely AI Act EU Data Act ongoing work within ENISA cybersecurity certification cloud service
+Digital regulation namely AI Act Data Act ongoing work within ENISA cybersecurity certification cloud service
 
 07/06/2022
 AI Act Data Act Cybersecurity Cloud

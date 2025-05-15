@@ -17,7 +17,7 @@ Safe Harbour
 data protection
 
 08/04/2016
-EU US Privacy Shield
+US Privacy Shield
 
 08/04/2016
 platform DSM
@@ -44,7 +44,7 @@ dsm
 Privacy Shield GDPR implementation
 
 23/03/2017
-EU US Privacy shield Implementation GDPR e Privacy Regulation
+US Privacy shield Implementation GDPR e Privacy Regulation
 
 21/09/2017
 meeting discuss COM communication taxation digital sector adopt week
@@ -92,7 +92,7 @@ AI incl draft ethic guideline ePrivacy GDPR cybersecurity Next Generation intern
 general state play trade business China
 
 21/03/2019
-EU US trade WTO international datum flow
+US trade WTO international datum flow
 
 21/03/2019
 tech policy
@@ -122,16 +122,16 @@ Digital prioritie Europe
 DSA DMA AI Privacy datum flow
 
 19/02/2021
-EU policy file relevant technology industry transatlantic trade data flow Digital Decade digital green Artificial Intelligence Digital Services Act Digital Markets Act
+policy file relevant technology industry transatlantic trade data flow Digital Decade digital green Artificial Intelligence Digital Services Act Digital Markets Act
 
 19/02/2021
 DSA DMA AI
 
 25/02/2021
-EU US trade relation Trade Policy Review Digital trade include EUs position e commerce Digital taxation
+US trade relation Trade Policy Review Digital trade include EUs position e commerce Digital taxation
 
 25/02/2021
-trade policy review focus digital trade Digital tax EU US trade relation focus EU US trade technology Council
+trade policy review focus digital trade Digital tax US trade relation focus US trade technology Council
 
 07/06/2021
 meet global debate government access datum notably within OECD
@@ -152,10 +152,10 @@ Data Cloud
 product liability directive
 
 06/10/2022
-Data Act AI Act EU US Trade Technology Council
+Data Act AI Act US Trade Technology Council
 
 14/11/2023
-Artificial Intelligence EU US cooperation cyber security
+Artificial Intelligence US cooperation cyber security
 
 24/01/2024
 Digital issue

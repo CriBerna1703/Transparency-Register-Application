@@ -2,7 +2,7 @@
 Digital Market Innovation
 
 12/02/2015
-core field activity Bayer CropScience key regulatory framework concern regard implementation Plant Protection Products Regulation 1107/2009 Maximum Residues Level Regulation 396/2005 impact EU regulation trade agricultural product product availability farmer impact hazard base approach regulatory cut off Endocrine Disruptors Neonicotinoids bee health
+core field activity Bayer CropScience key regulatory framework concern regard implementation Plant Protection Products Regulation 1107/2009 Maximum Residues Level Regulation 396/2005 impact regulation trade agricultural product product availability farmer impact hazard base approach regulatory cut off Endocrine Disruptors Neonicotinoids bee health
 
 02/03/2015
 presentation Bayers activitie datum science big data field presentation relevant Horizon 2020 RDI support area
@@ -149,7 +149,7 @@ food security sustainable food system transformation
 Chemicals Strategy Sustainability
 
 17/02/2024
-late development EU climate policy
+late development climate policy
 
 10/10/2024
 EB Summit
@@ -158,7 +158,7 @@ EB Summit
 simplification
 
 05/02/2025
-EU health policy
+health policy
 
 15/02/2025
-introductory meeting trade policy focus EU US
+introductory meeting trade policy focus US

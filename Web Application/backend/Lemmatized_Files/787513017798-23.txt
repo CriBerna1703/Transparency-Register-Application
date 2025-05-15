@@ -41,7 +41,7 @@ IPR Standards problem China
 5 g internet thing SEP standardization
 
 26/05/2020
-discussion backdrop recent Industrial Strategy Digital Strategy focus development strategic capacity key digital infrastructure 5 G EU
+discussion backdrop recent Industrial Strategy Digital Strategy focus development strategic capacity key digital infrastructure 5 g
 
 04/11/2020
 Digital issue
@@ -68,4 +68,4 @@ IP
 exchange view 6 g mobile technology development
 
 05/02/2025
-challenge standardization technology wireless video standard EU context simplification
+challenge standardization technology wireless video standard context simplification

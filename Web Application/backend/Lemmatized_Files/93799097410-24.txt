@@ -11,7 +11,7 @@ EFSI
 Dialogue theCOM satellite operator
 
 04/12/2015
-issue spectrum allocation satlellite communication GOVSATCOME Future operation EU Space Programmes Galileo Egnos
+issue spectrum allocation satlellite communication GOVSATCOME Future operation Space Programmes Galileo Egnos
 
 13/01/2016
 Space Strategy Europe
@@ -77,7 +77,7 @@ presentation SES activity
 presentation SES activity
 
 07/12/2022
-EU sanction RT channel
+sanction RT channel
 
 28/02/2023
 space Policy

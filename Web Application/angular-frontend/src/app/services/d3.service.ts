@@ -450,7 +450,7 @@ export class D3Service {
     this.simulation = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links)
       .id((d: any) => d.id)
-      .distance((d: any) => 150 - (d.similarity ?? 0) * 10)
+      .distance((d: any) => 300 - (d.similarity ?? 0) * 100)
     )
     .force('charge', this.chargeForce)
     .force('center', d3.forceCenter(width / 2, height / 2))
@@ -609,23 +609,22 @@ export class D3Service {
   }
 
   private getLinkColor(sim: number): string {
-    const greenShades = [
-      '#d7f9e5',
-      '#b8f2cd', 
-      '#94e8b1', 
-      '#6cda91', 
-      '#4ac873', 
-      '#34b25f', 
-      '#23974b', 
-      '#157b3b', 
-      '#085c28', 
-      '#00210c'  
+    const shades = [
+      '#d7f9e5', // 0.00–0.20
+      '#94e8b1', // 0.20–0.40
+      '#4ac873', // 0.40–0.60
+      '#23974b', // 0.60–0.80
+      '#085c28'  // 0.80–1.00
     ];
 
-    const adjustedSim = Math.max(0, Math.min(1, (sim - 0.01) / 0.99));
-    const index = Math.floor(adjustedSim * 10);
-    return greenShades[Math.min(index, 9)];
+    if (sim < 0.20) return shades[0];
+    if (sim < 0.40) return shades[1];
+    if (sim < 0.60) return shades[2];
+    if (sim < 0.80) return shades[3];
+    return shades[4];
   }
+
+
   
 
   public updateChargeStrength(strength: number): void {

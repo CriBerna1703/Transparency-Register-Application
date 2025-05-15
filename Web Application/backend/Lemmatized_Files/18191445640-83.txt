@@ -29,7 +29,7 @@ role biogas climate neutral energy sector
 sustainable Smart Mobility strategy
 
 08/03/2021
-EU taxonomy draft delegate act
+taxonomy draft delegate act
 
 09/09/2021
 progress make establishment biomethanealliance priority
@@ -50,7 +50,7 @@ CO2 Standards heavy duty vehicle
 co2 standard truck
 
 09/03/2023
-REPower EU
+repower
 
 25/04/2023
 energy environmental digital challenge time
@@ -65,4 +65,4 @@ role biomethane modelling
 state play biogas biomethane production Europe
 
 15/01/2025
-introduce potential EU policy biogase
+introduce potential policy biogase

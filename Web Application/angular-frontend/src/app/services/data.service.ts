@@ -91,7 +91,7 @@ export class DataService {
   getMeetingByLobbyistAndNumber(lobbyistId: string, meetingNumber: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/meetings/${lobbyistId}/${meetingNumber}`);
   }
-
+  
   getSimilarities(payload: { startDate: string; endDate: string; lobbyist_ids: string[] }): Observable<any> {
     return this.http.post(`${this.apiUrl}/similarities`, payload);
   }

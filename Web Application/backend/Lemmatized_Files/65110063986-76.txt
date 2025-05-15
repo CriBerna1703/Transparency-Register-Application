@@ -68,7 +68,7 @@ cybersecurity
 cybersecurity
 
 19/10/2016
-EU financial service regulation
+financial service regulation
 
 09/11/2016
 financial service agenda
@@ -212,7 +212,7 @@ sustainable finance
 Capital Markets
 
 18/11/2022
-MiFIR EU bond market liquidity
+MiFIR bond market liquidity
 
 18/07/2023
 distribution retail financial product
@@ -224,7 +224,7 @@ T1 Settlement Cycle MifiR
 banking regulation Corporate Sustainability Due Diligence Directive
 
 09/01/2025
-EU UK Financial Regulatory Forum
+UK Financial Regulatory Forum
 
 14/01/2025
 commodity derivative

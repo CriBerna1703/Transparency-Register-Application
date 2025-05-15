@@ -53,13 +53,13 @@ ngeu financing programme
 Discussion Capital Markets
 
 30/06/2021
-Next Generation EU ngeu
+Next Generation ngeu
 
 17/09/2021
 CMU consolidated tape
 
 25/10/2021
-Next Generation EU
+Next generation
 
 17/11/2021
 MiFIR topic
@@ -74,7 +74,7 @@ clearing
 list Act initiative MiFIR review
 
 26/04/2022
-EU Clearing Strategy ccp
+Clearing Strategy ccp
 
 10/06/2022
 consolidated tape
@@ -92,7 +92,7 @@ euronext share concern relation ongoing negotiation MIFID R review
 transparent market
 
 27/04/2023
-EU capital market development
+capital market development
 
 05/05/2023
 MiFIR EMIR

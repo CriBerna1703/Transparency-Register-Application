@@ -74,13 +74,13 @@ Credit Rating Agencies Europe
 CMU objective
 
 01/12/2017
-introductory remark roundtable EU financial industry AFISMA European Chamber Commerce financial reform banking
+introductory remark roundtable financial industry AFISMA European Chamber Commerce financial reform banking
 
 24/01/2018
 Trans Adriatic Pipeline project
 
 25/01/2018
-EU action help reduce TB
+action help reduce TB
 
 19/04/2018
 Trade services e commerce
@@ -89,7 +89,7 @@ Trade services e commerce
 benchmark
 
 19/09/2018
-Discussion EU accession business environment Serbia
+discussion accession business environment Serbia
 
 25/10/2018
 PRIIPs review
@@ -110,7 +110,7 @@ Cannabis derive product medicine
 Capital Market International Role Euro
 
 11/02/2019
-discussion current EU Policy
+discussion current policy
 
 13/02/2019
 investment Firm Review IFR
@@ -170,7 +170,7 @@ Green Deal low carbon aluminium
 EDAP
 
 21/01/2021
-regulatory cooperation EU US
+regulatory cooperation US
 
 31/03/2021
 introductory meeting review Benchmark Regulation
@@ -215,7 +215,7 @@ Digital financial service
 Retail Investment Strategy
 
 07/12/2022
-EU sanction RT channel
+sanction RT channel
 
 25/01/2023
 ifr reclassification MiFIR review ccp payment order flow
@@ -257,4 +257,4 @@ Benchmark Regulation
 Savings Investments
 
 13/02/2025
-EU health policy
+health policy

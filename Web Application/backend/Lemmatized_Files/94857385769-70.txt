@@ -8,7 +8,7 @@ Discussion CCCTB also representative BP Wolters Kluwer
 Discussion CCCTB also representative BP Wolters Kluwer
 
 22/11/2018
-taxonomy EU IFRS
+taxonomy ifrs
 
 16/04/2019
 la compétitivité de l industrie européenne la transition énergétique les nouvelle technology telle que l hydrogène et le CCUS
@@ -92,7 +92,7 @@ hydrogen
 role hydrogen repowereu
 
 02/12/2022
-EU Japan energy relation
+Japan energy relation
 
 10/01/2023
 taxonomy ESG rating csrd
@@ -116,7 +116,7 @@ Meeting CCS Europe member CCS strategy
 hydrogen
 
 23/02/2024
-presentation CCS industry current challenge development order reach EU climate target
+presentation CCS industry current challenge development order reach climate target
 
 09/04/2024
 decarbonization
@@ -143,7 +143,7 @@ energy market
 transport mobility priority funding Decarbonization solution
 
 09/09/2024
-physical meeting Exchange EU Taxation Customs policy priority
+physical meeting Exchange Taxation Customs policy priority
 
 08/10/2024
 general discussion taxonomy CSRD deployment

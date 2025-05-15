@@ -81,3 +81,12 @@ input:checked + .slider:before {
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
+
+.metric-selector {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.metric-selector label {
+  margin-right: 15px;
+  cursor: pointer;
+}

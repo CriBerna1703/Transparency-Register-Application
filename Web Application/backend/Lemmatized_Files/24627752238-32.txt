@@ -62,7 +62,7 @@ copyright
 telco review
 
 12/01/2016
-EU telecom review
+telecom review
 
 18/03/2016
 Digital Market
@@ -110,4 +110,4 @@ EUs digital ambition 2030
 digital policy
 
 15/01/2025
-hear interest representative view EU competition telecom policy perspective clean competitive transition policy
+hear interest representative view competition telecom policy perspective clean competitive transition policy

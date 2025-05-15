@@ -86,7 +86,7 @@ financial service agenda
 CRR FRTB
 
 01/12/2017
-introductory remark roundtable EU financial industry AFISMA European Chamber Commerce financial reform banking
+introductory remark roundtable financial industry AFISMA European Chamber Commerce financial reform banking
 
 04/09/2018
 datum protection free flow datum research programme
@@ -161,7 +161,7 @@ economic outlook Basel III Banking
 Basel III
 
 23/09/2021
-economic recovery Situation EU financial sector sustainable finance
+economic recovery Situation financial sector sustainable finance
 
 29/09/2021
 MiFID MiFIR
@@ -203,7 +203,7 @@ ccp
 exchange view energy security impact economy
 
 06/09/2022
-energy situation EU finance green transition
+energy situation finance green transition
 
 08/09/2022
 Basel III
@@ -242,7 +242,7 @@ CCP UK India Retail Investment Strategy
 banking Retail Investment Strategy Digital Euro
 
 22/09/2023
-MIFIR OTC derivative identifier EU capital market regulatory framework
+MIFIR OTC derivative identifier capital market regulatory framework
 
 28/11/2023
 emir 3 indian CCPs Settlement efficiency Retail Investment Strategy
@@ -254,7 +254,7 @@ energy transition
 Basel III standard implementation
 
 13/12/2023
-exchange view EU banking finance policy include Basel III legislation
+exchange view banking finance policy include Basel III legislation
 
 21/12/2023
 finance renewable energy
@@ -272,10 +272,10 @@ dto exemption indian ccp NSFR
 decarbonization road transport
 
 06/12/2024
-investment sustainable liquid fuel production EU
+investment sustainable liquid fuel production
 
 09/01/2025
-EU UK Financial Regulatory Forum
+UK Financial Regulatory Forum
 
 10/01/2025
 EMIR

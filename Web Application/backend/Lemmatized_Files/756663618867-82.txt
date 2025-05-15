@@ -29,4 +29,4 @@ future connectivity
 telecom policy
 
 12/10/2023
-EU 2030 connectivity target current dynamic internet content distribution edge cloud
+2030 connectivity target current dynamic internet content distribution edge cloud

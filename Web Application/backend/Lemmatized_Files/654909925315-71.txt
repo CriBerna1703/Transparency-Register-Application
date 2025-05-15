@@ -2,7 +2,7 @@
 service package
 
 05/09/2017
-EU aviation
+aviation
 
 05/03/2018
 Meeting Task Force Preparation Conduct theNegotiations United Kingdom Article 50 TEU
@@ -11,7 +11,7 @@ Meeting Task Force Preparation Conduct theNegotiations United Kingdom Article 50
 Meeting Task Force Preparation Conduct Negotiations United Kingdom Article 50 TEU
 
 11/07/2019
-EU Transport policy
+transport policy
 
 02/04/2020
 covid 19 economic impact tourism industry
@@ -32,19 +32,19 @@ Pact Skills roundtable tourism sector
 tourism sector covid challenge DMA
 
 22/11/2021
-EU Digital covid Certificate travel restriction
+Digital covid Certificate travel restriction
 
 07/09/2022
 aviation
 
 22/09/2022
-EU tourism policy transition pathway
+tourism policy transition pathway
 
 25/10/2022
 regulation 1008/2008
 
 28/02/2023
-EU tourism ecosystem sustainable tourism
+tourism ecosystem sustainable tourism
 
 02/05/2023
 Package Travel Directive PTD
@@ -53,7 +53,7 @@ Package Travel Directive PTD
 role travel tourism sector policy agenda next Commission
 
 20/03/2024
-Aviation Summit EU 2040 target implication air transport carbon market diplomacy ensure competitiveness prevent carbon
+Aviation Summit 2040 target implication air transport carbon market diplomacy ensure competitiveness prevent carbon
 
 21/03/2024
 sustainable tourism labour skill shortage tourism sector

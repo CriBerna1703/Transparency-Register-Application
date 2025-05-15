@@ -83,7 +83,7 @@ ets
 Situation Steel Industry Europe ETS
 
 23/06/2016
-situation EU steel industry
+situation steel industry
 
 06/07/2016
 steel
@@ -116,7 +116,7 @@ global economic outlook
 State Steel industry
 
 24/04/2017
-exchange view EU Tax agenda
+exchange view tax agenda
 
 19/05/2017
 current issue steel industry
@@ -134,10 +134,10 @@ situation steel sector
 taxation competition
 
 25/01/2018
-State EU steel industry
+state steel industry
 
 06/03/2018
-Meeting Mr Lakshmi Mittal EU industrial trade policy
+Meeting Mr Lakshmi Mittal industrial trade policy
 
 07/03/2018
 FP9
@@ -161,7 +161,7 @@ energy
 circular Economy Environmental Footprint Waste Harmonized Classification Labelling
 
 22/11/2018
-taxonomy EU IFRS
+taxonomy ifrs
 
 24/01/2019
 steel sector situation trade environment
@@ -218,10 +218,10 @@ covid 19 impact steel sector clean steel technology Europe ’s recovery plan ti
 recovery clean steelcarbon border adjustment
 
 14/07/2020
-covid 19 impact steel industry ArcelorMittal Carbon Emissions Reduction Roadmap EU safeguard measure steel EU ’s possible support clean steel Industrial alliance hydrogen energy intensive industry alliance
+covid 19 impact steel industry ArcelorMittal Carbon Emissions Reduction Roadmap safeguard measure steel EU ’s possible support clean steel Industrial alliance hydrogen energy intensive industry alliance
 
 10/09/2020
-EU industrial strategy
+industrial strategy
 
 08/12/2020
 Taxonomy Delegated Act
@@ -230,13 +230,13 @@ Taxonomy Delegated Act
 sustainable finance
 
 26/01/2021
-EU ETS Carbon Border Adjustment Mechanism Circular economy
+ETS Carbon Border Adjustment Mechanism Circular economy
 
 05/02/2021
 videoconference Exchange impact CBAM steel sector
 
 23/03/2021
-visit ArcelorMittal plant Gent context green transition EU Green Deal
+visit ArcelorMittal plant Gent context green transition Green Deal
 
 26/03/2021
 taxonomy Draft delegate act
@@ -293,7 +293,7 @@ impact Green transition steel industry
 visit ArcelorMittal steel plant Eisenhüttenstadt discussion labor market industry sector Short Time Work STW scheme Energy package fair transitionrecommendation industrial strategy job transition
 
 11/11/2022
-US Inflation Reduction Act IRA impact assessment comparison EU US value chain
+US Inflation Reduction Act IRA impact assessment comparison US value chain
 
 17/01/2023
 green transition impact steel sector
@@ -332,7 +332,7 @@ Clean Transition Dialogue Steel Sector
 meet WEF CEO Action Group Green Deal
 
 19/06/2024
-Competitiveness EU steel sector
+competitiveness steel sector
 
 05/07/2024
 physical meeting Meeting discuss CBAM improvement
@@ -344,7 +344,7 @@ presentation element need decarbonisation investment Europe next Commission
 Discussion CBAM steel industry
 
 23/07/2024
-risk EU steel industry specific focus decarbonisation
+risk steel industry specific focus decarbonisation
 
 09/09/2024
 raw material global gateway

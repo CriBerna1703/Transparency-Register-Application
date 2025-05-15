@@ -2,7 +2,7 @@
 meeting exchange view call Summer package
 
 08/04/2016
-future electricity market EU Electricity Market Design
+future electricity market Electricity Market Design
 
 27/09/2016
 energy policy
@@ -20,7 +20,7 @@ late development energy sector Spain Europe
 Clean Energy Islands
 
 21/02/2022
-spike energy price ec toolbox Fit 55 proposal EU taxonomy
+spike energy price ec toolbox Fit 55 proposal taxonomy
 
 27/04/2022
 electricity market design proposal spanish portuguese government
@@ -32,4 +32,4 @@ EMIR review clearing threshold
 energy derivative market
 
 12/05/2023
-discussion implementation REPower EU objective Portugal
+discussion implementation repower objective Portugal

@@ -2,7 +2,7 @@
 package travel directive
 
 22/04/2015
-meeting representative ECTAA Group Travel Agents Tour Operators Associations within EU
+meeting representative ECTAA Group Travel Agents Tour Operators Associations within
 
 13/09/2016
 common rule operation air service Computerised Reservation System
@@ -35,13 +35,13 @@ consumer protection application Package Travel Directive PTD exchange view updat
 ectaa presentation position paper Strategy restart travel tourism
 
 01/07/2021
-EU covid certificate
+covid certificate
 
 01/07/2021
 implementation Covid Certificate
 
 08/07/2021
-EU Digital covid certificate
+Digital covid certificate
 
 20/12/2022
 package travel sustainable tourism

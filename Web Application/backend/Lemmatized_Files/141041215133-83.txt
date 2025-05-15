@@ -2,7 +2,7 @@
 introductory meeting
 
 27/02/2015
-EU US Regulatory Agenda Financial Services
+US Regulatory Agenda Financial Services
 
 19/03/2015
 Market Infrastructure Regulation EMIR
@@ -14,13 +14,13 @@ Financial Services Policy
 market Financial Instruments directive
 
 05/10/2016
-EU bank mifid implementation EMIR
+bank mifid implementation EMIR
 
 19/01/2017
 EMIR CCP Financial Stability CMU
 
 23/01/2017
-call evidence focus EMIR review report requirements• FSB cpmi IOSCO work international level mainly resolution CCP RR EU CCP RR consistency
+call evidence focus EMIR review report requirements• FSB cpmi IOSCO work international level mainly resolution CCP RR CCP rr consistency
 
 28/03/2017
 EMIR Equivalence
@@ -62,7 +62,7 @@ technical follow meeting Commissioner ICE exchange trade derivative
 MiFID II
 
 26/04/2022
-EU Clearing Strategy ccp
+Clearing Strategy ccp
 
 27/06/2022
 energy market

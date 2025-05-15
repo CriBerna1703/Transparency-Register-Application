@@ -29,7 +29,7 @@ BAT
 energy policy
 
 22/06/2016
-revision EU ETS
+revision ETS
 
 12/09/2016
 energy sector derogation
@@ -44,7 +44,7 @@ energy
 energy
 
 28/03/2017
-EU ETS review
+ETS review
 
 25/04/2017
 Clean Energy Europeans package electricity market

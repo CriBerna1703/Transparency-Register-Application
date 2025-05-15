@@ -59,7 +59,7 @@ state play ETS process
 policy framework post 2020 review renewable energy directive market design
 
 30/06/2016
-2030 Climate Energy Framework revision EU ETS
+2030 Climate Energy Framework revision ETS
 
 07/09/2016
 market design
@@ -161,10 +161,10 @@ Green Deal Iberdrola strategic plan clean energy investment include renewable en
 Green Deal Iberdrola strategic plan clean energy investmentsinclude renewable energy hydrogen economic recovery
 
 01/12/2020
-EU Green Bond Standard
+Green Bond Standard
 
 01/12/2020
-EU Green Bond Standard
+Green Bond Standard
 
 18/03/2021
 Green Deal growth strategy
@@ -176,13 +176,13 @@ spanish measure electricity
 round table discussion regulation hydrogen market
 
 21/02/2022
-spike energy price ec toolbox Fit 55 proposal EU taxonomy
+spike energy price ec toolbox Fit 55 proposal taxonomy
 
 14/03/2022
 energy price RePowerEU
 
 30/03/2022
-Discussion Solar Power Europe views boost manufacture deployment solar pv EU
+Discussion Solar Power Europe views boost manufacture deployment solar pv
 
 07/04/2022
 meeting CEO Alliance Digitising Energy Action Plan
@@ -212,7 +212,7 @@ hydrogen bank proposal Green Deal Industrial Plan
 electricity market design
 
 07/03/2023
-exchange need regulatory support promote deployment manufacturing solar power EU EU ’s support solar energy far
+exchange need regulatory support promote deployment manufacturing solar power EU ’s support solar energy far
 
 31/03/2023
 Energy Transition Site visit Organiser Administração do Portos de Sines e algarve
@@ -227,7 +227,7 @@ presentation business group
 importance ofhydropower ensure electricity system flexibility application electricity market reform hydropow strengthen visibility hydropower one key source renewable energy
 
 12/05/2023
-discussion implementation REPower EU objective Portugal
+discussion implementation repower objective Portugal
 
 31/08/2023
 virtual exchange wind sector

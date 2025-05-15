@@ -35,7 +35,7 @@ trade issue
 call state play exchange view CBAM
 
 23/06/2021
-EU short term economic prospect CMU Basel III
+short term economic prospect CMU Basel III
 
 13/01/2022
 CMU EUROFI conference

@@ -3,8 +3,8 @@ FROM node:18
 # Installa Python e le librerie necessarie
 RUN apt-get update && \
     apt-get install -y python3 python3-pip python3-dev build-essential && \
-    pip3 install --upgrade pip && \
-    pip3 install numpy scikit-learn
+    pip3 install --upgrade pip --break-system-packages && \
+    pip3 install numpy scikit-learn --break-system-packages
 
 # Imposta la working directory per Node.js
 WORKDIR /app

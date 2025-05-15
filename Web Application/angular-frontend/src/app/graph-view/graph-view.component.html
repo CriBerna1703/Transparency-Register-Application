@@ -15,7 +15,7 @@
       <div class="spinner"></div>
     </div>
 
-    <!-- 🎛️ Pannello filtri (a sinistra) -->
+    <!-- Pannello filtri (a sinistra) -->
     <div style="
       position: absolute;
       top: 10px;
@@ -95,15 +95,99 @@
           id="maxThreshold"
           [min]="minThreshold"
           max="1"
-          step="0.01"
+          step="0.001"
           [(ngModel)]="maxThreshold"
           (input)="onMaxThresholdChange()"
           style="width: 100%;"
         />
       </div>
+      
+      <!-- Dropdown con checkbox -->
+      <div *ngIf="availableFilterOptions.length > 0" class="dropdown-wrapper" style="margin-top: 15px; position: relative;">
+        <label><strong>Filter by {{ graphType === 'interest' ? 'Field of Interest' : 'Keyword' }}</strong></label>
+
+        <!-- Bottone dropdown -->
+        <div (click)="dropdownOpen = !dropdownOpen"
+            style="border: 1px solid #ccc; border-radius: 4px; padding: 6px; background: white; cursor: pointer;">
+          {{ selectedFilterValues.length }} selected
+          <span style="float: right;">▼</span>
+        </div>
+
+        <!-- Contenuto del menu -->
+        <div *ngIf="dropdownOpen" style="
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          max-height: 200px;
+          overflow-y: auto;
+          background: white;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          z-index: 1000;
+          padding: 6px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        ">
+          <!-- Select All -->
+          <label style="display: block; margin-bottom: 5px; font-size: 13px;">
+          <input
+            type="checkbox"
+            [(ngModel)]="selectAllChecked"
+            (ngModelChange)="toggleAllFilters($event)"
+          />
+          <strong>Select All</strong>
+          </label>
+
+          <!-- Opzioni dinamiche -->
+          <label *ngFor="let option of availableFilterOptions" style="display: block; font-size: 13px; margin-bottom: 4px;">
+            <input
+              type="checkbox"
+              [ngModel]="selectedFilterValues.includes(option.id)"
+              (ngModelChange)="onFilterToggle(option.id, $event)"
+            />
+            {{ option.label }}
+          </label>
+        </div>
+      </div>
+
+      <!-- Selezione metrica per grafo testuale -->
+      <div *ngIf="graphType === 'text'" style="margin-top: 15px;">
+        <label style="display: block; margin-bottom: 5px;"><strong>Similarity Metric</strong></label>
+
+        <label style="display: block; margin-bottom: 4px;">
+          <input
+            type="radio"
+            name="similarityMetric"
+            value="similarity_cosine"
+            [(ngModel)]="selectedTextMetric"
+            (change)="updateGraph()"
+          /> Cosine 
+        </label>
+
+        <label style="display: block; margin-bottom: 4px;">
+          <input
+            type="radio"
+            name="similarityMetric"
+            value="similarity_jaccard"
+            [(ngModel)]="selectedTextMetric"
+            (change)="updateGraph()"
+          /> Jaccard 
+        </label>
+
+        <label style="display: block;">
+          <input
+            type="radio"
+            name="similarityMetric"
+            value="similarity_NumJaccard"
+            [(ngModel)]="selectedTextMetric"
+            (change)="updateGraph()"
+          /> Numerator Jaccard 
+        </label>
+      </div>
+
     </div>
 
-    <!-- 📋 Pannello campi in comune (a destra) -->
+    <!-- Pannello campi in comune (a destra) -->
     <div style="
       width: 180px;
       overflow-y: auto;

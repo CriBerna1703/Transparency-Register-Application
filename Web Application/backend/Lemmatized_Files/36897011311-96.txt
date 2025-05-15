@@ -11,7 +11,7 @@ CCP Recovery Resolution
 EMIR CRR CRD mifid 2
 
 26/04/2022
-EU Clearing Strategy ccp
+Clearing Strategy ccp
 
 13/02/2025
 clear

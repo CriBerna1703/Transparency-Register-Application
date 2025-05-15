@@ -2,7 +2,7 @@
 Financial Services Policy
 
 04/09/2015
-future banking customer identification EU transparency pricing
+future banking customer identification transparency pricing
 
 02/03/2016
 financial technology
@@ -29,7 +29,7 @@ dynamic Currency Conversion DCC
 transparent finance competitive payment market Europe
 
 08/09/2020
-EU retail paymentsstrategy
+retail paymentsstrategy
 
 29/03/2021
 retail payment IBAN discrimination
