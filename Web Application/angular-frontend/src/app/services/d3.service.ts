@@ -504,7 +504,7 @@ export class D3Service {
       .attr('stroke-width', 5)
       .attr('stroke', (d: any) => this.getLinkColor(d.similarity));
 
-    link.on('contextmenu', (event, d) => {
+    link.on('click', (event, d) => {
         event.preventDefault();
         event.stopPropagation();
         options?.onLinkRightClick?.(d);
@@ -540,6 +540,7 @@ export class D3Service {
         updateStyles();
       })
       .on('mouseover', function (event, d) {
+        if (options?.selectedNodes?.has(d.id)) return; // 👈 skip se selezionato
         d3.select(this).select('circle').attr('stroke', '#ff7f0e');
         d3.select(this).select('text').style('display', 'block');
       })
@@ -624,7 +625,9 @@ export class D3Service {
         const isSelectedLink = selectedLink &&
           ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
            (selectedLink.source === targetId && selectedLink.target === sourceId));
-           return isSelectedNode || isSelectedLink ? '#ff7f0e' : this.getLinkColor(d.similarity);
+
+          if (isSelectedLink) return 'red';
+          return isSelectedNode ? '#ff7f0e' : this.getLinkColor(d.similarity);
         });
   }
 
@@ -651,3 +654,6 @@ export class D3Service {
     }
   } 
 }
+
+
+

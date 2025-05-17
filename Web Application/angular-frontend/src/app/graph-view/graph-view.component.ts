@@ -265,7 +265,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         selectedNodes: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
         onRightClick: (d: any) => this.onNodeRightClick(d),
-        onLinkRightClick: (link: any) => this.onLinkRightClick(link)
+        onLinkRightClick: (link: any) => this.onLinkLeftClick(link)
       }
     );
   }
@@ -388,7 +388,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         selectedNodes: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
         onRightClick: (d: any) => this.onNodeRightClick(d),
-        onLinkRightClick: (link: any) => this.onLinkRightClick(link)
+        onLinkRightClick: (link: any) => this.onLinkLeftClick(link)
       }
     );
   }
@@ -412,31 +412,46 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.d3Service.updateForceGraphStyles(this.selectedNodes, this.selectedLink);
   }
 
-  public onLinkRightClick(link: any): void {
-    this.selectedLink = {
+  public onLinkLeftClick(link: any): void {
+      const clickedLink = {
       source: typeof link.source === 'object' ? link.source.id : link.source,
       target: typeof link.target === 'object' ? link.target.id : link.target,
     };
 
-    this.selectedSimilarity = typeof link.similarity === 'number' ? link.similarity : null;
+    // Verifica se è già selezionato
+    const isSameLink =
+      this.selectedLink &&
+      ((this.selectedLink.source === clickedLink.source && this.selectedLink.target === clickedLink.target) ||
+      (this.selectedLink.source === clickedLink.target && this.selectedLink.target === clickedLink.source));
 
-    const sourceNode = this.formattedMeetings.find(m => m.lobbyist_id === this.selectedLink!.source);
-    const targetNode = this.formattedMeetings.find(m => m.lobbyist_id === this.selectedLink!.target);
+    if (isSameLink) {
+      // Deseleziona
+      this.selectedLink = undefined;
+      this.selectedSimilarity = null;
+      this.commonFields = [];
+      this.sourceName = '';
+      this.targetName = '';
+    } else {
+      // Nuova selezione
+      this.selectedLink = clickedLink;
+      this.selectedSimilarity = typeof link.similarity === 'number' ? link.similarity : null;
 
-    if (sourceNode && targetNode) {
-      this.sourceName = sourceNode.lobbyist_name;
-      this.targetName = targetNode.lobbyist_name;
+      const sourceNode = this.formattedMeetings.find(m => m.lobbyist_id === clickedLink.source);
+      const targetNode = this.formattedMeetings.find(m => m.lobbyist_id === clickedLink.target);
+
+      this.sourceName = sourceNode?.lobbyist_name ?? '';
+      this.targetName = targetNode?.lobbyist_name ?? '';
 
       if (this.graphType === 'text') {
         const similarity = this.textSimilarities.find(s =>
-          (s.lobbyist1 === this.selectedLink!.source && s.lobbyist2 === this.selectedLink!.target) ||
-          (s.lobbyist1 === this.selectedLink!.target && s.lobbyist2 === this.selectedLink!.source)
+          (s.lobbyist1 === clickedLink.source && s.lobbyist2 === clickedLink.target) ||
+          (s.lobbyist1 === clickedLink.target && s.lobbyist2 === clickedLink.source)
         );
         this.commonFields = similarity?.shared_keywords || [];
       } else {
         Promise.all([
-          this.dataService.getLobbyistFieldOfInterest(sourceNode.lobbyist_id).toPromise(),
-          this.dataService.getLobbyistFieldOfInterest(targetNode.lobbyist_id).toPromise()
+          this.dataService.getLobbyistFieldOfInterest(clickedLink.source).toPromise(),
+          this.dataService.getLobbyistFieldOfInterest(clickedLink.target).toPromise()
         ])
         .then(([sFields, tFields]) => {
           const sSet = new Set((sFields as { field_id: number }[]).map(f => f.field_id));
@@ -449,12 +464,9 @@ export class GraphViewComponent implements OnInit, OnDestroy {
           this.commonFields = [];
         });
       }
-    } else {
-      this.commonFields = [];
-      this.sourceName = '';
-      this.targetName = '';
     }
 
+    // Aggiorna colori archi/nodi
     this.d3Service.updateForceGraphStyles(this.selectedNodes, this.selectedLink);
   }
 
