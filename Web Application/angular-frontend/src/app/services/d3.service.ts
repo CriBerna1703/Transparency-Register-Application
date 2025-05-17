@@ -446,18 +446,38 @@ export class D3Service {
     this.svg.call(this.zoomBehavior as any);
   
     this.chargeForce = d3.forceManyBody().strength(-100);
-  
+    const isolatedNodes = nodes.filter(n => n.degree === 0);
+    const totalIsolated = isolatedNodes.length;
+    this.chargeForce = d3.forceManyBody().strength(-300); // Maggiore repulsione
+
+
+    const centerX = width / 2;
+    const centerY = height / 2;
+    const radius = Math.min(width, height) + 100; // più adatto come raggio
+
+    isolatedNodes.forEach((node, i) => {
+      const angle = (2 * Math.PI * i) / totalIsolated;
+      node.targetX = centerX + radius * Math.cos(angle);
+      node.targetY = centerY + radius * Math.sin(angle);
+    });
+
     this.simulation = d3.forceSimulation(nodes)
-    .force('link', d3.forceLink(links)
-      .id((d: any) => d.id)
-      .distance((d: any) => 300 - (d.similarity ?? 0) * 100)
-    )
+      .force('link', d3.forceLink(links)
+        .id((d: any) => d.id)
+        .distance((d: any) => Math.max(100, 300 - (d.similarity ?? 0) * 200)) // evita distanze troppo brevi
+      )
     .force('charge', this.chargeForce)
-    .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('x', d3.forceX(width / 2).strength(0.05))
-    .force('y', d3.forceY(height / 2).strength(0.05))
-    .force('collide', d3.forceCollide(20));
-  
+    .force('center', d3.forceCenter(centerX, centerY))
+    .force('isolateX', d3.forceX((d: any) =>
+      d.degree === 0 ? d.targetX : centerX
+    ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
+    .force('isolateY', d3.forceY((d: any) =>
+      d.degree === 0 ? d.targetY : centerY
+    ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
+    .force('x', d3.forceX(centerX).strength(0.02)) // indebolita
+    .force('y', d3.forceY(centerY).strength(0.02)) // indebolita
+    .force('collide', d3.forceCollide(40)); // maggiore distanza tra nodi
+
     this.simulation.alpha(1).restart();
   
     const drag = d3.drag<SVGGElement, any>()
@@ -623,9 +643,6 @@ export class D3Service {
     if (sim < 0.80) return shades[3];
     return shades[4];
   }
-
-
-  
 
   public updateChargeStrength(strength: number): void {
     if (this.chargeForce && this.simulation) {

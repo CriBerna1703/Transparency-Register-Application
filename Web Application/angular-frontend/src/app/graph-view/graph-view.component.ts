@@ -64,6 +64,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public dropdownOpen: boolean = false;
   private minThresholdManuallySet = false;
   public selectAllChecked: boolean = true;
+  public showLeftPanel: boolean = true;
+  public showRightPanel: boolean = true;
   public selectedTextMetric: 'similarity_NumJaccard' | 'similarity_cosine' | 'similarity_jaccard' = 'similarity_cosine';
   selectedLink: { source: string; target: string } | undefined = undefined;
   filterGraphApplied: boolean = false;
@@ -169,8 +171,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   const allOptions = this.getAllInterestFields();
 
 
-    // ✅ Solo se è la prima volta o non hai selezioni
-    if (this.selectedFilterValues.length === 0) {
+    if (!this.filterGraphApplied && this.selectedFilterValues.length === 0) {
       this.selectedFilterValues = allOptions.map(opt => opt.id);
     }
 
@@ -179,7 +180,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   } else {
     const allOptions = this.selectedKeywords.map(w => ({ id: w, label: w }));
 
-    if (this.selectedFilterValues.length === 0) {
+    if (!this.filterGraphApplied && this.selectedFilterValues.length === 0) {
       this.selectedFilterValues = allOptions.map(opt => opt.id);
     }
 
@@ -229,7 +230,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     // 2. Calcolo soglia dinamica se non impostata manualmente
     if (!this.minThresholdManuallySet) {
       const simValues = allSimilarities.map(s => s.sim).sort((a, b) => a - b);
-      const thresholdIndex = Math.floor(simValues.length * 0.5);
+      const thresholdIndex = Math.floor(simValues.length * 0.8);
       this.minThreshold = simValues[thresholdIndex] ?? 0.1;
     }
 
@@ -240,7 +241,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
     for (const s of allSimilarities) {
       if (s.sim >= this.minThreshold && s.sim <= this.maxThreshold &&
-        (this.selectedFilterValues.length === 0 || s.sharedFieldIds.some(id => this.selectedFilterValues.includes(id)))) {
+        (s.sharedFieldIds.some(id => this.selectedFilterValues.includes(id)))) {
         links.push({
           source: s.source,
           target: s.target,
@@ -287,11 +288,15 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       return `${day}/${month}/${year}`;
     };
 
+
+
     const payload = {
       startDate: formatDate(this.startDate),
       endDate: formatDate(this.endDate),
       lobbyist_ids: this.formattedMeetings.map(m => m.lobbyist_id)
     };
+
+
 
     this.dataService.getSimilarities(payload).subscribe({
       next: response => {
@@ -313,7 +318,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
             .filter((v): v is number => typeof v === 'number' && v > 0)
             .sort((a, b) => a - b);
 
-          const index = Math.floor(values.length * 0.5);
+          const index = Math.floor(values.length * 0.8);
           this.minThreshold = values[index] ?? 0.1;
         }
 
@@ -325,7 +330,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
           this.selectedFilterValues = this.availableFilterOptions.map(opt => opt.id);
         } 
 
-        // 🔁 Richiama updateGraph per aggiornare grafo e dropdown
         this.updateGraph();
       },
       error: error => {
@@ -346,7 +350,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         .map(sim => sim[this.selectedTextMetric])
         .filter((v): v is number => typeof v === 'number' && v > 0)
         .sort((a, b) => a - b);
-      const index = Math.floor(values.length * 0.5);
+      const index = Math.floor(values.length * 0.8);
       this.minThreshold = values[index] ?? 0.1;
     }
 
@@ -358,7 +362,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         value >= this.minThreshold &&
         value <= this.maxThreshold &&
         (
-          this.selectedFilterValues.length === 0 ||
           sim.shared_keywords?.some(keyword => this.selectedFilterValues.includes(keyword))
         )
       ) {
@@ -548,10 +551,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
   public applyFilters(): void {
     this.filterGraphApplied = true;
-    if(this.filterGraphApplied){
-      this.filterGraphApplied = false;
-      this.updateGraph();
-    }
+    this.updateGraph();
   }
 
   ngAfterViewInit(): void {
