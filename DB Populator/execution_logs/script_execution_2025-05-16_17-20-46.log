@@ -1,0 +1,8 @@
+2025-05-16 17:20:46,427 - INFO - Log salvato in: execution_logs\script_execution_2025-05-16_17-20-46.log
+2025-05-16 17:20:46,427 - INFO - Inizio esecuzione script principale.
+2025-05-16 17:20:46,427 - INFO - Step 4: Elaborazione dei lobbisti.
+2025-05-16 17:20:46,461 - INFO - package: mysql.connector.plugins
+2025-05-16 17:20:46,461 - INFO - plugin_name: caching_sha2_password
+2025-05-16 17:20:46,462 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-16 17:20:46,485 - INFO - Processing lobbyist ID: 07483302972-25
+2025-05-16 17:22:46,707 - ERROR - Errore durante l'elaborazione dei lobbisti: 1264 (22003): Out of range value for column 'annual_cost_estimate_min' at row 1

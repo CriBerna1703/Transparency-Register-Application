@@ -23,7 +23,7 @@ export class AppComponent {
   isOverviewCollapsed = true;
   isControlPanelCollapsed = false;
   isBottomCollapsed = false;
-  isHistogramPanelCollapsed = false;
+  isHistogramPanelCollapsed = true;
   labelSize = 14;
   zoomLevel = 100;
   showRepresentatives = true;
@@ -52,6 +52,7 @@ export class AppComponent {
     this.isOverviewCollapsed = true;
     this.isFilterCollapsed = true;
     this.filterService.showMeetings();
+    this.setActiveTab('overview');
   }
 
   collapseBottom() {
@@ -99,7 +100,6 @@ export class AppComponent {
   public createVisualization(): void {
     if (this.temporalViewComponent) {
       this.temporalViewComponent.createVisualization();
-      this.setActiveTab('overview');
     }
   }
   
@@ -111,6 +111,7 @@ export class AppComponent {
     if (entity.type === 'lobbyist' || entity.type === 'meeting') {
       this.selectedInfoEntity = entity;
     } else if (entity.type === 'representative' || entity.type === 'directorate') {
+      this.isHistogramPanelCollapsed = false;
       this.selectedHistogramEntity = entity;
     }
   }
@@ -119,7 +120,8 @@ export class AppComponent {
     this.activeTab = tab;
     
     if (tab === 'overview') {
-        setTimeout(() => this.overviewComponent?.updateHistogram(), 0);
+      this.isBottomCollapsed = false;
+      setTimeout(() => this.overviewComponent?.updateHistogram(), 0);
     }
   }
 

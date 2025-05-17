@@ -12,7 +12,7 @@ import { MeetingSummaryComponent } from '../meeting-summary/meeting-summary.comp
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent implements OnInit {
-  zoomLevel: number = 500;
+  zoomLevel: number = 900;
   selectedAggregation: string = 'month';
   aggregationOptions = [
     { value: 'month', label: 'Month' },

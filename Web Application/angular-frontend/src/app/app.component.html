@@ -1,4 +1,4 @@
-<div class="overlay" *ngIf="!isOverviewCollapsed"></div>
+<div class="overlay" *ngIf="!isOverviewCollapsed || !isFilterCollapsed"></div>
 <div class="container" [class.filter-collapsed]="isFilterCollapsed">
   <div class="toggle-btn" (click)="toggleFilter()">
     {{ isFilterCollapsed ? '❯' : '❮' }}
@@ -43,7 +43,7 @@
         <app-info-tabs [selectedEntity]="selectedInfoEntity"></app-info-tabs>
       </div>
     </div>   
-    <button (click)="collapseBottom()" class="bottom-panel-toggle">
+    <button [style.visibility]="activeTab === 'graph' ? 'visible' : 'hidden'" (click)="collapseBottom()" class="bottom-panel-toggle">
       <span class="icon-rotate">
         {{ isBottomCollapsed ? '❯' : '❮' }}
       </span>

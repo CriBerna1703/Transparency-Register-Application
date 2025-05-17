@@ -1,0 +1,1863 @@
+2025-05-16 00:07:02,286 - INFO - Log salvato in: execution_logs\script_execution_2025-05-16_00-07-02.log
+2025-05-16 00:07:02,286 - INFO - Inizio esecuzione script principale.
+2025-05-16 00:07:02,286 - INFO - Step 1: Backup del database e troncamento delle tabelle.
+2025-05-16 00:07:02,321 - INFO - package: mysql.connector.plugins
+2025-05-16 00:07:02,321 - INFO - plugin_name: caching_sha2_password
+2025-05-16 00:07:02,322 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-16 00:07:02,404 - INFO - Backup del database completato: db_history\backup_2025-05-16_00-07-02.sql
+2025-05-16 00:07:02,524 - INFO - Backup e troncamento completati con successo.
+2025-05-16 00:07:02,524 - INFO - Step 2: Estrazione dei rappresentanti della commissione.
+2025-05-16 00:07:05,512 - INFO - Estrazione dei rappresentanti completata.
+2025-05-16 00:07:05,512 - INFO - Step 3: Raccolta degli ID dei lobbisti.
+2025-05-16 00:07:05,513 - INFO - Scraping letter A...
+2025-05-16 00:07:58,361 - INFO - Scraping letter B...
+2025-05-16 00:08:20,802 - INFO - Scraping letter C...
+2025-05-16 00:08:58,440 - INFO - Scraping letter D...
+2025-05-16 00:09:16,149 - INFO - Scraping letter E...
+2025-05-16 00:10:17,666 - INFO - Scraping letter F...
+2025-05-16 00:10:50,650 - INFO - Scraping letter G...
+2025-05-16 00:11:04,537 - INFO - Scraping letter H...
+2025-05-16 00:11:15,479 - INFO - Scraping letter I...
+2025-05-16 00:11:43,490 - INFO - Scraping letter J...
+2025-05-16 00:11:47,781 - INFO - Scraping letter K...
+2025-05-16 00:11:55,723 - INFO - Scraping letter L...
+2025-05-16 00:12:06,526 - INFO - Scraping letter M...
+2025-05-16 00:12:22,413 - INFO - Scraping letter N...
+2025-05-16 00:12:34,901 - INFO - Scraping letter O...
+2025-05-16 00:12:45,234 - INFO - Scraping letter P...
+2025-05-16 00:13:03,050 - INFO - Scraping letter Q...
+2025-05-16 00:13:04,753 - INFO - Scraping letter R...
+2025-05-16 00:13:17,872 - INFO - Scraping letter S...
+2025-05-16 00:13:59,486 - INFO - Scraping letter T...
+2025-05-16 00:14:20,552 - INFO - Scraping letter U...
+2025-05-16 00:14:32,035 - INFO - Scraping letter V...
+2025-05-16 00:14:46,142 - INFO - Scraping letter W...
+2025-05-16 00:14:54,572 - INFO - Scraping letter X...
+2025-05-16 00:14:55,331 - INFO - Scraping letter Y...
+2025-05-16 00:14:56,701 - INFO - Scraping letter Z...
+2025-05-16 00:14:59,539 - INFO - Raccolta ID lobbisti completata.
+2025-05-16 00:14:59,539 - INFO - Step 4: Elaborazione dei lobbisti.
+2025-05-16 00:14:59,633 - INFO - Processing lobbyist ID: 000075850398-74
+2025-05-16 00:15:00,270 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:00,288 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:00,288 - INFO - Processing lobbyist ID: 000104242849-49
+2025-05-16 00:15:00,804 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:00,856 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:00,856 - INFO - Processing lobbyist ID: 000142439924-52
+2025-05-16 00:15:01,476 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:01,494 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:01,494 - INFO - Processing lobbyist ID: 000182225214-48
+2025-05-16 00:15:01,988 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:02,004 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:02,005 - INFO - Processing lobbyist ID: 0001976677-12
+2025-05-16 00:15:03,403 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:03,403 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:03,404 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:03,597 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:03,597 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:03,597 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:03,597 - INFO - Processing lobbyist ID: 000244295913-08
+2025-05-16 00:15:04,089 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:04,106 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:04,106 - INFO - Processing lobbyist ID: 000422497674-67
+2025-05-16 00:15:04,611 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:04,628 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:04,628 - INFO - Processing lobbyist ID: 000527594184-73
+2025-05-16 00:15:05,101 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:05,119 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:05,119 - INFO - Processing lobbyist ID: 000688397923-96
+2025-05-16 00:15:05,626 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:05,642 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:05,642 - INFO - Processing lobbyist ID: 000695351467-52
+2025-05-16 00:15:06,193 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:06,210 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:06,210 - INFO - Processing lobbyist ID: 000764914245-74
+2025-05-16 00:15:06,819 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:06,836 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:06,837 - INFO - Processing lobbyist ID: 00086317186-42
+2025-05-16 00:15:08,178 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:08,178 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:08,301 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:08,301 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:08,301 - INFO - Processing lobbyist ID: 000889444601-32
+2025-05-16 00:15:08,807 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:08,824 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:08,824 - INFO - Processing lobbyist ID: 00098856602-24
+2025-05-16 00:15:10,195 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:10,195 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:10,300 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:10,301 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:10,301 - INFO - Processing lobbyist ID: 001012493142-90
+2025-05-16 00:15:10,903 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:10,920 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:10,921 - INFO - Processing lobbyist ID: 001034597151-46
+2025-05-16 00:15:11,433 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:11,451 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:11,451 - INFO - Processing lobbyist ID: 001034695847-74
+2025-05-16 00:15:11,973 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:11,997 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:11,997 - INFO - Processing lobbyist ID: 001133594410-22
+2025-05-16 00:15:12,524 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:12,542 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:12,542 - INFO - Processing lobbyist ID: 001245815997-85
+2025-05-16 00:15:13,472 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:13,525 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:13,525 - INFO - Processing lobbyist ID: 001339619562-21
+2025-05-16 00:15:14,033 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:14,051 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:14,051 - INFO - Processing lobbyist ID: 001373249269-75
+2025-05-16 00:15:14,858 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:14,882 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:14,882 - INFO - Processing lobbyist ID: 0014082722-83
+2025-05-16 00:15:17,828 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,828 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,828 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,829 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,829 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,829 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,830 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,830 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,830 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:17,830 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,490 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,490 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,490 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,490 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,491 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,491 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,491 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,491 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,491 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,491 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,491 - INFO - Processing lobbyist ID: 001531620369-40
+2025-05-16 00:15:18,968 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,985 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:18,985 - INFO - Processing lobbyist ID: 00162715418-92
+2025-05-16 00:15:19,680 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:19,681 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:19,789 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:19,789 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:19,789 - INFO - Processing lobbyist ID: 001634749272-03
+2025-05-16 00:15:20,310 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:20,329 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:20,329 - INFO - Processing lobbyist ID: 001688341517-07
+2025-05-16 00:15:20,839 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:20,858 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:20,859 - INFO - Processing lobbyist ID: 001814832718-07
+2025-05-16 00:15:21,339 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:21,358 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:21,358 - INFO - Processing lobbyist ID: 001852197924-10
+2025-05-16 00:15:21,813 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:21,831 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:21,831 - INFO - Processing lobbyist ID: 001866415031-87
+2025-05-16 00:15:23,645 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:23,645 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:23,646 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:23,646 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:23,646 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,011 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,011 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,011 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,012 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,012 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,012 - INFO - Processing lobbyist ID: 001908294805-68
+2025-05-16 00:15:24,643 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,684 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:24,684 - INFO - Processing lobbyist ID: 001968511387-52
+2025-05-16 00:15:25,647 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:25,686 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:25,687 - INFO - Processing lobbyist ID: 002032845543-49
+2025-05-16 00:15:26,261 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:26,279 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:26,279 - INFO - Processing lobbyist ID: 002077217226-17
+2025-05-16 00:15:26,830 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:26,858 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:26,858 - INFO - Processing lobbyist ID: 002126439066-24
+2025-05-16 00:15:27,358 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:27,376 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:27,376 - INFO - Processing lobbyist ID: 002130110187-09
+2025-05-16 00:15:27,924 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:27,950 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:27,950 - INFO - Processing lobbyist ID: 002206440983-89
+2025-05-16 00:15:28,571 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:28,590 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:28,590 - INFO - Processing lobbyist ID: 002278013515-26
+2025-05-16 00:15:31,627 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:31,627 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:31,627 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:31,628 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:31,628 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:31,628 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:31,629 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:31,629 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,166 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,166 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,166 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,166 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,167 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,167 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,167 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,167 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,167 - INFO - Processing lobbyist ID: 002296943369-49
+2025-05-16 00:15:32,671 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,689 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:32,689 - INFO - Processing lobbyist ID: 002317551074-12
+2025-05-16 00:15:33,168 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:33,194 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:33,194 - INFO - Processing lobbyist ID: 002340497029-12
+2025-05-16 00:15:33,691 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:33,737 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:33,737 - INFO - Processing lobbyist ID: 0026376672-48
+2025-05-16 00:15:34,274 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:34,297 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:34,298 - INFO - Processing lobbyist ID: 002777545622-21
+2025-05-16 00:15:34,883 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:34,900 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:34,901 - INFO - Processing lobbyist ID: 002861430113-81
+2025-05-16 00:15:35,425 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:35,442 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:35,442 - INFO - Processing lobbyist ID: 002873446831-13
+2025-05-16 00:15:35,939 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:35,957 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:35,957 - INFO - Processing lobbyist ID: 002907048115-56
+2025-05-16 00:15:36,458 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:36,474 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:36,475 - INFO - Processing lobbyist ID: 002977215945-85
+2025-05-16 00:15:38,139 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,139 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,139 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,140 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,140 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,494 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,495 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,495 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,495 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,495 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:38,495 - INFO - Processing lobbyist ID: 003058994490-80
+2025-05-16 00:15:39,386 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:39,404 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:39,404 - INFO - Processing lobbyist ID: 003123953167-62
+2025-05-16 00:15:40,150 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:40,236 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:40,236 - INFO - Processing lobbyist ID: 003152049192-70
+2025-05-16 00:15:40,813 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:40,842 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:40,843 - INFO - Processing lobbyist ID: 003277719548-45
+2025-05-16 00:15:41,431 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:41,465 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:41,465 - INFO - Processing lobbyist ID: 003289421663-92
+2025-05-16 00:15:41,964 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:41,999 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:42,000 - INFO - Processing lobbyist ID: 003435750110-24
+2025-05-16 00:15:42,512 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:42,552 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:42,552 - INFO - Processing lobbyist ID: 003453329147-26
+2025-05-16 00:15:43,090 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:43,150 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:43,150 - INFO - Processing lobbyist ID: 00353757573-57
+2025-05-16 00:15:44,585 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:44,585 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:44,586 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:44,586 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:44,586 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:45,090 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:45,090 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:45,091 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:45,091 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:45,091 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:45,091 - INFO - Processing lobbyist ID: 00358442856-45
+2025-05-16 00:15:46,786 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:46,787 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:46,787 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:46,787 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:46,787 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:46,788 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:47,445 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:47,445 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:47,445 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:47,446 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:47,446 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:47,446 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:47,446 - INFO - Processing lobbyist ID: 003708136830-08
+2025-05-16 00:15:48,091 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:48,165 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:48,165 - INFO - Processing lobbyist ID: 003824096869-82
+2025-05-16 00:15:48,780 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:48,834 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:48,834 - INFO - Processing lobbyist ID: 003872392962-66
+2025-05-16 00:15:49,354 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:49,388 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:49,388 - INFO - Processing lobbyist ID: 003906045590-78
+2025-05-16 00:15:49,999 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:50,041 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:50,042 - INFO - Processing lobbyist ID: 004004025368-22
+2025-05-16 00:15:50,546 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:50,597 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:50,597 - INFO - Processing lobbyist ID: 004258218904-75
+2025-05-16 00:15:51,117 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:51,155 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:51,156 - INFO - Processing lobbyist ID: 004348352902-37
+2025-05-16 00:15:51,948 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:51,985 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:51,986 - INFO - Processing lobbyist ID: 004391428791-19
+2025-05-16 00:15:52,782 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:52,822 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:52,822 - INFO - Processing lobbyist ID: 004419551067-23
+2025-05-16 00:15:53,363 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:53,402 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:53,403 - INFO - Processing lobbyist ID: 004585041625-47
+2025-05-16 00:15:53,960 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:54,006 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:54,006 - INFO - Processing lobbyist ID: 00475641564-03
+2025-05-16 00:15:55,227 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:55,228 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:55,229 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:55,480 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:55,480 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:55,480 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:55,480 - INFO - Processing lobbyist ID: 00481013843-28
+2025-05-16 00:15:56,118 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:56,147 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:56,147 - INFO - Processing lobbyist ID: 004942218376-96
+2025-05-16 00:15:56,716 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:56,764 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:56,764 - INFO - Processing lobbyist ID: 005036551217-80
+2025-05-16 00:15:57,319 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:57,355 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:57,355 - INFO - Processing lobbyist ID: 005426136369-56
+2025-05-16 00:15:57,877 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:57,928 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:57,928 - INFO - Processing lobbyist ID: 005464798079-18
+2025-05-16 00:15:58,469 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:58,505 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:58,506 - INFO - Processing lobbyist ID: 005476244544-25
+2025-05-16 00:15:59,198 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:59,238 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:59,239 - INFO - Processing lobbyist ID: 005489498073-39
+2025-05-16 00:15:59,728 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:59,803 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:15:59,803 - INFO - Processing lobbyist ID: 005538931799-72
+2025-05-16 00:16:00,414 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:00,452 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:00,453 - INFO - Processing lobbyist ID: 005575320561-06
+2025-05-16 00:16:00,963 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:00,996 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:00,997 - INFO - Processing lobbyist ID: 005858195645-64
+2025-05-16 00:16:01,548 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:01,586 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:01,587 - INFO - Processing lobbyist ID: 005887421809-56
+2025-05-16 00:16:02,322 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:02,362 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:02,363 - INFO - Processing lobbyist ID: 005892792090-20
+2025-05-16 00:16:03,117 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:03,151 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:03,151 - INFO - Processing lobbyist ID: 005930614727-54
+2025-05-16 00:16:03,751 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:03,836 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:03,837 - INFO - Processing lobbyist ID: 006004145615-69
+2025-05-16 00:16:04,384 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:04,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:04,467 - INFO - Processing lobbyist ID: 006018796649-51
+2025-05-16 00:16:05,025 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:05,062 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:05,063 - INFO - Processing lobbyist ID: 006020340285-19
+2025-05-16 00:16:05,674 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:05,727 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:05,727 - INFO - Processing lobbyist ID: 006043210924-49
+2025-05-16 00:16:06,313 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:06,396 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:06,396 - INFO - Processing lobbyist ID: 006052644907-55
+2025-05-16 00:16:06,927 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:06,966 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:06,966 - INFO - Processing lobbyist ID: 006087021537-90
+2025-05-16 00:16:07,516 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:07,542 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:07,542 - INFO - Processing lobbyist ID: 00609669640-11
+2025-05-16 00:16:08,072 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:08,098 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:08,099 - INFO - Processing lobbyist ID: 006203933416-48
+2025-05-16 00:16:08,647 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:08,680 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:08,680 - INFO - Processing lobbyist ID: 006411421255-36
+2025-05-16 00:16:09,291 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:09,357 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:09,357 - INFO - Processing lobbyist ID: 006455698245-11
+2025-05-16 00:16:09,849 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:09,867 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:09,867 - INFO - Processing lobbyist ID: 006482948856-57
+2025-05-16 00:16:10,390 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:10,427 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:10,428 - INFO - Processing lobbyist ID: 006485918021-78
+2025-05-16 00:16:10,999 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:11,051 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:11,051 - INFO - Processing lobbyist ID: 006537450157-04
+2025-05-16 00:16:11,807 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:11,869 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:11,869 - INFO - Processing lobbyist ID: 006668652433-34
+2025-05-16 00:16:12,417 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:12,455 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:12,455 - INFO - Processing lobbyist ID: 006687715492-92
+2025-05-16 00:16:13,855 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:13,856 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:13,857 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:14,248 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:14,249 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:14,249 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:14,249 - INFO - Processing lobbyist ID: 006901422654-34
+2025-05-16 00:16:14,946 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:15,036 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:15,036 - INFO - Processing lobbyist ID: 006902640471-32
+2025-05-16 00:16:15,530 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:15,568 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:15,569 - INFO - Processing lobbyist ID: 006913592237-55
+2025-05-16 00:16:16,129 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:16,202 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:16,202 - INFO - Processing lobbyist ID: 006930420009-75
+2025-05-16 00:16:16,706 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:16,745 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:16,746 - INFO - Processing lobbyist ID: 00705635730-34
+2025-05-16 00:16:17,220 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:17,257 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:17,257 - INFO - Processing lobbyist ID: 007060049916-62
+2025-05-16 00:16:17,745 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:17,767 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:17,767 - INFO - Processed 100 lobbyists out of 14367. Pausing for 3 seconds to avoid server overload...
+2025-05-16 00:16:20,804 - INFO - Processing lobbyist ID: 007095651479-45
+2025-05-16 00:16:21,407 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:21,444 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:21,445 - INFO - Processing lobbyist ID: 007199150839-85
+2025-05-16 00:16:21,982 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:22,018 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:22,018 - INFO - Processing lobbyist ID: 00723343929-96
+2025-05-16 00:16:24,302 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,303 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,303 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,304 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,773 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,773 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,773 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,773 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:24,773 - INFO - Processing lobbyist ID: 007323695868-83
+2025-05-16 00:16:25,282 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:25,321 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:25,322 - INFO - Processing lobbyist ID: 007338250495-75
+2025-05-16 00:16:25,892 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:25,978 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:25,978 - INFO - Processing lobbyist ID: 007340933641-89
+2025-05-16 00:16:26,557 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:26,630 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:26,631 - INFO - Processing lobbyist ID: 007408046051-73
+2025-05-16 00:16:27,455 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:27,541 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:27,541 - INFO - Processing lobbyist ID: 007422325160-44
+2025-05-16 00:16:28,056 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:28,126 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:28,126 - INFO - Processing lobbyist ID: 007427047315-01
+2025-05-16 00:16:28,634 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:28,667 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:28,668 - INFO - Processing lobbyist ID: 00745248690-02
+2025-05-16 00:16:29,527 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:29,527 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:29,639 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:29,639 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:29,639 - INFO - Processing lobbyist ID: 007461027732-18
+2025-05-16 00:16:30,229 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:30,267 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:30,268 - INFO - Processing lobbyist ID: 007503529333-27
+2025-05-16 00:16:30,819 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:30,843 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:30,843 - INFO - Processing lobbyist ID: 007522248387-91
+2025-05-16 00:16:31,432 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:31,461 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:31,461 - INFO - Processing lobbyist ID: 007555936329-95
+2025-05-16 00:16:32,024 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:32,056 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:32,057 - INFO - Processing lobbyist ID: 007579634856-38
+2025-05-16 00:16:32,617 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:32,635 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:32,635 - INFO - Processing lobbyist ID: 007667198226-29
+2025-05-16 00:16:33,128 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:33,164 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:33,165 - INFO - Processing lobbyist ID: 00770563312-18
+2025-05-16 00:16:33,738 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:33,756 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:33,757 - INFO - Processing lobbyist ID: 007723395262-08
+2025-05-16 00:16:34,260 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:34,296 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:34,296 - INFO - Processing lobbyist ID: 007825151843-16
+2025-05-16 00:16:34,892 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:34,942 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:34,943 - INFO - Processing lobbyist ID: 007878641067-30
+2025-05-16 00:16:35,733 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:35,762 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:35,763 - INFO - Processing lobbyist ID: 007895639418-81
+2025-05-16 00:16:36,953 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:37,087 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:37,087 - INFO - Processing lobbyist ID: 007938540807-31
+2025-05-16 00:16:37,821 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:37,861 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:37,861 - INFO - Processing lobbyist ID: 007961591670-39
+2025-05-16 00:16:38,651 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:38,686 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:38,687 - INFO - Processing lobbyist ID: 008129895742-57
+2025-05-16 00:16:39,398 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:39,436 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:39,436 - INFO - Processing lobbyist ID: 008155797168-06
+2025-05-16 00:16:39,960 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:39,996 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:39,996 - INFO - Processing lobbyist ID: 008159896407-07
+2025-05-16 00:16:40,984 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:41,025 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:41,026 - INFO - Processing lobbyist ID: 008175019549-76
+2025-05-16 00:16:41,764 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:41,796 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:41,797 - INFO - Processing lobbyist ID: 008245942001-90
+2025-05-16 00:16:42,408 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:42,453 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:42,453 - INFO - Processing lobbyist ID: 008251593134-84
+2025-05-16 00:16:43,254 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:43,333 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:43,333 - INFO - Processing lobbyist ID: 008316496461-20
+2025-05-16 00:16:44,040 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:44,076 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:44,076 - INFO - Processing lobbyist ID: 008383997443-17
+2025-05-16 00:16:44,959 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:44,977 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:44,977 - INFO - Processing lobbyist ID: 008431330155-37
+2025-05-16 00:16:48,251 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:48,252 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:48,362 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:48,362 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:48,362 - INFO - Processing lobbyist ID: 008448634151-77
+2025-05-16 00:16:48,931 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:48,966 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:48,966 - INFO - Processing lobbyist ID: 00849042167-65
+2025-05-16 00:16:49,484 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:49,523 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:49,523 - INFO - Processing lobbyist ID: 008507452878-73
+2025-05-16 00:16:50,010 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:50,059 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:50,059 - INFO - Processing lobbyist ID: 008533846785-96
+2025-05-16 00:16:50,585 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:50,620 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:50,620 - INFO - Processing lobbyist ID: 008658631225-37
+2025-05-16 00:16:51,117 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:51,148 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:51,148 - INFO - Processing lobbyist ID: 008697197178-54
+2025-05-16 00:16:51,674 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:51,725 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:51,725 - INFO - Processing lobbyist ID: 008753395526-51
+2025-05-16 00:16:52,273 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:52,311 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:52,312 - INFO - Processing lobbyist ID: 008788051727-26
+2025-05-16 00:16:52,864 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:52,909 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:52,909 - INFO - Processing lobbyist ID: 008826648924-61
+2025-05-16 00:16:53,472 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:53,542 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:53,542 - INFO - Processing lobbyist ID: 008848426348-02
+2025-05-16 00:16:54,030 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:54,061 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:54,061 - INFO - Processing lobbyist ID: 008855336156-25
+2025-05-16 00:16:54,649 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:54,686 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:54,686 - INFO - Processing lobbyist ID: 008905797453-30
+2025-05-16 00:16:55,236 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:55,257 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:55,257 - INFO - Processing lobbyist ID: 009024498126-11
+2025-05-16 00:16:55,810 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:55,839 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:55,839 - INFO - Processing lobbyist ID: 009110095886-27
+2025-05-16 00:16:56,340 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:56,376 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:56,377 - INFO - Processing lobbyist ID: 009141896639-72
+2025-05-16 00:16:56,877 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:56,921 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:56,921 - INFO - Processing lobbyist ID: 009153631495-97
+2025-05-16 00:16:57,451 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:57,497 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:57,498 - INFO - Processing lobbyist ID: 009175623137-75
+2025-05-16 00:16:58,181 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:58,212 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:58,212 - INFO - Processing lobbyist ID: 009188192222-11
+2025-05-16 00:16:58,907 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:58,978 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:16:58,979 - INFO - Processing lobbyist ID: 00919034091-89
+2025-05-16 00:17:00,609 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:00,610 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:00,610 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:00,610 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:01,053 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:01,053 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:01,054 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:01,054 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:01,054 - INFO - Processing lobbyist ID: 009214311424-03
+2025-05-16 00:17:02,389 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,390 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,390 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,390 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,705 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,705 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,705 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,706 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:02,706 - INFO - Processing lobbyist ID: 009433826675-55
+2025-05-16 00:17:04,807 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:04,808 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:04,808 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:04,809 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:04,809 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,275 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,275 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,275 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,275 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,276 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,276 - INFO - Processing lobbyist ID: 009451252014-73
+2025-05-16 00:17:05,834 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,868 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:05,868 - INFO - Processing lobbyist ID: 009456692317-07
+2025-05-16 00:17:06,413 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:06,488 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:06,489 - INFO - Processing lobbyist ID: 009462448118-38
+2025-05-16 00:17:07,518 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:07,562 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:07,562 - INFO - Processing lobbyist ID: 009472117655-59
+2025-05-16 00:17:08,194 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:08,221 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:08,223 - INFO - Processing lobbyist ID: 00951027955-96
+2025-05-16 00:17:08,938 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:08,939 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:09,097 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:09,097 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:09,097 - INFO - Processing lobbyist ID: 009543351056-37
+2025-05-16 00:17:09,747 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:09,810 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:09,810 - INFO - Processing lobbyist ID: 009600952690-40
+2025-05-16 00:17:10,434 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:10,470 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:10,471 - INFO - Processing lobbyist ID: 009613032395-62
+2025-05-16 00:17:11,032 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:11,079 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:11,079 - INFO - Processing lobbyist ID: 009627841465-17
+2025-05-16 00:17:11,550 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:11,593 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:11,594 - INFO - Processing lobbyist ID: 009832643638-02
+2025-05-16 00:17:12,143 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:12,198 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:12,199 - INFO - Processing lobbyist ID: 010109849251-54
+2025-05-16 00:17:12,737 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:12,781 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:12,781 - INFO - Processing lobbyist ID: 010172838303-72
+2025-05-16 00:17:13,424 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:13,493 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:13,493 - INFO - Processing lobbyist ID: 010187228143-49
+2025-05-16 00:17:14,319 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:14,360 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:14,361 - INFO - Processing lobbyist ID: 010212710281-97
+2025-05-16 00:17:15,524 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:15,528 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:15,531 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:15,886 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:15,886 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:15,886 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:15,886 - INFO - Processing lobbyist ID: 010237950703-92
+2025-05-16 00:17:16,590 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:16,617 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:16,617 - INFO - Processing lobbyist ID: 010336241935-13
+2025-05-16 00:17:17,302 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:17,335 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:17,336 - INFO - Processing lobbyist ID: 010350193429-87
+2025-05-16 00:17:17,853 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:17,898 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:17,899 - INFO - Processing lobbyist ID: 010397411668-54
+2025-05-16 00:17:18,472 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:18,539 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:18,539 - INFO - Processing lobbyist ID: 010510531771-50
+2025-05-16 00:17:19,306 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:19,342 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:19,342 - INFO - Processing lobbyist ID: 010537126862-09
+2025-05-16 00:17:20,007 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:20,073 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:20,073 - INFO - Processing lobbyist ID: 010630050724-84
+2025-05-16 00:17:20,707 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:20,733 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:20,734 - INFO - Processing lobbyist ID: 01063261836-24
+2025-05-16 00:17:22,037 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:22,040 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:22,202 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:22,202 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:22,203 - INFO - Processing lobbyist ID: 010822218390-62
+2025-05-16 00:17:22,882 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:22,985 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:22,985 - INFO - Processing lobbyist ID: 010836591536-69
+2025-05-16 00:17:23,526 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:23,584 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:23,585 - INFO - Processing lobbyist ID: 010922834782-77
+2025-05-16 00:17:24,120 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:24,139 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:24,139 - INFO - Processing lobbyist ID: 010977093819-34
+2025-05-16 00:17:24,758 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:24,779 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:24,779 - INFO - Processing lobbyist ID: 011033338441-66
+2025-05-16 00:17:25,326 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:25,368 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:25,368 - INFO - Processing lobbyist ID: 011080341579-06
+2025-05-16 00:17:26,038 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:26,120 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:26,120 - INFO - Processing lobbyist ID: 011095511691-05
+2025-05-16 00:17:27,121 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:27,122 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:27,124 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:27,459 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:27,459 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:27,459 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:27,459 - INFO - Processing lobbyist ID: 011167597905-22
+2025-05-16 00:17:27,992 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:28,045 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:28,046 - INFO - Processing lobbyist ID: 011182829000-96
+2025-05-16 00:17:28,593 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:28,641 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:28,642 - INFO - Processing lobbyist ID: 011218951339-34
+2025-05-16 00:17:29,219 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:29,244 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:29,244 - INFO - Processing lobbyist ID: 011250793465-74
+2025-05-16 00:17:29,799 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:29,859 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:29,860 - INFO - Processing lobbyist ID: 011322353074-80
+2025-05-16 00:17:30,382 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:30,425 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:30,425 - INFO - Processing lobbyist ID: 011340223514-19
+2025-05-16 00:17:31,012 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:31,072 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:31,073 - INFO - Processing lobbyist ID: 011403294822-89
+2025-05-16 00:17:31,614 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:31,648 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:31,649 - INFO - Processing lobbyist ID: 011479419288-08
+2025-05-16 00:17:32,288 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:32,347 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:32,347 - INFO - Processing lobbyist ID: 01150446981-34
+2025-05-16 00:17:33,095 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:33,097 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:33,228 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:33,228 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:33,228 - INFO - Processing lobbyist ID: 011520698213-80
+2025-05-16 00:17:33,810 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:33,839 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:33,840 - INFO - Processing lobbyist ID: 011603934072-68
+2025-05-16 00:17:34,362 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:34,402 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:34,403 - INFO - Processing lobbyist ID: 011816043546-53
+2025-05-16 00:17:34,916 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:34,971 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:34,971 - INFO - Processing lobbyist ID: 0118191795-12
+2025-05-16 00:17:35,694 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:35,696 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:35,787 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:35,787 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:35,787 - INFO - Processing lobbyist ID: 011855093589-29
+2025-05-16 00:17:36,362 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:36,406 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:36,406 - INFO - Processing lobbyist ID: 011985949739-34
+2025-05-16 00:17:37,008 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:37,051 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:37,051 - INFO - Processing lobbyist ID: 0120704687-67
+2025-05-16 00:17:37,781 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:37,875 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:37,875 - INFO - Processing lobbyist ID: 012079550653-65
+2025-05-16 00:17:38,689 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:38,718 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:38,718 - INFO - Processing lobbyist ID: 012146830944-03
+2025-05-16 00:17:39,544 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:39,647 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:39,648 - INFO - Processed 200 lobbyists out of 14367. Pausing for 3 seconds to avoid server overload...
+2025-05-16 00:17:42,679 - INFO - Processing lobbyist ID: 012185922677-09
+2025-05-16 00:17:43,296 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:43,322 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:43,322 - INFO - Processing lobbyist ID: 01224764261-72
+2025-05-16 00:17:44,005 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:44,006 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:44,130 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:44,130 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:44,131 - INFO - Processing lobbyist ID: 012433548896-48
+2025-05-16 00:17:44,704 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:44,747 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:44,748 - INFO - Processing lobbyist ID: 01251825535-85
+2025-05-16 00:17:45,278 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:45,329 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:45,329 - INFO - Processing lobbyist ID: 012670095188-92
+2025-05-16 00:17:45,840 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:45,880 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:45,880 - INFO - Processing lobbyist ID: 012706693645-24
+2025-05-16 00:17:46,436 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:46,478 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:46,478 - INFO - Processing lobbyist ID: 012717123539-58
+2025-05-16 00:17:47,009 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:47,101 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:47,101 - INFO - Processing lobbyist ID: 012728850867-18
+2025-05-16 00:17:47,607 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:47,649 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:47,650 - INFO - Processing lobbyist ID: 012856893445-37
+2025-05-16 00:17:48,127 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:48,175 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:48,175 - INFO - Processing lobbyist ID: 012964696343-17
+2025-05-16 00:17:48,758 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:48,804 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:48,804 - INFO - Processing lobbyist ID: 01312486176-25
+2025-05-16 00:17:49,457 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:49,524 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:49,524 - INFO - Processing lobbyist ID: 013325324971-78
+2025-05-16 00:17:50,073 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:50,158 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:50,158 - INFO - Processing lobbyist ID: 013340043345-76
+2025-05-16 00:17:50,717 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:50,785 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:50,785 - INFO - Processing lobbyist ID: 013412029702-91
+2025-05-16 00:17:51,334 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:51,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:51,362 - INFO - Processing lobbyist ID: 013432829763-33
+2025-05-16 00:17:52,133 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:52,182 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:52,182 - INFO - Processing lobbyist ID: 013465915676-21
+2025-05-16 00:17:52,908 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:52,954 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:52,955 - INFO - Processing lobbyist ID: 013596348877-66
+2025-05-16 00:17:53,487 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:53,528 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:53,528 - INFO - Processing lobbyist ID: 013755513854-45
+2025-05-16 00:17:54,052 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:54,096 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:54,096 - INFO - Processing lobbyist ID: 013786146388-70
+2025-05-16 00:17:54,736 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:54,835 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:54,835 - INFO - Processing lobbyist ID: 01380772294-53
+2025-05-16 00:17:55,562 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:55,633 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:55,633 - INFO - Processing lobbyist ID: 013829597751-75
+2025-05-16 00:17:56,167 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:56,192 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:56,192 - INFO - Processing lobbyist ID: 013841522595-24
+2025-05-16 00:17:56,857 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:56,964 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:56,964 - INFO - Processing lobbyist ID: 0138855852-93
+2025-05-16 00:17:57,766 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:57,810 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:57,811 - INFO - Processing lobbyist ID: 013899493163-61
+2025-05-16 00:17:58,304 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:58,342 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:58,342 - INFO - Processing lobbyist ID: 013942047039-83
+2025-05-16 00:17:58,921 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:58,960 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:58,960 - INFO - Processing lobbyist ID: 013957194446-64
+2025-05-16 00:17:59,575 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:59,598 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:17:59,598 - INFO - Processing lobbyist ID: 014007296394-33
+2025-05-16 00:18:00,140 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:00,164 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:00,164 - INFO - Processing lobbyist ID: 014120028084-09
+2025-05-16 00:18:01,082 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:01,084 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:01,171 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:01,172 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:01,172 - INFO - Processing lobbyist ID: 014158842886-37
+2025-05-16 00:18:01,804 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:01,865 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:01,865 - INFO - Processing lobbyist ID: 014184753116-13
+2025-05-16 00:18:02,508 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:02,549 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:02,550 - INFO - Processing lobbyist ID: 014218910510-57
+2025-05-16 00:18:03,737 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:03,794 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:03,794 - INFO - Processing lobbyist ID: 014245397405-82
+2025-05-16 00:18:04,325 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:04,375 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:04,376 - INFO - Processing lobbyist ID: 01437575131-45
+2025-05-16 00:18:05,062 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:05,116 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:05,116 - INFO - Processing lobbyist ID: 014395614376-93
+2025-05-16 00:18:05,641 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:05,703 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:05,704 - INFO - Processing lobbyist ID: 014463491778-34
+2025-05-16 00:18:06,273 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:06,342 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:06,342 - INFO - Processing lobbyist ID: 014662751131-84
+2025-05-16 00:18:06,934 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:06,980 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:06,980 - INFO - Processing lobbyist ID: 014666792044-75
+2025-05-16 00:18:07,486 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:07,521 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:07,522 - INFO - Processing lobbyist ID: 014681328548-06
+2025-05-16 00:18:08,171 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:08,226 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:08,226 - INFO - Processing lobbyist ID: 014826342271-15
+2025-05-16 00:18:08,811 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:08,859 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:08,860 - INFO - Processing lobbyist ID: 015001392003-96
+2025-05-16 00:18:09,522 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:09,591 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:09,591 - INFO - Processing lobbyist ID: 015090047765-51
+2025-05-16 00:18:10,266 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:10,316 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:10,317 - INFO - Processing lobbyist ID: 015109739041-17
+2025-05-16 00:18:10,977 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:11,065 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:11,065 - INFO - Processing lobbyist ID: 015130537432-86
+2025-05-16 00:18:11,664 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:11,697 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:11,697 - INFO - Processing lobbyist ID: 015146319708-20
+2025-05-16 00:18:12,184 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:12,244 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:12,245 - INFO - Processing lobbyist ID: 015193625716-61
+2025-05-16 00:18:12,961 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:13,025 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:13,026 - INFO - Processing lobbyist ID: 01523296397-60
+2025-05-16 00:18:13,586 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:13,639 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:13,639 - INFO - Processing lobbyist ID: 015271191850-18
+2025-05-16 00:18:14,189 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:14,225 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:14,225 - INFO - Processing lobbyist ID: 015329134576-67
+2025-05-16 00:18:14,831 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:14,885 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:14,885 - INFO - Processing lobbyist ID: 015415038748-78
+2025-05-16 00:18:15,434 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:15,502 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:15,502 - INFO - Processing lobbyist ID: 015439447252-14
+2025-05-16 00:18:16,081 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:16,122 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:16,122 - INFO - Processing lobbyist ID: 01546986656-22
+2025-05-16 00:18:17,331 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:17,332 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:17,492 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:17,493 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:17,493 - INFO - Processing lobbyist ID: 015497016937-13
+2025-05-16 00:18:18,161 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:18,223 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:18,223 - INFO - Processing lobbyist ID: 015533222901-60
+2025-05-16 00:18:18,889 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:18,950 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:18,950 - INFO - Processing lobbyist ID: 01554483175-08
+2025-05-16 00:18:19,970 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:19,971 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:19,975 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:20,277 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:20,277 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:20,277 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:20,278 - INFO - Processing lobbyist ID: 015617142386-42
+2025-05-16 00:18:20,917 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:21,007 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:21,007 - INFO - Processing lobbyist ID: 015770040288-10
+2025-05-16 00:18:21,617 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:21,659 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:21,659 - INFO - Processing lobbyist ID: 015829095623-45
+2025-05-16 00:18:22,201 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:22,252 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:22,252 - INFO - Processing lobbyist ID: 016107725457-79
+2025-05-16 00:18:22,856 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:22,925 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:22,925 - INFO - Processing lobbyist ID: 016135552805-13
+2025-05-16 00:18:23,536 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:23,580 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:23,581 - INFO - Processing lobbyist ID: 016168135607-58
+2025-05-16 00:18:24,117 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:24,150 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:24,150 - INFO - Processing lobbyist ID: 016172626542-72
+2025-05-16 00:18:24,720 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:24,764 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:24,764 - INFO - Processing lobbyist ID: 016194724494-39
+2025-05-16 00:18:25,324 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:25,398 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:25,398 - INFO - Processing lobbyist ID: 01623802004-63
+2025-05-16 00:18:26,102 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:26,103 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:26,265 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:26,266 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:26,266 - INFO - Processing lobbyist ID: 016240019954-66
+2025-05-16 00:18:26,851 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:26,914 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:26,914 - INFO - Processing lobbyist ID: 016371114093-01
+2025-05-16 00:18:27,959 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:27,962 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:28,144 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:28,145 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:28,145 - INFO - Processing lobbyist ID: 016507041970-26
+2025-05-16 00:18:28,738 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:28,816 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:28,817 - INFO - Processing lobbyist ID: 016553096086-21
+2025-05-16 00:18:29,934 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:30,000 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:30,001 - INFO - Processing lobbyist ID: 016556146874-92
+2025-05-16 00:18:30,589 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:30,630 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:30,630 - INFO - Processing lobbyist ID: 016580840505-76
+2025-05-16 00:18:31,221 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:31,248 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:31,248 - INFO - Processing lobbyist ID: 016672396467-61
+2025-05-16 00:18:31,882 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:31,926 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:31,927 - INFO - Processing lobbyist ID: 016709127831-41
+2025-05-16 00:18:32,798 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:32,866 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:32,867 - INFO - Processing lobbyist ID: 016714596843-07
+2025-05-16 00:18:33,453 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:33,495 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:33,495 - INFO - Processing lobbyist ID: 016778139373-97
+2025-05-16 00:18:33,999 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:34,042 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:34,042 - INFO - Processing lobbyist ID: 01678796979-90
+2025-05-16 00:18:34,705 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:34,707 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:34,858 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:34,858 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:34,858 - INFO - Processing lobbyist ID: 016797840998-92
+2025-05-16 00:18:35,342 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:35,394 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:35,395 - INFO - Processing lobbyist ID: 016825047419-55
+2025-05-16 00:18:35,924 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:35,958 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:35,959 - INFO - Processing lobbyist ID: 016993397663-90
+2025-05-16 00:18:36,538 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:36,583 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:36,583 - INFO - Processing lobbyist ID: 017018214013-57
+2025-05-16 00:18:37,221 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:37,277 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:37,277 - INFO - Processing lobbyist ID: 017101527705-79
+2025-05-16 00:18:38,193 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:38,225 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:38,226 - INFO - Processing lobbyist ID: 017204191983-61
+2025-05-16 00:18:38,890 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:38,940 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:38,940 - INFO - Processing lobbyist ID: 017343011782-42
+2025-05-16 00:18:39,616 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:39,661 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:39,661 - INFO - Processing lobbyist ID: 017358150409-67
+2025-05-16 00:18:40,291 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:40,316 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:40,316 - INFO - Processing lobbyist ID: 01740426310-03
+2025-05-16 00:18:41,249 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:41,250 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:41,365 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:41,365 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:41,365 - INFO - Processing lobbyist ID: 017407241307-21
+2025-05-16 00:18:42,022 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:42,076 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:42,077 - INFO - Processing lobbyist ID: 017514515406-70
+2025-05-16 00:18:42,594 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:42,638 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:42,638 - INFO - Processing lobbyist ID: 017635698334-41
+2025-05-16 00:18:43,291 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:43,337 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:43,338 - INFO - Processing lobbyist ID: 01765274994-03
+2025-05-16 00:18:44,049 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:44,139 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:44,139 - INFO - Processing lobbyist ID: 017784530272-96
+2025-05-16 00:18:44,989 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:44,990 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:45,143 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:45,143 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:45,143 - INFO - Processing lobbyist ID: 017834194914-18
+2025-05-16 00:18:45,696 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:45,747 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:45,748 - INFO - Processing lobbyist ID: 01788508225-66
+2025-05-16 00:18:46,237 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:46,266 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:46,266 - INFO - Processing lobbyist ID: 017977535270-34
+2025-05-16 00:18:46,936 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:46,969 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:46,969 - INFO - Processing lobbyist ID: 017978992429-94
+2025-05-16 00:18:47,440 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:47,481 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:47,482 - INFO - Processing lobbyist ID: 018028697282-54
+2025-05-16 00:18:47,995 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:48,011 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:48,012 - INFO - Processing lobbyist ID: 018097547406-18
+2025-05-16 00:18:48,611 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:48,662 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:48,662 - INFO - Processing lobbyist ID: 01816267633-71
+2025-05-16 00:18:49,359 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:49,468 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:49,468 - INFO - Processing lobbyist ID: 018203919412-57
+2025-05-16 00:18:50,043 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:50,090 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:50,090 - INFO - Processing lobbyist ID: 01826979097-76
+2025-05-16 00:18:50,945 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:50,993 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:50,993 - INFO - Processing lobbyist ID: 018288224966-40
+2025-05-16 00:18:51,530 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:51,556 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:51,556 - INFO - Processing lobbyist ID: 018299294623-76
+2025-05-16 00:18:52,337 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:52,389 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:52,389 - INFO - Processing lobbyist ID: 018303948769-73
+2025-05-16 00:18:53,010 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:53,035 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:53,036 - INFO - Processed 300 lobbyists out of 14367. Pausing for 3 seconds to avoid server overload...
+2025-05-16 00:18:56,060 - INFO - Processing lobbyist ID: 018304414362-83
+2025-05-16 00:18:56,632 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:56,670 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:56,670 - INFO - Processing lobbyist ID: 018333695463-19
+2025-05-16 00:18:57,245 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:57,322 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:57,322 - INFO - Processing lobbyist ID: 018456746589-65
+2025-05-16 00:18:57,927 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:57,987 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:57,988 - INFO - Processing lobbyist ID: 018493851897-86
+2025-05-16 00:18:58,536 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:58,585 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:58,585 - INFO - Processing lobbyist ID: 018495998262-84
+2025-05-16 00:18:59,049 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:59,087 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:59,088 - INFO - Processing lobbyist ID: 018594646481-69
+2025-05-16 00:18:59,623 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:59,665 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:18:59,666 - INFO - Processing lobbyist ID: 018669250698-22
+2025-05-16 00:19:00,203 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:00,243 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:00,243 - INFO - Processing lobbyist ID: 01873234294-62
+2025-05-16 00:19:00,935 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:00,988 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:00,988 - INFO - Processing lobbyist ID: 018773539412-80
+2025-05-16 00:19:01,853 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:01,923 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:01,923 - INFO - Processing lobbyist ID: 018778010447-60
+2025-05-16 00:19:02,572 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:02,694 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:02,694 - INFO - Processing lobbyist ID: 018812630867-12
+2025-05-16 00:19:03,425 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:03,426 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:03,534 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:03,534 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:03,534 - INFO - Processing lobbyist ID: 01890906437-84
+2025-05-16 00:19:04,710 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:04,713 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:04,717 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:04,921 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:04,921 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:04,921 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:04,922 - INFO - Processing lobbyist ID: 019052196216-05
+2025-05-16 00:19:05,419 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:05,494 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:05,494 - INFO - Processing lobbyist ID: 019196097281-21
+2025-05-16 00:19:05,990 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:06,029 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:06,030 - INFO - Processing lobbyist ID: 019293949200-30
+2025-05-16 00:19:06,542 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:06,581 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:06,582 - INFO - Processing lobbyist ID: 019313336504-42
+2025-05-16 00:19:07,313 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:07,360 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:07,360 - INFO - Processing lobbyist ID: 01936914624-97
+2025-05-16 00:19:08,673 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:08,674 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:08,675 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:08,919 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:08,919 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:08,919 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:08,920 - INFO - Processing lobbyist ID: 019395422771-87
+2025-05-16 00:19:09,463 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:09,487 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:09,487 - INFO - Processing lobbyist ID: 019452351003-33
+2025-05-16 00:19:10,102 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:10,177 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:10,177 - INFO - Processing lobbyist ID: 019482727960-60
+2025-05-16 00:19:10,816 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:10,861 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:10,861 - INFO - Processing lobbyist ID: 019508897840-62
+2025-05-16 00:19:11,365 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:11,401 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:11,402 - INFO - Processing lobbyist ID: 019519094351-45
+2025-05-16 00:19:12,076 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:12,107 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:12,108 - INFO - Processing lobbyist ID: 019525852869-89
+2025-05-16 00:19:12,640 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:12,682 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:12,683 - INFO - Processing lobbyist ID: 019532641538-92
+2025-05-16 00:19:13,183 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:13,212 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:13,212 - INFO - Processing lobbyist ID: 01953872943-65
+2025-05-16 00:19:13,853 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:13,994 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:13,994 - INFO - Processing lobbyist ID: 019565444059-20
+2025-05-16 00:19:14,499 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:14,547 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:14,547 - INFO - Processing lobbyist ID: 019584652887-54
+2025-05-16 00:19:15,079 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:15,103 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:15,105 - INFO - Processing lobbyist ID: 019623738105-69
+2025-05-16 00:19:15,694 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:15,746 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:15,747 - INFO - Processing lobbyist ID: 019630991862-48
+2025-05-16 00:19:16,305 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:16,342 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:16,343 - INFO - Processing lobbyist ID: 019720894760-48
+2025-05-16 00:19:16,905 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:16,950 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:16,950 - INFO - Processing lobbyist ID: 019735243182-03
+2025-05-16 00:19:17,618 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:17,675 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:17,675 - INFO - Processing lobbyist ID: 01995086879-32
+2025-05-16 00:19:18,354 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:18,473 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:18,474 - INFO - Processing lobbyist ID: 020025124702-06
+2025-05-16 00:19:19,279 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:19,332 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:19,332 - INFO - Processing lobbyist ID: 020026697012-15
+2025-05-16 00:19:19,875 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:19,939 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:19,939 - INFO - Processing lobbyist ID: 020035427629-14
+2025-05-16 00:19:20,572 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:20,630 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:20,630 - INFO - Processing lobbyist ID: 020121438624-71
+2025-05-16 00:19:21,217 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:21,268 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:21,269 - INFO - Processing lobbyist ID: 020178297357-26
+2025-05-16 00:19:21,784 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:21,833 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:21,833 - INFO - Processing lobbyist ID: 020181625459-80
+2025-05-16 00:19:22,412 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:22,452 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:22,453 - INFO - Processing lobbyist ID: 02019258940-59
+2025-05-16 00:19:23,370 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:23,371 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:23,371 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:23,638 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:23,638 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:23,638 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:23,638 - INFO - Processing lobbyist ID: 02021363105-42
+2025-05-16 00:19:26,357 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,358 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,358 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,359 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,360 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,362 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,363 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:26,364 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,467 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:27,468 - INFO - Processing lobbyist ID: 020357094273-32
+2025-05-16 00:19:28,011 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:28,059 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:28,059 - INFO - Processing lobbyist ID: 020407017288-38
+2025-05-16 00:19:28,667 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:28,720 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:28,720 - INFO - Processing lobbyist ID: 020457430494-14
+2025-05-16 00:19:29,215 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:29,256 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:29,257 - INFO - Processing lobbyist ID: 020464949374-38
+2025-05-16 00:19:30,018 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:30,109 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:30,110 - INFO - Processing lobbyist ID: 02070938082-23
+2025-05-16 00:19:30,651 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:30,690 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:30,691 - INFO - Processing lobbyist ID: 020714797704-23
+2025-05-16 00:19:31,336 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:31,368 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:31,368 - INFO - Processing lobbyist ID: 020792544347-57
+2025-05-16 00:19:32,015 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:32,050 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:32,051 - INFO - Processing lobbyist ID: 020811253036-04
+2025-05-16 00:19:32,619 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:32,678 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:32,678 - INFO - Processing lobbyist ID: 02100645398-66
+2025-05-16 00:19:33,271 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:33,329 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:33,329 - INFO - Processing lobbyist ID: 021098528481-42
+2025-05-16 00:19:33,842 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:33,868 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:33,869 - INFO - Processing lobbyist ID: 021253717373-58
+2025-05-16 00:19:34,942 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:34,943 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:34,944 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:35,244 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:35,244 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:35,244 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:35,244 - INFO - Processing lobbyist ID: 021265223203-02
+2025-05-16 00:19:35,789 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:35,818 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:35,819 - INFO - Processing lobbyist ID: 021375141909-94
+2025-05-16 00:19:36,369 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:36,414 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:36,415 - INFO - Processing lobbyist ID: 021635997984-95
+2025-05-16 00:19:37,062 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:37,095 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:37,095 - INFO - Processing lobbyist ID: 021709749230-51
+2025-05-16 00:19:37,621 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:37,672 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:37,672 - INFO - Processing lobbyist ID: 021720248767-58
+2025-05-16 00:19:38,424 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:38,461 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:38,463 - INFO - Processing lobbyist ID: 021833522147-02
+2025-05-16 00:19:39,297 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:39,338 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:39,338 - INFO - Processing lobbyist ID: 021880022200-45
+2025-05-16 00:19:40,229 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:40,279 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:40,279 - INFO - Processing lobbyist ID: 021901530468-42
+2025-05-16 00:19:40,935 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:40,989 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:40,989 - INFO - Processing lobbyist ID: 021961038791-19
+2025-05-16 00:19:41,788 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:41,789 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:41,854 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:41,854 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:41,854 - INFO - Processing lobbyist ID: 022015093525-82
+2025-05-16 00:19:42,424 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:42,508 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:42,508 - INFO - Processing lobbyist ID: 022027817030-67
+2025-05-16 00:19:43,277 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:43,356 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:43,356 - INFO - Processing lobbyist ID: 02214595960-02
+2025-05-16 00:19:44,005 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:44,075 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:44,076 - INFO - Processing lobbyist ID: 022201744710-44
+2025-05-16 00:19:44,787 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:44,791 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:44,961 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:44,961 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:44,962 - INFO - Processing lobbyist ID: 022244744705-97
+2025-05-16 00:19:45,541 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:45,558 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:45,558 - INFO - Processing lobbyist ID: 022255314501-32
+2025-05-16 00:19:46,630 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:46,631 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:46,818 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:46,818 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:46,818 - INFO - Processing lobbyist ID: 022328713595-61
+2025-05-16 00:19:47,647 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:47,649 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:47,809 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:47,809 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:47,809 - INFO - Processing lobbyist ID: 0223480577-59
+2025-05-16 00:19:48,769 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:48,770 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:48,772 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:49,107 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:49,108 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:49,108 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:49,108 - INFO - Processing lobbyist ID: 022383552319-79
+2025-05-16 00:19:49,597 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:49,642 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:49,642 - INFO - Processing lobbyist ID: 022388324819-47
+2025-05-16 00:19:50,374 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:50,455 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:50,455 - INFO - Processing lobbyist ID: 022504216411-22
+2025-05-16 00:19:51,165 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:51,224 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:51,224 - INFO - Processing lobbyist ID: 022611849407-06
+2025-05-16 00:19:51,877 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:51,919 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:51,919 - INFO - Processing lobbyist ID: 022675395546-02
+2025-05-16 00:19:52,462 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:52,503 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:52,504 - INFO - Processing lobbyist ID: 022735321330-86
+2025-05-16 00:19:53,104 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:53,152 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:53,152 - INFO - Processing lobbyist ID: 022870797406-59
+2025-05-16 00:19:53,682 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:53,731 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:53,731 - INFO - Processing lobbyist ID: 022874548279-90
+2025-05-16 00:19:54,251 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:54,286 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:54,287 - INFO - Processing lobbyist ID: 023026317155-64
+2025-05-16 00:19:54,898 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:54,932 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:54,933 - INFO - Processing lobbyist ID: 023108295332-04
+2025-05-16 00:19:55,540 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:55,586 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:55,586 - INFO - Processing lobbyist ID: 023135843467-45
+2025-05-16 00:19:56,104 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:56,141 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:56,141 - INFO - Processing lobbyist ID: 023173296931-58
+2025-05-16 00:19:56,716 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:56,745 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:56,745 - INFO - Processing lobbyist ID: 023273214333-18
+2025-05-16 00:19:57,471 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:57,472 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:57,617 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:57,618 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:57,618 - INFO - Processing lobbyist ID: 023289696505-56
+2025-05-16 00:19:58,117 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:58,161 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:58,161 - INFO - Processing lobbyist ID: 023293231367-63
+2025-05-16 00:19:58,745 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:58,784 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:58,785 - INFO - Processing lobbyist ID: 023310148136-38
+2025-05-16 00:19:59,246 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:59,279 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:59,279 - INFO - Processing lobbyist ID: 023312592224-22
+2025-05-16 00:19:59,941 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:59,978 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:19:59,979 - INFO - Processing lobbyist ID: 023332310378-35
+2025-05-16 00:20:00,580 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:00,633 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:00,633 - INFO - Processing lobbyist ID: 023486652974-65
+2025-05-16 00:20:01,278 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:01,332 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:01,332 - INFO - Processing lobbyist ID: 023491340945-93
+2025-05-16 00:20:01,847 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:01,892 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:01,892 - INFO - Processing lobbyist ID: 023556594628-46
+2025-05-16 00:20:02,429 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:02,471 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:02,471 - INFO - Processing lobbyist ID: 023582135731-90
+2025-05-16 00:20:03,107 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:03,152 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:03,153 - INFO - Processing lobbyist ID: 023687097876-68
+2025-05-16 00:20:03,645 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:03,688 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:03,688 - INFO - Processing lobbyist ID: 023793696401-52
+2025-05-16 00:20:04,186 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:04,231 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:04,232 - INFO - Processing lobbyist ID: 02389833548-89
+2025-05-16 00:20:04,767 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:04,815 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:04,815 - INFO - Processing lobbyist ID: 024000049346-23
+2025-05-16 00:20:05,328 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:05,375 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:05,375 - INFO - Processing lobbyist ID: 024106028806-85
+2025-05-16 00:20:06,096 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:06,139 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:06,139 - INFO - Processing lobbyist ID: 024124346040-90
+2025-05-16 00:20:06,636 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:06,676 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:06,677 - INFO - Processing lobbyist ID: 024282227189-33
+2025-05-16 00:20:07,198 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:07,242 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:07,242 - INFO - Processing lobbyist ID: 024316744459-13
+2025-05-16 00:20:08,497 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:08,577 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:08,577 - INFO - Processing lobbyist ID: 024332447563-31
+2025-05-16 00:20:09,127 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:09,173 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:09,173 - INFO - Processing lobbyist ID: 024357597343-10
+2025-05-16 00:20:10,453 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:10,501 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:10,502 - INFO - Processed 400 lobbyists out of 14367. Pausing for 3 seconds to avoid server overload...
+2025-05-16 00:20:13,551 - INFO - Processing lobbyist ID: 024432110419-97
+2025-05-16 00:20:14,144 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:14,179 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:14,179 - INFO - Processing lobbyist ID: 024510296982-87
+2025-05-16 00:20:14,700 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:14,785 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:14,785 - INFO - Processing lobbyist ID: 02452103934-97
+2025-05-16 00:20:15,522 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:15,617 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:15,618 - INFO - Processing lobbyist ID: 024749722944-10
+2025-05-16 00:20:16,099 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:16,133 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:16,133 - INFO - Processing lobbyist ID: 024774597046-56
+2025-05-16 00:20:16,629 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:16,666 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:16,667 - INFO - Processing lobbyist ID: 024776016336-52
+2025-05-16 00:20:17,823 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:17,826 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:17,942 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:17,942 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:17,943 - INFO - Processing lobbyist ID: 024782946888-95
+2025-05-16 00:20:19,137 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:19,138 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:19,314 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:19,314 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:19,314 - INFO - Processing lobbyist ID: 02480451230-88
+2025-05-16 00:20:20,185 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:20,267 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:20,267 - INFO - Processing lobbyist ID: 024869794605-72
+2025-05-16 00:20:20,849 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:20,883 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:20,883 - INFO - Processing lobbyist ID: 024930697184-14
+2025-05-16 00:20:21,390 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:21,428 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:21,428 - INFO - Processing lobbyist ID: 025144329261-57
+2025-05-16 00:20:21,953 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:21,996 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:21,996 - INFO - Processing lobbyist ID: 025250318220-32
+2025-05-16 00:20:22,665 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:22,706 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:22,706 - INFO - Processing lobbyist ID: 025290351799-03
+2025-05-16 00:20:23,240 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:23,314 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 00:20:23,315 - INFO - Processing lobbyist ID: 025461722574-14
+2025-05-16 00:20:23,590 - ERROR - Traceback (most recent call last):
+2025-05-16 00:20:23,591 - ERROR - File "c:\Users\cribe\OneDrive\Test Magistrale\DB Populator\main.py", line 105, in <module>
+2025-05-16 00:20:23,594 - ERROR - process_lobbyists(batch_size, country_file)
+2025-05-16 00:20:23,596 - ERROR - File "c:\Users\cribe\OneDrive\Test Magistrale\DB Populator\main.py", line 69, in process_lobbyists
+2025-05-16 00:20:23,598 - ERROR - soup = get_soup(lobbyist_id)
+2025-05-16 00:20:23,599 - ERROR - ^
+2025-05-16 00:20:23,601 - ERROR - ^
+2025-05-16 00:20:23,601 - ERROR - ^
+2025-05-16 00:20:23,602 - ERROR - ^
+2025-05-16 00:20:23,603 - ERROR - ^
+2025-05-16 00:20:23,604 - ERROR - ^
+2025-05-16 00:20:23,605 - ERROR - ^
+2025-05-16 00:20:23,605 - ERROR - ^
+2025-05-16 00:20:23,606 - ERROR - ^
+2025-05-16 00:20:23,606 - ERROR - ^
+2025-05-16 00:20:23,607 - ERROR - ^
+2025-05-16 00:20:23,607 - ERROR - ^
+2025-05-16 00:20:23,608 - ERROR - ^
+2025-05-16 00:20:23,608 - ERROR - ^
+2025-05-16 00:20:23,608 - ERROR - ^
+2025-05-16 00:20:23,609 - ERROR - ^
+2025-05-16 00:20:23,609 - ERROR - ^
+2025-05-16 00:20:23,609 - ERROR - ^
+2025-05-16 00:20:23,610 - ERROR - ^
+2025-05-16 00:20:23,610 - ERROR - ^
+2025-05-16 00:20:23,610 - ERROR - ^
+2025-05-16 00:20:23,611 - ERROR - File "c:\Users\cribe\OneDrive\Test Magistrale\DB Populator\modules\utils.py", line 16, in get_soup
+2025-05-16 00:20:23,611 - ERROR - response = session.get(url, timeout=10)
+2025-05-16 00:20:23,611 - ERROR - ^
+2025-05-16 00:20:23,612 - ERROR - ^
+2025-05-16 00:20:23,612 - ERROR - ^
+2025-05-16 00:20:23,612 - ERROR - ^
+2025-05-16 00:20:23,612 - ERROR - ^
+2025-05-16 00:20:23,612 - ERROR - ^
+2025-05-16 00:20:23,612 - ERROR - ^
+2025-05-16 00:20:23,613 - ERROR - ^
+2025-05-16 00:20:23,613 - ERROR - ^
+2025-05-16 00:20:23,613 - ERROR - ^
+2025-05-16 00:20:23,613 - ERROR - ^
+2025-05-16 00:20:23,613 - ERROR - ^
+2025-05-16 00:20:23,613 - ERROR - ^
+2025-05-16 00:20:23,613 - ERROR - ^
+2025-05-16 00:20:23,614 - ERROR - ^
+2025-05-16 00:20:23,614 - ERROR - ^
+2025-05-16 00:20:23,614 - ERROR - ^
+2025-05-16 00:20:23,614 - ERROR - ^
+2025-05-16 00:20:23,614 - ERROR - ^
+2025-05-16 00:20:23,614 - ERROR - ^
+2025-05-16 00:20:23,615 - ERROR - ^
+2025-05-16 00:20:23,615 - ERROR - ^
+2025-05-16 00:20:23,615 - ERROR - ^
+2025-05-16 00:20:23,615 - ERROR - ^
+2025-05-16 00:20:23,615 - ERROR - ^
+2025-05-16 00:20:23,616 - ERROR - ^
+2025-05-16 00:20:23,616 - ERROR - ^
+2025-05-16 00:20:23,616 - ERROR - ^
+2025-05-16 00:20:23,616 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 602, in get
+2025-05-16 00:20:23,617 - ERROR - return self.request("GET", url, **kwargs)
+2025-05-16 00:20:23,617 - ERROR - ^
+2025-05-16 00:20:23,617 - ERROR - ^
+2025-05-16 00:20:23,617 - ERROR - ^
+2025-05-16 00:20:23,617 - ERROR - ^
+2025-05-16 00:20:23,617 - ERROR - ^
+2025-05-16 00:20:23,617 - ERROR - ^
+2025-05-16 00:20:23,618 - ERROR - ^
+2025-05-16 00:20:23,618 - ERROR - ^
+2025-05-16 00:20:23,618 - ERROR - ^
+2025-05-16 00:20:23,618 - ERROR - ^
+2025-05-16 00:20:23,618 - ERROR - ^
+2025-05-16 00:20:23,618 - ERROR - ^
+2025-05-16 00:20:23,618 - ERROR - ^
+2025-05-16 00:20:23,619 - ERROR - ^
+2025-05-16 00:20:23,619 - ERROR - ^
+2025-05-16 00:20:23,619 - ERROR - ^
+2025-05-16 00:20:23,619 - ERROR - ^
+2025-05-16 00:20:23,619 - ERROR - ^
+2025-05-16 00:20:23,619 - ERROR - ^
+2025-05-16 00:20:23,620 - ERROR - ^
+2025-05-16 00:20:23,620 - ERROR - ^
+2025-05-16 00:20:23,620 - ERROR - ^
+2025-05-16 00:20:23,620 - ERROR - ^
+2025-05-16 00:20:23,620 - ERROR - ^
+2025-05-16 00:20:23,620 - ERROR - ^
+2025-05-16 00:20:23,621 - ERROR - ^
+2025-05-16 00:20:23,621 - ERROR - ^
+2025-05-16 00:20:23,621 - ERROR - ^
+2025-05-16 00:20:23,621 - ERROR - ^
+2025-05-16 00:20:23,621 - ERROR - ^
+2025-05-16 00:20:23,621 - ERROR - ^
+2025-05-16 00:20:23,622 - ERROR - ^
+2025-05-16 00:20:23,622 - ERROR - ^
+2025-05-16 00:20:23,622 - ERROR - ^
+2025-05-16 00:20:23,622 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 589, in request
+2025-05-16 00:20:23,623 - ERROR - resp = self.send(prep, **send_kwargs)
+2025-05-16 00:20:23,623 - ERROR - ^
+2025-05-16 00:20:23,623 - ERROR - ^
+2025-05-16 00:20:23,623 - ERROR - ^
+2025-05-16 00:20:23,623 - ERROR - ^
+2025-05-16 00:20:23,623 - ERROR - ^
+2025-05-16 00:20:23,623 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,624 - ERROR - ^
+2025-05-16 00:20:23,625 - ERROR - ^
+2025-05-16 00:20:23,625 - ERROR - ^
+2025-05-16 00:20:23,625 - ERROR - ^
+2025-05-16 00:20:23,625 - ERROR - ^
+2025-05-16 00:20:23,625 - ERROR - ^
+2025-05-16 00:20:23,626 - ERROR - ^
+2025-05-16 00:20:23,626 - ERROR - ^
+2025-05-16 00:20:23,626 - ERROR - ^
+2025-05-16 00:20:23,626 - ERROR - ^
+2025-05-16 00:20:23,626 - ERROR - ^
+2025-05-16 00:20:23,626 - ERROR - ^
+2025-05-16 00:20:23,626 - ERROR - ^
+2025-05-16 00:20:23,627 - ERROR - ^
+2025-05-16 00:20:23,627 - ERROR - ^
+2025-05-16 00:20:23,627 - ERROR - ^
+2025-05-16 00:20:23,627 - ERROR - ^
+2025-05-16 00:20:23,627 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 703, in send
+2025-05-16 00:20:23,628 - ERROR - r = adapter.send(request, **kwargs)
+2025-05-16 00:20:23,628 - ERROR - ^
+2025-05-16 00:20:23,628 - ERROR - ^
+2025-05-16 00:20:23,628 - ERROR - ^
+2025-05-16 00:20:23,628 - ERROR - ^
+2025-05-16 00:20:23,628 - ERROR - ^
+2025-05-16 00:20:23,628 - ERROR - ^
+2025-05-16 00:20:23,629 - ERROR - ^
+2025-05-16 00:20:23,629 - ERROR - ^
+2025-05-16 00:20:23,629 - ERROR - ^
+2025-05-16 00:20:23,629 - ERROR - ^
+2025-05-16 00:20:23,629 - ERROR - ^
+2025-05-16 00:20:23,629 - ERROR - ^
+2025-05-16 00:20:23,629 - ERROR - ^
+2025-05-16 00:20:23,630 - ERROR - ^
+2025-05-16 00:20:23,630 - ERROR - ^
+2025-05-16 00:20:23,630 - ERROR - ^
+2025-05-16 00:20:23,630 - ERROR - ^
+2025-05-16 00:20:23,630 - ERROR - ^
+2025-05-16 00:20:23,630 - ERROR - ^
+2025-05-16 00:20:23,631 - ERROR - ^
+2025-05-16 00:20:23,631 - ERROR - ^
+2025-05-16 00:20:23,631 - ERROR - ^
+2025-05-16 00:20:23,631 - ERROR - ^
+2025-05-16 00:20:23,631 - ERROR - ^
+2025-05-16 00:20:23,631 - ERROR - ^
+2025-05-16 00:20:23,631 - ERROR - ^
+2025-05-16 00:20:23,632 - ERROR - ^
+2025-05-16 00:20:23,632 - ERROR - ^
+2025-05-16 00:20:23,632 - ERROR - ^
+2025-05-16 00:20:23,632 - ERROR - ^
+2025-05-16 00:20:23,632 - ERROR - ^
+2025-05-16 00:20:23,632 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\adapters.py", line 667, in send
+2025-05-16 00:20:23,633 - ERROR - resp = conn.urlopen(
+2025-05-16 00:20:23,633 - ERROR - ^
+2025-05-16 00:20:23,633 - ERROR - ^
+2025-05-16 00:20:23,633 - ERROR - ^
+2025-05-16 00:20:23,633 - ERROR - ^
+2025-05-16 00:20:23,633 - ERROR - ^
+2025-05-16 00:20:23,634 - ERROR - ^
+2025-05-16 00:20:23,634 - ERROR - ^
+2025-05-16 00:20:23,634 - ERROR - ^
+2025-05-16 00:20:23,634 - ERROR - ^
+2025-05-16 00:20:23,634 - ERROR - ^
+2025-05-16 00:20:23,634 - ERROR - ^
+2025-05-16 00:20:23,634 - ERROR - ^
+2025-05-16 00:20:23,635 - ERROR - ^
+2025-05-16 00:20:23,635 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+2025-05-16 00:20:23,635 - ERROR - response = self._make_request(
+2025-05-16 00:20:23,635 - ERROR - ^
+2025-05-16 00:20:23,636 - ERROR - ^
+2025-05-16 00:20:23,636 - ERROR - ^
+2025-05-16 00:20:23,636 - ERROR - ^
+2025-05-16 00:20:23,636 - ERROR - ^
+2025-05-16 00:20:23,636 - ERROR - ^
+2025-05-16 00:20:23,636 - ERROR - ^
+2025-05-16 00:20:23,636 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,637 - ERROR - ^
+2025-05-16 00:20:23,638 - ERROR - ^
+2025-05-16 00:20:23,638 - ERROR - ^
+2025-05-16 00:20:23,638 - ERROR - ^
+2025-05-16 00:20:23,638 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+2025-05-16 00:20:23,639 - ERROR - response = conn.getresponse()
+2025-05-16 00:20:23,639 - ERROR - ^
+2025-05-16 00:20:23,639 - ERROR - ^
+2025-05-16 00:20:23,639 - ERROR - ^
+2025-05-16 00:20:23,639 - ERROR - ^
+2025-05-16 00:20:23,639 - ERROR - ^
+2025-05-16 00:20:23,639 - ERROR - ^
+2025-05-16 00:20:23,640 - ERROR - ^
+2025-05-16 00:20:23,640 - ERROR - ^
+2025-05-16 00:20:23,640 - ERROR - ^
+2025-05-16 00:20:23,640 - ERROR - ^
+2025-05-16 00:20:23,640 - ERROR - ^
+2025-05-16 00:20:23,641 - ERROR - ^
+2025-05-16 00:20:23,641 - ERROR - ^
+2025-05-16 00:20:23,641 - ERROR - ^
+2025-05-16 00:20:23,641 - ERROR - ^
+2025-05-16 00:20:23,641 - ERROR - ^
+2025-05-16 00:20:23,641 - ERROR - ^
+2025-05-16 00:20:23,641 - ERROR - ^
+2025-05-16 00:20:23,642 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 516, in getresponse
+2025-05-16 00:20:23,642 - ERROR - httplib_response = super().getresponse()
+2025-05-16 00:20:23,642 - ERROR - ^
+2025-05-16 00:20:23,642 - ERROR - ^
+2025-05-16 00:20:23,642 - ERROR - ^
+2025-05-16 00:20:23,643 - ERROR - ^
+2025-05-16 00:20:23,643 - ERROR - ^
+2025-05-16 00:20:23,643 - ERROR - ^
+2025-05-16 00:20:23,643 - ERROR - ^
+2025-05-16 00:20:23,643 - ERROR - ^
+2025-05-16 00:20:23,643 - ERROR - ^
+2025-05-16 00:20:23,643 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,644 - ERROR - ^
+2025-05-16 00:20:23,645 - ERROR - ^
+2025-05-16 00:20:23,645 - ERROR - ^
+2025-05-16 00:20:23,645 - ERROR - ^
+2025-05-16 00:20:23,645 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1395, in getresponse
+2025-05-16 00:20:23,646 - ERROR - response.begin()
+2025-05-16 00:20:23,646 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 325, in begin
+2025-05-16 00:20:23,647 - ERROR - version, status, reason = self._read_status()
+2025-05-16 00:20:23,647 - ERROR - ^
+2025-05-16 00:20:23,647 - ERROR - ^
+2025-05-16 00:20:23,647 - ERROR - ^
+2025-05-16 00:20:23,647 - ERROR - ^
+2025-05-16 00:20:23,647 - ERROR - ^
+2025-05-16 00:20:23,647 - ERROR - ^
+2025-05-16 00:20:23,648 - ERROR - ^
+2025-05-16 00:20:23,648 - ERROR - ^
+2025-05-16 00:20:23,648 - ERROR - ^
+2025-05-16 00:20:23,648 - ERROR - ^
+2025-05-16 00:20:23,648 - ERROR - ^
+2025-05-16 00:20:23,648 - ERROR - ^
+2025-05-16 00:20:23,648 - ERROR - ^
+2025-05-16 00:20:23,649 - ERROR - ^
+2025-05-16 00:20:23,649 - ERROR - ^
+2025-05-16 00:20:23,649 - ERROR - ^
+2025-05-16 00:20:23,649 - ERROR - ^
+2025-05-16 00:20:23,649 - ERROR - ^
+2025-05-16 00:20:23,649 - ERROR - ^
+2025-05-16 00:20:23,649 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 286, in _read_status
+2025-05-16 00:20:23,650 - ERROR - line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+2025-05-16 00:20:23,650 - ERROR - ^
+2025-05-16 00:20:23,650 - ERROR - ^
+2025-05-16 00:20:23,650 - ERROR - ^
+2025-05-16 00:20:23,651 - ERROR - ^
+2025-05-16 00:20:23,651 - ERROR - ^
+2025-05-16 00:20:23,651 - ERROR - ^
+2025-05-16 00:20:23,651 - ERROR - ^
+2025-05-16 00:20:23,651 - ERROR - ^
+2025-05-16 00:20:23,651 - ERROR - ^
+2025-05-16 00:20:23,651 - ERROR - ^
+2025-05-16 00:20:23,652 - ERROR - ^
+2025-05-16 00:20:23,652 - ERROR - ^
+2025-05-16 00:20:23,652 - ERROR - ^
+2025-05-16 00:20:23,652 - ERROR - ^
+2025-05-16 00:20:23,652 - ERROR - ^
+2025-05-16 00:20:23,652 - ERROR - ^
+2025-05-16 00:20:23,652 - ERROR - ^
+2025-05-16 00:20:23,653 - ERROR - ^
+2025-05-16 00:20:23,653 - ERROR - ^
+2025-05-16 00:20:23,653 - ERROR - ^
+2025-05-16 00:20:23,653 - ERROR - ^
+2025-05-16 00:20:23,653 - ERROR - ^
+2025-05-16 00:20:23,653 - ERROR - ^
+2025-05-16 00:20:23,653 - ERROR - ^
+2025-05-16 00:20:23,654 - ERROR - ^
+2025-05-16 00:20:23,654 - ERROR - ^
+2025-05-16 00:20:23,654 - ERROR - ^
+2025-05-16 00:20:23,654 - ERROR - ^
+2025-05-16 00:20:23,654 - ERROR - ^
+2025-05-16 00:20:23,654 - ERROR - ^
+2025-05-16 00:20:23,655 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+2025-05-16 00:20:23,655 - ERROR - return self._sock.recv_into(b)
+2025-05-16 00:20:23,655 - ERROR - ^
+2025-05-16 00:20:23,656 - ERROR - ^
+2025-05-16 00:20:23,656 - ERROR - ^
+2025-05-16 00:20:23,656 - ERROR - ^
+2025-05-16 00:20:23,656 - ERROR - ^
+2025-05-16 00:20:23,656 - ERROR - ^
+2025-05-16 00:20:23,656 - ERROR - ^
+2025-05-16 00:20:23,657 - ERROR - ^
+2025-05-16 00:20:23,657 - ERROR - ^
+2025-05-16 00:20:23,657 - ERROR - ^
+2025-05-16 00:20:23,657 - ERROR - ^
+2025-05-16 00:20:23,657 - ERROR - ^
+2025-05-16 00:20:23,657 - ERROR - ^
+2025-05-16 00:20:23,657 - ERROR - ^
+2025-05-16 00:20:23,658 - ERROR - ^
+2025-05-16 00:20:23,658 - ERROR - ^
+2025-05-16 00:20:23,658 - ERROR - ^
+2025-05-16 00:20:23,658 - ERROR - ^
+2025-05-16 00:20:23,658 - ERROR - ^
+2025-05-16 00:20:23,658 - ERROR - ^
+2025-05-16 00:20:23,658 - ERROR - ^
+2025-05-16 00:20:23,659 - ERROR - ^
+2025-05-16 00:20:23,659 - ERROR - ^
+2025-05-16 00:20:23,659 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1314, in recv_into
+2025-05-16 00:20:23,660 - ERROR - return self.read(nbytes, buffer)
+2025-05-16 00:20:23,660 - ERROR - ^
+2025-05-16 00:20:23,660 - ERROR - ^
+2025-05-16 00:20:23,660 - ERROR - ^
+2025-05-16 00:20:23,660 - ERROR - ^
+2025-05-16 00:20:23,660 - ERROR - ^
+2025-05-16 00:20:23,661 - ERROR - ^
+2025-05-16 00:20:23,661 - ERROR - ^
+2025-05-16 00:20:23,661 - ERROR - ^
+2025-05-16 00:20:23,661 - ERROR - ^
+2025-05-16 00:20:23,661 - ERROR - ^
+2025-05-16 00:20:23,661 - ERROR - ^
+2025-05-16 00:20:23,661 - ERROR - ^
+2025-05-16 00:20:23,662 - ERROR - ^
+2025-05-16 00:20:23,662 - ERROR - ^
+2025-05-16 00:20:23,662 - ERROR - ^
+2025-05-16 00:20:23,662 - ERROR - ^
+2025-05-16 00:20:23,662 - ERROR - ^
+2025-05-16 00:20:23,662 - ERROR - ^
+2025-05-16 00:20:23,662 - ERROR - ^
+2025-05-16 00:20:23,663 - ERROR - ^
+2025-05-16 00:20:23,663 - ERROR - ^
+2025-05-16 00:20:23,663 - ERROR - ^
+2025-05-16 00:20:23,663 - ERROR - ^
+2025-05-16 00:20:23,663 - ERROR - ^
+2025-05-16 00:20:23,663 - ERROR - ^
+2025-05-16 00:20:23,663 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1166, in read
+2025-05-16 00:20:23,664 - ERROR - return self._sslobj.read(len, buffer)
+2025-05-16 00:20:23,664 - ERROR - ^
+2025-05-16 00:20:23,664 - ERROR - ^
+2025-05-16 00:20:23,665 - ERROR - ^
+2025-05-16 00:20:23,665 - ERROR - ^
+2025-05-16 00:20:23,665 - ERROR - ^
+2025-05-16 00:20:23,665 - ERROR - ^
+2025-05-16 00:20:23,665 - ERROR - ^
+2025-05-16 00:20:23,665 - ERROR - ^
+2025-05-16 00:20:23,665 - ERROR - ^
+2025-05-16 00:20:23,666 - ERROR - ^
+2025-05-16 00:20:23,666 - ERROR - ^
+2025-05-16 00:20:23,666 - ERROR - ^
+2025-05-16 00:20:23,666 - ERROR - ^
+2025-05-16 00:20:23,666 - ERROR - ^
+2025-05-16 00:20:23,666 - ERROR - ^
+2025-05-16 00:20:23,666 - ERROR - ^
+2025-05-16 00:20:23,667 - ERROR - ^
+2025-05-16 00:20:23,667 - ERROR - ^
+2025-05-16 00:20:23,667 - ERROR - ^
+2025-05-16 00:20:23,667 - ERROR - ^
+2025-05-16 00:20:23,667 - ERROR - ^
+2025-05-16 00:20:23,667 - ERROR - ^
+2025-05-16 00:20:23,667 - ERROR - ^
+2025-05-16 00:20:23,668 - ERROR - ^
+2025-05-16 00:20:23,668 - ERROR - ^
+2025-05-16 00:20:23,668 - ERROR - ^
+2025-05-16 00:20:23,668 - ERROR - ^
+2025-05-16 00:20:23,668 - ERROR - ^
+2025-05-16 00:20:23,668 - ERROR - ^
+2025-05-16 00:20:23,668 - ERROR - ^
+2025-05-16 00:20:23,669 - ERROR - KeyboardInterrupt

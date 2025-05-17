@@ -20,6 +20,8 @@ CREATE TABLE IF NOT EXISTS lobbyist_profile (
     eu_relations_representative_role VARCHAR(255), -- Role of the EU affairs representative
     transparency_register_url VARCHAR(255),        -- Url to lobbyist page
     country VARCHAR(255),                          -- Country
+	annual_cost_estimate_min BIGINT,              -- Annual cost estimate (min)
+    annual_cost_estimate_max BIGINT,              -- Annual cost estimate (max)
     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

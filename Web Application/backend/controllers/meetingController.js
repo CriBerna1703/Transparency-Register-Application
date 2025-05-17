@@ -15,6 +15,8 @@ module.exports = {
             const representative_ids = ensureArray(req.query.representative_ids);
             const directorate_ids = ensureArray(req.query.directorate_ids);
             const field_ids = ensureArray(req.query.field_ids);
+            const minBudget = parseInt(req.query.minBudget);
+            const maxBudget = parseInt(req.query.maxBudget);
 
             let whereClause = {};
 
@@ -72,6 +74,19 @@ module.exports = {
                 fieldWhereClause.field_id = { [Op.or]: field_ids };
             }
 
+            let lobbyistWhereClause = {};
+
+            if (!isNaN(minBudget) && !isNaN(maxBudget)) {
+                lobbyistWhereClause[Op.and] = [
+                    { annual_cost_estimate_min: { [Op.lte]: maxBudget } },
+                    { annual_cost_estimate_max: { [Op.gte]: minBudget } }
+                ];
+            } else if (!isNaN(minBudget)) {
+                lobbyistWhereClause.annual_cost_estimate_max = { [Op.gte]: minBudget };
+            } else if (!isNaN(maxBudget)) {
+                lobbyistWhereClause.annual_cost_estimate_min = { [Op.lte]: maxBudget };
+            }
+
             const meetings = await Meeting.findAll({
                 where: whereClause,
                 include: [
@@ -97,6 +112,7 @@ module.exports = {
                     {
                         model: Lobbyist,
                         required: true,
+                        where: lobbyistWhereClause,
                         include: [
                             {
                                 model: Field,

@@ -1,0 +1,11 @@
+2025-05-16 16:39:48,424 - INFO - Log salvato in: execution_logs\script_execution_2025-05-16_16-39-48.log
+2025-05-16 16:39:48,424 - INFO - Inizio esecuzione script principale.
+2025-05-16 16:39:48,424 - INFO - Step 4: Elaborazione dei lobbisti.
+2025-05-16 16:39:48,457 - INFO - package: mysql.connector.plugins
+2025-05-16 16:39:48,457 - INFO - plugin_name: caching_sha2_password
+2025-05-16 16:39:48,457 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-16 16:39:48,481 - INFO - Processing lobbyist ID: 000422497674-67
+2025-05-16 16:40:22,981 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 16:40:23,049 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-16 16:40:23,049 - INFO - Processed 1 lobbyists out of 1. Pausing for 3 seconds to avoid server overload...
+2025-05-16 16:40:26,050 - INFO - Esecuzione script completata con successo.

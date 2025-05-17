@@ -128,6 +128,39 @@ export class D3Service {
   
     const lastMonthEnd = new Date(months[months.length - 1].getFullYear(), months[months.length - 1].getMonth() + 1, 1);
     const lastMonthX = timeScale(lastMonthEnd);
+
+    for (let i = 0; i < months.length - 1; i++) {
+      const curr = months[i];
+      const next = months[i + 1];
+      if (curr.getFullYear() !== next.getFullYear()) {
+        const x = timeScale(next);
+
+        svg.append('line')
+          .attr('x1', x)
+          .attr('x2', x)
+          .attr('y1', height - 30)
+          .attr('y2', height + 35)
+          .attr('stroke', '#888')
+          .attr('stroke-width', 2)
+          .attr('class', 'year-change-bar');
+
+        svg.append('text')
+          .attr('x', x - 8)
+          .attr('y', height - 35)
+          .attr('text-anchor', 'end')
+          .attr('font-size', '14px')
+          .attr('fill', '#444')
+          .text(curr.getFullYear());
+
+        svg.append('text')
+          .attr('x', x + 8)
+          .attr('y', height - 35)
+          .attr('text-anchor', 'start')
+          .attr('font-size', '14px')
+          .attr('fill', '#444')
+          .text(next.getFullYear());
+      }
+    }
   }
 
   getTimeScale(width: number, startDate: Date, endDate: Date, scalePercentage: number = 1): d3.ScaleTime<number, number> {

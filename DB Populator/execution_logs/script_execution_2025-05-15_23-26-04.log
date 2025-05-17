@@ -1,0 +1,560 @@
+2025-05-15 23:26:04,501 - INFO - Log salvato in: execution_logs\script_execution_2025-05-15_23-26-04.log
+2025-05-15 23:26:04,501 - INFO - Inizio esecuzione script principale.
+2025-05-15 23:26:04,501 - INFO - Step 1: Backup del database e troncamento delle tabelle.
+2025-05-15 23:26:04,544 - INFO - package: mysql.connector.plugins
+2025-05-15 23:26:04,544 - INFO - plugin_name: caching_sha2_password
+2025-05-15 23:26:04,545 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-15 23:26:04,623 - INFO - Backup del database completato: db_history\backup_2025-05-15_23-26-04.sql
+2025-05-15 23:26:04,626 - INFO - Backup e troncamento completati con successo.
+2025-05-15 23:26:04,627 - INFO - Step 2: Estrazione dei rappresentanti della commissione.
+2025-05-15 23:26:08,251 - INFO - Estrazione dei rappresentanti completata.
+2025-05-15 23:26:08,252 - INFO - Step 3: Raccolta degli ID dei lobbisti.
+2025-05-15 23:26:08,252 - INFO - Scraping letter A...
+2025-05-15 23:27:10,547 - INFO - Scraping letter B...
+2025-05-15 23:27:35,296 - INFO - Scraping letter C...
+2025-05-15 23:28:23,551 - INFO - Scraping letter D...
+2025-05-15 23:28:52,351 - INFO - Scraping letter E...
+2025-05-15 23:30:11,392 - INFO - Scraping letter F...
+2025-05-15 23:30:44,959 - INFO - Scraping letter G...
+2025-05-15 23:30:59,428 - INFO - Scraping letter H...
+2025-05-15 23:31:17,430 - INFO - Scraping letter I...
+2025-05-15 23:31:48,362 - INFO - Scraping letter J...
+2025-05-15 23:31:51,974 - INFO - Scraping letter K...
+2025-05-15 23:32:00,139 - INFO - Scraping letter L...
+2025-05-15 23:32:11,639 - INFO - Scraping letter M...
+2025-05-15 23:32:28,321 - INFO - Scraping letter N...
+2025-05-15 23:32:42,044 - INFO - Scraping letter O...
+2025-05-15 23:32:53,393 - INFO - Scraping letter P...
+2025-05-15 23:33:13,974 - INFO - Scraping letter Q...
+2025-05-15 23:33:15,682 - INFO - Scraping letter R...
+2025-05-15 23:33:29,098 - INFO - Scraping letter S...
+2025-05-15 23:34:06,548 - INFO - Scraping letter T...
+2025-05-15 23:34:28,809 - INFO - Scraping letter U...
+2025-05-15 23:34:41,864 - INFO - Scraping letter V...
+2025-05-15 23:34:55,208 - INFO - Scraping letter W...
+2025-05-15 23:35:03,656 - INFO - Scraping letter X...
+2025-05-15 23:35:04,426 - INFO - Scraping letter Y...
+2025-05-15 23:35:05,852 - INFO - Scraping letter Z...
+2025-05-15 23:35:08,720 - INFO - Raccolta ID lobbisti completata.
+2025-05-15 23:35:08,720 - INFO - Step 4: Elaborazione dei lobbisti.
+2025-05-15 23:35:08,814 - INFO - Processing lobbyist ID: 000075850398-74
+2025-05-15 23:35:09,449 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:09,471 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:09,471 - INFO - Processing lobbyist ID: 000104242849-49
+2025-05-15 23:35:10,041 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:10,099 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:10,100 - INFO - Processing lobbyist ID: 000142439924-52
+2025-05-15 23:35:10,616 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:10,635 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:10,635 - INFO - Processing lobbyist ID: 000182225214-48
+2025-05-15 23:35:11,129 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:11,152 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:11,152 - INFO - Processing lobbyist ID: 0001976677-12
+2025-05-15 23:35:12,448 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:12,448 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:12,450 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:12,651 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:12,651 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:12,652 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:12,652 - INFO - Processing lobbyist ID: 000244295913-08
+2025-05-15 23:35:13,182 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:13,206 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:13,206 - INFO - Processing lobbyist ID: 000422497674-67
+2025-05-15 23:35:13,684 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:13,700 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:13,700 - INFO - Processing lobbyist ID: 000527594184-73
+2025-05-15 23:35:14,186 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:14,209 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:14,209 - INFO - Processing lobbyist ID: 000688397923-96
+2025-05-15 23:35:14,744 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:14,761 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:14,761 - INFO - Processing lobbyist ID: 000695351467-52
+2025-05-15 23:35:15,335 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:15,352 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:15,352 - INFO - Processing lobbyist ID: 000764914245-74
+2025-05-15 23:35:15,951 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:15,969 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:15,969 - INFO - Processing lobbyist ID: 00086317186-42
+2025-05-15 23:35:17,085 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:17,085 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:17,283 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:17,283 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:17,283 - INFO - Processing lobbyist ID: 000889444601-32
+2025-05-15 23:35:17,910 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:17,952 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:17,952 - INFO - Processing lobbyist ID: 00098856602-24
+2025-05-15 23:35:18,937 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:18,941 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:19,143 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:19,143 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:19,143 - INFO - Processing lobbyist ID: 001012493142-90
+2025-05-15 23:35:19,994 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:20,036 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:20,036 - INFO - Processing lobbyist ID: 001034597151-46
+2025-05-15 23:35:20,582 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:20,621 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:20,621 - INFO - Processing lobbyist ID: 001034695847-74
+2025-05-15 23:35:21,149 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:21,200 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:21,200 - INFO - Processing lobbyist ID: 001133594410-22
+2025-05-15 23:35:21,756 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:21,796 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:21,797 - INFO - Processing lobbyist ID: 001245815997-85
+2025-05-15 23:35:22,665 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:22,777 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:22,777 - INFO - Processing lobbyist ID: 001339619562-21
+2025-05-15 23:35:23,326 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:23,371 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:23,372 - INFO - Processing lobbyist ID: 001373249269-75
+2025-05-15 23:35:24,024 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:24,048 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:24,049 - INFO - Processing lobbyist ID: 0014082722-83
+2025-05-15 23:35:26,805 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,805 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,805 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,806 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,806 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,806 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,806 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,806 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,807 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:26,807 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,901 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,902 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,902 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,902 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,902 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,902 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,903 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,903 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,903 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,903 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:27,903 - INFO - Processing lobbyist ID: 001531620369-40
+2025-05-15 23:35:28,417 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:28,434 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:28,434 - INFO - Processing lobbyist ID: 00162715418-92
+2025-05-15 23:35:29,154 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:29,157 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:29,360 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:29,361 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:29,361 - INFO - Processing lobbyist ID: 001634749272-03
+2025-05-15 23:35:29,885 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:29,919 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:29,919 - INFO - Processing lobbyist ID: 001688341517-07
+2025-05-15 23:35:30,469 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:30,509 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:30,509 - INFO - Processing lobbyist ID: 001814832718-07
+2025-05-15 23:35:31,012 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:31,062 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:31,062 - INFO - Processing lobbyist ID: 001852197924-10
+2025-05-15 23:35:31,560 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:31,599 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:31,599 - INFO - Processing lobbyist ID: 001866415031-87
+2025-05-15 23:35:33,375 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,379 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,381 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,384 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,385 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,942 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,942 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,943 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,943 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,943 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:33,943 - INFO - Processing lobbyist ID: 001908294805-68
+2025-05-15 23:35:34,477 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:34,552 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:34,552 - INFO - Processing lobbyist ID: 001968511387-52
+2025-05-15 23:35:35,158 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:35,229 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:35,229 - INFO - Processing lobbyist ID: 002032845543-49
+2025-05-15 23:35:35,841 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:35,862 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:35,862 - INFO - Processing lobbyist ID: 002077217226-17
+2025-05-15 23:35:36,504 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:36,567 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:36,567 - INFO - Processing lobbyist ID: 002126439066-24
+2025-05-15 23:35:37,122 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:37,147 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:37,148 - INFO - Processing lobbyist ID: 002130110187-09
+2025-05-15 23:35:37,757 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:37,813 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:37,813 - INFO - Processing lobbyist ID: 002206440983-89
+2025-05-15 23:35:38,586 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:38,611 - WARNING - CropBox missing from /Page, defaulting to MediaBox
+2025-05-15 23:35:38,612 - INFO - Processing lobbyist ID: 002278013515-26
+2025-05-15 23:35:40,001 - ERROR - Traceback (most recent call last):
+2025-05-15 23:35:40,001 - ERROR - File "c:\Users\cribe\OneDrive\Test Magistrale\DB Populator\main.py", line 105, in <module>
+2025-05-15 23:35:40,002 - ERROR - process_lobbyists(batch_size, country_file)
+2025-05-15 23:35:40,002 - ERROR - File "c:\Users\cribe\OneDrive\Test Magistrale\DB Populator\main.py", line 69, in process_lobbyists
+2025-05-15 23:35:40,002 - ERROR - soup = get_soup(lobbyist_id)
+2025-05-15 23:35:40,003 - ERROR - ^
+2025-05-15 23:35:40,003 - ERROR - ^
+2025-05-15 23:35:40,004 - ERROR - ^
+2025-05-15 23:35:40,004 - ERROR - ^
+2025-05-15 23:35:40,004 - ERROR - ^
+2025-05-15 23:35:40,004 - ERROR - ^
+2025-05-15 23:35:40,004 - ERROR - ^
+2025-05-15 23:35:40,005 - ERROR - ^
+2025-05-15 23:35:40,005 - ERROR - ^
+2025-05-15 23:35:40,005 - ERROR - ^
+2025-05-15 23:35:40,005 - ERROR - ^
+2025-05-15 23:35:40,005 - ERROR - ^
+2025-05-15 23:35:40,005 - ERROR - ^
+2025-05-15 23:35:40,005 - ERROR - ^
+2025-05-15 23:35:40,006 - ERROR - ^
+2025-05-15 23:35:40,006 - ERROR - ^
+2025-05-15 23:35:40,006 - ERROR - ^
+2025-05-15 23:35:40,006 - ERROR - ^
+2025-05-15 23:35:40,006 - ERROR - ^
+2025-05-15 23:35:40,006 - ERROR - ^
+2025-05-15 23:35:40,007 - ERROR - ^
+2025-05-15 23:35:40,007 - ERROR - File "c:\Users\cribe\OneDrive\Test Magistrale\DB Populator\modules\utils.py", line 16, in get_soup
+2025-05-15 23:35:40,007 - ERROR - response = session.get(url, timeout=10)
+2025-05-15 23:35:40,007 - ERROR - ^
+2025-05-15 23:35:40,007 - ERROR - ^
+2025-05-15 23:35:40,008 - ERROR - ^
+2025-05-15 23:35:40,008 - ERROR - ^
+2025-05-15 23:35:40,008 - ERROR - ^
+2025-05-15 23:35:40,008 - ERROR - ^
+2025-05-15 23:35:40,008 - ERROR - ^
+2025-05-15 23:35:40,008 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,009 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,010 - ERROR - ^
+2025-05-15 23:35:40,011 - ERROR - ^
+2025-05-15 23:35:40,011 - ERROR - ^
+2025-05-15 23:35:40,011 - ERROR - ^
+2025-05-15 23:35:40,011 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 602, in get
+2025-05-15 23:35:40,023 - ERROR - return self.request("GET", url, **kwargs)
+2025-05-15 23:35:40,023 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,024 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,026 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,027 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,028 - ERROR - ^
+2025-05-15 23:35:40,029 - ERROR - ^
+2025-05-15 23:35:40,029 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 589, in request
+2025-05-15 23:35:40,029 - ERROR - resp = self.send(prep, **send_kwargs)
+2025-05-15 23:35:40,029 - ERROR - ^
+2025-05-15 23:35:40,030 - ERROR - ^
+2025-05-15 23:35:40,030 - ERROR - ^
+2025-05-15 23:35:40,030 - ERROR - ^
+2025-05-15 23:35:40,030 - ERROR - ^
+2025-05-15 23:35:40,030 - ERROR - ^
+2025-05-15 23:35:40,030 - ERROR - ^
+2025-05-15 23:35:40,031 - ERROR - ^
+2025-05-15 23:35:40,031 - ERROR - ^
+2025-05-15 23:35:40,031 - ERROR - ^
+2025-05-15 23:35:40,031 - ERROR - ^
+2025-05-15 23:35:40,031 - ERROR - ^
+2025-05-15 23:35:40,031 - ERROR - ^
+2025-05-15 23:35:40,032 - ERROR - ^
+2025-05-15 23:35:40,032 - ERROR - ^
+2025-05-15 23:35:40,032 - ERROR - ^
+2025-05-15 23:35:40,032 - ERROR - ^
+2025-05-15 23:35:40,033 - ERROR - ^
+2025-05-15 23:35:40,033 - ERROR - ^
+2025-05-15 23:35:40,033 - ERROR - ^
+2025-05-15 23:35:40,033 - ERROR - ^
+2025-05-15 23:35:40,033 - ERROR - ^
+2025-05-15 23:35:40,034 - ERROR - ^
+2025-05-15 23:35:40,034 - ERROR - ^
+2025-05-15 23:35:40,034 - ERROR - ^
+2025-05-15 23:35:40,034 - ERROR - ^
+2025-05-15 23:35:40,034 - ERROR - ^
+2025-05-15 23:35:40,034 - ERROR - ^
+2025-05-15 23:35:40,035 - ERROR - ^
+2025-05-15 23:35:40,035 - ERROR - ^
+2025-05-15 23:35:40,035 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\sessions.py", line 703, in send
+2025-05-15 23:35:40,035 - ERROR - r = adapter.send(request, **kwargs)
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,036 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,037 - ERROR - ^
+2025-05-15 23:35:40,038 - ERROR - ^
+2025-05-15 23:35:40,038 - ERROR - ^
+2025-05-15 23:35:40,038 - ERROR - ^
+2025-05-15 23:35:40,038 - ERROR - ^
+2025-05-15 23:35:40,038 - ERROR - ^
+2025-05-15 23:35:40,038 - ERROR - ^
+2025-05-15 23:35:40,038 - ERROR - ^
+2025-05-15 23:35:40,039 - ERROR - ^
+2025-05-15 23:35:40,039 - ERROR - ^
+2025-05-15 23:35:40,039 - ERROR - ^
+2025-05-15 23:35:40,039 - ERROR - ^
+2025-05-15 23:35:40,039 - ERROR - ^
+2025-05-15 23:35:40,039 - ERROR - ^
+2025-05-15 23:35:40,039 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\requests\adapters.py", line 667, in send
+2025-05-15 23:35:40,050 - ERROR - resp = conn.urlopen(
+2025-05-15 23:35:40,051 - ERROR - ^
+2025-05-15 23:35:40,051 - ERROR - ^
+2025-05-15 23:35:40,051 - ERROR - ^
+2025-05-15 23:35:40,051 - ERROR - ^
+2025-05-15 23:35:40,051 - ERROR - ^
+2025-05-15 23:35:40,051 - ERROR - ^
+2025-05-15 23:35:40,052 - ERROR - ^
+2025-05-15 23:35:40,052 - ERROR - ^
+2025-05-15 23:35:40,052 - ERROR - ^
+2025-05-15 23:35:40,052 - ERROR - ^
+2025-05-15 23:35:40,052 - ERROR - ^
+2025-05-15 23:35:40,052 - ERROR - ^
+2025-05-15 23:35:40,053 - ERROR - ^
+2025-05-15 23:35:40,053 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+2025-05-15 23:35:40,053 - ERROR - response = self._make_request(
+2025-05-15 23:35:40,053 - ERROR - ^
+2025-05-15 23:35:40,054 - ERROR - ^
+2025-05-15 23:35:40,054 - ERROR - ^
+2025-05-15 23:35:40,054 - ERROR - ^
+2025-05-15 23:35:40,054 - ERROR - ^
+2025-05-15 23:35:40,054 - ERROR - ^
+2025-05-15 23:35:40,054 - ERROR - ^
+2025-05-15 23:35:40,054 - ERROR - ^
+2025-05-15 23:35:40,055 - ERROR - ^
+2025-05-15 23:35:40,055 - ERROR - ^
+2025-05-15 23:35:40,055 - ERROR - ^
+2025-05-15 23:35:40,055 - ERROR - ^
+2025-05-15 23:35:40,055 - ERROR - ^
+2025-05-15 23:35:40,055 - ERROR - ^
+2025-05-15 23:35:40,055 - ERROR - ^
+2025-05-15 23:35:40,056 - ERROR - ^
+2025-05-15 23:35:40,056 - ERROR - ^
+2025-05-15 23:35:40,056 - ERROR - ^
+2025-05-15 23:35:40,056 - ERROR - ^
+2025-05-15 23:35:40,056 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+2025-05-15 23:35:40,057 - ERROR - response = conn.getresponse()
+2025-05-15 23:35:40,057 - ERROR - ^
+2025-05-15 23:35:40,057 - ERROR - ^
+2025-05-15 23:35:40,057 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,058 - ERROR - ^
+2025-05-15 23:35:40,059 - ERROR - ^
+2025-05-15 23:35:40,059 - ERROR - ^
+2025-05-15 23:35:40,059 - ERROR - ^
+2025-05-15 23:35:40,060 - ERROR - ^
+2025-05-15 23:35:40,060 - ERROR - ^
+2025-05-15 23:35:40,060 - ERROR - ^
+2025-05-15 23:35:40,060 - ERROR - ^
+2025-05-15 23:35:40,060 - ERROR - File "C:\Users\cribe\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\urllib3\connection.py", line 516, in getresponse
+2025-05-15 23:35:40,069 - ERROR - httplib_response = super().getresponse()
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,070 - ERROR - ^
+2025-05-15 23:35:40,071 - ERROR - ^
+2025-05-15 23:35:40,071 - ERROR - ^
+2025-05-15 23:35:40,071 - ERROR - ^
+2025-05-15 23:35:40,071 - ERROR - ^
+2025-05-15 23:35:40,071 - ERROR - ^
+2025-05-15 23:35:40,071 - ERROR - ^
+2025-05-15 23:35:40,072 - ERROR - ^
+2025-05-15 23:35:40,072 - ERROR - ^
+2025-05-15 23:35:40,072 - ERROR - ^
+2025-05-15 23:35:40,072 - ERROR - ^
+2025-05-15 23:35:40,072 - ERROR - ^
+2025-05-15 23:35:40,073 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 1395, in getresponse
+2025-05-15 23:35:40,074 - ERROR - response.begin()
+2025-05-15 23:35:40,074 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 325, in begin
+2025-05-15 23:35:40,075 - ERROR - version, status, reason = self._read_status()
+2025-05-15 23:35:40,075 - ERROR - ^
+2025-05-15 23:35:40,075 - ERROR - ^
+2025-05-15 23:35:40,075 - ERROR - ^
+2025-05-15 23:35:40,075 - ERROR - ^
+2025-05-15 23:35:40,076 - ERROR - ^
+2025-05-15 23:35:40,076 - ERROR - ^
+2025-05-15 23:35:40,076 - ERROR - ^
+2025-05-15 23:35:40,076 - ERROR - ^
+2025-05-15 23:35:40,076 - ERROR - ^
+2025-05-15 23:35:40,076 - ERROR - ^
+2025-05-15 23:35:40,077 - ERROR - ^
+2025-05-15 23:35:40,077 - ERROR - ^
+2025-05-15 23:35:40,077 - ERROR - ^
+2025-05-15 23:35:40,077 - ERROR - ^
+2025-05-15 23:35:40,077 - ERROR - ^
+2025-05-15 23:35:40,077 - ERROR - ^
+2025-05-15 23:35:40,077 - ERROR - ^
+2025-05-15 23:35:40,078 - ERROR - ^
+2025-05-15 23:35:40,078 - ERROR - ^
+2025-05-15 23:35:40,078 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\client.py", line 286, in _read_status
+2025-05-15 23:35:40,078 - ERROR - line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+2025-05-15 23:35:40,079 - ERROR - ^
+2025-05-15 23:35:40,079 - ERROR - ^
+2025-05-15 23:35:40,079 - ERROR - ^
+2025-05-15 23:35:40,079 - ERROR - ^
+2025-05-15 23:35:40,079 - ERROR - ^
+2025-05-15 23:35:40,079 - ERROR - ^
+2025-05-15 23:35:40,079 - ERROR - ^
+2025-05-15 23:35:40,080 - ERROR - ^
+2025-05-15 23:35:40,080 - ERROR - ^
+2025-05-15 23:35:40,080 - ERROR - ^
+2025-05-15 23:35:40,080 - ERROR - ^
+2025-05-15 23:35:40,080 - ERROR - ^
+2025-05-15 23:35:40,080 - ERROR - ^
+2025-05-15 23:35:40,081 - ERROR - ^
+2025-05-15 23:35:40,081 - ERROR - ^
+2025-05-15 23:35:40,081 - ERROR - ^
+2025-05-15 23:35:40,081 - ERROR - ^
+2025-05-15 23:35:40,082 - ERROR - ^
+2025-05-15 23:35:40,082 - ERROR - ^
+2025-05-15 23:35:40,082 - ERROR - ^
+2025-05-15 23:35:40,082 - ERROR - ^
+2025-05-15 23:35:40,082 - ERROR - ^
+2025-05-15 23:35:40,082 - ERROR - ^
+2025-05-15 23:35:40,082 - ERROR - ^
+2025-05-15 23:35:40,083 - ERROR - ^
+2025-05-15 23:35:40,083 - ERROR - ^
+2025-05-15 23:35:40,083 - ERROR - ^
+2025-05-15 23:35:40,083 - ERROR - ^
+2025-05-15 23:35:40,083 - ERROR - ^
+2025-05-15 23:35:40,083 - ERROR - ^
+2025-05-15 23:35:40,083 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 706, in readinto
+2025-05-15 23:35:40,084 - ERROR - return self._sock.recv_into(b)
+2025-05-15 23:35:40,084 - ERROR - ^
+2025-05-15 23:35:40,084 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,085 - ERROR - ^
+2025-05-15 23:35:40,086 - ERROR - ^
+2025-05-15 23:35:40,086 - ERROR - ^
+2025-05-15 23:35:40,086 - ERROR - ^
+2025-05-15 23:35:40,086 - ERROR - ^
+2025-05-15 23:35:40,086 - ERROR - ^
+2025-05-15 23:35:40,086 - ERROR - ^
+2025-05-15 23:35:40,086 - ERROR - ^
+2025-05-15 23:35:40,087 - ERROR - ^
+2025-05-15 23:35:40,087 - ERROR - ^
+2025-05-15 23:35:40,087 - ERROR - ^
+2025-05-15 23:35:40,087 - ERROR - ^
+2025-05-15 23:35:40,087 - ERROR - ^
+2025-05-15 23:35:40,087 - ERROR - ^
+2025-05-15 23:35:40,087 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1314, in recv_into
+2025-05-15 23:35:40,088 - ERROR - return self.read(nbytes, buffer)
+2025-05-15 23:35:40,088 - ERROR - ^
+2025-05-15 23:35:40,088 - ERROR - ^
+2025-05-15 23:35:40,089 - ERROR - ^
+2025-05-15 23:35:40,089 - ERROR - ^
+2025-05-15 23:35:40,089 - ERROR - ^
+2025-05-15 23:35:40,089 - ERROR - ^
+2025-05-15 23:35:40,089 - ERROR - ^
+2025-05-15 23:35:40,089 - ERROR - ^
+2025-05-15 23:35:40,090 - ERROR - ^
+2025-05-15 23:35:40,090 - ERROR - ^
+2025-05-15 23:35:40,090 - ERROR - ^
+2025-05-15 23:35:40,090 - ERROR - ^
+2025-05-15 23:35:40,091 - ERROR - ^
+2025-05-15 23:35:40,091 - ERROR - ^
+2025-05-15 23:35:40,091 - ERROR - ^
+2025-05-15 23:35:40,091 - ERROR - ^
+2025-05-15 23:35:40,091 - ERROR - ^
+2025-05-15 23:35:40,091 - ERROR - ^
+2025-05-15 23:35:40,091 - ERROR - ^
+2025-05-15 23:35:40,092 - ERROR - ^
+2025-05-15 23:35:40,092 - ERROR - ^
+2025-05-15 23:35:40,092 - ERROR - ^
+2025-05-15 23:35:40,092 - ERROR - ^
+2025-05-15 23:35:40,092 - ERROR - ^
+2025-05-15 23:35:40,092 - ERROR - ^
+2025-05-15 23:35:40,093 - ERROR - File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 1166, in read
+2025-05-15 23:35:40,093 - ERROR - return self._sslobj.read(len, buffer)
+2025-05-15 23:35:40,093 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,094 - ERROR - ^
+2025-05-15 23:35:40,096 - ERROR - ^
+2025-05-15 23:35:40,096 - ERROR - ^
+2025-05-15 23:35:40,096 - ERROR - ^
+2025-05-15 23:35:40,096 - ERROR - ^
+2025-05-15 23:35:40,096 - ERROR - ^
+2025-05-15 23:35:40,096 - ERROR - ^
+2025-05-15 23:35:40,096 - ERROR - ^
+2025-05-15 23:35:40,097 - ERROR - ^
+2025-05-15 23:35:40,097 - ERROR - ^
+2025-05-15 23:35:40,097 - ERROR - ^
+2025-05-15 23:35:40,097 - ERROR - ^
+2025-05-15 23:35:40,097 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - ^
+2025-05-15 23:35:40,098 - ERROR - KeyboardInterrupt

@@ -1,5 +1,7 @@
 import yaml
 from modules.utils import validate_date, extract_section_data_from_element
+INFINITE_COST = 9223372036854775807
+
 
 class ProfileDataExtractor:
     def __init__(self, lobbyist_id, soup, db_conn, country_file):
@@ -13,7 +15,7 @@ class ProfileDataExtractor:
             'registration_number', 'registration_status', 'registration_date',
             'last_update_date', 'next_update_date', 'acronym', 'entity_form', 'website',
             'head_office_address', 'head_office_phone', 'eu_office_address', 'eu_office_phone', 'legal_representative', 'legal_representative_role',
-            'eu_relations_representative', 'eu_relations_representative_role', 'transparency_register_url', 'country'
+            'eu_relations_representative', 'eu_relations_representative_role', 'transparency_register_url', 'country', 'annual_cost_estimate_min', 'annual_cost_estimate_max'
         ]
         self.country_names = self.load_country_names(country_file)
 
@@ -83,13 +85,52 @@ class ProfileDataExtractor:
         eu_relations_representative = profile_data.get('eu_relations_representative', '')
         eu_relations_representative_role = profile_data.get('legal_representative_role', '')
 
+        financial_section = self.soup.find('h2', id='financial-data')
+        annual_cost_min = annual_cost_max = None
+
+        if financial_section:
+            financial_table = financial_section.find_next('table')
+            if financial_table:
+                rows = financial_table.find_all('tr')
+                for row in rows:
+                    header = row.find('strong')
+                    if header and ('Stima dei costi annui' in header.text or 'Entrate annue complessive' in header.text or 'Bilancio complessivo' in header.text):
+                        cells = row.find_all('span')
+                        if len(cells) >= 2:
+                            try:
+                                texts = [s.text.strip().replace('.', '').replace('\xa0', '').replace('€', '') for s in cells]
+                                texts = [t for t in texts if t]
+
+                                if '<' in texts[0]:
+                                    annual_cost_min = 0
+                                    annual_cost_max = int(texts[1])
+                                elif '>' in texts[0]:
+                                    annual_cost_min = int(texts[1])
+                                    annual_cost_max = INFINITE_COST
+                                elif len(texts) >= 2:
+                                    annual_cost_min = int(texts[1])
+                                    annual_cost_max = int(texts[2])
+                            except (ValueError, IndexError):
+                                pass
+                        elif len(cells) == 1:
+                            try:
+                                texts = [s.text.strip().replace('.', '').replace('\xa0', '').replace('€', '') for s in cells]
+                                texts = [t for t in texts if t]
+                                if len(texts) == 1:
+                                    annual_cost_min = int(texts[0])
+                                    annual_cost_max = int(texts[0])
+                            except (ValueError, IndexError):
+                                pass
+                        break
+
         values = [
             registration_number, registration_status, registration_date,
             last_update_date, next_update_date, acronym, entity_form, website,
             head_office_address, head_office_phone, eu_office_address, eu_office_phone, legal_representative, legal_representative_role,
-            eu_relations_representative, eu_relations_representative_role, self.search_url, country
+            eu_relations_representative, eu_relations_representative_role, self.search_url, country,
+            annual_cost_min, annual_cost_max
         ]
         self.db_conn.update_data(self.table, self.columns, values, self.lobbyist_id)
-    
+
     def truncate_table(self):
         self.db_conn.delete_table_data(self.table)

@@ -27,6 +27,8 @@ const Lobbyist = sequelize.define('Lobbyist', {
     eu_relations_representative: DataTypes.STRING,
     eu_relations_representative_role: DataTypes.STRING,
     country: DataTypes.STRING,
+    annual_cost_estimate_min: DataTypes.BIGINT,
+    annual_cost_estimate_max: DataTypes.BIGINT,
     transparency_register_url: DataTypes.STRING,
 }, {
     tableName: 'lobbyist_profile',

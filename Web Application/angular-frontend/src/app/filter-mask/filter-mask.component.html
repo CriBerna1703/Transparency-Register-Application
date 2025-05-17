@@ -19,7 +19,7 @@
       </div>
       <!-- Accordion DG -->
       <div class="filter-group">
-        <div class="accordion-header" (click)="toggleSection('directorates')"> DG ({{ selectedDirectorates.length }} selected) <span class="arrow">{{ expandedSections.directorates ? '▲' : '▼' }}</span>
+        <div class="accordion-header" (click)="toggleSection('directorates')"> Directorates ({{ selectedDirectorates.length === 0 ? 'All selected' : selectedDirectorates.length + ' selected' }}) <span class="arrow">{{ expandedSections.directorates ? '▲' : '▼' }}</span>
         </div>
         <div *ngIf="expandedSections.directorates" class="accordion-content">
           <input type="text" placeholder="Search DG..." [(ngModel)]="searchDirectorate" (input)="filterDirectorates()">
@@ -44,7 +44,7 @@
       </div>
       <!-- Accordion Lobbyists -->
       <div class="filter-group">
-        <div class="accordion-header" (click)="toggleSection('lobbyists')"> Lobbyists ({{ selectedLobbyists.length }} selected) <span class="arrow">{{ expandedSections.lobbyists ? '▲' : '▼' }}</span>
+        <div class="accordion-header" (click)="toggleSection('lobbyists')"> Lobbyists ({{ selectedLobbyists.length === 0 ? 'All selected' : selectedLobbyists.length + ' selected' }}) <span class="arrow">{{ expandedSections.lobbyists ? '▲' : '▼' }}</span>
         </div>
         <div *ngIf="expandedSections.lobbyists" class="accordion-content">
           <input type="text" placeholder="Search Lobbyists..." [(ngModel)]="searchLobbyist" (input)="filterLobbyists()">
@@ -69,7 +69,7 @@
       </div>
       <!-- Accordion Fields -->
       <div class="filter-group">
-        <div class="accordion-header" (click)="toggleSection('fields')"> Fields of Interest ({{ selectedFields.length }} selected) <span class="arrow">{{ expandedSections.fields ? '▲' : '▼' }}</span>
+        <div class="accordion-header" (click)="toggleSection('fields')"> Fields of Interest ({{ selectedFields.length === 0 ? 'All selected' : selectedFields.length + ' selected' }}) <span class="arrow">{{ expandedSections.fields ? '▲' : '▼' }}</span>
         </div>
         <div *ngIf="expandedSections.fields" class="accordion-content">
           <input type="text" placeholder="Search Field..." [(ngModel)]="searchField" (input)="filterFields()">
@@ -94,7 +94,7 @@
       </div>
       <!-- Accordion Commissioners -->
       <div class="filter-group">
-        <div class="accordion-header" (click)="toggleSection('commissioners')"> Commissioners ({{ selectedCommissioners.length }} selected) <span class="arrow">{{ expandedSections.commissioners ? '▲' : '▼' }}</span>
+        <div class="accordion-header" (click)="toggleSection('commissioners')"> Commissioners ({{ selectedCommissioners.length === 0 ? 'All selected' : selectedCommissioners.length + ' selected' }}) <span class="arrow">{{ expandedSections.commissioners ? '▲' : '▼' }}</span>
         </div>
         <div *ngIf="expandedSections.commissioners" class="accordion-content">
           <input type="text" placeholder="Search Commissioner..." [(ngModel)]="searchCommissioner" (input)="filterCommissioners()">
@@ -139,6 +139,6 @@
         </div>
       </div>
     </div> <!-- Closing scrollable filter -->
-    <button class="apply-btn" (click)="updateFilters()">Apply Filters</button>
+    <button class="apply-btn" (click)="addKeyword(); updateFilters()">Apply Filters</button>
   </div>
 </div>

@@ -1,0 +1,7 @@
+2025-05-15 23:58:25,253 - INFO - Log salvato in: execution_logs\script_execution_2025-05-15_23-58-25.log
+2025-05-15 23:58:25,254 - INFO - Inizio esecuzione script principale.
+2025-05-15 23:58:25,254 - INFO - Step 4: Elaborazione dei lobbisti.
+2025-05-15 23:58:25,286 - INFO - package: mysql.connector.plugins
+2025-05-15 23:58:25,287 - INFO - plugin_name: caching_sha2_password
+2025-05-15 23:58:25,287 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-05-15 23:58:25,311 - INFO - Processing lobbyist ID: 000142439924-52
