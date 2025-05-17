@@ -424,23 +424,7 @@ export class D3Service {
         if (this.zoomGroup) {
           this.zoomGroup.attr('transform', event.transform);
         }
-  
-        const zoomScale = event.transform.k;
-        const thresholdRange = maxSim - minSim;
-  
-        this.zoomGroup?.selectAll('text')
-          .style('display', (d: any) => {
-            if (options?.selectedNodes?.has(d.id)) return 'block';
-            if (thresholdRange <= 0.2) {
-              if (zoomScale >= 5.0) return 'block';
-              if (zoomScale >= 4.0) return d.degree >= 3 ? 'block' : 'none';
-              if (zoomScale >= 3.0) return d.degree >= 5 ? 'block' : 'none'; 
-              if (zoomScale >= 2.0) return d.degree >= 8 ? 'block' : 'none';
-              return 'none';
-            } else {
-              return 'none';
-            }
-          });
+
       });
   
     this.svg.call(this.zoomBehavior as any);
