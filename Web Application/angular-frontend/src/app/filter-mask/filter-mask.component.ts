@@ -47,6 +47,8 @@ export class FilterMaskComponent {
   keywords: string[] = [];
   keywordInput: string = '';
   filterType: 'AND' | 'OR' = 'OR';
+  minBudget: number | null = null;
+  maxBudget: number | null = null;
 
   dateErrors = {
     startDateEmpty: false,
@@ -54,12 +56,17 @@ export class FilterMaskComponent {
     endDateBeforeStart: false
   };
 
+  budgetErrors = {
+    budgetOrderInvalid: false
+  };
+
   expandedSections: any = {
     directorates: false,
     lobbyists: false,
     fields: false,
     commissioners: false,
-    keywords: false
+    keywords: false,
+    budget: false
   };  
 
   constructor(private dataService: DataService, private filterService: FilterService) {}
@@ -96,7 +103,14 @@ export class FilterMaskComponent {
       endDateEmpty: !this.endDate,
       endDateBeforeStart: !!this.startDate && !!this.endDate && this.endDate < this.startDate
     };
-  }  
+  }
+
+  validateBudgets() {
+    this.budgetErrors.budgetOrderInvalid =
+      this.minBudget != null &&
+      this.maxBudget != null &&
+      this.minBudget > this.maxBudget;
+  }
 
   checkDateOrder() {
     if (this.startDate && this.endDate) {
@@ -170,7 +184,6 @@ export class FilterMaskComponent {
     }
     this.keywordInput = '';
   }
-  
 
   removeKeyword(keyword: string) {
     this.keywords = this.keywords.filter(k => k !== keyword);
@@ -180,9 +193,23 @@ export class FilterMaskComponent {
     this.filterType = type;
   }
 
+  formatBudgetDisplay(value: number | null, isMin: boolean = false): string {
+    if (value == null) {
+      return isMin ? '0' : '∞';
+    }
+    return value.toLocaleString('it-IT');
+  }
+
   updateFilters() {
     this.validateDates();
-    if (!this.dateErrors.startDateEmpty && !this.dateErrors.endDateEmpty && !this.dateErrors.endDateBeforeStart) {
+    this.validateBudgets();
+
+    if (
+      !this.dateErrors.startDateEmpty &&
+      !this.dateErrors.endDateEmpty &&
+      !this.dateErrors.endDateBeforeStart &&
+      !this.budgetErrors.budgetOrderInvalid
+    ) {
       const selectedLobbyistsIds = this.selectedLobbyists.map(lob => lob.lobbyist_id);
       const selectedFieldsIds = this.selectedFields.map(field => field.field_id);
       const selectedDirectoratesIds = this.selectedDirectorates.map(dg => dg.id);
@@ -198,6 +225,12 @@ export class FilterMaskComponent {
         keywords: this.keywords,
         filter_type: this.filterType
       };
+      if (this.minBudget != null) {
+        this.filters.minBudget = this.minBudget;
+      }
+      if (this.maxBudget != null) {
+        this.filters.maxBudget = this.maxBudget;
+      }
 
       this.filterService.setFilters(this.filters);
       this.toggleFilter();

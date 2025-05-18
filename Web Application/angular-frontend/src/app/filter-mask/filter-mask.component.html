@@ -138,6 +138,22 @@
           </div>
         </div>
       </div>
+      <div class="filter-group">
+        <div class="accordion-header" (click)="toggleSection('budget')">
+            Estimated Annual Budget ({{ formatBudgetDisplay(minBudget, true) }} - {{ formatBudgetDisplay(maxBudget) }})
+          <span class="arrow">{{ expandedSections.budget ? '▲' : '▼' }}</span>
+        </div>
+        <div *ngIf="expandedSections.budget" class="accordion-content">
+          <div class="budget-inputs">
+            <input type="number" [(ngModel)]="minBudget" placeholder="Min" class="input-budget" step="1000" min="0">
+            <span class="separator"> - </span>
+            <input type="number" [(ngModel)]="maxBudget" placeholder="Max" class="input-budget" step="1000" min="0">
+          </div>
+          <div class="error-message" *ngIf="minBudget != null && maxBudget != null && minBudget > maxBudget">
+            Min budget cannot be greater than max budget.
+          </div>
+        </div>
+      </div>
     </div> <!-- Closing scrollable filter -->
     <button class="apply-btn" (click)="addKeyword(); updateFilters()">Apply Filters</button>
   </div>

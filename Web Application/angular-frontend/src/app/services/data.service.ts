@@ -81,6 +81,13 @@ export class DataService {
       });
     }
 
+    if (filters.minBudget != null) {
+      params = params.set('minBudget', filters.minBudget.toString());
+    }
+    if (filters.maxBudget != null) {
+      params = params.set('maxBudget', filters.maxBudget.toString());
+    }
+
     return this.http.get(`${this.apiUrl}/meetings/filter`, { params });
   }
 

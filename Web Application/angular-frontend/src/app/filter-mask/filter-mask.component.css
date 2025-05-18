@@ -133,3 +133,13 @@
   margin-top: 5px;
   font-weight: bold;
 }
+
+.input-budget {
+  width: 100px;
+  margin-right: 5px;
+}
+.budget-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -116,4 +116,28 @@ export class InfoTabsComponent implements OnChanges {
       }
     }
   }
+
+  formatBudgetRange(min: number | null, max: number | null): string {
+    const INFINITE = 9223372036854775807;
+
+    if (min == null && max == null) {
+      return 'No information available';
+    }
+    
+    min = Number(min);
+    max = Number(max);
+
+    if (min === 0 && max != null && max !== INFINITE) {
+      return `< ${max.toLocaleString('it-IT')} €`;
+    }
+    if (max === INFINITE && min != null) {
+      return `> ${min.toLocaleString('it-IT')} €`;
+    }
+    if (min != null && max != null) {
+      return `${min.toLocaleString('it-IT')} - ${max.toLocaleString('it-IT')} €`;
+    }
+
+    return 'No information available';
+  }
+
 }
