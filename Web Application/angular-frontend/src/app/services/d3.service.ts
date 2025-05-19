@@ -128,39 +128,6 @@ export class D3Service {
   
     const lastMonthEnd = new Date(months[months.length - 1].getFullYear(), months[months.length - 1].getMonth() + 1, 1);
     const lastMonthX = timeScale(lastMonthEnd);
-
-    for (let i = 0; i < months.length - 1; i++) {
-      const curr = months[i];
-      const next = months[i + 1];
-      if (curr.getFullYear() !== next.getFullYear()) {
-        const x = timeScale(next);
-
-        svg.append('line')
-          .attr('x1', x)
-          .attr('x2', x)
-          .attr('y1', height - 30)
-          .attr('y2', height + 35)
-          .attr('stroke', '#888')
-          .attr('stroke-width', 2)
-          .attr('class', 'year-change-bar');
-
-        svg.append('text')
-          .attr('x', x - 8)
-          .attr('y', height - 35)
-          .attr('text-anchor', 'end')
-          .attr('font-size', '14px')
-          .attr('fill', '#444')
-          .text(curr.getFullYear());
-
-        svg.append('text')
-          .attr('x', x + 8)
-          .attr('y', height - 35)
-          .attr('text-anchor', 'start')
-          .attr('font-size', '14px')
-          .attr('fill', '#444')
-          .text(next.getFullYear());
-      }
-    }
   }
 
   getTimeScale(width: number, startDate: Date, endDate: Date, scalePercentage: number = 1): d3.ScaleTime<number, number> {
@@ -438,7 +405,12 @@ export class D3Service {
       node.degree = degreeMap.get(node.id) || 0;
     });
 
+    let previousZoomTransform: d3.ZoomTransform | null = null;
 
+    const existingSvg = d3.select(element).select('svg');
+    if (!existingSvg.empty()) {
+      previousZoomTransform = d3.zoomTransform(existingSvg.node() as Element);
+    }
       
     d3.select(element).select('svg').remove();
   
@@ -457,20 +429,21 @@ export class D3Service {
         if (this.zoomGroup) {
           this.zoomGroup.attr('transform', event.transform);
         }
-
+  
       });
   
     this.svg.call(this.zoomBehavior as any);
   
-    this.chargeForce = d3.forceManyBody().strength(-100);
+    // Forza di repulsione dinamica
+    this.chargeForce = d3.forceManyBody()
+      .strength((d: any) => d.degree === 0 ? -300 : -150);
+
+    // Posizionamento isolati su una circonferenza
     const isolatedNodes = nodes.filter(n => n.degree === 0);
     const totalIsolated = isolatedNodes.length;
-    this.chargeForce = d3.forceManyBody().strength(-300); // Maggiore repulsione
-
-
     const centerX = width / 2;
     const centerY = height / 2;
-    const radius = Math.min(width, height) + 100; // più adatto come raggio
+    const radius = Math.min(width, height) + 100;
 
     isolatedNodes.forEach((node, i) => {
       const angle = (2 * Math.PI * i) / totalIsolated;
@@ -479,24 +452,27 @@ export class D3Service {
     });
 
     this.simulation = d3.forceSimulation(nodes)
+      .alpha(1) // energia iniziale
+      .alphaDecay(0.03) // rallenta progressivamente
+      .alphaMin(0.001)
       .force('link', d3.forceLink(links)
         .id((d: any) => d.id)
-        .distance((d: any) => Math.max(100, 300 - (d.similarity ?? 0) * 200)) // evita distanze troppo brevi
+        .distance((d: any) => Math.max(100, 300 - (d.similarity ?? 0) * 200))
       )
-    .force('charge', this.chargeForce)
-    .force('center', d3.forceCenter(centerX, centerY))
-    .force('isolateX', d3.forceX((d: any) =>
-      d.degree === 0 ? d.targetX : centerX
-    ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
-    .force('isolateY', d3.forceY((d: any) =>
-      d.degree === 0 ? d.targetY : centerY
-    ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
-    .force('x', d3.forceX(centerX).strength(0.02)) // indebolita
-    .force('y', d3.forceY(centerY).strength(0.02)) // indebolita
-    .force('collide', d3.forceCollide(40)); // maggiore distanza tra nodi
+      .force('charge', this.chargeForce)
+      .force('center', d3.forceCenter(centerX, centerY))
+      .force('isolateX', d3.forceX((d: any) =>
+        d.degree === 0 ? d.targetX : centerX
+      ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
+      .force('isolateY', d3.forceY((d: any) =>
+        d.degree === 0 ? d.targetY : centerY
+      ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
+      .force('x', d3.forceX(centerX).strength(0.02))
+      .force('y', d3.forceY(centerY).strength(0.02))
+      .force('collide', d3.forceCollide((d: any) => d.degree === 0 ? 30 : 60).strength(1));
 
-    this.simulation.alpha(1).restart();
-  
+    this.simulation.restart();
+
     const drag = d3.drag<SVGGElement, any>()
       .on('start', (event, d) => {
         if (!event.active) this.simulation!.alphaTarget(0.3).restart();
@@ -527,7 +503,6 @@ export class D3Service {
         options?.onLinkRightClick?.(d);
       });
       
-  
     this.nodeGroup = this.zoomGroup.append('g')
       .selectAll('g')
       .data(nodes)
@@ -540,7 +515,6 @@ export class D3Service {
       .attr('fill', '#ae58a3')
       .attr('stroke', '#5b2c55')
       .attr('stroke-width', 2)
-      .style('display', (d: any) => d.id === '__center' ? 'none' : 'block')
       .attr('data-id', d => d.id);
   
     this.nodeGroup.append('text')
@@ -557,7 +531,7 @@ export class D3Service {
         updateStyles();
       })
       .on('mouseover', function (event, d) {
-        if (options?.selectedNodes?.has(d.id)) return; // 👈 skip se selezionato
+        if (options?.selectedNodes?.has(d.id)) return; 
         d3.select(this).select('circle').attr('stroke', '#ff7f0e');
         d3.select(this).select('text').style('display', 'block');
       })
@@ -598,21 +572,15 @@ export class D3Service {
         .attr('y1', (d: any) => d.source.y)
         .attr('x2', (d: any) => d.target.x)
         .attr('y2', (d: any) => d.target.y);
-  
+
       this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
-      const centerNodeData = nodes.find(n => n.id === '__center');
-      if (centerNodeData) {
-        centerNodeData.x = width / 2;
-        centerNodeData.y = height / 2;
-      }
     });
   
-    setTimeout(() => {
-      this.svg?.transition().call(
-        this.zoomBehavior!.transform as any,
-        d3.zoomIdentity.scale(initialZoom)
-      );
-    }, 300);
+    if (previousZoomTransform) {
+      this.svg!.call(this.zoomBehavior!.transform as any, previousZoomTransform);
+    } else {
+      this.svg!.call(this.zoomBehavior!.transform as any, d3.zoomIdentity.scale(initialZoom));
+    }
   
     updateStyles();
   }
@@ -628,10 +596,11 @@ export class D3Service {
   public updateForceGraphStyles(selectedNodes: Set<string>, selectedLink?: { source: string; target: string }): void {
     if (!this.nodeGroup || !this.zoomGroup) return;
   
+
     this.nodeGroup.select('circle')
       .attr('stroke', (d: any) => selectedNodes.has(d.id) ? '#ff7f0e' : '#5b2c55');
   
-    this.nodeGroup.select('text')
+    this.nodeGroup.selectAll('text')
       .style('display', (d: any) => selectedNodes.has(d.id) ? 'block' : 'none');
   
     this.zoomGroup.selectAll('line')
@@ -642,6 +611,7 @@ export class D3Service {
         const isSelectedLink = selectedLink &&
           ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
            (selectedLink.source === targetId && selectedLink.target === sourceId));
+
 
           if (isSelectedLink) return 'red';
           return isSelectedNode ? '#ff7f0e' : this.getLinkColor(d.similarity);

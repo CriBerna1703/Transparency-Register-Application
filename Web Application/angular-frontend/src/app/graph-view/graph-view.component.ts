@@ -133,7 +133,10 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       );
 
       forkJoin(observables).subscribe(
-        () => this.updateGraph(),
+        () => {
+          this.updateGraph(); // per interesse
+          this.callGetSimilarities(); // ✅ ora è sicuro farlo qui
+        },
         error => console.error('Errore nel recupero dei dettagli per i lobbisti:', error)
       );
     });
@@ -146,8 +149,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.dataService.getFields().subscribe(fields => {
       this.fieldMap = new Map(fields.map((f: any) => [f.field_id, f.field_name]));
     });
-
   }
+
 
   private generateFieldVector(fields: { field_id: number, field_name: string }[]): number[] {
     const vector = new Array(40).fill(0);
@@ -280,63 +283,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     }
 
     this.isTextGraphLoading = true;
-
-    const formatDate = (date: Date): string => {
-      const day = String(date.getDate()).padStart(2, '0');
-      const month = String(date.getMonth() + 1).padStart(2, '0');
-      const year = date.getFullYear();
-      return `${day}/${month}/${year}`;
-    };
-
-
-
-    const payload = {
-      startDate: formatDate(this.startDate),
-      endDate: formatDate(this.endDate),
-      lobbyist_ids: this.formattedMeetings.map(m => m.lobbyist_id)
-    };
-
-
-
-    this.dataService.getSimilarities(payload).subscribe({
-      next: response => {
-        this.isTextGraphLoading = false;
-
-        console.log('📦 Risposta ricevuta da getSimilarities:', response);
-
-        if (!Array.isArray(response.similarities)) {
-          console.error('❗ Risposta non valida:', response);
-          return;
-        }
-
-        this.textSimilarities = response.similarities;
-
-        // ✅ Calcolo dinamico soglia al 50% solo se non modificata manualmente
-        if (!this.minThresholdManuallySet) {
-          const values = this.textSimilarities
-            .map(sim => sim[this.selectedTextMetric])
-            .filter((v): v is number => typeof v === 'number' && v > 0)
-            .sort((a, b) => a - b);
-
-          const index = Math.floor(values.length * 0.8);
-          this.minThreshold = values[index] ?? 0.1;
-        }
-
-        // ✅ Salva e imposta i filtri con le parole chiave ricevute
-        this.selectedKeywords = Array.isArray(response.selected_keywords) ? response.selected_keywords : [];
-        this.availableFilterOptions = this.selectedKeywords.map(w => ({ id: w, label: w }));
-
-        if (this.selectedFilterValues.length === 0) {
-          this.selectedFilterValues = this.availableFilterOptions.map(opt => opt.id);
-        } 
-
-        this.updateGraph();
-      },
-      error: error => {
-        this.isTextGraphLoading = false;
-        console.error('❗ Errore nella chiamata getSimilarities:', error);
-      }
-    });
   }
 
   private drawTextGraph(containerEl: HTMLElement, nodes: Node[], similarities: TextSimilarity[]): void {
@@ -507,6 +453,66 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.d3Service.setLabelFontSize(this.labelFontSize);
   }
 
+  private callGetSimilarities(): void {
+    const formatDate = (date: Date): string => {
+      const day = String(date.getDate()).padStart(2, '0');
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const year = date.getFullYear();
+      return `${day}/${month}/${year}`;
+    };
+
+    const payload = {
+      startDate: formatDate(this.startDate),
+      endDate: formatDate(this.endDate),
+      lobbyist_ids: this.formattedMeetings.map(m => m.lobbyist_id)
+    };
+
+    console.log('📦 Payload per getSimilarities:', payload);
+
+    if (this.graphType === 'text') {
+      this.isTextGraphLoading = true;
+    }
+
+    this.dataService.getSimilarities(payload).subscribe({
+      next: response => {
+        this.isTextGraphLoading = false;
+        console.log('📦 Risposta da getSimilarities:', response);
+
+        if (!Array.isArray(response.similarities)) {
+          console.error('❗ Risposta non valida:', response);
+          return;
+        }
+
+        this.textSimilarities = response.similarities;
+        this.selectedKeywords = Array.isArray(response.selected_keywords) ? response.selected_keywords : [];
+
+        if (!this.minThresholdManuallySet) {
+          const values = this.textSimilarities
+            .map(sim => sim[this.selectedTextMetric])
+            .filter((v): v is number => typeof v === 'number' && v > 0)
+            .sort((a, b) => a - b);
+          const index = Math.floor(values.length * 0.8);
+          this.minThreshold = values[index] ?? 0.1;
+        }
+
+        this.availableFilterOptions = this.selectedKeywords.map(w => ({ id: w, label: w }));
+
+        if (this.graphType === 'text' && this.selectedFilterValues.length === 0) {
+          this.selectedFilterValues = this.availableFilterOptions.map(opt => opt.id);
+        }
+
+        if (this.graphType === 'text') {
+          this.updateGraph();
+        }
+      },
+      error: error => {
+        this.isTextGraphLoading = false;
+        console.error('❗ Errore nella chiamata getSimilarities:', error);
+      }
+    });
+  }
+
+
   public onFilterToggle(value: number | string, checked: boolean): void {
     if (checked) {
       if (!this.selectedFilterValues.includes(value)) {
@@ -537,7 +543,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
     this.updateGraph();
   }
-
 
   public allFilterSelected(): boolean {
     return this.availableFilterOptions.length > 0 &&
