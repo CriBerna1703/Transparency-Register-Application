@@ -71,13 +71,13 @@ industry 40 Internal Market industry entrepreneurship policy general
 Smart Energy system
 
 07/09/2017
+industry 40
+
+07/09/2017
 issue relate digital economy energy landscape China
 
 07/09/2017
 cybersecurity free flow datum connectivity
-
-07/09/2017
-industry 40
 
 08/09/2017
 Clean Energy package adopt last November
@@ -113,13 +113,13 @@ development trade relation US UE China
 cybersecurity artificial intelligence datum economy
 
 04/09/2018
-2050 climate strategy
-
-04/09/2018
 cybersecurity artificial intelligence datum economy
 
 04/09/2018
 Horizon Europe
+
+04/09/2018
+2050 climate strategy
 
 16/01/2019
 trade policy
@@ -143,7 +143,7 @@ Green deal energy efficiency
 Maroš Šefčovič hold videoconference call exchange view several ceo Battery Alliance
 
 26/06/2020
-promotion digital technology deploy green deal context covid stimulus package B2B digital transformation Virtual
+promotion digital technology deploy green deal thecontext covid stimulus package B2B digital transformation Virtual
 
 09/07/2020
 decarbonisation digitalization
@@ -179,7 +179,7 @@ automobile
 EPBD Energy efficiency Minimum Energy Performance Standards
 
 07/04/2022
-meeting CEO Alliance DigitisingEnergy Action Plan
+meeting CEO Alliance Digitising Energy Action Plan
 
 25/04/2022
 US Task Force Convening Clean Energy Technologies Carrier Tado Council Energy Efficient Economy ECEEE also participate
@@ -206,7 +206,7 @@ meet Green Digital Coalition Main topic state play sustainable digitalization
 SOTEU energy repowereu Recovery Resilience Facility
 
 30/11/2022
-access energy Global Gateway Initiative energy transition
+access energy GlobalGateway Initiative energy transition
 
 30/11/2022
 Meeting Year Skills
@@ -221,10 +221,10 @@ market design reform
 taxonomy
 
 30/03/2023
-Mr Delorme present concern Taxonomy Net Zero industry Act energy crisis general
+schneider look prepare report 2040 climate goal Europe mean especially electrification energy efficiency decentralize energy research institute
 
 30/03/2023
-schneider look prepare report 2040 climate goal Europe mean especially electrification energy efficiency decentralize energy research institute
+Mr Delorme present concern Taxonomy Net Zero industry Act energy crisis general
 
 21/06/2023
 Energy Performance Buildings Directive Energy Market Design Reform winter preparedness
@@ -236,7 +236,7 @@ discussion AI Act
 discuss topic relate circular economy chemical implementation Green Claims Directive CSR report competitiveness
 
 12/12/2023
-sustainable finance framework implementation Taxonomy CSRD /ESRS
+sustainable finance frameworkimplementation taxonomy csrd /ESRS
 
 18/12/2023
 sustainability report taxonomy
@@ -271,5 +271,26 @@ general discussion taxonomy CSRD deployment
 23/01/2025
 chart future green competitiveness
 
+29/01/2025
+exchange Clean Industrial Deal
+
+29/01/2025
+exchange view Clean Industrial Deal Affordable Energy Action Plan energy efficiency electrification digitalisation
+
+29/01/2025
+Future Green Deal Clean Industrial Deal
+
 19/02/2025
 Exchange Housing Efficient building initiative Europe
+
+26/03/2025
+sustainability report
+
+26/03/2025
+Commission ’s csrd taxonomy Omnibus simplification proposal
+
+26/03/2025
+Discussion Schneider Electric contribute priority Commission
+
+01/04/2025
+simplification sustainability report

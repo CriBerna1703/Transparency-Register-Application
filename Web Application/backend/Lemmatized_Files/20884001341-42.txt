@@ -111,3 +111,6 @@ exchange ceo Deutsche Bourse Mr Leithner
 
 03/02/2025
 Private Intermittent Securities Capital Exchange Service pisce
+
+20/03/2025
+exchange view SIU

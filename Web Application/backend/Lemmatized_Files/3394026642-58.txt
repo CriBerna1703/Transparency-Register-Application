@@ -26,7 +26,7 @@ market Financial Instruments Directive /Capital Requirements directive
 Southern Gas Corridor
 
 03/06/2015
-role private business carbon pricing climate action
+role private business carbon pricing inclimate action
 
 03/06/2015
 energy
@@ -41,10 +41,10 @@ International Gas Oil market
 Southern Gas Corridor
 
 04/09/2015
-security supply energy diversification
+gas oil
 
 04/09/2015
-gas oil
+security supply energy diversification
 
 22/10/2015
 international energy issue
@@ -186,3 +186,9 @@ investment sustainable liquid fuel production
 
 22/01/2025
 introductory meeting
+
+05/03/2025
+political priority Commission Competitiveness Clean Industrial Deal relation Communication
+
+11/03/2025
+role hydrogen heavy duty vehicle

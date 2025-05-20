@@ -26,7 +26,7 @@ industry 40
 datum economy internet thing connect device
 
 25/01/2018
-Europe role Research Innovation
+Europe role ofResearch innovation
 
 17/09/2018
 impact digitalisation AI labour market keyword digitalisation skill agenda AI

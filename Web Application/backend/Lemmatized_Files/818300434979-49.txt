@@ -17,7 +17,7 @@ climate law
 Green Deal priority transition offshore wind
 
 15/04/2020
-power sectordecarbonisation
+power sector decarbonisation
 
 11/09/2020
 outcome vote Climate Law
@@ -48,3 +48,6 @@ fit 55 implementation
 
 28/01/2025
 competitiveness Clean Industrial Deal energy impact industry
+
+03/02/2025
+exchange view simplification energy market

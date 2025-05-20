@@ -5,7 +5,7 @@ eurohpc dep
 LUMI Supercomputer state play video meeting
 
 07/10/2021
-research infrastructuresresearch datum
+research infrastructure research datum
 
 30/11/2022
 sustainable data centre
@@ -30,3 +30,6 @@ Exchange Artificial Intelligence AI datum high performance computer
 
 05/02/2025
 exchange view digital innovation AI science
+
+05/02/2025
+exchange view upcoming initiative challenge opportunity face digital sector

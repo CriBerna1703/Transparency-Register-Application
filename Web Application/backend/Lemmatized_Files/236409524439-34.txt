@@ -8,7 +8,7 @@ Trans Adriatic Pipeline
 Hydrogen Green Deal Climateneutral Smart Cities
 
 15/11/2022
-Fluxys present work hydrogen network Belgium
+Fluxys present work hydrogen network inbelgium
 
 20/12/2022
 Energy Platform Bulgargaz SPP EPH DEPA Geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
@@ -33,3 +33,6 @@ waterstof en CO2 captatie
 
 08/01/2025
 fluxys plan envisage hydrogen carbon dioxide network Belgium
+
+03/04/2025
+North Sea

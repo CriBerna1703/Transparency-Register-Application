@@ -82,14 +82,18 @@ def main():
     std = tfidf_scores.std()
     threshold = mean + 0.5 * std
     selected_indices = np.where(tfidf_scores >= threshold)[0]
-    selected_words = set(feature_names[i] for i in selected_indices)
-    selected_keywords = sorted(selected_words)
+    selected_keywords = sorted([
+        {"word": feature_names[i], "score": round(tfidf_scores[i], 6)}
+        for i in selected_indices
+    ], key=lambda x: x["word"])
+
 
 
     file_vectors = {}
     for filename, text in D_triple_prime.items():
         words = text.lower().split()
-        word_counts = Counter(w for w in words if w in selected_words)
+        selected_word_set = set(k["word"] for k in selected_keywords)
+        word_counts = Counter(w for w in words if w in selected_word_set)
         file_vectors[filename] = word_counts
 
     results = []

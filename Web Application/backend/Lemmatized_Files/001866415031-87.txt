@@ -83,10 +83,10 @@ UK Financial Sector CRD /CRR
 sustainable finance
 
 18/10/2016
-terrorist finance
+Action Plan Terrorist Finance
 
 18/10/2016
-Action Plan Terrorist Finance
+terrorist finance
 
 01/02/2017
 CRR2 package
@@ -107,7 +107,7 @@ perform loan
 economic outlook
 
 01/12/2017
-introductory remark roundtable financial industry AFISMA European Chamber Commerce financial reform banking
+introductory remark roundtable EUfinancial industry afisma European Chamber Commerce financial reform banking
 
 10/04/2018
 sustainable Finance taxonomy Disclosure Investor duty
@@ -171,3 +171,6 @@ conversation ASEAN Power Grid Energy Transition South East Asia
 
 05/02/2025
 exchange view Recovery Resilience Facility impact
+
+28/03/2025
+Global Gateway

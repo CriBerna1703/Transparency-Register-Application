@@ -47,7 +47,7 @@ Fit 55 Package revision EED directive
 meeting discuss energy saving
 
 28/06/2021
-discussion revision Energy Efficiency directive general discussion Fit 55
+discussion therevision Energy Efficiency directive general discussion Fit 55
 
 02/12/2021
 EPBD Energy efficiency Minimum Energy Performance Standards
@@ -60,3 +60,12 @@ role energy efficiency Clean Industrial Deal
 
 30/01/2025
 Affordable Energy action plan
+
+28/03/2025
+energy efficiency
+
+31/03/2025
+potential Omnibus package Clean Industrial Deal CID
+
+15/04/2025
+simplification

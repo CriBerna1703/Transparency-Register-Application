@@ -11,7 +11,7 @@ exchange outlook appels pear sector
 fruit vegetable
 
 14/06/2016
-priority CE fruit vegetable dossier
+priority CE fruit vegetablesdossier
 
 14/12/2016
 dimethoate
@@ -36,3 +36,6 @@ Fit 55
 
 24/01/2025
 exchange view future Vision agriculture food
+
+24/04/2025
+exchange view issue concern export fruit vegetable neighbourhood country

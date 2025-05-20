@@ -32,7 +32,7 @@ Risk Reduction Measures Package
 Digital Market Consumer protection
 
 26/04/2018
-banking package esasreview
+banking package esa review
 
 28/06/2018
 ESBG Retail Banking Lunch
@@ -63,3 +63,6 @@ important file end mandate CMDI RIS digital euro PSR PSD
 
 16/01/2025
 upcoming topic sustainable finance
+
+22/04/2025
+fida

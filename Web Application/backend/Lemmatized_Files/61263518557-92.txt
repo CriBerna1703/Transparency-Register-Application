@@ -17,7 +17,7 @@ state play climate negotiation COP21
 state play climate negotiation COP21
 
 14/07/2016
-ESD LULUCF Energy efficiency update Ratification Paris agreement
+ESD LULUCF Energyefficiency update Ratification Paris agreement
 
 20/06/2017
 Negotiations Myanmar Investment Protetection Agreement
@@ -42,3 +42,6 @@ humanitarian situation occupy Palestinian Territory OPT
 
 01/02/2024
 humanitarian crisis Gaza
+
+07/04/2025
+food security

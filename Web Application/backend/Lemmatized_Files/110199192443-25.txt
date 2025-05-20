@@ -1,2 +1,5 @@
 07/03/2024
 crypto relate topic digital euro
+
+10/03/2025
+Bitpanda present company share view implementation MiCA

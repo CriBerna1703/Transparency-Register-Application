@@ -11,10 +11,10 @@ Market Infrastructure Regulation
 recovery resolution ccp
 
 26/10/2017
-BRRD II
+brrd
 
 26/10/2017
-brrd
+BRRD II
 
 07/11/2017
 Trading Obligation RTS mifid
@@ -32,7 +32,7 @@ EMIR
 Keynote address ISDA 35th Annual General Meeting
 
 24/06/2021
-MIFID Basel Post Brexit relationship UK
+MIFID Basel Post Brexit relationship UKand
 
 21/06/2022
 Basel Package CRR CRD MiFIR
@@ -59,7 +59,25 @@ Basel end game mifir BMR ISDA initiative
 CMU policy nbfi /UK relation area FS
 
 09/01/2025
-UK Financial Regulatory Forum
+UK FinancialRegulatory Forum
 
 27/01/2025
 Benchmark Regulation
+
+04/03/2025
+financial service industry association debrief UK Financial Regulatory Forum
+
+11/03/2025
+implementation EMIR 3
+
+24/03/2025
+market Risk Regulation
+
+24/03/2025
+discussion focus financial interconnectedness liquidity risk margin transparency collateral eligibility potential wide system wide stress test part consultation assess adequacy macroprudential tool NBFI
+
+25/03/2025
+FRTB SIU
+
+28/03/2025
+exchange view Green Claim Directive carbon credit consider part financial market

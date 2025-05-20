@@ -74,7 +74,7 @@ dsm
 standardisation iot 5 g
 
 27/09/2016
-5 g iot standard andinteroperability
+5 g iot standard interoperability
 
 27/09/2016
 dsm
@@ -86,16 +86,16 @@ working lunch Telecom reform roam
 DSM 5 g
 
 15/02/2017
-standardisation license 3rd country
-
-15/02/2017
-global challenge standard set 5 g development internet thing
+standard connected car
 
 15/02/2017
 Research Innovation
 
 15/02/2017
-standard connected car
+standardisation license 3rd country
+
+15/02/2017
+global challenge standard set 5 g development internet thing
 
 10/10/2017
 Standard Essential Patents
@@ -134,10 +134,10 @@ future outlook 5 g Digital Market
 Commission future agenda 5 g AI cloud
 
 05/02/2020
-digital policy 5 g
+Digital Policy
 
 05/02/2020
-Digital Policy
+digital policy 5 g
 
 24/04/2020
 Telecoms Digital issue
@@ -186,3 +186,15 @@ competition digital issue
 
 14/01/2025
 first contact invitation meeting Davos
+
+04/03/2025
+Commission prioritie technology policy
+
+26/03/2025
+presentation company share company view recent regulatory development
+
+01/04/2025
+global industrial development AI semiconductor
+
+01/04/2025
+Qualcomm business policy development

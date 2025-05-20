@@ -176,7 +176,7 @@ Blockchain Technology
 e privacy review directive
 
 11/05/2017
-Digital Market Update Watson Health Center Excellence Project General discussion discussion ongoing Italy concern main relevant Dossiers DSM Industry 40 Digital transformation Italy prioritie activity
+Digital Market Update Watson Health Center Excellence Project General discussion discussion ongoing Italy concern main relevant Dossiers DSMIndustry 40 Digital transformation Italy prioritie activity
 
 07/06/2017
 dsm
@@ -227,7 +227,7 @@ cyber security
 Data Flows Trade agreement
 
 13/12/2017
-Pillar Social Rights Skills Agenda Europe Revisions write statement directive IBM internal policy hr management workforce retention skill forecast training
+Pillar Social Rights Skills Agenda Europe Revisions write statement directive IBM internal policy hr management work force retention skill forecast training
 
 14/12/2017
 independent worker access social protection
@@ -260,7 +260,7 @@ Data Artificial Intelligence
 GDPR e privacy
 
 26/11/2018
-AI ethical principle trustin DSM GDPR free flow datum access datum
+AI ethical principle trust DSM GDPR free flow datum access datum
 
 26/11/2018
 digital competitiveness
@@ -392,7 +392,7 @@ cybersecurity file
 quantum technology semiconductor cybersecurity AI
 
 16/12/2024
-presentation research activity technological area mutual interest quantum technology semiconductor cybersecurity AI anddiscussion participation project
+presentation research activity technological area mutual interest quantum technology semiconductor cybersecurity AI discussion participation project
 
 16/01/2025
 security open source post quantum cryptography cooperation ENISA NIS2 CRA implementation
@@ -417,3 +417,6 @@ private roundtable transatlantic global cooperation tech
 
 20/02/2025
 exchange view IBM ’s activity digital upskille collaboration possibility various organization community
+
+01/04/2025
+update respective quantum activity

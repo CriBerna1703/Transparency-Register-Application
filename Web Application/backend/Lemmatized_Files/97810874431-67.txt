@@ -17,7 +17,7 @@ topic relate bioenergy sector
 position aebiom bioenergy sustainability
 
 19/10/2018
-les atouts de la bioénergie en terme de développement économique de création demplois mais aussi de sécurité énergétique etde réduction des émission
+les atouts de la bioénergie en term dedéveloppement économique de création demplois mais aussi de sécurité énergétique et de réduction des émission
 
 05/11/2018
 Long Term Strategy exchange view bioenergy sector
@@ -48,3 +48,6 @@ tbc
 
 20/06/2023
 presentation report smart electrification
+
+03/04/2025
+work regulate solid fuel appliance

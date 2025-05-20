@@ -2,7 +2,7 @@
 prospect Hyperloop Europe
 
 03/03/2022
-prospect hyperloop ineurope
+prospect hyperloop Europe
 
 30/03/2022
 taxonomy
@@ -33,3 +33,6 @@ transport policy aviation
 
 04/02/2025
 exchange view
+
+05/02/2025
+digitalisation transport sector

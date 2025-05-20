@@ -86,10 +86,10 @@ Banking Banking Package EDIS perform loan npl
 MFF
 
 13/12/2018
-banking package
+banking
 
 13/12/2018
-banking
+banking package
 
 20/03/2019
 Future Europe
@@ -183,3 +183,12 @@ upcoming topic sustainable finance
 
 04/02/2025
 Banking Union third pillar
+
+05/03/2025
+discuss Commission ’s simplification agenda explore possible approach constructive contribution financial sector
+
+17/03/2025
+Savings Investment
+
+07/04/2025
+role private banking sector well support security defence industry

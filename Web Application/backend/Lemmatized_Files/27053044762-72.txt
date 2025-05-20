@@ -65,7 +65,7 @@ restriction Roadmap css implementation
 implementation Chemicals Strategy Sustainability REACH revision
 
 08/07/2022
-implementation Chemicals Strategy Sustainability REACH revision
+implementation Chemicals Strategyfor Sustainability REACH revision
 
 02/12/2022
 implementation Chemicals Strategy Sustainability REACH revision
@@ -81,3 +81,15 @@ implementation Chemicals Strategy
 
 16/01/2025
 restriction reach
+
+10/03/2025
+chemical regulation REACH
+
+18/03/2025
+CHEM Trust ’s recommendation reach revision
+
+03/04/2025
+REACH
+
+11/04/2025
+exchange view reach revision

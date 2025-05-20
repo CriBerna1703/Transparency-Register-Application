@@ -11,7 +11,7 @@ well regulation affair
 overview Financial Services policy
 
 26/10/2015
-retail financial service DSM
+retail financial servicesDSM
 
 22/03/2017
 Financial Services policy
@@ -20,7 +20,7 @@ Financial Services policy
 eba draft RTS Strong Customer Authentication Secure Communication
 
 17/10/2017
-roundtable discussion future themonetary
+roundtable discussion future monetary
 
 17/10/2017
 roundtable discussion future monetary
@@ -95,7 +95,25 @@ Banking Package sustainable finance
 CSDDD
 
 05/12/2023
-call Marieke Bloem Chief Economist ING economic governance review
+call Marieke Bloem Chief Economist ING economic governancereview
 
 21/02/2024
 finance green transition
+
+25/02/2025
+financial sector defence investment policy regulatory framework
+
+11/03/2025
+implementation EMIR 3
+
+12/03/2025
+Meeting South America Critical Raw Materials CRM Coalition Willing Dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
+
+13/03/2025
+financial service policy
+
+21/03/2025
+introductory meeting explore Opportunities Nature Based Solutions NBS financing
+
+10/04/2025
+exchange view sustainable finance transition planning

@@ -71,7 +71,7 @@ Videoconference Exchange view ongoing G20 OECD lead discussion Pillar 1 2 intera
 CMU
 
 05/05/2021
-view industry gas package Fitfor 55
+view industry gas package Fit 55
 
 07/05/2021
 Digital finance
@@ -111,3 +111,6 @@ transport mobility priority
 
 03/06/2024
 work CCE define future priority health food safety area
+
+04/04/2025
+defence digitalisation

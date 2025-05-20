@@ -6,3 +6,6 @@ Banking Package Risk Reduction Package
 
 21/03/2023
 CMDI Digital Euro
+
+15/04/2025
+Digital Euro

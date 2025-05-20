@@ -1,5 +1,5 @@
 29/01/2015
-presentation theactivitie CEAtech
+presentation activitie CEAtech
 
 18/05/2017
 standard essential patent
@@ -11,10 +11,10 @@ evaluation CEA HCERES
 Hydrogen Strategy Industrial Strategy EIC
 
 05/10/2020
-roundtable skill Microelectronics
+Pact Skills roundtable microelectronic sector
 
 05/10/2020
-Pact Skills roundtable microelectronic sector
+roundtable skill Microelectronics
 
 27/11/2020
 roundtable processor
@@ -30,3 +30,9 @@ Recherche Innovation et formation
 
 20/03/2024
 exchange current future research innovation policy
+
+11/03/2025
+work well together follow recent US development need support ERC support innovative startup reach economic growth work JRC competitiveness
+
+10/04/2025
+Bilan de la mise en œuvre d’Horizon Europe Préparation du FP10 équilibre entre recherche fondamentale soutien à l innovation des start up et recherche collaborative Start up et scale up exemple de l’action du CEA en faveur de l essaimage

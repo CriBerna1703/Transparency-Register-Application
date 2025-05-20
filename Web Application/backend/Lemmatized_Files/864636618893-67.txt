@@ -24,3 +24,6 @@ space sector FP9
 
 28/08/2018
 EC proposal Space Programme Horizon Europe
+
+30/04/2025
+exchange view support downstream space sector

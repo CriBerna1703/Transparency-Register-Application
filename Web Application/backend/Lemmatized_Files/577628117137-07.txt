@@ -6,3 +6,6 @@ CBC eEuro Central Bank Digital Currency
 
 07/03/2024
 introductory meeting
+
+02/04/2025
+interoperability Digital Identity ecosystem

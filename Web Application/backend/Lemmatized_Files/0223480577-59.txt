@@ -44,7 +44,7 @@ ICMA ’s current priority activity
 csdr
 
 14/09/2023
-list act t1 settlement clearing
+list act t1settlement clearing
 
 21/11/2023
 csdr

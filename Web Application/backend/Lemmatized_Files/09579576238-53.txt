@@ -5,7 +5,7 @@ Internal Energy market
 digitise energy
 
 06/09/2022
-short term long term market trading power andgas well related commodity emission allowance
+short term long term market trading power gas well related commodity emission allowance
 
 08/09/2022
 winter preparedness
@@ -24,3 +24,6 @@ future ETS
 
 11/07/2024
 mifid commodity review
+
+28/03/2025
+review function commodity derivative market

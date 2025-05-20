@@ -8,10 +8,10 @@ investment initiative
 Digital Market
 
 25/02/2015
-IPR ICT sector
+patent
 
 25/02/2015
-patent
+IPR ICT sector
 
 06/03/2015
 Digital Market standard
@@ -35,13 +35,13 @@ Trade Policy
 standard Essential Patents SEP
 
 13/10/2015
-Innovation Policy Digital agenda 5 g
-
-13/10/2015
 DSM TSM investment standarization
 
 13/10/2015
 5 g
+
+13/10/2015
+Innovation Policy Digital agenda 5 g
 
 14/10/2015
 Market Innovation Patents
@@ -50,10 +50,10 @@ Market Innovation Patents
 dsm
 
 23/02/2016
-DSM Strategyinvestments digitalisation industry
+5 g deployment strategy investment
 
 23/02/2016
-5 g deployment strategy investment
+DSM Strategy investment digitalisation industry
 
 22/03/2016
 dsm
@@ -71,10 +71,10 @@ dual use
 Telecom situation China
 
 19/10/2016
-involvement private sector humanitarian aid
+competitiveness relate issue
 
 19/10/2016
-competitiveness relate issue
+involvement private sector humanitarian aid
 
 27/10/2016
 energy consumption telecommunication network
@@ -83,16 +83,16 @@ energy consumption telecommunication network
 standardisation
 
 08/12/2016
-trade obstacle China India US
+investment trade
 
 08/12/2016
-investment trade
+trade obstacle China India US
 
 20/12/2016
 follow meeting trade obstacle China India US
 
 13/02/2017
-International IPRprotection
+International IPR protection
 
 27/02/2017
 stand visit MWC
@@ -104,10 +104,10 @@ Digital Market Investment
 Digital Market
 
 18/05/2017
-SEP Communication
+standard essential patent
 
 18/05/2017
-standard essential patent
+SEP Communication
 
 17/09/2017
 DSM digital development broadband
@@ -143,10 +143,10 @@ patent policy
 Standard Essential Patents
 
 25/06/2019
-informal introductory meeting
+Digital Infrastructure
 
 25/06/2019
-Digital Infrastructure
+informal introductory meeting
 
 23/08/2019
 5 g deployment
@@ -158,16 +158,16 @@ digital sovereignty cybersecurity 5 g
 discuss issue around 5 g global competitive landscape
 
 27/05/2020
+license standard essential patent
+
+27/05/2020
+license standard essential patent
+
+27/05/2020
 Digital issue
 
-27/05/2020
-license standard essential patent
-
-27/05/2020
-license standard essential patent
-
 29/06/2020
-global player digital 5 g deployment condition foreign subsidy white paper cloud adoption Europe switch possibility contestability cloud market need clear standard security requirement datum governance
+global player digital 5 g deployment condition foreign subsidy white paper cloud adoption europeswitche possibility contestability cloud market need clear standard security requirement datum governance
 
 03/07/2020
 telecom connectivité
@@ -227,10 +227,10 @@ initiative standard essential patent
 standard essential patent SEP
 
 03/04/2023
-
+Patent Package sep
 
 03/04/2023
-Patent Package sep
+
 
 17/04/2023
 Standard Essential Patents
@@ -245,10 +245,10 @@ Global Gateway digital transformation partner country part Europe Day mission Ou
 brief meeting Nokia CEO context Partnership Global Infrastructure Investment G7 initiative Global Gateway framework G7 Summit
 
 13/06/2023
-digitalisation share finance
+discussion Global Gateway
 
 13/06/2023
-discussion Global Gateway
+digitalisation share finance
 
 24/10/2023
 Global Gateway
@@ -257,19 +257,19 @@ Global Gateway
 Meeting Tuomas Korpela Karol Mattila discuss Defense Space Metaverses Advanced Technologies policy
 
 11/03/2024
-Team Europe digital infrastructure GG Flagships HL event
+Global Gateway
 
 11/03/2024
-Global Gateway
+Team Europe digital infrastructure GG Flagships HL event
 
 31/05/2024
 courtesy meeting approach defence sector
 
 10/09/2024
-prevent circumvention sanction sensitive good
+high level executiveroundtable prevent circumvention sanction sensitive good
 
 10/09/2024
-high level executive roundtable prevent circumvention sanction sensitive good
+prevent circumvention sanction sensitive good
 
 16/10/2024
 mandate future tel
@@ -281,7 +281,43 @@ insight digital sector
 current market development view future sector
 
 16/01/2025
+introduction company discussion development quantum technology Europe
+
+16/01/2025
 sharing reflection Global Gateway cooperation possible future partnership
 
 25/02/2025
 exchange view NOKIA ’s activity Quantum Technologies focus QKD PQC euroqci
+
+06/03/2025
+discussion possible 3rd IPCEI Advanced Semiconductor Technologies semiconductor need telecom industry
+
+10/03/2025
+finance digitalisation current next Multiannual Financial Frameworks
+
+18/03/2025
+advance concrete technology solution competitive resilient secure Europe
+
+31/03/2025
+Build LAC digital transformation partnership experience discuss bi regional opportunity challenge private sector investment secure meaningful connectivity within LAC Digital Alliance
+
+31/03/2025
+Build LAC digital transformation partnership experience discuss bi regional opportunity challenge EUprivate sector investment secure meaningful connectivity within LAC Digital Alliance
+
+01/04/2025
+Plenary Feedback round previously hold GGIA Working Group session 9 different thematical group regard Latin America Caribbean LAC
+
+01/04/2025
+defense connectivity
+
+11/04/2025
+Meeting Nokia MFA Finland Amazonia Verde project
+
+24/04/2025
+Exchange Nokia ’s activity third country Tech diplomacy
+
+28/04/2025
+White Paper future defence Withdrawal Standard Essential Patents File AI infrastructure
+
+12/05/2025
+exchange view HPC AI Factories AI Gigafactories initiative

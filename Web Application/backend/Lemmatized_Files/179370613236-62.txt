@@ -8,13 +8,13 @@ sustainable finance
 implementation Basel III Banking Deposit Guarantee Scheme
 
 18/02/2020
-specificity mutualsin banking regulation Basel III
+specificity mutual bank regulation Basel III
 
 09/10/2020
 Basel iiimifid 2 sustainable Finance CMU
 
 02/02/2021
-Basel financing economy
+Basel finance ofeuropean economy
 
 01/06/2021
 current issue finance service policy
@@ -50,7 +50,7 @@ Digital Euro
 digital euro
 
 29/03/2023
-presentation BPCE group activity across France
+presentation BPCEgroup activity across France
 
 04/04/2023
 sustainable finance
@@ -78,3 +78,6 @@ upcoming topic sustainable finance
 
 05/02/2025
 Retail Investment Strategy Capital Markets objective Polands Presidency
+
+05/03/2025
+overview current regulatory topic

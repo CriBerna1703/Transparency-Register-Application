@@ -5,7 +5,7 @@ CISCO general development digitalisation
 presentation austrian save bank
 
 04/03/2015
-introductory meeting Capital Markets Retail financial service
+introductory meeting Capital Markets UnionRetail financial service
 
 19/05/2015
 MREL BSR
@@ -36,3 +36,6 @@ important file end mandate CMDI RIS digital euro PSR PSD
 
 16/01/2025
 upcoming topic sustainable finance
+
+20/03/2025
+competitiveness security austrian banking sector

@@ -401,279 +401,400 @@ export class D3Service {
         .raise();
     });
   }
-  
-  private svg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null = null;
-  private zoomGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
-  private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
-  private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
-  private simulation: d3.Simulation<any, any> | null = null;
-  private chargeForce: d3.ForceManyBody<any> | null = null;
-  
-  drawForceGraph(
-    element: HTMLElement,
-    nodes: any[],
-    links: any[],
-    options?: ForceGraphOptions & { selectedNodes?: Set<string> }
-  ): void {
-    const width = options?.width ?? 1000;
-    const height = options?.height ?? 600;
-    const initialZoom = (options?.zoomLevel ?? 100) / 100;
-    const minSim = options?.minSim ?? 0.1;
-    const maxSim = options?.maxSim ?? 1.0;
 
+private svg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null = null;
+private zoomGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
+private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
+private simulation: d3.Simulation<any, any> | null = null;
+private labelFontSize: number = 12;
 
-    const degreeMap = new Map<string, number>();
+drawForceGraph(
+  element: HTMLElement,
+  nodes: any[],
+  links: any[],
+  options?: ForceGraphOptions & { selectedNodes?: Set<string> }
+): void {
+  const width = options?.width ?? 1000;
+  const height = options?.height ?? 600;
+  const initialZoom = (options?.zoomLevel ?? 100) / 100;
 
-    // Conta le connessioni per ogni nodo
-    links.forEach(link => {
-      const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-      const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+  const degreeMap = new Map<string, number>();
+  links.forEach(link => {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    degreeMap.set(sourceId, (degreeMap.get(sourceId) || 0) + 1);
+    degreeMap.set(targetId, (degreeMap.get(targetId) || 0) + 1);
+  });
 
-      degreeMap.set(sourceId, (degreeMap.get(sourceId) || 0) + 1);
-      degreeMap.set(targetId, (degreeMap.get(targetId) || 0) + 1);
-    });
+  nodes.forEach(node => {
+    node.degree = degreeMap.get(node.id) || 0;
+  });
 
-    // Assegna il grado a ciascun nodo
-    nodes.forEach(node => {
-      node.degree = degreeMap.get(node.id) || 0;
-    });
+  const components = this.getConnectedComponents(nodes, links);
+  console.log('Connected components:', components.length);
+  const nonTrivialComponents: string[][] = [];
+  const isolatedNodes: any[] = [];
 
-    let previousZoomTransform: d3.ZoomTransform | null = null;
+  components.forEach(comp => {
+    const hasEdges = comp.some(id => (degreeMap.get(id) ?? 0) > 0);
+    if (hasEdges) nonTrivialComponents.push(comp);
+    else isolatedNodes.push(...comp.map(id => nodes.find(n => n.id === id)!));
+  });
 
-    const existingSvg = d3.select(element).select('svg');
-    if (!existingSvg.empty()) {
-      previousZoomTransform = d3.zoomTransform(existingSvg.node() as Element);
-    }
-      
-    d3.select(element).select('svg').remove();
-  
-    this.svg = d3.select(element)
-      .append('svg')
-      .attr('width', width)
-      .attr('height', height)
-      .attr('preserveAspectRatio', 'xMidYMid meet')
-      .attr('viewBox', `0 0 ${width} ${height}`);
-  
-    this.zoomGroup = this.svg.append('g');
-  
-    this.zoomBehavior = d3.zoom<Element, unknown>()
-      .scaleExtent([0.1, 10])
-      .on('zoom', (event) => {
-        if (this.zoomGroup) {
-          this.zoomGroup.attr('transform', event.transform);
-        }
-  
-      });
-  
-    this.svg.call(this.zoomBehavior as any);
-  
-    // Forza di repulsione dinamica
-    this.chargeForce = d3.forceManyBody()
-      .strength((d: any) => d.degree === 0 ? -300 : -150);
+  const componentAnchors: { [compIndex: number]: string } = {};
+  const wiNodes: any[] = [];
 
-    // Posizionamento isolati su una circonferenza
-    const isolatedNodes = nodes.filter(n => n.degree === 0);
-    const totalIsolated = isolatedNodes.length;
-    const centerX = width / 2;
-    const centerY = height / 2;
-    const radius = Math.min(width, height) + 100;
-
-    isolatedNodes.forEach((node, i) => {
-      const angle = (2 * Math.PI * i) / totalIsolated;
-      node.targetX = centerX + radius * Math.cos(angle);
-      node.targetY = centerY + radius * Math.sin(angle);
-    });
-
-    this.simulation = d3.forceSimulation(nodes)
-      .alpha(1) // energia iniziale
-      .alphaDecay(0.03) // rallenta progressivamente
-      .alphaMin(0.001)
-      .force('link', d3.forceLink(links)
-        .id((d: any) => d.id)
-        .distance((d: any) => Math.max(100, 300 - (d.similarity ?? 0) * 200))
-      )
-      .force('charge', this.chargeForce)
-      .force('center', d3.forceCenter(centerX, centerY))
-      .force('isolateX', d3.forceX((d: any) =>
-        d.degree === 0 ? d.targetX : centerX
-      ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
-      .force('isolateY', d3.forceY((d: any) =>
-        d.degree === 0 ? d.targetY : centerY
-      ).strength((d: any) => d.degree === 0 ? 0.2 : 0))
-      .force('x', d3.forceX(centerX).strength(0.02))
-      .force('y', d3.forceY(centerY).strength(0.02))
-      .force('collide', d3.forceCollide((d: any) => d.degree === 0 ? 30 : 60).strength(1));
-
-    this.simulation.restart();
-
-    const drag = d3.drag<SVGGElement, any>()
-      .on('start', (event, d) => {
-        if (!event.active) this.simulation!.alphaTarget(0.3).restart();
-        d.fx = d.x;
-        d.fy = d.y;
-      })
-      .on('drag', (event, d) => {
-        d.fx = event.x;
-        d.fy = event.y;
-      })
-      .on('end', (event, d) => {
-        if (!event.active) this.simulation!.alphaTarget(0);
-        d.fx = null;
-        d.fy = null;
-      });
-        
-    const link = this.zoomGroup.append('g')
-      .selectAll('line')
-      .data(links.filter((d: any) => !d.__invisible))
-      .enter()
-      .append('line')
-      .attr('stroke-width', 5)
-      .attr('stroke', (d: any) => this.getLinkColor(d.similarity));
-
-    link.on('click', (event, d) => {
-        event.preventDefault();
-        event.stopPropagation();
-        options?.onLinkRightClick?.(d);
-      });
-      
-    this.nodeGroup = this.zoomGroup.append('g')
-      .selectAll('g')
-      .data(nodes)
-      .enter()
-      .append('g')
-      .call(drag);
-  
-    this.nodeGroup.append('circle')
-      .attr('r', 7)
-      .attr('fill', '#ae58a3')
-      .attr('stroke', '#5b2c55')
-      .attr('stroke-width', 2)
-      .attr('data-id', d => d.id);
-  
-    this.nodeGroup.append('text')
-      .text((d: any) => d.name)
-      .attr('text-anchor', 'middle')
-      .attr('fill', '#004b87')
-      .attr('dy', '-10')
-      .style('display', 'none');
-  
-    this.nodeGroup
-      .on('click', (event, d) => {
-        event.stopPropagation();
-        options?.onNodeClick?.(d);
-        updateStyles();
-      })
-      .on('mouseover', function (event, d) {
-        if (options?.selectedNodes?.has(d.id)) return; 
-        d3.select(this).select('circle').attr('stroke', '#ff7f0e');
-        d3.select(this).select('text').style('display', 'block');
-      })
-      .on('mouseout', function (event, d) {
-        const isSelected = options?.selectedNodes?.has(d.id);
-        d3.select(this).select('circle')
-          .attr('stroke', isSelected ? '#ff7f0e' : '#5b2c55');
-        d3.select(this).select('text')
-          .style('display', isSelected ? 'block' : 'none');
-      })
-      .on('contextmenu', function (event, d) {
-        event.preventDefault();
-        event.stopPropagation();
-        options?.onRightClick?.(d);
-      });
-  
-    const updateStyles = () => {
-      this.nodeGroup?.select('circle')
-        .attr('stroke', (d: any) =>
-          options?.selectedNodes?.has(d.id) ? '#ff7f0e' : '#5b2c55');
-  
-      this.nodeGroup?.select('text')
-        .style('display', (d: any) =>
-          options?.selectedNodes?.has(d.id) ? 'block' : 'none');
-  
-      link.attr('stroke', (d: any) => {
-        const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
-        const targetId = typeof d.target === 'object' ? d.target.id : d.target;
-        return options?.selectedNodes?.has(sourceId) || options?.selectedNodes?.has(targetId)
-          ? '#ff7f0e'
-          : this.getLinkColor(d.similarity);;
-      });
+  nonTrivialComponents.forEach((comp, i) => {
+    const anchorNode = comp.find(id => degreeMap.get(id)! > 0)!;
+    const wi = {
+      id: `w_${i}`,
+      name: '',
+      invisible: true,
+      fx: null,
+      fy: null
     };
-  
-    this.simulation.on('tick', () => {
-      link
-        .attr('x1', (d: any) => d.source.x)
-        .attr('y1', (d: any) => d.source.y)
-        .attr('x2', (d: any) => d.target.x)
-        .attr('y2', (d: any) => d.target.y);
-
-      this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
+    nodes.push(wi);
+    wiNodes.push(wi);
+    links.push({
+      source: `w_${i}`,
+      target: anchorNode,
+      __invisible: true,
+      strength: 0.05
     });
-  
-    if (previousZoomTransform) {
-      this.svg!.call(this.zoomBehavior!.transform as any, previousZoomTransform);
-    } else {
-      this.svg!.call(this.zoomBehavior!.transform as any, d3.zoomIdentity.scale(initialZoom));
-    }
-  
-    updateStyles();
+    componentAnchors[i] = anchorNode;
+  });
+
+
+  const wCentral = {
+    id: 'w_central',
+    name: '',
+    invisible: true,
+    fx: width / 2,
+    fy: height / 2
+  };
+  nodes.push(wCentral);
+
+
+  wiNodes.forEach(wi => {
+    links.push({
+      source: 'w_central',
+      target: wi.id,
+      __invisible: true,
+      strength: 0.1  // debole per non attrarre troppo
+    });
+  });
+
+  if (isolatedNodes.length > 0) {
+    const wK = {
+      id: 'w_k',
+      name: '',
+      invisible: true,
+      fx: null,
+      fy: null,
+      x : 0,
+      y: 0
+    };
+    nodes.push(wK);
+
+    isolatedNodes.forEach(n => {
+      links.push({
+        source: 'w_k',
+        target: n.id,
+        __invisible: true,
+        strength: 0.8  // forza alta per mantenere vicini i nodi isolati
+      });
+    });
+
+    // Collega w_k al centro generale w_central
+    links.push({
+      source: 'w_central',
+      target: 'w_k',
+      __invisible: true,
+      strength: 0.02  // stessa forza degli altri w_i
+    });
+
+    // Posizione iniziale di w_k vicino a w_central
+    wK.x = wCentral.fx + 40;
+    wK.y = wCentral.fy + 40;
+
+    // Posizione iniziale dei nodi isolati attorno a w_k in cerchio
+    isolatedNodes.forEach((n, i) => {
+      const angle = (2 * Math.PI * i) / isolatedNodes.length;
+      const radius = 60;
+      n.x = wK.x + radius * Math.cos(angle);
+      n.y = wK.y + radius * Math.sin(angle);
+    });
   }
-  
-  private labelFontSize: number = 12;
-  
-  public setLabelFontSize(size: number): void {
-    this.labelFontSize = size;
+
+
+  const angleStep = (2 * Math.PI) / wiNodes.length;
+  const radiusBase = Math.min(width, height) / 3;
+
+  wiNodes.forEach((wi, i) => {
+    const compSize = nonTrivialComponents[i].length;
+    const radius = radiusBase + compSize * 5;
+    const angle = i * angleStep;
+    wi.x = wCentral.fx + radius * Math.cos(angle);
+    wi.y = wCentral.fy + radius * Math.sin(angle);
+  });
+
+  nonTrivialComponents.forEach((comp, i) => {
+    const wi = wiNodes[i];
+    comp.forEach(id => {
+      const node = nodes.find(n => n.id === id);
+      if (node && node.degree > 0) {
+        node.x = wi.x + Math.random() * 10;
+        node.y = wi.y + Math.random() * 10;
+      }
+    });
+  });
+
+
+
+  let previousZoomTransform: d3.ZoomTransform | null = null;
+  const existingSvg = d3.select(element).select('svg');
+  if (!existingSvg.empty()) {
+    previousZoomTransform = d3.zoomTransform(existingSvg.node() as Element);
+  }
+  d3.select(element).select('svg').remove();
+
+  this.svg = d3.select(element)
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height)
+    .attr('preserveAspectRatio', 'xMidYMid meet')
+    .attr('viewBox', `0 0 ${width} ${height}`);
+
+  this.zoomGroup = this.svg.append('g');
+
+  this.zoomBehavior = d3.zoom<Element, unknown>()
+    .scaleExtent([0.1, 10])
+    .on('zoom', (event) => {
+      this.zoomGroup?.attr('transform', event.transform);
+    });
+
+  this.svg.call(this.zoomBehavior as any);
+
+
+  this.simulation = d3.forceSimulation(nodes)
+    .alpha(1)
+    .alphaDecay(0.03)
+    .alphaMin(0.001)
+    .force('link', d3.forceLink(links)
+      .id((d: any) => d.id)
+      .strength((d: any) => d.strength ?? 0.1)
+      .distance((d: any) => d.__invisible ? 100 : Math.max(100, 300 - (d.similarity ?? 0) * 200))
+    )
+    .force('charge', d3.forceManyBody().strength((d: any) => {
+      // Nodo centrale non respinge nessuno
+      if (d.id === 'w_central') return 0;
+
+      // Nodo isolato non viene respinto da altri
+      if (d.invisible && d.id === 'w_k') return 0;
+
+      return -150;
+    }))
+    .force('collide', d3.forceCollide((d: any) => d.degree === 0 ? 20 : 40).strength(1.0))
+    .force('repelWiNodes', () => {
+      return {
+        initialize() {}, 
+        apply: (alpha: number) => {
+          for (let i = 0; i < wiNodes.length; i++) {
+            for (let j = i + 1; j < wiNodes.length; j++) {
+              const a = wiNodes[i];
+              const b = wiNodes[j];
+              const dx = a.x - b.x;
+              const dy = a.y - b.y;
+              const dist2 = dx * dx + dy * dy + 0.01;
+              const force = 5000 / dist2; 
+              const fx = dx * force;
+              const fy = dy * force;
+              a.vx += fx * alpha;
+              a.vy += fy * alpha;
+              b.vx -= fx * alpha;
+              b.vy -= fy * alpha;
+            }
+          }
+        }
+      };
+    })
+
+
+  this.simulation.restart();
+
+  const drag = d3.drag<SVGGElement, any>()
+    .on('start', (event, d) => {
+      if (!event.active) this.simulation!.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    })
+    .on('drag', (event, d) => {
+      d.fx = event.x;
+      d.fy = event.y;
+    })
+    .on('end', (event, d) => {
+      if (!event.active) this.simulation!.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
+    });
+
+  const link = this.zoomGroup.append('g')
+    .selectAll('line')
+    .data(links.filter((d: any) => !d.__invisible))
+    .enter()
+    .append('line')
+    .attr('stroke-width', 5)
+    .attr('stroke', (d: any) => this.getLinkColor(d.similarity))
+    .on('click', (event, d) => {
+      event.preventDefault();
+      event.stopPropagation();
+      options?.onLinkRightClick?.(d);
+    });
+
+  this.nodeGroup = this.zoomGroup.append('g')
+    .selectAll('g')
+    .data(nodes)
+    .enter()
+    .append('g')
+    .call(drag);
+
+  this.nodeGroup.append('circle')
+    .attr('r', (d: any) => d.invisible ? 0 : 7) // dimensione debug
+    .attr('fill', (d: any) => d.invisible ? 'none' : '#ae58a3') // rosso se invisibile
+    .attr('stroke', (d: any) => d.invisible ? 'none' : '#5b2c55') // bordo rosso scuro
+    .attr('stroke-width', 2)
+    .style('display', null) // mostra comunque tutto
+    .attr('data-id', d => d.id);
+
+  this.nodeGroup.append('text')
+    .text((d: any) => d.name)
+    .attr('text-anchor', 'middle')
+    .attr('fill', '#004b87')
+    .attr('dy', '-10')
+    .style('display', 'none');
+
+  this.nodeGroup
+    .on('click', (event, d) => {
+      event.stopPropagation();
+      options?.onNodeClick?.(d);
+      updateStyles();
+    })
+    .on('mouseover', function (event, d) {
+      if (options?.selectedNodes?.has(d.id)) return;
+      d3.select(this).select('circle').attr('stroke', '#ff7f0e');
+      d3.select(this).select('text').style('display', 'block');
+    })
+    .on('mouseout', function (event, d) {
+      const isSelected = options?.selectedNodes?.has(d.id);
+      d3.select(this).select('circle')
+        .attr('stroke', isSelected ? '#ff7f0e' : '#5b2c55');
+      d3.select(this).select('text')
+        .style('display', isSelected ? 'block' : 'none');
+    })
+    .on('contextmenu', function (event, d) {
+      event.preventDefault();
+      event.stopPropagation();
+      options?.onRightClick?.(d);
+    });
+
+  const updateStyles = () => {
+    this.nodeGroup?.select('circle')
+      .attr('stroke', (d: any) => options?.selectedNodes?.has(d.id) ? '#ff7f0e' : '#5b2c55');
+
     this.nodeGroup?.select('text')
-      .style('font-size', `${this.labelFontSize}px`);
-  }
-  
-  public updateForceGraphStyles(selectedNodes: Set<string>, selectedLink?: { source: string; target: string }): void {
-    if (!this.nodeGroup || !this.zoomGroup) return;
-  
+      .style('display', (d: any) => options?.selectedNodes?.has(d.id) ? 'block' : 'none');
 
-    this.nodeGroup.select('circle')
-      .attr('stroke', (d: any) => selectedNodes.has(d.id) ? '#ff7f0e' : '#5b2c55');
-  
-    this.nodeGroup.selectAll('text')
-      .style('display', (d: any) => selectedNodes.has(d.id) ? 'block' : 'none');
-  
-    this.zoomGroup.selectAll('line')
-      .attr('stroke', (d: any) => {
-        const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
-        const targetId = typeof d.target === 'object' ? d.target.id : d.target;
-        const isSelectedNode = selectedNodes.has(sourceId) || selectedNodes.has(targetId);
-        const isSelectedLink = selectedLink &&
-          ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
-           (selectedLink.source === targetId && selectedLink.target === sourceId));
+    link.attr('stroke', (d: any) => {
+      const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+      const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+      return options?.selectedNodes?.has(sourceId) || options?.selectedNodes?.has(targetId)
+        ? '#ff7f0e'
+        : this.getLinkColor(d.similarity);
+    });
+  };
 
+  this.simulation.on('tick', () => {
+    link
+      .attr('x1', (d: any) => d.source.x)
+      .attr('y1', (d: any) => d.source.y)
+      .attr('x2', (d: any) => d.target.x)
+      .attr('y2', (d: any) => d.target.y);
 
-          if (isSelectedLink) return 'red';
-          return isSelectedNode ? '#ff7f0e' : this.getLinkColor(d.similarity);
-        });
-  }
+    this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
+  });
 
-  private getLinkColor(sim: number): string {
-    const shades = [
-      '#d7f9e5', // 0.00–0.20
-      '#94e8b1', // 0.20–0.40
-      '#4ac873', // 0.40–0.60
-      '#23974b', // 0.60–0.80
-      '#085c28'  // 0.80–1.00
-    ];
+  this.svg.call(
+    this.zoomBehavior!.transform as any,
+    previousZoomTransform ?? d3.zoomIdentity.scale(initialZoom)
+  );
 
-    if (sim < 0.20) return shades[0];
-    if (sim < 0.40) return shades[1];
-    if (sim < 0.60) return shades[2];
-    if (sim < 0.80) return shades[3];
-    return shades[4];
-  }
-
-  public updateChargeStrength(strength: number): void {
-    if (this.chargeForce && this.simulation) {
-      this.chargeForce.strength(strength);
-      this.simulation.alpha(1).restart();
-    }
-  } 
+  updateStyles();
 }
 
+public setLabelFontSize(size: number): void {
+  this.labelFontSize = size;
+  this.nodeGroup?.select('text').style('font-size', `${this.labelFontSize}px`);
+}
 
+public updateForceGraphStyles(selectedNodes: Set<string>, selectedLink?: { source: string; target: string }): void {
+  if (!this.nodeGroup || !this.zoomGroup) return;
 
+  this.nodeGroup.select('circle')
+    .attr('stroke', (d: any) => selectedNodes.has(d.id) ? '#ff7f0e' : '#5b2c55');
+
+  this.nodeGroup.selectAll('text')
+    .style('display', (d: any) => selectedNodes.has(d.id) ? 'block' : 'none');
+
+  this.zoomGroup.selectAll('line')
+    .attr('stroke', (d: any) => {
+      const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+      const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+      const isSelectedNode = selectedNodes.has(sourceId) || selectedNodes.has(targetId);
+      const isSelectedLink = selectedLink &&
+        ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
+         (selectedLink.source === targetId && selectedLink.target === sourceId));
+      if (isSelectedLink) return 'red';
+      return isSelectedNode ? '#ff7f0e' : this.getLinkColor(d.similarity);
+    });
+}
+
+private getLinkColor(sim: number): string {
+  const shades = ['#d7f9e5', '#94e8b1', '#4ac873', '#23974b', '#085c28'];
+  if (sim < 0.20) return shades[0];
+  if (sim < 0.40) return shades[1];
+  if (sim < 0.60) return shades[2];
+  if (sim < 0.80) return shades[3];
+  return shades[4];
+}
+
+private getConnectedComponents(nodes: any[], links: any[]) {
+  const visited = new Set<string>();
+  const components: string[][] = [];
+  const adjacency = new Map<string, string[]>();
+
+  nodes.forEach(n => adjacency.set(n.id, []));
+  links.forEach(l => {
+    const source = typeof l.source === 'object' ? l.source.id : l.source;
+    const target = typeof l.target === 'object' ? l.target.id : l.target;
+    adjacency.get(source)?.push(target);
+    adjacency.get(target)?.push(source);
+  });
+
+  for (const node of nodes) {
+    if (visited.has(node.id)) continue;
+    const stack = [node.id];
+    const component: string[] = [];
+    while (stack.length) {
+      const id = stack.pop()!;
+      if (visited.has(id)) continue;
+      visited.add(id);
+      component.push(id);
+      adjacency.get(id)?.forEach(nei => !visited.has(nei) && stack.push(nei));
+    }
+    components.push(component);
+  }
+
+  return components;
+  }
+}

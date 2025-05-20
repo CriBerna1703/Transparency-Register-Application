@@ -5,7 +5,7 @@ trend public sector
 digital market regulation Digital skill
 
 06/01/2015
-Microsofts policy field entrepreneurship young people Europe YouthSpark support start up BizSpark help SMEs partner network coherence Microsofts policy theobjective Commissioner future cooperation
+Microsofts policy field entrepreneurship young people Europe YouthSpark support start up BizSpark help SMEs partner network coherence Microsofts policy objective Commissioner future cooperation
 
 14/01/2015
 Digital Market Telecom Package reform
@@ -32,7 +32,7 @@ regulatory issue
 Digital skill
 
 04/03/2015
-Microsoft education programme
+Microsoft educationprogramme
 
 23/03/2015
 Cooperation Microsoft
@@ -383,7 +383,7 @@ Green deal
 Disinformation AI
 
 18/06/2020
-collaboration fight covid 19 Support research strengthen Europe ’s ability move virtual classroom
+collaboration fight covid 19 Support research strengtheneurope ’s ability move virtual classroom
 
 23/06/2020
 e Debate Regulatory model online platform
@@ -470,7 +470,7 @@ Digital taxation
 main topic meet transatlantic relation focus US Trade Technology Council digital trade WTO e commerce negotiation Digital angle economic recovery
 
 29/06/2021
-recovery Twintransition Digital Regulatory agenda
+recovery Twin transition Digital regulatory agenda
 
 09/07/2021
 ongoing digital file
@@ -503,7 +503,7 @@ datum protection safe datum transfer
 Green Deal
 
 28/02/2022
-current development digital policy particular Europe isupdate competition rule tool digital age
+current development digital policy particular Europe update competition rule tool digital age
 
 15/03/2022
 Microsoft approach Europe ’s digital plan
@@ -527,10 +527,10 @@ participant ’s effort prevent tackle child sexual abuse
 disinformation
 
 16/06/2022
-data protection privacy workstream concern war crime Ukraine
+disinformation
 
 16/06/2022
-disinformation
+data protection privacy workstream concern war crime Ukraine
 
 27/06/2022
 US Trade Technology Council TTC
@@ -542,7 +542,7 @@ Ukraine war crime
 meet Green Digital Coalition Main topic state play sustainable digitalization
 
 03/10/2022
-action plan digitalisation energy sector
+action plan thedigitalisation energy sector
 
 03/10/2022
 meeting Mr Brad Smith CEO Microsoft Topics discuss CSA digital topic Commissioner Johansson portfolio
@@ -578,7 +578,7 @@ data protection AI
 policy regulatory measure accessibility Microsoft accessibility relate policy initiative
 
 29/06/2023
-technological development AI Cloud Cybersecurity Privacy Public Sector
+technological development AI CloudCybersecurity Privacy Public Sector
 
 02/08/2023
 artificial intelligence
@@ -634,6 +634,9 @@ tech agenda
 06/02/2025
 first meeting Commission Signatories implementation Code conduct counter illegal hate speech online code conduct integration DSA framework
 
+06/02/2025
+first meeting Commission Signatories implementation Code conduct counter illegal hate speech online code conduct integration DSA framework
+
 11/02/2025
 Opening Session DSA roundtable discussion online advertising Article 46 DSA
 
@@ -646,5 +649,41 @@ meeting request Microsoft Aim provide deep presentation project experience compa
 15/02/2025
 private roundtable transatlantic global cooperation tech
 
+16/02/2025
+exchange view removal harmful online content cybersecurity
+
 28/02/2025
 Microsoft ’s perspective function sector
+
+03/03/2025
+exchange view General Data Protection Regulation GDPR
+
+03/03/2025
+negotiation US agreement access datum
+
+04/03/2025
+datum protection role AI competitiveness simplification
+
+04/03/2025
+exchange view Code Practice
+
+05/03/2025
+defence industry development
+
+13/03/2025
+exchange range issue relate Commissioner ’s portfolio include simplification digital datum privacy technology relate development
+
+18/03/2025
+exchange view concept downstream modifier
+
+21/03/2025
+Artificial Intelligence
+
+07/04/2025
+digital policy
+
+15/04/2025
+exchange view forthcoming Digital Fairness Act
+
+30/04/2025
+exchange view digital commitment datum protection consumer protection

@@ -8,10 +8,10 @@ capital market
 energy
 
 30/06/2015
-economy Financing update Estonia Financial Markets
+economy Financing update EstoniaFinancial Markets
 
 21/01/2016
-Nasdaqs role Europe trend recent development market equityinvestment capital market
+Nasdaqs role Europe trend recent development market equity investment capital market
 
 29/06/2016
 SME financing
@@ -50,7 +50,7 @@ financial market regulation Capital Markets
 mifid II esa Review
 
 22/03/2018
-sustainable Finance Fintech Nasdaq Baltic region MiFID II
+sustainable FinanceFintech Nasdaq Baltic region MiFID II
 
 22/03/2018
 sustainable finance MiFID FinTech
@@ -98,7 +98,7 @@ MiFID II Market Structure /consolidated tape
 exchange view development capital market US sustainable finance agenda digital agenda
 
 09/11/2021
-meet Ludovic Aigrot Vice PresidentHead Government Relations Europe NASDAQ Topics discuss state play preparation Commission propose MiFID II
+meet Ludovic Aigrot Vice President Head Government Relations Europe NASDAQ Topics discuss state play preparation Commission propose MiFID II
 
 11/11/2021
 Review Markets Financial Instruments Regulation
@@ -125,7 +125,7 @@ RTS equity transparency negotiate trade
 exchange view advancement Capital Markets Discussion experience nordic capital market
 
 20/01/2025
-exchange ImpactEurope Swedish company Savings Investments
+Exchange ImpactEurope andSwedish company Savings Investments
 
 21/01/2025
 Benchmark Regulation
@@ -144,3 +144,12 @@ recent economic development US
 
 04/02/2025
 recent economic development EU US
+
+24/02/2025
+exchange view AI policy AI Act
+
+18/03/2025
+csdr mifid
+
+24/03/2025
+discussion market regulatory development

@@ -17,7 +17,7 @@ Le rôle du consommateur dans lunion énergétique
 consumer policy issue
 
 26/01/2015
-circular Economy andChemical Policy
+Circular Economy Chemical Policy
 
 03/02/2015
 dsm
@@ -125,7 +125,7 @@ Digital Contracts proposal
 Digital Market
 
 17/11/2015
-digital market issue
+Digital marketissue
 
 24/11/2015
 copyright
@@ -281,7 +281,7 @@ Meeting Task Force Preparation Conduct Negotiations United Kingdom Article 50 TE
 privacy shield GDPR
 
 07/03/2017
-e Privacy proposal general datum protection regulation state play privacy shield international transfer
+e Privacy proposal general datum protection regulation state playprivacy shield international transfer
 
 13/03/2017
 DSM Mid term review
@@ -419,7 +419,7 @@ AI Communication
 present paper contain priority consumer specific initiative
 
 11/07/2019
-civil society organisation demand removal E171from list permit food additive
+civil society organisation demand removal e171 list permit food additive
 
 19/07/2019
 trade negotiation WTO
@@ -431,7 +431,7 @@ platform action Diet Physical Activity Health
 quality financial retail advice
 
 02/10/2019
-roundtable exchange clean smart mobility
+roundtable exchange clean smartmobility
 
 03/12/2019
 consumer empowerment context clean energy transition
@@ -569,7 +569,7 @@ Trade Policy Review US relation WTO initiative e commerce health climate Transpa
 green transition Digital Services Act General Product Safety directive GSPD AI product safety consequence covid 19 pandemic consumer right
 
 13/04/2021
-sustainable product Initiative consumerinformation state play Ecolabel chemical strategy
+sustainable product Initiative consumer information state play Ecolabel chemical strategy
 
 27/04/2021
 presentation BEUC ’s position paper ETS extension road transport building discussion fit 55 package
@@ -668,7 +668,7 @@ exchange view key priority reform pharmaceutical strategy legislation state play
 BEUC would like discuss follow topic product safety market surveillance toy safety directive product liability directive standardisation /liability force labour sustainable corporate governance possibly supply chain
 
 25/05/2022
-Retail Investment Strategy
+Retail InvestmentStrategy
 
 07/06/2022
 consumer policy
@@ -704,13 +704,13 @@ FU standardisation
 US Task Force Convening energy efficiency energy saving California Energy Commission ACEEE ASE Advanced Energy Economy Arcadia ComEd Octopus Energy OhmConnect OPower Uplight Covenant Mayors also participate
 
 26/10/2022
-exchange view label rule pharmaceutical reform
+exchange view label rule thepharmaceutical reform
 
 09/11/2022
 standardisation strategy
 
 09/11/2022
-consumer right andinterest energy saving
+consumer right interest energy saving
 
 22/11/2022
 retail investment strategy name
@@ -844,11 +844,17 @@ BEUC ’s interest Cloud AI Development Act
 20/01/2025
 market surveillance
 
+21/01/2025
+product safety e commerce
+
 24/01/2025
 exchange view Commissions well regulation simplification
 
 24/01/2025
 Savings Investment
+
+24/01/2025
+simplification Digital Euro
 
 28/01/2025
 exchange view issue consider relevant organisation Vision agriculture food preparation particular food aspect
@@ -859,11 +865,65 @@ JUSTC3 meet BEUC Consumer Organisation BEUC ’s request discuss data protection
 11/02/2025
 discussion food labelling issue
 
+12/02/2025
+dialogue future automotive sector Thematic Working Group Clean Transition Decarbonisation
+
 13/02/2025
 presentation BEUC view several policy
+
+17/02/2025
+exchange views consumer mindset relate circular economy water resilience
 
 17/02/2025
 energy consumer policy
 
 25/02/2025
+Vision Agriculture Food Exchange view Vision agriculture food particular aspect related food aspect
+
+25/02/2025
 datum protection simplification
+
+10/03/2025
+consumer take Clean Industrial Deal
+
+11/03/2025
+consumer policy
+
+11/03/2025
+Exchange BEUC ’s position mission letter Commissioner Tzitzikostas regard sustainable travel
+
+17/03/2025
+invitation attend annual event Transatlantic Consumer Dialogue TACD 24 June
+
+19/03/2025
+Code Conduct Online Advertising Workshop 4
+
+24/03/2025
+support consumer clean energy transition include access affordable sustainable housing
+
+25/03/2025
+roundtable Water Agriculture Food Supply chain
+
+26/03/2025
+exchange view trade custom issue
+
+27/03/2025
+roundtable Water Agriculture Food Supply chain
+
+28/03/2025
+roundtable Investing Water Resilience
+
+31/03/2025
+Korea Digital Trade Agreement Singapore Digital Trade Agreement
+
+09/04/2025
+Omnibus Data Strategy
+
+10/04/2025
+impact US tariff
+
+16/04/2025
+exchange view consumer protection
+
+23/04/2025
+green Corporate Fleet

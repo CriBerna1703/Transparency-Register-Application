@@ -29,7 +29,7 @@ energy role decarbonisation transport
 energy
 
 09/03/2015
-Transport Energy
+Transport EnergyUnion
 
 23/03/2015
 TTIP Environment Transport
@@ -122,7 +122,7 @@ decarbonization
 port regulation
 
 08/03/2016
-decarbonisation oftransport
+decarbonisation transport
 
 08/03/2016
 post 2020 transport fuel decarbonisation
@@ -215,7 +215,7 @@ aviation
 road package vehicle standard alternative fuel infra budget
 
 07/04/2017
-low emission mobilityco2 standard
+low emission mobility co2 standard
 
 11/04/2017
 mobility package 2017 ETS ESRClean Energy Package
@@ -245,7 +245,7 @@ renewable energy directive REDII
 co2 regulation November mobility package
 
 11/09/2017
-co2 regulation ZEV battery policy wide November mobility package
+co2 regulation ZEVand battery policy wide November mobility package
 
 12/09/2017
 Meeting Mr Todts
@@ -296,7 +296,7 @@ sustainable development general palm oil particular
 mobility package
 
 28/03/2018
-truck standard part 3rd MobilityPackage palm oil renewable energy directive
+truck standard part 3rd Mobility Package palm oil renewable energy directive
 
 06/04/2018
 General Safety Regulation
@@ -368,7 +368,7 @@ battery package
 MRV Revision ETS extention ship alternative marine fuel IMO ISWG7
 
 17/02/2020
-Green Deal road transport
+Green Deal roadtransport
 
 18/02/2020
 transport
@@ -488,7 +488,7 @@ upcoming revision Alternative Fuels Infrastructure directive afid
 taxonomy
 
 30/03/2021
-exchange upcoming proposal relation Effort SharingRegulation apply emission trading road transport emission
+exchange upcoming proposal relation Effort Sharing Regulation apply emission trading road transport emission
 
 12/04/2021
 euro 7 preparation sustainable aviation maritime
@@ -626,7 +626,7 @@ Critical Raw Materials
 side Raw Materials week High Level Conference party meet discuss concern environmental NGOs raw material project feedback Raw Materials Act
 
 18/11/2022
-discuss recently adopt commissionproposal revision Ambient Air Quality directive
+discuss recently adopt Commission proposal revision Ambient Air Quality directive
 
 01/12/2022
 discuss decarbonisation transport sector role CO2 standard
@@ -778,11 +778,17 @@ exchange view Refuel aviation state play SAF production CO2 emission carbon leak
 16/01/2025
 exchange view Brussels base NGO TE Transport Environment Clean Industrial Deal presentation late position paper
 
+22/01/2025
+Automotive Action Plan
+
 27/01/2025
 future automotive sector
 
+06/02/2025
+circularity recycling
+
 07/02/2025
-discussion maritime decarbonisation
+discussion maritimedecarbonisation
 
 10/02/2025
 Automotive Dialogue
@@ -790,8 +796,47 @@ Automotive Dialogue
 10/02/2025
 discussion clean industry ’s competitiveness
 
+11/02/2025
+exchange view Clean Industrial Deal
+
 13/02/2025
 Industrial Action Plan automotive sector
 
+19/02/2025
+dialogue future automotive sector Suppliers session
+
+19/02/2025
+dialogue future automotive sector Battery session
+
+21/02/2025
+Clean Industrial Deal Automotive Action Plan
+
 21/02/2025
 high level meet Automotive industry
+
+25/02/2025
+exchange view automotive sector
+
+07/04/2025
+Clean Industrial Deal Electrification Action Plan Affordable Energy Plan CISAF
+
+09/04/2025
+sustainability agenda Commission
+
+23/04/2025
+green Corporate Fleet
+
+25/04/2025
+exchange view extractive waste management shortcoming Extractive Waste Directive EWD particular light need raw material green transition recent development Critical Raw Materials Act
+
+28/04/2025
+Automotive Action Plan Emissions Trading System
+
+29/04/2025
+Sustainability Omnibus
+
+29/04/2025
+Sustainability Omnibus
+
+13/05/2025
+Clean Industrial Deal deliver Joint Decarbonisation Competitiveness Roadmap

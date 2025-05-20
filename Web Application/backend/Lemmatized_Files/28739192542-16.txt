@@ -20,7 +20,7 @@ Roll Investment Plan
 market strategy
 
 02/02/2016
-big datum free flow datum
+big datum free flow ofdata
 
 15/03/2016
 introductory meeting
@@ -57,3 +57,6 @@ data protection
 
 27/06/2023
 Artificial Intelligence Act
+
+11/04/2025
+copyright levy reform

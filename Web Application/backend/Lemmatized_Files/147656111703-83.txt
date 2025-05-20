@@ -8,7 +8,7 @@ meet green skill
 roundtable skill Microelectronics
 
 05/10/2020
-Pact Skills roundtable microelectronic sector
+Pact Skills Roundtablewith microelectronic sector
 
 11/05/2021
 Pact Skills roundtable renewable energy ecosystem sector
@@ -21,3 +21,6 @@ Pact Skills roundtable digital transition sector
 
 19/07/2021
 skill Roundtable Digital
+
+27/03/2025
+exchange good practice spectrum lifelong learning education

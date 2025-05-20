@@ -14,7 +14,7 @@ Copyright Platform regulation music future
 intro meeting
 
 02/02/2015
-presentation IFPI importance cultural music industry economy wide availability digital music
+presentation IFPI importance cultural /music industry economy wide availability digital music
 
 06/02/2015
 Commission Work Programme
@@ -68,7 +68,7 @@ Digital Market
 Digital Market
 
 18/05/2016
-Meeting Mr Placido Domingo Digital Market
+Meeting Mr PlacidoDomingo Digital Market
 
 19/05/2016
 copyright
@@ -95,16 +95,16 @@ Digital Market
 value gap
 
 11/08/2016
-copyright reform valuegap
+copyright reform value gap
 
 30/08/2016
 value gap
 
 01/09/2016
-copyright value gap
+copyright
 
 01/09/2016
-copyright
+copyright value gap
 
 02/09/2016
 copyright
@@ -128,7 +128,7 @@ Digital Market
 copyright
 
 16/02/2017
-copyright refom particular Value Gap Platforms Noticeand Action Commission review Enforcement
+copyright refom particular Value Gap Platforms Notice Action Commission review Enforcement
 
 26/06/2017
 DSM Mid term review copyright
@@ -210,3 +210,9 @@ AI Act copyright
 
 18/02/2025
 discussion recent development relevant copyright music industry
+
+03/03/2025
+discussion challenge face music industry technological digital innovation include impact generative artificial intelligence artist
+
+24/04/2025
+exchange copyright include relation AI

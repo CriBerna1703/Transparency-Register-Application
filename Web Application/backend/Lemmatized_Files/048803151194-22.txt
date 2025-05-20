@@ -6,3 +6,9 @@ energy
 
 31/01/2025
 exchange view US oil gas company
+
+10/03/2025
+exchange view US international oil gas company
+
+10/03/2025
+energy situation US Europe

@@ -14,7 +14,7 @@ Meeting Member PKN Orlen
 Energy Platform Bulgargaz SPP EPH DEPA Geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
 
 20/12/2022
-Energy Platform Bulgargaz SPP EPH DEPA Geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
+Energy Platform Bulgargaz SPP EPHDEPA geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
 
 09/10/2023
 energy
@@ -30,3 +30,6 @@ IOGP roundtable
 
 28/01/2025
 competitiveness Clean Industrial Deal energy impact industry
+
+10/04/2025
+investment regulatory framework security supply

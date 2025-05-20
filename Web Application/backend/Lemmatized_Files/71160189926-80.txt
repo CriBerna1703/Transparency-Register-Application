@@ -21,3 +21,6 @@ c delegate act
 
 06/02/2025
 V2X Deployment Europe
+
+07/02/2025
+V2X communication

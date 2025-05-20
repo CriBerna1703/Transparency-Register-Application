@@ -20,7 +20,7 @@ Financial Regulation
 Innovation Finance
 
 04/07/2016
-Post Brexit financial architecture Europe
+Post Brexit financialarchitecture Europe
 
 12/10/2017
 overview Ongoing Future project
@@ -120,3 +120,9 @@ MiFIR
 
 03/02/2025
 UK ’s idea intermittent market private equity also know pisce
+
+10/04/2025
+EUROFI exchange regulatory framework
+
+23/04/2025
+csdr Refit SIU

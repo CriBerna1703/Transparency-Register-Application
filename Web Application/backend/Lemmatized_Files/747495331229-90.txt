@@ -24,3 +24,6 @@ platform worker
 
 06/03/2024
 GDPR consumer
+
+20/02/2025
+information exchange Platform Work directive

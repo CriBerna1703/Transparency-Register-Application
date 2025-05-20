@@ -23,7 +23,7 @@ state play TAP
 pipeline
 
 03/09/2015
-late development along Southern GasCorridor route
+late development along Southern Gas Corridor route
 
 03/09/2015
 energy
@@ -104,7 +104,7 @@ Fulfilment TAP transmission capacity tap expansion project
 brief discussion TAP ’s current capacity future expansion option shipment gas Europe
 
 29/03/2022
-Update Trans Adriatic Pipeline
+update TransAdriatic Pipeline
 
 21/04/2022
 TAP would like exchange view EU ’s energy priority

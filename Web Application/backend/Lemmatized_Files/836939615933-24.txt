@@ -20,7 +20,7 @@ mifid EMIR
 EMIR Review
 
 30/03/2017
-EMIR CCP Recovery andresolution
+EMIR CCP Recovery Resolution
 
 01/03/2018
 EMIR MiFID II
@@ -54,3 +54,9 @@ ifr reclassification MiFIR review ccp payment order flow
 
 19/06/2024
 Capital Markets
+
+05/03/2025
+exchange view forthcoming legislative agenda particular saving investment /market supervision role bank market maker play support development market
+
+09/04/2025
+EUROFI exchange regulatory framework
