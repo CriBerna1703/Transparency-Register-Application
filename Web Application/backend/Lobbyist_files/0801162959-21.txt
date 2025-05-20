@@ -5,7 +5,7 @@ IT trends in the public sector
 Digital market regulation / Digital skills
 
 06/01/2015
-Microsoft's policies in the field of entrepreneurship of young people in Europe (YouthSpark), supporting start-ups (through BizSpark), helping SMEs (partner network) and the coherence of Microsoft's policies with theobjectives of the Commissioner and future cooperation
+Microsoft's policies in the field of entrepreneurship of young people in Europe (YouthSpark), supporting start-ups (through BizSpark), helping SMEs (partner network) and the coherence of Microsoft's policies with the objectives of the Commissioner and future cooperation
 
 14/01/2015
 Digital Single Market and Telecom Package reform
@@ -32,7 +32,7 @@ Regulatory issues
 Digital skills
 
 04/03/2015
-Microsoft education programmes
+Microsoft educationprogrammes
 
 23/03/2015
 Cooperation with Microsoft
@@ -383,7 +383,7 @@ European Green deal
 Disinformation, AI
 
 18/06/2020
-Collaboration in the fight against COVID-19, Support research and further strengthen Europe’s ability to move to virtual classrooms
+Collaboration in the fight against COVID-19, Support research and further strengthenEurope’s ability to move to virtual classrooms
 
 23/06/2020
 e-Debate - Regulatory models for online platforms
@@ -470,7 +470,7 @@ Digital taxation
 The main topics for the meeting were: transatlantic relations with a focus on US-EU Trade and Technology Council; digital trade and WTO e-commerce negotiations; Digital angle of economic recovery.
 
 29/06/2021
-European recovery, Twintransition, Digital and Regulatory agenda
+European recovery, Twin transition, Digital and Regulatory agenda
 
 09/07/2021
 Ongoing digital files
@@ -503,7 +503,7 @@ Data protection and safe data transfers
 Green Deal
 
 28/02/2022
-Current developments in digital policies and, in particular, how Europe isupdating EU competition rules and tools to the digital age.
+Current developments in digital policies and, in particular, how Europe is updating EU competition rules and tools to the digital age.
 
 15/03/2022
 Microsoft approach to Europe’s digital plans
@@ -527,10 +527,10 @@ The participant’s and the EU efforts to prevent and tackle child sexual abuse.
 Disinformation
 
 16/06/2022
-Data protection and privacy and workstreams concerning war crimes in Ukraine
+Disinformation
 
 16/06/2022
-Disinformation
+Data protection and privacy and workstreams concerning war crimes in Ukraine
 
 27/06/2022
 EU-U.S. Trade & Technology Council (TTC)
@@ -542,7 +542,7 @@ Ukraine and war crimes
 meeting with the Green Digital Coalition - Main topic : state of play on sustainable digitalization
 
 03/10/2022
-Action plan for the digitalisation of the energy sector.
+Action plan for thedigitalisation of the energy sector.
 
 03/10/2022
 Meeting with Mr Brad Smith, CEO of Microsoft. Topics discussed - CSA and other digital topics from Commissioner Johansson portfolio
@@ -578,7 +578,7 @@ Data protection and AI
 EU policy and regulatory measures on accessibility and Microsoft accessibility-related policy and initiatives.
 
 29/06/2023
-Technological developments, AI, Cloud, Cybersecurity, Privacy, Public Sector.
+Technological developments, AI, Cloud,Cybersecurity, Privacy, Public Sector.
 
 02/08/2023
 Artificial intelligence
@@ -634,6 +634,9 @@ EU tech agenda
 06/02/2025
 First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
 
+06/02/2025
+First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
+
 11/02/2025
 Opening Session: DSA roundtable discussions on online advertising (Article 46 DSA)
 
@@ -646,6 +649,42 @@ Meeting requested by Microsoft. Aim - to provide a deeper presentation of projec
 15/02/2025
 Private roundtable on transatlantic and global cooperation on tech
 
+16/02/2025
+Exchange of views on the removal of harmful online content and cybersecurity.
+
 28/02/2025
 Microsoft’s perspective on the functioning of the sector
+
+03/03/2025
+Exchange of views on the General Data Protection Regulation (GDPR)
+
+03/03/2025
+Negotiation on EU-US agreement on access to data
+
+04/03/2025
+data protection , the role of AI, competitiveness and simplification
+
+04/03/2025
+Exchange of views on the Code of Practice
+
+05/03/2025
+European defence industry development
+
+13/03/2025
+Exchange on range of issues related to Commissioner’s portfolio including simplification, digital, data privacy and technology-related developments
+
+18/03/2025
+Exchange of views on the concept of ‘downstream modifier’
+
+21/03/2025
+Artificial Intelligence
+
+07/04/2025
+EU digital policy
+
+15/04/2025
+Exchange of views on the forthcoming Digital Fairness Act
+
+30/04/2025
+Exchange of views on digital commitments, data protection and consumer protection
 

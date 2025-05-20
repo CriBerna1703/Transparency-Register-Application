@@ -5,7 +5,7 @@ CISCO: general developments in digitalisation
 Presentation of Austrian saving banks
 
 04/03/2015
-Introductory meeting, Capital Markets Union, Retail financial services
+Introductory meeting, Capital Markets Union,Retail financial services
 
 19/05/2015
 MREL, BSR
@@ -36,4 +36,7 @@ important files until end of mandate: CMDI, RIS, digital euro, PSR/PSD
 
 16/01/2025
 Upcoming topics in sustainable finance
+
+20/03/2025
+Competitiveness and security in the Austrian banking sector
 

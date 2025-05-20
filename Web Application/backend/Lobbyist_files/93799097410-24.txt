@@ -8,7 +8,7 @@ Satellite telecom and connectivity
 EFSI
 
 19/11/2015
-• Dialogue between theCOM and the European satellites operators
+• Dialogue between the COM and the European satellites operators
 
 04/12/2015
 Issue of spectrum allocation for Satlellite communications, GOVSATCOME, Future operations of EU Space Programmes (Galileo & Egnos)
@@ -56,7 +56,7 @@ Satellites in connectivity and 5G, D4D
 European Space Policy
 
 30/01/2018
-Lunch meeting with VP Christine Leurquin, VP, Institutional Relationsand Communications
+Lunch meeting with VP Christine Leurquin, VP, Institutional Relations and Communications
 
 27/11/2018
 presentation of services and exchange of views
@@ -65,7 +65,7 @@ presentation of services and exchange of views
 Satellite connectivity in Africa
 
 09/03/2020
-Courtesy call to discuss satellite navigation and GovSatCom
+Courtesy call to discuss satellite navigation andGovSatCom
 
 09/03/2020
 Courtesy call to discuss satellite navigation and GovSatCom.
@@ -84,4 +84,10 @@ Space Policy
 
 31/01/2025
 Satellite telecommunications in Latin America and the Caribbean
+
+10/03/2025
+Satellite connectivity project in Central Asia
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
 

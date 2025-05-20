@@ -206,7 +206,7 @@ Code of Conduct
 Disinformation
 
 17/04/2018
-Data protection,disinformation, AI
+Data protection, disinformation, AI
 
 26/04/2018
 GDPR
@@ -242,7 +242,7 @@ Disinformation
 Code of Practice and EU data protection
 
 06/11/2018
-Facebook Live with Commisssioner Moedas to promote and launchthe 2019 EU Prize for Women Innovators
+Facebook Live with Commisssioner Moedas to promote and launch the 2019 EU Prize for Women Innovators
 
 10/12/2018
 Cybersecurity
@@ -323,7 +323,7 @@ Covid disinformation, EDAP
 Digital Economy and the Green Deal
 
 25/09/2020
-Data protection jurisprudence, trans-Atlantic data economy, standard contractual clauses
+Data protection jurisprudence, trans- Atlantic data economy, standard contractual clauses
 
 28/09/2020
 Social media platforms and communication
@@ -359,7 +359,7 @@ Disinformation COVID -19
 crypto Assets, Innovation in Finance
 
 17/05/2021
-a call between Commissioner Johansson and Vice President for Global Affairs and Communications at Facebook Nick Clegg took place to discussFacebook’s current practices and approach to security and safety.
+a call between Commissioner Johanssonand Vice President for Global Affairs and Communications at Facebook Nick Clegg took place to discuss Facebook’s current practices and approach to security and safety.
 
 18/05/2021
 Fight against child sexual abuse
@@ -386,7 +386,7 @@ International data flows
 Digital issues
 
 29/09/2021
-Platforms regulation anddisinformation
+Platforms regulation and disinformation
 
 11/10/2021
 Artificial Intelligence research in Europe (with Facebook France)
@@ -431,7 +431,7 @@ Meeting with Helle THorning-Schmidt to discuss DMA and DSA.
 Content moderation and compliance with digital regulations
 
 19/05/2022
-Code of Practice, Privacy Shield, DSA, Disinformation
+Code of Practice, PrivacyShield, DSA, Disinformation
 
 01/06/2022
 Commissioner Dalli met Ms. Antigone Davis, Vice President and Global Head of Safety at META, to discuss means to mitigate and eliminate gender-based violence online.
@@ -593,7 +593,7 @@ Minor protection
 AI Act implementation
 
 20/01/2025
-Exchange of views in the context of preparatory work on draft guidelines on Article 18(1) European Media Freedom Act(EMFA) to be issued by the European Commission under Article 18(9) of the EMFA.
+Exchange of views in the context of preparatory work on draft guidelines on Article 18(1) European Media Freedom Act (EMFA) to be issued by the European Commission under Article 18(9) of the EMFA.
 
 23/01/2025
 AI Act, Digital Services Act
@@ -610,9 +610,51 @@ Introductory meeting with Meta
 06/02/2025
 First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
 
+06/02/2025
+First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
+
 11/02/2025
 Opening Session: DSA roundtable discussions on online advertising (Article 46 DSA)
 
 17/02/2025
 Non-discrimination policies, hate speech and online safety
+
+26/02/2025
+Trade and trans-Atlantic relations
+
+04/03/2025
+Meta’s activities in the field of AI and views on DMA implementation
+
+07/03/2025
+A preparatory call in view of possible meeting between META CEO and EVP Virkkunen or META representatives with EVP Virkkunen Cabinet and DG CNECT
+
+11/03/2025
+Exchange of views on the template for the summary of training content
+
+11/03/2025
+Global trade developments
+
+13/03/2025
+To discuss META priorities related to the ongoing simplification process
+
+13/03/2025
+Various topics related to the digital policy framework
+
+14/03/2025
+Exchange on policy priorities
+
+18/03/2025
+Forthcoming Digital Fairness Act, protection of minors, data protection, simplification
+
+02/04/2025
+Exchange of views on the upcoming Digital Networks Act
+
+09/04/2025
+Submarine cable resilience and EU Action Plan on cables.
+
+02/05/2025
+Preparation of VTC and EVP Virkkunen with Meta CEO Zuckerberg
+
+08/05/2025
+EU digital rulebook
 

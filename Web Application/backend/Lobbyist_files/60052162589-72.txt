@@ -86,7 +86,7 @@ EU review process, Vectoring roll-out in Germany, the role of platforms and shor
 Telco policies
 
 23/02/2016
-DSM Strategy, investments,digitalisation of industry
+DSM Strategy, investments, digitalisation of industry
 
 02/03/2016
 Digital Single Market
@@ -218,7 +218,7 @@ digital issues in the next MFF
 Future of Europe
 
 17/10/2017
-European ElectronicsCommunication Code and e-privacy
+European Electronics Communication Code and e-privacy
 
 23/11/2017
 Electronic Communication Code
@@ -242,7 +242,7 @@ Electronic Communication Code
 Telecom CODE
 
 18/04/2018
-Western Balkans Digital Agenda / Roaming roadmap
+Western Balkans DigitalAgenda / Roaming roadmap
 
 02/05/2018
 Western Balkans Digital Agenda / Roaming roadmap
@@ -284,7 +284,7 @@ Western Balkans Roaming
 Meeting with CEOs in the Telecom sector
 
 28/10/2020
-Competitiveness of the telecom sector
+Competitiveness of thetelecom sector
 
 16/11/2020
 Secure cloud (video meeting)
@@ -317,7 +317,7 @@ EU Data strategy, European Cloud Alliance.
 Retail investments protection.
 
 08/04/2022
-Endorsing the Joint statement on Roaming and International calls between EU and Ukraine
+Endorsing the Jointstatement on Roaming and International calls between EU and Ukraine
 
 16/05/2022
 Engagement in the support for Ukraine and the ongoing dialogue around the security /resilience of our networks; the EC’s current & upcoming legislative agenda
@@ -363,4 +363,16 @@ Developments in European policies
 
 19/02/2025
 Updates on the processes of including Ukraine and Moldova into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+02/03/2025
+Opportunities and challenges in the telecoms sector
+
+03/03/2025
+Telecommunication sector and upcoming legislation
+
+27/03/2025
+Tech sovereignty, cloud policy, network transformation
+
+15/04/2025
+Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
 

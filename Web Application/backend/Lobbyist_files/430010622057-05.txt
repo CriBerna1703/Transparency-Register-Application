@@ -26,7 +26,7 @@ Data Act ; in-vehicle data
 In-vehicle data
 
 08/03/2024
-greening corporate fleets + consequences
+greening corporate fleets+ consequences
 
 12/06/2024
 Decarbonization of road transport
@@ -45,4 +45,7 @@ Transformation of the automotive Sector
 
 11/02/2025
 Action plan for the automotive sector
+
+12/02/2025
+Dialogue on the future of the automotive sector - Thematic Working Group on 'Clean Transition and Decarbonisation'
 

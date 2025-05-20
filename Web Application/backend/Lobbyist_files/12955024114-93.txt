@@ -1,5 +1,5 @@
 04/12/2014
-EU Energy Policy, 2030 Framework internal Energy Market, 315b eurinvestemnt package
+EU Energy Policy, 2030 Framework internal Energy Market, 315b eur investemnt package
 
 08/04/2015
 Financial Market legislation
@@ -41,7 +41,7 @@ Climate law and green deal
 Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal
 
 15/04/2020
-Risk-prepardness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energyinitiatives under the Green Deal.
+Risk-prepardness in electricity sector, impactof crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal.
 
 04/06/2020
 European Green Deal and recovery
@@ -96,4 +96,7 @@ Speech on the role of nuclear industry in the decarbonisation of the EU economy 
 
 05/12/2024
 To discuss European wind industry
+
+08/04/2025
+Wind energy, electrification, competitiveness, permitting, grids
 

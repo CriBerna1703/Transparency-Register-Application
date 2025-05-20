@@ -41,7 +41,7 @@ payment innovation
 Speech at EU-Asia Financial Services Dinner Reception on growth and investment in Europe; Fintech and sustainable finance
 
 30/11/2017
-Speech at Afore/AFISMA forum dinner on growth and investment in Europe, Fintech and sustainable finance
+Speech at Afore/AFISMA forum dinner on growth and investment inEurope, Fintech and sustainable finance
 
 28/02/2018
 Scaling up in Europe
@@ -138,4 +138,10 @@ Draghi report
 
 13/02/2025
 Exchange of views on the topic of fraud in the context of the Payment Services package and new Commission Work Program.
+
+28/03/2025
+General discussion on asset management regulations and SIU
+
+14/04/2025
+Solvency II and Macroeconomic factors
 

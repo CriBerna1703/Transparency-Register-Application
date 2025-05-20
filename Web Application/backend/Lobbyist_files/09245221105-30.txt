@@ -20,7 +20,7 @@ Banking regulation, in particular Bank Structural reform and payments
 Capital Markets Union, Bank Structural Reform and Money Market Funds
 
 18/09/2015
-Capital Markets Union, Banking Union, NetStable Funding Ratio, Bank Structural Measures, TLAC/MREL, IFRS 9
+Capital Markets Union, Banking Union, Net Stable Funding Ratio, Bank Structural Measures, TLAC/MREL, IFRS 9
 
 25/09/2015
 situation du secteur bancaire français
@@ -152,7 +152,7 @@ Basel implementation
 Basel implementaton
 
 21/01/2020
-discussion on sustainablefinance
+discussion on sustainable finance
 
 21/01/2020
 Implementation of Basel III; Banking Union; Deposit Guarantee Scheme
@@ -263,13 +263,13 @@ Organisation of events with the Commissioner
 SOTEU, energy, RepowerEU, Recovery and Resilience Facility
 
 29/09/2022
-Bank crisis management,securitisation, clearing, retail investment strategy.
+Bank crisis management, securitisation, clearing, retail investment strategy.
 
 09/11/2022
 Preparation of the meeting between Commissioner McGuinness and the CEOs of French banks
 
 01/02/2023
-Retail Investment Strategy
+Retail InvestmentStrategy
 
 01/02/2023
 retail investment strategy
@@ -327,4 +327,13 @@ Economic State of play
 
 23/01/2025
 Exchange with Fédération bancaire française on developments in the banking sector
+
+13/03/2025
+Exchange of views on the Omnibus package
+
+25/03/2025
+Meeting with FBF on housing
+
+26/03/2025
+Macroprudential framework for banking.
 

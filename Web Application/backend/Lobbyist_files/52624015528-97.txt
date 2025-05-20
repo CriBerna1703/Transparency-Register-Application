@@ -2,7 +2,7 @@
 Road Safety
 
 24/02/2015
-Future of the CPC Directive (2003/59), on the Road Safety Strategy of the Commission and its future mid-term review, and on theimplementation of the roadworthiness package.
+Future of the CPC Directive (2003/59), onthe Road Safety Strategy of the Commission and its future mid-term review, and on the implementation of the roadworthiness package.
 
 05/11/2015
 automotive/DSM
@@ -36,4 +36,7 @@ EU Cybersecurity legislation Cybersecurity Skills Academy
 
 07/02/2025
 Exchange of views on automotive sector
+
+27/02/2025
+CSRD simplification
 

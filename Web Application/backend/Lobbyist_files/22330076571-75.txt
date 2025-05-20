@@ -2,7 +2,7 @@
 digitale Projekte
 
 21/09/2015
-Deposit insurance/Banking Union
+Deposit insurance /Banking Union
 
 15/10/2015
 EMU
@@ -81,4 +81,7 @@ Digital finance, crisis management framework
 
 12/12/2024
 Expectations for the new mandate, CMDI/EDIS
+
+18/03/2025
+Banking Union / Savings and Investments Union, Framework for financial data access.
 

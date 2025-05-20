@@ -8,10 +8,10 @@ Capital markets union
 Energy Union
 
 30/06/2015
-Economy Financing and Updates on Estonia Financial Markets
+Economy Financing and Updates on EstoniaFinancial Markets
 
 21/01/2016
-Nasdaq's role in Europe, trends and recent developments in their markets, equityinvestment and capital markets union
+Nasdaq's role in Europe, trends and recent developments in their markets, equity investment and capital markets union
 
 29/06/2016
 SME financing
@@ -50,7 +50,7 @@ Financial markets regulations, Capital Markets Union
 MiFID II and ESAs Review
 
 22/03/2018
-Sustainable Finance, Fintech, Nasdaq in Baltic region, MiFID II
+Sustainable Finance,Fintech, Nasdaq in Baltic region, MiFID II
 
 22/03/2018
 Sustainable finance, MiFID, FinTech
@@ -98,7 +98,7 @@ MiFID II/Market Structure /consolidated tape
 exchange of views on development of capital markets in US and EU. Sustainable finance agenda and digital agenda.
 
 09/11/2021
-Meeting with Ludovic Aigrot, Vice President,Head of Government Relations Europe, NASDAQ, Topics discussed: state of play in preparation of the Commission proposed for MiFID II
+Meeting with Ludovic Aigrot, Vice President, Head of Government Relations Europe, NASDAQ, Topics discussed: state of play in preparation of the Commission proposed for MiFID II
 
 11/11/2021
 Review of the Markets in Financial Instruments Regulation
@@ -125,7 +125,7 @@ RTS on equity transparency- negotiated trades
 Exchange of views on the advancement of the Capital Markets Union in the EU, Discussion on the experiences from the Nordic capital markets
 
 20/01/2025
-Exchange with ImpactEurope and Swedish companies on the the Savings and Investments Union
+Exchange with ImpactEurope andSwedish companies on the the Savings and Investments Union
 
 21/01/2025
 Benchmark Regulation
@@ -144,4 +144,13 @@ Recent economic developments in EU and US
 
 04/02/2025
 Recent economic developments in EU/US
+
+24/02/2025
+Exchange of views on AI policy and the AI Act
+
+18/03/2025
+CSDR, MiFID
+
+24/03/2025
+Discussion on market and regulatory developments
 

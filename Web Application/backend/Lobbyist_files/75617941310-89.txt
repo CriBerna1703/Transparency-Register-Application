@@ -8,7 +8,7 @@ European research policy
 Alzheimer's disease: research to prevent Alzheimer
 
 22/02/2018
-EU Intellectual Property Rights framework
+EU Intellectual PropertyRights framework
 
 02/05/2018
 New deal for consumers – Representative actions proposal
@@ -54,4 +54,13 @@ Digitalisation of healthcare.
 
 20/06/2024
 AI technology and their implications for the health sector
+
+20/03/2025
+J&J requested the meeting to address issues related to the recent adoption of the Commission proposal for a Critical Medicines Act (CMA) and other activities envisaged by the Commission which are deemed relevant to the pharmaceutical industry.
+
+25/03/2025
+Discussion on Artificial Intelligence (AI), MedTech technologies and digital health
+
+04/04/2025
+Scientific roundtable discussion between the European Commission’s Joint Research Centre and the pharmaceutical industry on the topic of leveraging health data and data sciences for innovation
 

@@ -4,3 +4,6 @@ Tracking and tracing technique
 11/07/2022
 Meeting with Arnaud Bernaert to discuss contribution to HERA
 
+24/04/2025
+Marking solutions for product authentication, identification and traceability
+

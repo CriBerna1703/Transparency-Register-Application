@@ -38,7 +38,7 @@ Economic and political developments in the EU and the UK
 Cybersecurity
 
 25/01/2018
-discussed Brexit and implications for financial sector, US economicoutlook and impact of US tax reform
+discussed Brexit and implications for financial sector, US economic outlook and impact of US tax reform
 
 26/04/2018
 Capital Markets Union - Brexit preparedness
@@ -114,4 +114,7 @@ Exchange views on the European Commission's priorities for 2025 and beyond.
 
 13/02/2025
 Discussion on level 2 measures on transparency requirements for equity and non-equity instruments, synchronisation of business clocks, transaction reporting and best execution
+
+18/03/2025
+Meeting with the BofA
 

@@ -26,5 +26,23 @@ Discuss AI safety, the tools are available and the role of the EU AI Act.
 Ethics in AI
 
 18/02/2025
+NVIDIA’s market insights on AI business, notably on the need to create the conditions for the adoption of AI.
+
+18/02/2025
+Critical and emerging technologies
+
+18/02/2025
 AI uptake and innovation
+
+05/03/2025
+A preparatory call in view of possible meeting between NVIDIA CEO and EVP Virkkunen
+
+02/04/2025
+Discussion on synthetic data
+
+14/04/2025
+Hardware solutions for AI infrastructures
+
+28/04/2025
+Exchange of views on relevant developments in the semiconductor and AI sectors
 

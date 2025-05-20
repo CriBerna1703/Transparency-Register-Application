@@ -8,13 +8,13 @@ sustainable finance
 Implementation of Basel III; Banking Union; Deposit Guarantee Scheme
 
 18/02/2020
-Specificities of mutualsin banking regulation and Basel III
+Specificities of mutuals in banking regulation and Basel III
 
 09/10/2020
 Basel III,MiFID 2, Sustainable Finance and CMU
 
 02/02/2021
-Basel and financing of European economy
+Basel and financing ofEuropean economy
 
 01/06/2021
 Current issues in finance services policy
@@ -50,7 +50,7 @@ Digital Euro
 digital euro
 
 29/03/2023
-Presentation of BPCE group and its activities across France
+Presentation of BPCEgroup and its activities across France
 
 04/04/2023
 Sustainable finance
@@ -78,4 +78,7 @@ Upcoming topics in sustainable finance
 
 05/02/2025
 Retail Investment Strategy, Capital Markets Union, objectives of Poland's EU Presidency.
+
+05/03/2025
+Overview of current regulatory topics
 

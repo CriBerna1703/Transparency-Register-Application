@@ -1,5 +1,5 @@
 21/01/2015
-A reflection on how Europe can move towards the development of a genuine European Research Area, benefiting from closer cooperation between the private and the academic and public sectors and better exploit the links between fundamental and translational research.
+A reflection on how Europe can move towards the development of a genuine European Research Area, benefiting from closer cooperation between the private and the academic and publicsectors and better exploit the links between fundamental and translational research.
 
 19/02/2015
 Exchange of views in the perspective to present of Health & Growth and to discuss ERA, medicine development and its access for the patient
@@ -8,7 +8,7 @@ Exchange of views in the perspective to present of Health & Growth and to discus
 New Commission, Investment plan, TTIP
 
 27/03/2015
-How to strengthen a European coherent approach with focus on ERA development, ways to reduce the fragmented approach in Europe for evaluation the value of new medicines for improved access for the patient, and means of creating a more dynamic environment for medicine development in Europe and driving an ambitious agendaallowing the European life sciences sector to remain competetive on a global scale.
+How to strengthen a European coherent approach with focus on ERA development, ways to reduce the fragmented approach in Europe for evaluation the value of new medicines for improved access for the patient, and means of creating a more dynamic environment for medicine development in Europe and driving an ambitious agenda allowing the European life sciences sector to remain competetive on a global scale.
 
 07/05/2015
 Implementation Council Conclusions on Vaccination
@@ -26,7 +26,7 @@ AMR, HTA
 EPSC, Interinstitutional relations
 
 18/04/2016
-Access to health care including pharmaceuticals in developing countries
+Access to health care includingpharmaceuticals in developing countries
 
 10/10/2017
 Life Science in the EU
@@ -44,7 +44,7 @@ European patent protection
 HTA; Supplementary Protection Certificates (SPC)
 
 06/04/2020
-Digitisation of healthcareand innovative e-health solutions.
+Digitisation of healthcare and innovative e-health solutions.
 
 25/05/2020
 Perspectives on the fight against COVID-19
@@ -80,7 +80,7 @@ Initiatives in the health industrial ecosystem
 health industrial ecosystem, HERA and green transition
 
 10/06/2022
-Discussion on stragegicforesight
+Discussion on stragegic foresight
 
 07/09/2022
 Meeting with the German Pharmaceutical Association and Sanofi to discuss the pharmaceutical reform
@@ -105,4 +105,19 @@ Meeting with Mr Houman Ashrafian, Sanofi's VP to discuss priorities and cooperat
 
 27/01/2025
 Exploit interest in a scientific roundtable between the European Commission’s Joint Research Centre and the pharmaceutical industry on the topic of leveraging health data and data sciences for innovation
+
+12/03/2025
+Discussion on Joint procurement to improve availability of antibiotics and avoid shortages
+
+19/03/2025
+To discuss Sanofi’s involvement in LAC and opportunities for actionable cooperations under the GGIA to contribute to health self- sufficiency in LAC.
+
+28/03/2025
+Global Gateway
+
+02/04/2025
+Competitiveness
+
+04/04/2025
+Scientific roundtable discussion between the European Commission’s Joint Research Centre and the pharmaceutical industry on the topic of leveraging health data and data sciences for innovation
 

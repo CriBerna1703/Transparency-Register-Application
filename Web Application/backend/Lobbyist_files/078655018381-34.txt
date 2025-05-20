@@ -5,7 +5,7 @@ AGCOM's review of acces markets
 Business Europe CEO day
 
 23/02/2016
-DSM Strategy, investments, digitalisation of industry
+DSM Strategy, investments,digitalisation of industry
 
 11/03/2016
 DSM
@@ -14,7 +14,7 @@ DSM
 Working lunch on Telecom reforms and roaming
 
 27/09/2016
-Evolutions in the Italian market and TelecomItalia investment plan - Use of public funds and the Italian case on Ultra broadband -Initial assessment of the European Code of Electronic Communications
+Evolutions in the Italian market and Telecom Italia investment plan - Use of public funds and the Italian case on Ultra broadband -Initial assessment of the European Code of Electronic Communications
 
 27/02/2017
 5G, roaming, spectrum, investment consolidation
@@ -35,7 +35,7 @@ Meeting with CEOs in the Telecom sector
 FTTH
 
 16/12/2020
-Roundtable - Cloud Alliance
+Roundtable - CloudAlliance
 
 25/01/2021
 Investment in fibre networks in Italy
@@ -56,13 +56,13 @@ Digital Green certificates, 5G (virtual)
 TIM
 
 06/07/2021
-Discuss the broader context of Italian RRF onDigital in the light of the recent market evolutions.
-
-19/07/2021
-Skills Roundtable on Digital
+Discuss the broader context of Italian RRF on Digital in the light of the recent market evolutions.
 
 19/07/2021
 Pact for Skills roundtable with the digital transition sector.
+
+19/07/2021
+Skills Roundtable on Digital
 
 29/07/2021
 Digital decade targets, technology and investment in connectivity
@@ -86,7 +86,7 @@ Meeting with Mr Pietro Labriola, CEO of Tim: exchange of views on the developmen
 Preparation of the meeting between commissioner Breton and TIM CEO
 
 22/09/2022
-State of the telecomindustry in Italy
+State of the telecom industry in Italy
 
 10/10/2022
 The future of connectivity infrastructure
@@ -123,4 +123,10 @@ Labour and skills shortages, the EU's social targets, the European Pillar of Soc
 
 12/12/2024
 Current market developments and views on the future of the sector.
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+15/04/2025
+Exchange of views on the EU-LAC Digital Alliance and its synergies with the investments from TIM in Latin America and the Caribbean.
 

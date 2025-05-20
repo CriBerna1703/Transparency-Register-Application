@@ -122,7 +122,7 @@ Discussion on the Sustainable Development Goals
 European electricity sector
 
 09/04/2018
-Sustainable Finance, Sustainable Finance Expert Group
+Sustainable Finance,Sustainable Finance Expert Group
 
 25/04/2018
 MFF post-2020
@@ -161,7 +161,7 @@ Introductory meeting - electrification in the energy transition - Commissioner�
 Risk-prepardness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal.
 
 15/04/2020
-Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal
+Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energyinitiatives under the Green Deal
 
 13/05/2020
 Phone call to present Eurelectric proposals on COVID-19 crisis and its implications on the power sector.
@@ -194,10 +194,10 @@ Sustainable finance taxonomy
 Zero emission urban vehicle fleets
 
 11/05/2021
-Pact for Skills roundtable with the renewable energies ecosystem sector
+Pact for Skills roundtable with the renewable energies ecosystem sector.
 
 11/05/2021
-Pact for Skills roundtable with the renewable energies ecosystem sector.
+Pact for Skills roundtable with the renewable energies ecosystem sector
 
 25/05/2021
 Keynote speech at Eurelectric Power Summit
@@ -227,7 +227,7 @@ Energy market design
 Discussion about electricity market design.
 
 14/09/2022
-Energy Crisis responseand Repower EU
+Energy Crisis response and Repower EU
 
 17/10/2022
 US-EU Task Force Convening: energy efficiency and energy savings. The California Energy Commission, ACEEE, ASE, Advanced Energy Economy, Arcadia, ComEd, Octopus Energy, OhmConnect, OPower, Uplight and the Covenant of Mayors also participated.
@@ -245,10 +245,10 @@ Questions around the co- existence of biodiversity enhancement and renewable ene
 Questions around the co- existence of biodiversity enhancement and renewable energy deployment.
 
 20/01/2023
-U.S.-EU Task Force: Best practices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California Energy Commission, ASE, AEE, ComEd, Octopus Energy, OPower, Uplight
+U.S.-EU Task Force: Bestpractices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California Energy Commission, ASE, AEE, ComEd, Octopus Energy, OPower, Uplight
 
 01/02/2023
-Electricity market functioning, long-termdecarbonisation goals and electricity market design reform
+Electricity market functioning, long-term decarbonisation goals and electricity market design reform
 
 01/02/2023
 Market Design
@@ -278,7 +278,7 @@ Electricity Market Design.
 Delivering the RePowerEU targets
 
 23/10/2023
-Roundtable meeting with 10 Secretary Generals and CEOs of the Electrification Alliance on the revised Renewable Energy Directive (revised REDII), electricity market design, grids and storage.
+Roundtable meeting with 10 Secretary Generals and CEOs of theElectrification Alliance on the revised Renewable Energy Directive (revised REDII), electricity market design, grids and storage.
 
 16/11/2023
 Green Deal
@@ -299,7 +299,7 @@ Clean Transition Dialogue on EGD Infrastructures
 Challenges and opportunities of the clean transition of the electricity sector
 
 13/03/2024
-To discuss matters related to 2040 and priorities for the nextmandate
+To discuss matters related to 2040 and priorities for the next mandate
 
 24/04/2024
 Expansion and digitalisation of electricity grids in Europe.
@@ -324,4 +324,19 @@ Exchange on Network Planning with DSO Experts Note: Dr. Franz and his colleague 
 
 30/01/2025
 Affordable Energy action Plan
+
+12/02/2025
+Dialogue on the future of the automotive sector - Thematic Working Group on 'Clean Transition and Decarbonisation'
+
+04/03/2025
+Discussion on the Clean Industrial Deal and the Affordable Energy Action Plan. The importance of electrification
+
+27/03/2025
+Roundtable “Water, Agriculture, and the Food Supply Chain”
+
+07/04/2025
+Clean Industrial Deal, Electrification Action Plan, Affordable Energy Plan, CISAF
+
+09/04/2025
+Exchange of views on competitiveness
 

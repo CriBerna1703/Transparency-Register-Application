@@ -11,7 +11,7 @@ Markets in Financial Instruments Directive
 Capital Markets Union
 
 29/03/2017
-Fund Distribution, PEPP,CMU
+Fund Distribution, PEPP, CMU
 
 21/03/2018
 PRIIPs - ESAs review - Sustainable finance - PEPP
@@ -42,4 +42,10 @@ Retail Strategy & Sustainable Investment
 
 06/07/2023
 Long-term investment
+
+20/02/2025
+Capital Markets Union (CMU) and Saving and Investment Union (SIU), with a focus on long- term savings accounts, the Non-Bank Financial Intermediation (NBFI) agenda, and the review of the UCITS Eligible Assets Directive.
+
+19/03/2025
+Clean industrial deal, Simplification, trade
 

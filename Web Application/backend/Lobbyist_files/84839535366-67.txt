@@ -98,7 +98,7 @@ Data Act ; in-vehicle data
 clean energy transition, the inexorable move towards e-vehicles, and the importance of the car industry to contribute
 
 16/01/2023
-Data Act Regulation and Specific legislation on ‘Access to in-vehicle data & functions’
+Data Act Regulation and Specific legislation on ‘Access to in-vehicle data& functions’
 
 15/02/2023
 In-vehicle data
@@ -120,4 +120,7 @@ The role of the automotive aftermarket in the EU Industrial Action Plan for the 
 
 11/02/2025
 Action plan for the automotive sector
+
+02/04/2025
+Introductory meeting + discussion on FIA's activities including an overview of their structure and work, focusing on past EU funded projects. Minutes attached
 

@@ -11,7 +11,7 @@ copyright
 Data protection legislation
 
 27/03/2015
-The Information Technology Agreement negotiations, the EU-Korea FTA, and other trade files relevant for the electronics/ICT sector.
+The Information Technology Agreement negotiations, the EU- Korea FTA, and other trade files relevant for the electronics/ICT sector.
 
 16/04/2015
 Investment Plan
@@ -53,7 +53,7 @@ DSM, standardisation
 standardisation, international, IoT
 
 19/09/2016
-Standardisation,International, IoT
+Standardisation, International, IoT
 
 15/11/2016
 Prep-meeting for mission of VP Ansip to Seoul in November 2016
@@ -114,4 +114,13 @@ Opening Session: DSA roundtable discussions on online advertising (Article 46 DS
 
 12/02/2025
 Exchange of views on industrial policy and on the Single Market.
+
+11/03/2025
+EU digital policy
+
+12/03/2025
+EU trade agenda
+
+18/03/2025
+Samsung’s contribution to Europe’s green and digital transitions
 

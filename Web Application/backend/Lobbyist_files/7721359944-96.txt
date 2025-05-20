@@ -176,7 +176,7 @@ Blockchain Technology
 e-privacy review directive
 
 11/05/2017
-Digital Single Market - Update of the Watson Health Center of Excellence Project - General discussion about the discussion ongoing in Italy concerning the main relevant Dossiers (DSM, Industry 4.0) - Digital transformation in Italy: priorities and activities
+Digital Single Market - Update of the Watson Health Center of Excellence Project - General discussion about the discussion ongoing in Italy concerning the main relevant Dossiers (DSM,Industry 4.0) - Digital transformation in Italy: priorities and activities
 
 07/06/2017
 DSM
@@ -227,7 +227,7 @@ Cyber security
 Data Flows in Trade Agreements
 
 13/12/2017
-European Pillar of Social Rights, New Skills Agenda for Europe, Revisions to the ‘written statement’ Directive, IBM internal policies for HR management ( workforce retention, skills forecasting, training)
+European Pillar of Social Rights, New Skills Agenda for Europe, Revisions to the ‘written statement’ Directive, IBM internal policies for HR management ( work force retention, skills forecasting, training)
 
 14/12/2017
 Independent worker's access to social protection
@@ -260,7 +260,7 @@ Data & Artificial Intelligence
 GDPR, e-privacy
 
 26/11/2018
-AI (ethical principle), trustin the DSM (GDPR, free flow of data, access to data)
+AI (ethical principle), trust in the DSM (GDPR, free flow of data, access to data)
 
 26/11/2018
 digital competitiveness
@@ -392,7 +392,7 @@ EU Cybersecurity files
 quantum technologies, semiconductors, cybersecurity, and AI
 
 16/12/2024
-Presentation of their research activities in technological areas of mutual interest, such as quantum technologies, semiconductors, cybersecurity, and AI anddiscussion on participation to projects
+Presentation of their research activities in technological areas of mutual interest, such as quantum technologies, semiconductors, cybersecurity, and AI and discussion on participation to projects
 
 16/01/2025
 Security of open-source; post-quantum cryptography; cooperation with ENISA; NIS2 and CRA implementation
@@ -417,4 +417,7 @@ Private roundtable on transatlantic and global cooperation on tech
 
 20/02/2025
 Exchange of views on IBM’s activities on digital upskilling and collaboration possibilities with various EU organizations and communities
+
+01/04/2025
+Update on respective quantum activities
 

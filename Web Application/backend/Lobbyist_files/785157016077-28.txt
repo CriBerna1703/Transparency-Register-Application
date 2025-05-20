@@ -44,9 +44,6 @@ Basel III implementation
 Basel III implementation
 
 28/09/2022
-Digital & open finance.
-
-28/09/2022
 Digital policies, artificial intelligence and data economy.
 
 28/09/2022
@@ -54,6 +51,9 @@ Basel implementation and open finance
 
 28/09/2022
 Basel, digital euro
+
+28/09/2022
+Digital & open finance.
 
 28/09/2022
 Challenges in the banking sector
@@ -87,4 +87,16 @@ Physical meeting - OECD Two-Pillar Approach and the taxation of the financial se
 
 05/02/2025
 Digital Euro
+
+05/03/2025
+Omnibus, digital euro
+
+18/03/2025
+Exchange of views on the Omnibus Proposal
+
+19/03/2025
+Spanish and EU bank industry and financial service regulation
+
+19/03/2025
+Financial services policy, SIU and Basel
 

@@ -65,7 +65,7 @@ Hydrogen
 • Short introduction of RWE; • Fit for 55 package, especially the revision of the Renewable Energy Directive; • Delegated Act on Art. 27.3 of the Renewable Energy Directive regarding criteria for renewable hydrogen.
 
 27/01/2022
-The CEOs of the leading wind energy companies presented the key barriers to renewable energy project permitting they had experienced, and suggest some possible good practices for the upcoming Commission guidance on this topic.
+The CEOs of the leading wind energy companies presented the keybarriers to renewable energy project permitting they had experienced, and suggest some possible good practices for the upcoming Commission guidance on this topic.
 
 21/09/2022
 Energy derivatives markets
@@ -116,10 +116,10 @@ Energy Transition
 Energy, clean transition
 
 22/03/2024
-Discussion of current challenges facing the European Steel sector attended by private industry as well as Ministers and official representatives of Italy,Romania, Poland, Czechia, Belgium, Hungary and Luxembourg
+Clean Transition Dialogue with the Steel Sector
 
 22/03/2024
-Clean Transition Dialogue with the Steel Sector
+Discussion of current challenges facing the European Steel sector attended by private industry as well as Ministers and official representatives of Italy, Romania, Poland, Czechia, Belgium, Hungary and Luxembourg
 
 10/06/2024
 review of the MiFID II commodities regime
@@ -131,8 +131,23 @@ Energy markets
 Exchange of views on the decarbonisation of the energy sector and the Clean Industrial Deal
 
 23/01/2025
+Clean energy
+
+23/01/2025
 Discussion on the future of European energy policy and competitiveness.
 
 05/02/2025
 MiFID II commodities review
+
+19/02/2025
+Current market situation on hydrogen projects
+
+11/03/2025
+Exchange of views with US/international oil and gas companies
+
+02/04/2025
+MiFID II commodities Consultation Paper (Chapter 1 - Data Aspects)
+
+08/04/2025
+Wind energy, electrification, competitiveness, permitting, grids
 

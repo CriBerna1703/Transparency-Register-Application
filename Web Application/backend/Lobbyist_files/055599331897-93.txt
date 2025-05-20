@@ -2,7 +2,7 @@
 Methane emissions footprint of the European gas consumption
 
 26/02/2019
-EDF are seeking to raise awareness of methaneemissions from the oil and gas industry, both in Europe and globally
+EDF are seeking to raise awareness of methane emissions from the oil and gas industry, both in Europe and globally
 
 26/02/2019
 Methane emissions footprint of the European gas consumption
@@ -30,4 +30,13 @@ Reducing methane emissions
 
 20/03/2023
 EDF Europe’s new EU Agriculture Program
+
+11/03/2025
+Energy situation in US and Europe
+
+25/03/2025
+MethaneSAT data presentation
+
+28/03/2025
+Omnibus and ESRS revision
 

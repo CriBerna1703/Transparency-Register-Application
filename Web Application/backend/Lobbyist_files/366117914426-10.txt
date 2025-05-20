@@ -47,7 +47,7 @@ presentation of the company + discussions on ongoing tax initiatives
 Exchange of views on tax issues
 
 02/02/2016
-DSM, platforms and geo- blocking
+DSM, platforms and geo-blocking
 
 04/02/2016
 Data protection, Consumer policy
@@ -233,7 +233,7 @@ Data flows
 Amazon's commitment to sustainability, renewable energy procurement and experience with corporate power purchase agreements and policies related to transportation electrification. Goals of the Climate Pledge and the European Green Deal.
 
 18/03/2021
-to discuss international data flows, dataprotection, e-privacy and consumer protection
+to discuss international data flows, data protection, e-privacy and consumer protection
 
 14/09/2021
 consumer protection – online services subscription and fake online reviews
@@ -293,10 +293,10 @@ Production audiovisuelle Amazon
 Dinner discussion - EU policy on the sustainability transition
 
 24/05/2023
-Discuss the Commission’ s plans on the Green Claims Initiative and introduce Amazon's major investments to support the green and digital transition.
+Discuss the Commission’s plans on the Green Claims Initiative and introduce Amazon's major investments to support the green and digital transition.
 
 25/05/2023
-Discussion on circular economy, includingpackaging, and biodiversity
+Discussion on circular economy, including packaging, and biodiversity
 
 07/06/2023
 Digital Services Act, Digital Markets Act, Digital levy, Customs reform, Foreign Subsidy regulation, support for Ukraine
@@ -323,13 +323,13 @@ ImpactEurope, together with Amazon and Implement Economics, presented an interna
 Artificial intelligence act
 
 29/11/2023
-EU Payments and other aspects of regulatory environment for platforms
+EU Payments and other aspects of regulatoryenvironment for platforms
 
 04/12/2023
 Physical meeting - EU Marketplace VAT Collection (Deemed Supplier) regime
 
 09/01/2024
-Financial in Data Access (FIDA) Payment ServicesRegulation (PSR)
+Financial in Data Access (FIDA) Payment Services Regulation (PSR)
 
 24/01/2024
 Inauguration of Amazon first European Disaster Relief Hub
@@ -356,7 +356,7 @@ Digital finance technologies AI/GenAI
 E-commerce
 
 16/10/2024
-Payments and sustainability reporting
+Payments andsustainability reporting
 
 17/10/2024
 Transport and environmental priorities / Recharging Infrastructure / Amazon’s freight partners programme
@@ -371,7 +371,10 @@ Exchange of views on the integration of the EU Digital Identity Wallets into the
 EU tech agenda
 
 23/01/2025
-Discussion on Amazon's commitment to carbon- free energy, support for the EU's twin green and digital transition goalsand accelerating grid investments across the EU.
+Discussion on Amazon's commitment to carbon- free energy, support for the EU's twin green and digital transition goals and accelerating grid investments across the EU.
+
+31/01/2025
+overview of Amazon’s Project Kuiper and exchange of views on the upcoming EU Space Law
 
 06/02/2025
 exchange of view on the negotiation of the EU-US agreement on access to data
@@ -380,11 +383,80 @@ exchange of view on the negotiation of the EU-US agreement on access to data
 Exchange on key consumer protection files
 
 12/02/2025
-Exchange on Amazon’s web services
+Exchange on Amazon’sweb services
 
 12/02/2025
 AWS’ state of play and future plans in terms of deployment and operation of computing infrastructures, notably cloud and AI-optimised data centres.
 
 13/02/2025
 Aim of this session is to present TAXUD use cases that illustrate how technology could support the Customs Data Hub. Amazon would emphasize on the customer challenge, how they addressed it and benefits they experienced after the transformation.
+
+15/02/2025
+Bilateral meeting in the margins of Munich Security Conference
+
+03/03/2025
+EU Regulatory Developments in the area of connectivity
+
+11/03/2025
+Global trade developments
+
+11/03/2025
+Amazon’s feedback to the General-Purpose AI Code of Practice
+
+13/03/2025
+Exchange on policy priorities
+
+13/03/2025
+Various topics related to the digital policyframework
+
+13/03/2025
+Exchange on range of issues related to Commissioner’s portfolio including simplification, digital, data privacy and technology-related developments
+
+13/03/2025
+EU digital policy priorities
+
+14/03/2025
+Customs Union Reform, e- commerce
+
+17/03/2025
+Market-based instruments for green steel and concrete
+
+18/03/2025
+Forthcoming Digital Fairness Act, protection of minors, data protection, simplification
+
+18/03/2025
+Competitiveness, Connectivity and Satellite deployment
+
+19/03/2025
+Discussion on the decarbonisation challenges for Europe
+
+25/03/2025
+EU Digital Policy
+
+02/04/2025
+Undersea cable resilience
+
+03/04/2025
+Strategic investment in Europe, disaster preparedness and relief, EU-US cooperation, fight against child sexual abuse, online fraud.
+
+09/04/2025
+Discussion on deepening the Single Market and e- Commerce
+
+09/04/2025
+Meeting with Amazon representatives
+
+10/04/2025
+Amazon’s presence in Europe and the General- Purpose AI Code of Practice
+
+10/04/2025
+Data Act matters
+
+10/04/2025
+Exchange of views on sovereign cloud offer
+
+30/04/2025
+Exchange of views on the Commission’s priorities for cloud, AI, cybersecurity and quantum.
+
+08/05/2025
+Update on integration of EU Digital Identity Wallets with Amazon services
 

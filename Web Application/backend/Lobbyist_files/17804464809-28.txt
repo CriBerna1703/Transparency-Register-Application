@@ -20,7 +20,7 @@ Financial Regulation
 Innovation on Finance
 
 04/07/2016
-Post Brexit financial architecture in Europe
+Post Brexit financialarchitecture in Europe
 
 12/10/2017
 Overview of Ongoing and Future Projects
@@ -120,4 +120,10 @@ MiFIR
 
 03/02/2025
 UK’s idea for intermittent markets for private equity (also known as PISCES)
+
+10/04/2025
+EUROFI – Exchanges on regulatory framework
+
+23/04/2025
+CSDR Refit and SIU
 

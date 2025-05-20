@@ -8,7 +8,7 @@ Energy Union and Internal Energy Market
 EC/Russian/Ukrainian gas talks; Gas supply South- East Europe
 
 26/05/2015
-Financil Market Legislation
+Financil MarketLegislation
 
 17/07/2015
 Energy Union strategy
@@ -47,7 +47,7 @@ DSM
 creation of a network of Energy Union Business Ambassadors
 
 23/02/2016
-2nd EU Energy Summit - breakfast roundtable
+2nd EU Energy Summit -breakfast roundtable
 
 14/04/2016
 Energy Efficiency and Investment
@@ -86,7 +86,7 @@ Merger case RWE-E.ON, state of play Energy Union, Carbon Intensive Region Initia
 Artificial Intelligence
 
 25/04/2019
-Energy and CompetitionPolicy
+Energy and Competition Policy
 
 02/05/2019
 Energy and Competition policy
@@ -95,7 +95,7 @@ Energy and Competition policy
 European Green Deal
 
 27/11/2019
-Clean energy transition and decarbonisation of the economy. Transformation of the E. On business
+Clean energy transition and decarbonisation of the economy.Transformation of the E. On business
 
 10/07/2020
 Exchange of views on energy system integration and hydrogen strategies.
@@ -147,4 +147,7 @@ Electricity grids
 
 06/02/2025
 Exchange on challenges of distribution grid in the energy transition
+
+04/03/2025
+Discussion on the Clean Industrial Deal and the Affordable Energy Action Plan. The importance of electrification
 

@@ -44,10 +44,10 @@ Environmental aspects of the European semester
 ETS review, Energy Union implementation and International Climate negotiations
 
 06/07/2015
-Sustainable development
+Biodiversity
 
 06/07/2015
-Biodiversity
+Sustainable development
 
 09/07/2015
 Green growth
@@ -176,10 +176,10 @@ Exchange of views on Future of Food and Farming
 Single use plastic
 
 23/04/2018
-New CAP and the environment
+Environmental and Agri Issues
 
 23/04/2018
-Environmental and Agri Issues
+New CAP and the environment
 
 24/04/2018
 Future agriculture policy and research and innovation
@@ -227,7 +227,7 @@ Priorities for the Coronavirus recovery
 Exchange of views on CAP and Green Deal
 
 24/04/2020
-Economic recovery, sustainable finance taxonomy, EIB energy lending policy, Just Transition Mechanism, Industrial Strategy,Integrating SDGs in the European Semester
+Economic recovery, sustainable finance taxonomy, EIB energy lending policy, Just Transition Mechanism, Industrial Strategy, Integrating SDGs in the European Semester
 
 03/06/2020
 Chemicals Strategy
@@ -248,7 +248,7 @@ European Green Deal, new circular economy action plan and the circular plastics 
 Methane strategy - agricultural dimension.
 
 23/07/2020
-To discuss the Chemicals Strategy for Sustainability, especially with relation with endocrine disruptors.
+To discuss the Chemicals Strategy forSustainability, especially with relation with endocrine disruptors.
 
 08/09/2020
 Clean Hydrogen Alliance launch
@@ -398,10 +398,10 @@ EU Nature Restoration Law
 VTC meeting: Revision of the SUD Proposal
 
 22/03/2022
-Corporate Sustainability Due Diligence
+Circular Economy and EU Strategy on Textiles
 
 22/03/2022
-Circular Economy and EU Strategy on Textiles
+Corporate Sustainability Due Diligence
 
 23/03/2022
 Views of group of civil society organisations regarding the EU strategy for sustainable textiles
@@ -413,16 +413,16 @@ Sustainable food systems and CAP
 Enforcement of existing EU (environmental) law
 
 08/07/2022
-Implementation of the EU Chemicals Strategyfor Sustainability and REACH revision
+Implementation of the EU Chemicals Strategy for Sustainability and REACH revision
 
 23/09/2022
 Meeting with NGOs upon the revision of the Ambient Air Quality Directives
 
 15/11/2022
-Preparation of the critical raw materials act
+will follow
 
 15/11/2022
-will follow
+Preparation of the critical raw materials act
 
 16/11/2022
 On the side of the EU Raw Materials week High Level Conference, the parties met to discuss the concerns of environmental NGOs on raw materials projects and their feedback on the Raw Materials Act.
@@ -452,7 +452,7 @@ Transition towards sustainable food systems
 Farm visit and roundtable with agri- food chain stakeholders
 
 25/01/2024
-Intervention at EEB workshop on the New European Pact for theFuture (EGD 2)
+Intervention at EEB workshop on the New European Pact for the Future (EGD 2)
 
 30/01/2024
 Green Deal, 2040 climate target, strategic dialogue on the future of agriculture in the EU
@@ -509,7 +509,7 @@ Restrictions under REACH
 PFAS
 
 28/01/2025
-Transposition of the future change of protection of the wolf under the Bern Convention into the EU legislation
+Transposition of the future change ofprotection of the wolf under the Bern Convention into the EU legislation
 
 03/02/2025
 Exchange of views on the Vision for Agriculture and Food and the European Board on Agriculture and Food
@@ -517,9 +517,75 @@ Exchange of views on the Vision for Agriculture and Food and the European Board 
 05/02/2025
 Pollution caused by PFAS
 
+10/02/2025
+Chemical Policy
+
+13/02/2025
+Clean Industrial Deal
+
 21/02/2025
 Clean Industrial Deal and Chemicals Industry Package
 
+24/02/2025
+PFAS pollution
+
 27/02/2025
 Implementation and enforcement of EU environmental legislation
+
+04/03/2025
+PFAS
+
+04/03/2025
+Presentation of the views of Civil Society Europe on the issue of funding of NGOs, following the concerns raised in the EP CONT Committee in the context of the annual discharge procedure.
+
+04/03/2025
+PFAS ban
+
+12/03/2025
+Exchange of views on the Steel and Metals Action Plan
+
+13/03/2025
+Green Deal
+
+17/03/2025
+Exchange of views on Water and Climate Resilience Strategies
+
+18/03/2025
+EEB and Wetlands International presented on the water resilience strategy
+
+19/03/2025
+Introductory meeting
+
+24/03/2025
+Adressing forever PFAS pollution, including PFAS F-gases
+
+25/03/2025
+Roundtable “Water, Agriculture, and the Food Supply Chain”
+
+26/03/2025
+European Environmental Bureau’s recommendations for the REACH revision
+
+27/03/2025
+Roundtable “Water, Agriculture, and the Food Supply Chain”
+
+31/03/2025
+Biodiversity issues
+
+02/04/2025
+Water Resilience Strategy
+
+04/04/2025
+Exchange of views on the Vision for Agriculture and Food, the reform of the Common Agriculture Policy, The Livestock Strategy, Benchmarking
+
+07/04/2025
+Review of the REACH Regulation
+
+09/04/2025
+Sustainability agenda of the European Commission
+
+09/04/2025
+1. Role of the CAP and ‘Vision for Food and Agriculture’ 2. Policy opportunities for methane emissions reduction
+
+11/04/2025
+Exchange of views on the REACH revision
 

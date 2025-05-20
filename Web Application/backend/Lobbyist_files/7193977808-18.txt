@@ -14,19 +14,19 @@ standards, data, IoT, transport policy
 Presentation BMW office; Digital Agenda with respect to Transport
 
 28/05/2015
-Meeting to present the BMW's positions on diesel strategy and the electrification of fleets
+Decarbonization
 
 28/05/2015
-Decarbonization
+Meeting to present the BMW's positions on diesel strategy and theelectrification of fleets
 
 04/06/2015
 startups, innovation, data
 
 19/06/2015
-TTIP
+Meeting with BMW Group
 
 19/06/2015
-Meeting with BMW Group
+TTIP
 
 08/07/2015
 Vehicle Connectivity
@@ -143,13 +143,13 @@ the automotive industry ecosystem - recovery measures
 Recovery and green transition in the automotive supply chain
 
 03/03/2021
-Roundtable with transport value chain alliance - Transformation of the automotive value chain in the context of green recovery.
+Transformation of the automotive value chain in the context of green recovery
 
 03/03/2021
 Roundtable with transport value chain alliance - Transformation of the automotive value chain in the context of green recovery
 
 03/03/2021
-Transformation of the automotive value chain in the context of green recovery
+Roundtable with transport value chain alliance - Transformation of the automotive value chain in the context of green recovery.
 
 23/03/2021
 Transition to zero emission cars
@@ -161,19 +161,19 @@ future CO2 legislation
 Transformation of the car industry in the upcoming years
 
 30/06/2021
-Decarbonisation of road transport
-
-30/06/2021
-Preparation of Fit for 55
-
-30/06/2021
-Electrification in the automotive industry and transformation of the European Automotive Sector.
+Automotive in the Fit for 55 package
 
 30/06/2021
 Meeting CEO
 
 30/06/2021
-Automotive in the Fit for 55 package
+Electrification in the automotive industry and transformation of the European Automotive Sector.
+
+30/06/2021
+Preparation of Fit for 55
+
+30/06/2021
+Decarbonisation of road transport
 
 16/07/2021
 Right to disconnect
@@ -233,10 +233,10 @@ Latest developments on EU climate policy with regards to transport sector
 Circular economy and climate action
 
 27/05/2024
-developments in the car sector trade
+Global trade environment and supply chains
 
 27/05/2024
-Global trade environment and supply chains
+developments in the car sector trade
 
 11/06/2024
 Hydrogen
@@ -284,11 +284,38 @@ Exchange of views on use of (high-risk) AI systems
 Exchange of views on automotive sector
 
 15/02/2025
-Future of car industry
+Trade policy with a focus on EU-US and EU-China
 
 15/02/2025
-Trade policy with a focus on EU-US and EU-China
+Future of car industry
+
+18/02/2025
+Exchange of views on automotive sector
+
+21/02/2025
+Simplification
 
 21/02/2025
 High-level meeting with the Automotive industry
+
+21/02/2025
+CSDR, EU Taxonomy
+
+03/03/2025
+EU Automotive Action Plan
+
+19/03/2025
+Future of the automotive sector
+
+26/03/2025
+Discussion on data initiatives related to vehicle data
+
+27/03/2025
+Competitiveness
+
+01/04/2025
+EU Digital Policy
+
+03/04/2025
+Exchange of views on automotive sector
 

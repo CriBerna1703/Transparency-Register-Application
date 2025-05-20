@@ -4,3 +4,6 @@ Presentation about artificial intelligence solutions for predicting major incide
 24/03/2023
 Digital transformation, data, AI
 
+26/03/2025
+Presentation of Dataminr's AI tools for situational awareness.
+

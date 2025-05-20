@@ -31,3 +31,9 @@ Telecoms policy
 12/10/2023
 On EU 2030 connectivity targets, current dynamics of the internet, content distribution and edge cloud
 
+25/03/2025
+Exchange of views on the upcoming Digital Networks Act and how Akamai technologies contribute to the EU’s connectivity targets.
+
+26/03/2025
+Cloud & Edge computing and Content Delivery Networks
+

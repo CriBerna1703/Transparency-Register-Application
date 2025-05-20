@@ -47,7 +47,7 @@ Energy policy
 energy policy
 
 15/10/2018
-Long-Term Strategy and Carbon Capture and Storage
+Long-Term Strategy andCarbon Capture and Storage
 
 12/11/2018
 Sustainable Finance and Taxonomy
@@ -113,13 +113,13 @@ Energy transition
 Discussion on the 8 March Commission communication, the ongoing work to diversify gas supplies and diminish the fossil fuels supplies from Russia, IOGP ability to help in this process.
 
 12/05/2022
-RePowerEU Plan anddiversification of gas supplies
+RePowerEU Plan and diversification of gas supplies
 
 13/10/2022
 IOGP study on gas supply diversification potential
 
 24/11/2022
-Short and long-term perspectives for additional gas supplies for Europe in the context of the current energy crisis and future plans for CCUS technology deployment and the production of hydrogen in Europe
+Short and long-term perspectives for additional gas supplies for Europe in the context of the current energycrisis and future plans for CCUS technology deployment and the production of hydrogen in Europe
 
 14/12/2022
 Study "Rebalancing Europe's gas supply"
@@ -143,13 +143,13 @@ NZIA and the forthcoming Commission Communication on CCUS
 Net Zero Industry Act proposal on CO2 injection target and oil and gas companies’ plans with respect to the need to transition to net zero emissions by 2050
 
 20/10/2023
-Physical meeting - Discussion on Commission report onthe solidarity contribution (Council Regulation 2022 /1854)
+Physical meeting - Discussion on Commission report on the solidarity contribution (Council Regulation 2022 /1854)
 
 25/10/2023
 1. CCS in NZIA and beyond 2. Regulation on methane emissions reduction in the energy sector 3. IOGP Europe feedback on the DG CLIMA/DG ENER non- paper in light of the COP28 preparation
 
 23/01/2024
-Industrial Carbon Management Strategy
+Industrial CarbonManagement Strategy
 
 23/01/2024
 industrial carbon management strategy
@@ -168,4 +168,13 @@ Discussion on Regulation 2024/1735 and an upcoming workshop organised by IOGP
 
 14/02/2025
 Clean Industrial Deal and Affordable Energy Action Plan
+
+05/03/2025
+“co-create” a roadmap that balances affordability, sustainability, and security
+
+19/03/2025
+Follow up to the omnibus
+
+29/04/2025
+Simplification
 

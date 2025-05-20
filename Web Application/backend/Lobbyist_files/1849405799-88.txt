@@ -14,7 +14,7 @@ energy sector in China
 creation of a network of Energy Union Business Ambassadors
 
 17/02/2016
-The implementation of EU legislation currently in development
+The implementation ofEU legislation currently in development
 
 17/05/2016
 energy & climate policy
@@ -110,7 +110,7 @@ Discussion on security of supply, diversification, energy prices and the energy 
 SOTEU, energy, RepowerEU, Recovery and Resilience Facility
 
 13/10/2022
-Reducing dependence on Russian gas, exploitation of the resources in the EEZ of Cyprus, energy security strategy of the EU incl. EU platform for the common purchase of gas, LNG and hydrogen.
+Reducing dependence on Russian gas, exploitation of the resources in the EEZ of Cyprus, energysecurity strategy of the EU incl. EU platform for the common purchase of gas, LNG and hydrogen.
 
 25/10/2022
 Green Deal state of play
@@ -173,7 +173,7 @@ Energy market
 IOGP Roundtable
 
 14/05/2024
-Meeting on integration of digital technologies ino the green transition
+Meeting on integration of digital technologies inothe green transition
 
 06/12/2024
 Investments in sustainable liquid fuels production in the EU
@@ -192,4 +192,40 @@ Total Energies’ renewable hydrogen projects in Latin America
 
 10/02/2025
 Exchange of views on the Commission’s proposal for a Regulation on preventing plastic pellet losses to reduce microplastic pollution, currently under examination by the co- legislators.
+
+18/02/2025
+Clean Industrial deal
+
+20/02/2025
+Security of Supply, decarbonization target
+
+27/02/2025
+Clean Industrial Deal and the climate targets, and some other climate and energy-related priorities
+
+11/03/2025
+The role of hydrogen for heavy-duty vehicles
+
+11/03/2025
+SFDR
+
+11/03/2025
+Omnibus
+
+11/03/2025
+LNG, SAF and power generation
+
+12/03/2025
+Exchange of views on various aspects of EU energy policy.
+
+13/03/2025
+Clean Industrial Deal Simplification Trade
+
+17/03/2025
+Carbon Capture and Storage (CCS) and the upcoming Delegated Act under the Net-Zero Industry Act (NZIA).
+
+01/04/2025
+Exchange of views on the challenges and opportunities for renewable hydrogen development in Latin America and the Caribbean (LAC)
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
 

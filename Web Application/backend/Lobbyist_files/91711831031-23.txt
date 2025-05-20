@@ -80,13 +80,13 @@ Defence, Sapce, AI, PIEEC,
 spatial, identité numérique
 
 18/10/2021
-Purpose of the meeting was to elaborate on general overview and discussions on European issues in space, update on the space market and EU programs (Copernicus, Galileo, Egnos, etc.), Future Flagships (Space Connectivity).
+Purpose of the meeting was to elaborate on general overview and discussions on Europeanissues in space, update on the space market and EU programs (Copernicus, Galileo, Egnos, etc.), Future Flagships (Space Connectivity).
 
 26/01/2022
 Programmes spatiaux européens
 
 08/06/2022
-Follow-up meeting to discuss on HorizonEurope, Space and Defence issues.
+Follow-up meeting to discuss on Horizon Europe, Space and Defence issues.
 
 14/06/2022
 Presentation of innovative machines for satellite component production and testing, developed at a traditional industrial site.
@@ -112,6 +112,21 @@ Exchange on key priorities for the year to come and beyond - meeting with Hervé
 28/01/2025
 Presentation of Thales Alenia Space and exchange on the future of space in Europe.
 
+18/02/2025
+Roundtable with industry
+
 27/02/2025
 Cooperation on satellite connectivity in Kazakhstan
+
+14/03/2025
+Exchange of views on the state of the Air Traffic Management reform in Europe, the competitiveness of the European ATM industry at the world market and the priorities for Thales in the next MFF period.
+
+26/03/2025
+Space and Defence policy
+
+10/04/2025
+Thales’ Artificial Intelligence (AI) strategy and use cases and the European AI Office’s latest initiatives and stakeholder consultation procedures
+
+29/04/2025
+Simplification, marché interieur, compétivité, défense
 

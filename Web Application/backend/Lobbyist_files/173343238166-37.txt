@@ -2,7 +2,7 @@
 Efforts to facilitate Roaming with Ukraine
 
 08/04/2022
-Endorsing the Joint statement on Roaming and International calls between EU and Ukraine
+Endorsing the Jointstatement on Roaming and International calls between EU and Ukraine
 
 22/11/2023
 AI
@@ -13,9 +13,15 @@ Telecoms
 05/03/2024
 topics to follow
 
+31/01/2025
+Meeting organized by ARCEP with local authorities and operators on fiber (FTTH) network infrastructure in France. Operators took part only to some part of the meetings.
+
 03/02/2025
 Exchange of views on cloud and AI, with a focus on access to advanced chips
 
 10/02/2025
 EU agenda on AI and tech sovereignty
+
+07/03/2025
+Exchange of views on the challenges facing telcom and AI operators in the UE
 

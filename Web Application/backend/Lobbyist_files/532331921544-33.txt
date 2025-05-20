@@ -2,10 +2,10 @@
 e-privacy
 
 24/04/2019
-Disinformation, liability of platforms, next MFF, media, research and innovation
+Media industry in Europe
 
 24/04/2019
-Media industry in Europe
+Disinformation, liability of platforms, next MFF, media, research and innovation
 
 17/04/2020
 Economic impact of COVID-19
@@ -23,7 +23,7 @@ Digital issues
 DSA
 
 09/11/2020
-European DemocracyAction Plan
+European Democracy Action Plan
 
 12/11/2020
 Digital Markets Act
@@ -50,10 +50,10 @@ Digital levy
 Digital issues
 
 30/03/2022
-Media Freedom Act
+DMA, Market Definition Notice
 
 30/03/2022
-DMA, Market Definition Notice
+Media Freedom Act
 
 15/12/2022
 European Media Freedom Act
@@ -90,4 +90,16 @@ media freedom
 
 29/01/2025
 European Media Freedom Act (EMFA)
+
+04/03/2025
+Code of Conduct on Online Advertising – Workshop 1
+
+19/03/2025
+Exchange of views on copyright and AI
+
+07/04/2025
+Exchange of views on the forthcoming Digital Fairness Act and the forthcoming Democracy Shield
+
+08/04/2025
+Exchange of view media policy
 

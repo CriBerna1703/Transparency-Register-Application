@@ -278,7 +278,7 @@ BDI position paper on China
 BDI position paper on China
 
 31/01/2019
-BDI position paper on China
+BDI position paper onChina
 
 31/01/2019
 BDI position paper on China
@@ -308,7 +308,7 @@ European Industry strategy
 Industrial Strategy
 
 23/09/2019
-Meeting with the Task Force for the Preparation and Conduct of the Negotiations with the United Kingdom under Article 50 TEU
+Meeting with the Task Force for the Preparation and Conduct of theNegotiations with the United Kingdom under Article 50 TEU
 
 09/10/2019
 Current trade agenda
@@ -344,7 +344,7 @@ Impact of COVID-19 on industry. Economic recovery based on Green Deal.
 European research and innovation policy - EU Commission’s policy priorities for the legislative period of 2019 – 2024
 
 15/06/2020
-Fresh start for climate policy on the Green Deal + Recovery Covid 19 crisis, including in the areas of mobility and logistics
+Fresh start for climate policy on the Green Deal + Recovery Covid 19crisis, including in the areas of mobility and logistics
 
 09/09/2020
 Exchange of views in the context of the preparation of the DSA
@@ -419,7 +419,7 @@ Regulatory initiatives and policy issues
 Upcoming EU initiatives in energy related legislation (“Fit for 55” Package).
 
 08/07/2021
-Rule of Law and due diligence/human rights in supply chains/ data flows with US
+Rule of Law and due diligence/human rights in supply chains/ data flowswith US
 
 15/07/2021
 Current trade policy issues
@@ -431,7 +431,7 @@ Current trade policy issues
 Videoconference - Presentation of Commission proposal for a CBAM followed by discussion
 
 29/09/2021
-Draft State aid Guidelines on Climate,environmental protection and Energy
+Draft State aid Guidelines on Climate, environmental protection and Energy
 
 29/09/2021
 Fit for 55 package
@@ -449,7 +449,7 @@ Fit for 55, industrial strategy
 Sustainable Corporate Governance
 
 09/11/2021
-Presentation by BDI of their study on scenarios to decarbonisation in Germany and discussion on the upcoming H2 and gas decarbonisation package
+Presentation by BDI of their study on scenarios to decarbonisation in Germany and discussion on the upcoming H2 andgas decarbonisation package
 
 09/11/2021
 the Fit for 55 package and its opportunities and challenges for industry
@@ -506,7 +506,7 @@ To discuss several initiatives of the European Commission, like Ecodesign for Su
 Due diligence
 
 25/10/2022
-- Energy prices in the EU and impact on competitiveness - EU-US relations, including the Inflation Reduction Act and preparations of the3rd TTC - FTA agenda - EU's legislative agenda and its cumulative burden on businesses
+- Energy prices in the EU and impact on competitiveness - EU-US relations, including the Inflation Reduction Act and preparations of the 3rd TTC - FTA agenda - EU's legislative agenda and its cumulative burden on businesses
 
 25/10/2022
 Data ACt, SMEI
@@ -548,7 +548,7 @@ Competitivness
 EU legislation and regulation of sustainable finance (ESG)
 
 23/10/2023
-EU – US relations, EU –China relations, on-going trade negotiations, economic security.
+EU – US relations, EU – China relations, on-going trade negotiations, economic security.
 
 24/10/2023
 Meeting with BDI President (Topic: Competitiveness and Economic Situation)
@@ -630,4 +630,43 @@ International and EU tax issues
 
 25/02/2025
 Sustainability reporting, simplification, single market
+
+04/03/2025
+Exchange on the US and EU economic outlook and macroeconomic policy priorities.
+
+06/03/2025
+DG CONNECT E2 Unit ongoing work on the Cloud and AI Development act.
+
+13/03/2025
+Introductory meeting
+
+17/03/2025
+Exchange of views on the policy priorities of the European industry
+
+17/03/2025
+Introductory meeting / Trade policy
+
+17/03/2025
+Simplification
+
+25/03/2025
+Virtual Exchange on Tax Decluttering.
+
+27/03/2025
+Competitiveness and simplification
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+08/04/2025
+Meeting representatives from BDI/ZVE
+
+11/04/2025
+Exchange of views on the implementation of Global Gateway in Sub-Saharan Africa and private sector engagement
+
+28/04/2025
+EU-US and EU-China trade relations
+
+28/04/2025
+Discussion on the trade dimension of economic security
 

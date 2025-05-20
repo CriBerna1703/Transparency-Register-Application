@@ -1,5 +1,5 @@
 20/11/2014
-Meeting with Rachel Whetstone, Google's Senior Vice President for Communications and Policy: role of internet and innovation to foster economic growth and job creation in Europe andGoogle initiatives in that field
+Meeting with Rachel Whetstone, Google's Senior Vice President for Communications and Policy: role of internet and innovation to foster economic growth and job creation in Europe and Google initiatives in that field
 
 02/12/2014
 Data protection
@@ -17,7 +17,7 @@ Platforms
 Data protection
 
 19/01/2015
-Digital Single Market, broadband investment, Google SME initiatives
+Digital Single Market,broadband investment, Google SME initiatives
 
 19/01/2015
 Digital Economy and Society
@@ -47,7 +47,7 @@ Copyright
 Google News and Copyright
 
 03/03/2015
-Presentation of Google's Irish operations and Dublin Campus and of promotion activities to increase e-commerce success of food-chain companies
+Presentation of Google'sIrish operations and Dublin Campus and of promotion activities to increase e-commerce success of food-chain companies
 
 03/03/2015
 Proposals regarding Google contribution in the anti-radicalization debate and the fight against the presence of terrorism propaganda online
@@ -95,7 +95,7 @@ The antitrust investigation case against Google
 Workshop Google - Innovation cycle in Google ATAP
 
 23/06/2015
-Meeting with Adam Cohen & Sylwia Giepmans
+Meeting with AdamCohen & Sylwia Giepmans
 
 30/06/2015
 Identity, Privacy and Security
@@ -134,7 +134,7 @@ R&D investment in Europe and innovation policy
 Matt Brittin, Pdt for Europe, re Google's investments and initiatives in Europe at the national and regional level, projects on smart cities, as well as vision on the Digital Single Market
 
 23/09/2015
-Google's investments and initiatives in Europe as well as our vision on the Digital Single Market
+Google's investmentsand initiatives in Europe as well as our vision on the Digital Single Market
 
 23/09/2015
 DSM
@@ -167,7 +167,7 @@ Youtube kids app and discussion on their plans for lauching this app in Europe.
 Digital transformation of the European industry
 
 25/11/2015
-digital divide of italian users and consumers / Web Safety
+digital divide of italian users and consumers /Web Safety
 
 26/11/2015
 Cybersecurity and consumers fostering web safety
@@ -206,7 +206,7 @@ Digital Single Market
 General presentation of setup and outlook of Google Ireland; ICT and rural development
 
 18/02/2016
-DSM: Google engagement to improve digital skills in Europe - Platforms: present Google position on the discussion around platforms and discuss how self/co-regulation could address some of the policy issues on the table - European Cloud initiative: how Google can contribute to this important initiative
+DSM: Google engagement to improve digital skills in Europe - Platforms: present Google position on the discussion around platforms and discuss how self/co-regulation could address some of the policy issues on the table - European Cloudinitiative: how Google can contribute to this important initiative
 
 23/02/2016
 e-privacy, next steps on the directive
@@ -266,7 +266,7 @@ Digital skills
 DSM
 
 19/05/2016
-How Google can support the forthcoming co- regulation initiatives of EU Commission; Google vision on Copyright reform with specific regards to neighbouring rights; How Google can support the Commission agenda on the free flow of data and European cloud for research.
+How Google can support the forthcoming co-regulation initiatives of EU Commission; Google vision on Copyright reform with specific regards to neighbouring rights; How Google can support the Commission agenda on the free flow of data and European cloud for research.
 
 19/05/2016
 Platforms, copyright, DSM
@@ -281,7 +281,7 @@ Energy efficiency, smart mobility
 Digital Single Market
 
 16/06/2016
-mobile economy; openinnovation
+mobile economy; open innovation
 
 22/06/2016
 Corporate Social Responsibility
@@ -359,7 +359,7 @@ Artificial intelligence
 Hate speech
 
 30/11/2016
-Artificial Intelligence andMachine Learning in education and science
+Artificial Intelligence and Machine Learning in education and science
 
 02/12/2016
 Year of cultural heritage
@@ -740,7 +740,7 @@ Disinformation
 Google's latest efforts in the area of content moderation, particularly when it comes to violent extremist content and child abuse material and also touch base on the upcoming Digital Services Act.
 
 20/11/2020
-Artificial Intelligence, data protection, DSA,Covid 19-response
+Artificial Intelligence, data protection, DSA, Covid 19-response
 
 02/12/2020
 Roundtable with platforms on DSA and DMA
@@ -761,7 +761,7 @@ Cloud
 DSA, DMA
 
 10/02/2021
-Transatlantic digital cooperation; 6/01 Capitol events; DSA/DMA; COVID- 19 and Artificial intelligence
+Transatlantic digital cooperation; 6/01 Capitolevents; DSA/DMA; COVID- 19 and Artificial intelligence
 
 22/02/2021
 Disinformation COVID -19
@@ -794,7 +794,7 @@ Artificial intelligence, data protection
 Economie sociale et solidaire
 
 10/11/2021
-Upcoming CSAM Legislation
+Upcoming CSAMLegislation
 
 17/11/2021
 DSA, DMA
@@ -821,7 +821,7 @@ Participation in a broader dinner on world affairs in the margins of Munich Secu
 Urgent measures to fight war propaganda on platforms
 
 27/02/2022
-Urgent measures to fight war propaganda on platforms
+Urgent measures to fightwar propaganda on platforms
 
 10/03/2022
 Digital Services Act and Digital Markets Act
@@ -863,7 +863,7 @@ Disinformation
 AI Act
 
 30/06/2022
-US-EU Task Force Convening: Energy efficiency and Energy Savings. The American Council for an Energy-Efficient Economy (ACEEE), the Air- Conditioning, Heating, and Refrigeration Institute (AHRI) and Tado also participated.
+US-EU Task Force Convening: Energy efficiency and Energy Savings. The American Council for an Energy- Efficient Economy (ACEEE), the Air- Conditioning, Heating, and Refrigeration Institute (AHRI) and Tado also participated.
 
 06/09/2022
 meeting with the Green Digital Coalition - Main topic : state of play on sustainable digitalization
@@ -881,7 +881,7 @@ Digital skills & reskilling, Cybersecurity & resilience, investment in internet 
 Digitals tools for greening other industrial sectors
 
 11/10/2022
-Google Sustainability Summit "Technology and Partnership Accelerating Climate Action": Speech on Digital for European Green Deal
+Google SustainabilitySummit "Technology and Partnership Accelerating Climate Action": Speech on Digital for European Green Deal
 
 19/10/2022
 Code of Conduct against Hate speech
@@ -896,7 +896,7 @@ Platform regulation, Cybersecurity, Data.
 Fighting disinformation, European Media Freedom Act
 
 15/11/2022
-Google presented itswork on climate and sustainability
+Google presented its work on climate and sustainability
 
 17/11/2022
 Dora regulation
@@ -1105,11 +1105,20 @@ EU Trade and Economic Security
 06/02/2025
 First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
 
+06/02/2025
+Competitiveness
+
+06/02/2025
+First meeting between the Commission andSignatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
+
 10/02/2025
 EU agenda on AI and tech sovereignty
 
 11/02/2025
 Opening Session: DSA roundtable discussions on online advertising (Article 46 DSA)
+
+16/02/2025
+The discussion covered the removal of harmful online content and cybersecurity.
 
 17/02/2025
 Process of drafting the Code of Conduct on General Purpose AI models
@@ -1117,9 +1126,27 @@ Process of drafting the Code of Conduct on General Purpose AI models
 17/02/2025
 Technological innovation opportunities triggered from using AI in research
 
+18/02/2025
+Digital Markets Act (DMA) compliance, AI Act, DSA, Code of Practice on Disinformation
+
 19/02/2025
 Google sustainability initiatives
 
 19/02/2025
 Video recording for the Google conference „Growing Up in the Digital Age“
+
+04/03/2025
+latest developments in technology policy
+
+11/03/2025
+Energy situation in Europe
+
+13/03/2025
+Various topics related to the digital policy framework
+
+18/03/2025
+Forthcoming Digital Fairness Act, protection of minors, data protection, simplification
+
+09/04/2025
+Exchange of views on the template for the summary of training content and on the Code of Practice.
 

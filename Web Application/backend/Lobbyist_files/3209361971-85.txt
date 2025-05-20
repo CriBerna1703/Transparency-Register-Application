@@ -86,7 +86,7 @@ e-evidence
 Digital Services Act and European Democracy Action Plan - responsibility of broadcasters for content they distribute, attribition & findability of content, many different types of gatekeeper.
 
 06/10/2020
-European Democracy Action Plan, Digital Services Act
+European DemocracyAction Plan, Digital Services Act
 
 23/03/2021
 DSA
@@ -114,4 +114,10 @@ Media policy
 
 19/09/2024
 media freedom
+
+03/04/2025
+EU Media Policy
+
+11/04/2025
+Brief overview of the participants’ roles and responsibilities, highlighting key areas of expertise and focus for each attendee; Brief discussion of state of play of EMFA implementation.
 

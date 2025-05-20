@@ -50,7 +50,7 @@ Digital Single Market strategy
 DSM
 
 27/05/2015
-Meeting on key challenges of the futureEuropean digital policy
+Meeting on key challenges of the future European digital policy
 
 01/06/2015
 DSM
@@ -176,7 +176,7 @@ Introduction of new manager
 Telco review: access & spectrum, e-privacy, B2B platforms, BE&FR market analyses
 
 27/09/2017
-réglementationsectorielle; numérique; télécommunications
+réglementation sectorielle; numérique; télécommunications
 
 27/09/2017
 DSM policies - Electronic Communication Code - Connectivity in Europe - 5G
@@ -218,7 +218,7 @@ Digital issues
 Videoconference - Discussion on digital taxation
 
 16/12/2020
-Roundtable - CloudAlliance
+Roundtable - Cloud Alliance
 
 02/02/2021
 Future of telecom industry
@@ -227,7 +227,7 @@ Future of telecom industry
 connectivité Europe et Afrique, projet europeen de connectivité par satellites
 
 07/05/2021
-Cloud & Data Alliance - CEO Roundtable
+Cloud & Data Alliance -CEO Roundtable
 
 19/07/2021
 Fibre deployment
@@ -290,7 +290,7 @@ meeting with orange
 Telecom policy
 
 30/06/2023
-Discussion on taxation and regulation oftelecommunications sector
+Discussion on taxation and regulation of telecommunications sector
 
 24/10/2023
 Cercle des Grandes Entreprises françaises
@@ -319,6 +319,33 @@ Current market developments and views on the future of the sector.
 14/01/2025
 To hear interest representatives’ view on EU competition and telecom policy, and perspectives on clean, just, and competitive transition policies.
 
+31/01/2025
+Meeting organized by ARCEP with local authorities and operators on fiber (FTTH) network infrastructure in France. Operators took part only to some part of the meetings.
+
 12/02/2025
 Discussion on the EU Emissions Trading System (ETS) extension to maritime and the situation of cable-layers vessels
+
+05/03/2025
+Update on the process of the possible inclusion ofUkraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+05/03/2025
+Commission priorities in technology policy
+
+13/03/2025
+Clean Industrial Deal Simplification Trade
+
+01/04/2025
+Simplification of sustainability reporting
+
+03/04/2025
+Presentation of Orange Marine activities, in relation to the recently adopted Action Plan on the security of submarine cables
+
+07/04/2025
+The future of the EU Harmonised 2 GHz Mobile Satellite Service Frequency Band The future use of the Upper 6 GHz frequency band
+
+09/04/2025
+Cable Security
+
+24/04/2025
+Exchange of views on the upcoming Digital Networks Act (DNA), the review of the Romanian wholesale broadband market, and the status of Roaming for Ukraine and Moldova
 

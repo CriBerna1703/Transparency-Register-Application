@@ -101,7 +101,7 @@ tech policy
 Introduction association; artificial intelligence & data strategy; digital services act
 
 28/01/2020
-Priorities for techregulation, single market and enforcement
+Priorities for tech regulation, single market and enforcement
 
 28/01/2020
 Overall digital policy, including technological sovereignty, open multilateral economic governance, trade in technology, data strategy
@@ -137,7 +137,7 @@ Trade policy review - focus on digital trade, Digital tax, EU-US trade relations
 Meeting on the global debate on government access to data, notably within the OECD.
 
 13/10/2021
-Privacy, data flow,transatlantic cooperation
+Privacy, data flow, transatlantic cooperation
 
 26/04/2022
 Data transfer
@@ -162,4 +162,31 @@ Digital issues
 
 24/01/2024
 AI
+
+11/03/2025
+Priorities related to the competitiveness compass
+
+11/03/2025
+Exchange of views on the Green Deal legislation and EU’s sustainability goals.
+
+12/03/2025
+Inform and discuss the Commission's work on the Digitalisation of Justice, AI and data, and consumer law - Digital Fairness Act.
+
+13/03/2025
+Simplification
+
+13/03/2025
+International trade developments
+
+13/03/2025
+- EU-U.S. relations on key technology and trade topics - WTO - The digital dimension of the EU Economic Security Strategy & associated EU initiatives - Standardization Regulation revision and trade implications
+
+13/03/2025
+EU digital policy
+
+23/04/2025
+Exchange of views on AI Act implementation
+
+28/04/2025
+Digitalization for decarbonization in industry
 

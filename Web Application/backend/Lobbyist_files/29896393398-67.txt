@@ -137,7 +137,7 @@ Capital Markets Union
 Insurance Distribution Directive
 
 16/10/2019
-Presentation of possibleinvestment in gas infrastructure
+Presentation of possible investment in gas infrastructure
 
 11/11/2019
 MiFID II review
@@ -191,7 +191,7 @@ deferred tax; carbon border adjustment mechanism
 Investment Firms Directive and Regulation
 
 23/03/2022
-CMU, Consolidated tape and PFOF
+CMU, Consolidated tapeand PFOF
 
 19/09/2022
 Production and uptake of hydrogen
@@ -233,7 +233,7 @@ Discussion on strategic Foresight
 Digital euro, Crypto finance
 
 18/04/2023
-Sharing company's view on the Critical Raw Material Act and its role in the hydrogen economy. Presenting several mining projects in Europe, including the Sakatti project in Finland.
+Sharing company's view on the Critical Raw Material Act and its rolein the hydrogen economy. Presenting several mining projects in Europe, including the Sakatti project in Finland.
 
 24/10/2023
 P2S2 review and Open Finance Framework
@@ -258,4 +258,10 @@ Savings and Investments Union
 
 13/02/2025
 EU health policy
+
+28/04/2025
+Meeting on the forensic audit performed by FTI Consulting on the implementation of the IPARD programme in Albania
+
+28/04/2025
+Market and regulatory developments
 

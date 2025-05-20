@@ -2,7 +2,7 @@
 CMU
 
 28/05/2015
-Better regulation in the context of Capital Markets Union, securitisation and non- bank lending.
+Better regulation in the context of CapitalMarkets Union, securitisation and non- bank lending.
 
 29/05/2015
 Long-term financing /securitisation
@@ -23,7 +23,7 @@ Discussion sur les travaux de la Commission européenne sur la transparence fisc
 AIFMD review, sustainable finance
 
 23/01/2020
-- Presentation of the Alternative credit council report and discussion about the existingregulatory framework in the EU (national regimes and ELTIF); - Discussion about economic situation, leveraged loans and macro-prudential policy
+- Presentation of the Alternative credit council report and discussion about the existing regulatory framework in the EU (national regimes and ELTIF); - Discussion about economic situation, leveraged loans and macro-prudential policy
 
 31/01/2020
 Capital Market Union, Asset management regulation
@@ -57,4 +57,16 @@ Capital Markets Union (CMU)
 
 01/07/2024
 securitisation
+
+19/03/2025
+Capital Market Union
+
+20/03/2025
+Savings and Investments Union, Securitisation.
+
+07/04/2025
+Exchange on securitisation
+
+12/05/2025
+Sustainability Omnibus and SFDR revision
 

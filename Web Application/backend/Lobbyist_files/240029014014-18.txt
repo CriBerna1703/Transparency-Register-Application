@@ -1,8 +1,8 @@
 11/12/2014
-Presentation of the Annual Growth Survey 2015 outlining the main priorities for the jobs and growth agenda /in the context of the flagship conference ‘Reinvigorating theEuropean Economy: Policies to Foster Jobs, Growth and Innovation’.
+Presentation of the Annual Growth Survey 2015 outlining the main priorities for the jobs and growth agenda /in the context of the flagship conference ‘Reinvigorating the European Economy: Policies to Foster Jobs, Growth and Innovation’.
 
 23/04/2015
-Presentation of CA Technologies / DSM, application economy
+Presentation of CA Technologies / DSM,application economy
 
 23/04/2015
 Digital Single Market Strategy
@@ -44,7 +44,7 @@ Digital Skills
 Digital skills and jobs
 
 19/06/2017
-economic situation within the EU, investment climate, deepening of the EMU, social dimension of the European project, financial regulations and markets
+economic situation within the EU, investmentclimate, deepening of the EMU, social dimension of the European project, financial regulations and markets
 
 27/09/2017
 Cybersecurity
@@ -78,4 +78,7 @@ Cloud infrastructures
 
 14/01/2025
 Broadcom’s approach to private AI
+
+15/04/2025
+Cloud policies and sovereignty
 

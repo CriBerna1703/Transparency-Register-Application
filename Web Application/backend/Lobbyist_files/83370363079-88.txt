@@ -35,7 +35,7 @@ Financial Services Policy
 Overview on Financial Regulation
 
 30/09/2015
-Better regulation in the area of financial services legislation; general questions on the portfolio
+Better regulation in the area of financial services legislation; generalquestions on the portfolio
 
 15/10/2015
 banking and DSM
@@ -147,4 +147,7 @@ Preventing the circumvention of EU sanctions on sensitive goods
 
 10/09/2024
 High-level executive roundtable: preventing the circumvention of EU sanctions on sensitive goods.
+
+17/03/2025
+Banking issues
 

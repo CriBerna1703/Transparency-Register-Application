@@ -5,7 +5,7 @@ EuroHPC, DEP
 LUMI Supercomputer state of play - video meeting
 
 07/10/2021
-Research infrastructures,research data
+Research infrastructures, research data
 
 30/11/2022
 Sustainable data centres
@@ -30,4 +30,7 @@ Exchange on Artificial Intelligence (AI), data, high performance computers
 
 05/02/2025
 Exchange of views on digital innovation and AI in science
+
+05/02/2025
+Exchange of views of upcoming initiatives and challenges and opportunities faced by digital sector
 

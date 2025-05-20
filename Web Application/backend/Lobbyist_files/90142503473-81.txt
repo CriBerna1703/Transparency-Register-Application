@@ -8,7 +8,7 @@ Telecom Single Market
 Digital Single Market
 
 10/12/2014
-Investments andinnovations in the digital sector
+Investments and innovations in the digital sector
 
 06/01/2015
 Préparation du futur Digital Single Market / Perspectives offertes par l'innovation et les solutions pour les entreprises
@@ -89,7 +89,7 @@ DSM Strategy, investments, digitalisation of industry
 Digital Single Market
 
 15/03/2016
-Telco review and vectoring case.
+Telco review andvectoring case.
 
 22/03/2016
 DSM
@@ -215,7 +215,7 @@ Western Balkans Digital Agenda / Roaming roadmap
 Latest developments re EU-Western Balkans.
 
 04/07/2018
-Investments in networks, 5G and connected cars, Electronic Communication Code, e- privacy
+Investments in networks, 5G and connected cars, ElectronicCommunication Code, e- privacy
 
 04/07/2018
 GDPR, e-privacy
@@ -266,7 +266,7 @@ Update on trade and investment screening
 Chinese tech companites
 
 25/02/2019
-EU Telecoms regulatory framework, Radio Spectrum, ePrivacy, MFF, Digital Europe Program
+EU Telecoms regulatory framework, Radio Spectrum, ePrivacy, MFF,Digital Europe Program
 
 25/02/2019
 Cyber security
@@ -398,7 +398,7 @@ Digital technology in agriculture
 Digital aspects of EU Recovery and Resilience Facility
 
 28/05/2021
-Rural/digital transformation andachievements of EU digital targets
+Rural/digital transformation and achievements of EU digital targets
 
 08/06/2021
 Competition policy, digital
@@ -413,7 +413,7 @@ National RRF Plans /Digital Decade/ Industrial Strategy/Covid 19 Virtual meeting
 EU Recovery and Resilience Fund in the context of achieving the EU’s Digital Decade targets
 
 20/07/2021
-Matters within the digital portfolio
+Matters within the digitalportfolio
 
 14/10/2021
 Data privacy
@@ -443,7 +443,7 @@ Communication role and initiatives/activities of Vodafone in different sectors a
 Discuss the current agri- food context
 
 11/05/2022
-Presentation of the work of Vodafone's Foundation in relation to the situation in Ukraine.
+Presentation of the work of Vodafone's Foundation in relation tothe situation in Ukraine.
 
 10/06/2022
 Issues within Competition portfolio.
@@ -522,4 +522,16 @@ Upcoming EU legislation and challenges ahead
 
 04/02/2025
 Exchange of views on consumer protection
+
+03/03/2025
+Telecommunication sector and upcoming legislation
+
+05/03/2025
+European defence industry development
+
+09/04/2025
+Present the interest representatives’ view on EU competition and telecom policy
+
+24/04/2025
+Discussion on international topics of common interest
 

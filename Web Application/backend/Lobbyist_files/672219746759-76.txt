@@ -14,16 +14,16 @@ Artificial Intelligence Act.
 Meeting with CEO of OpenAI (topic: Artificial intelligence – technological developments, opportunities and risks)
 
 23/06/2023
-AI
-
-23/06/2023
 DSA
 
-26/09/2023
-Artificial intelligence Act and Artificial intelligence policy developments
+23/06/2023
+AI
 
 26/09/2023
 AI Act
+
+26/09/2023
+Artificial intelligence Act and Artificial intelligence policy developments
 
 01/11/2023
 Artificial intelligence
@@ -57,4 +57,28 @@ Discussion about second draft of the Code of Practice and current landscape for 
 
 30/01/2025
 Exchange of views on copyright and AI
+
+30/01/2025
+Exchange on AI policy and questions related to the AI Act and copyright.
+
+26/02/2025
+Discussion on the GPAI Code of Practice, and integration of AI on economy
+
+27/03/2025
+Artificial intelligence
+
+03/04/2025
+OpenAI’s feedback to the General-Purpose AI Code of Practice
+
+09/04/2025
+Exchange of views on artificial intelligence (AI) for Science Ares(2025) 3448652
+
+10/04/2025
+Artificial Intelligence
+
+10/04/2025
+Exchange of views on the expected evolution of technology, on the AI Continent Action Plan and on the Code of Practice
+
+10/04/2025
+Exchange of views on AI regulation
 

@@ -11,7 +11,7 @@ Digital Single Market
 TSM / DSM
 
 26/03/2015
-GSMA breakfast debate: Trust Across Borders and the Role of Mobile for e- ID and e-Signatures
+GSMA breakfast debate:Trust Across Borders and the Role of Mobile for e- ID and e-Signatures
 
 23/06/2015
 GSMA position
@@ -29,7 +29,7 @@ DSM
 Preparation of MWC in Barcelona, Feb 2016
 
 09/02/2016
-Preparation for VP'sparticipation in MWC, Barcelona
+Preparation for VP's participation in MWC, Barcelona
 
 22/02/2016
 Telco policies
@@ -38,10 +38,10 @@ Telco policies
 DSM
 
 23/02/2016
-Post-Davos, 5G, spectrum
+DSM Strategy, investments, digitalisation of industry
 
 23/02/2016
-DSM Strategy, investments, digitalisation of industry
+Post-Davos, 5G, spectrum
 
 02/03/2016
 Exchange of views on mobile telecoms market
@@ -83,10 +83,10 @@ Mobile World Congress
 GDPR, e-privacy
 
 26/02/2018
-Digital Single Market, Net Neutrality, Electronic Communications Code, 5G
+Code, ePrivacy, Net neutrality
 
 26/02/2018
-Code, ePrivacy, Net neutrality
+Digital Single Market, Net Neutrality, ElectronicCommunications Code, 5G
 
 10/07/2018
 Digital Strategy for Africa
@@ -128,7 +128,7 @@ MWC 2020
 Use of Location data
 
 29/06/2020
-Covid-19 disinformation and the role of Education
+Covid-19 disinformationand the role of Education
 
 09/09/2020
 Discussion with telecom operators on DSA
@@ -177,4 +177,13 @@ TO FOLLOW
 
 19/02/2025
 Updates on the processes of including Ukraine and Moldova into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+02/03/2025
+Opportunities and challenges in the telecoms sector
+
+02/03/2025
+Opportunities and challenges in the telecoms sector
+
+15/04/2025
+Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
 

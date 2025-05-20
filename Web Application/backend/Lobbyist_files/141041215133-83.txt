@@ -35,7 +35,7 @@ MiFID and CMU
 Introductory meeting, discussion on international cooperation and EU’s equivalence system.
 
 20/11/2018
-Introductory meeting, discussion on international cooperation and EU’s equivalence system
+Introductory meeting, discussion on international cooperationand EU’s equivalence system
 
 05/06/2019
 International role of the Euro
@@ -93,4 +93,10 @@ Energy markets
 
 31/01/2025
 Gas trading
+
+14/02/2025
+Dynamics on gas markets.
+
+24/04/2025
+EMIR 3 and SIU
 

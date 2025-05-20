@@ -14,7 +14,7 @@ Copyright, Platform regulation, music futures
 Intro meeting
 
 02/02/2015
-Presentation IFPI, importance of cultural/music industry to the European economy, wide availability of digital music
+Presentation IFPI, importance of cultural /music industry to the European economy, wide availability of digital music
 
 06/02/2015
 Commission Work Programme
@@ -68,7 +68,7 @@ Digital Single Market
 Digital Single Market
 
 18/05/2016
-Meeting with Mr Placido Domingo on Digital Single Market
+Meeting with Mr PlacidoDomingo on Digital Single Market
 
 19/05/2016
 copyright
@@ -95,16 +95,16 @@ Digital Single Market
 Value gap
 
 11/08/2016
-Copyright reform – valuegap
+Copyright reform – value gap
 
 30/08/2016
 Value gap
 
 01/09/2016
-copyright, value gap
+Copyright
 
 01/09/2016
-Copyright
+copyright, value gap
 
 02/09/2016
 Copyright
@@ -128,7 +128,7 @@ Digital Single Market
 Copyright
 
 16/02/2017
-Copyright refom in particular in the Value Gap, Platforms / Noticeand Action - The Commission review of Enforcement
+Copyright refom in particular in the Value Gap, Platforms / Notice and Action - The Commission review of Enforcement
 
 26/06/2017
 DSM Mid-term review, copyright
@@ -210,4 +210,10 @@ AI Act, copyright.
 
 18/02/2025
 Discussion on recent developments relevant for copyright and music industry
+
+03/03/2025
+Discussion on the challenges faced by music industry and technological and digital innovation, including the impact of generative artificial intelligence on artists.
+
+24/04/2025
+Exchange on copyright, including in relation to AI
 

@@ -65,7 +65,7 @@ Artificial intelligence /Technology/ Research and Innovation /Entrepreneurship
 Digital priorities of the new Commission
 
 20/02/2020
-the digital transformation of European industry, the regulation of artificial intelligence and the role of tech companies in achieving the goals of the European Green Deal
+the digitaltransformation of European industry, the regulation of artificial intelligence and the role of tech companies in achieving the goals of the European Green Deal
 
 20/02/2020
 General presentation of the activities of the Group
@@ -84,4 +84,13 @@ Digital issues
 
 22/06/2023
 Artificial Intelligence Act.
+
+18/03/2025
+Artificial intelligence
+
+18/03/2025
+DG CONNECT ongoing work on AI and Cloud
+
+30/04/2025
+Discuss different aspects related to AI policy relevant for SALESFORCE
 

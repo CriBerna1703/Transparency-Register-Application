@@ -50,10 +50,10 @@ Cybersecurity
 Women4Cyber
 
 28/01/2020
-Exchanges on the future of the Europe’s cybersecurity ecosystem, on priorities for research, youth education and Women4Cyber, as well as views on the possible evolution at European level of a Public Private Cooperation
+Cybersecurity overview
 
 28/01/2020
-Cybersecurity overview
+Exchanges on the future of the Europe’s cybersecurity ecosystem, on priorities for research, youth education and Women4Cyber, as well as views on the possible evolution at European level of a Public Private Cooperation
 
 08/05/2020
 Cybersecurity and ECSO's initiatives
@@ -66,4 +66,7 @@ Cybersecurity
 
 11/02/2025
 Update on ECSO's ongoing cybersecurity work and priorities.
+
+27/03/2025
+EU initiatives in the area of cybersecurity
 

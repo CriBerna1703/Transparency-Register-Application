@@ -8,10 +8,10 @@ Investment initiative
 Digital Single Market
 
 25/02/2015
-IPR and ICT sector
+Patents
 
 25/02/2015
-Patents
+IPR and ICT sector
 
 06/03/2015
 Digital Single Market - standards
@@ -35,13 +35,13 @@ Trade Policy
 Standard Essential Patents (SEP)
 
 13/10/2015
-Innovation Policy, Digital agenda and 5G
-
-13/10/2015
 DSM, TSM, investment, standarization
 
 13/10/2015
 5G
+
+13/10/2015
+Innovation Policy, Digital agenda and 5G
 
 14/10/2015
 Single Market, Innovation, Patents
@@ -50,10 +50,10 @@ Single Market, Innovation, Patents
 DSM
 
 23/02/2016
-DSM Strategy,investments, digitalisation of industry
+5G deployment strategy and investments
 
 23/02/2016
-5G deployment strategy and investments
+DSM Strategy, investments, digitalisation of industry
 
 22/03/2016
 DSM
@@ -71,10 +71,10 @@ Dual use
 Telecom situation in China
 
 19/10/2016
-Involvement of private sector in humanitarian aid
+EU competitiveness- related issues
 
 19/10/2016
-EU competitiveness- related issues
+Involvement of private sector in humanitarian aid
 
 27/10/2016
 energy consumption in telecommunication networks
@@ -83,16 +83,16 @@ energy consumption in telecommunication networks
 Standardisation
 
 08/12/2016
-Trade obstacles in China, India, US
+Investments and trade
 
 08/12/2016
-Investments and trade
+Trade obstacles in China, India, US
 
 20/12/2016
 Follow-up meeting on trade obstacles in China, India and US
 
 13/02/2017
-International IPRprotection
+International IPR protection
 
 27/02/2017
 stand visit at MWC
@@ -104,10 +104,10 @@ Digital Single Market, Investment
 Digital Single Market
 
 18/05/2017
-SEP Communication
+Standard essential patents
 
 18/05/2017
-Standard essential patents
+SEP Communication
 
 17/09/2017
 DSM, digital for development, broadband
@@ -143,10 +143,10 @@ Patent policy
 Standard Essential Patents
 
 25/06/2019
-Informal introductory meeting
+Digital Infrastructure
 
 25/06/2019
-Digital Infrastructure
+Informal introductory meeting
 
 23/08/2019
 5G deployment
@@ -158,16 +158,16 @@ digital sovereignty, cybersecurity, 5G
 discuss issues around 5G and the global competitive landscape
 
 27/05/2020
+Licensing of standard essential patents
+
+27/05/2020
+Licensing of standard essential patents
+
+27/05/2020
 Digital issues
 
-27/05/2020
-Licensing of standard essential patents
-
-27/05/2020
-Licensing of standard essential patents
-
 29/06/2020
-European global players in digital; 5G deployment conditions; foreign subsidies white paper; cloud adoption in Europe, switching possibilities, contestability of cloud markets - need for clear standards and security requirements; data governance.
+European global players in digital; 5G deployment conditions; foreign subsidies white paper; cloud adoption in Europe,switching possibilities, contestability of cloud markets - need for clear standards and security requirements; data governance.
 
 03/07/2020
 telecom/connectivité
@@ -227,10 +227,10 @@ initiative on standard- essential patents
 Standard essential patents (SEP)
 
 03/04/2023
-.
+Patent Package - SEPs
 
 03/04/2023
-Patent Package - SEPs
+.
 
 17/04/2023
 Standard Essential Patents
@@ -245,10 +245,10 @@ Global Gateway; digital transformation in partner countries. As part of her Euro
 Brief meeting with Nokia CEO in the context of the ‘Partnership for Global Infrastructure and Investment’ G7 initiative and Global Gateway, in the framework of the G7 Summit”
 
 13/06/2023
-Digitalisation shares and financing
+discussion on Global Gateway
 
 13/06/2023
-discussion on Global Gateway
+Digitalisation shares and financing
 
 24/10/2023
 Global Gateway
@@ -257,19 +257,19 @@ Global Gateway
 Meeting with Tuomas Korpela and Karol Mattila to discuss Defense, Space, Metaverse(s), Advanced Technologies, European Policies
 
 11/03/2024
-Team Europe and digital infrastructure. GG Flagships and HL events
+Global Gateway
 
 11/03/2024
-Global Gateway
+Team Europe and digital infrastructure. GG Flagships and HL events
 
 31/05/2024
 Courtesy meeting on the EU approach on defence sector.
 
 10/09/2024
-Preventing the circumvention of EU sanctions on sensitive goods
+High-level executiveroundtable: preventing the circumvention of EU sanctions on sensitive goods.
 
 10/09/2024
-High-level executive roundtable: preventing the circumvention of EU sanctions on sensitive goods.
+Preventing the circumvention of EU sanctions on sensitive goods
 
 16/10/2024
 new mandate and future of tel
@@ -281,8 +281,44 @@ Insight's on digital sector
 Current market developments and views on the future of the sector.
 
 16/01/2025
+Introduction of the company and discussion on the development of quantum technologies in Europe.
+
+16/01/2025
 Sharing reflections on Global Gateway cooperation and possible future partnerships.
 
 25/02/2025
 Exchange of views on the NOKIA’s activities in Quantum Technologies, with a focus on QKD, PQC, EuroQCI.
+
+06/03/2025
+Discussion on a possible 3rd IPCEI on Advanced Semiconductor Technologies and semiconductor needs of the telecom industry
+
+10/03/2025
+Finance for digitalisation in the current and the next Multiannual Financial Frameworks
+
+18/03/2025
+Advancing concrete technology solutions for a more competitive, resilient and secure Europe
+
+31/03/2025
+Build on the EU and LAC digital transformation partnership experience and discuss bi-regional opportunities and challenges for EU private sector investment on secure and meaningful connectivity within the EU-LAC Digital Alliance.
+
+31/03/2025
+Build on the EU and LAC digital transformation partnership experience and discuss bi-regional opportunities and challenges for EUprivate sector investment on secure and meaningful connectivity within the EU-LAC Digital Alliance.
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+01/04/2025
+Defense and connectivity
+
+11/04/2025
+Meeting with Nokia and MFA Finland on the Amazonia Verde - project
+
+24/04/2025
+Exchange on Nokia’s activities in third countries and on EU Tech diplomacy
+
+28/04/2025
+White Paper on the future of defence, Withdrawal of the Standard Essential Patents File, AI Infrastructure
+
+12/05/2025
+Exchange of views on the HPC, AI Factories, and AI Gigafactories initiatives
 

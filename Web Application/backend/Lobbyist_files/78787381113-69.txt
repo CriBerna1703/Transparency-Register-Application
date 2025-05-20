@@ -5,7 +5,7 @@ Priorities of the new Commission in the area of Financial Services
 Financial Services Policy 2015 especially capital markets union
 
 27/03/2015
-Réforme bancaire et stabilité financière enEurope
+Réforme bancaire et stabilité financière en Europe
 
 06/05/2015
 Securitisation
@@ -32,7 +32,7 @@ High-Level Group on Energy Infrastructure in Europe
 Règlementation bancaire
 
 13/01/2016
-Interview with Mr Peter de Keyzer writing a book on why and how European Nations have reformed their economy and labour markets
+Interview with Mr Peter de Keyzer writing a book on why and howEuropean Nations have reformed their economy and labour markets
 
 02/02/2016
 Fundamental Review of the Trading Book.
@@ -74,13 +74,13 @@ Blue Economy Financing Principles
 Investment in enegy efficiency and smartening of cities
 
 16/05/2017
-European External Investment Plan
-
-17/05/2017
-EBF Forum
+European ExternalInvestment Plan
 
 17/05/2017
 Financial services agenda
+
+17/05/2017
+EBF Forum
 
 29/11/2017
 CRR; FRTB
@@ -128,13 +128,13 @@ Basel III
 Basel 3.5 implementation
 
 27/04/2021
-MiFIR, EU/UK regulatoryand Secondary market liquidity
-
-28/04/2021
-Basel implementation
+MiFIR, EU/UK regulatory and Secondary market liquidity
 
 28/04/2021
 Open Strategic Autonomy
+
+28/04/2021
+Basel implementation
 
 05/05/2021
 Basel implementation, sustainable finance
@@ -170,10 +170,10 @@ MiFID/MiFIR
 economic outlook, Basel III, Banking Union
 
 11/10/2021
-Retail Investment Strategy
+Meeting with Jacques de Larosière, Adviser at BNP Paribas
 
 11/10/2021
-Meeting with Jacques de Larosière, Adviser at BNPParibas
+Retail Investment Strategy
 
 12/10/2021
 NGEU
@@ -191,10 +191,10 @@ G-SIB
 Capital Market Union Sustainability
 
 16/03/2022
-Discussion on the financing of the green transition.
+financial issues (?)
 
 16/03/2022
-financial issues (?)
+Discussion on the financing of the green transition.
 
 05/04/2022
 CCPs
@@ -209,37 +209,37 @@ Energy situation in the EU; financing of the green transition
 Basel III
 
 21/09/2022
-energy market liquidity measures
-
-21/09/2022
-BNP Paribas views on potential price caps andliquidity measures in the context of the energy crisis
-
-21/09/2022
 Energy market liquidity measures
+
+21/09/2022
+BNP Paribas views on potential price caps and liquidity measures in the context of the energy crisis
+
+21/09/2022
+energy market liquidity measures
 
 28/09/2022
 DTO CCPs
 
 09/11/2022
-Indian CCPs
-
-09/11/2022
 Preparation of the meeting between Commissioner McGuinness and the CEOs of French banks
 
-16/11/2022
-Transparent and standardised securitisation
+09/11/2022
+Indian CCPs
 
 16/11/2022
 Securitisation
+
+16/11/2022
+Transparent and standardised securitisation
 
 09/02/2023
 CMU
 
 20/02/2023
-CCP UK / India Retail Investment Strategy
+Banking Union / Retail Investment Strategy / Digital Euro
 
 20/02/2023
-Banking Union / Retail Investment Strategy / Digital Euro
+CCP UK / India Retail Investment Strategy
 
 22/09/2023
 MIFIR OTC derivatives identifiers, EU capital markets and their regulatory framework
@@ -251,10 +251,10 @@ EMIR 3 Indian CCPs, Settlement efficiency Retail Investment Strategy
 Energy transition
 
 13/12/2023
-Basel III standards' implementation
+Exchange of views on EU banking and finance policy, including the Basel III legislation.
 
 13/12/2023
-Exchange of views on EU banking and finance policy, including the Basel III legislation.
+Basel III standards' implementation
 
 21/12/2023
 financing renewable energy
@@ -293,5 +293,26 @@ Sustainable Finance Disclosure Regulation review
 Capital Requirements Regulation
 
 13/02/2025
-Discussion on level 2 measures on transparency requirements for equity and non-equity instruments, synchronisation of business clocks, transaction reporting and best execution
+Discussion on level 2 measures on transparency requirements for equity and non-equity instruments, synchronisation ofbusiness clocks, transaction reporting and best execution
+
+03/03/2025
+Meeting to discuss upcoming developments
+
+12/03/2025
+Financial services policy
+
+28/03/2025
+Greening Corporate Fleets
+
+28/03/2025
+Car leasing and decarbonisation agenda
+
+01/04/2025
+Omnibus and others
+
+10/04/2025
+Simplification (in the margins of Eurofi)
+
+28/04/2025
+Exchange of views on the Savings and Investments Union package and other topics
 

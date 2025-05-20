@@ -89,7 +89,7 @@ Meeting with the Task Force for the Preparation and Conduct of the Negotiations 
 FP9
 
 19/01/2018
-energy policydevelopments
+energy policy developments
 
 26/04/2018
 Energy policy
@@ -122,7 +122,7 @@ Green Deal, climate law, dialogues with 3rd countries, renewables.
 Climate law and green deal
 
 15/04/2020
-Risk-prepardness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for theupcoming energy initiatives under the Green Deal.
+Risk-prepardness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal.
 
 15/04/2020
 Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal
@@ -149,7 +149,7 @@ Clean Hydrogen alliance; fit for 55 package
 e-mobility
 
 03/06/2021
-Study on the role of hydrogen in the decarbonisation of steel sector
+Study on the role of hydrogen in the decarbonisation of steelsector
 
 07/06/2021
 Révision de la directive REDII.
@@ -194,7 +194,7 @@ Green Deal state of play
 Low-carbon hydrogen, response to the US IRA, nuclear energy developments
 
 02/02/2023
-Current EU energy situation, the Commissioner’s proposals around green deal industrial plan andelectricity market design and the role of nuclear energy.
+Current EU energy situation, the Commissioner’s proposals around green deal industrial plan and electricity market design and the role of nuclear energy.
 
 07/02/2023
 Electricity market reform, Temporary Crisis and Transition Framework & GBER, Security of energy supply
@@ -215,7 +215,7 @@ Energy crisis and Fit For 55
 Energy Market
 
 30/03/2023
-Availability of EDF’s nuclear and hydropower fleet, maintenance planning. Future role of nuclear energy. EDF’s RES production.
+Availability of EDF’s nuclear and hydropower fleet, maintenanceplanning. Future role of nuclear energy. EDF’s RES production.
 
 17/04/2023
 Energy market
@@ -224,7 +224,7 @@ Energy market
 Presentation of new business group
 
 04/05/2023
-Importance of hydropower in ensuring electricity system flexibility; Theapplication of the electricity market reform to hydropower; How to strengthen the visibility of hydropower as one of the key sources of renewable energy.
+Importance of hydropower in ensuring electricity system flexibility; The application of the electricity market reform to hydropower; How to strengthen the visibility of hydropower as one of the key sources of renewable energy.
 
 20/06/2023
 Energy market
@@ -287,7 +287,7 @@ Introductory meeting of CEO Luc Rémont
 ETS, clean industrial deal
 
 17/10/2024
-Present EDF vision for an optimal electricitysystem fit for a successful energy transition. Present the projects and innovations currently being developed and deployed in EDF various businesses.
+Present EDF vision for an optimal electricity system fit for a successful energy transition. Present the projects and innovations currently being developed and deployed in EDF various businesses.
 
 14/11/2024
 2040 climate target and conditions/drivers
@@ -304,6 +304,45 @@ Exchange views on the global and European market relating to reactors.
 23/01/2025
 Discussion H2 low carbon, RES deployment, Clean industrial deal with a focus on how to accelerate industrial electrification
 
+29/01/2025
+Presentation of EDF activities and priorities to support electrification
+
+29/01/2025
+Future of EU energy policy - discussion was with EDF's Belgian subsidiary Luminus
+
+06/02/2025
+Clean Industrial Deal
+
 12/02/2025
 Visit to the European Pressurized Reactor (EPR) at the Flamanville EDF Nuclear Power Plant
+
+13/03/2025
+Exchange of views on: - Clean industrial deal and perspectives for the decarbonisation bank - Energy-related funding under the post-2027 multiannual financial framework
+
+13/03/2025
+Action Plan for Affordable Energy and the upcoming Electrification Action Plan
+
+18/03/2025
+Échange entre EDF et la DG ENV sur la mise en œuvre des politiques environnementales européennes et les perspectives de collaboration sur la restauration de la nature, la résilience et les instruments financiers associés.
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+01/04/2025
+Exchange of views on the challenges and opportunities for renewable hydrogen development in Latin America and the Caribbean (LAC)
+
+04/04/2025
+EDF requested the meeting to discuss current and future nuclear decommissioning activities in Europe, as well as the EDF group's expertise in this field.
+
+07/04/2025
+* Electrification and Technological Neutrality * Innovation Fund * Decarbonization Bank * State aid Framework accompanying the Clean Industrial Deal (CISAF) * Low-Carbon Hydrogen DA
+
+07/04/2025
+Energy systems and electricity market in Europe.
+
+08/04/2025
+Wind energy, electrification, competitiveness, permitting, grids
+
+23/04/2025
+EU industrial and decarbonisation strategy
 

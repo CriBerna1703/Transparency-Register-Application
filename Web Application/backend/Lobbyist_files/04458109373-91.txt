@@ -44,10 +44,10 @@ Discussion Health Care Project
 rule of law support in the Western Balkans
 
 05/12/2018
-GDPR
+Audit reform, cybersecurity, sustainability reporting, digital skills, banking union
 
 05/12/2018
-Audit reform, cyber security, sustainability reporting, digital skills, banking union
+GDPR
 
 22/03/2019
 discussion on the implementation of the Plastic Strategy
@@ -62,7 +62,7 @@ Discussion on enhancing tax certainty and promoting fair tax structures
 Anti money laundering framework in the EU; Role of auditors in terms of Anti money laundering
 
 25/03/2020
-EY on financial services reactions to COVID-19, Reactions to ECBmeasures to prop up banks, Sovereign access and affordability
+EY on financial services reactions to COVID-19, Reactions to ECB measures to prop up banks, Sovereign access and affordability
 
 01/04/2020
 Overall Discussion on State Aids
@@ -86,7 +86,7 @@ UK, Trade and Cooperation Agreement, Regulatory cooperation
 Videoconference - Exchange on EU tax priorities
 
 12/03/2021
-Videoconference - Presentation of Pilot Project on the use of blockchain in tax administration
+Videoconference - Presentation of PilotProject on the use of blockchain in tax administration
 
 23/03/2021
 Sustainable finance, AML, digital
@@ -98,7 +98,7 @@ Prep possible participation of Commissioner at event
 Post Brexit landscape in banking
 
 17/09/2021
-Videoconference - Discussion on how innovative and emerging technologies are transforming customs services, and how data can be used for closingcustoms gap, classification, or certificates of origin.
+Videoconference - Discussion on how innovative and emerging technologies are transforming customs services, and how data can be used for closing customs gap, classification, or certificates of origin.
 
 10/11/2021
 Discussion converged on two points that would deserve specific follow- up from EY and DIGIT: - EY Neurodiversity Centre of Excellence (focus on inclusivity and equality) - EY Data Fabric project (in the context of the DIGIT's Data Platform)
@@ -110,7 +110,7 @@ Setting up a roundtable meeting with EY CBS representatives
 AI Act , Digital Services Act, Data Act
 
 13/12/2021
-Sustainable finance, Basel III
+Sustainable finance,Basel III
 
 18/01/2022
 Interview for EY Europe West Leadership meeting
@@ -174,4 +174,28 @@ Importance of vitamins and nutritional supplements in animal feed
 
 04/02/2025
 AMLA study results and Frankfurt Digital Finance Conference
+
+17/02/2025
+Physical meeting - Exchange with the European Tax Executive Study Group, organized by EY.
+
+25/02/2025
+European defence collaboration and priorities
+
+02/04/2025
+Presentation of EY Consulting understanding of DG AGRI’s key policies
+
+07/04/2025
+Omnibus proposal changes.
+
+08/04/2025
+State of play on US-EU trade relations
+
+08/04/2025
+State of play on US-EU trade relations
+
+29/04/2025
+Ernst & Young Global to present their activities with the Commission and discuss possible collaboration with DG EMPL
+
+05/05/2025
+Physical meeting - Presentation of latest works done by EY - measuring the tax gaps and the shadow economy.
 

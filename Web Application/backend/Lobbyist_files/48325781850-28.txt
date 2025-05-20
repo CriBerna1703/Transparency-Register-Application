@@ -68,7 +68,7 @@ SPC
 HTA
 
 17/07/2018
-Supplementary protection certificate, pharmaceuticals in the environment, AMR
+Supplementaryprotection certificate, pharmaceuticals in the environment, AMR
 
 25/10/2018
 Supplementary protection certificate
@@ -95,13 +95,13 @@ Next European Commission holistic strategy for access to off patent medicines; f
 Introduce themselves and present the manufacturers of generic medicines general position for the future Commission
 
 13/03/2020
-Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss possible shortages ofmedicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 20/03/2020
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 20/03/2020
-Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicinesand medical devices for the Covid-19 outbreak
 
 27/03/2020
 Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
@@ -113,13 +113,13 @@ Video call with Pharmaceutical Industrial Associations and the European Medicine
 Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 03/04/2020
-Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss Possible shortages ofmedicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 09/04/2020
 Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 17/04/2020
-Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control,to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 23/04/2020
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
@@ -128,13 +128,13 @@ Video call with Pharmaceutical Industrial Associations, the European Medicines A
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 29/04/2020
-Video call with Pharmaceutical IndustrialAssociations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 29/04/2020
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 08/05/2020
-Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations, theEuropean Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 15/05/2020
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
@@ -146,7 +146,7 @@ Video call with Pharmaceutical Industrial Associations, the European Medicines A
 Call with pharmaceutical and medical device industry associations on COVID-19
 
 29/06/2020
-Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicines and medical devicesincluding diagnostic tests in the context of COVID- 19 pandemic
+Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicines and medical devices including diagnostic tests in the context of COVID- 19 pandemic
 
 17/07/2020
 Exchange of views on the upcoming Pharmaceutical Strategy
@@ -176,7 +176,7 @@ Videoconference with Pharmaceutical Industry Associations to discuss shortages o
 Covid-19
 
 13/11/2020
-Upcoming Pharmaceutical strategy,links to digital technologies, data and competition.
+Upcoming Pharmaceutical strategy, links to digital technologies, data and competition.
 
 05/03/2021
 VC Meeting discussion on COVID-19 vaccines export authorisation scheme.
@@ -200,10 +200,10 @@ Exchange of views on the role of the generic and bio-similar industry under the 
 Supply security & production capacity for critical medicines and ingredients
 
 26/04/2022
-Meeting with representatives of Medicines for Europe
+Pharma Strategy
 
 26/04/2022
-Pharma Strategy
+Meeting with representatives of Medicines for Europe
 
 12/05/2022
 Exchange of views on the upcoming pharmaceutical strategy.
@@ -260,5 +260,14 @@ Preparation of participation of Olga Solomon in the Medicines for Europe Regulat
 Exchange of views on Pharma & IP Legislation Reform & possible anti- competitive practices in the pharmaceutical sector
 
 03/03/2025
+Urban Waste Water Treatment Directive
+
+03/03/2025
 Exchange of views on the future Critical Medicines Act
+
+04/03/2025
+• Critical Medicines Act • Urban Wastewater Treatment Directive
+
+30/04/2025
+Exchange of views on the EU pharma policy
 

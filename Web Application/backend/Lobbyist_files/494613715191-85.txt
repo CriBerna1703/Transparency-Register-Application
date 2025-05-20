@@ -119,10 +119,10 @@ Cybersecurity
 e-privacy regulation /follow-up
 
 27/06/2018
-GDPR, Privacy Shield
+Cybersecurity
 
 27/06/2018
-Cybersecurity
+GDPR, Privacy Shield
 
 12/10/2018
 Meeting with Ms Yoo, Senior Vice President
@@ -188,13 +188,13 @@ issues within Comp portfolio.
 meeting with the Green Digital Coalition - Main topic : state of play on sustainable digitalization
 
 30/11/2022
-Transatlanticrelationship, semiconductor supply chain, broadband roll-out, wireless spectrum, cybersecurity, skills and support for Ukraine.
-
-01/12/2022
-Digital Economy
+Transatlantic relationship, semiconductor supply chain, broadband roll-out, wireless spectrum, cybersecurity, skills and support for Ukraine.
 
 01/12/2022
 - the transatlantic relationship - the EU security/cybersecurity agenda - skills - support to Ukraine
+
+01/12/2022
+Digital Economy
 
 19/01/2023
 Public sector modernisation and cybersecurity
@@ -246,4 +246,16 @@ Discussion on the enabling role of digital technologies to double down on energy
 
 28/01/2025
 Role of WiFi technology in advanced connectivity
+
+17/02/2025
+Introductory meeting
+
+08/04/2025
+State of play on US-EU trade relations
+
+08/04/2025
+State of play on US-EU trade relations
+
+25/04/2025
+Second meeting of the European Startup and Scaleup Forum. Discussion on the draft building blocks of the EU Startup and Scaleup Strategy structured along the identified obstacles and possible solutions.
 

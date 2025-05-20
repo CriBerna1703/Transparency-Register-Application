@@ -5,7 +5,7 @@ ADVANCED BIO-FUELS
 Meeting on evaluation of the current cooperation (results of the petroleum refineries fitness check, well to wheel project) and discussion on future scientific challenges in the areas of alternative fuels and genotoxicology and fuels.
 
 09/01/2015
-STATE OF PLAY AND OUTLOOK FOR THE EUROPEAN REFINERIESSECTOR, COMMISSION PRIORITIES IN ENERGY AND CLIMATE POLICY
+STATE OF PLAY AND OUTLOOK FOR THE EUROPEAN REFINERIES SECTOR, COMMISSION PRIORITIES IN ENERGY AND CLIMATE POLICY
 
 09/03/2015
 ILUC directive
@@ -68,7 +68,7 @@ Renewables
 Palm Oil Sustainability, RED, Indonesia.
 
 05/06/2018
-plastic strategy, and Neste's presentation on bio-based solutions promoting circularity
+plastic strategy, and Neste's presentation onbio-based solutions promoting circularity
 
 18/10/2018
 Bio-economy
@@ -152,7 +152,7 @@ Sustainable aviation fuels
 SAF
 
 23/02/2021
-Discussion of EU action to reduce greenhouse gas emissions throughdecarbonisation of European transport, including the upcoming revision of the Renewable Energy Directive (RED II).
+Discussion of EU action to reduce greenhouse gas emissions through decarbonisation of European transport, including the upcoming revision of the Renewable Energy Directive (RED II).
 
 24/02/2021
 SAF
@@ -219,4 +219,7 @@ Investments in sustainable liquid fuels production in the EU
 
 21/01/2025
 Level playing field for renewable aviation fuels
+
+27/03/2025
+Exchange of views on the Bioeconomy Strategy and bioplastics
 

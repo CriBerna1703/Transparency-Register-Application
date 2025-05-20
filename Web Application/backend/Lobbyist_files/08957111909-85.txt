@@ -182,7 +182,7 @@ mobile standard 5G and electromagnetic field emissions
 EMF and current feedback from EU markets on the issue
 
 02/12/2019
-Meeting with CEOs in the Telecom sector
+Meeting with CEOs in theTelecom sector
 
 21/01/2020
 Data, 5G, cybersecurity, roaming, connected mobility
@@ -212,7 +212,7 @@ Digital affairs
 ETNO position on the NIS Directive review
 
 19/01/2021
-Broadband cost reduction, digital identity, ePrivacy, Digital Decade /Digital Compass, 5G action plan, Green taxonomy, Open RAN
+Broadband cost reduction, digital identity, ePrivacy, Digital Decade / Digital Compass, 5G action plan, Green taxonomy, Open RAN
 
 01/07/2021
 Latest developments and the work in progress regarding the Trade and Technology Council (TTC)
@@ -267,4 +267,10 @@ Discussion on planned initiatives in the area of connectivity
 
 13/02/2025
 Exchange of views on the topics of fraud and role of electronic communication service providers (ECSPs) in the context of the Payment Services package.
+
+07/04/2025
+Exchange of views on consumer protection
+
+15/04/2025
+Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
 

@@ -23,7 +23,7 @@ Energy Efficiency
 Keynote speech : powering the European Green Deal
 
 12/03/2020
-Energy initiatives in the Commission work programme, upcoming tertiary acts. Flexibility, energy efficiency, systems efficiency in the climate neutrality transition
+Energy initiatives in the Commission work programme, upcoming tertiary acts. Flexibility, energy efficiency,systems efficiency in the climate neutrality transition
 
 27/10/2020
 Business and investor support for higher ambition and the just transition
@@ -41,7 +41,7 @@ US-EU Task Force Convening: energy efficiency and energy savings. The California
 Energy efficiency, electricity market reform
 
 20/01/2023
-U.S.-EU Task Force: Best practices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California EnergyCommission, ASE, AEE, ComEd, Octopus Energy, OPower, Uplight
+U.S.-EU Task Force: Best practices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California Energy Commission, ASE, AEE, ComEd, Octopus Energy, OPower, Uplight
 
 03/04/2023
 Discussion on how to strengthen the EU-US cooperation to increase the deployment of renewables.
@@ -81,4 +81,10 @@ Presentation of the Electrification Alliance Position Paper and exchanging views
 
 30/01/2025
 Affordable Energy action Plan
+
+03/04/2025
+Exchange of views on demand side flexibility
+
+07/04/2025
+Clean Industrial Deal, Electrification Action Plan, Affordable Energy Plan, CISAF
 

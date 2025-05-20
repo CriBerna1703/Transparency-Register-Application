@@ -17,7 +17,7 @@ Prepaid cards fraud
 Combatting terrorist financing
 
 28/01/2016
-Action against terroristfinancing/Prepaid cards
+Action against terrorist financing/Prepaid cards
 
 03/02/2016
 Combating terrorist financing
@@ -62,7 +62,7 @@ EU Payments and Capital Markets Union
 EU Payments and Capital Markets Union
 
 18/09/2019
-Latest developments inthe payments field.
+Latest developments in the payments field.
 
 20/09/2019
 Mastercard regulatory focusses and priorities
@@ -125,7 +125,7 @@ Physical meeting - Introductory meeting and exchange of view on main challenges 
 Trade Policy, digital transition.
 
 21/02/2023
-Exchange views on digital transition and in particular on financial sector.
+Exchange views ondigital transition and in particular on financial sector.
 
 21/03/2023
 Exchange of views on economic outlook and financial services
@@ -137,25 +137,25 @@ Meeting with Mastercard CEO to discuss Diversity in the workplace
 Ukraine, cyber-resilience and skills, combatting child sexual abuse online
 
 23/03/2023
-Exchange of views on theEuropean payments landscape and preparing for CEO visit
+Exchange of views on the European payments landscape and preparing for CEO visit
 
 12/04/2023
 Digital euro, Crypto finance
 
 11/05/2023
-EU SME policies
+EU payment system, digital means of payment and the digital euro.
 
 11/05/2023
-EU payment system, digital means of payment and the digital euro.
+EU SME policies
 
 16/05/2023
 digital transition
 
 24/05/2023
-Courtesy visit
+Digital Euro, PSD2 review, and sanctions
 
 24/05/2023
-Digital Euro, PSD2 review, and sanctions
+Courtesy visit
 
 25/05/2023
 payments, digital transformation
@@ -173,7 +173,7 @@ Inclusion and diversity
 Digital Payments
 
 11/10/2023
-Approach to GDPR and Data Responsibility, Artificial intelligence act,Mastercard's European footprint
+Approach to GDPR and Data Responsibility, Artificial intelligence act, Mastercard's European footprint
 
 24/10/2023
 Economy, digital resilience, digital euro
@@ -195,4 +195,16 @@ Presentation by Mastercard of their activity in data collection and cooperation 
 
 14/02/2025
 Meeting in the margins of the Munich Cyber Security Conference on EU cybersecurity priorities and the role of public-private partnerships.
+
+18/02/2025
+Presentation of Mastercard’s activities with a view to SMEs and potential link to the work of the European Commission
+
+18/02/2025
+Competitiveness and cybersecurity and digital agenda in the European Union
+
+06/03/2025
+General catch-up on payments priorities and files
+
+25/03/2025
+Discussion on the Financial Information Data Access proposal (FIDA) and the AI framework
 

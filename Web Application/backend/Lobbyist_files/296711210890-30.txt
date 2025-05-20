@@ -11,7 +11,7 @@ PEPP initiative
 Commission’s PEPP consultation
 
 14/11/2016
-US election and its geopolitical consequences, relationship between EU and USA, global investment funds
+US election and its geopolitical consequences,relationship between EU and USA, global investment funds
 
 29/11/2016
 financial services agenda
@@ -50,7 +50,7 @@ Sustainable finance, Capital Markets Union
 EC Priorities for 2022 CMU sustainable finance MMFs RIS
 
 09/06/2022
-Sustainable finance, CSDDD
+Sustainable finance,CSDDD
 
 30/06/2022
 Investment fund regulation
@@ -80,7 +80,7 @@ RIS, SFDR and financial stability
 Non-Bank Financial Intermediation (NBFI)
 
 23/04/2024
-CMU in general.Retail investment Strategy and Macroprudential Stability.
+CMU in general.Retailinvestment Strategy and Macroprudential Stability.
 
 19/06/2024
 CMU
@@ -96,4 +96,13 @@ Exchange on the Savings and Investments Union
 
 20/02/2025
 Exchange of views on the Savings and Investment Union
+
+21/02/2025
+Economic situation in the US and the EU
+
+21/03/2025
+ICI presented their views on successful features of savings and investment accounts and successful international examples such as NISA and 401k /IRA. Potential benefits of investment accounts beyond just tax incentives were discussed.
+
+27/03/2025
+Roundtable on the SIU Communication and its implications for the Asset Management Sector
 

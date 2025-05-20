@@ -59,7 +59,7 @@ Planning future event
 Energy Intensive Industries, ETS, HLG EII
 
 29/05/2015
-Steel market and trade policy
+Steel market and tradepolicy
 
 17/06/2015
 The role of the steel sector within the Energy intensive industrie
@@ -77,16 +77,16 @@ Market Economy Status China.
 Discuss findings of AEGIS (Eurofer & Euralliages) assessment
 
 17/09/2015
-EU-China trade relations
-
-17/09/2015
-Presentation of a study
-
-17/09/2015
 Market economy status for China
 
 17/09/2015
 AEGIS presenting new study on consequences of granting MES to China
+
+17/09/2015
+EU-China trade relations
+
+17/09/2015
+Presentation of a study
 
 22/09/2015
 anti-dumping on steel
@@ -476,7 +476,7 @@ To discuss issues relevant for the decarbonisation of the EU steel industry and 
 Global Arrangement for Sustainable Steel and Aluminum
 
 07/07/2023
-ETS reform implementation ; overview of the situation for the steel sector
+ETS reform implementation ; overview of the situationfor the steel sector
 
 22/09/2023
 Physical meeting - Meeting on CBAM
@@ -491,7 +491,7 @@ Roundtable with associations of industrial users
 A Breakfast Debate on Green Steel and Just Transition to avoid deindustrialisation.
 
 16/02/2024
-Physical meeting -Exchange on CBAM
+Physical meeting - Exchange on CBAM
 
 12/03/2024
 1. Current economic and trade situation in the steel sector 2. Global Arrangement on Sustainable Steel and Aluminium 3. EU steel safeguards
@@ -514,8 +514,11 @@ Discussion on Transition Pathway for Metals
 06/11/2024
 Competitiveness and energy transition
 
+17/01/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
 27/01/2025
-Discussion on the challenges faced by the steel industry and the needed policy interventions
+Discussion on the challenges faced by the steel industry and theneeded policy interventions
 
 04/02/2025
 To hear interest representatives’ view on state of play in the steel industry.
@@ -532,6 +535,57 @@ To discuss solutions aimed at keeping steel sector competitive and bringing forw
 20/02/2025
 Exchange of views on the policy design and implementation of the Carbon Border Adjustment Mechanism (CBAM) for steel imports.
 
+27/02/2025
+Steel sector crisis and engagement of the industry in future R&I initiatives.
+
 28/02/2025
 European and global steel markets
+
+04/03/2025
+Discussion on preparation of the steel and metals action plan with social partners
+
+07/03/2025
+Discuss climate relevant issues for the Steel and Metals Action Plan and the CID
+
+13/03/2025
+Metals Action Plan
+
+13/03/2025
+Exchange of views on the current challenges of the steel industry and on thedraft new State aid Framework accompanying the Clean Industrial Deal Communication (‘CISAF’)
+
+14/03/2025
+CBAM
+
+14/03/2025
+Meeting ahead of the publication of the Steel and Metals Action Plan
+
+14/03/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+14/03/2025
+EUROFER concerns and proposals presented regarding the forthcoming Steel and Metals Action Plan.
+
+14/03/2025
+EUROFER concerns and proposals presented regarding the forthcoming Steel and Metals Action Plan.
+
+14/03/2025
+EUROFER concerns and proposals presented regarding the fortcoming Steel and Metals Action Plan.
+
+17/03/2025
+Physical meeting - Exchange of views onCBAM
+
+17/03/2025
+Steel and Metals Action Plan
+
+24/03/2025
+Current situation of the European Steel industry and key policy needs
+
+03/04/2025
+Surveillance
+
+10/04/2025
+Impact of US tariffs
+
+29/04/2025
+Steel industry and its challenges
 

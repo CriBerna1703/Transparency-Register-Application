@@ -56,10 +56,10 @@ connected & automated driving and decarbonisation of transport
 decarbonisation of transport
 
 15/09/2016
-Energy policy
+Energy Efficiency
 
 15/09/2016
-Energy Efficiency
+Energy policy
 
 19/10/2016
 European Strategy for Low-emission Mobility
@@ -222,4 +222,22 @@ Exchange on mobility operations
 
 16/01/2025
 Future of the automotive sector
+
+12/02/2025
+Future of the automotive sector
+
+19/02/2025
+Dialogue on the future of the automotive sector – Suppliers Session
+
+24/03/2025
+Automotive Industrial Action Plan with : - NXP - Infineon - STMicroelectronics - Bosch
+
+03/04/2025
+Trade relations and economic security
+
+03/04/2025
+Exchange on the implications of recent US trade measures and the broader geopolitical environment on the European semiconductor industry
+
+15/04/2025
+Implementation of the Automotive Industrial Action Plan with : - NXP - Infineon - STMicroelectronics - Bosch - Axelera AI
 

@@ -86,10 +86,10 @@ Banking Union: Banking Package and EDIS; non- performing loans (NPLs)
 MFF
 
 13/12/2018
-Banking package
+banking union
 
 13/12/2018
-banking union
+Banking package
 
 20/03/2019
 Future of Europe
@@ -134,10 +134,10 @@ Retail Investment Strategy
 Retail investment strategy. ETFs.
 
 10/02/2023
-crisis management and deposit insurance framework
+Crisis management and deposit insurance framework
 
 10/02/2023
-Crisis management and deposit insurance framework
+crisis management and deposit insurance framework
 
 09/03/2023
 Sustainability and its effects not only on the finance industry
@@ -183,4 +183,13 @@ Upcoming topics in sustainable finance
 
 04/02/2025
 Banking Union/third pillar
+
+05/03/2025
+To discuss the Commission’s simplification agenda and explore possible approaches for constructive contributions from the financial sector.
+
+17/03/2025
+Savings and Investment Union
+
+07/04/2025
+Role of the private banking sector to better support the security and defence industry
 

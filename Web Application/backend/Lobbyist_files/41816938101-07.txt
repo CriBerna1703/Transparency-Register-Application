@@ -137,7 +137,7 @@ European Green Deal
 Discussion on the Green Deal and Climate Law
 
 15/04/2020
-Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for theupcoming energy initiatives under the Green Deal
+Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal
 
 15/04/2020
 Risk-prepardness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal.
@@ -152,13 +152,13 @@ Exchange of views on energy system integration and hydrogen strategies.
 Discussion on Green Recovery
 
 20/10/2020
-Discussion on the future adoption of the Offshore Renewable Energy Strategy. Presentation of the sector coordinated by Wind Europe.
+Discussion on the future adoption of the OffshoreRenewable Energy Strategy. Presentation of the sector coordinated by Wind Europe.
 
 10/11/2020
 Green Deal, Iberdrola strategic plan on clean energy investments including in renewable energy and hydrogen, economic recovery
 
 10/11/2020
-Green Deal, Iberdrola strategic plan on clean energy investmentsincluding in renewable energy and hydrogen, economic recovery
+Green Deal, Iberdrola strategic plan on clean energy investments including in renewable energy and hydrogen, economic recovery
 
 01/12/2020
 EU Green Bond Standard
@@ -182,7 +182,7 @@ Spike of energy prices and EC's toolbox, Fit-for- 55 proposals and EU taxonomy.
 Energy prices and RePowerEU
 
 30/03/2022
-Discussion on Solar Power Europe views on how to boost the manufacturing and deployment of solar PVs in the EU.
+Discussion on Solar Power Europe views on how to boost the manufacturing anddeployment of solar PVs in the EU.
 
 07/04/2022
 Meeting with CEO Alliance on Digitising Energy Action Plan
@@ -203,10 +203,10 @@ To discuss maritime spatial planning (MSP), co-existence and multi- use of the s
 Renewable energy
 
 02/02/2023
-Electricity Market Design
+Hydrogen bank proposal and the Green Deal Industrial Plan
 
 02/02/2023
-Hydrogen bank proposal and the Green Deal Industrial Plan
+Electricity Market Design
 
 09/02/2023
 Electricity market design.
@@ -224,7 +224,7 @@ To discuss the Commission initiatives as regards fast-tracked permitting of rene
 Presentation of new business group
 
 04/05/2023
-Importance ofhydropower in ensuring electricity system flexibility; The application of the electricity market reform to hydropower; How to strengthen the visibility of hydropower as one of the key sources of renewable energy.
+Importance of hydropower in ensuring electricity system flexibility; The application of the electricity market reform to hydropower; How to strengthen the visibility of hydropower as one of the key sources of renewable energy.
 
 12/05/2023
 Discussion on the implementation of REPower EU objectives in Portugal.
@@ -252,4 +252,19 @@ Charting the future of European green competitiveness.
 
 21/02/2025
 Discussion on grids and the Affordable Energy Action Plan
+
+11/03/2025
+Energy situation in US and Europe
+
+19/03/2025
+Exchange of views on international tax issues
+
+31/03/2025
+Electrification of energy- intensive industry
+
+01/04/2025
+In the context of the EU- LAC Global Gateway Investment Agenda, the European Commission’s Directorate-General for International Partnerships (DG INTPA) launches an initiative with a view to develop circular economy value chains in Latin America
+
+23/04/2025
+Greening Corporate Fleet
 

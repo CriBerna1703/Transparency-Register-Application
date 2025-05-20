@@ -8,7 +8,7 @@ Introductory meeting
 Copernicus, Galileo
 
 18/03/2015
-Earth observation and2030
+Earth observation and 2030
 
 18/11/2015
 Presentation of the company, Galileo and Copernicus programmes, launchers.
@@ -17,7 +17,7 @@ Presentation of the company, Galileo and Copernicus programmes, launchers.
 Space Strategy for Europe
 
 11/02/2016
-Space Strategy; Future of GNSS; OHB satellites and services provision
+Space Strategy; Future ofGNSS; OHB satellites and services provision
 
 15/02/2016
 Space policy issues
@@ -105,4 +105,10 @@ tbc
 
 30/01/2025
 Collaboration on Space- Based Climate Solutions, Digital Twins, and GHG Data
+
+10/02/2025
+Meeting with representatives of German security and defence industry
+
+03/03/2025
+Meeting INTPA/OHB - Cooperation on satellite connectivity in Kazakhstan
 

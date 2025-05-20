@@ -2,7 +2,7 @@
 ENERGY UNION
 
 02/12/2014
-Information meeting on Investment plan and itslinks to Energy and Transport
+Information meeting on Investment plan and its links to Energy and Transport
 
 02/12/2014
 EU Investment Plan
@@ -212,13 +212,13 @@ Artificial intelligence and its use in the financial sector
 Artificial intelligence and its use in the financial sector
 
 11/11/2020
-Introductory Meeting and general discussion onbanking regulation.
+Introductory Meeting and general discussion on banking regulation.
 
 19/11/2020
 SURE, MFF, NextGenerationEU
 
 27/11/2020
-Future of Payments in Europe
+Future of Payments inEurope
 
 17/12/2020
 Derivatives Trading Obligation and Brexit
@@ -287,7 +287,7 @@ CCPs
 Retail Investment Strategy
 
 19/01/2023
-Retail InvestmentStrategy
+Retail Investment Strategy
 
 02/02/2023
 CCPs
@@ -320,7 +320,7 @@ Indian CCPS
 Energy transition
 
 06/12/2023
-Digital euro andequivalence decision on Indian CCPs
+Digital euro and equivalence decision on Indian CCPs
 
 18/01/2024
 Meeting with CEO Deutsche Bank
@@ -350,7 +350,7 @@ Financing of the decarbonization
 outlook for European (investment) banks
 
 10/09/2024
-High-level executive roundtable: preventing the circumvention of EU sanctions on sensitive goods.
+High-level executive roundtable: preventingthe circumvention of EU sanctions on sensitive goods.
 
 10/09/2024
 Preventing the circumvention of EU sanctions on sensitive goods
@@ -373,6 +373,12 @@ Outcomes of COP29, outlook for COP30
 10/01/2025
 EMIR
 
+28/01/2025
+Omnibus
+
+28/01/2025
+Simplification, Omnibus
+
 29/01/2025
 Fraud
 
@@ -387,4 +393,13 @@ Theme of the meeting: exchange on the global and European economic outlook.
 
 13/02/2025
 Discussion on level 2 measures on transparency requirements for equity and non-equity instruments, synchronisation of business clocks, transaction reporting and best execution
+
+25/02/2025
+Financial sector on defence, investment policies, EU regulatory framework
+
+12/03/2025
+Meeting of the South America Critical Raw Materials (CRM) Coalition of the Willing – Dialogue with private and public sector stakeholders, and financial institutions on sustainable critical raw materials value chains in Latin America.
+
+03/04/2025
+Exchange of views on the FIDA proposal and the AI Act
 

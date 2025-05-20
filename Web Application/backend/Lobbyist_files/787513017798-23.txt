@@ -41,16 +41,16 @@ IPR/Standards problems in China
 5G and Internet of Things, SEP and standardization
 
 26/05/2020
-A discussion against the backdrop of the recent Industrial Strategy and the Digital Strategy, focusing on the development of strategic capacities and key digital infrastructure such as 5G in the EU.
+A discussion against the backdrop of the recent Industrial Strategy and the Digital Strategy, focusing on thedevelopment of strategic capacities and key digital infrastructure such as 5G in the EU.
 
 04/11/2020
 Digital issues
 
 04/03/2022
-How to best contribute to EU’s political, economic, technological and geo- political objectives in the context of ongoing and upcoming policy and legislative initiatives
+Protection of intellectual property
 
 04/03/2022
-Protection of intellectual property
+How to best contribute to EU’s political, economic, technological and geo- political objectives in the context of ongoing and upcoming policy and legislative initiatives
 
 31/08/2022
 Discussion on strategic foresight
@@ -69,4 +69,7 @@ Exchange of views on 6G mobile technology development
 
 05/02/2025
 Challenges of the standardization and technologies for wireless and video standards in the EU in context of simplification.
+
+27/03/2025
+EU tech competitiveness agenda and standardization policy
 

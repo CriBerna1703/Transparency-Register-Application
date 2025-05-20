@@ -182,7 +182,7 @@ Roundtable - Cloud Alliance
 OpenRAN. Cybersecurity.
 
 12/02/2021
-Meeting with SVP & CTOEricsson
+Meeting with SVP & CTO Ericsson
 
 19/02/2021
 Latest news in technology
@@ -248,7 +248,7 @@ Digital issues
 Telecom policy
 
 20/09/2023
-Standardization & Standard Essential Patent
+Standardization &Standard Essential Patent
 
 12/10/2023
 Digital connectivity in third countries
@@ -313,6 +313,9 @@ Ericsson’s views on Clean Industrial Deal, sustainable networks EU Code of Con
 15/01/2025
 Competitiveness of EU economy in current global context
 
+15/01/2025
+Competitiveness of EU economy in current global context
+
 22/01/2025
 Economic State of play of sector
 
@@ -330,4 +333,19 @@ Standard Essential Patents
 
 14/02/2025
 Discussion on secure connectivity in third countries
+
+04/03/2025
+Commission priorities in technology policy
+
+04/03/2025
+Commission priorities in technology policy
+
+11/03/2025
+Exchange on the international tech landscape and Ericsson’s activities in third countries
+
+18/03/2025
+State of play on EU-US trade relations
+
+14/04/2025
+Discussion on recent and upcoming EU initiatives on Artificial Intelligence (AI), advanced connectivity, cloud and semi- conductors.
 

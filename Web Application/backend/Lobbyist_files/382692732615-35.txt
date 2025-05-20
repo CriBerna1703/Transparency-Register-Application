@@ -26,7 +26,7 @@ Gas Distribution for Sustainability
 Gas grids: a key enabler of decarbonisation Discuss the Energy Efficiency Directive the TEN-E Regulation and proposals to reduce methane emissions and leaks in the natural gas value chain.
 
 12/10/2021
-Presentation of GD4SWhite Paper on the role of gas networks as key enabler of the EU's energy transition.
+Presentation of GD4S White Paper on the role of gas networks as key enabler of the EU's energy transition.
 
 08/11/2021
 Gas market and security of supply framework.
@@ -54,4 +54,7 @@ Renewable gasses
 
 12/12/2023
 Using biomethane and renewable gases as key to unlocking the full potential of the grid as a key enabler of EU decarbonisation
+
+13/05/2025
+Dialogue on heating decarbonisation and grid development
 

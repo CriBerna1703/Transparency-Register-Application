@@ -5,7 +5,7 @@ European Internal Energy Market
 digitising energy
 
 06/09/2022
-Short-term and long- term markets for the trading of power andgas, as well as related commodities such as emission allowances
+Short-term and long- term markets for the trading of power and gas, as well as related commodities such as emission allowances
 
 08/09/2022
 Winter preparedness
@@ -24,4 +24,7 @@ future of the European ETS
 
 11/07/2024
 MiFID commodity review
+
+28/03/2025
+Review of the functioning of EU commodity derivatives markets
 

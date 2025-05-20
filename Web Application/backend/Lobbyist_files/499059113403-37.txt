@@ -56,10 +56,10 @@ Energy situation in the EU; financing of the green transition
 European Commission retail investment strategy
 
 19/04/2023
-Sustainable finance,retail investment
+Sustainable finance, retail investment
 
 20/04/2023
-Sustainable finance; retail investment strategy
+Sustainable finance;retail investment strategy
 
 20/04/2023
 the upcoming open finance and mobility data space initiatives
@@ -81,4 +81,7 @@ Sustainable European Investment Plan
 
 27/01/2025
 Cybersecurity insurance; use of AI in cybersecurity; incident reporting obligations in EU legislation; AI liability Directive
+
+13/05/2025
+Artificial intelligence
 

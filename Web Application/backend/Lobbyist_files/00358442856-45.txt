@@ -74,7 +74,7 @@ DSM
 standardisation, IoT, 5G
 
 27/09/2016
-5G, IoT, standards andinteroperability
+5G, IoT, standards and interoperability
 
 27/09/2016
 DSM
@@ -86,16 +86,16 @@ Working lunch on Telecom reforms and roaming
 DSM, 5G
 
 15/02/2017
-Standardisation and licensing in 3rd countries and the EU
-
-15/02/2017
-Global challenges for standard setting, 5G development and Internet of things
+standards and connected cars
 
 15/02/2017
 Research and Innovation
 
 15/02/2017
-standards and connected cars
+Standardisation and licensing in 3rd countries and the EU
+
+15/02/2017
+Global challenges for standard setting, 5G development and Internet of things
 
 10/10/2017
 Standard Essential Patents
@@ -134,10 +134,10 @@ Future outlook on 5G and Digital Single Market
 Commission future agenda on 5G, AI and cloud
 
 05/02/2020
-Digital policy, 5G
+Digital Policy
 
 05/02/2020
-Digital Policy
+Digital policy, 5G
 
 24/04/2020
 Telecoms/Digital issues
@@ -186,4 +186,16 @@ Competition and digital issues
 
 14/01/2025
 First contact and invitation for meeting in Davos
+
+04/03/2025
+Commission priorities in technology policy
+
+26/03/2025
+Presentation of the company and sharing of company views on recent regulatory developments
+
+01/04/2025
+Global industrial developments on AI and semiconductors
+
+01/04/2025
+Qualcomm business and EU policy developments
 

@@ -116,13 +116,13 @@ Copyright
 Copyright
 
 17/01/2020
-newspaper/magazine sectoral developments, platform distribution, ePrivacy, digital services
+newspaper/magazine sectoral developments,platform distribution, ePrivacy, digital services
 
 24/02/2020
 Digital policy
 
 17/04/2020
-Economic impact ofCOVID-19
+Economic impact of COVID-19
 
 28/04/2020
 Discussion on numeric
@@ -161,10 +161,10 @@ E-Privacy Regulation
 digital levy
 
 07/10/2021
-Digital Services Act, Digital Markets Act
+Media remuneration in DMA
 
 07/10/2021
-Media remuneration in DMA
+Digital Services Act, Digital Markets Act
 
 15/03/2022
 Media Freedom Act
@@ -198,4 +198,22 @@ Opening Session: DSA roundtable discussions on online advertising (Article 46 DS
 
 24/02/2025
 Introductory meeting
+
+04/03/2025
+Code of Conduct on Online Advertising – Workshop 1
+
+06/03/2025
+Exchange of views on the Democracy Shield, the Digital Fairness Act and European Media Freedom Act
+
+06/03/2025
+Code of Conduct on Online Advertising – Workshop 2
+
+07/03/2025
+Competition policy and DMA and the European press sector
+
+13/03/2025
+Code of Conduct on Online Advertising – Workshop 3
+
+19/03/2025
+Code of Conduct on Online Advertising – Workshop 4
 

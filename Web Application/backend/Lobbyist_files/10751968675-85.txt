@@ -8,7 +8,7 @@ Digital Single Market
 cyber-security
 
 13/03/2017
-Cybersecurity, DSM mid-term review
+Cybersecurity, DSM mid- term review
 
 25/09/2017
 Cybersecurity
@@ -50,7 +50,7 @@ Roundtable on Processors
 Semiconductors - 2030 Digital Compass Communication
 
 26/03/2021
-ipcei microelectronics (virtual)
+ipcei microelectronics(virtual)
 
 13/04/2021
 Industrial and trade policy
@@ -96,4 +96,31 @@ Private roundtable on how to handle EU dependency for critical inputs such as se
 
 15/02/2025
 Competitiveness of EU semiconductor industry
+
+24/03/2025
+Automotive Industrial Action Plan with : - NXP -Infineon - STMicroelectronics - Bosch
+
+27/03/2025
+Preparation of meeting of EVP Virkkunen with European Semiconductor Industry Association (ESIA) on 3 April
+
+31/03/2025
+EU trade agenda and transatlantic relations
+
+31/03/2025
+Discussion on Chips Act 2.0 and future development in transatlantic trade relations
+
+03/04/2025
+Trade relations and economic security
+
+03/04/2025
+Exchange on the implications of recent US trade measures and the broader geopolitical environment on the European semiconductor industry
+
+08/04/2025
+Exchange on semiconductor business outlook and challenges
+
+15/04/2025
+Implementation of the Automotive Industrial Action Plan with : - NXP - Infineon - STMicroelectronics - Bosch - Axelera AI
+
+30/04/2025
+Exchange on semiconductor outlook
 

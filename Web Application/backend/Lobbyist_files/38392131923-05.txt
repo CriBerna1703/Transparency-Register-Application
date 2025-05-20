@@ -11,7 +11,7 @@ Telecom review
 Telco review
 
 07/12/2016
-European Electronic Communications Code,Roaming, NN
+European Electronic Communications Code, Roaming, NN
 
 27/02/2017
 5G, roaming, spectrum, investment consolidation
@@ -39,4 +39,7 @@ Telecom policy
 
 14/01/2025
 To hear interest representatives’ view on EU competition and telecom policy, and perspectives on clean, just, and competitive transition policies.
+
+14/04/2025
+Exchange of views on the upcoming Digital Networks Act (DNA) and the telecoms market in the Netherlands
 

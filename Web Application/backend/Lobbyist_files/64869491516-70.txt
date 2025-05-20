@@ -50,7 +50,7 @@ Energy Union innovation
 Climate Conference COP21
 
 12/11/2015
-Energy Policy and Market design
+Energy Policy and Marketdesign
 
 25/11/2015
 industrial innovation
@@ -92,7 +92,7 @@ Research and innovation in energy and transport
 2nd EU Energy Summit - breakfast roundtable
 
 23/02/2016
-decarbonisation of transport – presentation of recent studies in this field
+decarbonisation oftransport – presentation of recent studies in this field
 
 23/02/2016
 Climate action
@@ -272,7 +272,7 @@ Green Deal
 Just transition in Central and Eastern Europe
 
 26/05/2020
-Development of European hydrogen markets, the future transport needs and options of hydrogen related infrastructural aspects.
+Development of European hydrogen markets, the futuretransport needs and options of hydrogen related infrastructural aspects.
 
 22/07/2020
 Shovel-ready projects for a green recovery
@@ -302,7 +302,7 @@ EU taxonomy for sustainable activities
 EU taxonomy for sustainable activities
 
 04/02/2021
-Discussion on the upcoming reform of the EU ETS in the context of the Fit-for-55 package
+Discussion on the upcoming reform of theEU ETS in the context of the Fit-for-55 package
 
 11/02/2021
 trade and climate
@@ -341,7 +341,7 @@ COP26 outreach
 Just Transition and industrial competitiveness
 
 28/09/2021
-Discussion with leading architects of the Paris Agreement in 2015 on challenges, opportunities and strategies for the upcoming G20 and COP26 meetings
+Discussion with leading architects of the Paris Agreement in 2015 on challenges, opportunities and strategies for theupcoming G20 and COP26 meetings
 
 02/12/2021
 EPBD - Energy efficiency - Minimum Energy Performance Standards
@@ -374,7 +374,7 @@ About Europe’s role in in the transition to a net- zero emissions economy
 Preparation of COP28
 
 18/01/2023
-Supporting work arounda European response to the US IRA, the need for a new investment wave in climate-friendly technologies and the upcoming electricity market design reform.
+Supporting work around a European response to the US IRA, the need for a new investment wave in climate-friendly technologies and the upcoming electricity market design reform.
 
 19/01/2023
 EU response to the energy crisis, accelerating energy transition
@@ -392,7 +392,7 @@ New Global Financing Pact Summit and COP28
 Energy Transition; Other participants: Sequoia Climate Fund, Energy Transition Fund, Secure Energy Project, Global Renewables Alliance, Destination Zero, Rocky Mountains Institute
 
 23/10/2023
-Roundtable meeting with 10 Secretary Generalsand CEOs of the Electrification Alliance on the revised Renewable Energy Directive (revised REDII), electricity market design, grids and storage.
+Roundtable meeting with 10 Secretary Generals and CEOs of the Electrification Alliance on the revised Renewable Energy Directive (revised REDII), electricity market design, grids and storage.
 
 15/11/2023
 European Climate Policy
@@ -420,4 +420,16 @@ Discussion on the new political challenges and how the climate community can pro
 
 23/01/2025
 Charting the future of European green competitiveness.
+
+17/03/2025
+NDC diplomacy
+
+07/04/2025
+Discussion on decarbonising European aviation
+
+28/04/2025
+COP 30 and CID
+
+14/05/2025
+Implementation of Clean Industrial Deal
 

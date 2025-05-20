@@ -41,7 +41,7 @@ Capital Markets Union
 Keynote speech re: EU Assett Management Policy
 
 11/10/2021
-Retail InvestmentStrategy
+Retail Investment Strategy
 
 07/12/2021
 Asset management distribution model Data providers CMU package
@@ -72,4 +72,13 @@ Exchange on developments in European asset management
 
 06/02/2025
 RIS, NBFI/MMFR, T+1, Agenda finance durable, simplification, produit /label d’épargne
+
+10/02/2025
+Simplification
+
+14/04/2025
+Retail investment strategy and the Savings and Investment Union.
+
+24/04/2025
+Exchange of views on the Omnibus Level 1 proposal and the ECG data availability for asset managers
 

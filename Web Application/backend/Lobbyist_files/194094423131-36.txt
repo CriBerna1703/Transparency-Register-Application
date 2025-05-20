@@ -5,19 +5,19 @@ On Automotive Value Chain
 Recovery and green transition in the automotive supply chain
 
 01/10/2020
-Data & AI in future mobility (e.g. AI in crash avoidance, robocabs as individualised public transport). Tier 1 suppliers become software sellers. New traffic legislation needed, recovery funding to modernising urban transport, secure data spaces.
+Data & AI in future mobility (e.g. AI in crash avoidance, robocabs as individualised public transport). Tier 1 suppliers become software sellers. New traffic legislation needed, recovery funding tomodernising urban transport, secure data spaces.
 
 25/02/2021
 Meeting to prepare for the roundtable with transport value chain alliance - Transformation of the automotive value chain in the context of green recovery on 3 March.
 
 03/03/2021
-Roundtable with transport value chain alliance - Transformation of the automotive value chain in the context of green recovery
+Transformation of the automotive value chain in the context of green recovery
 
 03/03/2021
 Roundtable with transport value chain alliance - Transformation of the automotive value chain in the context of green recovery.
 
 03/03/2021
-Transformation of the automotive value chain in the context of green recovery
+Roundtable with transport value chain alliance - Transformation of the automotive value chain in the context of green recovery
 
 13/04/2021
 Decarbonizing road transport sector
@@ -26,7 +26,7 @@ Decarbonizing road transport sector
 CO2 standards for cars and vans; Euro 7
 
 03/11/2021
-Prepare visit by theCommissioner
+Prepare visit by the Commissioner
 
 06/12/2021
 semiconductors
@@ -47,10 +47,10 @@ Latest insights on CO2 HDV standards
 Sustainable finance, Taxonomy
 
 31/08/2023
-Virtual exchange on the European wind sector
+Energy transition
 
 31/08/2023
-Energy transition
+Virtual exchange on the European wind sector
 
 21/05/2024
 Transport decarbonization
@@ -63,4 +63,10 @@ Challenges of the automotive industry
 
 10/01/2025
 EU Digital Vehicle ecosystem
+
+12/02/2025
+Future of the automotive sector
+
+03/04/2025
+Roundtable Automotive Action Plan
 

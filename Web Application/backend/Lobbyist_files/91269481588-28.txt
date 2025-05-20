@@ -35,13 +35,13 @@ Internal Market's industrial property legal framework relating to supplementary 
 research budget
 
 25/01/2018
-health policy
+Business discussion
 
 25/01/2018
 European patent protection
 
 25/01/2018
-Business discussion
+health policy
 
 01/02/2018
 Patent Issues
@@ -59,7 +59,7 @@ Health research in Horizon Europe
 Discussion on Cancer and Europe's Beating Cancer Plan
 
 03/09/2020
-Keeping existing pharmaceuticalmanufacturing capacity in the EU
+Keeping existing pharmaceutical manufacturing capacity in the EU
 
 18/02/2021
 COVID-19 vaccines production
@@ -84,4 +84,16 @@ Exchange of views on the Urban Waste Water Treatment Directive and the Mercury R
 
 18/02/2025
 EU health policy
+
+26/02/2025
+Healthcare, biotech and agri-food policies
+
+11/03/2025
+Discussion on Supporting Therapeutic Radiopharmaceuticals Innovation
+
+15/03/2025
+Impact of EU environmental policies on the life science sector
+
+11/04/2025
+Engagement regarding Novartis activities in Serbia and signature of an MoU with the Serbian Government
 

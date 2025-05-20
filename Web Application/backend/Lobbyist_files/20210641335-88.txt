@@ -32,10 +32,10 @@ Engineering industries, Energy Union and CEP policies
 Circular Economy and Energy Union
 
 29/09/2015
-Presentation of Orgalime, Digital Single Market, Energy Union, Internal Market Strategy, TTIP, standardisation, circular economy
+Circular Economy
 
 29/09/2015
-Circular Economy
+Presentation of Orgalime, Digital Single Market, Energy Union, Internal Market Strategy, TTIP, standardisation, circular economy
 
 27/10/2015
 Energy Union and Innovation, technology solutions
@@ -62,22 +62,22 @@ AECA Round-Table on “Dealing with Regulatory Burden
 Energy Union - main initiatives
 
 22/02/2016
-Circular Economy
+Industry 4.0/ The role of innovation and digital
 
 22/02/2016
-Industry 4.0/ The role of innovation and digital
+Circular Economy
 
 23/05/2016
 circular economy
 
 27/05/2016
+Circular Economy
+
+27/05/2016
+Circular Economy
+
+27/05/2016
 Circular economy
-
-27/05/2016
-Circular Economy
-
-27/05/2016
-Circular Economy
 
 14/06/2016
 DSM (especially Data Ownership and Legislatives) - DEI (especially Standardisation, Skills and Platforms) - Cyber Security
@@ -92,10 +92,10 @@ industrial policy
 Energy policy
 
 23/01/2017
-Clean Energy for All Europeans Package
+Waste
 
 23/01/2017
-Waste
+Clean Energy for All Europeans Package
 
 06/02/2017
 Exchange of views on the competitive situation of the European engineering industries, digitisation, energy transition, standardisation and the Internal Market, and industrial policy.
@@ -164,7 +164,7 @@ Politique industrielle
 EU industrial policy
 
 23/07/2019
-Strategic value chains and competition policy
+Strategic value chainsand competition policy
 
 21/01/2020
 the role of engireering industry in the context of clean energy transition
@@ -251,10 +251,10 @@ EU-US TTC and engineering industries
 Exchange on Strategic Foresight and Better Regulation
 
 14/06/2023
-economic security, competitiveness, data sharing
+EU Green Deal Industrial Plan
 
 14/06/2023
-EU Green Deal Industrial Plan
+economic security, competitiveness, data sharing
 
 05/07/2023
 standardisation
@@ -266,7 +266,7 @@ Standardisation policy
 Echanges sur le rôle de l’ industrie des technologies pour faire avancer la double transition, sur son potentiel d’exportation et sur les moyens de soutenir les efforts de cette industrie, notamment en termes de standardisation
 
 22/02/2024
-- Economic outlook for industries - EU-US Traderelations, TTC - Economic Security - Steel safeguard
+- Economic outlook for industries - EU-US Trade relations, TTC - EconomicSecurity - Steel safeguard
 
 14/03/2024
 green industrial policy
@@ -294,4 +294,22 @@ To inform the Commission’s Standards Policy Unit about technical developments 
 
 30/01/2025
 Exchange of views on the Orgalim Position Paper ‘Proposals for FP10‘
+
+21/03/2025
+Clean Industrial Deal, Steel and Metals Action Plan
+
+31/03/2025
+Exchange of views on challenges for the sector
+
+10/04/2025
+Impact of US tariffs
+
+15/04/2025
+Omnibus / Taxonomy
+
+29/04/2025
+Exchange of views on the Carbon Border Adjustment Mechanism (CBAM)
+
+12/05/2025
+Exchange of views on Directorate H initiatives of interest to Orgalim.
 

@@ -20,13 +20,13 @@ Investment plan, Solvency II (infrastructure, ELTIF), Equivalence, insurance in 
 Latest on insurance; infrastructure definition; securitisation; CMU; 29th pension regime; Solcency II
 
 12/10/2015
-Insurance - connected vehicles
-
-12/10/2015
 Promotion of the European Union’s key initiatives for the COP21
 
 12/10/2015
 motor insurance: current trends and technological developments
+
+12/10/2015
+Insurance - connected vehicles
 
 21/10/2015
 GDPR
@@ -41,10 +41,10 @@ Retail financial services green paper
 Investment initiative
 
 15/02/2016
-CMU; Solvency II, PRIIPS, IDD
+Market access in third countries for EU reinsurers; EU/US negotiation on a covered agreement for insurance and reinsurance; international issues (IAIS)
 
 15/02/2016
-Market access in third countries for EU reinsurers; EU/US negotiation on a covered agreement for insurance and reinsurance; international issues (IAIS)
+CMU; Solvency II, PRIIPS, IDD
 
 23/02/2016
 Cross-border provision of insurance in the single market
@@ -65,7 +65,7 @@ DSM
 conduct of business, Solvency II review and the Capital Markets Union, international standards and pensions.
 
 27/10/2016
-Insurance issues, Solvency II, Personalpensions, PRIIPS
+Insurance issues, Solvency II, Personal pensions, PRIIPS
 
 16/01/2017
 CMU EFSI
@@ -110,7 +110,7 @@ EFSI/InvestEU and Solvency II
 EFSI/InvestEU and Solvency II
 
 27/09/2018
-Solvency II reviews -sustainable finance - financial reporting (IFRS 17) - ESAs review
+Solvency II reviews - sustainable finance - financial reporting (IFRS 17) - ESAs review
 
 13/06/2019
 EU and international developments, impact on reinsurance industry
@@ -122,19 +122,19 @@ Insurance industry, Solvency II Review
 Packaged retail and insurance-based investment, Solvency II
 
 12/02/2020
-Insurance sector's main challenges and how to contribute to the green deal
+Capital Markets Union, financial services
 
 12/02/2020
-Capital Markets Union, financial services
+Insurance sector's main challenges and how to contribute to the green deal
 
 23/04/2020
 Situation of the European insurance sector in the Covid-19 pandemic
 
 28/05/2020
-COVID-19 relief measures
+Covid-19 economic response, Solvency II, sustainable finance
 
 28/05/2020
-Covid-19 economic response, Solvency II, sustainable finance
+COVID-19 relief measures
 
 24/08/2020
 Packaged Retail and Insurance based investment products regulation
@@ -164,10 +164,10 @@ Insurance policy
 Solvency II
 
 28/05/2021
-Record video for Insurance Europe Resilence Week touching all aspects of insurance role in building resilence.
+Solvency II, green recovery
 
 28/05/2021
-Solvency II, green recovery
+Record video for Insurance Europe Resilence Week touching all aspects of insurance role in building resilence.
 
 02/09/2021
 i) Revision of Solvency II ii) sustainable finance and related disclosure requirements iii) PRIIPs and retail investors needs.
@@ -215,10 +215,10 @@ Solvency II and retail investment strategy.
 Insurance Europe wanted to discuss the European Insurance sector and their main concerns in relation to the following files: 1) Retail investment Strategy 2) Solvency II
 
 01/02/2023
-Retail Investment Strategy
+Retail investment strategy
 
 01/02/2023
-Retail investment strategy
+Retail Investment Strategy
 
 06/02/2023
 Access to in-vehicle data
@@ -257,7 +257,7 @@ Europe’s Beating Cancer Plan; quality of life”
 Right to be forgotten
 
 04/06/2024
-Discussion on preparation of delegated act on conditions to access data for repair and maintenance activities
+Discussion on preparation of delegated act on conditions to access data for repairand maintenance activities
 
 10/07/2024
 Right to be forgotten
@@ -284,5 +284,26 @@ EFRAG’s mandate, Omnibus proposal, SFDR review and other planned initiatives
 The role of the automotive aftermarket in the EU Industrial Action Plan for the automotive sector
 
 20/02/2025
-Discussion on developments regarding insurance market.
+Discussion on developments regardinginsurance market.
+
+04/03/2025
+EU financial services industry associations debrief on EU-UK Financial Regulatory Forum
+
+19/03/2025
+Exchange of views on the upcoming revisions to the Solvency II Delegated Regulation, and on various reforms related to the insurance framework
+
+25/03/2025
+Discussion on the Financial Information Data Access proposal (FIDA) and the AI framework
+
+28/03/2025
+Roundtable “Investing in Water Resilience”
+
+22/04/2025
+FIDA
+
+30/04/2025
+Insurance Europe (IE) welcomed the SIU Communication and offered to support the dialogue between the Commission (EC) and the insurance sector. The EC shared opportunities for IE participate in targeted consultations and calls for evidences.
+
+14/05/2025
+Exchange on global taxation
 

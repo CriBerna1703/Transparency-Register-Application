@@ -194,7 +194,7 @@ Industrial Strategy; dependencies
 Sustainable Corporate Governance
 
 25/01/2022
-State aid Guidelines on Climate, environmentalprotection and Energy
+State aid Guidelines on Climate, environmental protection and Energy
 
 01/03/2022
 Re-establishment of solar manufacturing in Europe
@@ -224,7 +224,7 @@ will follow
 REPowerEU
 
 18/05/2022
-Energy Security and REPowerEU
+Energy Security andREPowerEU
 
 13/07/2022
 Renewable energies, Labour market and skills
@@ -260,7 +260,7 @@ Discussion on how to strengthen the EU-US cooperation to increase the deployment
 EU policies and initiatives such as the Temporary Crisis and Transition Framework and the Net Zero Industry Act
 
 09/06/2023
-Physical meeting - Exchange on the solarindustrial strategy
+Physical meeting - Exchange on the solar industrial strategy
 
 19/06/2023
 At this meeting the opportunities and challenges regarding deployment of AGRI-PV systems were discussed.
@@ -332,11 +332,23 @@ Exchange of views on SP Europe’s latest analysis of solar sector developments;
 Affordable Energy action Plan
 
 04/02/2025
-Solar panels on farmland.
+Solar panels on farmland
 
 06/02/2025
 Disinformation related to solar energy
 
 10/02/2025
 Exchange of views on Power Purchase Agreements (PPA) and the Batteries Regulation, specifically the Delegated Act (DA) on the methodology for the calculation and verification of the carbon footprint for electric vehicle batteries.
+
+12/02/2025
+Clean Industrial Deal
+
+25/03/2025
+Clean Industrial Deal
+
+07/04/2025
+Clean Industrial Deal, Electrification Action Plan, Affordable Energy Plan, CISAF
+
+10/04/2025
+Role of solar energy in agriculture
 

@@ -26,7 +26,7 @@ data security
 exchange of views on euro area economic outlook
 
 10/11/2015
-Investment plan + CMU + MiFID II
+Investment plan + CMU +MiFID II
 
 10/11/2015
 Overall trade agenda, TTIP and financial services.
@@ -80,10 +80,10 @@ Cyber security
 Digital Economy
 
 07/03/2018
-Cybersecurity, Fintech
+Transatlantic Relations
 
 07/03/2018
-Transatlantic Relations
+Cybersecurity, Fintech
 
 02/05/2018
 Brexit preparedness
@@ -113,7 +113,7 @@ Sustainable Finance
 Sustainable finance, capital markets reform and location policy and CCPs
 
 01/10/2021
-Capital Markets Union; Sustainable Finance; Digital assets and cybersecurity
+Capital Markets Union; Sustainable Finance; Digital assets andcybersecurity
 
 09/11/2021
 CMU, banking package
@@ -162,4 +162,13 @@ CCP clearing and climate risk
 
 24/01/2024
 financial services with respect to the AI Act
+
+03/03/2025
+Sustainability reporting, Savings and Investments Union, Basel implementation
+
+18/03/2025
+Courtesy visit
+
+14/04/2025
+Omnibus
 

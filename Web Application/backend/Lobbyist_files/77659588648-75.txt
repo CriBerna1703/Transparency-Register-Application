@@ -17,7 +17,7 @@ Priorities of the EC and how FCH sector can support those priorities
 0 Emission Cars
 
 18/10/2016
-Hydrogen energy vectorand the role of Hydrogen Europe
+Hydrogen energy vector and the role of Hydrogen Europe
 
 10/01/2017
 Decarbonisation of transport
@@ -59,7 +59,7 @@ Hydrogen R&I
 Impact/contribution of hydrogen is on reaching the decarbonisation targets and creating jobs and growth in Europe
 
 16/07/2019
-Present the strategic role of hydrogen for zeroemission industries
+Present the strategic roleof hydrogen for zero emission industries
 
 10/12/2019
 Hydrogen in Europe
@@ -86,7 +86,7 @@ Development of European hydrogen markets, the future transport needs and options
 European Green Deal
 
 19/06/2020
-Transport and EuropeanGreen Deal
+Transport and European Green Deal
 
 03/07/2020
 Introductory exchange of views
@@ -119,7 +119,7 @@ European Green Deal and carbon-neutral transport
 Discussion about the EP own-initiative report on the EU Hydrogen Strategy
 
 06/05/2021
-"Hydrogen Coffee" discussion on theinternational cooperation angle of the European Hydrogen strategy. More precisely on the EU-US cooperation and US future plans/ambitions regarding hydrogen.
+"Hydrogen Coffee" discussion on the international cooperationangle of the European Hydrogen strategy. More precisely on the EU-US cooperation and US future plans/ambitions regarding hydrogen.
 
 17/05/2021
 Clean hydrogen alliance; fit for 55 package
@@ -155,10 +155,10 @@ H2 IPCEIs and state aids
 Working plan of the alliance
 
 08/09/2022
-Cooperation with the EU on green hydrogen
+Cooperation with the EUon green hydrogen
 
 06/10/2022
-Hydrogen Europeengagement strategy in Africa ahead of COP27
+Hydrogen Europe engagement strategy in Africa ahead of COP27
 
 26/10/2022
 Joint purchasing options.
@@ -220,6 +220,12 @@ Situation of the hydrogen sector
 08/01/2025
 Situation of the hydrogen sector
 
+17/01/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+23/01/2025
+Decarbonisation of Transport
+
 23/01/2025
 Exchange of views on the incoming Commission’s initiative on the Clean Industrial Deal
 
@@ -231,4 +237,19 @@ Affordable Energy action Plan
 
 17/02/2025
 Tour d’horizon of the priorities of Hydrogen Europe concerning the development of Sustainable Aviation Fuels (SAF)
+
+19/02/2025
+Dialogue on the future of the automotive sector – Suppliers Session
+
+06/03/2025
+Exchange of views on EVP’s online intervention during the Giga-scale Hydrogen conference in Spain.
+
+14/03/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+01/04/2025
+Exchange of views on the challenges and opportunities for renewable hydrogen development in Latin America and the Caribbean (LAC)
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
 

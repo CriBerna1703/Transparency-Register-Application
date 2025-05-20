@@ -50,7 +50,7 @@ Regionalpolitischer Dialog
 Feedback on Horizon 2020
 
 29/02/2016
-Discussion focused on the main findings of the Country Report for Germany, follow-up of Five Presidents Report and next steps in completing EMU. DIHK reported on their role in the German economic system and their viewsconcerning the integration of refugees into the labour market
+Discussion focused on the main findings of the Country Report for Germany, follow-up of Five Presidents Report and next steps in completing EMU. DIHK reported on their role in the German economic system and their views concerning the integration of refugees into the labour market
 
 29/02/2016
 Digitisation of industry
@@ -89,7 +89,7 @@ MFF Mid-term review
 Discussion on Anti-BEPS measures
 
 01/12/2016
-Arbeiten der High-Level Gruppe zur Vereinfachung; Ausblick auf die Diskussionen umdie neue Strukturfondsperiode; Auswirkungen des Brexit
+Arbeiten der High-Level Gruppe zur Vereinfachung; Ausblick auf die Diskussionen um die neue Strukturfondsperiode; Auswirkungen des Brexit
 
 02/05/2017
 MFF
@@ -131,7 +131,7 @@ Post 2020
 Rules of origin and Union Customs Code
 
 11/07/2018
-Presentation of the Juncker Commission's work on jobs, growth,investments, sustainability and SMEs
+Presentation of the Juncker Commission's work on jobs, growth, investments, sustainability and SMEs
 
 09/10/2018
 Aktuelle Herausforderungen der EU-Politik, Future of Europe
@@ -161,7 +161,7 @@ Skilling
 Vocational training
 
 03/03/2020
-Discussion on the priorities of the new Commission and Commissioner Breton in the area of industrial policy, SMEs and single market. DIHK presented their position papers onthe Industry Strategy and SME strategy as well as the results of a study conducted in 2019 on barrires in the single market
+Discussion on the priorities of the new Commission and Commissioner Breton in the area of industrial policy, SMEs and single market. DIHK presented their position papers on the Industry Strategy and SME strategy as well as the results of a study conducted in 2019 on barrires in the single market
 
 05/03/2020
 Green Deal priorities
@@ -197,16 +197,16 @@ Due diligence
 EU FTAs agenda, especially with Latin America and Indo-Pacific
 
 21/06/2022
-Overview of the REPowerEU initiative
-
-21/06/2022
 • Resilience of value chains / Strategic autonomy • Directive on corporate sustainability due diligence • EU Innovation Agenda • Current and planned IPCEI
 
-27/10/2022
-Data Act and AI Act
+21/06/2022
+Overview of the REPowerEU initiative
 
 27/10/2022
 AI Act and Data Act.
+
+27/10/2022
+Data Act and AI Act
 
 01/12/2022
 European Competitiveness
@@ -215,7 +215,7 @@ European Competitiveness
 Global Gateway
 
 13/02/2023
-Discuss current EU digital initiatives of interest for the German business community as well as initiatives aiming at strengthening the resilience of the internal market
+Discuss current EU digital initiatives of interest for the German business community as well as initiatives aiming atstrengthening the resilience of the internal market
 
 13/02/2023
 • Exchange of views on the RRF state of play and the next steps for the reform of the economic governance. • On the Green Deal Industrial Plan. • Finally DHIK presented the “European Parliament of entrepreneurs”, to take place in November 2023.
@@ -236,7 +236,7 @@ Presentation of DIHK papers on Critical Minerals Agreement (CMA) and Global Arra
 European Green Deal - bilan and continuation, the next mandate.
 
 22/05/2024
-East Asia, Indonesia, Trade, Free tradeagreement
+East Asia, Indonesia, Trade, Free trade agreement
 
 03/07/2024
 Exchange on EU and German competitiveness
@@ -248,7 +248,7 @@ administrative burden and competitiveness issues
 Trade agenda
 
 29/01/2025
-Latest initiatives in the area of EU industrial policy (Competitiveness Compass, Clean Industrial Deal, Simplification)
+Latest initiatives in the area of EU industrial policy (CompetitivenessCompass, Clean Industrial Deal, Simplification)
 
 30/01/2025
 The meeting focused on the impact of the ECJ judgement about self- consumption facilities, the not yet published bidding zone review and the assessment of capacity markets.
@@ -264,4 +264,13 @@ Introductory meeting / EU-UK, EU–Switzerland, EU-US trade
 
 18/02/2025
 IPCEI process simplification; feedback of German companies (LE and SMEs) about their IPCEI experience
+
+05/03/2025
+Current trade policy agenda (US tariffs, EU- China trade relations, bilateral trade agenda, in particular USA, China, Mercosur, India)
+
+06/03/2025
+Proposal Regulation on Late Payments
+
+04/04/2025
+Physical meeting - Presentation and discussion on corporate taxation, VAT in the Digital Age (ViDA) and implications of the current geopolitical context
 

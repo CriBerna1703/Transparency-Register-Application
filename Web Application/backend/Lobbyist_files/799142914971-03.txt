@@ -77,7 +77,7 @@ Exchange of Views on Financial Innovation and Digital Tranformation
 Basel, Digital/fintech, Banking Union and CCPs
 
 07/09/2017
-Digital Agenda - e- identification - BancoSantander's response to the Fintech Consultation and related issues
+Digital Agenda - e- identification - Banco Santander's response to the Fintech Consultation and related issues
 
 09/01/2018
 Future of EU Financial services
@@ -104,7 +104,7 @@ digital tax proposal, the future of the EMU
 Banking Union, banking regulation and PSD2
 
 05/06/2018
-Contribution of the financial sector to the Climate and Energy EU objectives
+Contribution of the financial sector to theClimate and Energy EU objectives
 
 12/06/2018
 Situation in US, cars and data
@@ -173,7 +173,7 @@ Capital Markets, Banking Union
 Sustainability and Green Deal
 
 30/01/2020
--Discussion of Multiple Point of Entry Resolutionstrategy; Basel III’s approach to operational risk
+-Discussion of Multiple Point of Entry Resolution strategy; Basel III’s approach to operational risk
 
 18/02/2020
 The future of banking between digitalization and regulation
@@ -329,7 +329,7 @@ Sustainable finance
 Digital euro
 
 30/09/2024
-The objective of the lunch is to gather the views of key representatives from the EU private sector regarding the presentsituation in Mexico and prospects under the new administration, notably from an economic perspective, in an open dialogue.
+The objective of the lunch is to gather theviews of key representatives from the EU private sector regarding the present situation in Mexico and prospects under the new administration, notably from an economic perspective, in an open dialogue.
 
 31/10/2024
 Banking Union Capital Markets Union
@@ -344,6 +344,9 @@ exchange of views on the UE relationship with Latin America, and in particular t
 Exchange on the Savings and Investments Union
 
 28/01/2025
+Simplification
+
+28/01/2025
 Exchange of views on the competitiveness of the EU and Savings and Investment Union.
 
 04/02/2025
@@ -351,4 +354,37 @@ Commission’s sustainability agenda, impact of the CSDDD on the financial secto
 
 05/02/2025
 Digital Euro
+
+05/02/2025
+Use of DLT and Tokenisation in Financial Markets
+
+25/02/2025
+Financial sector on defence, investment policies, EU regulatory framework
+
+04/03/2025
+Macroeconomic and fiscal outlook of the Spanish economy, with a focus on macroeconomic and budgetary developments of the recent quarters and until 2026. Discussion on the implementation of the RRP
+
+12/03/2025
+Meeting of the South America Critical Raw Materials (CRM) Coalition of the Willing – Dialogue with private and public sector stakeholders, and financial institutions on sustainable critical raw materials value chains in Latin America.
+
+12/03/2025
+Energy Efficiency Financing - First high- level event of the European Energy Efficiency Financing Coalition
+
+20/03/2025
+Sustainability and simplification efforts by the Commission
+
+26/03/2025
+Exchange on relevant developments
+
+26/03/2025
+Discussing Competitiveness in the Banking Sector
+
+27/03/2025
+Simplification
+
+09/04/2025
+Exchange of views on sustainability reporting
+
+09/04/2025
+EUROFI – Exchanges on regulatory framework
 

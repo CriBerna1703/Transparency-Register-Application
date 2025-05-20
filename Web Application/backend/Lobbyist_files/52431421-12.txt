@@ -128,13 +128,13 @@ Telecom review
 Youth unemployment
 
 26/09/2016
-Discussion on their initiative ProFuturo, to promote quality, equitable education for children and youngpeople from the most disadvantaged groups by providing digital tools
+Discussion on their initiative ProFuturo, to promote quality, equitable education for children and young people from the most disadvantaged groups by providing digital tools
 
 01/11/2016
 Discussions on mission to Buenos Aires
 
 08/11/2016
-Digital package- negotiation of the Council and European Parliament
+Digital package- negotiation of theCouncil and European Parliament
 
 08/11/2016
 ePrivacy directive
@@ -176,7 +176,7 @@ DSM
 Digital Single Market
 
 23/02/2018
-e-Privacy/Fundamental Rights to Privacy and data protection
+e-Privacy/Fundamental Rights to Privacy anddata protection
 
 26/02/2018
 Code, ePrivacy, Net neutrality
@@ -338,7 +338,7 @@ Telecoms, competition policies
 European Digital Path 2030, connectivity industry, telco edge cloud; Open RAN.
 
 13/12/2022
-Discussion regarding EUagenda with Latin America and the Caribbean (LAC) and the EU-Digital Alliance as well as European investments in the LAC region.
+Discussion regarding EU agenda with Latin America and the Caribbean (LAC) and the EU-Digital Alliance as well as European investments in the LAC region.
 
 10/01/2023
 Latin America and Caribbean
@@ -402,4 +402,37 @@ Evolution of the electronic communication markets in Germany
 
 19/02/2025
 Updates on the processes of including Ukraine and Moldova into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+05/03/2025
+Commission priorities in technology policy
+
+18/03/2025
+Simplification agenda and competition policy, digital policies.
+
+18/03/2025
+Simplification agenda and competition policy, digital policies
+
+18/03/2025
+IPCEI-CIS and Cloud & AI development act
+
+19/03/2025
+Exchange of views on international tax issues
+
+01/04/2025
+Chips Act and Telecom
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+15/04/2025
+Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+22/04/2025
+Data protection, e- privacy, simplification
+
+28/04/2025
+Exchange of views on the AI Factories and AI Gigafactories initiatives
+
+13/05/2025
+Macroeconomic and fiscal outlook of the Spanish economy
 

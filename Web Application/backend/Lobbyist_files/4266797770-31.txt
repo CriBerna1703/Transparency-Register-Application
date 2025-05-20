@@ -47,13 +47,13 @@ Private sector investments in developing countries
 To review competition trends
 
 14/06/2016
-European Digital Strategy; “Smart strategy for smart industry” initiative
+European Digital Strategy
 
 14/06/2016
 Progress of DSM and role of industrial sector
 
 14/06/2016
-European Digital Strategy
+European Digital Strategy; “Smart strategy for smart industry” initiative
 
 19/07/2016
 DSM
@@ -71,10 +71,10 @@ digitising european industry
 Healthcare in development cooperation and European External Investment Plan
 
 18/10/2016
-Digitisation of industry
+Data economy
 
 18/10/2016
-Data economy
+Digitisation of industry
 
 22/03/2017
 trade barriers between EU and Russian federation
@@ -101,7 +101,7 @@ Healthineers
 Women in Digital
 
 23/04/2018
-Meeting with the Task Force for the Preparation and Conduct of the Negotiations with the United Kingdom under Article 50 TEU
+Meeting with the Task Force for the Preparation and Conduct of theNegotiations with the United Kingdom under Article 50 TEU
 
 25/06/2018
 eHealth
@@ -110,10 +110,10 @@ eHealth
 Intelligent mobility, C-ITS roll-out via delegated act
 
 16/11/2018
-safeguard investigation on steel products
+Industriel Policy
 
 16/11/2018
-Industriel Policy
+safeguard investigation on steel products
 
 22/11/2018
 taxonomy and EU IFRS
@@ -149,7 +149,7 @@ Videoconference with CEOs on COVID-19
 Videoconference with CEOs on COVID-19
 
 17/04/2020
-Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide
+Videoconference withChairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide
 
 30/04/2020
 Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide
@@ -161,7 +161,7 @@ Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of A
 Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide (Topic: European Economic Recovery)
 
 28/05/2020
-Impacts of COVID-19 onrail industry
+Impacts of COVID-19 on rail industry
 
 12/06/2020
 Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide (Topic: European Economic Recovery)
@@ -179,7 +179,7 @@ Keynote speech on the European Green Deal at Energy Reinvented Community Online 
 Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide
 
 06/11/2020
-Videoconference with Chairman of Volvo,Chairman of Siemens and Maersk, CEO of Air Liquide
+Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide
 
 16/12/2020
 Roundtable - Cloud Alliance
@@ -200,7 +200,7 @@ Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of A
 Videoconference with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide
 
 20/01/2022
-Meeting with Chairman of Volvo, Chairman of Siemens and Maersk, CEO of Air Liquide
+Meeting with Chairman of Volvo, Chairman ofSiemens and Maersk, CEO of Air Liquide
 
 14/02/2022
 e-fuels
@@ -218,10 +218,10 @@ Meeting with Chairman of Volvo, Chairman of Siemens and Maersk, Chairman of Voda
 Latest geopolitical developments, open exchange of views on other topics of relevance.
 
 13/04/2023
-Sustainability
+discuss the technology used on holistic energy management systems to monitor energy consumption, electric vehicle charging stations, and the use of AI technology and digitalization to optimize design, production, inventory
 
 13/04/2023
-discuss the technology used on holistic energy management systems to monitor energy consumption, electric vehicle charging stations, and the use of AI technology and digitalization to optimize design, production, inventory
+Sustainability
 
 13/04/2023
 Exchange of views on sustainability and green transition and Siemens commitments.
@@ -251,16 +251,16 @@ Latest developments on EU climate and energy policy
 Sustainability policies, in particular CSRD, Taxonomy
 
 27/06/2024
-green and digital transitions and competitiveness
-
-27/06/2024
 Trade / geopolitical priorities for the next EU institutional cycle
 
-10/09/2024
-Preventing the circumvention of EU sanctions on sensitive goods
+27/06/2024
+green and digital transitions and competitiveness
 
 10/09/2024
 High-level executive roundtable: preventing the circumvention of EU sanctions on sensitive goods.
+
+10/09/2024
+Preventing the circumvention of EU sanctions on sensitive goods
 
 08/10/2024
 General discussion on Taxonomy and CSRD deployment.
@@ -276,4 +276,37 @@ Omnibus
 
 05/02/2025
 Exchange of views on the Global Gateway in Latin America and the Caribbean and the Global Gateway Investment Agenda.
+
+17/02/2025
+Exchange of views with UNIFE CEOs on the margins of the 18th European Railway award event
+
+25/02/2025
+Exchange of views on digitalisation in the water sector
+
+11/03/2025
+Exchange of views between the Comission and Siemens on trade relations
+
+12/03/2025
+Meeting of the South America Critical Raw Materials (CRM) Coalition of the Willing – Dialogue with private and public sector stakeholders, and financial institutions on sustainable critical raw materials value chains in Latin America.
+
+19/03/2025
+the role of research and innovation for EU competitiveness
+
+21/03/2025
+Exchange on AI development and the EU’ s upcoming initiatives
+
+31/03/2025
+Shaping a new Team Europe approach towards LAC in order to increase the success rate of EU Railways industry on tenders on the region.
+
+01/04/2025
+In the context of the EU- LAC Global Gateway Investment Agenda, the European Commission’s Directorate-General for International Partnerships (DG INTPA) launches an initiative with a view to develop circular economy value chains in Latin America
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+01/04/2025
+Simplification of sustainability reporting
+
+09/04/2025
+Rail Supply Industry challenges and opportunities
 

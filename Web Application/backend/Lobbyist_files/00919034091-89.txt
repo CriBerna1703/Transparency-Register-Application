@@ -23,7 +23,7 @@ Key trade dossiers, including TTIP and TISA
 Digital Single Market, Juncker Priorities
 
 14/04/2015
-DSM, TSM, review of access regulation, consolidation of thetelcoms sector
+DSM, TSM, review of access regulation, consolidation of the telcoms sector
 
 27/04/2015
 DSM
@@ -144,4 +144,7 @@ Security issues
 
 18/11/2020
 Digital Markets Act
+
+02/03/2025
+Opportunities and challenges in the telecoms sector
 

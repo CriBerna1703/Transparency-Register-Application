@@ -2,19 +2,19 @@
 DSM
 
 02/07/2015
-Preparation of the Internet Forum
+DSM
 
 02/07/2015
-DSM
-
-03/07/2015
-DSM
-
-03/07/2015
-DSM
+Preparation of the Internet Forum
 
 03/07/2015
 DSM, data, innovation
+
+03/07/2015
+DSM
+
+03/07/2015
+DSM
 
 02/10/2015
 Hate speech on-line
@@ -95,7 +95,7 @@ Disinformation/COVID-19
 The impact of COVID-19 on hate speech, child abuse and terrorist content online.
 
 03/06/2020
-1. Hate speech and Code of conduct on hate speech - 2. Disinformation and need to preserve our democratic processes - 3.Artificial Intelligence - 4. Data protection
+1. Hate speech and Code of conduct on hate speech - 2. Disinformation and need to preserve our democratic processes - 3. Artificial Intelligence - 4. Data protection
 
 04/06/2020
 Disinformation COVID 19, Media Pluralism, Data Protection, Hate Speech
@@ -131,7 +131,7 @@ Disinformation COVID -19
 DSA
 
 17/09/2021
-Digital Services Act andthe future of the Open Internet
+Digital Services Act and the future of the Open Internet
 
 17/09/2021
 Digital Services Act and the future of the Open Internet
@@ -176,7 +176,7 @@ DSA
 DSA, EMFA, Disinformation, Political Advertisement
 
 04/12/2023
-European Media Freedom Act, Disinformation,Political Advertisement
+European Media Freedom Act, Disinformation, Political Advertisement
 
 20/02/2024
 DSA and DMA
@@ -193,6 +193,18 @@ Exchange of views in the context of preparatory work on draft guidelines on Arti
 06/02/2025
 First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
 
+06/02/2025
+First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
+
 11/02/2025
 Opening Session: DSA roundtable discussions on online advertising (Article 46 DSA)
+
+19/02/2025
+Digital Fairness Act
+
+04/03/2025
+Code of Conduct on Online Advertising – Workshop 1
+
+07/04/2025
+Discussion about the Code of Practice on General Purpose AI models and the related guidelines and the current work of the AI Office.
 

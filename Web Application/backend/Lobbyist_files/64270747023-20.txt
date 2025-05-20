@@ -380,7 +380,7 @@ Trade Issues
 Panel discussion on digital technologies and the Green Deal
 
 21/04/2020
-Impact of Covid19 on digital companies
+Impact of Covid19 ondigital companies
 
 24/04/2020
 EU digital policy / COVID19 crisis
@@ -419,7 +419,7 @@ Virtual meeting about European Health Data Space
 The role of digital technology in delivering the Green Deal
 
 22/10/2020
-Recovery and Resilience Facility
+Recovery and ResilienceFacility
 
 26/10/2020
 DSA and DMA
@@ -455,7 +455,7 @@ Innovation, Presentation of the Future Unicorn Award at Masters of Digital 2021
 Pact for Skills roundtable with the representatives of the health sector
 
 12/03/2021
-Recovery and Resilience Facility - focus on digital transition and national reform plans; Trade Policy Review and digital trade, also - internationaldata flows and Digital tax; EU-US relations for trade on technologies.
+Recovery and Resilience Facility - focus on digital transition and national reform plans; Trade Policy Review and digital trade, also - international data flows and Digital tax; EU-US relations for trade on technologies.
 
 17/03/2021
 Digital transformation and eprivacy
@@ -485,10 +485,10 @@ Digitalisation of health sector
 Green deal
 
 20/07/2021
-Discuss their involvement in the Industrial Forum, digital technologies across several ecosystems, and the monitoring of digital technologies uptake.
+Discuss their involvementin the Industrial Forum, digital technologies across several ecosystems, and the monitoring of digital technologies uptake.
 
 26/08/2021
-The role of digital in Europe’s Green Dealambitions
+The role of digital in Europe’s Green Deal ambitions
 
 08/09/2021
 Digital Decade
@@ -524,7 +524,7 @@ Digitising Energy Action Plan
 Discussion on the representatives to the Expert Group on Radio Equipment (EG RE)
 
 19/01/2023
-Presentation of the Commissioner's invitation to Masters of Digitalconference
+Presentation of the Commissioner's invitation to Masters of Digital conference
 
 15/03/2023
 Cybersecurity Skills Academy
@@ -586,9 +586,30 @@ Digital Europe's simplification agenda for the new mandate
 11/02/2025
 Opening Session: DSA roundtable discussions on online advertising (Article 46 DSA)
 
+12/02/2025
+Digital Fairness Act
+
 20/02/2025
 Green Investments, Digital Innovation
 
 20/02/2025
 Exchange of views on fostering a more competitive and innovation-friendly digital environment, including on copyright.
+
+27/02/2025
+Discussion on the future Multiannual Financial Framework and support for start-ups and scale- ups
+
+06/03/2025
+Exchange of views with the Single Market and Competitiveness Group of DigitalEurope.
+
+14/03/2025
+EU Business Wallet
+
+01/04/2025
+Exchange of views on the future Multiannual Financial Framework and other EU priorities.
+
+15/04/2025
+Exchange of views on competitiveness, simplification, AI, GDPR, forthcoming 28th regime and Digital Fairness Act
+
+07/05/2025
+Digitalisation and Ecodesign
 

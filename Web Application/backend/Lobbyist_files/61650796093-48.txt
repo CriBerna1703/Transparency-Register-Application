@@ -56,7 +56,7 @@ Implementation of the EU Emissions Trading system
 Implications on the non- ferrous metals industry of the withdrawal of the UK from the EU
 
 25/09/2018
-Joint meeting with Eurometaux, EUROBAT and RECHARGE to discuss the future of batteries and related chemicals management
+Joint meeting withEurometaux, EUROBAT and RECHARGE to discuss the future of batteries and related chemicals management
 
 23/11/2018
 clean energy transition and decarbonisation
@@ -128,7 +128,7 @@ Carbon Borden Adjustment Mechanism
 Implementation of the chemicals strategy for sustainability
 
 18/05/2021
-Waste legislation: future revisions of Waste Shipment Regulation, Waste Framework Directive and ELV Directive
+Waste legislation: futurerevisions of Waste Shipment Regulation, Waste Framework Directive and ELV Directive
 
 07/06/2021
 Carbon Border Adjustment Mechanism
@@ -140,7 +140,7 @@ High energy prices and how this is affecting the competitiveness of European com
 Metals for Clean Energy
 
 09/06/2022
-To share five key recommendations from the landmark KU Leuven Metals for Clean Energy study released last week, which quantifies the metals and rawmaterials needs of Europe's climate- neutrality goal for the first time.
+To share five key recommendations from the landmark KU Leuven Metals for Clean Energy study released last week, which quantifies the metals and raw materials needs of Europe's climate- neutrality goal for the first time.
 
 14/06/2022
 Critical raw materials.
@@ -155,7 +155,7 @@ Raw materials.
 Energy market situations and decarbonisation plans
 
 06/09/2022
-Transition to a circular economy, availability of metals and overview of KU Leuven’s Metals for Clean Energy study findings
+Transition to a circular economy, availability ofmetals and overview of KU Leuven’s Metals for Clean Energy study findings
 
 26/01/2023
 Critical Raw Materials
@@ -190,6 +190,9 @@ Meeting with Eurometaux on new State Aid Guidelines for Critical Raw Materials
 09/09/2024
 Discussion on Transition Pathway for Metals
 
+17/01/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
 28/01/2025
 Competitiveness, Clean Industrial Deal and energy and their impact on European industry.
 
@@ -198,4 +201,37 @@ Critical Raw Material
 
 13/02/2025
 Omnibus on sustainability
+
+04/03/2025
+Competitiveness and Simplification
+
+04/03/2025
+Non-Ferrous Metals - Safeguarding the EU industry
+
+05/03/2025
+Introductory meeting with the new Secretary- General of Eurometaux
+
+11/03/2025
+EU chemicals regulation/ REACH
+
+12/03/2025
+Exchange of views on the Steel and Metals Action Plan
+
+14/03/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+25/03/2025
+Impact of energy prices on the metal industry
+
+26/03/2025
+The meeting covered the state of EU trade agreements with Latin America.
+
+31/03/2025
+Challenges faced by Eurometaux members in particular with respect to copper, antimony and scrap metal internationally
+
+02/04/2025
+The future of the critical metals sector in Europe
+
+10/04/2025
+Impact of US tariffs
 

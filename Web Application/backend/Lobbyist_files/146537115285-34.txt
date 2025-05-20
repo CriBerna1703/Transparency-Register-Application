@@ -14,7 +14,7 @@ platforms
 Platforms, startups
 
 23/03/2017
-Platform regulation in EU member states andobstacles to the single market
+Platform regulation in EU member states and obstacles to the single market
 
 01/02/2018
 Collaborative economy and regulatory developments impacting the short-term rental sector
@@ -41,7 +41,7 @@ Artificial intelligence /Technology/ Research and Innovation
 Digital taxation
 
 20/04/2020
-To discuss the digital potential for the wider economy and society
+To discuss the digital potential for the widereconomy and society
 
 28/05/2020
 Impact of COVID-19 (virtual)
@@ -115,6 +115,24 @@ Competitiveness in the EU
 05/02/2025
 Possible cooperation on Code of Conduct for Internet reviews; digitalization of SMEs in the Tourism sector; future Strategy for Sustainable tourism.
 
+06/02/2025
+competitiveness
+
 11/02/2025
 Competitiveness
+
+04/03/2025
+Code of Conduct on Online Advertising – Workshop 1
+
+11/03/2025
+Implementation of the STR Regulation
+
+19/03/2025
+Code of Conduct on Online Advertising – Workshop 4
+
+25/03/2025
+Challenges for European tech companies that want to leverage AI to compete globally. Need for a coherent, proportionate, and effectively enforced regulatory framework that increases the competitiveness of European industry.
+
+01/04/2025
+Exchange of views on AI Act, DSA, enforcement cooperation, digital taxation.
 

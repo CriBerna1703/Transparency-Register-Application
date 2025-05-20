@@ -35,7 +35,7 @@ COVID 19 economic impact on European tourism industry
 Impact of Covid-19 on Tourism: follow-up meeting
 
 23/06/2020
-DSA; scope of rules on gatekeeper platforms(B2C vs B2B); access to processable data; rules on data sharing; EU as a reassuring cloud data location for international users due to less aggressive data localisation rules.
+DSA; scope of rules on gatekeeper platforms (B2C vs B2B); access to processable data; rules on data sharing; EU as a reassuring cloud data location for international users due to less aggressive data localisation rules.
 
 23/06/2020
 Digital issues
@@ -62,7 +62,7 @@ Roundtable - Cloud Alliance
 Cloud & Data Alliance - CEO Roundtable
 
 03/11/2021
-EU Digital Policy issues (e.g. Sovereign Cloud, AI, DMA/DSA, Cybersecurity, the overall digital & green transition)
+EU Digital Policy issues (e. g. Sovereign Cloud, AI, DMA/DSA, Cybersecurity, the overall digital & green transition)
 
 24/05/2022
 Multimodal Digital Mobility Services
@@ -71,7 +71,7 @@ Multimodal Digital Mobility Services
 EU tourism policy and transition pathway
 
 18/10/2022
-Meeting hosted by a Member of Parliament
+Meeting hosted by aMember of Parliament
 
 11/11/2022
 CRS Code of Conduct Multimodal Digital Mobility Services
@@ -90,4 +90,10 @@ Amadeus requested this meeting to discuss future transport-related initiatives a
 
 28/01/2025
 Data Spaces and data sharing in the tourism and mobility sector.
+
+01/04/2025
+Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+02/04/2025
+Cloud measures of the Data Act, and Cloud related IPCEIs
 

@@ -20,7 +20,7 @@ Sustainable Finance Agenda, Solvency II review and disclosure in retail products
 Digital Single Market and the Role of Insurance
 
 05/06/2020
-Digitalisation of the insurance industry (cybersecurity issues,digital skills, digitalisation of processes and client interfaces, data sharing, level playing field of regulatory requirements).
+Digitalisation of the insurance industry (cybersecurity issues, digital skills, digitalisation of processes and client interfaces, data sharing, level playing field of regulatory requirements).
 
 09/11/2020
 Introduction and discussion Solvency II review
@@ -48,4 +48,7 @@ Exchange views on the future steps of building the Capital Markets Union
 
 06/03/2024
 Solvency II, AML Regulation, Exchange on the right to be forgotten
+
+06/03/2025
+Exchange with Insurance Ireland on regulatory developments
 

@@ -32,13 +32,13 @@ Ongoing trade negotiations
 European Energy Policy priorities
 
 13/03/2015
+Competitiveness - Energy - Trade
+
+13/03/2015
 Competitiveness, energy and trade issues
 
 13/03/2015
 Energy, Competitiveness, Trade
-
-13/03/2015
-Competitiveness - Energy - Trade
 
 14/04/2015
 Sustainable Chemistry
@@ -86,7 +86,7 @@ Cefic views on summer package
 Competitiveness, TTIP Chemicals, Better Regulation Package
 
 20/10/2015
-Growth and competitiveness
+Growth andcompetitiveness
 
 29/10/2015
 Competitiveness of the sector, regulatory costs, energy security, innovation issues
@@ -110,10 +110,10 @@ Cirrcular economy
 Chemical Policy
 
 15/03/2016
-Seminar on Circular economy
+Endocrine disruptors
 
 15/03/2016
-Endocrine disruptors
+Seminar on Circular economy
 
 04/04/2016
 Endocrine disruptors
@@ -224,7 +224,7 @@ Alliance of Energy Intensive Industries - 2050 strategy
 Introductory meeting to discuss areas and topics of possible coopeartion in Africa and China
 
 09/11/2018
-Council on innovation-participation
+Council on innovation- participation
 
 23/11/2018
 Chemical Recycling
@@ -251,10 +251,10 @@ European Green Deal
 The role of the Energy Intensice Industries in the European Green Deal
 
 17/02/2020
-Trade Issues
+introduce Cefic and discuss DGCOMP relevant issues
 
 17/02/2020
-introduce Cefic and discuss DGCOMP relevant issues
+Trade Issues
 
 18/02/2020
 European Green Deal
@@ -266,7 +266,7 @@ F-gases imports
 Potential issues in dealing with COVID-19
 
 09/04/2020
-Video call with Pharmaceutical Industrial Associations and the European MedicinesAgency to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations and the European Medicines Agency to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 17/04/2020
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
@@ -281,7 +281,7 @@ Video call with Pharmaceutical Industrial Associations, the European Medicines A
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 08/05/2020
-Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations, the European MedicinesAgency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 11/05/2020
 Discussion on the impact of COVID-19
@@ -305,10 +305,10 @@ To share views on Chemicals Strategy and the roadmap of Circular Economy Action 
 Chemicals strategy, decarbonisation, circular economy, HFCs
 
 29/06/2020
-Call with pharmaceutical and medical device industry associations on COVID-19
+Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicines and medical devices including diagnostic tests in the context of COVID- 19 pandemic
 
 29/06/2020
-Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicines and medical devices including diagnostic tests in the context of COVID- 19 pandemic
+Call with pharmaceutical and medical deviceindustry associations on COVID-19
 
 08/07/2020
 Pharmaceutical Strategy
@@ -335,7 +335,7 @@ To discuss Chemicals Strategy, with the focus on innovation, safe and sustainabl
 Decarbonisation; chemicals strategy for sustainability
 
 06/11/2020
-Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicines and medical devices including diagnostic tests in the context of COVID- 19 pandemic
+Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicinesand medical devices including diagnostic tests in the context of COVID- 19 pandemic
 
 10/11/2020
 European Green Deal and the implementation of the EU Chemicals Strategy for Sustainability
@@ -380,7 +380,7 @@ Hydrogen
 tbc
 
 24/03/2021
-Commissioner Bretonmeeting with CEOs from Energy Intensive Industries on Industrial strategy & fit for 55.
+Commissioner Breton meeting with CEOs from Energy Intensive Industries on Industrial strategy & fit for 55.
 
 16/04/2021
 Videoconference - Discussion on a forthcoming proposal for a CBAM and its interaction with the forthcoming ETS reform.
@@ -443,16 +443,16 @@ Joint purchasing options.
 To discuss the implementation of the Chemicals Strategy and the next steps for the upcoming revision of REACH
 
 28/11/2022
-REACH, CLP and thetransition pathway
+REACH, CLP and the transition pathway
 
 14/12/2022
 Chemicals strategy implementation; REACH; CLP; transition pathway
 
 26/06/2023
-Chemical sector
+Overview of chemicals industry situation, transition pathway for chemicals industry, REACH revision
 
 26/06/2023
-Overview of chemicals industry situation, transition pathway for chemicals industry, REACH revision
+Chemical sector
 
 04/07/2023
 To discuss with PFAS producers and users on the proposal for a REACH restriction on PFAS.
@@ -497,7 +497,7 @@ Follow-up to Antwerp Summit & exchange on state of EU chemicals industry
 Physical meeting - CBAM and Chemicals
 
 07/11/2024
-Ambrosetti Club Europe - Transport and mobility priorities
+Ambrosetti Club Europe -Transport and mobility priorities
 
 15/11/2024
 Physical meeting - Global Chemical Industry convention - Global CEOs Roundtable on CBAM
@@ -517,14 +517,20 @@ Discussion on Green Deal and chemical industry policy.
 10/01/2025
 The European fermentation industry’s access to feedstock (sugar and glucose).
 
+16/01/2025
+Clean industrial deal
+
+17/01/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+17/01/2025
+Meeting between DDG ENV and CEFIC
+
 17/01/2025
 Meeting between DDG ENV, DDG GROW and CEFIC
 
 17/01/2025
 Chemicals Industry Package, competitiveness, REACH, water and circular economy
-
-17/01/2025
-Meeting between DDG ENV and CEFIC
 
 20/01/2025
 Scaling Up Sustainable Finance and Omnibus Boosting Venture and Risk Capital
@@ -532,6 +538,66 @@ Scaling Up Sustainable Finance and Omnibus Boosting Venture and Risk Capital
 28/01/2025
 Competitiveness, Clean Industrial Deal and energy and their impact on European industry.
 
+17/02/2025
+The potential role of CMA from the perspective of APIs producers
+
 18/02/2025
 ESPR and, in relation to the upcoming work plan, some specific points on polymers and commodity chemicals.
+
+20/02/2025
+Clean Industrial Deal and Affordable Energy Action Plan
+
+06/03/2025
+Data protection under the Biocidal Products Regulation.
+
+07/03/2025
+Exchange of views on the current challenges of the European chemical industry and how policy initiatives such as the Clean Industrial Deal could help address them
+
+11/03/2025
+HS reform
+
+14/03/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+19/03/2025
+Competitiveness and simplification; Chemicals Industry Package; revision of the REACH Regulation
+
+19/03/2025
+Chemicals Industry Package, Strategic chemicals Dialogue
+
+19/03/2025
+Physical meeting - Exchange on Draft Guidance on CAM under the EU-UK TCA
+
+26/03/2025
+Exchange of views on simplifying the REACH Regulation
+
+26/03/2025
+Hybrid meeting - Exchange on the Customs Reform, notably regarding the topic of the Trust and Check (T&C) trader status
+
+27/03/2025
+Concerns from the silicone sector on the potential nomination of the substances D4, D5, D6 by the EU into the Stockholm convention (POPs)
+
+27/03/2025
+Roundtable “Water, Agriculture, and the Food Supply Chain”
+
+10/04/2025
+Meeting minutes - Current situation of the EU chemical industry with CEFIC, Brussels 10 /04/2025
+
+10/04/2025
+Impact of US tariffs
+
+23/04/2025
+the importance of biocidal products, disinfectants and preservative agents, for public health and the food chain the disincentive to innovation caused by the non- alignment of protection periods for data generated by safety studies Ares(2025) 3403902
+
+25/04/2025
+REACH revision/ follow- up to CARACAL meeting
+
+28/04/2025
+Chemicals Industry Package and REACH revision
+
+29/04/2025
+Study visit of students to Brussels
+
+14/05/2025
+Implementation of Clean Industrial Deal
 

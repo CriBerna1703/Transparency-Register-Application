@@ -50,7 +50,7 @@ Digital finance payments
 Start-ups
 
 12/10/2022
-presentation of thecompany, Artificial Intelligence
+presentation of the company, Artificial Intelligence
 
 12/10/2022
 start-ups
@@ -81,4 +81,10 @@ EU payments regulation reform Digital Euro PSD3 /PSDR
 
 22/07/2024
 Introductory meeting
+
+25/03/2025
+Challenges for European tech companies that want to leverage AI to compete globally. Need for a coherent, proportionate, and effectively enforced regulatory framework that increases the competitiveness of European industry.
+
+07/04/2025
+Presentation of Stripe and exchange on EU agenda for tech competitiveness
 

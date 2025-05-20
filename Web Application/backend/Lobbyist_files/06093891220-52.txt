@@ -41,7 +41,7 @@ Charging infrastructure for heavy commercial vehicles
 CO2 review for HDVs and EURO VII for trucks
 
 17/05/2023
-Electrification strategy at MAN Truck & Bu; touch upon the decided AFIRregulation as well as the CO2 regulation for HDVs and EURO VII. And add the Scania perspective to the meeting.
+Electrification strategy at MAN Truck & Bu; touch upon the decided AFIR regulation as well as the CO2 regulation for HDVs and EURO VII. And add the Scania perspective to the meeting.
 
 23/11/2023
 Transport
@@ -57,4 +57,7 @@ Clean mobility
 
 29/01/2025
 Exchange of views on GGIA in Latin America (LA), particularly related to electric buses and hydrogen powered trucks market in LA.
+
+03/04/2025
+Exchange of views on automotive sector
 
