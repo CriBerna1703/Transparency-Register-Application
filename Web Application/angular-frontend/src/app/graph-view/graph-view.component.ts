@@ -12,7 +12,6 @@ import { tap } from 'rxjs/operators';
 import { FilterService } from '../services/filter.service';
 import { DataService } from '../services/data.service';
 import { D3Service } from '../services/d3.service';
-import { SelectionService } from '../services/selection.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import * as d3 from 'd3';
@@ -104,7 +103,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     private filterService: FilterService,
     private dataService: DataService,
     private d3Service: D3Service,
-    private selectionService: SelectionService
   ) {}
 
   ngOnInit(): void {
@@ -150,10 +148,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       );
     });
 
-    this.selectionService.selectedNodes$.subscribe(nodes => {
-      this.selectedNodes = new Set(nodes.map(n => n.id));
-      this.d3Service.updateForceGraphStyles(this.selectedNodes, this.selectedLink);
-    });
+
 
     this.dataService.getFields().subscribe(fields => {
       this.fieldMap = new Map(fields.map((f: any) => [f.field_id, f.field_name]));
@@ -294,8 +289,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         maxSim,
         selectedNodes: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
-        onRightClick: (d: any) => this.onNodeRightClick(d),
-        onLinkRightClick: (link: any) => this.onLinkLeftClick(link)
+        onLinkLeftClick: (link: any) => this.onLinkLeftClick(link)
       }
     );
   }
@@ -351,8 +345,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         maxSim,
         selectedNodes: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
-        onRightClick: (d: any) => this.onNodeRightClick(d),
-        onLinkRightClick: (link: any) => this.onLinkLeftClick(link)
+        onLinkLeftClick: (link: any) => this.onLinkLeftClick(link)
       }
     );
   }
@@ -361,23 +354,11 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.nodeSelected.emit(entity);
   }
 
-  private onNodeRightClick(d: any): void {
-    const isSelected = this.selectedNodes.has(d.id);
-    const newSelectedNodes = new Set(this.selectedNodes);
 
-    if (isSelected) {
-      newSelectedNodes.delete(d.id);
-      this.selectionService.deselectNode(d.id);
-    } else {
-      newSelectedNodes.add(d.id);
-      this.selectionService.selectNode({ id: d.id, type: 'lobbyist' });
-    }
-    this.selectedNodes = newSelectedNodes;
-    this.d3Service.updateForceGraphStyles(this.selectedNodes, this.selectedLink);
-  }
 
   public onLinkLeftClick(link: any): void {
-      const clickedLink = {
+
+    const clickedLink = {
       source: typeof link.source === 'object' ? link.source.id : link.source,
       target: typeof link.target === 'object' ? link.target.id : link.target,
     };
@@ -430,8 +411,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       }
     }
 
-    // Aggiorna colori archi/nodi
-    this.d3Service.updateForceGraphStyles(this.selectedNodes, this.selectedLink);
+    this.d3Service.updateForceGraphStyles(this.selectedLink);
   }
 
   private getAllInterestFields(): { id: number, label: string }[] {

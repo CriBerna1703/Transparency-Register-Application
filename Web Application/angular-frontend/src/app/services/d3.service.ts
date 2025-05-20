@@ -8,8 +8,7 @@ export interface ForceGraphOptions {
   onNodeClick?: (d: any) => void;
   minSim?: number; 
   maxSim?: number;
-  onRightClick?: (node: any) => void;
-  onLinkRightClick?: (link: any) => void;
+  onLinkLeftClick?: (link: any) => void;
 }
 
 @Injectable({
@@ -649,7 +648,7 @@ drawForceGraph(
     .on('click', (event, d) => {
       event.preventDefault();
       event.stopPropagation();
-      options?.onLinkRightClick?.(d);
+      options?.onLinkLeftClick?.(d);
     });
 
   this.nodeGroup = this.zoomGroup.append('g')
@@ -660,11 +659,11 @@ drawForceGraph(
     .call(drag);
 
   this.nodeGroup.append('circle')
-    .attr('r', (d: any) => d.invisible ? 0 : 7) // dimensione debug
-    .attr('fill', (d: any) => d.invisible ? 'none' : '#ae58a3') // rosso se invisibile
-    .attr('stroke', (d: any) => d.invisible ? 'none' : '#5b2c55') // bordo rosso scuro
+    .attr('r', (d: any) => d.invisible ? 0 : 7)
+    .attr('fill', (d: any) => d.invisible ? 'none' : '#ae58a3') 
+    .attr('stroke', (d: any) => d.invisible ? 'none' : '#5b2c55') 
     .attr('stroke-width', 2)
-    .style('display', null) // mostra comunque tutto
+    .style('display', null) 
     .attr('data-id', d => d.id);
 
   this.nodeGroup.append('text')
@@ -678,33 +677,60 @@ drawForceGraph(
     .on('click', (event, d) => {
       event.stopPropagation();
       options?.onNodeClick?.(d);
-      updateStyles();
     })
     .on('mouseover', function (event, d) {
-      if (options?.selectedNodes?.has(d.id)) return;
-      d3.select(this).select('circle').attr('stroke', '#ff7f0e');
-      d3.select(this).select('text').style('display', 'block');
+    const group = d3.select(this);
+    if (group.classed('node-lobbyist-selected')) return;
+
+    group.classed('node-hover', true);
+
+    d3.select(element).selectAll('line')
+      .each(function (l: any) {
+        const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+        const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+
+        if (sourceId === d.id || targetId === d.id) {
+          d3.select(this).classed('link-hover', true);
+        }
+      });
     })
     .on('mouseout', function (event, d) {
-      const isSelected = options?.selectedNodes?.has(d.id);
-      d3.select(this).select('circle')
-        .attr('stroke', isSelected ? '#ff7f0e' : '#5b2c55');
-      d3.select(this).select('text')
-        .style('display', isSelected ? 'block' : 'none');
+      d3.select(this).classed('node-hover', false);
+
+      d3.select(element).selectAll('line')
+        .each(function (l: any) {
+          const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+          const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+
+          if (sourceId === d.id || targetId === d.id) {
+            d3.select(this).classed('link-hover', false);
+          }
+        });
     })
     .on('contextmenu', function (event, d) {
       event.preventDefault();
       event.stopPropagation();
-      options?.onRightClick?.(d);
+      const group = d3.select(this);
+      const isSelected = group.classed('node-lobbyist-selected');
+      const shouldSelect = !isSelected;
+
+      // Toggle la classe sul nodo
+      group.classed('node-lobbyist-selected', shouldSelect);
+
+      // Seleziona tutti gli archi dal gruppo dei link
+      d3.select(element).selectAll('line')
+        .each(function (l: any) {
+          const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+          const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+
+          if (sourceId === d.id || targetId === d.id) {
+            d3.select(this).classed('link-selected', shouldSelect);
+          }
+        });
     });
 
   const updateStyles = () => {
-    this.nodeGroup?.select('circle')
-      .attr('stroke', (d: any) => options?.selectedNodes?.has(d.id) ? '#ff7f0e' : '#5b2c55');
-
-    this.nodeGroup?.select('text')
-      .style('display', (d: any) => options?.selectedNodes?.has(d.id) ? 'block' : 'none');
-
+    
     link.attr('stroke', (d: any) => {
       const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
       const targetId = typeof d.target === 'object' ? d.target.id : d.target;
@@ -729,7 +755,6 @@ drawForceGraph(
     previousZoomTransform ?? d3.zoomIdentity.scale(initialZoom)
   );
 
-  updateStyles();
 }
 
 public setLabelFontSize(size: number): void {
@@ -737,27 +762,22 @@ public setLabelFontSize(size: number): void {
   this.nodeGroup?.select('text').style('font-size', `${this.labelFontSize}px`);
 }
 
-public updateForceGraphStyles(selectedNodes: Set<string>, selectedLink?: { source: string; target: string }): void {
-  if (!this.nodeGroup || !this.zoomGroup) return;
-
-  this.nodeGroup.select('circle')
-    .attr('stroke', (d: any) => selectedNodes.has(d.id) ? '#ff7f0e' : '#5b2c55');
-
-  this.nodeGroup.selectAll('text')
-    .style('display', (d: any) => selectedNodes.has(d.id) ? 'block' : 'none');
+public updateForceGraphStyles(selectedLink?: { source: string; target: string }): void {
+  if (!this.zoomGroup) return;
 
   this.zoomGroup.selectAll('line')
     .attr('stroke', (d: any) => {
       const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
       const targetId = typeof d.target === 'object' ? d.target.id : d.target;
-      const isSelectedNode = selectedNodes.has(sourceId) || selectedNodes.has(targetId);
+
       const isSelectedLink = selectedLink &&
         ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
          (selectedLink.source === targetId && selectedLink.target === sourceId));
-      if (isSelectedLink) return 'red';
-      return isSelectedNode ? '#ff7f0e' : this.getLinkColor(d.similarity);
+
+      return isSelectedLink ? 'red' : this.getLinkColor(d.similarity);
     });
 }
+
 
 private getLinkColor(sim: number): string {
   const shades = ['#d7f9e5', '#94e8b1', '#4ac873', '#23974b', '#085c28'];
