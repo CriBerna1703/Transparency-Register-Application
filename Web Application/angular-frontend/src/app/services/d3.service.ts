@@ -406,6 +406,15 @@ private zoomGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = 
 private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
 private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
 private simulation: d3.Simulation<any, any> | null = null;
+private originalElement: HTMLElement | null = null;
+private originalNodes: any[] = [];
+private originalLinks: any[] = [];
+private originalOptions: ForceGraphOptions | undefined;
+private selectedNodeIds: Set<string> = new Set();
+
+
+private simulationPaused: boolean = false;
+private savedForces: Map<string, d3.Force<any, any>> = new Map();
 private labelFontSize: number = 12;
 
 drawForceGraph(
@@ -414,6 +423,10 @@ drawForceGraph(
   links: any[],
   options?: ForceGraphOptions
 ): void {
+  this.originalElement = element;
+  this.originalNodes = JSON.parse(JSON.stringify(nodes)); // deep copy
+  this.originalLinks = JSON.parse(JSON.stringify(links));
+  this.originalOptions = options;
   const width = options?.width ?? 1000;
   const height = options?.height ?? 600;
   const initialZoom = (options?.zoomLevel ?? 0.3);
@@ -635,8 +648,13 @@ drawForceGraph(
     })
     .on('end', (event, d) => {
       if (!event.active) this.simulation!.alphaTarget(0);
-      d.fx = null;
-      d.fy = null;
+      if (this.simulationPaused) {
+        d.fx = d.x;
+        d.fy = d.y;
+      } else {
+        d.fx = null;
+        d.fy = null;
+      }
     });
 
   const link = this.zoomGroup.append('g')
@@ -658,6 +676,22 @@ drawForceGraph(
     .enter()
     .append('g')
     .call(drag);
+
+  this.nodeGroup
+    .filter((d: any) => this.selectedNodeIds.has(d.id))
+    .classed('node-lobbyist-selected', true)
+    .select('text')
+    .text((d: any) => d.name?.substring(0, 4) ?? '');
+  
+  this.zoomGroup?.selectAll('line')
+  .each((d: any, i, nodes) => {
+    const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+    const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+
+    if (this.selectedNodeIds.has(sourceId) || this.selectedNodeIds.has(targetId)) {
+      d3.select(nodes[i]).classed('link-selected', true);
+    }
+  });
 
   this.nodeGroup.append('circle')
     .attr('r', (d: any) => d.invisible ? 0 : 7)
@@ -734,6 +768,7 @@ drawForceGraph(
 
 
   this.simulation.on('tick', () => {
+    console.log('[tick]');
     link
       .attr('x1', (d: any) => d.source.x)
       .attr('y1', (d: any) => d.source.y)
@@ -831,4 +866,54 @@ private getConnectedComponents(nodes: any[], links: any[]) {
 
   return components;
   }
+
+public pauseSimulation(): void {
+  if (this.simulation && !this.simulationPaused) {
+    // Salva tutte le forze attive
+    this.savedForces.clear();
+    this.savedForces.set('link', this.simulation.force('link')!);
+    this.savedForces.set('charge', this.simulation.force('charge')!);
+    this.savedForces.set('collide', this.simulation.force('collide')!);
+    this.savedForces.set('repelWiNodes', this.simulation.force('repelWiNodes')!);
+
+    // Applica forze neutre
+    this.simulation
+      .force('link', d3.forceLink().strength(0))
+      .force('charge', d3.forceManyBody().strength(0))
+      .force('collide', d3.forceCollide().radius(1).strength(0))
+      .force('repelWiNodes', null);
+
+
+
+    this.simulation.alpha(0.3).restart();    
+    this.simulationPaused = true;
+  }
+}
+
+  public resumeSimulation(): void {
+    if (this.simulationPaused && this.originalElement) {
+      this.simulationPaused = false;
+
+
+    const self = this;
+
+    self.selectedNodeIds.clear();
+    d3.select(this.originalElement)
+      .selectAll('.node-lobbyist-selected')
+      .each(function (d: any) {
+        if (d?.id) {
+          self.selectedNodeIds.add(d.id);  // ✅ usa `self` invece di `this`
+        }
+      });
+
+      this.drawForceGraph(
+        this.originalElement,
+        this.originalNodes,
+        this.originalLinks,
+        this.originalOptions
+      );
+    }
+  }
+
+
 }

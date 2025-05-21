@@ -71,6 +71,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public selectAllTextChecked: boolean = true;
   public showLeftPanel: boolean = true;
   public showRightPanel: boolean = true;
+  public isSimulationPaused: boolean = false;
+
   public keywordSortOrder: 'abc' | 'score' = 'abc';
 
   public selectedTextMetric: 'similarity_NumJaccard' | 'similarity_cosine' | 'similarity_jaccard' = 'similarity_cosine';
@@ -561,6 +563,25 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     }
 
   }
+
+  public toggleSimulation(): void {
+    if (this.isSimulationPaused) {
+      this.resumeGraph();
+    } else {
+      this.pauseGraph();
+    }
+  }
+
+  public pauseGraph(): void {
+    this.d3Service.pauseSimulation();
+    this.isSimulationPaused = true;
+  }
+
+  public resumeGraph(): void {
+    this.d3Service.resumeSimulation();
+    this.isSimulationPaused = false;
+  }
+
 
   public allFilterSelected(): boolean {
     return this.availableFilterOptions.length > 0 &&
