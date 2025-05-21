@@ -23,7 +23,7 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        z-index: 9;
+        z-index: 8;
         padding: 5px 8px;
         font-size: 12px;
         cursor: pointer;
@@ -41,7 +41,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        z-index: 9;
+        z-index: 8;
         padding: 5px 8px;
         font-size: 12px;
         cursor: pointer;
@@ -62,7 +62,7 @@
       padding: 10px;
       border-radius: 8px;
       box-shadow: 0 0 6px rgba(0,0,0,0.1);
-      z-index: 9;
+      z-index: 8;
       width: 180px;
       font-family: Arial, sans-serif;
     ">
@@ -82,7 +82,7 @@
       <!-- Label size -->
       <div style="margin-bottom: 10px;">
         <label for="labelSize">Label size</label>
-        <input type="range" id="labelSize" min="8" max="24" step="1"
+        <input type="range" id="labelSize" min="5" max="20" step="1"
                [(ngModel)]="labelFontSize"
                (input)="onLabelFontSizeChange()"
                style="width: 100%;" />
@@ -217,7 +217,7 @@
       padding: 10px;
       border-radius: 8px;
       box-shadow: 0 0 6px rgba(0,0,0,0.1);
-      z-index: 9;
+      z-index: 8;
       font-family: Arial, sans-serif;
       height: fit-content;
       max-height: 520px;

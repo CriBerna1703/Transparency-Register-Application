@@ -57,7 +57,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   @ViewChild('graphContainer', { static: true }) graphContainer!: ElementRef;
 
   private meetingsSubscription: Subscription | undefined;
-  private selectedNodes: Set<string> = new Set();
   public selectedSimilarity: number | null = null;
   private textSimilarities: TextSimilarity[] = [];
   public isTextGraphLoading: boolean = false;
@@ -89,7 +88,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
   minThreshold: number = 0.8;
   maxThreshold: number = 1.0;
-  zoomLevel: number = 100;
+  zoomLevel: number = 0.3;
   labelFontSize: number = 12;
 
 
@@ -287,7 +286,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         zoomLevel: this.zoomLevel,
         minSim,
         maxSim,
-        selectedNodes: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
         onLinkLeftClick: (link: any) => this.onLinkLeftClick(link)
       }
@@ -343,7 +341,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         zoomLevel: this.zoomLevel,
         minSim,
         maxSim,
-        selectedNodes: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
         onLinkLeftClick: (link: any) => this.onLinkLeftClick(link)
       }
@@ -358,6 +355,9 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
   public onLinkLeftClick(link: any): void {
 
+    if(this.showRightPanel === false) {
+      this.showRightPanel = true;
+    }
     const clickedLink = {
       source: typeof link.source === 'object' ? link.source.id : link.source,
       target: typeof link.target === 'object' ? link.target.id : link.target,

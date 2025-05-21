@@ -412,11 +412,11 @@ drawForceGraph(
   element: HTMLElement,
   nodes: any[],
   links: any[],
-  options?: ForceGraphOptions & { selectedNodes?: Set<string> }
+  options?: ForceGraphOptions
 ): void {
   const width = options?.width ?? 1000;
   const height = options?.height ?? 600;
-  const initialZoom = (options?.zoomLevel ?? 100) / 100;
+  const initialZoom = (options?.zoomLevel ?? 0.3);
 
   const degreeMap = new Map<string, number>();
   links.forEach(link => {
@@ -469,8 +469,8 @@ drawForceGraph(
     id: 'w_central',
     name: '',
     invisible: true,
-    fx: width / 2,
-    fy: height / 2
+    fx: width / 2 + 500,
+    fy: height / 2+ 500
   };
   nodes.push(wCentral);
 
@@ -491,8 +491,8 @@ drawForceGraph(
       invisible: true,
       fx: null,
       fy: null,
-      x : 0,
-      y: 0
+      x : width / 2,
+      y: height / 2
     };
     nodes.push(wK);
 
@@ -514,8 +514,8 @@ drawForceGraph(
     });
 
     // Posizione iniziale di w_k vicino a w_central
-    wK.x = wCentral.fx + 40;
-    wK.y = wCentral.fy + 40;
+    wK.x = wCentral.fx ;
+    wK.y = wCentral.fy ;
 
     // Posizione iniziale dei nodi isolati attorno a w_k in cerchio
     isolatedNodes.forEach((n, i) => {
@@ -570,7 +570,8 @@ drawForceGraph(
   this.zoomBehavior = d3.zoom<Element, unknown>()
     .scaleExtent([0.1, 10])
     .on('zoom', (event) => {
-      this.zoomGroup?.attr('transform', event.transform);
+      const transform = event.transform;
+      this.zoomGroup?.attr('transform', transform);
     });
 
   this.svg.call(this.zoomBehavior as any);
@@ -717,7 +718,9 @@ drawForceGraph(
       // Toggle la classe sul nodo
       group.classed('node-lobbyist-selected', shouldSelect);
 
-      // Seleziona tutti gli archi dal gruppo dei link
+      group.select('text')
+        .text(shouldSelect ? (d.name?.substring(0, 4) ?? '') : d.name);
+      
       d3.select(element).selectAll('line')
         .each(function (l: any) {
           const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
@@ -729,16 +732,6 @@ drawForceGraph(
         });
     });
 
-  const updateStyles = () => {
-    
-    link.attr('stroke', (d: any) => {
-      const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
-      const targetId = typeof d.target === 'object' ? d.target.id : d.target;
-      return options?.selectedNodes?.has(sourceId) || options?.selectedNodes?.has(targetId)
-        ? '#ff7f0e'
-        : this.getLinkColor(d.similarity);
-    });
-  };
 
   this.simulation.on('tick', () => {
     link
@@ -748,13 +741,34 @@ drawForceGraph(
       .attr('y2', (d: any) => d.target.y);
 
     this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
+
+    const zoomScale = d3.zoomTransform(this.svg!.node()!).k;
+    this.nodeGroup?.selectAll('text')
+    .attr('transform', `scale(${1 / zoomScale})`);
   });
 
-  this.svg.call(
-    this.zoomBehavior!.transform as any,
-    previousZoomTransform ?? d3.zoomIdentity.scale(initialZoom)
-  );
+  if (previousZoomTransform) {
+    this.svg.call(this.zoomBehavior!.transform as any, previousZoomTransform);
+  } else {
+    // Calcolo centro dei nodi visibili
+    const visibleNodes = nodes.filter(n => !n.invisible && n.x != null && n.y != null);
+    const xExtent = d3.extent(visibleNodes, d => d.x) as [number, number];
+    const yExtent = d3.extent(visibleNodes, d => d.y) as [number, number];
 
+    const graphCenterX = (xExtent[0] + xExtent[1]) / 2;
+    const graphCenterY = (yExtent[0] + yExtent[1]) / 2;
+
+    const svgCenterX = width / 2;
+    const svgCenterY = height / 2;
+
+    const xOffset = 250;
+
+    const initialTransform = d3.zoomIdentity
+      .translate(svgCenterX - graphCenterX * initialZoom + xOffset, svgCenterY - graphCenterY * initialZoom)
+      .scale(initialZoom);
+
+    this.svg.call(this.zoomBehavior!.transform as any, initialTransform);
+  }
 }
 
 public setLabelFontSize(size: number): void {
