@@ -409,12 +409,13 @@ export class D3Service {
   private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
   private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
   private simulation: d3.Simulation<any, any> | null = null;
+  private selectorGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+  private selectorRect: d3.Selection<SVGRectElement, unknown, null, undefined> | null = null;
+  private resizeHandle: d3.Selection<SVGRectElement, unknown, null, undefined> | null = null;
   private originalElement: HTMLElement | null = null;
   private originalNodes: any[] = [];
   private originalLinks: any[] = [];
   private originalOptions: ForceGraphOptions | undefined;
-
-
   private simulationPaused: boolean = false;
   private savedForces: Map<string, d3.Force<any, any>> = new Map();
   private labelFontSize: number = 12;
@@ -474,7 +475,7 @@ export class D3Service {
         source: `w_${i}`,
         target: anchorNode,
         __invisible: true,
-        strength: 0.05
+        strength: 0.07
       });
       componentAnchors[i] = anchorNode;
     });
@@ -516,7 +517,7 @@ export class D3Service {
           source: 'w_k',
           target: n.id,
           __invisible: true,
-          strength: 0.8  // forza alta per mantenere vicini i nodi isolati
+          strength: 1.0  // forza alta per mantenere vicini i nodi isolati
         });
       });
 
@@ -525,7 +526,7 @@ export class D3Service {
         source: 'w_central',
         target: 'w_k',
         __invisible: true,
-        strength: 0.02  // stessa forza degli altri w_i
+        strength: 0.04  // stessa forza degli altri w_i
       });
 
       // Posizione iniziale di w_k vicino a w_central
@@ -582,6 +583,7 @@ export class D3Service {
 
     this.zoomGroup = this.svg.append('g');
 
+  
     this.zoomBehavior = d3.zoom<Element, unknown>()
       .scaleExtent([0.1, 10])
       .on('zoom', (event) => {
@@ -602,10 +604,8 @@ export class D3Service {
         .distance((d: any) => d.__invisible ? 100 : Math.max(100, 300 - (d.similarity ?? 0) * 200))
       )
       .force('charge', d3.forceManyBody().strength((d: any) => {
-        // Nodo centrale non respinge nessuno
         if (d.id === 'w_central') return 0;
 
-        // Nodo isolato non viene respinto da altri
         if (d.invisible && d.id === 'w_k') return 0;
 
         return -150;
@@ -913,4 +913,151 @@ export class D3Service {
     }
 
 
-  }
+    public applyLassoSelection(): void {
+      if (!this.selectorRect || !this.nodeGroup) return;
+
+      const x = +this.selectorRect.attr('x');
+      const y = +this.selectorRect.attr('y');
+      const width = +this.selectorRect.attr('width');
+      const height = +this.selectorRect.attr('height');
+
+      const self = this;
+
+      const selectedNodes: any[] = [];
+
+      this.nodeGroup?.each(function (d: any) {
+        const [nx, ny] = [d.x, d.y];
+        if (nx >= x && nx <= x + width && ny >= y && ny <= y + height) {
+          selectedNodes.push(d);
+        }
+      });
+
+      const dragBehavior = d3.drag<SVGGElement, any>()
+        .on('start', function (event, d) {
+          if (!event.active) self.simulation!.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+          // Salva posizione iniziale per tutti i selezionati
+          self.nodeGroup?.each(function (n: any) {
+            const group = d3.select(this);
+            if (group.classed('node-lobbyist-draggable')) {
+              n.fx = n.x;
+              n.fy = n.y;
+              n.__initialX = n.x;
+              n.__initialY = n.y;
+            }
+          });
+        })
+        .on('drag', function (event, d) {
+          const dx = event.x - d.__initialX;
+          const dy = event.y - d.__initialY;
+          self.nodeGroup?.each(function (n: any) {
+            const group = d3.select(this);
+            if (group.classed('node-lobbyist-draggable')) {
+              n.fx = n.__initialX + dx;
+              n.fy = n.__initialY + dy;
+            }
+          });
+        })
+        .on('end', function (event, d) {
+          if (!event.active) self.simulation!.alphaTarget(0);
+          self.nodeGroup?.each(function (n: any) {
+            const group = d3.select(this);
+            if (group.classed('node-lobbyist-draggable')) {
+              n.fx = null;
+              n.fy = null;
+              delete n.__initialX;
+              delete n.__initialY;
+              group.classed('node-lobbyist-draggable', false);
+            }
+          });
+        });
+
+      this.nodeGroup?.each(function (d: any) {
+        const isSelected = selectedNodes.includes(d);
+        const group = d3.select(this);
+        if (isSelected) {
+          group
+            .classed('node-lobbyist-draggable', true)
+            .call(dragBehavior);
+        }
+      });
+    }
+
+    public toggleLassoRect(enabled: boolean): void {
+      if (enabled) {
+        this.addLassoRect();
+      } else {
+        this.removeLassoRect();
+      }
+    }
+
+    private addLassoRect(): void {
+      if (!this.zoomGroup || this.selectorRect) return;
+
+      const width = +this.svg!.attr('width');
+      const height = +this.svg!.attr('height');
+
+      this.selectorGroup = this.zoomGroup.append('g').attr('class', 'lasso-group');
+
+      this.selectorRect = this.selectorGroup.append('rect')
+        .attr('x', width / 2 - 30)
+        .attr('y', height / 2 - 60)
+        .attr('width', 60)
+        .attr('height', 120)
+        .attr('fill', 'rgba(128, 128, 128, 0.1)')   // interno grigio chiaro trasparente
+        .attr('stroke', 'gray')  
+        .attr('stroke-width', 2)
+        .attr('stroke-dasharray', '5,5')
+        .attr('cursor', 'move')
+        .call(d3.drag<SVGRectElement, any>()
+          .on('drag', (event) => {
+            const rect = this.selectorRect!;
+            const newX = +rect.attr('x') + event.dx;
+            const newY = +rect.attr('y') + event.dy;
+            rect.attr('x', newX).attr('y', newY);
+            this.updateResizeHandlePosition();
+          }));
+
+      this.resizeHandle = this.selectorGroup.append('rect')
+        .attr('width', 10)
+        .attr('height', 10)
+        .attr('rx', 2)
+        .attr('ry', 2)
+        .attr('fill', '#999') 
+        .attr('stroke', '#666') 
+        .attr('stroke-width', 1)
+        .attr('cursor', 'nwse-resize')
+        .style('opacity', 0.8) 
+        .call(d3.drag<SVGRectElement, unknown>()
+          .on('drag', (event) => {
+            const newWidth = Math.max(20, event.x - +this.selectorRect!.attr('x'));
+            const newHeight = Math.max(20, event.y - +this.selectorRect!.attr('y'));
+            this.selectorRect!.attr('width', newWidth).attr('height', newHeight);
+            this.updateResizeHandlePosition();
+          }));
+
+
+      this.updateResizeHandlePosition();
+    }
+
+
+    private removeLassoRect(): void {
+      this.selectorGroup?.remove();
+      this.selectorGroup = null;
+      this.selectorRect = null;
+      this.resizeHandle = null;
+    }
+
+    private updateResizeHandlePosition(): void {
+      if (!this.selectorRect || !this.resizeHandle) return;
+      const x = +this.selectorRect.attr('x');
+      const y = +this.selectorRect.attr('y');
+      const width = +this.selectorRect.attr('width');
+      const height = +this.selectorRect.attr('height');
+      this.resizeHandle
+        .attr('x', x + width - 6)
+        .attr('y', y + height - 6);
+    }
+
+}

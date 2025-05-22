@@ -30,7 +30,9 @@ html, body {
   stroke-width: 5px;
 }
 
-
-.lasso-box {
-  pointer-events: none;
+.node-lobbyist-draggable circle {
+  stroke: orange;
+  stroke-dasharray: 3,2;
+  stroke-width: 2;
 }
+
