@@ -1046,7 +1046,6 @@ public pauseSimulation(): void {
       );
       
       this.updateNodeSelection(selectedNodes);
-      this.updateNodeDraggable(draggableNodes); // <- riapplica lo stile E drag di gruppo
     }
   }
 
