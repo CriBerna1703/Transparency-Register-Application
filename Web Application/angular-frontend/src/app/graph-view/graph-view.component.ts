@@ -74,7 +74,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public selectAllTextChecked: boolean = true;
   public showLeftPanel: boolean = true;
   public showRightPanel: boolean = true;
-  public isLassoEnabled: boolean = false;
   public isSimulationPaused: boolean = false;
 
   public keywordSortOrder: 'abc' | 'score' = 'abc';
@@ -460,7 +459,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     if (this.minThreshold >= this.maxThreshold) {
       this.minThreshold = this.maxThreshold - 0.01;
     }
-    this.isLassoEnabled = false;
     this.updateGraph();
   }
 
@@ -468,7 +466,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     if (this.maxThreshold <= this.minThreshold) {
       this.maxThreshold = this.minThreshold + 0.01;
     }
-    this.isLassoEnabled = false;
     this.updateGraph();
   }
 
@@ -605,18 +602,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public resumeGraph(): void {
     this.d3Service.resumeSimulation();
     this.isSimulationPaused = false;
-    this.isLassoEnabled = false;
   }
 
-  toggleLassoSelection(): void {
-    this.isLassoEnabled = !this.isLassoEnabled;
-    this.d3Service.toggleLassoRect(this.isLassoEnabled);
-  }
-
-  applyLasso(): void {
-    this.isLassoEnabled = false;
-    this.d3Service.applyLassoSelection();
-  }
 
   public allFilterSelected(): boolean {
     return this.availableFilterOptions.length > 0 &&

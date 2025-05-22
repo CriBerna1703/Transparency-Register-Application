@@ -9,6 +9,7 @@ export interface ForceGraphOptions {
   minSim?: number; 
   maxSim?: number;
   SelectedNode?: SelectedNode[];
+  DraggableNode?: { id: string; type: 'lobbyist' }[];
   onNodeClick?: (d: any) => void;
   onLinkLeftClick?: (link: any) => void;
   onNodeRightClick?: (d: any) => void;
@@ -383,15 +384,13 @@ export class D3Service {
   private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
   private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
   private simulation: d3.Simulation<any, any> | null = null;
-  private selectorGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
-  private selectorRect: d3.Selection<SVGRectElement, unknown, null, undefined> | null = null;
-  private resizeHandle: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+  private lassoStart: [number, number] | null = null;
+  private lassoRect: d3.Selection<SVGRectElement, unknown, null, undefined> | null = null;
   private originalElement: HTMLElement | null = null;
   private originalNodes: any[] = [];
   private originalLinks: any[] = [];
   private originalOptions: ForceGraphOptions | undefined;
   private simulationPaused: boolean = false;
-  private savedForces: Map<string, d3.Force<any, any>> = new Map();
   private labelFontSize: number = 12;
 
   drawForceGraph(
@@ -400,6 +399,8 @@ export class D3Service {
     links: any[],
     options?: ForceGraphOptions
   ): void {
+    let isRightPanning = false;
+    let lastMousePosition: [number, number] | null = null;
     this.originalElement = element;
     this.originalNodes = JSON.parse(JSON.stringify(nodes)); // deep copy
     this.originalLinks = JSON.parse(JSON.stringify(links));
@@ -431,7 +432,6 @@ export class D3Service {
       else isolatedNodes.push(...comp.map(id => nodes.find(n => n.id === id)!));
     });
 
-    const componentAnchors: { [compIndex: number]: string } = {};
     const wiNodes: any[] = [];
 
     nonTrivialComponents.forEach((comp, i) => {
@@ -451,7 +451,6 @@ export class D3Service {
         __invisible: true,
         strength: 0.05
       });
-      componentAnchors[i] = anchorNode;
     });
 
 
@@ -559,14 +558,113 @@ export class D3Service {
 
   
     this.zoomBehavior = d3.zoom<Element, unknown>()
+      .filter((event) => {
+      return event.type === 'wheel' || (event.type === 'mousedown' && event.button === 2);
+      })
       .scaleExtent([0.1, 10])
       .on('zoom', (event) => {
         const transform = event.transform;
-        this.zoomGroup?.attr('transform', transform);
+        this.zoomGroup?.attr('transform', event.transform);
       });
 
     this.svg.call(this.zoomBehavior as any);
 
+      this.svg
+        .on('mousedown.lasso', (event) => {
+          if (event.button !== 0) return; // solo tasto sinistro
+          
+          if (!this.svg) return;
+          const transform = d3.zoomTransform(this.svg.node()!);
+          const [rawX, rawY] = d3.pointer(event);
+          const x = (rawX - transform.x) / transform.k;
+          const y = (rawY - transform.y) / transform.k;
+          this.lassoStart = [x, y];
+          this.lassoRect = this.zoomGroup!.append('rect')
+            .attr('x', x)
+            .attr('y', y)
+            .attr('width', 0)
+            .attr('height', 0)
+            .attr('fill', 'rgba(100, 100, 255, 0.1)')
+            .attr('stroke', '#3366cc')
+            .attr('stroke-width', 1.5)
+            .attr('stroke-dasharray', '4,2');
+        })
+        .on('mousemove.lasso', (event) => {
+          if (!this.lassoStart || event.buttons !== 1) return;
+              if (!this.svg) return;
+              const transform = d3.zoomTransform(this.svg.node()!);
+              const [rawX, rawY] = d3.pointer(event);
+              const x1 = (rawX - transform.x) / transform.k;
+              const y1 = (rawY - transform.y) / transform.k;
+              const [x0, y0] = this.lassoStart;
+              const x = Math.min(x0, x1);
+              const y = Math.min(y0, y1);
+              const width = Math.abs(x1 - x0);
+              const height = Math.abs(y1 - y0);
+              this.lassoRect!
+                .attr('x', x)
+                .attr('y', y)
+                .attr('width', width)
+                .attr('height', height);
+        })
+        .on('mouseup.lasso', (event) => {
+          if (!this.lassoRect || !this.nodeGroup) return;
+          const rect = this.lassoRect;
+          if (!this.svg) return;
+          const transform = d3.zoomTransform(this.svg.node()!);
+          const [rawX, rawY] = d3.pointer(event);
+          const x = +rect.attr('x');
+          const y = +rect.attr('y');
+          const width = +rect.attr('width');
+          const height = +rect.attr('height');
+          const DraggableNodes: any[] = [];
+          this.nodeGroup.each(function (d: any) {
+            if (d.invisible) return;
+            const [nx, ny] = [d.x, d.y];
+            if (nx >= x && nx <= x + width && ny >= y && ny <= y + height) {
+              DraggableNodes.push(d);
+            }
+          });
+          this.nodeGroup.each(function (d: any) {
+            const isDraggable = DraggableNodes.includes(d);
+            d3.select(this)
+              .classed('node-lobbyist-draggable', isDraggable);
+          });
+          rect.remove();
+          this.lassoRect = null;
+          this.lassoStart = null;
+          this.applyGroupDrag(DraggableNodes);
+        });
+      // Disabilita menu tasto destro
+      this.svg.on('contextmenu', (event) => {
+        event.preventDefault();
+      });
+      // Mousedown → solo tasto destro
+      this.svg.on('mousedown', (event) => {
+        if (event.button === 2) {
+          isRightPanning = true;
+          lastMousePosition = [event.clientX, event.clientY];
+        }
+      });
+      // Mousemove → se tasto destro premuto, simula pan
+      this.svg.on('mousemove', (event) => {
+        if (isRightPanning && lastMousePosition) {
+          const [lx, ly] = lastMousePosition;
+          const dx = event.clientX - lx;
+          const dy = event.clientY - ly;
+          const currentTransform = d3.zoomTransform(this.svg!.node()!);
+          const newTransform = currentTransform.translate(dx, dy);
+          this.svg!.call(this.zoomBehavior!.transform as any, newTransform);
+          lastMousePosition = [event.clientX, event.clientY];
+        }
+      });
+      // Mouseup → stop panning
+      this.svg.on('mouseup', (event) => {
+        if (event.button === 2) {
+          isRightPanning = false;
+          lastMousePosition = null;
+        }
+      });
 
     this.simulation = d3.forceSimulation(nodes)
       .alpha(1)
@@ -653,7 +751,7 @@ export class D3Service {
       .data(nodes)
       .enter()
       .append('g')
-      .call(drag);
+      .call(this.defaultNodeDrag());
 
 
     this.nodeGroup.append('circle')
@@ -828,27 +926,95 @@ export class D3Service {
     return components;
     }
 
-  public pauseSimulation(): void {
+    private applyGroupDrag(draggableNodes: any[]): void {
+  const dragGroup = d3.drag<SVGGElement, any>()
+    .on('start', (event, d) => {
+      if (!event.active) this.simulation?.alphaTarget(0.3).restart();
+      for (const n of draggableNodes) {
+        n.__initialX = n.x;
+        n.__initialY = n.y;
+      }
+      d.fx = d.x;
+      d.fy = d.y;
+    })
+    .on('drag', (event, d) => {
+      const dx = event.x - d.__initialX;
+      const dy = event.y - d.__initialY;
+      for (const n of draggableNodes) {
+        n.fx = n.__initialX + dx;
+        n.fy = n.__initialY + dy;
+      }
+    })
+    .on('end', (event, d) => {
+      if (!event.active) this.simulation?.alphaTarget(0);
+      for (const n of draggableNodes) {
+        n.fx = null;
+        n.fy = null;
+        delete n.__initialX;
+        delete n.__initialY;
+      }
+      // ✅ Dopo il drag, rimuovi classe e riapplica drag singolo
+      this.nodeGroup?.each((d: any, i, nodes) => {
+        const nodeSel = d3.select(nodes[i]);
+        if (draggableNodes.includes(d)) {
+          nodeSel
+            .classed('node-lobbyist-draggable', false)
+            .call(this.defaultNodeDrag());
+        }
+      });
+    });
+  this.nodeGroup?.each((d: any, i, nodes) => {
+    const node = d3.select(nodes[i]);
+    if (draggableNodes.includes(d)) {
+      node.call(dragGroup);
+    } else {
+      node.call(this.defaultNodeDrag());
+    }
+  });
+}
+private defaultNodeDrag(): d3.DragBehavior<SVGGElement, any, any> {
+  return d3.drag<SVGGElement, any>()
+    .on('start', (event, d) => {
+      if (!event.active) this.simulation?.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    })
+    .on('drag', (event, d) => {
+      d.fx = event.x;
+      d.fy = event.y;
+    })
+    .on('end', (event, d) => {
+      if (!event.active) this.simulation?.alphaTarget(0);
+      if (this.simulationPaused) {
+        d.fx = d.x;
+        d.fy = d.y;
+      } else {
+        d.fx = null;
+        d.fy = null;
+      }
+    });
+}
+public pauseSimulation(): void {
     if (this.simulation && !this.simulationPaused) {
-      // 🧠 Salva i nodi selezionati (se disponibile)
       if (this.originalOptions) {
         const selected: { id: string; type: 'lobbyist' }[] = [];
+        const draggable: { id: string; type: 'lobbyist' }[] = [];
+
 
         this.nodeGroup?.each((d: any, i, nodes) => {
           const g = d3.select(nodes[i]);
           if (g.classed('node-lobbyist-pinned')) {
             selected.push({ id: d.id, type: 'lobbyist' });
           }
+          if (g.classed('node-lobbyist-draggable')) {
+            draggable.push({ id: d.id, type: 'lobbyist' });
+          }
         });
 
         this.originalOptions.SelectedNode = selected;
+        this.originalOptions.DraggableNode = draggable;
       }
 
-      this.savedForces.clear();
-      this.savedForces.set('link', this.simulation.force('link')!);
-      this.savedForces.set('charge', this.simulation.force('charge')!);
-      this.savedForces.set('collide', this.simulation.force('collide')!);
-      this.savedForces.set('repelWiNodes', this.simulation.force('repelWiNodes')!);
 
       this.simulation
         .force('link', d3.forceLink().strength(0))
@@ -861,11 +1027,13 @@ export class D3Service {
     }
   }
 
+
   public resumeSimulation(): void {
     if (this.simulationPaused && this.originalElement) {
       this.simulationPaused = false;
 
       const selectedNodes = this.originalOptions?.SelectedNode ?? [];
+      const draggableNodes = this.originalOptions?.DraggableNode ?? [];
       this.drawForceGraph(
         this.originalElement,
         this.originalNodes,
@@ -873,13 +1041,29 @@ export class D3Service {
         {
           ...this.originalOptions,
           SelectedNode: selectedNodes, 
+          DraggableNode: draggableNodes,
         }
       );
       
       this.updateNodeSelection(selectedNodes);
-
+      this.updateNodeDraggable(draggableNodes); // <- riapplica lo stile E drag di gruppo
     }
   }
+
+  public updateNodeDraggable(draggableNodes: SelectedNode[]): void {
+  const draggableIds = new Set(draggableNodes.map(n => n.id));
+  const realDraggableNodes: any[] = [];
+  this.nodeGroup?.each(function (d: any, i, nodes) {
+    const isDraggable = draggableIds.has(d.id);
+    const nodeSel = d3.select(nodes[i]);
+    nodeSel.classed('node-lobbyist-draggable', isDraggable);
+    
+    if (isDraggable) {
+      realDraggableNodes.push(d);
+    }
+  });
+  this.applyGroupDrag(realDraggableNodes);
+}
 
     public updateNodeSelection(selectedNodes: SelectedNode[]): void {
       const selectedIds = new Set(selectedNodes.map(n => n.id));
@@ -902,207 +1086,5 @@ export class D3Service {
           d3.select(this).classed('link-pinned', isLinkedToSelected);
         });
     }
-
-
-    public applyLassoSelection(): void {
-      if (!this.selectorRect || !this.nodeGroup) return;
-
-      const x = +this.selectorRect.attr('x');
-      const y = +this.selectorRect.attr('y');
-      const width = +this.selectorRect.attr('width');
-      const height = +this.selectorRect.attr('height');
-
-      const self = this;
-
-      const selectedNodes: any[] = [];
-
-      this.nodeGroup?.each(function (d: any) {
-        const [nx, ny] = [d.x, d.y];
-        if (nx >= x && nx <= x + width && ny >= y && ny <= y + height) {
-          selectedNodes.push(d);
-        }
-      });
-
-      const dragBehavior = d3.drag<SVGGElement, any>()
-        .on('start', function (event, d) {
-          if (!event.active) self.simulation!.alphaTarget(0.3).restart();
-          d.fx = d.x;
-          d.fy = d.y;
-          // Salva posizione iniziale per tutti i selezionati
-          self.nodeGroup?.each(function (n: any) {
-            const group = d3.select(this);
-            if (group.classed('node-lobbyist-draggable')) {
-              n.fx = n.x;
-              n.fy = n.y;
-              n.__initialX = n.x;
-              n.__initialY = n.y;
-            }
-          });
-        })
-        .on('drag', function (event, d) {
-          const dx = event.x - d.__initialX;
-          const dy = event.y - d.__initialY;
-          self.nodeGroup?.each(function (n: any) {
-            const group = d3.select(this);
-            if (group.classed('node-lobbyist-draggable')) {
-              n.fx = n.__initialX + dx;
-              n.fy = n.__initialY + dy;
-            }
-          });
-        })
-      .on('end', function (event, d) {
-        if (!event.active) self.simulation!.alphaTarget(0);
-
-        self.nodeGroup?.each(function (n: any) {
-          const group = d3.select(this);
-          if (group.classed('node-lobbyist-draggable')) {
-            n.fx = null;
-            n.fy = null;
-            delete n.__initialX;
-            delete n.__initialY;
-            group.classed('node-lobbyist-draggable', false);
-          }
-        });
-
-        self.restoreIndividualDrag();
-      });
-
-      this.nodeGroup?.each(function (d: any) {
-        const isSelected = selectedNodes.includes(d);
-        const group = d3.select(this);
-        if (isSelected) {
-          group
-            .classed('node-lobbyist-draggable', true)
-            .call(dragBehavior);
-        }
-      });
-
-      this.removeLassoRect();
-    }
-
-    public toggleLassoRect(enabled: boolean): void {
-      if (enabled) {
-        this.addLassoRect();
-      } else {
-        this.removeLassoRect();
-      }
-    }
-
-    private addLassoRect(): void {
-      if (!this.zoomGroup || this.selectorRect) return;
-
-      const width = +this.svg!.attr('width');
-      const height = +this.svg!.attr('height');
-
-      // 2. Crea gruppo per selezione
-      this.selectorGroup = this.zoomGroup.append('g').attr('class', 'lasso-group');
-
-      // 3. Rettangolo di selezione (150 x 250)
-      const rectX = width / 2 - 75;
-      const rectY = height / 2 - 125;
-      const rectWidth = 150;
-      const rectHeight = 250;
-
-      this.selectorRect = this.selectorGroup.append('rect')
-        .attr('x', rectX)
-        .attr('y', rectY)
-        .attr('width', rectWidth)
-        .attr('height', rectHeight)
-        .attr('fill', 'rgba(100, 100, 255, 0.08)')
-        .attr('stroke', '#3366cc')
-        .attr('stroke-width', 2)
-        .attr('stroke-dasharray', '6,3')
-        .attr('rx', 6)
-        .attr('ry', 6)
-        .attr('cursor', 'move')
-        .call(d3.drag<SVGRectElement, any>()
-          .on('drag', (event) => {
-            const rect = this.selectorRect!;
-            const newX = +rect.attr('x') + event.dx;
-            const newY = +rect.attr('y') + event.dy;
-            rect.attr('x', newX).attr('y', newY);
-            this.updateResizeHandlePosition();
-          })
-        );
-
-      // 4. Maniglia di ridimensionamento (gruppo + rect + simbolo)
-      this.resizeHandle = this.selectorGroup.append('g')
-        .attr('class', 'resize-handle')
-        .style('cursor', 'nwse-resize')
-        .call(d3.drag<SVGGElement, unknown>()
-          .on('drag', (event) => {
-            const newWidth = Math.max(20, event.x - +this.selectorRect!.attr('x'));
-            const newHeight = Math.max(20, event.y - +this.selectorRect!.attr('y'));
-            this.selectorRect!.attr('width', newWidth).attr('height', newHeight);
-            this.updateResizeHandlePosition();
-          })
-        );
-
-      this.resizeHandle.append('rect')
-        .attr('width', 40)
-        .attr('height', 40)
-        .attr('rx', 4)
-        .attr('ry', 4)
-        .attr('fill', '#ccc')
-        .attr('stroke', '#888')
-        .attr('stroke-width', 1.5);
-
-      this.resizeHandle.append('text')
-        .text('⤡') // oppure '↘', '⤢', '⬍'
-        .attr('x', 20) // metà del rect (40 / 2)
-        .attr('y', 20)
-        .attr('text-anchor', 'middle')
-        .attr('dominant-baseline', 'middle')
-        .attr('font-size', '50px') // un po’ più piccolo per centratura perfetta
-        .attr('fill', '#444')
-        .attr('pointer-events', 'none');
-
-      this.updateResizeHandlePosition();
-    }
-
-
-    private restoreIndividualDrag(): void {
-      this.nodeGroup?.call(
-        d3.drag<SVGGElement, any>()
-          .on('start', (event, d) => {
-            if (!event.active) this.simulation!.alphaTarget(0.3).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-          })
-          .on('drag', (event, d) => {
-            d.fx = event.x;
-            d.fy = event.y;
-          })
-          .on('end', (event, d) => {
-            if (!event.active) this.simulation!.alphaTarget(0);
-            if (this.simulationPaused) {
-              d.fx = d.x;
-              d.fy = d.y;
-            } else {
-              d.fx = null;
-              d.fy = null;
-            }
-          })
-      );
-    }
-
-    private removeLassoRect(): void {
-      this.selectorGroup?.remove();
-      this.selectorGroup = null;
-      this.selectorRect = null;
-      this.resizeHandle = null;
-    }
-
-    private updateResizeHandlePosition(): void {
-      if (!this.selectorRect || !this.resizeHandle) return;
-
-      const x = +this.selectorRect.attr('x');
-      const y = +this.selectorRect.attr('y');
-      const width = +this.selectorRect.attr('width');
-      const height = +this.selectorRect.attr('height');
-
-      this.resizeHandle.attr('transform', `translate(${x + width - 10}, ${y + height - 10})`);
-    }
-
 
 }

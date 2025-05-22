@@ -73,17 +73,8 @@ path.node-hover {
   fill: #004b87;
 }
 
-@keyframes pulse-stroke {
-  0%   { stroke-opacity: 1; }
-  50%  { stroke-opacity: 0.3; }
-  100% { stroke-opacity: 1; }
-}
-
 .node-lobbyist-draggable circle {
-  stroke: #ff7f0e;
-  stroke-dasharray: 10, 4;
-  stroke-width: 6px;
+  fill: #b22222;
 
-  animation: pulse-stroke 1s infinite ease-in-out;
 }
 
