@@ -147,14 +147,25 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       this.d3Service.drawMonths(svg, calculatedWidth, this.meetingHeight, displayStartDate, displayEndDate);
   
       this.drawDottedLines(svg, calculatedWidth, height);
-      this.drawEntities(svg, 'lobbyist', calculatedWidth, displayStartDate, displayEndDate, this.lobbyistDegreeThreshold);
+      const filteredMeetings = this.meetingManager.getFilteredMeetingsByInterval(this.startDate, this.endDate);
+      this.drawMeetingNodes(svg, this.d3Service.getTimeScale(calculatedWidth, displayStartDate, displayEndDate), filteredMeetings);
+      this.drawEntities(svg, 'lobbyist', calculatedWidth, displayStartDate, displayEndDate, this.lobbyistDegreeThreshold, filteredMeetings);
       if (this.showRepresentatives) {
-        this.drawEntities(svg, 'representative', calculatedWidth, displayStartDate, displayEndDate);
+        this.drawEntities(svg, 'representative', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
       } else {
-        this.drawEntities(svg, 'directorate', calculatedWidth, displayStartDate, displayEndDate);
+        this.drawEntities(svg, 'directorate', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
       }
+      svg.selectAll('.meeting-node').raise();
+      const meetingIds = meetings.map(m => `meeting_${m.lobbyist_id}_${m.meeting_number}`);
+      meetingIds.forEach(meetingId => {
+        if (this.selectedNodes.has(meetingId)) {
+          d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
+            d3.select(this).classed(`node-meeting-pinned`, true);
+          });
+        }
+      });
     });
-    this.d3Service.resetStrokes();    
+    //this.d3Service.resetStrokes();    
   }
 
   private resetVisualization(element: HTMLElement, width: number, height: number): void {
@@ -172,10 +183,10 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     width: number,
     displayStartDate: Date,
     displayEndDate: Date,
-    minDegree: number = 1
+    minDegree: number = 1,
+    filteredMeetings: MeetingData[],
   ): void {
     const yPosition = this.entityPositions[entityType];
-    const filteredMeetings = this.meetingManager.getFilteredMeetingsByInterval(this.startDate, this.endDate);
     const entityPositions = this.meetingManager.computeOptimizedNodePositions(entityType, width, this.startDate, this.endDate, displayStartDate, displayEndDate);    
 
     const sortedEntities = Array.from(entityPositions.entries()).sort((a, b) => a[1] - b[1]);
@@ -188,7 +199,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const entityName = isGrouped ? "Lobbyist Group" : this.meetingManager.getEntityName(id, entityType);
 
       this.drawConnections(svg, entity, xPosition, this.d3Service.getTimeScale(width, displayStartDate, displayEndDate), yPosition, filteredMeetings);
-
       let truncatedLength = 5;
       if (index > 0) {
         const prevX = array[index - 1][1];
@@ -197,12 +207,14 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         }
       }
 
+      let isLabelFixed = this.selectedNodes.has(entity.id);
+
       const labelYPosition = entityType === 'lobbyist' ? yPosition - 20 : yPosition + 30;
 
       const labelGroup = svg.append("g")
         .attr("class", "label-group")
-        .style("opacity", 0)
-        .style("pointer-events", "none");
+        .classed("label-visible", false)
+        .classed("label-fixed", isLabelFixed);
       const backgroundRect = labelGroup.append("rect")
         .attr("fill", "rgba(255, 255, 255, 1)")
         .attr("rx", 4)
@@ -214,8 +226,11 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         .text(this.truncateLabel(entityName))
         .attr("font-size", `${this.labelSize}px`)
         .attr("fill", entityType === 'lobbyist' ? '#004b87' : entityType === 'representative' ? '#54c459' : '#3CB371')
-        .attr("class", `label-${entityType}`)
-        .style("pointer-events", "none")        
+        .attr("data-original-text", entityName)
+        .attr("data-truncated", entityName.substring(0, truncatedLength))
+        .attr("class", `label-text label-${entityType}`)
+        .text(entityName.substring(0, truncatedLength))
+        .style("pointer-events", "none")
         .style('padding', '2px 5px')
         .style('border-radius', '4px')
         .attr('text-anchor', 'middle');
@@ -228,9 +243,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           .attr("width", bbox.width + 10)
           .attr("height", bbox.height + 4);
       }
-  
-      let isLabelFixed = this.selectedNodes.has(entity.id);
-  
+    
       const connectedMeetings = filteredMeetings
         .filter(d => 
           (entityType === 'lobbyist' && d.lobbyist_id === id) ||
@@ -262,6 +275,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             .filter(d => groupedLobbists.includes(d.lobbyist_id))
             .map(d => `meeting-link-meeting_${d.lobbyist_id}_${d.meeting_number}`)
             .join(' ');
+        const lobbyistNodeClasses = groupedLobbists
+            .map(id => `node-lobbyist-${id} link-lobbyist-${id}`)
+            .join(' ');
         const isGroupSelected = groupedLobbists.some(lobbyistId => self.selectedNodes.has(lobbyistId));
 
         const groupedNode = this.d3Service.drawGroupedNode(
@@ -272,18 +288,15 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           entityType === 'lobbyist' ? '#e6c7e0' : entityType === 'representative' ? '#80EF80' : '#3CB371',
           entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
           2,
-          `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings}`
+          `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings} ${lobbyistNodeClasses}`
         ).on("click", () => this.toggleGrouping(id.replace("grouped-", "")))
         .on('mouseover', function (this: SVGRectElement) {
-          d3.select(this)
-              .transition()
-              .duration(200)
-              .attr('stroke', '#ff7f0e');
+          d3.select(this).classed('node-hover', true);
   
-          labelGroup.style("opacity", 1);
-          labelGroup.raise();
+          labelGroup.classed("label-visible", true).raise();
+          labelGroup.classed("label-visible", true).raise();
           label.text(entityName);
-  
+
           const bbox = label.node()?.getBBox();
           if (bbox) {
               backgroundRect
@@ -294,34 +307,30 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
                   .style("display", "block");
           }
           d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
-              d3.select(this).raise();
+              d3.select(this).raise().classed('node-hover', true);
           });
-  
-          d3.selectAll(`.link-${entity.type}-${entity.id}`)
-              .transition()
-              .duration(200)
-              .attr('stroke', '#ff7f0e')
-              .attr('stroke-width', 4);
         })
         .on('mouseout', function (this: SVGRectElement) {
-            d3.select(this)
-                .transition()
-                .duration(200)
-                .attr('stroke', '#000');
-    
-            labelGroup.style("opacity", 0);
+            d3.select(this).classed('node-hover', false);
+            d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
+                d3.select(this).classed('node-hover', false);
+            });
+            labelGroup.classed("label-visible", false);
             backgroundRect.style("display", "none");
-    
-            self.d3Service.resetStrokes();
         }).on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
           event.preventDefault();
         });
 
+        d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
+          d3.select(this).classed(`${lobbyistNodeClasses}`, true);
+        });
+
         if (isGroupSelected) {
           groupedNode
-            .attr('stroke', '#ff7f0e')
-            .attr('stroke-width', 4)
-            .classed('node-selected', true);
+            .classed('node-lobbyist-pinned', true);
+          d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
+              d3.select(this).classed(`node-${entity.type}-pinned`, true);
+          });
         }
       } else {
         const node = this.d3Service.drawNode(
@@ -332,51 +341,48 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#80EF80' : '#3CB371',
           entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
           2,
-          `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings} ${isDummyDirectorate ? 'dummy-directorate' : ''}`
+          `node-${entityType} node-${entity.type}-${entity.id} link-${entity.type}-${entity.id} ${connectedMeetings} ${isDummyDirectorate ? 'dummy-directorate' : ''}`
         ).on('click', () => this.onNodeClick(entity))
         .on('mouseover', function (this: SVGCircleElement) {
-          d3.select(this)
-            .transition()
-            .duration(200)
-            .attr('r', 15)
-            .attr('stroke', '#ff7f0e');
+          d3.selectAll('.node-hover').each(function () {
+            d3.select(this).classed('node-hover', false);
+          });
+          d3.selectAll(`.node-${entity.type}-${entity.id}`).each(function () {
+            d3.select(this).classed('node-hover', true);
+          });
   
-            labelGroup.style("opacity", 1);
-            labelGroup.raise();
-            label.text(entityName);
+          labelGroup.classed("label-visible", true).raise();
+          label.text(entityName);
 
-            const bbox = label.node()?.getBBox();
-            if (bbox) {
-              backgroundRect
-                .attr("x", bbox.x - 5)
-                .attr("y", bbox.y - 2)
-                .attr("width", bbox.width + 10)
-                .attr("height", bbox.height + 4)
-                .style("display", "block");
-            }
+          const bbox = label.node()?.getBBox();
+          if (bbox) {
+            backgroundRect
+              .attr("x", bbox.x - 5)
+              .attr("y", bbox.y - 2)
+              .attr("width", bbox.width + 10)
+              .attr("height", bbox.height + 4)
+              .style("display", "block");
+          }
           
           d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
             d3.select(this).raise();
           });
   
-          d3.selectAll(`.link-${entity.type}-${entity.id}`)
-            .transition()
-            .duration(200)
-            .attr('stroke', '#ff7f0e')
-            .attr('stroke-width', 4);
+          d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
+            d3.select(this).classed('node-hover', true);
+          });
         })
         .on('mouseout', function (this: SVGCircleElement) {
-          d3.select(this)
-            .transition()
-            .duration(200)
-            .attr('r', 10)
-            .attr('stroke', '#000');
-  
+          d3.selectAll('.node-hover').each(function () {
+            d3.select(this).classed('node-hover', false);
+          });
+
+          label.text(entityName.substring(0, truncatedLength));
+
           if (!isLabelFixed) {
-            labelGroup.style("opacity", 0);
+            labelGroup.classed("label-visible", false);
             backgroundRect.style("display", "none");
           } else {
-            label.text(entityName.substring(0, truncatedLength));
             const bbox = label.node()?.getBBox();
             if (bbox) {
               backgroundRect
@@ -387,53 +393,35 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
                 .style("display", "block");
             }
           }
-          self.d3Service.resetStrokes();
         })
         .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
           event.preventDefault();
           isLabelFixed = !isLabelFixed;
-        
-          if (isLabelFixed) {
-            label.text(entityName.substring(0, truncatedLength));
-            labelGroup.style("opacity", 1).classed('label-fixed', true);
-            d3.select(this)
-              .classed('node-selected', true);
-        
-            self.selectedNodes.add(entity.id);
 
+          labelGroup.classed("label-fixed", isLabelFixed);
+          label.text(isLabelFixed ? entityName.substring(0, truncatedLength) : entityName);
+
+          d3.selectAll(`.node-${entity.type}-${entity.id}`).each(function () {
+            d3.select(this).classed(`node-${entity.type}-pinned`, isLabelFixed);
+          });
+          if (isLabelFixed) {        
+            self.selectedNodes.add(entity.id);
             self.selectionService.selectNode(entity);
           } else {
-            labelGroup.style("opacity", 0).classed('label-fixed', false);
-            d3.select(this)
-              .classed('node-selected', false);
-        
             self.selectedNodes.delete(entity.id);
-
             self.selectionService.deselectNode(entity.id);
           }
 
         });
 
         if (this.selectedNodes.has(entity.id)) {
-          node.attr('stroke', '#ff7f0e')
-              .attr('stroke-width', 2)
-              .classed('node-selected', true);
-        }
-        
-
-        if (isLabelFixed) {
-          labelGroup.style("opacity", 1).classed('label-fixed', true);
-          label.text(entityName.substring(0, truncatedLength));
-          node.attr('stroke', '#ff7f0e')
-              .attr('stroke-width', 4)
-              .classed('node-selected', true);
-
-          self.d3Service.resetStrokes();            
+          d3.selectAll(`.node-${entity.type}-${entity.id}`).each(function () {
+            d3.select(this).classed(`node-${entity.type}-pinned`, isLabelFixed);
+          });
         }
       }
     });
   
-    this.drawMeetingNodes(svg, this.d3Service.getTimeScale(width, displayStartDate, displayEndDate), filteredMeetings);
   }
 
   private drawConnections(
@@ -482,10 +470,26 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         }
   
         path.lineTo(cx2, cy2);
-  
+        const self = this;
         this.d3Service.drawConnection(svg, path.toString(), entity, meetingId)
-          .on('click', () => {if(!isGrouped) this.onNodeClick({ id: meetingId, type: 'meeting' })});
-    });
+          .on('click', () => {if(!isGrouped) this.onNodeClick({ id: meetingId, type: 'meeting' })})
+          .on('contextmenu', function (this: SVGPathElement, event: MouseEvent) {
+            event.preventDefault();
+            
+            let isMeetingPinned = self.selectedNodes.has(meetingId);
+            isMeetingPinned = !isMeetingPinned;
+            d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
+              d3.select(this).classed('node-meeting-pinned', isMeetingPinned);
+            });
+            if(isMeetingPinned) {
+              self.selectedNodes.add(meetingId);
+              self.selectionService.selectNode({ id: meetingId, type: 'meeting' });
+            } else {  
+              self.selectedNodes.delete(meetingId);
+              self.selectionService.deselectNode(meetingId);
+            }
+          });
+      });
   }
 
   private drawMeetingNodes(
@@ -517,6 +521,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const nodeColor = colorScale(meetings.length);
       const textColor = this.isDarkColor(nodeColor) ? 'white' : 'black';
       const entityLinks = meetings.flatMap(d => [
+        `node-lobbyist-${d.lobbyist_id}`,
+        `node-representative-${d.representative_id}`,
+        `node-directorate-${d.directorate_id}`,
         `link-lobbyist-${d.lobbyist_id}`,
         `link-representative-${d.representative_id}`,
         `link-directorate-${d.directorate_id}`,
@@ -549,19 +556,49 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           count: meetingCount,
           textColor: textColor
         };
-        self.d3Service.resetStrokes();
+        d3.selectAll('.node-hover').each(function () {
+          d3.select(this).classed('node-hover', false);
+        });
         meetingIds.forEach(meetingId => {
           d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
             d3.select(this).raise();
           });
       
-          d3.selectAll(`.meeting-link-${meetingId}`)
-            .transition()
-            .duration(200)
-            .attr('stroke', '#ff7f0e')
-            .attr('stroke-width', 4);
+          d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
+            d3.select(this).classed('node-hover', true);
+          });
         });
         this.cdr.detectChanges();
+      })
+      .on('mouseout', () => {
+        d3.selectAll('.node-hover').each(function () {
+            d3.select(this).classed('node-hover', false);
+          });
+      })
+      .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
+        event.preventDefault();
+        const allPinned = meetingIds.every(meetingId => self.selectedNodes.has(meetingId));
+        if (allPinned) {
+          // Deseleziona tutti
+          meetingIds.forEach(meetingId => {
+            d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
+              d3.select(this).classed('node-meeting-pinned', false);
+            });
+            self.selectedNodes.delete(meetingId);
+            self.selectionService.deselectNode(meetingId);
+          });
+        } else {
+          // Seleziona solo quelli non selezionati
+          meetingIds.forEach(meetingId => {
+            if (!self.selectedNodes.has(meetingId)) {
+              d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
+                d3.select(this).classed('node-meeting-pinned', true);
+              });
+              self.selectedNodes.add(meetingId);
+              self.selectionService.selectNode({ id: meetingId, type: 'meeting' });
+            }
+          });
+        }
       });
     });
   }

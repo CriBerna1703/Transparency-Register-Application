@@ -52,10 +52,16 @@ export class CsvService {
 
   generateLobbyistCsvData(jsonData: any[], allFields: { field_id: number; field_name: string }[]): any[] {
     const lobbyistMap = new Map<string, any>();
+    const INFINITE = 9223372036854775807;
 
     jsonData.forEach(item => {
       const lobbyist = item.Lobbyist;
       if (!lobbyist || lobbyistMap.has(lobbyist.lobbyist_id)) return;
+
+      const min = lobbyist.annual_cost_estimate_min ?? '';
+      const max = lobbyist.annual_cost_estimate_max === INFINITE
+        ? '∞'
+        : lobbyist.annual_cost_estimate_max ?? '';
 
       const lobbyistData: { [key: string]: any } = {
         lobbyist_id: lobbyist.lobbyist_id || '',
@@ -76,7 +82,9 @@ export class CsvService {
         eu_relations_representative: lobbyist.eu_relations_representative?.replace(/\n/g, ' ') || '',
         eu_relations_representative_role: lobbyist.eu_relations_representative_role?.replace(/\n/g, ' ') || '',
         transparency_register_url: lobbyist.transparency_register_url?.replace(/\n/g, ' ') || '',
-        country: lobbyist.country?.replace(/\n/g, ' ') || ''
+        country: lobbyist.country?.replace(/\n/g, ' ') || '',
+        annual_cost_estimate_min: min,
+        annual_cost_estimate_max: max
       };
 
       allFields.forEach(field => {
@@ -97,5 +105,4 @@ export class CsvService {
     return Array.from(lobbyistMap.values());
   }
 
-  
 }

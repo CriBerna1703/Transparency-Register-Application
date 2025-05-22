@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 export interface SelectedNode {
   id: string;
-  type: 'lobbyist' | 'representative' | 'directorate';
+  type: 'lobbyist' | 'representative' | 'directorate' | 'meeting';
 }
 
 @Injectable({

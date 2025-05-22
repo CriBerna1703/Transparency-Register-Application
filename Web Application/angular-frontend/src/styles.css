@@ -2,24 +2,48 @@ html, body {
     font-family: Tahoma, sans-serif !important;
 }
 
-
-.node-lobbyist-selected circle {
+circle.node-lobbyist-pinned,
+rect.node-lobbyist-pinned,
+path.node-lobbyist-pinned {
   stroke: #ff7f0e;
-  stroke-width: 6px;
+  stroke-width: 3px;
 }
 
-.node-lobbyist-selected text {
+circle.node-representative-pinned,
+rect.node-representative-pinned,
+path.node-representative-pinned {
+  stroke: #ff7f0e;
+  stroke-width: 3px;
+}
+
+circle.node-directorate-pinned,
+rect.node-directorate-pinned,
+path.node-directorate-pinned {
+  stroke: #ff7f0e;
+  stroke-width: 3px;
+}
+
+circle.node-meeting-pinned,
+rect.node-meeting-pinned,
+path.node-meeting-pinned {
+  stroke: #ff7f0e;
+  stroke-width: 3px;
+}
+
+text.node-lobbyist-pinned {
   display: block !important;
 }
 
-.link-selected {
+.link-pinned {
   stroke: #ff7f0e !important;
-  stroke-width: 8px;
+  stroke-width: 5px;
 }
 
-.node-hover circle {
+circle.node-hover,
+rect.node-hover,
+path.node-hover {
   stroke: #ff7f0e;
-  stroke-width: 6px;
+  stroke-width: 4px;
 }
 
 .node-hover text {
@@ -28,7 +52,25 @@ html, body {
 
 .link-hover {
   stroke: #ff7f0e;
-  stroke-width: 6px;
+  stroke-width: 5px;
+}
+
+.label-group {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.label-group.label-visible,
+.label-group.label-fixed {
+  opacity: 1;
+}
+
+.label-text {
+  font-size: 14px;
+  text-anchor: middle;
+  pointer-events: none;
+  fill: #004b87;
 }
 
 @keyframes pulse-stroke {

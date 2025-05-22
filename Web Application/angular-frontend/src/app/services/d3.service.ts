@@ -205,35 +205,6 @@ export class D3Service {
       .attr('stroke-width', strokeWidth)
       .attr('class', className)
       .style('cursor', 'pointer');
-
-    let self = this;
-  
-    node.on('mouseover',function () {
-      self.resetStrokes();
-      meetingIds.forEach(meetingId => {
-        d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
-          d3.select(this).raise();
-        });
-    
-        d3.selectAll(`.meeting-link-${meetingId}`)
-          .transition()
-          .duration(200)
-          .attr('stroke', '#ff7f0e')
-          .attr('stroke-width', 4);
-      });
-    });
-    node.on('mouseout',function () {
-      self.resetStrokes();
-      d3.select(node.node())
-        .transition()
-        .duration(200)
-        .attr('x', x - size / 2)
-        .attr('y', y - size / 2)
-        .attr('width', size)
-        .attr('height', size)          
-        .attr('stroke', '#000')
-        .attr('stroke-width', 2);
-    });
   
     return node;
   }
@@ -312,16 +283,19 @@ export class D3Service {
       .attr('stroke', '#cdcdcd')
       .attr('stroke-width', 2)
       .attr('fill', 'none')
-      .attr('class', `link link-${entity.type}-${entity.id} meeting-link-${meetingId}`)
+      .attr('class', `link node-${entity.type}-${entity.id} link-${entity.type}-${entity.id} meeting-link-${meetingId}`)
       .on('mouseover', function () {
-        d3.selectAll(`.meeting-link-${meetingId}`)
-          .transition()
-          .duration(200)
-          .attr('stroke', '#ff7f0e')
-          .attr('stroke-width', 4);
+        d3.selectAll('.node-hover').each(function () {
+          d3.select(this).classed('node-hover', false);
+        });
+        d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
+          d3.select(this).classed('node-hover', true);
+        });
       })
       .on('mouseout', function () {
-        self.resetStrokes();
+        d3.selectAll('.node-hover').each(function () {
+          d3.select(this).classed('node-hover', false);
+        });
       });
   }
 
@@ -336,58 +310,58 @@ export class D3Service {
       .attr('stroke-dasharray', '5,5');
   }
 
-  resetStrokes(){
-    d3.selectAll(`.link`)
-      .transition()
-      .duration(200)
-      .attr('stroke', '#cdcdcd')
-      .attr('stroke-width', 2);
+  // resetStrokes(){
+  //   d3.selectAll(`.link`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('stroke', '#cdcdcd')
+  //     .attr('stroke-width', 2);
 
-    d3.selectAll(`.node-lobbyist:not(.node-selected)`)
-      .transition()
-      .duration(200)
-      .attr('stroke', '#5b2c55')
-      .attr('stroke-width', 2);
+  //   d3.selectAll(`.node-lobbyist:not(.node-selected)`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('stroke', '#5b2c55')
+  //     .attr('stroke-width', 2);
   
-    d3.selectAll(`.node-representative:not(.node-selected)`)
-      .transition()
-      .duration(200)
-      .attr('stroke', '#1bd41b')
-      .attr('stroke-width', 2);
+  //   d3.selectAll(`.node-representative:not(.node-selected)`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('stroke', '#1bd41b')
+  //     .attr('stroke-width', 2);
   
-    d3.selectAll(`.node-directorate:not(.node-selected)`)
-      .transition()
-      .duration(200)
-      .attr('stroke', '#297a4d')
-      .attr('stroke-width', 2);
+  //   d3.selectAll(`.node-directorate:not(.node-selected)`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('stroke', '#297a4d')
+  //     .attr('stroke-width', 2);
     
-    d3.selectAll(`.meeting-node`)
-      .transition()
-      .duration(200)
-      .attr('stroke', '#000')
-      .attr('stroke-width', 2);
+  //   d3.selectAll(`.meeting-node`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('stroke', '#000')
+  //     .attr('stroke-width', 2);
 
-    d3.selectAll(`.label`)
-      .transition()
-      .duration(200)
-      .attr('fill', 'white')
-      .attr('font-size', '10px')
-      .style('opacity', 0);
+  //   d3.selectAll(`.label`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('fill', 'white')
+  //     .attr('font-size', '10px')
+  //     .style('opacity', 0);
     
-    d3.selectAll(`.node-selected`)
-      .transition()
-      .duration(200)
-      .attr('stroke', '#ff7f0e')
-      .attr('stroke-width', 2);
+  //   d3.selectAll(`.node-selected`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('stroke', '#ff7f0e')
+  //     .attr('stroke-width', 2);
 
-    d3.selectAll(`.node-directorate.dummy-directorate:not(.node-selected)`)
-      .transition()
-      .duration(200)
-      .attr('stroke', '#e52b50')
-      .attr('stroke-width', 2);
+  //   d3.selectAll(`.node-directorate.dummy-directorate:not(.node-selected)`)
+  //     .transition()
+  //     .duration(200)
+  //     .attr('stroke', '#e52b50')
+  //     .attr('stroke-width', 2);
 
-    this.redrawLabels();
-  }
+  //   this.redrawLabels();
+  // }
 
   redrawLabels() {
     const labels = d3.selectAll('.label-fixed').nodes() as SVGTextElement[];
@@ -688,14 +662,16 @@ export class D3Service {
       .attr('stroke', (d: any) => d.invisible ? 'none' : '#5b2c55') 
       .attr('stroke-width', 2)
       .style('display', null) 
-      .attr('data-id', d => d.id);
+      .attr('data-id', d => d.id)
+      .attr('class', (d: any) => `node-lobbyist node-lobbyist-${d.id}`);
 
     this.nodeGroup.append('text')
       .text((d: any) => d.name)
       .attr('text-anchor', 'middle')
       .attr('fill', '#004b87')
       .attr('dy', '-10')
-      .style('display', 'none');
+      .style('display', 'none')
+      .attr('class', (d: any) => `node-lobbyist node-lobbyist-${d.id}`);
 
     this.nodeGroup
       .on('click', (event, d) => {
@@ -704,9 +680,16 @@ export class D3Service {
       })
       .on('mouseover', function (event, d) {
       const group = d3.select(this);
-      if (group.classed('node-lobbyist-selected')) return;
-
-      group.classed('node-hover', true);
+      if (group.classed('node-lobbyist-pinned')) return;
+      d3.selectAll('.node-hover').each(function () {
+        d3.select(this).classed('node-hover', false);
+      });
+      d3.selectAll(`.node-lobbyist-${d.id}`).each(function () {
+        d3.select(this).classed('node-hover', true);
+      });
+      d3.selectAll(`.link-lobbyist-${d.id}`).each(function () {
+        d3.select(this).classed('node-hover', true);
+      });
 
       d3.select(element).selectAll('line')
         .each(function (l: any) {
@@ -719,7 +702,9 @@ export class D3Service {
         });
       })
       .on('mouseout', function (event, d) {
-        d3.select(this).classed('node-hover', false);
+        d3.selectAll('.node-hover').each(function () {
+          d3.select(this).classed('node-hover', false);
+        });
 
         d3.select(element).selectAll('line')
           .each(function (l: any) {
@@ -734,6 +719,10 @@ export class D3Service {
       .on('contextmenu', function (event, d) {
         event.preventDefault();
         event.stopPropagation();
+        const isLobbyistPinned = d3.select(this).classed('node-lobbyist-pinned');
+        d3.selectAll(`.node-lobbyist-${d.id}`).each(function () {
+          d3.select(this).classed(`node-lobbyist-pinned`, !isLobbyistPinned);
+        });
       
         options?.onNodeRightClick?.(d);
       });
@@ -847,7 +836,7 @@ export class D3Service {
 
         this.nodeGroup?.each((d: any, i, nodes) => {
           const g = d3.select(nodes[i]);
-          if (g.classed('node-lobbyist-selected')) {
+          if (g.classed('node-lobbyist-pinned')) {
             selected.push({ id: d.id, type: 'lobbyist' });
           }
         });
@@ -898,7 +887,7 @@ export class D3Service {
       this.nodeGroup?.each(function (d: any) {
         const isSelected = selectedIds.has(d.id);
         d3.select(this)
-          .classed('node-lobbyist-selected', isSelected)
+          .classed('node-lobbyist-pinned', isSelected)
           .select('text')
           .text(isSelected ? (d.name?.substring(0, 4) ?? '') : d.name);
       });
@@ -910,7 +899,7 @@ export class D3Service {
           const targetId = typeof l.target === 'object' ? l.target.id : l.target;
 
           const isLinkedToSelected = selectedIds.has(sourceId) || selectedIds.has(targetId);
-          d3.select(this).classed('link-selected', isLinkedToSelected);
+          d3.select(this).classed('link-pinned', isLinkedToSelected);
         });
     }
 
