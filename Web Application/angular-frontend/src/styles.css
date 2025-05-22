@@ -2,6 +2,7 @@ html, body {
     font-family: Tahoma, sans-serif !important;
 }
 
+
 .node-lobbyist-selected circle {
   stroke: #ff7f0e;
   stroke-width: 3px;
@@ -27,4 +28,9 @@ html, body {
 .link-hover {
   stroke: #ff7f0e;
   stroke-width: 5px;
+}
+
+
+.lasso-box {
+  pointer-events: none;
 }

@@ -1,14 +1,17 @@
 import { Injectable } from '@angular/core';
+import { SelectedNode } from './selection.service';
 import * as d3 from 'd3';
 
 export interface ForceGraphOptions {
   width?: number;
   height?: number;
   zoomLevel?: number;
-  onNodeClick?: (d: any) => void;
   minSim?: number; 
   maxSim?: number;
+  SelectedNode?: SelectedNode[];
+  onNodeClick?: (d: any) => void;
   onLinkLeftClick?: (link: any) => void;
+  onNodeRightClick?: (d: any) => void;
 }
 
 @Injectable({
@@ -401,519 +404,513 @@ export class D3Service {
     });
   }
 
-private svg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null = null;
-private zoomGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
-private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
-private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
-private simulation: d3.Simulation<any, any> | null = null;
-private originalElement: HTMLElement | null = null;
-private originalNodes: any[] = [];
-private originalLinks: any[] = [];
-private originalOptions: ForceGraphOptions | undefined;
-private selectedNodeIds: Set<string> = new Set();
+  private svg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null = null;
+  private zoomGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
+  private zoomBehavior: d3.ZoomBehavior<Element, unknown> | null = null;
+  private nodeGroup: d3.Selection<SVGGElement, any, SVGGElement, unknown> | null = null;
+  private simulation: d3.Simulation<any, any> | null = null;
+  private originalElement: HTMLElement | null = null;
+  private originalNodes: any[] = [];
+  private originalLinks: any[] = [];
+  private originalOptions: ForceGraphOptions | undefined;
 
 
-private simulationPaused: boolean = false;
-private savedForces: Map<string, d3.Force<any, any>> = new Map();
-private labelFontSize: number = 12;
+  private simulationPaused: boolean = false;
+  private savedForces: Map<string, d3.Force<any, any>> = new Map();
+  private labelFontSize: number = 12;
 
-drawForceGraph(
-  element: HTMLElement,
-  nodes: any[],
-  links: any[],
-  options?: ForceGraphOptions
-): void {
-  this.originalElement = element;
-  this.originalNodes = JSON.parse(JSON.stringify(nodes)); // deep copy
-  this.originalLinks = JSON.parse(JSON.stringify(links));
-  this.originalOptions = options;
-  const width = options?.width ?? 1000;
-  const height = options?.height ?? 600;
-  const initialZoom = (options?.zoomLevel ?? 0.3);
+  drawForceGraph(
+    element: HTMLElement,
+    nodes: any[],
+    links: any[],
+    options?: ForceGraphOptions
+  ): void {
+    this.originalElement = element;
+    this.originalNodes = JSON.parse(JSON.stringify(nodes)); // deep copy
+    this.originalLinks = JSON.parse(JSON.stringify(links));
+    this.originalOptions = options;
+    const width = options?.width ?? 1000;
+    const height = options?.height ?? 600;
+    const initialZoom = (options?.zoomLevel ?? 0.3);
 
-  const degreeMap = new Map<string, number>();
-  links.forEach(link => {
-    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
-    degreeMap.set(sourceId, (degreeMap.get(sourceId) || 0) + 1);
-    degreeMap.set(targetId, (degreeMap.get(targetId) || 0) + 1);
-  });
-
-  nodes.forEach(node => {
-    node.degree = degreeMap.get(node.id) || 0;
-  });
-
-  const components = this.getConnectedComponents(nodes, links);
-  console.log('Connected components:', components.length);
-  const nonTrivialComponents: string[][] = [];
-  const isolatedNodes: any[] = [];
-
-  components.forEach(comp => {
-    const hasEdges = comp.some(id => (degreeMap.get(id) ?? 0) > 0);
-    if (hasEdges) nonTrivialComponents.push(comp);
-    else isolatedNodes.push(...comp.map(id => nodes.find(n => n.id === id)!));
-  });
-
-  const componentAnchors: { [compIndex: number]: string } = {};
-  const wiNodes: any[] = [];
-
-  nonTrivialComponents.forEach((comp, i) => {
-    const anchorNode = comp.find(id => degreeMap.get(id)! > 0)!;
-    const wi = {
-      id: `w_${i}`,
-      name: '',
-      invisible: true,
-      fx: null,
-      fy: null
-    };
-    nodes.push(wi);
-    wiNodes.push(wi);
-    links.push({
-      source: `w_${i}`,
-      target: anchorNode,
-      __invisible: true,
-      strength: 0.05
+    const degreeMap = new Map<string, number>();
+    links.forEach(link => {
+      const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+      const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+      degreeMap.set(sourceId, (degreeMap.get(sourceId) || 0) + 1);
+      degreeMap.set(targetId, (degreeMap.get(targetId) || 0) + 1);
     });
-    componentAnchors[i] = anchorNode;
-  });
 
-
-  const wCentral = {
-    id: 'w_central',
-    name: '',
-    invisible: true,
-    fx: width / 2 + 500,
-    fy: height / 2+ 500
-  };
-  nodes.push(wCentral);
-
-
-  wiNodes.forEach(wi => {
-    links.push({
-      source: 'w_central',
-      target: wi.id,
-      __invisible: true,
-      strength: 0.1  // debole per non attrarre troppo
+    nodes.forEach(node => {
+      node.degree = degreeMap.get(node.id) || 0;
     });
-  });
 
-  if (isolatedNodes.length > 0) {
-    const wK = {
-      id: 'w_k',
-      name: '',
-      invisible: true,
-      fx: null,
-      fy: null,
-      x : width / 2,
-      y: height / 2
-    };
-    nodes.push(wK);
+    const components = this.getConnectedComponents(nodes, links);
+    console.log('Connected components:', components.length);
+    const nonTrivialComponents: string[][] = [];
+    const isolatedNodes: any[] = [];
 
-    isolatedNodes.forEach(n => {
+    components.forEach(comp => {
+      const hasEdges = comp.some(id => (degreeMap.get(id) ?? 0) > 0);
+      if (hasEdges) nonTrivialComponents.push(comp);
+      else isolatedNodes.push(...comp.map(id => nodes.find(n => n.id === id)!));
+    });
+
+    const componentAnchors: { [compIndex: number]: string } = {};
+    const wiNodes: any[] = [];
+
+    nonTrivialComponents.forEach((comp, i) => {
+      const anchorNode = comp.find(id => degreeMap.get(id)! > 0)!;
+      const wi = {
+        id: `w_${i}`,
+        name: '',
+        invisible: true,
+        fx: null,
+        fy: null
+      };
+      nodes.push(wi);
+      wiNodes.push(wi);
       links.push({
-        source: 'w_k',
-        target: n.id,
+        source: `w_${i}`,
+        target: anchorNode,
         __invisible: true,
-        strength: 0.8  // forza alta per mantenere vicini i nodi isolati
+        strength: 0.05
+      });
+      componentAnchors[i] = anchorNode;
+    });
+
+
+    const wCentral = {
+      id: 'w_central',
+      name: '',
+      invisible: true,
+      fx: width / 2 + 500,
+      fy: height / 2+ 500
+    };
+    nodes.push(wCentral);
+
+
+    wiNodes.forEach(wi => {
+      links.push({
+        source: 'w_central',
+        target: wi.id,
+        __invisible: true,
+        strength: 0.1  // debole per non attrarre troppo
       });
     });
 
-    // Collega w_k al centro generale w_central
-    links.push({
-      source: 'w_central',
-      target: 'w_k',
-      __invisible: true,
-      strength: 0.02  // stessa forza degli altri w_i
+    if (isolatedNodes.length > 0) {
+      const wK = {
+        id: 'w_k',
+        name: '',
+        invisible: true,
+        fx: null,
+        fy: null,
+        x : width / 2,
+        y: height / 2
+      };
+      nodes.push(wK);
+
+      isolatedNodes.forEach(n => {
+        links.push({
+          source: 'w_k',
+          target: n.id,
+          __invisible: true,
+          strength: 0.8  // forza alta per mantenere vicini i nodi isolati
+        });
+      });
+
+      // Collega w_k al centro generale w_central
+      links.push({
+        source: 'w_central',
+        target: 'w_k',
+        __invisible: true,
+        strength: 0.02  // stessa forza degli altri w_i
+      });
+
+      // Posizione iniziale di w_k vicino a w_central
+      wK.x = wCentral.fx ;
+      wK.y = wCentral.fy ;
+
+      // Posizione iniziale dei nodi isolati attorno a w_k in cerchio
+      isolatedNodes.forEach((n, i) => {
+        const angle = (2 * Math.PI * i) / isolatedNodes.length;
+        const radius = 60;
+        n.x = wK.x + radius * Math.cos(angle);
+        n.y = wK.y + radius * Math.sin(angle);
+      });
+    }
+
+
+    const angleStep = (2 * Math.PI) / wiNodes.length;
+    const radiusBase = Math.min(width, height) / 3;
+
+    wiNodes.forEach((wi, i) => {
+      const compSize = nonTrivialComponents[i].length;
+      const radius = radiusBase + compSize * 5;
+      const angle = i * angleStep;
+      wi.x = wCentral.fx + radius * Math.cos(angle);
+      wi.y = wCentral.fy + radius * Math.sin(angle);
     });
 
-    // Posizione iniziale di w_k vicino a w_central
-    wK.x = wCentral.fx ;
-    wK.y = wCentral.fy ;
-
-    // Posizione iniziale dei nodi isolati attorno a w_k in cerchio
-    isolatedNodes.forEach((n, i) => {
-      const angle = (2 * Math.PI * i) / isolatedNodes.length;
-      const radius = 60;
-      n.x = wK.x + radius * Math.cos(angle);
-      n.y = wK.y + radius * Math.sin(angle);
-    });
-  }
-
-
-  const angleStep = (2 * Math.PI) / wiNodes.length;
-  const radiusBase = Math.min(width, height) / 3;
-
-  wiNodes.forEach((wi, i) => {
-    const compSize = nonTrivialComponents[i].length;
-    const radius = radiusBase + compSize * 5;
-    const angle = i * angleStep;
-    wi.x = wCentral.fx + radius * Math.cos(angle);
-    wi.y = wCentral.fy + radius * Math.sin(angle);
-  });
-
-  nonTrivialComponents.forEach((comp, i) => {
-    const wi = wiNodes[i];
-    comp.forEach(id => {
-      const node = nodes.find(n => n.id === id);
-      if (node && node.degree > 0) {
-        node.x = wi.x + Math.random() * 10;
-        node.y = wi.y + Math.random() * 10;
-      }
-    });
-  });
-
-
-
-  let previousZoomTransform: d3.ZoomTransform | null = null;
-  const existingSvg = d3.select(element).select('svg');
-  if (!existingSvg.empty()) {
-    previousZoomTransform = d3.zoomTransform(existingSvg.node() as Element);
-  }
-  d3.select(element).select('svg').remove();
-
-  this.svg = d3.select(element)
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height)
-    .attr('preserveAspectRatio', 'xMidYMid meet')
-    .attr('viewBox', `0 0 ${width} ${height}`);
-
-  this.zoomGroup = this.svg.append('g');
-
-  this.zoomBehavior = d3.zoom<Element, unknown>()
-    .scaleExtent([0.1, 10])
-    .on('zoom', (event) => {
-      const transform = event.transform;
-      this.zoomGroup?.attr('transform', transform);
+    nonTrivialComponents.forEach((comp, i) => {
+      const wi = wiNodes[i];
+      comp.forEach(id => {
+        const node = nodes.find(n => n.id === id);
+        if (node && node.degree > 0) {
+          node.x = wi.x + Math.random() * 10;
+          node.y = wi.y + Math.random() * 10;
+        }
+      });
     });
 
-  this.svg.call(this.zoomBehavior as any);
 
 
-  this.simulation = d3.forceSimulation(nodes)
-    .alpha(1)
-    .alphaDecay(0.03)
-    .alphaMin(0.001)
-    .force('link', d3.forceLink(links)
-      .id((d: any) => d.id)
-      .strength((d: any) => d.strength ?? 0.1)
-      .distance((d: any) => d.__invisible ? 100 : Math.max(100, 300 - (d.similarity ?? 0) * 200))
-    )
-    .force('charge', d3.forceManyBody().strength((d: any) => {
-      // Nodo centrale non respinge nessuno
-      if (d.id === 'w_central') return 0;
+    let previousZoomTransform: d3.ZoomTransform | null = null;
+    const existingSvg = d3.select(element).select('svg');
+    if (!existingSvg.empty()) {
+      previousZoomTransform = d3.zoomTransform(existingSvg.node() as Element);
+    }
+    d3.select(element).select('svg').remove();
 
-      // Nodo isolato non viene respinto da altri
-      if (d.invisible && d.id === 'w_k') return 0;
+    this.svg = d3.select(element)
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('preserveAspectRatio', 'xMidYMid meet')
+      .attr('viewBox', `0 0 ${width} ${height}`);
 
-      return -150;
-    }))
-    .force('collide', d3.forceCollide((d: any) => d.degree === 0 ? 20 : 40).strength(1.0))
-    .force('repelWiNodes', () => {
-      return {
-        initialize() {}, 
-        apply: (alpha: number) => {
-          for (let i = 0; i < wiNodes.length; i++) {
-            for (let j = i + 1; j < wiNodes.length; j++) {
-              const a = wiNodes[i];
-              const b = wiNodes[j];
-              const dx = a.x - b.x;
-              const dy = a.y - b.y;
-              const dist2 = dx * dx + dy * dy + 0.01;
-              const force = 5000 / dist2; 
-              const fx = dx * force;
-              const fy = dy * force;
-              a.vx += fx * alpha;
-              a.vy += fy * alpha;
-              b.vx -= fx * alpha;
-              b.vy -= fy * alpha;
+    this.zoomGroup = this.svg.append('g');
+
+    this.zoomBehavior = d3.zoom<Element, unknown>()
+      .scaleExtent([0.1, 10])
+      .on('zoom', (event) => {
+        const transform = event.transform;
+        this.zoomGroup?.attr('transform', transform);
+      });
+
+    this.svg.call(this.zoomBehavior as any);
+
+
+    this.simulation = d3.forceSimulation(nodes)
+      .alpha(1)
+      .alphaDecay(0.03)
+      .alphaMin(0.001)
+      .force('link', d3.forceLink(links)
+        .id((d: any) => d.id)
+        .strength((d: any) => d.strength ?? 0.1)
+        .distance((d: any) => d.__invisible ? 100 : Math.max(100, 300 - (d.similarity ?? 0) * 200))
+      )
+      .force('charge', d3.forceManyBody().strength((d: any) => {
+        // Nodo centrale non respinge nessuno
+        if (d.id === 'w_central') return 0;
+
+        // Nodo isolato non viene respinto da altri
+        if (d.invisible && d.id === 'w_k') return 0;
+
+        return -150;
+      }))
+      .force('collide', d3.forceCollide((d: any) => d.degree === 0 ? 20 : 40).strength(1.0))
+      .force('repelWiNodes', () => {
+        return {
+          initialize() {}, 
+          apply: (alpha: number) => {
+            for (let i = 0; i < wiNodes.length; i++) {
+              for (let j = i + 1; j < wiNodes.length; j++) {
+                const a = wiNodes[i];
+                const b = wiNodes[j];
+                const dx = a.x - b.x;
+                const dy = a.y - b.y;
+                const dist2 = dx * dx + dy * dy + 0.01;
+                const force = 5000 / dist2; 
+                const fx = dx * force;
+                const fy = dy * force;
+                a.vx += fx * alpha;
+                a.vy += fy * alpha;
+                b.vx -= fx * alpha;
+                b.vy -= fy * alpha;
+              }
             }
           }
-        }
-      };
-    })
+        };
+      })
 
 
-  this.simulation.restart();
+    this.simulation.restart();
 
-  const drag = d3.drag<SVGGElement, any>()
-    .on('start', (event, d) => {
-      if (!event.active) this.simulation!.alphaTarget(0.3).restart();
-      d.fx = d.x;
-      d.fy = d.y;
-    })
-    .on('drag', (event, d) => {
-      d.fx = event.x;
-      d.fy = event.y;
-    })
-    .on('end', (event, d) => {
-      if (!event.active) this.simulation!.alphaTarget(0);
-      if (this.simulationPaused) {
+    const drag = d3.drag<SVGGElement, any>()
+      .on('start', (event, d) => {
+        if (!event.active) this.simulation!.alphaTarget(0.3).restart();
         d.fx = d.x;
         d.fy = d.y;
-      } else {
-        d.fx = null;
-        d.fy = null;
-      }
-    });
-
-  const link = this.zoomGroup.append('g')
-    .selectAll('line')
-    .data(links.filter((d: any) => !d.__invisible))
-    .enter()
-    .append('line')
-    .attr('stroke-width', 5)
-    .attr('stroke', (d: any) => this.getLinkColor(d.similarity))
-    .on('click', (event, d) => {
-      event.preventDefault();
-      event.stopPropagation();
-      options?.onLinkLeftClick?.(d);
-    });
-
-  this.nodeGroup = this.zoomGroup.append('g')
-    .selectAll('g')
-    .data(nodes)
-    .enter()
-    .append('g')
-    .call(drag);
-
-  this.nodeGroup
-    .filter((d: any) => this.selectedNodeIds.has(d.id))
-    .classed('node-lobbyist-selected', true)
-    .select('text')
-    .text((d: any) => d.name?.substring(0, 4) ?? '');
-  
-  this.zoomGroup?.selectAll('line')
-  .each((d: any, i, nodes) => {
-    const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
-    const targetId = typeof d.target === 'object' ? d.target.id : d.target;
-
-    if (this.selectedNodeIds.has(sourceId) || this.selectedNodeIds.has(targetId)) {
-      d3.select(nodes[i]).classed('link-selected', true);
-    }
-  });
-
-  this.nodeGroup.append('circle')
-    .attr('r', (d: any) => d.invisible ? 0 : 7)
-    .attr('fill', (d: any) => d.invisible ? 'none' : '#ae58a3') 
-    .attr('stroke', (d: any) => d.invisible ? 'none' : '#5b2c55') 
-    .attr('stroke-width', 2)
-    .style('display', null) 
-    .attr('data-id', d => d.id);
-
-  this.nodeGroup.append('text')
-    .text((d: any) => d.name)
-    .attr('text-anchor', 'middle')
-    .attr('fill', '#004b87')
-    .attr('dy', '-10')
-    .style('display', 'none');
-
-  this.nodeGroup
-    .on('click', (event, d) => {
-      event.stopPropagation();
-      options?.onNodeClick?.(d);
-    })
-    .on('mouseover', function (event, d) {
-    const group = d3.select(this);
-    if (group.classed('node-lobbyist-selected')) return;
-
-    group.classed('node-hover', true);
-
-    d3.select(element).selectAll('line')
-      .each(function (l: any) {
-        const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
-        const targetId = typeof l.target === 'object' ? l.target.id : l.target;
-
-        if (sourceId === d.id || targetId === d.id) {
-          d3.select(this).classed('link-hover', true);
+      })
+      .on('drag', (event, d) => {
+        d.fx = event.x;
+        d.fy = event.y;
+      })
+      .on('end', (event, d) => {
+        if (!event.active) this.simulation!.alphaTarget(0);
+        if (this.simulationPaused) {
+          d.fx = d.x;
+          d.fy = d.y;
+        } else {
+          d.fx = null;
+          d.fy = null;
         }
       });
-    })
-    .on('mouseout', function (event, d) {
-      d3.select(this).classed('node-hover', false);
 
-      d3.select(element).selectAll('line')
-        .each(function (l: any) {
-          const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
-          const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+    const link = this.zoomGroup.append('g')
+      .selectAll('line')
+      .data(links.filter((d: any) => !d.__invisible))
+      .enter()
+      .append('line')
+      .attr('stroke-width', 5)
+      .attr('stroke', (d: any) => this.getLinkColor(d.similarity))
+      .on('click', (event, d) => {
+        event.preventDefault();
+        event.stopPropagation();
+        options?.onLinkLeftClick?.(d);
+      });
 
-          if (sourceId === d.id || targetId === d.id) {
-            d3.select(this).classed('link-hover', false);
-          }
-        });
-    })
-    .on('contextmenu', function (event, d) {
-      event.preventDefault();
-      event.stopPropagation();
+    this.nodeGroup = this.zoomGroup.append('g')
+      .selectAll('g')
+      .data(nodes)
+      .enter()
+      .append('g')
+      .call(drag);
+
+
+    this.nodeGroup.append('circle')
+      .attr('r', (d: any) => d.invisible ? 0 : 7)
+      .attr('fill', (d: any) => d.invisible ? 'none' : '#ae58a3') 
+      .attr('stroke', (d: any) => d.invisible ? 'none' : '#5b2c55') 
+      .attr('stroke-width', 2)
+      .style('display', null) 
+      .attr('data-id', d => d.id);
+
+    this.nodeGroup.append('text')
+      .text((d: any) => d.name)
+      .attr('text-anchor', 'middle')
+      .attr('fill', '#004b87')
+      .attr('dy', '-10')
+      .style('display', 'none');
+
+    this.nodeGroup
+      .on('click', (event, d) => {
+        event.stopPropagation();
+        options?.onNodeClick?.(d);
+      })
+      .on('mouseover', function (event, d) {
       const group = d3.select(this);
-      const isSelected = group.classed('node-lobbyist-selected');
-      const shouldSelect = !isSelected;
+      if (group.classed('node-lobbyist-selected')) return;
 
-      // Toggle la classe sul nodo
-      group.classed('node-lobbyist-selected', shouldSelect);
+      group.classed('node-hover', true);
 
-      group.select('text')
-        .text(shouldSelect ? (d.name?.substring(0, 4) ?? '') : d.name);
-      
       d3.select(element).selectAll('line')
         .each(function (l: any) {
           const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
           const targetId = typeof l.target === 'object' ? l.target.id : l.target;
 
           if (sourceId === d.id || targetId === d.id) {
-            d3.select(this).classed('link-selected', shouldSelect);
+            d3.select(this).classed('link-hover', true);
           }
         });
+      })
+      .on('mouseout', function (event, d) {
+        d3.select(this).classed('node-hover', false);
+
+        d3.select(element).selectAll('line')
+          .each(function (l: any) {
+            const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+            const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+
+            if (sourceId === d.id || targetId === d.id) {
+              d3.select(this).classed('link-hover', false);
+            }
+          });
+      })
+      .on('contextmenu', function (event, d) {
+        event.preventDefault();
+        event.stopPropagation();
+      
+        options?.onNodeRightClick?.(d);
+      });
+
+
+    this.simulation.on('tick', () => {
+      console.log('[tick]');
+      link
+        .attr('x1', (d: any) => d.source.x)
+        .attr('y1', (d: any) => d.source.y)
+        .attr('x2', (d: any) => d.target.x)
+        .attr('y2', (d: any) => d.target.y);
+
+      this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
+
+      const zoomScale = d3.zoomTransform(this.svg!.node()!).k;
+      this.nodeGroup?.selectAll('text')
+      .attr('transform', `scale(${1 / zoomScale})`);
     });
 
+    if (previousZoomTransform) {
+      this.svg.call(this.zoomBehavior!.transform as any, previousZoomTransform);
+    } else {
+      // Calcolo centro dei nodi visibili
+      const visibleNodes = nodes.filter(n => !n.invisible && n.x != null && n.y != null);
+      const xExtent = d3.extent(visibleNodes, d => d.x) as [number, number];
+      const yExtent = d3.extent(visibleNodes, d => d.y) as [number, number];
 
-  this.simulation.on('tick', () => {
-    console.log('[tick]');
-    link
-      .attr('x1', (d: any) => d.source.x)
-      .attr('y1', (d: any) => d.source.y)
-      .attr('x2', (d: any) => d.target.x)
-      .attr('y2', (d: any) => d.target.y);
+      const graphCenterX = (xExtent[0] + xExtent[1]) / 2;
+      const graphCenterY = (yExtent[0] + yExtent[1]) / 2;
 
-    this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
+      const svgCenterX = width / 2;
+      const svgCenterY = height / 2;
 
-    const zoomScale = d3.zoomTransform(this.svg!.node()!).k;
-    this.nodeGroup?.selectAll('text')
-    .attr('transform', `scale(${1 / zoomScale})`);
-  });
+      const xOffset = 250;
 
-  if (previousZoomTransform) {
-    this.svg.call(this.zoomBehavior!.transform as any, previousZoomTransform);
-  } else {
-    // Calcolo centro dei nodi visibili
-    const visibleNodes = nodes.filter(n => !n.invisible && n.x != null && n.y != null);
-    const xExtent = d3.extent(visibleNodes, d => d.x) as [number, number];
-    const yExtent = d3.extent(visibleNodes, d => d.y) as [number, number];
+      const initialTransform = d3.zoomIdentity
+        .translate(svgCenterX - graphCenterX * initialZoom + xOffset, svgCenterY - graphCenterY * initialZoom)
+        .scale(initialZoom);
 
-    const graphCenterX = (xExtent[0] + xExtent[1]) / 2;
-    const graphCenterY = (yExtent[0] + yExtent[1]) / 2;
-
-    const svgCenterX = width / 2;
-    const svgCenterY = height / 2;
-
-    const xOffset = 250;
-
-    const initialTransform = d3.zoomIdentity
-      .translate(svgCenterX - graphCenterX * initialZoom + xOffset, svgCenterY - graphCenterY * initialZoom)
-      .scale(initialZoom);
-
-    this.svg.call(this.zoomBehavior!.transform as any, initialTransform);
-  }
-}
-
-public setLabelFontSize(size: number): void {
-  this.labelFontSize = size;
-  this.nodeGroup?.select('text').style('font-size', `${this.labelFontSize}px`);
-}
-
-public updateForceGraphStyles(selectedLink?: { source: string; target: string }): void {
-  if (!this.zoomGroup) return;
-
-  this.zoomGroup.selectAll('line')
-    .attr('stroke', (d: any) => {
-      const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
-      const targetId = typeof d.target === 'object' ? d.target.id : d.target;
-
-      const isSelectedLink = selectedLink &&
-        ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
-         (selectedLink.source === targetId && selectedLink.target === sourceId));
-
-      return isSelectedLink ? 'red' : this.getLinkColor(d.similarity);
-    });
-}
-
-
-private getLinkColor(sim: number): string {
-  const shades = ['#d7f9e5', '#94e8b1', '#4ac873', '#23974b', '#085c28'];
-  if (sim < 0.20) return shades[0];
-  if (sim < 0.40) return shades[1];
-  if (sim < 0.60) return shades[2];
-  if (sim < 0.80) return shades[3];
-  return shades[4];
-}
-
-private getConnectedComponents(nodes: any[], links: any[]) {
-  const visited = new Set<string>();
-  const components: string[][] = [];
-  const adjacency = new Map<string, string[]>();
-
-  nodes.forEach(n => adjacency.set(n.id, []));
-  links.forEach(l => {
-    const source = typeof l.source === 'object' ? l.source.id : l.source;
-    const target = typeof l.target === 'object' ? l.target.id : l.target;
-    adjacency.get(source)?.push(target);
-    adjacency.get(target)?.push(source);
-  });
-
-  for (const node of nodes) {
-    if (visited.has(node.id)) continue;
-    const stack = [node.id];
-    const component: string[] = [];
-    while (stack.length) {
-      const id = stack.pop()!;
-      if (visited.has(id)) continue;
-      visited.add(id);
-      component.push(id);
-      adjacency.get(id)?.forEach(nei => !visited.has(nei) && stack.push(nei));
+      this.svg.call(this.zoomBehavior!.transform as any, initialTransform);
     }
-    components.push(component);
   }
 
-  return components;
+  public setLabelFontSize(size: number): void {
+    this.labelFontSize = size;
+    this.nodeGroup?.select('text').style('font-size', `${this.labelFontSize}px`);
   }
 
-public pauseSimulation(): void {
-  if (this.simulation && !this.simulationPaused) {
-    // Salva tutte le forze attive
-    this.savedForces.clear();
-    this.savedForces.set('link', this.simulation.force('link')!);
-    this.savedForces.set('charge', this.simulation.force('charge')!);
-    this.savedForces.set('collide', this.simulation.force('collide')!);
-    this.savedForces.set('repelWiNodes', this.simulation.force('repelWiNodes')!);
+  public updateForceGraphStyles(selectedLink?: { source: string; target: string }): void {
+    if (!this.zoomGroup) return;
 
-    // Applica forze neutre
-    this.simulation
-      .force('link', d3.forceLink().strength(0))
-      .force('charge', d3.forceManyBody().strength(0))
-      .force('collide', d3.forceCollide().radius(1).strength(0))
-      .force('repelWiNodes', null);
+    this.zoomGroup.selectAll('line')
+      .attr('stroke', (d: any) => {
+        const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+        const targetId = typeof d.target === 'object' ? d.target.id : d.target;
 
+        const isSelectedLink = selectedLink &&
+          ((selectedLink.source === sourceId && selectedLink.target === targetId) ||
+          (selectedLink.source === targetId && selectedLink.target === sourceId));
 
-
-    this.simulation.alpha(0.3).restart();    
-    this.simulationPaused = true;
+        return isSelectedLink ? 'red' : this.getLinkColor(d.similarity);
+      });
   }
-}
+
+
+  private getLinkColor(sim: number): string {
+    const shades = ['#d7f9e5', '#94e8b1', '#4ac873', '#23974b', '#085c28'];
+    if (sim < 0.20) return shades[0];
+    if (sim < 0.40) return shades[1];
+    if (sim < 0.60) return shades[2];
+    if (sim < 0.80) return shades[3];
+    return shades[4];
+  }
+
+  private getConnectedComponents(nodes: any[], links: any[]) {
+    const visited = new Set<string>();
+    const components: string[][] = [];
+    const adjacency = new Map<string, string[]>();
+
+    nodes.forEach(n => adjacency.set(n.id, []));
+    links.forEach(l => {
+      const source = typeof l.source === 'object' ? l.source.id : l.source;
+      const target = typeof l.target === 'object' ? l.target.id : l.target;
+      adjacency.get(source)?.push(target);
+      adjacency.get(target)?.push(source);
+    });
+
+    for (const node of nodes) {
+      if (visited.has(node.id)) continue;
+      const stack = [node.id];
+      const component: string[] = [];
+      while (stack.length) {
+        const id = stack.pop()!;
+        if (visited.has(id)) continue;
+        visited.add(id);
+        component.push(id);
+        adjacency.get(id)?.forEach(nei => !visited.has(nei) && stack.push(nei));
+      }
+      components.push(component);
+    }
+
+    return components;
+    }
+
+  public pauseSimulation(): void {
+    if (this.simulation && !this.simulationPaused) {
+      // 🧠 Salva i nodi selezionati (se disponibile)
+      if (this.originalOptions) {
+        const selected: { id: string; type: 'lobbyist' }[] = [];
+
+        this.nodeGroup?.each((d: any, i, nodes) => {
+          const g = d3.select(nodes[i]);
+          if (g.classed('node-lobbyist-selected')) {
+            selected.push({ id: d.id, type: 'lobbyist' });
+          }
+        });
+
+        this.originalOptions.SelectedNode = selected;
+      }
+
+      this.savedForces.clear();
+      this.savedForces.set('link', this.simulation.force('link')!);
+      this.savedForces.set('charge', this.simulation.force('charge')!);
+      this.savedForces.set('collide', this.simulation.force('collide')!);
+      this.savedForces.set('repelWiNodes', this.simulation.force('repelWiNodes')!);
+
+      this.simulation
+        .force('link', d3.forceLink().strength(0))
+        .force('charge', d3.forceManyBody().strength(0))
+        .force('collide', d3.forceCollide().radius(1).strength(0))
+        .force('repelWiNodes', null);
+
+      this.simulation.alpha(0.3).restart();
+      this.simulationPaused = true;
+    }
+  }
 
   public resumeSimulation(): void {
     if (this.simulationPaused && this.originalElement) {
       this.simulationPaused = false;
 
-
-    const self = this;
-
-    self.selectedNodeIds.clear();
-    d3.select(this.originalElement)
-      .selectAll('.node-lobbyist-selected')
-      .each(function (d: any) {
-        if (d?.id) {
-          self.selectedNodeIds.add(d.id);  // ✅ usa `self` invece di `this`
-        }
-      });
-
+      const selectedNodes = this.originalOptions?.SelectedNode ?? [];
       this.drawForceGraph(
         this.originalElement,
         this.originalNodes,
         this.originalLinks,
-        this.originalOptions
+        {
+          ...this.originalOptions,
+          SelectedNode: selectedNodes, 
+        }
       );
+      
+      this.updateNodeSelection(selectedNodes);
+
     }
   }
 
+    public updateNodeSelection(selectedNodes: SelectedNode[]): void {
+      const selectedIds = new Set(selectedNodes.map(n => n.id));
 
-}
+      this.nodeGroup?.each(function (d: any) {
+        const isSelected = selectedIds.has(d.id);
+        d3.select(this)
+          .classed('node-lobbyist-selected', isSelected)
+          .select('text')
+          .text(isSelected ? (d.name?.substring(0, 4) ?? '') : d.name);
+      });
+
+      // Aggiorna anche gli stili dei link
+      this.zoomGroup?.selectAll('line')
+        .each(function (l: any) {
+          const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+          const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+
+          const isLinkedToSelected = selectedIds.has(sourceId) || selectedIds.has(targetId);
+          d3.select(this).classed('link-selected', isLinkedToSelected);
+        });
+    }
+
+
+  }

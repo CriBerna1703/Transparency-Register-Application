@@ -12,6 +12,7 @@ import { tap } from 'rxjs/operators';
 import { FilterService } from '../services/filter.service';
 import { DataService } from '../services/data.service';
 import { D3Service } from '../services/d3.service';
+import { SelectionService, SelectedNode } from '../services/selection.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import * as d3 from 'd3';
@@ -57,9 +58,11 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   @ViewChild('graphContainer', { static: true }) graphContainer!: ElementRef;
 
   private meetingsSubscription: Subscription | undefined;
+  private selectionSubscription!: Subscription;
   public selectedSimilarity: number | null = null;
   private textSimilarities: TextSimilarity[] = [];
   public isTextGraphLoading: boolean = false;
+  public selectedNodes: SelectedNode[] = [];
   public selectedKeywords: KeywordWithScore[] = [];
   public selectedFilterValues: (number | string)[] = [];
   public selectedInterestFilterValues: number[] = [];
@@ -71,6 +74,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public selectAllTextChecked: boolean = true;
   public showLeftPanel: boolean = true;
   public showRightPanel: boolean = true;
+  public isLassoActive: boolean = false;
   public isSimulationPaused: boolean = false;
 
   public keywordSortOrder: 'abc' | 'score' = 'abc';
@@ -104,6 +108,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     private filterService: FilterService,
     private dataService: DataService,
     private d3Service: D3Service,
+    private selectionService: SelectionService
   ) {}
 
   ngOnInit(): void {
@@ -151,6 +156,11 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
 
 
+    this.selectionSubscription = this.selectionService.selectedNodes$.subscribe(nodes => {
+      this.selectedNodes = nodes;
+      this.d3Service.updateNodeSelection(nodes);
+    });
+
     this.dataService.getFields().subscribe(fields => {
       this.fieldMap = new Map(fields.map((f: any) => [f.field_id, f.field_name]));
     });
@@ -175,25 +185,27 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   }
   
   public updateGraph(): void {
-  if (this.graphType === 'interest') {
-  const allOptions = this.getAllInterestFields();
+    if (this.graphType === 'interest') {
+    const allOptions = this.getAllInterestFields();
 
-    if (!this.filterGraphApplied && this.selectedFilterValues.length === 0) {
-      this.selectedFilterValues = allOptions.map(opt => opt.id);
+      if (!this.filterGraphApplied && this.selectedFilterValues.length === 0) {
+        this.selectedFilterValues = allOptions.map(opt => opt.id);
+      }
+
+      this.availableFilterOptions = allOptions;
+      this.updateInterestGraph();
+    } else {
+      const allOptions = this.getSortedKeywords();
+
+      if (!this.filterGraphApplied && this.selectedFilterValues.length === 0) {
+        this.selectedFilterValues = allOptions.map(opt => opt.id);
+      }
+
+      this.availableFilterOptions = allOptions;
+      this.updateTextGraph();
     }
 
-    this.availableFilterOptions = allOptions;
-    this.updateInterestGraph();
-  } else {
-    const allOptions = this.getSortedKeywords();
-
-    if (!this.filterGraphApplied && this.selectedFilterValues.length === 0) {
-      this.selectedFilterValues = allOptions.map(opt => opt.id);
-    }
-
-    this.availableFilterOptions = allOptions;
-    this.updateTextGraph();
-  }
+    this.d3Service.updateNodeSelection(this.selectedNodes);
 
 
   } 
@@ -288,8 +300,10 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         zoomLevel: this.zoomLevel,
         minSim,
         maxSim,
+        SelectedNode: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
-        onLinkLeftClick: (link: any) => this.onLinkLeftClick(link)
+        onLinkLeftClick: (link: any) => this.onLinkLeftClick(link),
+        onNodeRightClick: (node: any) => this.onNodeRightClick(node)
       }
     );
   }
@@ -343,8 +357,10 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         zoomLevel: this.zoomLevel,
         minSim,
         maxSim,
+        SelectedNode: this.selectedNodes,
         onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
-        onLinkLeftClick: (link: any) => this.onLinkLeftClick(link)
+        onLinkLeftClick: (link: any) => this.onLinkLeftClick(link),
+        onNodeRightClick: (node: any) => this.onNodeRightClick(node)
       }
     );
   }
@@ -353,7 +369,14 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.nodeSelected.emit(entity);
   }
 
+  public onNodeRightClick(node: any): void {
+    const clickedNode: SelectedNode = {
+      id: node.id,
+      type: 'lobbyist'
+    };
 
+    this.selectionService.toggleNode(clickedNode);
+  }
 
   public onLinkLeftClick(link: any): void {
 
@@ -631,5 +654,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.meetingsSubscription?.unsubscribe();
+    this.selectionSubscription?.unsubscribe();
   }
 }
