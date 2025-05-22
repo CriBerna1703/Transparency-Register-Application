@@ -5,7 +5,7 @@ html, body {
 
 .node-lobbyist-selected circle {
   stroke: #ff7f0e;
-  stroke-width: 3px;
+  stroke-width: 6px;
 }
 
 .node-lobbyist-selected text {
@@ -14,11 +14,12 @@ html, body {
 
 .link-selected {
   stroke: #ff7f0e !important;
-  stroke-width: 5px;
+  stroke-width: 8px;
 }
 
 .node-hover circle {
   stroke: #ff7f0e;
+  stroke-width: 6px;
 }
 
 .node-hover text {
@@ -27,12 +28,20 @@ html, body {
 
 .link-hover {
   stroke: #ff7f0e;
-  stroke-width: 5px;
+  stroke-width: 6px;
+}
+
+@keyframes pulse-stroke {
+  0%   { stroke-opacity: 1; }
+  50%  { stroke-opacity: 0.3; }
+  100% { stroke-opacity: 1; }
 }
 
 .node-lobbyist-draggable circle {
-  stroke: orange;
-  stroke-dasharray: 3,2;
-  stroke-width: 2;
+  stroke: #ff7f0e;
+  stroke-dasharray: 10, 4;
+  stroke-width: 6px;
+
+  animation: pulse-stroke 1s infinite ease-in-out;
 }
 

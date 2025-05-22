@@ -614,10 +614,9 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   }
 
   applyLasso(): void {
+    this.isLassoEnabled = false;
     this.d3Service.applyLassoSelection();
   }
-
-
 
   public allFilterSelected(): boolean {
     return this.availableFilterOptions.length > 0 &&

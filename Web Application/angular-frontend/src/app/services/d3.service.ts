@@ -411,7 +411,7 @@ export class D3Service {
   private simulation: d3.Simulation<any, any> | null = null;
   private selectorGroup: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
   private selectorRect: d3.Selection<SVGRectElement, unknown, null, undefined> | null = null;
-  private resizeHandle: d3.Selection<SVGRectElement, unknown, null, undefined> | null = null;
+  private resizeHandle: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
   private originalElement: HTMLElement | null = null;
   private originalNodes: any[] = [];
   private originalLinks: any[] = [];
@@ -475,7 +475,7 @@ export class D3Service {
         source: `w_${i}`,
         target: anchorNode,
         __invisible: true,
-        strength: 0.07
+        strength: 0.05
       });
       componentAnchors[i] = anchorNode;
     });
@@ -517,7 +517,7 @@ export class D3Service {
           source: 'w_k',
           target: n.id,
           __invisible: true,
-          strength: 1.0  // forza alta per mantenere vicini i nodi isolati
+          strength: 0.8  // forza alta per mantenere vicini i nodi isolati
         });
       });
 
@@ -526,7 +526,7 @@ export class D3Service {
         source: 'w_central',
         target: 'w_k',
         __invisible: true,
-        strength: 0.04  // stessa forza degli altri w_i
+        strength: 0.02  // stessa forza degli altri w_i
       });
 
       // Posizione iniziale di w_k vicino a w_central
@@ -604,8 +604,10 @@ export class D3Service {
         .distance((d: any) => d.__invisible ? 100 : Math.max(100, 300 - (d.similarity ?? 0) * 200))
       )
       .force('charge', d3.forceManyBody().strength((d: any) => {
+        // Nodo centrale non respinge nessuno
         if (d.id === 'w_central') return 0;
 
+        // Nodo isolato non viene respinto da altri
         if (d.invisible && d.id === 'w_k') return 0;
 
         return -150;
@@ -664,7 +666,7 @@ export class D3Service {
       .data(links.filter((d: any) => !d.__invisible))
       .enter()
       .append('line')
-      .attr('stroke-width', 5)
+      .attr('stroke-width', 8)
       .attr('stroke', (d: any) => this.getLinkColor(d.similarity))
       .on('click', (event, d) => {
         event.preventDefault();
@@ -681,7 +683,7 @@ export class D3Service {
 
 
     this.nodeGroup.append('circle')
-      .attr('r', (d: any) => d.invisible ? 0 : 7)
+      .attr('r', (d: any) => d.invisible ? 0 : 15)
       .attr('fill', (d: any) => d.invisible ? 'none' : '#ae58a3') 
       .attr('stroke', (d: any) => d.invisible ? 'none' : '#5b2c55') 
       .attr('stroke-width', 2)
@@ -959,19 +961,22 @@ export class D3Service {
             }
           });
         })
-        .on('end', function (event, d) {
-          if (!event.active) self.simulation!.alphaTarget(0);
-          self.nodeGroup?.each(function (n: any) {
-            const group = d3.select(this);
-            if (group.classed('node-lobbyist-draggable')) {
-              n.fx = null;
-              n.fy = null;
-              delete n.__initialX;
-              delete n.__initialY;
-              group.classed('node-lobbyist-draggable', false);
-            }
-          });
+      .on('end', function (event, d) {
+        if (!event.active) self.simulation!.alphaTarget(0);
+
+        self.nodeGroup?.each(function (n: any) {
+          const group = d3.select(this);
+          if (group.classed('node-lobbyist-draggable')) {
+            n.fx = null;
+            n.fy = null;
+            delete n.__initialX;
+            delete n.__initialY;
+            group.classed('node-lobbyist-draggable', false);
+          }
         });
+
+        self.restoreIndividualDrag();
+      });
 
       this.nodeGroup?.each(function (d: any) {
         const isSelected = selectedNodes.includes(d);
@@ -982,6 +987,8 @@ export class D3Service {
             .call(dragBehavior);
         }
       });
+
+      this.removeLassoRect();
     }
 
     public toggleLassoRect(enabled: boolean): void {
@@ -998,17 +1005,26 @@ export class D3Service {
       const width = +this.svg!.attr('width');
       const height = +this.svg!.attr('height');
 
+      // 2. Crea gruppo per selezione
       this.selectorGroup = this.zoomGroup.append('g').attr('class', 'lasso-group');
 
+      // 3. Rettangolo di selezione (150 x 250)
+      const rectX = width / 2 - 75;
+      const rectY = height / 2 - 125;
+      const rectWidth = 150;
+      const rectHeight = 250;
+
       this.selectorRect = this.selectorGroup.append('rect')
-        .attr('x', width / 2 - 30)
-        .attr('y', height / 2 - 60)
-        .attr('width', 60)
-        .attr('height', 120)
-        .attr('fill', 'rgba(128, 128, 128, 0.1)')   // interno grigio chiaro trasparente
-        .attr('stroke', 'gray')  
+        .attr('x', rectX)
+        .attr('y', rectY)
+        .attr('width', rectWidth)
+        .attr('height', rectHeight)
+        .attr('fill', 'rgba(100, 100, 255, 0.08)')
+        .attr('stroke', '#3366cc')
         .attr('stroke-width', 2)
-        .attr('stroke-dasharray', '5,5')
+        .attr('stroke-dasharray', '6,3')
+        .attr('rx', 6)
+        .attr('ry', 6)
         .attr('cursor', 'move')
         .call(d3.drag<SVGRectElement, any>()
           .on('drag', (event) => {
@@ -1017,30 +1033,69 @@ export class D3Service {
             const newY = +rect.attr('y') + event.dy;
             rect.attr('x', newX).attr('y', newY);
             this.updateResizeHandlePosition();
-          }));
+          })
+        );
 
-      this.resizeHandle = this.selectorGroup.append('rect')
-        .attr('width', 10)
-        .attr('height', 10)
-        .attr('rx', 2)
-        .attr('ry', 2)
-        .attr('fill', '#999') 
-        .attr('stroke', '#666') 
-        .attr('stroke-width', 1)
-        .attr('cursor', 'nwse-resize')
-        .style('opacity', 0.8) 
-        .call(d3.drag<SVGRectElement, unknown>()
+      // 4. Maniglia di ridimensionamento (gruppo + rect + simbolo)
+      this.resizeHandle = this.selectorGroup.append('g')
+        .attr('class', 'resize-handle')
+        .style('cursor', 'nwse-resize')
+        .call(d3.drag<SVGGElement, unknown>()
           .on('drag', (event) => {
             const newWidth = Math.max(20, event.x - +this.selectorRect!.attr('x'));
             const newHeight = Math.max(20, event.y - +this.selectorRect!.attr('y'));
             this.selectorRect!.attr('width', newWidth).attr('height', newHeight);
             this.updateResizeHandlePosition();
-          }));
+          })
+        );
 
+      this.resizeHandle.append('rect')
+        .attr('width', 40)
+        .attr('height', 40)
+        .attr('rx', 4)
+        .attr('ry', 4)
+        .attr('fill', '#ccc')
+        .attr('stroke', '#888')
+        .attr('stroke-width', 1.5);
+
+      this.resizeHandle.append('text')
+        .text('⤡') // oppure '↘', '⤢', '⬍'
+        .attr('x', 20) // metà del rect (40 / 2)
+        .attr('y', 20)
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'middle')
+        .attr('font-size', '50px') // un po’ più piccolo per centratura perfetta
+        .attr('fill', '#444')
+        .attr('pointer-events', 'none');
 
       this.updateResizeHandlePosition();
     }
 
+
+    private restoreIndividualDrag(): void {
+      this.nodeGroup?.call(
+        d3.drag<SVGGElement, any>()
+          .on('start', (event, d) => {
+            if (!event.active) this.simulation!.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+          })
+          .on('drag', (event, d) => {
+            d.fx = event.x;
+            d.fy = event.y;
+          })
+          .on('end', (event, d) => {
+            if (!event.active) this.simulation!.alphaTarget(0);
+            if (this.simulationPaused) {
+              d.fx = d.x;
+              d.fy = d.y;
+            } else {
+              d.fx = null;
+              d.fy = null;
+            }
+          })
+      );
+    }
 
     private removeLassoRect(): void {
       this.selectorGroup?.remove();
@@ -1051,13 +1106,14 @@ export class D3Service {
 
     private updateResizeHandlePosition(): void {
       if (!this.selectorRect || !this.resizeHandle) return;
+
       const x = +this.selectorRect.attr('x');
       const y = +this.selectorRect.attr('y');
       const width = +this.selectorRect.attr('width');
       const height = +this.selectorRect.attr('height');
-      this.resizeHandle
-        .attr('x', x + width - 6)
-        .attr('y', y + height - 6);
+
+      this.resizeHandle.attr('transform', `translate(${x + width - 10}, ${y + height - 10})`);
     }
+
 
 }
