@@ -1069,11 +1069,15 @@ public pauseSimulation(): void {
 
       this.nodeGroup?.each(function (d: any) {
         const isSelected = selectedIds.has(d.id);
-        d3.select(this)
-          .classed('node-lobbyist-pinned', isSelected)
-          .select('text')
-          .text(isSelected ? (d.name?.substring(0, 4) ?? '') : d.name);
+        const group = d3.select(this);
+
+        group.classed('node-lobbyist-pinned', isSelected);
+
+        group.select('text')
+          .text(isSelected ? (d.name?.substring(0, 4) ?? '') : d.name)
+          .style('display', isSelected ? 'block' : 'none');
       });
+
 
       // Aggiorna anche gli stili dei link
       this.zoomGroup?.selectAll('line')
