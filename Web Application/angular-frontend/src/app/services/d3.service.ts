@@ -838,7 +838,7 @@ export class D3Service {
 
       const zoomScale = d3.zoomTransform(this.svg!.node()!).k;
       this.nodeGroup?.selectAll('text')
-      .attr('transform', `scale(${1 / zoomScale})`);
+        .attr('transform', `scale(${1 / zoomScale})`);
     });
 
     if (previousZoomTransform) {
@@ -994,6 +994,7 @@ private defaultNodeDrag(): d3.DragBehavior<SVGGElement, any, any> {
       }
     });
 }
+
 public pauseSimulation(): void {
     if (this.simulation && !this.simulationPaused) {
       if (this.originalOptions) {
@@ -1046,6 +1047,8 @@ public pauseSimulation(): void {
       );
       
       this.updateNodeSelection(selectedNodes);
+      this.setLabelFontSize(this.labelFontSize);
+
     }
   }
 
@@ -1072,6 +1075,10 @@ public pauseSimulation(): void {
         const group = d3.select(this);
 
         group.classed('node-lobbyist-pinned', isSelected);
+
+        group.select('circle')
+          .attr('stroke', isSelected ? '#ff7f0e' : '#5b2c55')
+          .attr('stroke-width', isSelected ? 3 : 2);
 
         group.select('text')
           .text(isSelected ? (d.name?.substring(0, 4) ?? '') : d.name)
