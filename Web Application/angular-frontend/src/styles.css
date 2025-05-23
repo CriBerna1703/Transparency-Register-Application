@@ -46,7 +46,7 @@ path.node-hover {
   stroke-width: 4px;
 }
 
-.node-hover text {
+text.node-hover {
   display: block !important;
 }
 
