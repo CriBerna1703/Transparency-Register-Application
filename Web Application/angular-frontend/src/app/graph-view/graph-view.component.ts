@@ -458,7 +458,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public onMinThresholdChange(): void {
     if (this.minThreshold >= this.maxThreshold) {
       this.minThreshold = this.maxThreshold - 0.01;
-    }
+    }    
+    this.isSimulationPaused = false;
     this.updateGraph();
   }
 
@@ -466,6 +467,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     if (this.maxThreshold <= this.minThreshold) {
       this.maxThreshold = this.minThreshold + 0.01;
     }
+    this.isSimulationPaused = false;
     this.updateGraph();
   }
 
