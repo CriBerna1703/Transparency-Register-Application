@@ -1,3 +1,27 @@
+.theme-green {
+  /* Tema verde (default) */
+  --primary-bg: #3CB371;
+  --primary-bg-light: #80EF80;
+  --primary-border: #3CB371;
+  --primary-hover: #80EF80;
+  --primary-switch: #3CB371;
+  --primary-switch-checked: #80EF80;
+  --primary-label: #3CB371;
+  --primary-label-light: #80EF80;
+}
+
+/* Tema grigio-azzurro */
+.theme-bluegray {
+  --primary-bg: #6c8ea3;
+  --primary-bg-light: #b3c7d6;
+  --primary-border: #6c8ea3;
+  --primary-hover: #8bb3cc;
+  --primary-switch: #b3c7d6;
+  --primary-switch-checked: #6c8ea3;
+  --primary-label: #6c8ea3;
+  --primary-label-light: #b3c7d6;
+}
+
 /* Stile generale per il corpo */
 body {
   font-family: Tahoma;
@@ -60,7 +84,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
+  position: relative;
 }
 
 .info-tabs-container {
@@ -164,11 +189,11 @@ body {
 }
 
 .directorate {
-  color: #3CB371;
+  color: var(--primary-label);
 }
 
 .representative {
-  color: #80EF80;
+  color: var(--primary-label-light);
 }
 
 /* Stile per lo switch */
@@ -192,7 +217,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #3CB371;
+  background-color: var(--primary-switch);
   transition: 0.4s;
   border-radius: 28px;
 }
@@ -210,7 +235,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #80EF80;
+  background-color: var(--primary-switch-checked);
 }
 
 input:checked + .slider:before {
@@ -445,6 +470,8 @@ app-histogram-view {
 /* Rende la transizione più fluida */
 .tab-content {
   transition: opacity 0.2s ease-in-out;
+  height: inherit;
+  overflow: auto;
 }
 
 
@@ -504,4 +531,53 @@ app-histogram-view {
   background-color: #0056b3;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
- 
+
+
+.label-section {
+  overflow-x: auto;
+  max-width: 100%;
+  scrollbar-width: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100%;
+  background: white;
+  padding: 2px 0;
+}
+
+/* Scrollbar nascosta per Chrome/Safari */
+.label-section::-webkit-scrollbar {
+  height: 6px;
+  background: transparent;
+}
+
+.label-section::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Al passaggio del mouse: mostra scrollbar */
+.label-section:hover {
+  scrollbar-width: thin;
+}
+
+.label-section:hover::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* Di base: etichetta troncata con ellipsis */
+.single-line-label {
+  margin: 0;
+  padding: 0 4px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-width: 100%;
+}
+
+/* Al passaggio del mouse sulla label-section: rimuove ellipsis e abilita overflow visibile */
+.label-section:hover .single-line-label {
+  overflow: visible;
+  text-overflow: unset;
+}
+

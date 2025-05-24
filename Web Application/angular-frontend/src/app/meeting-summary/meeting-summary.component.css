@@ -109,4 +109,17 @@
     }
   }
   
+  .entity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+  }
+
+  .entity-list li {
+    padding: 4px 0;
+  }
+
   

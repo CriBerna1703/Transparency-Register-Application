@@ -13,7 +13,7 @@
             <path d="M12 3V16M12 16L8 12M12 16L16 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M4 20H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-        </button>          
+        </button>       
         <div class="tab-switch">
           <button 
             (click)="setActiveTab('overview')" 
@@ -26,7 +26,11 @@
             Graph
           </button>        
         </div>
-        
+        <div 
+          class="label-section"
+          [ngStyle]="{'max-width': maxLabelWidth}">
+          <p class="single-line-label">{{ labelText }}</p>
+        </div>     
         <div class="tab-content">
           <div [hidden]="activeTab !== 'graph'">
             <app-graph-view 
@@ -55,9 +59,11 @@
           [endDate]="endDate" 
           [labelSize]="labelSize"
           [zoomLevel]="zoomLevel"
+          [fullLabels]="fullLabels"
           [showRepresentatives]="showRepresentatives"
           (dateRangeChange)="onDateRangeUpdate($event)"
           (nodeSelected)="onNodeSelected($event)"
+          (labelTextChange)="onLabelTextChange($event)"
           [ngClass]="{
             'control-collapsed': isControlPanelCollapsed && !isHistogramPanelCollapsed,
             'histogram-collapsed': !isControlPanelCollapsed && isHistogramPanelCollapsed,
@@ -86,17 +92,26 @@
                       [value]="labelSize" (input)="onLabelSizeChange($event)" [disabled]="!hasMeetings">
               </div>
               <div class="toggle-container">
+                  <span class="toggle-label" [ngClass]="{'active': fullLabels, 'disabled': !hasMeetings}">
+                    Full Labels
+                  </span>
+                  <label class="switch">
+                    <input type="checkbox" [(ngModel)]="fullLabels" (change)="onFullLabelsChange($event)" [disabled]="!hasMeetings">
+                    <span class="slider theme-bluegray" [class.disabled]="!hasMeetings"></span>
+                  </label>
+                </div>
+              <div class="toggle-container">
                 <span class="toggle-label directorate" 
                       [ngClass]="{'active': !showRepresentatives, 'disabled': !hasMeetings}">
                   Directorate
                 </span>
                 <label class="switch">
                   <input type="checkbox" [(ngModel)]="showRepresentatives" (change)="createVisualization()" [disabled]="!hasMeetings">
-                  <span class="slider" [class.disabled]="!hasMeetings"></span>
+                  <span class="slider theme-green" [class.disabled]="!hasMeetings"></span>
                 </label>
                 <span class="toggle-label representative" 
                       [ngClass]="{'active': showRepresentatives, 'disabled': !hasMeetings}">
-                  EU comm officers
+                  Eur. Comm. officials
                 </span>
               </div>
             </div>

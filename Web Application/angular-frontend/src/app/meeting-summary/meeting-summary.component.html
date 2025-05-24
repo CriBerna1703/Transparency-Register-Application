@@ -13,17 +13,83 @@
         <td>Meetings</td>
         <td>{{ totalMeetings }}</td>
       </tr>
-      <tr>
+      <tr (click)="toggleSection('lobbyists')" style="cursor: pointer;">
         <td>Lobbyists</td>
-        <td>{{ totalLobbisti }}</td>
+        <td>{{ totalLobbyists }} <span *ngIf="!useOverviewData">{{ expandedSections.lobbyists ? '▲' : '▼' }}</span></td>
       </tr>
-      <tr>
-        <td>EU comm officers</td>
-        <td>{{ totalRappresentanti }}</td>
+      <tr *ngIf="expandedSections.lobbyists && !useOverviewData">
+        <td colspan="2">
+          <button (click)="clearSelection('lobbyists')">Deselect all</button>
+          <input
+            type="text"
+            placeholder="Search Lobbyist..."
+            [(ngModel)]="searchLobbyist"
+            (input)="filterList('lobbyists', searchLobbyist)"
+          />
+          <ul class="entity-list">
+            <li *ngFor="let lob of filteredLobbyists">
+              <label>
+                <input
+                  type="checkbox"
+                  [checked]="isSelected(lob, 'lobbyist')"
+                  (change)="toggleSelection(lob, 'lobbyist')"
+                /> {{ lob.name }}
+              </label>
+            </li>
+          </ul>
+        </td>
       </tr>
-      <tr>
+      <tr (click)="toggleSection('representatives')" style="cursor: pointer;">
+        <td>Eur. Comm. officials</td>
+        <td>{{ totalRepresentatives }} <span *ngIf="!useOverviewData">{{ expandedSections.representatives ? '▲' : '▼' }}</span></td>
+      </tr>
+      <tr *ngIf="expandedSections.representatives && !useOverviewData">
+        <td colspan="2">
+          <button (click)="clearSelection('representatives')">Deselect all</button>
+          <input
+            type="text"
+            placeholder="Search Commissioner..."
+            [(ngModel)]="searchCommissioner"
+            (input)="filterList('representatives', searchCommissioner)"
+          />
+          <ul class="entity-list">
+            <li *ngFor="let rep of filteredRepresentatives">
+              <label>
+                <input
+                  type="checkbox"
+                  [checked]="isSelected(rep, 'representative')"
+                  (change)="toggleSelection(rep, 'representative')"
+                /> {{ rep.name }}
+              </label>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr (click)="toggleSection('directorates')" style="cursor: pointer;">
         <td>Directorates</td>
-        <td>{{ totalDirezioni }}</td>
+        <td>{{ totalDirectorates }} <span *ngIf="!useOverviewData">{{ expandedSections.directorates ? '▲' : '▼' }}</span></td>
+      </tr>
+      <tr *ngIf="expandedSections.directorates && !useOverviewData">
+        <td colspan="2">
+          <button (click)="clearSelection('directorates')">Deselect all</button>
+          <input
+            type="text"
+            placeholder="Search Directorate..."
+            [(ngModel)]="searchDirectorate"
+            (input)="filterList('directorates', searchDirectorate)"
+          />
+          <ul class="entity-list">
+            <li *ngFor="let dir of filteredDirectorates">
+              <label>
+                <input
+                  type="checkbox"
+                  [checked]="isSelected(dir, 'directorate')"
+                  (change)="toggleSelection(dir, 'directorate')"
+                /> {{ dir.name }}
+              </label>
+            </li>
+          </ul>
+        </td>
       </tr>
     </tbody>
   </table>

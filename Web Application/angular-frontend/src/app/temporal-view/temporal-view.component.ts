@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef, ElementRef, Input, Output, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef, ElementRef, Input, Output, EventEmitter, OnChanges, SimpleChanges, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Subscription } from 'rxjs';
@@ -21,7 +21,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   @Input() labelSize: number = 14;
   @Input() zoomLevel: number = 100;
   @Input() showRepresentatives: boolean = true;
+  @Input() fullLabels: boolean = false;
   @Output() nodeSelected = new EventEmitter<{ id: string; type: string;}>();
+  @Output() labelTextChange = new EventEmitter<string>();
   private meetingsSubscription: Subscription | undefined;
   private lobbyistHeight = 60;
   private representativeHeight = window.innerHeight * 0.3 + 60;
@@ -80,7 +82,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     if (changes['startDate'] || changes['endDate']) {
       this.meetingManager.prepareGroupingData(this.meetingManager.getFilteredMeetingsByInterval(this.startDate, this.endDate));
     }
-    if (changes['startDate'] || changes['endDate'] || changes['labelSize'] || changes['showRepresentatives'] || changes['zoomLevel']) {
+    if (changes['startDate'] || changes['endDate'] || changes['labelSize'] || changes['showRepresentatives'] || changes['zoomLevel'] || changes['fullLabels']) {
       this.updateMaxDegree();
       this.createVisualization();
     }
@@ -165,7 +167,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         }
       });
     });
-    //this.d3Service.resetStrokes();    
   }
 
   private resetVisualization(element: HTMLElement, width: number, height: number): void {
@@ -223,17 +224,17 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         .attr("x", xPosition)
         .attr("y", labelYPosition)
         .attr("data-original-text", entityName)
-        .text(this.truncateLabel(entityName))
+        .text(this.fullLabels ? entityName : entityName.substring(0, truncatedLength))
         .attr("font-size", `${this.labelSize}px`)
         .attr("fill", entityType === 'lobbyist' ? '#004b87' : entityType === 'representative' ? '#54c459' : '#3CB371')
         .attr("data-original-text", entityName)
         .attr("data-truncated", entityName.substring(0, truncatedLength))
         .attr("class", `label-text label-${entityType}`)
-        .text(entityName.substring(0, truncatedLength))
         .style("pointer-events", "none")
         .style('padding', '2px 5px')
         .style('border-radius', '4px')
         .attr('text-anchor', 'middle');
+      
       const labelNode = label.node();
       if (labelNode) {
         const bbox = labelNode.getBBox();
@@ -353,6 +354,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   
           labelGroup.classed("label-visible", true).raise();
           label.text(entityName);
+          self.labelTextChange.emit(entityName);
 
           const bbox = label.node()?.getBBox();
           if (bbox) {
@@ -377,7 +379,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             d3.select(this).classed('node-hover', false);
           });
 
-          label.text(entityName.substring(0, truncatedLength));
+          if(!self.fullLabels) {
+            label.text(entityName.substring(0, truncatedLength));
+          }
 
           if (!isLabelFixed) {
             labelGroup.classed("label-visible", false);
@@ -399,7 +403,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           isLabelFixed = !isLabelFixed;
 
           labelGroup.classed("label-fixed", isLabelFixed);
-          label.text(isLabelFixed ? entityName.substring(0, truncatedLength) : entityName);
+          label.text(isLabelFixed && !self.fullLabels ? entityName.substring(0, truncatedLength) : entityName);
 
           d3.selectAll(`.node-${entity.type}-${entity.id}`).each(function () {
             d3.select(this).classed(`node-${entity.type}-pinned`, isLabelFixed);
@@ -579,7 +583,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         event.preventDefault();
         const allPinned = meetingIds.every(meetingId => self.selectedNodes.has(meetingId));
         if (allPinned) {
-          // Deseleziona tutti
           meetingIds.forEach(meetingId => {
             d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
               d3.select(this).classed('node-meeting-pinned', false);
@@ -588,7 +591,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             self.selectionService.deselectNode(meetingId);
           });
         } else {
-          // Seleziona solo quelli non selezionati
           meetingIds.forEach(meetingId => {
             if (!self.selectedNodes.has(meetingId)) {
               d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
@@ -608,10 +610,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     yPositions.forEach(yPosition => {
       this.d3Service.drawDottedLine(svg, 50, yPosition, width - 50, yPosition);
     });
-  }
-
-  private truncateLabel(label: string): string {
-    return label.length > 15 ? label.substring(0, 15) : label;
   }
 
   private onNodeClick(entity: { id: string; type: string }): void {

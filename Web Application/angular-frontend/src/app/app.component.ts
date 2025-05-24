@@ -26,10 +26,13 @@ export class AppComponent {
   isHistogramPanelCollapsed = true;
   labelSize = 14;
   zoomLevel = 100;
+  fullLabels = false;
   showRepresentatives = true;
   selectedInfoEntity: { id: string, type: string } | null = null;
   selectedHistogramEntity: { id: string, type: string } | null = null;  public startDate: Date = new Date();
   activeTab: 'overview' | 'graph' = 'overview';
+  public labelText: string = '';
+  public maxLabelWidth = '35%';
   public endDate: Date = new Date();
   public minDate?: Date = new Date();
   public maxDate?: Date = new Date();
@@ -94,7 +97,10 @@ export class AppComponent {
 
   public onLabelSizeChange(event: Event): void {
     this.labelSize = (event.target as HTMLInputElement).valueAsNumber;
-    this.createVisualization();
+  }
+
+  public onFullLabelsChange(event: Event): void {
+    this.fullLabels = (event.target as HTMLInputElement).checked;
   }
 
   public createVisualization(): void {
@@ -128,5 +134,9 @@ export class AppComponent {
   downloadCSV(){
     this.filterService.downloadMeetingCsv();
     this.filterService.downloadLobbyistCsv();
+  }
+
+  public onLabelTextChange(newText: string) {
+    this.labelText = newText;
   }
 }

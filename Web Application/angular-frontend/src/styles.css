@@ -67,7 +67,6 @@ text.node-hover {
 }
 
 .label-text {
-  font-size: 14px;
   text-anchor: middle;
   pointer-events: none;
   fill: #004b87;
