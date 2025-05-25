@@ -50,6 +50,7 @@ module.exports = {
                     {
                         model: Meeting,
                         required: false,
+                        separate: true,
                         include: [
                             {
                                 model: CommissionRepresentative,
