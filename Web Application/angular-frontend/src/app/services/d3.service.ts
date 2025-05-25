@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { SelectedNode } from './selection.service';
+import { Subject } from 'rxjs';
 import * as d3 from 'd3';
 
 export interface ForceGraphOptions {
@@ -19,6 +20,12 @@ export interface ForceGraphOptions {
   providedIn: 'root'
 })
 export class D3Service {
+
+  public labelTextChange$ = new Subject<string>();
+
+  emitLabelText(text: string): void {
+    this.labelTextChange$.next(text);
+  }
   createSvg(element: HTMLElement, width: number, height: number, zoomLevel: number){
     return d3.select(element)
     .append('svg')
@@ -399,6 +406,7 @@ export class D3Service {
     links: any[],
     options?: ForceGraphOptions
   ): void {
+    let self = this;
     let isRightPanning = false;
     let lastMousePosition: [number, number] | null = null;
     this.originalElement = element;
@@ -788,6 +796,8 @@ export class D3Service {
       d3.selectAll(`.link-lobbyist-${d.id}`).each(function () {
         d3.select(this).classed('node-hover', true);
       });
+
+      self.emitLabelText(d.name); 
 
       d3.select(element).selectAll('line')
         .each(function (l: any) {

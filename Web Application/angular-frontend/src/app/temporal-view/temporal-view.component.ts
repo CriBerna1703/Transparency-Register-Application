@@ -75,6 +75,10 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       this.selectedNodes = new Set(nodes.map(n => n.id));
       this.createVisualization();
     });
+
+    this.d3Service.labelTextChange$.subscribe(text => {
+      this.labelTextChange.emit(text);
+    });
     
   }
 
