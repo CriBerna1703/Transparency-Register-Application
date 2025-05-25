@@ -103,7 +103,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     this.d3Service.labelTextChange$.subscribe(text => {
       this.labelTextChange.emit(text);
     });
-    
+
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -776,7 +776,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private updateSelectedNodes(selectedTab: { id: string; type: string } | null): void {
-    console.log('Updating selected nodes for tab:', selectedTab);
     if (!selectedTab) return;
 
     const deselectMap: Record<string, string[]> = {
@@ -809,7 +808,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const selector = selectorBuilder(selectedTab.id);
       if (selector) {
         const classToAdd = selector.replace('.', '').replace(`-${selectedTab.id}`, '-selected');
-        console.log('Adding class:', classToAdd, 'for selector:', selector);
         this.temporalViewSvg?.selectAll(selector).classed(classToAdd, true);
       }
     }

@@ -41,7 +41,6 @@ export class InfoTabsComponent implements OnChanges {
   }
 
   setActiveTab({ id, type }: { id: string | null; type: string | null }): void {
-    console.log(this.selectedEntity?.type, id);
     this.selectionService.setActiveInfoTab(
       {
         id,
@@ -114,7 +113,6 @@ export class InfoTabsComponent implements OnChanges {
   
 
   closeTab({ id, type }: { id: string; type: string | null; }): void {
-    console.log(`Closing tab: ${id}, type: ${type}`);
     const tabIndex = this.tabs.findIndex(tab => tab.id === id && tab.type === type);
     this.tabs = this.tabs.filter(tab => tab.id !== id || tab.type !== type);
 

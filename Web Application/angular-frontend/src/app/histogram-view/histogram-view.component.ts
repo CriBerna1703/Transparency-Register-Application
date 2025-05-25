@@ -61,7 +61,6 @@ export class HistogramViewComponent implements OnChanges {
   }
 
   setActiveTab({ id, type }: { id: string | null; type: string | null; }): void {
-    console.log('Setting active tab:', id, type);
     this.selectionService.setActiveHistogramTab(
       {
         id,
@@ -141,7 +140,6 @@ export class HistogramViewComponent implements OnChanges {
   }
 
   closeTab({ id, type }: { id: string; type: string | null; }): void {
-    console.log('Closing tab:', id, type);
     const tabIndex = this.tabs.findIndex(tab => tab.id === id && tab.type === type);
     this.tabs = this.tabs.filter(tab => tab.id !== id || tab.type !== type);
 

@@ -138,5 +138,6 @@ export class AppComponent {
 
   public onLabelTextChange(newText: string) {
     this.labelText = newText;
+    this.cdr.detectChanges();
   }
 }
