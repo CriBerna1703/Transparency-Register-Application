@@ -61,7 +61,6 @@ export class MeetingSummaryComponent implements OnInit {
       const direzioniMap = new Map();
 
       meetings.forEach(meeting => {
-        console.log('Processing meeting:', meeting);
         lobbistiMap.set(meeting.lobbyist_id, meeting.Lobbyist.organization_name); // Assicurati che il nome esista
         const rep = meeting.CommissionRepresentative;
         rappresentantiMap.set(rep.id, rep.name || `Rep #${rep.id}`);

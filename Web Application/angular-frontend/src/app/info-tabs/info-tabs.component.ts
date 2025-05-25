@@ -5,6 +5,7 @@ import { TabNavigationComponent } from '../tab-navigation/tab-navigation.compone
 import { DataService } from '../services/data.service';
 import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
+import { SelectionService } from '../services/selection.service';
 
 interface Tab {
   id: string;
@@ -27,10 +28,11 @@ export class InfoTabsComponent implements OnChanges {
   @Input() selectedEntity: { id: string, type: string } | null = null;
   tabs: Tab[] = [];
   activeTabId: string | null = null;
+  activeTabType: string | null = null;
 
   @ViewChild('tabTitleContainer', { static: false }) tabTitleContainer!: ElementRef;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private selectionService: SelectionService) {}
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['selectedEntity'] && this.selectedEntity) {
@@ -38,8 +40,16 @@ export class InfoTabsComponent implements OnChanges {
     }
   }
 
-  setActiveTab(id: string): void {
+  setActiveTab({ id, type }: { id: string | null; type: string | null }): void {
+    console.log(this.selectedEntity?.type, id);
+    this.selectionService.setActiveInfoTab(
+      {
+        id,
+        type: (type === 'lobbyist' || type === 'meeting') ? type : 'lobbyist-meeting'
+      }
+    );
     this.activeTabId = id;
+    this.activeTabType = type;
   }
 
   openTab(entity: { id: string, type: string }): void {
@@ -48,7 +58,7 @@ export class InfoTabsComponent implements OnChanges {
     const existingTab = this.tabs.find(tab => tab.id === entity.id && tab.type === entity.type);
   
     if (existingTab) {
-      this.activeTabId = existingTab.id;
+      this.setActiveTab({ id: existingTab.id, type: existingTab.type });
     } else {
       const newTab: Tab = {
         id: entity.id,
@@ -59,8 +69,8 @@ export class InfoTabsComponent implements OnChanges {
       };
   
       this.tabs.push(newTab);
-      this.activeTabId = newTab.id;
-  
+      this.setActiveTab({ id: newTab.id, type: newTab.type });
+
       // Lobbyist
       if (isLobbyist) {
         this.dataService.getLobbyistDetails(entity.id).pipe(
@@ -103,16 +113,17 @@ export class InfoTabsComponent implements OnChanges {
   }
   
 
-  closeTab(tabId: string): void {
-    const tabIndex = this.tabs.findIndex(tab => tab.id === tabId);
-    this.tabs = this.tabs.filter(tab => tab.id !== tabId);
+  closeTab({ id, type }: { id: string; type: string | null; }): void {
+    console.log(`Closing tab: ${id}, type: ${type}`);
+    const tabIndex = this.tabs.findIndex(tab => tab.id === id && tab.type === type);
+    this.tabs = this.tabs.filter(tab => tab.id !== id || tab.type !== type);
 
-    if (this.activeTabId === tabId) {
+    if (this.activeTabId === id && this.activeTabType === type) {
       if (this.tabs.length) {
         const newIndex = tabIndex > 0 ? tabIndex - 1 : 0;
-        this.activeTabId = this.tabs[newIndex].id;
+        this.setActiveTab({ id: this.tabs[newIndex].id, type: this.tabs[newIndex].type });
       } else {
-        this.activeTabId = null;
+        this.setActiveTab({ id: null, type: null });
       }
     }
   }

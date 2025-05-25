@@ -1,42 +1,19 @@
 html, body {
-    font-family: Tahoma, sans-serif !important;
+  font-family: Tahoma, sans-serif !important;
 }
 
-circle.node-lobbyist-pinned,
-rect.node-lobbyist-pinned,
-path.node-lobbyist-pinned {
+circle[class$='-pinned'],
+rect[class$='-pinned'],
+path[class$='-pinned'] {
   stroke: #ff7f0e;
   stroke-width: 3px;
 }
 
-circle.node-representative-pinned,
-rect.node-representative-pinned,
-path.node-representative-pinned {
-  stroke: #ff7f0e;
+circle[class$='-selected'],
+rect[class$='-selected'],
+path[class$='-selected'] {
+  stroke: #b22222;
   stroke-width: 3px;
-}
-
-circle.node-directorate-pinned,
-rect.node-directorate-pinned,
-path.node-directorate-pinned {
-  stroke: #ff7f0e;
-  stroke-width: 3px;
-}
-
-circle.node-meeting-pinned,
-rect.node-meeting-pinned,
-path.node-meeting-pinned {
-  stroke: #ff7f0e;
-  stroke-width: 3px;
-}
-
-text.node-lobbyist-pinned {
-  display: block !important;
-}
-
-.link-pinned {
-  stroke: #ff7f0e !important;
-  stroke-width: 5px;
 }
 
 circle.node-hover,
@@ -46,12 +23,14 @@ path.node-hover {
   stroke-width: 4px;
 }
 
-text.node-hover {
+text.node-hover,
+text.node-lobbyist-pinned {
   display: block !important;
 }
 
+.link-pinned,
 .link-hover {
-  stroke: #ff7f0e;
+  stroke: #ff7f0e !important;
   stroke-width: 5px;
 }
 
@@ -62,7 +41,11 @@ text.node-hover {
 }
 
 .label-group.label-visible,
-.label-group.label-fixed {
+.label-group.label-fixed,
+.label-group.node-representative-selected,
+.label-group.node-lobbyist-selected,
+.label-group.node-directorate-selected,
+.label-group.node-hover {
   opacity: 1;
 }
 
@@ -74,6 +57,4 @@ text.node-hover {
 
 .node-lobbyist-draggable circle {
   fill: #b22222;
-
 }
-

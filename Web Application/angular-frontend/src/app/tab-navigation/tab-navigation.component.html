@@ -5,10 +5,10 @@
         <div class="tab-container">
           <ul class="tab-titles" #tabTitleContainer>
             <li *ngFor="let tab of tabs" [class.active]="tab.id === activeTabId">
-              <a (click)="setActiveTab(tab.id)">{{ tab.title }}</a>
+              <a (click)="setActiveTab(tab.id, tab.type)">{{ tab.title }}</a>
               <button class="close-btn" 
                       *ngIf="closable" 
-                      (click)="closeTabClick($event, tab.id)">x</button>
+                      (click)="closeTabClick($event, tab.id, tab.type)">x</button>
             </li>
           </ul>
           <!-- Gradient Indicators -->

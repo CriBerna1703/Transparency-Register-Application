@@ -111,10 +111,16 @@ export class D3Service {
       .attr('fill', '#d3d3d3');
   }
 
-  drawMonths(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, width: number, height: number, startDate: Date, endDate: Date): void {
+  drawMonths(
+    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    width: number,
+    height: number,
+    startDate: Date,
+    endDate: Date
+  ): void {
     const timeScale = this.getTimeScale(width, startDate, endDate);
     const months = d3.timeMonths(startDate, endDate);
-  
+
     svg.selectAll('.month-bg')
       .data(months)
       .enter()
@@ -124,7 +130,7 @@ export class D3Service {
       .attr('width', (d, i) => this.getMonthWidth(timeScale, months, d, i))
       .attr('height', 20)
       .attr('fill', (d, i) => (i % 2 === 0 ? '#ffffda' : '#fff4cb'));
-  
+
     svg.selectAll('.month-label')
       .data(months)
       .enter()
@@ -135,43 +141,54 @@ export class D3Service {
       .text(d => d3.timeFormat('%b')(d))
       .attr('font-size', '16px')
       .attr('fill', '#000');
-  
-    const lastMonthEnd = new Date(months[months.length - 1].getFullYear(), months[months.length - 1].getMonth() + 1, 1);
-    const lastMonthX = timeScale(lastMonthEnd);
+
+    const yearChangePoints: { x: number; year: number }[] = [];
 
     for (let i = 0; i < months.length - 1; i++) {
       const curr = months[i];
       const next = months[i + 1];
       if (curr.getFullYear() !== next.getFullYear()) {
         const x = timeScale(next);
+        yearChangePoints.push({ x, year: next.getFullYear() });
 
+        // Linea di separazione verticale tratteggiata
         svg.append('line')
           .attr('x1', x)
           .attr('x2', x)
-          .attr('y1', height - 30)
-          .attr('y2', height + 35)
+          .attr('y1', 0)
+          .attr('y2', 2 * height)
           .attr('stroke', '#888')
-          .attr('stroke-width', 2)
+          .attr('stroke-width', 1)
+          .attr('stroke-dasharray', '4,2')
           .attr('class', 'year-change-bar');
-
-        svg.append('text')
-          .attr('x', x - 8)
-          .attr('y', height - 35)
-          .attr('text-anchor', 'end')
-          .attr('font-size', '14px')
-          .attr('fill', '#444')
-          .text(curr.getFullYear());
-
-        svg.append('text')
-          .attr('x', x + 8)
-          .attr('y', height - 35)
-          .attr('text-anchor', 'start')
-          .attr('font-size', '14px')
-          .attr('fill', '#444')
-          .text(next.getFullYear());
       }
     }
+
+    yearChangePoints.unshift({ x: 0, year: startDate.getFullYear() });
+    yearChangePoints.push({ x: timeScale(new Date(months[months.length - 1].getFullYear(), months[months.length - 1].getMonth() + 1, 1)), year: endDate.getFullYear() });
+
+    for (let i = 0; i < yearChangePoints.length - 1; i++) {
+      const midX = (yearChangePoints[i].x + yearChangePoints[i + 1].x) / 2;
+      const labelYear = yearChangePoints[i].year;
+
+      svg.append('text')
+        .attr('x', midX)
+        .attr('y', 20)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '14px')
+        .attr('fill', '#444')
+        .text(labelYear);
+      
+      svg.append('text')
+        .attr('x', midX)
+        .attr('y', 2 * height - 15)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '14px')
+        .attr('fill', '#444')
+        .text(labelYear);
+    }
   }
+
 
   getTimeScale(width: number, startDate: Date, endDate: Date, scalePercentage: number = 1): d3.ScaleTime<number, number> {
     const adjustedWidth = width * scalePercentage;
@@ -291,7 +308,7 @@ export class D3Service {
       .attr('stroke', '#cdcdcd')
       .attr('stroke-width', 2)
       .attr('fill', 'none')
-      .attr('class', `link node-${entity.type}-${entity.id} link-${entity.type}-${entity.id} meeting-link-${meetingId}`)
+      .attr('class', `link node-${entity.type}-${entity.id} link-${entity.type} link-${entity.type}-${entity.id} meeting-link-${meetingId}`)
       .on('mouseover', function () {
         d3.selectAll('.node-hover').each(function () {
           d3.select(this).classed('node-hover', false);

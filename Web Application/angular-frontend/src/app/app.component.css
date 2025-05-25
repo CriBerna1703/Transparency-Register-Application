@@ -471,7 +471,7 @@ app-histogram-view {
 .tab-content {
   transition: opacity 0.2s ease-in-out;
   height: inherit;
-  overflow: auto;
+  overflow: hidden;
 }
 
 

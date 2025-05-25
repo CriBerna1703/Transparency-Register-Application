@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { TabNavigationComponent } from '../tab-navigation/tab-navigation.component';
 import { Observable, of } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
+import { SelectionService } from '../services/selection.service';
 
 interface HistogramTab {
   id: string;
@@ -30,6 +31,7 @@ export class HistogramViewComponent implements OnChanges {
   @Input() selectedEntity: { id: string, type: string } | null = null;
   tabs: HistogramTab[] = [];
   activeTabId: string | null = null;
+  activeTabType: string | null = null;
   zoomLevel: number = 500;
 
   selectedAggregation: string = 'month';
@@ -48,7 +50,8 @@ export class HistogramViewComponent implements OnChanges {
     private d3Service: D3Service,
     private dataService: DataService,
     private filterService: FilterService,
-    private el: ElementRef
+    private el: ElementRef,
+    private selectionService: SelectionService,
   ) {}
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -57,8 +60,16 @@ export class HistogramViewComponent implements OnChanges {
     }
   }
 
-  setActiveTab(id: string): void {
+  setActiveTab({ id, type }: { id: string | null; type: string | null; }): void {
+    console.log('Setting active tab:', id, type);
+    this.selectionService.setActiveHistogramTab(
+      {
+        id,
+        type: (type === 'representative' || type === 'directorate') ? type : 'representative-directorate'
+      }
+    );
     this.activeTabId = id;
+    this.activeTabType = type;
     this.updateHistogram();
   }
 
@@ -70,7 +81,7 @@ export class HistogramViewComponent implements OnChanges {
     const existingTab = this.tabs.find(tab => tab.id === entity.id && tab.type === entity.type);
     
     if (existingTab) {
-        this.activeTabId = existingTab.id;
+        this.setActiveTab({ id: existingTab.id, type: existingTab.type });
         this.updateHistogram();
     } else {
         const allMeetings = this.filterService.getCurrentMeetings();
@@ -86,7 +97,7 @@ export class HistogramViewComponent implements OnChanges {
         };
 
         this.tabs.push(newTab);
-        this.activeTabId = newTab.id;
+        this.setActiveTab({ id: newTab.id, type: newTab.type });
 
         this.fetchMeetingData(entity).subscribe(meetingDates => {
             newTab.rawData = meetingDates;
@@ -129,16 +140,17 @@ export class HistogramViewComponent implements OnChanges {
     }
   }
 
-  closeTab(tabId: string): void {
-    const tabIndex = this.tabs.findIndex(tab => tab.id === tabId);
-    this.tabs = this.tabs.filter(tab => tab.id !== tabId);
+  closeTab({ id, type }: { id: string; type: string | null; }): void {
+    console.log('Closing tab:', id, type);
+    const tabIndex = this.tabs.findIndex(tab => tab.id === id && tab.type === type);
+    this.tabs = this.tabs.filter(tab => tab.id !== id || tab.type !== type);
 
-    if (this.activeTabId === tabId) {
+    if (this.activeTabId === id && this.activeTabType === type) {
       if (this.tabs.length) {
         const newIndex = tabIndex > 0 ? tabIndex - 1 : 0;
-        this.activeTabId = this.tabs[newIndex].id;
+        this.setActiveTab({ id: this.tabs[newIndex].id, type: this.tabs[newIndex].type });
       } else {
-        this.activeTabId = null;
+        this.setActiveTab({ id: null, type: null });
       }
     }
     this.updateHistogram();

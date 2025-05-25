@@ -30,6 +30,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   private directorateHeight = window.innerHeight * 0.3 + 60;
   private meetingHeight = window.innerHeight * 0.15 + 60;
   private selectedNodes: Set<string> = new Set();
+  private selectedInfoTab: { id: string; type: string } | null = null;
+  private selectedHistogramTab: { id: string; type: string } | null = null;
   public activeMeetingNode: { color: string, count: number, textColor: string } | null = null;
   public lobbyistDegreeThreshold: number = 1;
   public maxVisibleLobbyistDegree: number = 10; 
@@ -40,6 +42,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     directorate: this.directorateHeight,
     meeting: this.meetingHeight,
   };
+
+  private temporalViewSvg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null = null;
 
   constructor(
     private filterService: FilterService,
@@ -69,6 +73,26 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     
       this.meetingManager.setMeetingsData(formattedMeetings);
       this.emitDateRange(formattedMeetings);
+    });
+
+    this.selectionService.activeInfoTab$.subscribe(tab => {
+      if (tab && tab.type !== null) {
+        this.selectedInfoTab = { id: tab.id ?? '', type: tab.type as string };
+        this.updateSelectedNodes(this.selectedInfoTab);
+      } else {
+        this.selectedInfoTab = null;
+        this.updateSelectedNodes(null);
+      }
+    });
+
+    this.selectionService.activeHistogramTab$.subscribe(tab => {
+      if (tab && tab.type !== null) {
+        this.selectedHistogramTab = { id: tab.id ?? '', type: tab.type as string };
+        this.updateSelectedNodes(this.selectedHistogramTab);
+      } else {
+        this.selectedHistogramTab = null;
+        this.updateSelectedNodes(null);
+      }
     });
 
     this.selectionService.selectedNodes$.subscribe(nodes => {
@@ -117,7 +141,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   private emitDateRange(meetings: MeetingData[]): void {
     if (meetings.length === 0) {
       this.dateRangeChange.emit({ hasMeetings: false });
-      this.startDate = new Date(0);
+      const currentYear = new Date().getFullYear();
+      this.startDate = new Date(currentYear, 0, 1);
       this.endDate = new Date(this.startDate.getFullYear() + 1, this.startDate.getMonth(), 0);
       this.createVisualization();
       return;
@@ -148,20 +173,20 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const minNodeSpacing = 20;
       const calculatedWidth = Math.max(width, maxNodesPerRow * minNodeSpacing);
 
-      const svg = this.d3Service.createSvg(element, calculatedWidth, height, this.zoomLevel);
-      this.d3Service.drawTimeline(svg, calculatedWidth, this.meetingHeight);  
-      this.d3Service.drawMonths(svg, calculatedWidth, this.meetingHeight, displayStartDate, displayEndDate);
-  
-      this.drawDottedLines(svg, calculatedWidth, height);
+      this.temporalViewSvg = this.d3Service.createSvg(element, calculatedWidth, height, this.zoomLevel);
+      this.d3Service.drawTimeline(this.temporalViewSvg, calculatedWidth, this.meetingHeight);
+      this.d3Service.drawMonths(this.temporalViewSvg, calculatedWidth, this.meetingHeight, displayStartDate, displayEndDate);
+
+      this.drawDottedLines(this.temporalViewSvg, calculatedWidth, height);
       const filteredMeetings = this.meetingManager.getFilteredMeetingsByInterval(this.startDate, this.endDate);
-      this.drawMeetingNodes(svg, this.d3Service.getTimeScale(calculatedWidth, displayStartDate, displayEndDate), filteredMeetings);
-      this.drawEntities(svg, 'lobbyist', calculatedWidth, displayStartDate, displayEndDate, this.lobbyistDegreeThreshold, filteredMeetings);
+      this.drawMeetingNodes(this.temporalViewSvg, this.d3Service.getTimeScale(calculatedWidth, displayStartDate, displayEndDate), filteredMeetings);
+      this.drawEntities(this.temporalViewSvg, 'lobbyist', calculatedWidth, displayStartDate, displayEndDate, this.lobbyistDegreeThreshold, filteredMeetings);
       if (this.showRepresentatives) {
-        this.drawEntities(svg, 'representative', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
+        this.drawEntities(this.temporalViewSvg, 'representative', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
       } else {
-        this.drawEntities(svg, 'directorate', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
+        this.drawEntities(this.temporalViewSvg, 'directorate', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
       }
-      svg.selectAll('.meeting-node').raise();
+      this.temporalViewSvg.selectAll('.meeting-node').raise();
       const meetingIds = meetings.map(m => `meeting_${m.lobbyist_id}_${m.meeting_number}`);
       meetingIds.forEach(meetingId => {
         if (this.selectedNodes.has(meetingId)) {
@@ -170,6 +195,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           });
         }
       });
+      this.updateSelectedNodes(this.selectedInfoTab);
+      this.updateSelectedNodes(this.selectedHistogramTab);
     });
   }
 
@@ -212,14 +239,15 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         }
       }
 
-      let isLabelFixed = this.selectedNodes.has(entity.id);
+      let isLabelFixed = this.selectedNodes.has(entity.id) || this.selectedInfoTab?.id === entity.id || this.selectedHistogramTab?.id === entity.id;
 
       const labelYPosition = entityType === 'lobbyist' ? yPosition - 20 : yPosition + 30;
 
       const labelGroup = svg.append("g")
         .attr("class", "label-group")
         .classed("label-visible", false)
-        .classed("label-fixed", isLabelFixed);
+        .classed("label-fixed", isLabelFixed)
+        .classed(`node-${entity.type}-${entity.id}`, true);
       const backgroundRect = labelGroup.append("rect")
         .attr("fill", "rgba(255, 255, 255, 1)")
         .attr("rx", 4)
@@ -298,7 +326,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         .on('mouseover', function (this: SVGRectElement) {
           d3.select(this).classed('node-hover', true);
   
-          labelGroup.classed("label-visible", true).raise();
           labelGroup.classed("label-visible", true).raise();
           label.text(entityName);
 
@@ -747,7 +774,46 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     this.lobbyistDegreeThreshold = Math.min(this.lobbyistDegreeThreshold, this.maxVisibleLobbyistDegree);
     this.meetingManager.lobbyistDegreeThreshold = this.lobbyistDegreeThreshold;
   }
-  
+
+  private updateSelectedNodes(selectedTab: { id: string; type: string } | null): void {
+    console.log('Updating selected nodes for tab:', selectedTab);
+    if (!selectedTab) return;
+
+    const deselectMap: Record<string, string[]> = {
+      lobbyist: ['.node-lobbyist-selected', '.meeting-link-selected'],
+      meeting: ['.node-lobbyist-selected', '.meeting-link-selected'],
+      representative: ['.node-representative-selected', '.node-directorate-selected'],
+      directorate: ['.node-representative-selected', '.node-directorate-selected'],
+      'lobbyist-meeting': ['.node-lobbyist-selected', '.meeting-link-selected'],
+      'representative-directorate': ['.node-representative-selected', '.node-directorate-selected']
+    };
+
+    const selectMap: Record<string, ((id: string) => string) | null> = {
+      lobbyist: id => `.node-lobbyist-${id}`,
+      meeting: id => `.meeting-link-${id}`,
+      representative: id => this.showRepresentatives ? `.node-representative-${id}` : '',
+      directorate: id => !this.showRepresentatives ? `.node-directorate-${id}` : '',
+      'lobbyist-meeting': null,
+      'representative-directorate': null
+    };
+
+    const deselectors = deselectMap[selectedTab.type];
+    if (deselectors) {
+      deselectors.forEach(selector => {
+        this.temporalViewSvg?.selectAll(selector).classed(selector.replace('.', ''), false);
+      });
+    }
+
+    const selectorBuilder = selectMap[selectedTab.type];
+    if (selectorBuilder) {
+      const selector = selectorBuilder(selectedTab.id);
+      if (selector) {
+        const classToAdd = selector.replace('.', '').replace(`-${selectedTab.id}`, '-selected');
+        console.log('Adding class:', classToAdd, 'for selector:', selector);
+        this.temporalViewSvg?.selectAll(selector).classed(classToAdd, true);
+      }
+    }
+  }
 }
 
 export interface MeetingData {

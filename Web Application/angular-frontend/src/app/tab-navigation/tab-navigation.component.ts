@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 interface Tab {
   id: string;
+  type: string;
   title: string;
 }
 
@@ -16,11 +17,12 @@ interface Tab {
 export class TabNavigationComponent implements AfterViewInit, OnChanges {
   @Input() tabs: Tab[] = [];
   @Input() activeTabId: string | null = null;
+  @Input() activeTabType: string | null = null;
   @Input() compact: boolean = false;
   @Input() closable: boolean = true;
 
-  @Output() activeTabChange = new EventEmitter<string>();
-  @Output() tabClosed = new EventEmitter<string>();
+  @Output() activeTabChange = new EventEmitter<{ id: string, type: string | null }>();
+  @Output() tabClosed = new EventEmitter<{ id: string, type: string | null }>();
 
   @ViewChild('tabTitleContainer', { static: false }) tabTitleContainer!: ElementRef;
 
@@ -35,7 +37,7 @@ export class TabNavigationComponent implements AfterViewInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['tabs'] || changes['activeTabId']) {
+    if (changes['tabs'] || changes['activeTabId'] || changes['activeTabType']) {
       setTimeout(() => {
         this.checkScroll();
         this.scrollToActiveTab();
@@ -43,13 +45,13 @@ export class TabNavigationComponent implements AfterViewInit, OnChanges {
     }
   }
 
-  setActiveTab(id: string): void {
-    this.activeTabChange.emit(id);
+  setActiveTab(id: string, type: string | null): void {
+    this.activeTabChange.emit({ id, type });
   }
 
-  closeTabClick(event: Event, id: string): void {
+  closeTabClick(event: Event, id: string, type: string | null): void {
     event.stopPropagation();  // Prevent tab activation
-    this.tabClosed.emit(id);
+    this.tabClosed.emit({ id, type });
   }
 
   scrollTabs(direction: number): void {

@@ -1,6 +1,6 @@
 <div class="tabs">
-  <app-tab-navigation [tabs]="tabs" [activeTabId]="activeTabId" [compact]="true" (activeTabChange)="setActiveTab($event)" (tabClosed)="closeTab($event)"></app-tab-navigation>
-  <div class="tab-content" *ngFor="let tab of tabs" [hidden]="tab.id !== activeTabId">
+  <app-tab-navigation [tabs]="tabs" [activeTabId]="activeTabId" [activeTabType]="activeTabType" [compact]="true" (activeTabChange)="setActiveTab($event)" (tabClosed)="closeTab($event)"></app-tab-navigation>
+  <div class="tab-content" *ngFor="let tab of tabs" [hidden]="tab.id !== activeTabId || tab.type !== activeTabType">
     <!-- Show Loading -->
     <div *ngIf="tab.isLoading">
       <p>Loading...</p>

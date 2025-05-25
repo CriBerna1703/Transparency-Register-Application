@@ -6,6 +6,16 @@ export interface SelectedNode {
   type: 'lobbyist' | 'representative' | 'directorate' | 'meeting';
 }
 
+export interface ActiveInfoTab {
+  id: string | null;
+  type: 'meeting' | 'lobbyist' | 'lobbyist-meeting' | null;
+}
+
+export interface ActiveHistogramTab {
+  id: string | null;
+  type: 'representative' | 'directorate' | 'representative-directorate' | null;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -13,6 +23,12 @@ export class SelectionService {
   private selectedNodes = new Set<string>();
   private selectedNodesSubject = new BehaviorSubject<SelectedNode[]>([]);
   selectedNodes$ = this.selectedNodesSubject.asObservable();
+
+  private infoTabSubject = new BehaviorSubject<ActiveInfoTab | null>(null);
+  activeInfoTab$ = this.infoTabSubject.asObservable();
+
+  private histogramTabSubject = new BehaviorSubject<ActiveHistogramTab | null>(null);
+  activeHistogramTab$ = this.histogramTabSubject.asObservable();
 
   selectNode(node: SelectedNode) {
     this.selectedNodes.add(node.id);
@@ -39,5 +55,13 @@ export class SelectionService {
   clearAll() {
     this.selectedNodes.clear();
     this.emit();
+  }
+
+  setActiveInfoTab(tab: ActiveInfoTab | null) {
+    this.infoTabSubject.next(tab);
+  }
+
+  setActiveHistogramTab(tab: ActiveHistogramTab | null) {
+    this.histogramTabSubject.next(tab);
   }
 }
