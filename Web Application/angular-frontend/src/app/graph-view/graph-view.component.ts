@@ -458,8 +458,10 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public onMinThresholdChange(): void {
     if (this.minThreshold >= this.maxThreshold) {
       this.minThreshold = this.maxThreshold - 0.01;
-    }    
-    this.isSimulationPaused = false;
+    }
+
+    this.setSimulationPaused(false); // Attiva simulazione
+    console.log('pause (min):', this.isSimulationPaused);
     this.updateGraph();
   }
 
@@ -467,7 +469,9 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     if (this.maxThreshold <= this.minThreshold) {
       this.maxThreshold = this.minThreshold + 0.01;
     }
-    this.isSimulationPaused = false;
+
+    this.setSimulationPaused(false); // Attiva simulazione
+    console.log('pause (max):', this.isSimulationPaused);
     this.updateGraph();
   }
 
@@ -588,22 +592,32 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
   }
 
-  public toggleSimulation(): void {
-    if (this.isSimulationPaused) {
-      this.resumeGraph();
+  public get simulationRunning(): boolean {
+    return !this.isSimulationPaused;
+  }
+
+  // Setter automatico se vuoi farlo agire da solo (non obbligatorio)
+  public set simulationRunning(value: boolean) {
+    this.setSimulationPaused(!value);
+  }
+
+  // Metodo chiamato dallo switch
+  public onSimulationToggle(value: boolean): void {
+    this.setSimulationPaused(!value);
+  }
+
+  // Metodo centralizzato che aggiorna variabile + grafico
+  private setSimulationPaused(paused: boolean): void {
+    if (this.isSimulationPaused === paused) return; // Evita chiamate inutili
+
+    this.isSimulationPaused = paused;
+    console.log('Simulation paused:', this.isSimulationPaused);
+
+    if (paused) {
+      this.d3Service.pauseSimulation();
     } else {
-      this.pauseGraph();
+      this.d3Service.resumeSimulation();
     }
-  }
-
-  public pauseGraph(): void {
-    this.d3Service.pauseSimulation();
-    this.isSimulationPaused = true;
-  }
-
-  public resumeGraph(): void {
-    this.d3Service.resumeSimulation();
-    this.isSimulationPaused = false;
   }
 
 

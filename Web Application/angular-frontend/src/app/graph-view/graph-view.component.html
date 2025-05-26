@@ -111,8 +111,12 @@
         <div style="display: flex; align-items: center; justify-content: center;">
           <span style="font-size: 12px; margin-right: 8px;">OFF</span>
           <label class="switch">
-            <input type="checkbox" [checked]="!isSimulationPaused" (change)="toggleSimulation()">
-            <span class="slider round"></span>
+            <input
+              type="checkbox"
+              [(ngModel)]="simulationRunning"
+              (ngModelChange)="onSimulationToggle($event)"
+            >            
+          <span class="slider round"></span>
           </label>
           <span style="font-size: 12px; margin-left: 8px;">ON</span>
         </div>
