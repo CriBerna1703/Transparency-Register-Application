@@ -94,7 +94,7 @@
       </div>
       <!-- Accordion Commissioners -->
       <div class="filter-group">
-        <div class="accordion-header" (click)="toggleSection('commissioners')"> Commissioners ({{ selectedCommissioners.length === 0 ? 'All selected' : selectedCommissioners.length + ' selected' }}) <span class="arrow">{{ expandedSections.commissioners ? '▲' : '▼' }}</span>
+        <div class="accordion-header" (click)="toggleSection('commissioners')"> Eur. Comm. officials ({{ selectedCommissioners.length === 0 ? 'All selected' : selectedCommissioners.length + ' selected' }}) <span class="arrow">{{ expandedSections.commissioners ? '▲' : '▼' }}</span>
         </div>
         <div *ngIf="expandedSections.commissioners" class="accordion-content">
           <input type="text" placeholder="Search Commissioner..." [(ngModel)]="searchCommissioner" (input)="filterCommissioners()">

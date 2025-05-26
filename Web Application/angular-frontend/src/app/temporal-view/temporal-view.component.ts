@@ -410,6 +410,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             d3.select(this).classed('node-hover', false);
           });
 
+          self.labelTextChange.emit('');
+
           if(!self.fullLabels) {
             label.text(entityName.substring(0, truncatedLength));
           }

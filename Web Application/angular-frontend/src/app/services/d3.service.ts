@@ -41,10 +41,12 @@ export class D3Service {
     const margin = { top: 20, right: 30, bottom: 50, left: 50 };
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
+    const baseFontSize = 20;
+    const scaledFontSize = baseFontSize + (width - 1000) / 100;
 
     const svg = d3.select(container)
       .append('svg')
-      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('viewBox', `0 0 ${width} ${width > 1000 ? height + (width - 1000) / 25 : height}`)
       .attr('preserveAspectRatio', 'xMinYMin meet')
       .style('height', '98%');
 
@@ -62,7 +64,8 @@ export class D3Service {
     svg.append('g')
       .attr('transform', `translate(${margin.left},0)`)
       .call(d3.axisLeft(y).ticks(5))
-      .style('font-size', '12px');
+      .selectAll('text')
+      .style('font-size', `${baseFontSize}px`);
 
     svg.selectAll('.bar')
       .data(data)
@@ -83,7 +86,7 @@ export class D3Service {
       .attr('x', (_, i) => (x(labels[i]) as number) + x.bandwidth() / 2)
       .attr('y', d => y(d) - 5)
       .attr('text-anchor', 'middle')
-      .style('font-size', '12px')
+      .style('font-size', `${baseFontSize}px`)
       .style('fill', 'black')
       .text(d => d > 0 ? d : '');
     
@@ -93,7 +96,8 @@ export class D3Service {
       .selectAll('text')
       .attr('transform', 'rotate(-30)')
       .style('text-anchor', 'end')
-      .style('font-size', '12px');
+      .style('font-size', `${scaledFontSize}px`);
+
   }
 
 
@@ -830,6 +834,8 @@ export class D3Service {
         d3.selectAll('.node-hover').each(function () {
           d3.select(this).classed('node-hover', false);
         });
+        
+        self.emitLabelText(''); 
 
         d3.select(element).selectAll('line')
           .each(function (l: any) {

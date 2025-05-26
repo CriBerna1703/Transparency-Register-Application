@@ -1,4 +1,5 @@
 <div class="tabs">
+  <strong>Lobbyist/Meeting Records</strong>
   <app-tab-navigation [tabs]="tabs" [activeTabId]="activeTabId" [activeTabType]="activeTabType" [compact]="true" (activeTabChange)="setActiveTab($event)" (tabClosed)="closeTab($event)"></app-tab-navigation>
   <div class="tab-content" *ngFor="let tab of tabs" [hidden]="tab.id !== activeTabId || tab.type !== activeTabType">
     <!-- Show Loading -->
