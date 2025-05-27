@@ -75,6 +75,10 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public showLeftPanel: boolean = true;
   public showRightPanel: boolean = true;
   public isSimulationPaused: boolean = false;
+  private thresholdChangedSinceLastResume: boolean = false;
+  private pendingResume: boolean = false;
+
+
 
   public keywordSortOrder: 'abc' | 'score' = 'abc';
 
@@ -237,75 +241,80 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   }
 
   private updateInterestGraph(): void {
-    const containerEl = this.graphContainer.nativeElement;
-    const nodes: Node[] = this.formattedMeetings.map(l => ({ id: l.lobbyist_id, name: l.lobbyist_name }));
+  const containerEl = this.graphContainer.nativeElement;
+  const nodes: Node[] = this.formattedMeetings.map(l => ({
+    id: l.lobbyist_id,
+    name: l.lobbyist_name
+  }));
 
-    // 1. Calcolo tutte le possibili similarità (senza applicare filtri ancora)
-    const allSimilarities: {
-      source: string;
-      target: string;
-      sim: number;
-      sharedFieldIds: number[];
-    }[] = [];
+  const allSimilarities: {
+    source: string;
+    target: string;
+    sim: number;
+    sharedFieldIds: number[];
+  }[] = [];
 
-    for (let i = 0; i < this.formattedMeetings.length; i++) {
-      for (let j = i + 1; j < this.formattedMeetings.length; j++) {
-        const sim = this.cosineSimilarity(
-          this.formattedMeetings[i].fieldVector,
-          this.formattedMeetings[j].fieldVector
-        );
+  for (let i = 0; i < this.formattedMeetings.length; i++) {
+    for (let j = i + 1; j < this.formattedMeetings.length; j++) {
+      const sim = this.cosineSimilarity(
+        this.formattedMeetings[i].fieldVector,
+        this.formattedMeetings[j].fieldVector
+      );
 
-        if (sim > 0) {
-          const sharedFieldIds = this.formattedMeetings[i].fieldVector
-            .map((v, idx) => v === 1 && this.formattedMeetings[j].fieldVector[idx] === 1 ? idx + 1 : null)
-            .filter((id): id is number => id !== null);
+      if (sim > 0) {
+        const sharedFieldIds = this.formattedMeetings[i].fieldVector
+          .map((v, idx) => v === 1 && this.formattedMeetings[j].fieldVector[idx] === 1 ? idx + 1 : null)
+          .filter((id): id is number => id !== null);
 
-          allSimilarities.push({
-            source: this.formattedMeetings[i].lobbyist_id,
-            target: this.formattedMeetings[j].lobbyist_id,
-            sim,
-            sharedFieldIds
-          });
-        }
-      }
-    }
-
-
-    // 3. Applico i filtri (threshold + filtro per campo)
-    const links: Link[] = [];
-    let minSim = Infinity;
-    let maxSim = -Infinity;
-
-    for (const s of allSimilarities) {
-      if (s.sim >= this.minThreshold && s.sim <= this.maxThreshold &&
-        (s.sharedFieldIds.some(id => this.selectedFilterValues.includes(id)))) {
-        links.push({
-          source: s.source,
-          target: s.target,
-          similarity: s.sim
+        allSimilarities.push({
+          source: this.formattedMeetings[i].lobbyist_id,
+          target: this.formattedMeetings[j].lobbyist_id,
+          sim,
+          sharedFieldIds
         });
-        minSim = Math.min(minSim, s.sim);
-        maxSim = Math.max(maxSim, s.sim);
       }
     }
-
-    this.d3Service.drawForceGraph(
-      containerEl,
-      nodes,
-      links,
-      {
-        width: containerEl.offsetWidth,
-        height: 600,
-        zoomLevel: this.zoomLevel,
-        minSim,
-        maxSim,
-        SelectedNode: this.selectedNodes,
-        onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
-        onLinkLeftClick: (link: any) => this.onLinkLeftClick(link),
-        onNodeRightClick: (node: any) => this.onNodeRightClick(node)
-      }
-    );
   }
+
+  const links: Link[] = [];
+  let minSim = Infinity;
+  let maxSim = -Infinity;
+
+  for (const s of allSimilarities) {
+    if (
+      s.sim >= this.minThreshold &&
+      s.sim <= this.maxThreshold &&
+      s.sharedFieldIds.some(id => this.selectedFilterValues.includes(id))
+    ) {
+      links.push({
+        source: s.source,
+        target: s.target,
+        similarity: s.sim
+      });
+
+      minSim = Math.min(minSim, s.sim);
+      maxSim = Math.max(maxSim, s.sim);
+    }
+  }
+
+  this.d3Service.drawForceGraph(
+        containerEl,
+        nodes,
+        links,
+        {
+          width: containerEl.offsetWidth,
+          height: 600,
+          zoomLevel: this.zoomLevel,
+          minSim,
+          maxSim,
+          SelectedNode: this.selectedNodes,
+          onNodeClick: (d: any) => this.onNodeClick({ id: d.id, type: 'lobbyist' }),
+          onLinkLeftClick: (link: any) => this.onLinkLeftClick(link),
+          onNodeRightClick: (node: any) => this.onNodeRightClick(node)
+        }
+      );
+  
+}
 
   private updateTextGraph(): void {
     const containerEl = this.graphContainer.nativeElement;
@@ -460,19 +469,16 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       this.minThreshold = this.maxThreshold - 0.01;
     }
 
-    this.setSimulationPaused(false); // Attiva simulazione
-    console.log('pause (min):', this.isSimulationPaused);
-    this.updateGraph();
+    this.refreshGraphAfterTresholdChange();
+
   }
 
   public onMaxThresholdChange(): void {
     if (this.maxThreshold <= this.minThreshold) {
       this.maxThreshold = this.minThreshold + 0.01;
-    }
-
-    this.setSimulationPaused(false); // Attiva simulazione
-    console.log('pause (max):', this.isSimulationPaused);
-    this.updateGraph();
+    }   
+    this.refreshGraphAfterTresholdChange();
+    
   }
 
   public onLabelFontSizeChange(): void {
@@ -493,7 +499,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       lobbyist_ids: this.formattedMeetings.map(m => m.lobbyist_id)
     };
 
-    console.log('📦 Payload per getSimilarities:', payload);
 
     if (this.graphType === 'text') {
       this.isTextGraphLoading = true;
@@ -502,7 +507,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.dataService.getSimilarities(payload).subscribe({
       next: response => {
         this.isTextGraphLoading = false;
-        console.log('📦 Risposta da getSimilarities:', response);
 
         if (!Array.isArray(response.similarities)) {
           console.error('❗ Risposta non valida:', response);
@@ -535,6 +539,78 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       }
     });
   }
+
+private refreshGraphAfterTresholdChange(): void {
+  const links = this.getFilteredLinks();
+
+  this.d3Service.updateGraphLinksOnly(links);
+
+
+  if (!this.isSimulationPaused) {
+    this.d3Service.pauseSimulation();
+    this.d3Service.recalculateGraphStructure(); 
+    this.d3Service.resumeSimulation();
+  }
+}
+
+
+private getFilteredLinks(): Link[] {
+  if (this.graphType === 'interest') {
+    const allLinks: Link[] = [];
+
+    for (let i = 0; i < this.formattedMeetings.length; i++) {
+      for (let j = i + 1; j < this.formattedMeetings.length; j++) {
+        const sim = this.cosineSimilarity(
+          this.formattedMeetings[i].fieldVector,
+          this.formattedMeetings[j].fieldVector
+        );
+
+        if (sim > 0) {
+          const sharedFieldIds = this.formattedMeetings[i].fieldVector
+            .map((v, idx) => v === 1 && this.formattedMeetings[j].fieldVector[idx] === 1 ? idx + 1 : null)
+            .filter((id): id is number => id !== null);
+
+          if (
+            sim >= this.minThreshold &&
+            sim <= this.maxThreshold &&
+            sharedFieldIds.some(id => this.selectedFilterValues.includes(id))
+          ) {
+            allLinks.push({
+              source: this.formattedMeetings[i].lobbyist_id,
+              target: this.formattedMeetings[j].lobbyist_id,
+              similarity: sim
+            });
+          }
+        }
+      }
+    }
+
+    return allLinks;
+  }
+
+  if (this.graphType === 'text') {
+    return this.textSimilarities
+      .filter(sim => {
+        const value = sim[this.selectedTextMetric] as number;
+        return (
+          typeof value === 'number' &&
+          value >= this.minThreshold &&
+          value <= this.maxThreshold &&
+          sim.shared_keywords?.some(keyword => this.selectedFilterValues.includes(keyword))
+        );
+      })
+      .map(sim => ({
+        source: sim.lobbyist1,
+        target: sim.lobbyist2,
+        similarity: sim[this.selectedTextMetric] as number
+      }));
+  }
+
+  return [];
+}
+
+
+
 
   public onFilterToggle(value: number | string, checked: boolean): void {
     if (checked) {
@@ -606,7 +682,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     this.setSimulationPaused(!value);
   }
 
-  // Metodo centralizzato che aggiorna variabile + grafico
   private setSimulationPaused(paused: boolean): void {
     if (this.isSimulationPaused === paused) return; // Evita chiamate inutili
 
@@ -621,13 +696,14 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   }
 
 
+
+
   public allFilterSelected(): boolean {
     return this.availableFilterOptions.length > 0 &&
       this.availableFilterOptions.every(opt => this.selectedFilterValues.includes(opt.id));
   }
 
   public onGraphTypeSwitchChange(): void {
-    // Prima salva la selezione attuale nel campo corretto
     if (this.graphType === 'interest') {
       this.selectedInterestFilterValues = [...this.selectedFilterValues as number[]];
     } else {

@@ -16,6 +16,15 @@ export interface ForceGraphOptions {
   onNodeRightClick?: (d: any) => void;
 }
 
+interface Link {
+  source: string;
+  target: string;
+  similarity: number;
+  __invisible?: boolean; 
+  strength?: number;     
+}
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -414,6 +423,7 @@ export class D3Service {
   private simulation: d3.Simulation<any, any> | null = null;
   private lassoStart: [number, number] | null = null;
   private lassoRect: d3.Selection<SVGRectElement, unknown, null, undefined> | null = null;
+  private linkSelection: d3.Selection<SVGLineElement, any, SVGGElement, unknown> | null = null;
   private originalElement: HTMLElement | null = null;
   private originalNodes: any[] = [];
   private originalLinks: any[] = [];
@@ -431,8 +441,6 @@ export class D3Service {
     let isRightPanning = false;
     let lastMousePosition: [number, number] | null = null;
     this.originalElement = element;
-    this.originalNodes = JSON.parse(JSON.stringify(nodes)); // deep copy
-    this.originalLinks = JSON.parse(JSON.stringify(links));
     this.originalOptions = options;
     const width = options?.width ?? 1000;
     const height = options?.height ?? 600;
@@ -451,7 +459,6 @@ export class D3Service {
     });
 
     const components = this.getConnectedComponents(nodes, links);
-    console.log('Connected components:', components.length);
     const nonTrivialComponents: string[][] = [];
     const isolatedNodes: any[] = [];
 
@@ -478,9 +485,10 @@ export class D3Service {
         source: `w_${i}`,
         target: anchorNode,
         __invisible: true,
-        strength: 0.05
+        strength: 0.1
       });
     });
+
 
 
     const wCentral = {
@@ -566,6 +574,10 @@ export class D3Service {
         }
       });
     });
+
+
+    this.originalNodes = [...nodes];  // copia profonda (non solo riferimento!)
+    this.originalLinks = JSON.parse(JSON.stringify(links));
 
 
 
@@ -713,7 +725,10 @@ export class D3Service {
 
         return -150;
       }))
-      .force('collide', d3.forceCollide((d: any) => d.degree === 0 ? 20 : 40).strength(1.0))
+      .force('collide', d3.forceCollide((d: any) => {
+        if (d.invisible && d.id !== 'w_central') return 0;
+        return d.degree === 0 ? 20 : 40;
+      }).strength(1.0))
       .force('repelWiNodes', () => {
         return {
           initialize() {}, 
@@ -762,9 +777,14 @@ export class D3Service {
         }
       });
 
-    const link = this.zoomGroup.append('g')
+    const linkGroup = this.zoomGroup.append('g').classed('links', true);  // ✅ ora ha la classe
+    const link = linkGroup
       .selectAll('line')
-      .data(links.filter((d: any) => !d.__invisible))
+      .data(links.filter((d: any) => !d.__invisible), (d: any) => {
+        const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+        const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+        return `${sourceId}-${targetId}`;
+      })
       .enter()
       .append('line')
       .attr('stroke-width', 8)
@@ -774,6 +794,8 @@ export class D3Service {
         event.stopPropagation();
         options?.onLinkLeftClick?.(d);
       });
+
+    this.linkSelection = link;
 
     this.nodeGroup = this.zoomGroup.append('g')
       .selectAll('g')
@@ -860,12 +882,11 @@ export class D3Service {
 
 
     this.simulation.on('tick', () => {
-      console.log('[tick]');
-      link
-        .attr('x1', (d: any) => d.source.x)
-        .attr('y1', (d: any) => d.source.y)
-        .attr('x2', (d: any) => d.target.x)
-        .attr('y2', (d: any) => d.target.y);
+      this.linkSelection
+        ?.attr('x1', (d: any) => this.getNodePosition(d.source)?.x ?? 0)
+        .attr('y1', (d: any) => this.getNodePosition(d.source)?.y ?? 0)
+        .attr('x2', (d: any) => this.getNodePosition(d.target)?.x ?? 0)
+        .attr('y2', (d: any) => this.getNodePosition(d.target)?.y ?? 0);
 
       this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
 
@@ -873,6 +894,7 @@ export class D3Service {
       this.nodeGroup?.selectAll('text')
         .attr('transform', `scale(${1 / zoomScale})`);
     });
+
 
     if (previousZoomTransform) {
       this.svg.call(this.zoomBehavior!.transform as any, previousZoomTransform);
@@ -1061,29 +1083,135 @@ public pauseSimulation(): void {
     }
   }
 
+public resumeSimulation(): void {
+  this.recalculateGraphStructure();
 
-  public resumeSimulation(): void {
-    if (this.simulationPaused && this.originalElement) {
-      this.simulationPaused = false;
+  if (this.simulationPaused && this.simulation) {
+    console.log('🟢 Resuming simulation');
+    this.simulationPaused = false;
+const nodeMap = new Map(this.originalNodes.map(n => [n.id, n]));
 
-      const selectedNodes = this.originalOptions?.SelectedNode ?? [];
-      const draggableNodes = this.originalOptions?.DraggableNode ?? [];
-      this.drawForceGraph(
-        this.originalElement,
-        this.originalNodes,
-        this.originalLinks,
-        {
-          ...this.originalOptions,
-          SelectedNode: selectedNodes, 
-          DraggableNode: draggableNodes,
-        }
-      );
-      
-      this.updateNodeSelection(selectedNodes);
-      this.setLabelFontSize(this.labelFontSize);
+const validLinks = this.originalLinks.flatMap(link => {
+  const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+  const targetId = typeof link.target === 'object' ? link.target.id : link.target;
 
-    }
+  const sourceNode = nodeMap.get(sourceId);
+  const targetNode = nodeMap.get(targetId);
+
+  if (!sourceNode || !targetNode) {
+    console.warn(`❌ Link rimosso (nodo mancante): ${sourceId} → ${targetId}`);
+    return []; // rimuovi questo link
   }
+
+  return [{
+    ...link,
+    source: sourceNode, // ✅ sostituito con oggetto valido
+    target: targetNode  // ✅ idem
+  }];
+});
+
+    this.simulation
+      .force('link', d3.forceLink(validLinks)
+        .id((d: any) => d.id)
+        .strength((d: any) => d.strength ?? 0.1)
+        .distance((d: any) =>
+          d.__invisible ? 100 : Math.max(100, 300 - (d.similarity ?? 0) * 200)
+        )
+      )
+      .force('charge', d3.forceManyBody().strength((d: any) => {
+        if (d.id === 'w_central') return 0;
+        if (d.invisible && d.id === 'w_k') return 0;
+        return -150;
+      }))
+      .force('collide', d3.forceCollide((d: any) => {
+        if (d.invisible && d.id !== 'w_central') return 0;
+        return d.degree === 0 ? 20 : 40;
+      }).strength(1.0))
+      .force('repelWiNodes', () => {
+        return {
+          initialize() {},
+          apply: (alpha: number) => {
+            const wiNodes = this.originalNodes.filter(n => n.id?.startsWith('w_') && n.id !== 'w_central' && n.id !== 'w_k');
+            for (let i = 0; i < wiNodes.length; i++) {
+              for (let j = i + 1; j < wiNodes.length; j++) {
+                const a = wiNodes[i];
+                const b = wiNodes[j];
+                const dx = a.x - b.x;
+                const dy = a.y - b.y;
+                const dist2 = dx * dx + dy * dy + 0.01;
+                const force = 5000 / dist2;
+                const fx = dx * force;
+                const fy = dy * force;
+                a.vx += fx * alpha;
+                a.vy += fy * alpha;
+                b.vx -= fx * alpha;
+                b.vy -= fy * alpha;
+              }
+            }
+          }
+        };
+      });
+
+    // 🔄 Reset velocità dei nodi
+    this.originalNodes.forEach(n => {
+      n.vx = 0;
+      n.vy = 0;
+    });
+
+    const wCentral = this.originalNodes.find(n => n.id === 'w_central');
+    const wK = this.originalNodes.find(n => n.id === 'w_k');
+    if (wCentral && wK) {
+      wK.x = wCentral.fx;
+      wK.y = wCentral.fy;
+      wK.fx = wCentral.fx;
+      wK.fy = wCentral.fy;
+    }
+
+    if (wCentral) {
+      const wiNodes = this.originalNodes.filter(n => /^w_\d+$/.test(n.id));
+      const angleStep = (2 * Math.PI) / wiNodes.length;
+      const radiusBase = 300;
+
+      wiNodes.forEach((wi, i) => {
+        const compSize = validLinks.filter(
+          l => (typeof l.source === 'object' ? l.source.id : l.source) === wi.id
+        ).length;
+        const radius = radiusBase + compSize * 5;
+        const angle = i * angleStep;
+        wi.x = wCentral.fx + radius * Math.cos(angle);
+        wi.y = wCentral.fy + radius * Math.sin(angle);
+        wi.fx = null;
+        wi.fy = null;
+      });
+    }
+
+    const isolatedNodes = this.originalNodes.filter(n => {
+      return !n.invisible && validLinks.some(l =>
+        (l.source === n.id || (typeof l.source === 'object' && l.source.id === n.id)) &&
+        (l.target === 'w_k' || (typeof l.target === 'object' && l.target.id === 'w_k'))
+      );
+    });
+
+    if (wK) {
+      isolatedNodes.forEach((n, i) => {
+        const angle = (2 * Math.PI * i) / isolatedNodes.length;
+        const radius = 60;
+        n.x = wK.x + radius * Math.cos(angle);
+        n.y = wK.y + radius * Math.sin(angle);
+        n.fx = null;
+        n.fy = null;
+      });
+    }
+
+    this.simulation.alphaTarget(0.05);
+
+
+    this.updateNodeSelection(this.originalOptions?.SelectedNode ?? []);
+    this.setLabelFontSize(this.labelFontSize);
+  }
+}
+
+
 
   public updateNodeDraggable(draggableNodes: SelectedNode[]): void {
   const draggableIds = new Set(draggableNodes.map(n => n.id));
@@ -1119,7 +1247,6 @@ public pauseSimulation(): void {
       });
 
 
-      // Aggiorna anche gli stili dei link
       this.zoomGroup?.selectAll('line')
         .each(function (l: any) {
           const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
@@ -1129,5 +1256,204 @@ public pauseSimulation(): void {
           d3.select(this).classed('link-pinned', isLinkedToSelected);
         });
     }
+
+public updateGraphLinksOnly(links: Link[]): void {
+  if (!this.zoomGroup) {
+    console.warn('❌ zoomGroup non inizializzato');
+    return;
+  }
+
+  const visibleLinks = links.filter(l => !l.__invisible);
+
+  let linkGroup = this.zoomGroup.select<SVGGElement>('g.links');
+  if (linkGroup.empty()) {
+    linkGroup = this.zoomGroup.append('g').classed('links', true);
+  }
+
+  const linkSelection = linkGroup
+    .selectAll<SVGLineElement, any>('line')
+    .data(visibleLinks, (d: any) => {
+      const sourceId = typeof d.source === 'object' ? d.source.id : d.source;
+      const targetId = typeof d.target === 'object' ? d.target.id : d.target;
+      return `${sourceId}-${targetId}`;
+    });
+
+  linkSelection.exit().remove();
+
+  const newLinks = linkSelection.enter()
+    .append('line')
+    .attr('stroke-width', 8)
+    .attr('stroke', (d: any) => this.getLinkColor(d.similarity))
+    .on('click', (event, d) => {
+      event.preventDefault();
+      event.stopPropagation();
+      this.originalOptions?.onLinkLeftClick?.(d);
+    });
+
+  this.linkSelection = linkSelection.merge(newLinks as any);
+  linkSelection
+    .attr('stroke', (d: any) => this.getLinkColor(d.similarity));
+
+  linkGroup.selectAll<SVGLineElement, any>('line')
+    .attr('x1', (d: any) => this.getNodePosition(d.source)?.x ?? 0)
+    .attr('y1', (d: any) => this.getNodePosition(d.source)?.y ?? 0)
+    .attr('x2', (d: any) => this.getNodePosition(d.target)?.x ?? 0)
+    .attr('y2', (d: any) => this.getNodePosition(d.target)?.y ?? 0);
+
+  // ⚠️ Salva solo se la simulazione NON è in pausa
+  if (!this.simulationPaused) {
+    this.originalLinks = [...links];
+  }
+}
+
+private getNodePosition(nodeRef: any): { x: number; y: number } | null {
+  const id = typeof nodeRef === 'object' ? nodeRef.id : nodeRef;
+  const node = this.originalNodes.find(n => n.id === id);
+  return node ? { x: node.x, y: node.y } : null;
+}
+
+public recalculateGraphStructure(): void {
+  if (!this.simulationPaused) {
+    console.warn("⚠️ Calcolare la struttura solo a simulazione in pausa!");
+    return;
+  }
+
+  const nodes = this.originalNodes.filter(n => !/^w_/.test(n.id) && n.id !== 'w_k' && n.id !== 'w_central');
+  const links = this.originalLinks.filter(l => !l.__invisible);
+
+  // 1. Degree
+  const degreeMap = new Map<string, number>();
+  links.forEach(link => {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    degreeMap.set(sourceId, (degreeMap.get(sourceId) || 0) + 1);
+    degreeMap.set(targetId, (degreeMap.get(targetId) || 0) + 1);
+  });
+  nodes.forEach(n => {
+    n.degree = degreeMap.get(n.id) || 0;
+  });
+
+  // 2. Componenti connesse
+  const components = this.getConnectedComponents(nodes, links);
+  const nonTrivialComponents: string[][] = [];
+  const isolatedNodes: any[] = [];
+
+  components.forEach(comp => {
+    const hasEdges = comp.some(id => (degreeMap.get(id) ?? 0) > 0);
+    if (hasEdges) nonTrivialComponents.push(comp);
+    else isolatedNodes.push(...comp.map(id => nodes.find(n => n.id === id)!));
+  });
+
+  const width = this.originalOptions?.width ?? 1000;
+  const height = this.originalOptions?.height ?? 600;
+  const wCentral = {
+    id: 'w_central',
+    name: '',
+    invisible: true,
+    fx: width / 2 + 500,
+    fy: height / 2 + 500
+  };
+
+  const wiNodes: any[] = [];
+
+  // 3. Ricrea w_i e link a nodi ancorati
+  nonTrivialComponents.forEach((comp, i) => {
+    const anchorNode = comp.find(id => degreeMap.get(id)! > 0)!;
+    const wi = {
+      id: `w_${i}`,
+      name: '',
+      invisible: true,
+      fx: null,
+      fy: null
+    };
+    wiNodes.push(wi);
+    links.push({
+      source: `w_${i}`,
+      target: anchorNode,
+      __invisible: true,
+      strength: 0.2
+    });
+  });
+
+  // 4. Link invisibili da w_central a w_i
+  wiNodes.forEach(wi => {
+    links.push({
+      source: wCentral.id,
+      target: wi.id,
+      __invisible: true,
+      strength: 0.1
+    });
+  });
+
+  // 5. Nodo w_k per isolati
+  if (isolatedNodes.length > 0) {
+    const wK = {
+      id: 'w_k',
+      name: '',
+      invisible: true,
+      fx: null,
+      fy: null,
+      x: wCentral.fx,
+      y: wCentral.fy
+    };
+    isolatedNodes.forEach(n => {
+      links.push({
+        source: wK.id,
+        target: n.id,
+        __invisible: true,
+        strength: 0.8
+      });
+    });
+    links.push({
+      source: wCentral.id,
+      target: wK.id,
+      __invisible: true,
+      strength: 0.02
+    });
+    nodes.push(wK);     // 🔧 Inserisce w_k nell'elenco dei nodi!
+    wiNodes.push(wK);
+  }
+
+  // 6. Posizioni iniziali
+  const angleStep = (2 * Math.PI) / wiNodes.length;
+  const radiusBase = Math.min(width, height) / 3;
+
+  wiNodes.forEach((wi, i) => {
+    const radius = radiusBase + (nonTrivialComponents[i]?.length ?? 1) * 5;
+    const angle = i * angleStep;
+    wi.x = wCentral.fx + radius * Math.cos(angle);
+    wi.y = wCentral.fy + radius * Math.sin(angle);
+  });
+
+  nonTrivialComponents.forEach((comp, i) => {
+    const wi = wiNodes[i];
+    comp.forEach(id => {
+      const node = nodes.find(n => n.id === id);
+      if (node && node.degree > 0) {
+        node.x = wi.x + Math.random() * 10;
+        node.y = wi.y + Math.random() * 10;
+      }
+    });
+  });
+
+  // 7. Posizione nodi isolati
+  const wK = wiNodes.find(n => n.id === 'w_k');
+  if (wK) {
+    isolatedNodes.forEach((n, i) => {
+      const angle = (2 * Math.PI * i) / isolatedNodes.length;
+      const radius = 60;
+      n.x = wK.x + radius * Math.cos(angle);
+      n.y = wK.y + radius * Math.sin(angle);
+    });
+  }
+
+  const allNodes = [...nodes, ...wiNodes, wCentral];
+
+  // Elimina duplicati per sicurezza (es. se w_k è sia in wiNodes che in nodes)
+  this.originalNodes = Array.from(new Map(allNodes.map(n => [n.id, n])).values());
+
+  this.originalLinks = [...links];
+}
+
 
 }
