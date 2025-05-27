@@ -611,16 +611,18 @@ export class D3Service {
 
     this.svg.call(this.zoomBehavior as any);
 
+
       this.svg
         .on('mousedown.lasso', (event) => {
-          if (event.button !== 0) return; // solo tasto sinistro
-          
+          if (event.button !== 0) return;
+
           if (!this.svg) return;
           const transform = d3.zoomTransform(this.svg.node()!);
           const [rawX, rawY] = d3.pointer(event);
           const x = (rawX - transform.x) / transform.k;
           const y = (rawY - transform.y) / transform.k;
           this.lassoStart = [x, y];
+
           this.lassoRect = this.zoomGroup!.append('rect')
             .attr('x', x)
             .attr('y', y)
@@ -630,6 +632,59 @@ export class D3Service {
             .attr('stroke', '#3366cc')
             .attr('stroke-width', 1.5)
             .attr('stroke-dasharray', '4,2');
+
+          const onMouseMove = (event: MouseEvent) => {
+            if (!this.lassoStart || !this.svg) return;
+            const transform = d3.zoomTransform(this.svg.node()!);
+            const [rawX, rawY] = d3.pointer(event, this.svg.node()!);
+            const x1 = (rawX - transform.x) / transform.k;
+            const y1 = (rawY - transform.y) / transform.k;
+            const [x0, y0] = this.lassoStart;
+            const x = Math.min(x0, x1);
+            const y = Math.min(y0, y1);
+            const width = Math.abs(x1 - x0);
+            const height = Math.abs(y1 - y0);
+            this.lassoRect!
+              .attr('x', x)
+              .attr('y', y)
+              .attr('width', width)
+              .attr('height', height);
+          };
+
+          const onMouseUp = (event: MouseEvent) => {
+            window.removeEventListener('mousemove', onMouseMove);
+            window.removeEventListener('mouseup', onMouseUp);
+
+            if (!this.lassoRect || !this.nodeGroup) return;
+
+            const x = +this.lassoRect.attr('x');
+            const y = +this.lassoRect.attr('y');
+            const width = +this.lassoRect.attr('width');
+            const height = +this.lassoRect.attr('height');
+
+            const DraggableNodes: any[] = [];
+
+            this.nodeGroup.each(function (d: any) {
+              if (d.invisible) return;
+              const [nx, ny] = [d.x, d.y];
+              if (nx >= x && nx <= x + width && ny >= y && ny <= y + height) {
+                DraggableNodes.push(d);
+              }
+            });
+
+            this.nodeGroup.each(function (d: any) {
+              const isDraggable = DraggableNodes.includes(d);
+              d3.select(this).classed('node-lobbyist-draggable', isDraggable);
+            });
+
+            this.lassoRect.remove();
+            this.lassoRect = null;
+            this.lassoStart = null;
+            this.applyGroupDrag(DraggableNodes);
+          };
+
+          window.addEventListener('mousemove', onMouseMove);
+          window.addEventListener('mouseup', onMouseUp);
         })
         .on('mousemove.lasso', (event) => {
           if (!this.lassoStart || event.buttons !== 1) return;
