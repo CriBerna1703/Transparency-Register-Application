@@ -98,7 +98,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   minThreshold: number = 0.8;
   maxThreshold: number = 1.0;
   zoomLevel: number = 0.3;
-  labelFontSize: number = 12;
+  labelFontSize: number = 15;
+  NodeSize: number = 15;
 
 
   startDate: Date = new Date(0);
@@ -483,6 +484,10 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
   public onLabelFontSizeChange(): void {
     this.d3Service.setLabelFontSize(this.labelFontSize);
+  }
+
+  public onNodeSizeChange(): void {
+    this.d3Service.setNodeSize(this.NodeSize);
   }
 
   private callGetSimilarities(): void {

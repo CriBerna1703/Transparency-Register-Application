@@ -429,7 +429,8 @@ export class D3Service {
   private originalLinks: any[] = [];
   private originalOptions: ForceGraphOptions | undefined;
   private simulationPaused: boolean = false;
-  private labelFontSize: number = 12;
+  private labelFontSize: number = 15;
+  private NodeSize: number = 15;
 
   drawForceGraph(
     element: HTMLElement,
@@ -485,7 +486,7 @@ export class D3Service {
         source: `w_${i}`,
         target: anchorNode,
         __invisible: true,
-        strength: 0.1
+        strength: 0.8
       });
     });
 
@@ -527,7 +528,7 @@ export class D3Service {
           source: 'w_k',
           target: n.id,
           __invisible: true,
-          strength: 0.8  // forza alta per mantenere vicini i nodi isolati
+          strength: 0.8  
         });
       });
 
@@ -727,7 +728,7 @@ export class D3Service {
       }))
       .force('collide', d3.forceCollide((d: any) => {
         if (d.invisible && d.id !== 'w_central') return 0;
-        return d.degree === 0 ? 20 : 40;
+        return d.degree === 0 ? 30 : 40;
       }).strength(1.0))
       .force('repelWiNodes', () => {
         return {
@@ -924,6 +925,13 @@ export class D3Service {
     this.labelFontSize = size;
     this.nodeGroup?.select('text').style('font-size', `${this.labelFontSize}px`);
   }
+
+  public setNodeSize(size: number): void {
+    this.NodeSize = size;
+    this.nodeGroup?.select('circle')
+      .attr('r', (d: any) => d.invisible ? 0 : this.NodeSize);
+  }
+
 
   public updateForceGraphStyles(selectedLink?: { source: string; target: string }): void {
     if (!this.zoomGroup) return;
@@ -1125,7 +1133,7 @@ const validLinks = this.originalLinks.flatMap(link => {
       }))
       .force('collide', d3.forceCollide((d: any) => {
         if (d.invisible && d.id !== 'w_central') return 0;
-        return d.degree === 0 ? 20 : 40;
+        return d.degree === 0 ? 30 : 40;
       }).strength(1.0))
       .force('repelWiNodes', () => {
         return {
@@ -1371,7 +1379,7 @@ public recalculateGraphStructure(): void {
       source: `w_${i}`,
       target: anchorNode,
       __invisible: true,
-      strength: 0.2
+      strength: 0.8
     });
   });
 
