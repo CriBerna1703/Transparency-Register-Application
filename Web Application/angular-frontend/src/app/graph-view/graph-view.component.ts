@@ -541,15 +541,19 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   }
 
 private refreshGraphAfterTresholdChange(): void {
-  const links = this.getFilteredLinks();
+  const filteredLinks = this.getFilteredLinks();
 
-  this.d3Service.updateGraphLinksOnly(links);
+  // ✅ 1. Aggiorna solo i link (rendering)
+  this.d3Service.updateGraphLinksOnly(filteredLinks);
 
+  // ✅ 2. Aggiorna anche i link interni originali
+  this.d3Service.setOriginalLinks(filteredLinks);
 
+  // ✅ 3. Ricrea struttura e riprendi (solo se attiva)
   if (!this.isSimulationPaused) {
-    this.d3Service.pauseSimulation();
-    this.d3Service.recalculateGraphStructure(); 
-    this.d3Service.resumeSimulation();
+    this.d3Service.pauseSimulation();                // blocca forze
+    this.d3Service.recalculateGraphStructure();      // ricostruisce struttura con w_central, w_i, w_k
+    this.d3Service.resumeSimulation();               // riattiva simulazione
   }
 }
 

@@ -1203,7 +1203,7 @@ const validLinks = this.originalLinks.flatMap(link => {
       });
     }
 
-    this.simulation.alphaTarget(0.05);
+    this.simulation.alpha(0.3).restart();
 
 
     this.updateNodeSelection(this.originalOptions?.SelectedNode ?? []);
@@ -1452,6 +1452,10 @@ public recalculateGraphStructure(): void {
   // Elimina duplicati per sicurezza (es. se w_k è sia in wiNodes che in nodes)
   this.originalNodes = Array.from(new Map(allNodes.map(n => [n.id, n])).values());
 
+  this.originalLinks = [...links];
+}
+
+public setOriginalLinks(links: any[]): void {
   this.originalLinks = [...links];
 }
 
