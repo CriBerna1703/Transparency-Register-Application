@@ -75,6 +75,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public showLeftPanel: boolean = true;
   public showRightPanel: boolean = true;
   public simulationRunning: boolean = true;
+  public HoverEffectButtonRedrawGraph = false;
 
 
 
@@ -706,6 +707,10 @@ private getFilteredLinks(): Link[] {
     this.applyThresholOrFiltersdAndUpdate();
   }
 
+  redrawGraph(): void {
+    this.updateGraph();
+    this.simulationRunning = true; 
+  }
   ngAfterViewInit(): void {
     const container = this.graphContainer.nativeElement;
 
