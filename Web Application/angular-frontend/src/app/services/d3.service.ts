@@ -925,9 +925,9 @@ export class D3Service {
     ): void {
       this.simulation = d3.forceSimulation(nodes)
         .alpha(0.8)
-        .alphaDecay(0.005)
-        .alphaMin(0.001)
-        .velocityDecay(0.6)
+        .alphaDecay(0.01)
+        .alphaMin(0.005)
+        .velocityDecay(0.5)
 
         // Link force
         .force('link', d3.forceLink(links)
@@ -1067,7 +1067,7 @@ export class D3Service {
           node.fy = null;
         });
 
-        this.simulation.alpha(0.3).restart();
+        this.simulation.alpha(0.8).restart();
 
         this.updateNodeSelection(this.originalOptions?.SelectedNode ?? []);
         this.setLabelFontSize(this.labelFontSize);
