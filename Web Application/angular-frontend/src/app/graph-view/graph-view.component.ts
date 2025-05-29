@@ -74,9 +74,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   public selectAllTextChecked: boolean = true;
   public showLeftPanel: boolean = true;
   public showRightPanel: boolean = true;
-  public isSimulationPaused: boolean = false;
-  private thresholdChangedSinceLastResume: boolean = false;
-  private pendingResume: boolean = false;
+  public simulationRunning: boolean = true;
 
 
 
@@ -469,17 +467,25 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     if (this.minThreshold >= this.maxThreshold) {
       this.minThreshold = this.maxThreshold - 0.01;
     }
-
-    this.refreshGraphAfterTresholdChange();
-
+    this.applyThresholOrFiltersdAndUpdate();
   }
 
   public onMaxThresholdChange(): void {
     if (this.maxThreshold <= this.minThreshold) {
       this.maxThreshold = this.minThreshold + 0.01;
-    }   
-    this.refreshGraphAfterTresholdChange();
-    
+    }
+    this.applyThresholOrFiltersdAndUpdate();
+  }
+
+  private applyThresholOrFiltersdAndUpdate(): void {
+    if(!this.simulationRunning){
+      const filteredLinks = this.getFilteredLinks();
+      this.d3Service.updateGraphLinksOnly(filteredLinks);
+    }else {
+      const filteredLinks = this.getFilteredLinks();
+      this.d3Service.updateGraphLinksOnly(filteredLinks);
+      this.d3Service.recomputeGraphStructure();
+    }
   }
 
   public onLabelFontSizeChange(): void {
@@ -545,22 +551,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
     });
   }
 
-private refreshGraphAfterTresholdChange(): void {
-  const filteredLinks = this.getFilteredLinks();
 
-  // ✅ 1. Aggiorna solo i link (rendering)
-  this.d3Service.updateGraphLinksOnly(filteredLinks);
-
-  // ✅ 2. Aggiorna anche i link interni originali
-  this.d3Service.setOriginalLinks(filteredLinks);
-
-  // ✅ 3. Ricrea struttura e riprendi (solo se attiva)
-  if (!this.isSimulationPaused) {
-    this.d3Service.pauseSimulation();                // blocca forze
-    this.d3Service.recalculateGraphStructure();      // ricostruisce struttura con w_central, w_i, w_k
-    this.d3Service.resumeSimulation();               // riattiva simulazione
-  }
-}
 
 
 private getFilteredLinks(): Link[] {
@@ -677,34 +668,11 @@ private getFilteredLinks(): Link[] {
 
   }
 
-  public get simulationRunning(): boolean {
-    return !this.isSimulationPaused;
+
+
+  onSimulationToggle(running: boolean): void {
+    this.d3Service.setSimulationRunning(running);
   }
-
-  // Setter automatico se vuoi farlo agire da solo (non obbligatorio)
-  public set simulationRunning(value: boolean) {
-    this.setSimulationPaused(!value);
-  }
-
-  // Metodo chiamato dallo switch
-  public onSimulationToggle(value: boolean): void {
-    this.setSimulationPaused(!value);
-  }
-
-  private setSimulationPaused(paused: boolean): void {
-    if (this.isSimulationPaused === paused) return; // Evita chiamate inutili
-
-    this.isSimulationPaused = paused;
-    console.log('Simulation paused:', this.isSimulationPaused);
-
-    if (paused) {
-      this.d3Service.pauseSimulation();
-    } else {
-      this.d3Service.resumeSimulation();
-    }
-  }
-
-
 
 
   public allFilterSelected(): boolean {
@@ -735,7 +703,7 @@ private getFilteredLinks(): Link[] {
 
   public applyFilters(): void {
     this.filterGraphApplied = true;
-    this.updateGraph();
+    this.applyThresholOrFiltersdAndUpdate();
   }
 
   ngAfterViewInit(): void {
