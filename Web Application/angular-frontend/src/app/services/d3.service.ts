@@ -1102,6 +1102,8 @@ export class D3Service {
 
           this.originalOptions.SelectedNode = selected;
           this.originalOptions.DraggableNode = draggable;
+
+          this.centerAfterSimulation();
         }
       }
     }
@@ -1266,6 +1268,8 @@ export class D3Service {
       if (!this.simulationRunning) {
         this.originalLinks = JSON.parse(JSON.stringify(links));
       }
+
+      this.centerAfterSimulation();
     }
 
     private getNodePosition(nodeRef: any): { x: number; y: number } | null {
@@ -1306,11 +1310,48 @@ export class D3Service {
 
       // Riavvia simulazione
       this.simulation.alpha(1).restart();
+      this.centerAfterSimulation();
+
     }
 
 
     public setOriginalLinks(links: any[]): void {
       this.originalLinks = [...links];
     }
+
+  public centerAfterSimulation(): void {
+    if (!this.svg || !this.zoomBehavior || !this.originalElement || !this.originalOptions) return;
+
+    // Aspetta un po' che la simulazione si assesti prima di centrare
+    setTimeout(() => {
+      const visible = this.originalNodes.filter(n => !n.invisible && n.x != null && n.y != null);
+      if (!visible.length) return;
+
+      const [xMin, xMax] = d3.extent(visible, d => d.x!) as [number, number];
+      const [yMin, yMax] = d3.extent(visible, d => d.y!) as [number, number];
+
+      const centerX = (xMin + xMax) / 2;
+      const centerY = (yMin + yMax) / 2;
+
+      const width = this.originalElement!.clientWidth;
+      const height = this.originalElement!.clientHeight;
+
+      const svgCenterX = width / 2;
+      const svgCenterY = height / 2;
+
+      const zoomLevel = this.originalOptions!.zoomLevel ?? 0.3;
+
+      const transform = d3.zoomIdentity
+        .translate(svgCenterX - centerX * zoomLevel, svgCenterY - centerY * zoomLevel)
+        .scale(zoomLevel);
+
+      // Anima il cambio di trasformazione
+      this.svg!.transition()
+        .duration(2000) 
+        .ease(d3.easeCubicInOut)
+        .call(this.zoomBehavior!.transform as any, transform);
+    }, 2000); // attesa iniziale (regolabile)
+  }
+
 
 }

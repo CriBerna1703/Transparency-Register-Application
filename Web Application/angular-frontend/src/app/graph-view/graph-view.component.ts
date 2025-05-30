@@ -698,7 +698,9 @@ private getFilteredLinks(): Link[] {
       this.selectedFilterValues = [...this.selectedTextFilterValues];
     }
 
+    this.simulationRunning = true; 
     this.updateGraph();
+    this.d3Service.centerAfterSimulation();
   }
 
 
