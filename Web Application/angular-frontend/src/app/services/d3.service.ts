@@ -1350,7 +1350,7 @@ export class D3Service {
         .duration(2000) 
         .ease(d3.easeCubicInOut)
         .call(this.zoomBehavior!.transform as any, transform);
-    }, 2000); // attesa iniziale (regolabile)
+    }, 4000); // attesa iniziale (regolabile)
   }
 
 
