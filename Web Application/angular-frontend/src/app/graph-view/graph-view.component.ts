@@ -97,8 +97,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   minThreshold: number = 0.8;
   maxThreshold: number = 1.0;
   zoomLevel: number = 0.3;
-  labelFontSize: number = 15;
-  NodeSize: number = 15;
+  labelFontSize: number = 60;
+  NodeSize: number = 20;
 
 
   startDate: Date = new Date(0);

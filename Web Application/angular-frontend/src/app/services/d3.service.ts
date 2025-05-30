@@ -432,8 +432,8 @@ export class D3Service {
   private isRightPanning: boolean = false;
   private lastMousePosition: [number, number] | null = null;
 
-  private labelFontSize: number = 15;
-  private NodeSize: number = 15;
+  private labelFontSize: number = 60;
+  private NodeSize: number = 20;
 
   drawForceGraph(
     element: HTMLElement,
@@ -479,7 +479,8 @@ export class D3Service {
 
   public setLabelFontSize(size: number): void {
     this.labelFontSize = size;
-    this.nodeGroup?.select('text').style('font-size', `${this.labelFontSize}px`);
+    this.zoomGroup?.selectAll('.label-layer text')
+      .style('font-size', `${size}px`); 
   }
 
   public setNodeSize(size: number): void {
@@ -871,13 +872,25 @@ export class D3Service {
         .attr('data-id', d => d.id)
         .attr('class', d => `node-lobbyist node-lobbyist-${d.id}`);
 
-      this.nodeGroup.append('text')
+      const labelLayer = this.zoomGroup!.append('g').attr('class', 'label-layer');
+
+      labelLayer.selectAll('text')
+        .data(nodes)
+        .enter()
+        .append('text')
         .text(d => d.name)
         .attr('text-anchor', 'middle')
-        .attr('fill', '#004b87')
         .attr('dy', '-10')
-        .style('display', 'none')
-        .attr('class', d => `node-lobbyist node-lobbyist-${d.id}`);
+        .attr('class', d => `node-label node-lobbyist-${d.id}`)
+        .attr('fill', '#004b87')
+        .attr('stroke', 'white')
+        .attr('stroke-width', 8)
+        .attr('stroke-linejoin', 'round')
+        .attr('paint-order', 'stroke')
+        .style('font-size', `${this.labelFontSize}px`)
+        //.style('font-weight', 'bold')
+        .style('display', 'none');
+
 
       this.nodeGroup
         .on('click', (event, d) => {
@@ -993,10 +1006,11 @@ export class D3Service {
       // 2. Muovi gruppi dei nodi
       this.nodeGroup?.attr('transform', (d: any) => `translate(${d.x},${d.y})`);
 
-      // 3. Scala inversa per mantenere testo leggibile
-      const zoomScale = d3.zoomTransform(this.svg!.node()!).k;
-      this.nodeGroup?.selectAll('text')
-        .attr('transform', `scale(${1 / zoomScale})`);
+      this.zoomGroup!.selectAll('.label-layer text')
+        .attr('x', (d: any) => d.x)
+        .attr('y', (d: any) => d.y - 10)
+
+
     }
 
 
@@ -1122,7 +1136,7 @@ export class D3Service {
           .attr('stroke-width', isSelected ? 3 : 2);
 
         group.select('text')
-          .text(isSelected ? (d.name?.substring(0, 4) ?? '') : d.name)
+          .text(d.name)
           .style('display', isSelected ? 'block' : 'none');
       });
 
@@ -1350,7 +1364,7 @@ export class D3Service {
         .duration(2000) 
         .ease(d3.easeCubicInOut)
         .call(this.zoomBehavior!.transform as any, transform);
-    }, 4000); // attesa iniziale (regolabile)
+    }, 3000); // attesa iniziale (regolabile)
   }
 
 
