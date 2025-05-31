@@ -472,9 +472,43 @@ export class D3Service {
     if (previousZoomTransform) {
       this.svg?.call(this.zoomBehavior!.transform as any, previousZoomTransform);
     } else {
-      this.centerGraphView(nodes, width, height, options);
+      this.centerAtTheStart();
     }
 
+  }
+
+    public centerAtTheStart(): void {
+    if (!this.svg || !this.zoomBehavior || !this.originalElement || !this.originalOptions) return;
+
+    // Aspetta un po' che la simulazione si assesti prima di centrare
+    setTimeout(() => {
+      const visible = this.originalNodes.filter(n => !n.invisible && n.x != null && n.y != null);
+      if (!visible.length) return;
+
+      const [xMin, xMax] = d3.extent(visible, d => d.x!) as [number, number];
+      const [yMin, yMax] = d3.extent(visible, d => d.y!) as [number, number];
+
+      const centerX = (xMin + xMax) / 2;
+      const centerY = (yMin + yMax) / 2;
+
+      const width = this.originalElement!.clientWidth;
+      const height = this.originalElement!.clientHeight;
+
+      const svgCenterX = width / 2;
+      const svgCenterY = height / 2;
+
+      const zoomLevel = this.originalOptions!.zoomLevel ?? 0.3;
+
+      const transform = d3.zoomIdentity
+        .translate(svgCenterX - centerX * zoomLevel, svgCenterY - centerY * zoomLevel)
+        .scale(zoomLevel);
+
+      // Anima il cambio di trasformazione
+      this.svg!.transition()
+        .duration(2000) 
+        .ease(d3.easeCubicInOut)
+        .call(this.zoomBehavior!.transform as any, transform);
+    }, 250); // attesa iniziale (regolabile)
   }
 
   public setLabelFontSize(size: number): void {
@@ -937,10 +971,10 @@ export class D3Service {
       repNodes: any[]
     ): void {
       this.simulation = d3.forceSimulation(nodes)
-        .alpha(0.8)
+        .alpha(1)
         .alphaDecay(0.01)
         .alphaMin(0.005)
-        .velocityDecay(0.5)
+        .velocityDecay(0.7)
 
         // Link force
         .force('link', d3.forceLink(links)
@@ -1013,28 +1047,6 @@ export class D3Service {
 
     }
 
-
-    private centerGraphView(nodes: any[], width: number, height: number, options: ForceGraphOptions): void {
-      const visible = nodes.filter(n => !n.invisible && n.x != null && n.y != null);
-      if (!visible.length) return;
-
-      const [xMin, xMax] = d3.extent(visible, d => d.x) as [number, number];
-      const [yMin, yMax] = d3.extent(visible, d => d.y) as [number, number];
-
-      const centerX = (xMin + xMax) / 2;
-      const centerY = (yMin + yMax) / 2;
-
-      const svgCenterX = width / 2;
-      const svgCenterY = height / 2;
-
-      const initialZoom = (options?.zoomLevel ?? 0.3);
-      const transform = d3.zoomIdentity
-        .translate(svgCenterX - centerX * initialZoom, svgCenterY - centerY * initialZoom)
-        .scale(initialZoom);
-
-      this.svg!.call(this.zoomBehavior!.transform as any, transform);
-    }
-
     public setSimulationRunning(running: boolean): void {
       if (!this.simulation) return;
 
@@ -1081,7 +1093,7 @@ export class D3Service {
           node.fy = null;
         });
 
-        this.simulation.alpha(0.8).restart();
+        this.simulation.alpha(1).restart();
 
         this.updateNodeSelection(this.originalOptions?.SelectedNode ?? []);
         this.setLabelFontSize(this.labelFontSize);
