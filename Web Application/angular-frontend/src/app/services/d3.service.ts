@@ -1093,7 +1093,7 @@ export class D3Service {
           node.fy = null;
         });
 
-        this.simulation.alpha(1).restart();
+        this.simulation.alpha(1.0).restart();
 
         this.updateNodeSelection(this.originalOptions?.SelectedNode ?? []);
         this.setLabelFontSize(this.labelFontSize);

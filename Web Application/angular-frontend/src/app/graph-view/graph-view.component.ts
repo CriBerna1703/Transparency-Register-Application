@@ -208,9 +208,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       this.updateTextGraph();
     }
 
-    this.d3Service.updateNodeSelection(this.selectedNodes);
-
-
   } 
 
   public getKeywordScore(word: string | number): string {
