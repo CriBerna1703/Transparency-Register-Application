@@ -475,6 +475,8 @@ export class D3Service {
       this.centerAtTheStart();
     }
 
+    this.centerAtTheStart();
+
   }
 
     public centerAtTheStart(): void {
