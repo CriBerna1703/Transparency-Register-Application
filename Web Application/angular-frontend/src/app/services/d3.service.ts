@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { SelectedNode } from './selection.service';
 import { Subject } from 'rxjs';
 import * as d3 from 'd3';
+import { CheckboxRequiredValidator } from '@angular/forms';
 
 export interface ForceGraphOptions {
   width?: number;
@@ -1095,7 +1096,8 @@ export class D3Service {
             if (d.invisible && d.id !== 'w_central') return 0;
             return d.degree === 0 ? 30 : 40;
           }).strength(0.5))
-          .force('repelRepresentatives', this.createRepulsionForce(repNodes));
+          .force('repelRepresentatives', this.createRepulsionForce(repNodes))
+          .force('repelFromCentral', this.createCentralRepulsionForce());
 
         // Sblocca i nodi
         this.simulation.nodes().forEach((node: any) => {
@@ -1391,3 +1393,7 @@ export class D3Service {
 
 
 }
+
+
+
+
