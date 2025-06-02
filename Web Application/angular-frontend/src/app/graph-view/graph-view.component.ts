@@ -710,6 +710,10 @@ private getFilteredLinks(): Link[] {
     this.updateGraph();
     this.simulationRunning = true; 
   }
+
+  fitGraph(): void {
+    this.d3Service.centerGraph();
+  }
   ngAfterViewInit(): void {
     const container = this.graphContainer.nativeElement;
 

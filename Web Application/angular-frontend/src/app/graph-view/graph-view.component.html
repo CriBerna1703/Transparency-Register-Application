@@ -75,7 +75,7 @@
             <input type="checkbox" [(ngModel)]="isTextGraph" (change)="onGraphTypeSwitchChange()">
             <span class="slider round"></span>
           </label>
-          <span style="font-size: 12px; margin-left: 8px;">Meeting topic</span>
+          <span style="font-size: 12px; margin-left: 8px;">Meeting topic</span> 
         </div>
       </div>
 
@@ -130,27 +130,48 @@
         </div>
       </div>
 
-
       <div style="text-align: center; margin-top: 10px;">
-        <button
-          (click)="redrawGraph()"
-          style="
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-          "
-          onmouseover="this.style.backgroundColor='#0056b3';"
-          onmouseout="this.style.backgroundColor='#007bff';"
-        >
-          Redraw Graph
-        </button>
+        <div style="display: flex; justify-content: center; gap: 10px;">
+          <button
+            (click)="redrawGraph()"
+            style="
+              background-color: #007bff;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              font-size: 16px;
+              font-weight: 600;
+              border-radius: 6px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            "
+            onmouseover="this.style.backgroundColor='#0056b3';"
+            onmouseout="this.style.backgroundColor='#007bff';"
+          >
+            Redraw Graph
+          </button>
+
+          <button
+            (click)="fitGraph()"
+            style="
+              background-color: #007bff;
+              color: white;
+              border: none;
+              padding: 10px 20px;
+              font-size: 16px;
+              font-weight: 600;
+              border-radius: 6px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            "
+            onmouseover="this.style.backgroundColor='#0056b3';"
+            onmouseout="this.style.backgroundColor='#007bff';"
+          >
+            Fit
+          </button>
+        </div>
       </div>
+
 
 
       <!-- Dropdown per filtri -->

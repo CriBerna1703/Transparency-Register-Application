@@ -472,14 +472,14 @@ export class D3Service {
     if (previousZoomTransform) {
       this.svg?.call(this.zoomBehavior!.transform as any, previousZoomTransform);
     } else {
-      this.centerAtTheStart();
+      this.centerGraph();
     }
 
-    this.centerAtTheStart();
+    this.centerGraph();
 
   }
 
-    public centerAtTheStart(): void {
+    public centerGraph(): void {
     if (!this.svg || !this.zoomBehavior || !this.originalElement || !this.originalOptions) return;
 
     // Aspetta un po' che la simulazione si assesti prima di centrare
@@ -640,7 +640,7 @@ export class D3Service {
               source: 'w_central',
               target: representative.id,
               __invisible: true,
-              strength: 0.05
+              strength: 0.15
             });
           }
         });
@@ -675,33 +675,13 @@ export class D3Service {
         const radiusBoost = 200;
 
         repNodes.forEach((node, i) => {
-          const distanceFromCenter = Math.hypot((node.x ?? 0) - wCentral.fx, (node.y ?? 0) - wCentral.fy);
-          const tooCloseToCenter = distanceFromCenter < 100;
-
-          if (!preservePosition || node.x == null || node.y == null || tooCloseToCenter) {
+          if (!preservePosition || node.x == null || node.y == null) {
             const radius = radiusBase + radiusBoost;
             const angle = i * angleStep;
             node.x = wCentral.fx + radius * Math.cos(angle);
             node.y = wCentral.fy + radius * Math.sin(angle);
           }
         });
-
-
-        // Riposiziona qualsiasi nodo troppo vicino al centro
-        nodes.forEach((node, i) => {
-          if (node.invisible || node.id === 'w_central') return;
-
-          const distanceFromCenter = Math.hypot((node.x ?? 0) - wCentral.fx, (node.y ?? 0) - wCentral.fy);
-          const tooCloseToCenter = distanceFromCenter < 100;
-
-          if (tooCloseToCenter) {
-            const angle = Math.random() * 2 * Math.PI;
-            const radius = 300 + Math.random() * 200;
-            node.x = wCentral.fx + radius * Math.cos(angle);
-            node.y = wCentral.fy + radius * Math.sin(angle);
-          }
-        });
-
 
 
         // Posiziona i nodi vicino ai rappresentanti
@@ -999,7 +979,10 @@ export class D3Service {
         }).strength(0.5))
 
         // Forza custom: respingere i rappresentanti
-        .force('repelRepresentatives', this.createRepulsionForce(repNodes));
+        .force('repelRepresentatives', this.createRepulsionForce(repNodes))
+
+        .force('repelFromCentral', this.createCentralRepulsionForce());
+
 
       this.simulation.restart();
     }
@@ -1029,6 +1012,31 @@ export class D3Service {
       (force as any).initialize = () => {};
       return force;
     }
+
+
+    private createCentralRepulsionForce(): d3.Force<any, any> {
+      const force = (alpha: number) => {
+        const central = this.originalNodes.find(n => n.id === 'w_central');
+        if (!central) return;
+
+        for (const node of this.originalNodes) {
+          if (node.id === 'w_central' || node.invisible) continue;
+          if (node.degree === 0) continue; // Solo nodi "connessi"
+
+          const dx = node.x - central.fx;
+          const dy = node.y - central.fy;
+          const dist2 = dx * dx + dy * dy + 0.01;
+          const repulsion = 4000 / dist2; // aumenta per più forza
+
+          node.vx += dx * repulsion * alpha;
+          node.vy += dy * repulsion * alpha;
+        }
+      };
+
+      (force as any).initialize = () => {};
+      return force;
+    }
+
 
     private onTick(): void {
       if (!this.simulation) return;
@@ -1131,7 +1139,7 @@ export class D3Service {
           this.originalOptions.SelectedNode = selected;
           this.originalOptions.DraggableNode = draggable;
 
-          this.centerAfterSimulation();
+
         }
       }
     }
@@ -1297,7 +1305,7 @@ export class D3Service {
         this.originalLinks = JSON.parse(JSON.stringify(links));
       }
 
-      this.centerAfterSimulation();
+
     }
 
     private getNodePosition(nodeRef: any): { x: number; y: number } | null {
@@ -1338,7 +1346,7 @@ export class D3Service {
 
       // Riavvia simulazione
       this.simulation.alpha(1).restart();
-      this.centerAfterSimulation();
+
 
     }
 
