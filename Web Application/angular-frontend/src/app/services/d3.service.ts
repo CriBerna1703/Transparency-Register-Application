@@ -616,7 +616,7 @@ export class D3Service {
         if (!wCentral) {
           wCentral = {
             id: 'w_central',
-            name: '',
+            name: 'central',
             invisible: true,
             fx: width / 2 + 500,
             fy: height / 2 + 500
@@ -883,8 +883,14 @@ export class D3Service {
 
       this.nodeGroup.append('circle')
         .attr('r', d => d.invisible ? 0 : 15)
-        .attr('fill', d => d.invisible ? 'none' : '#ae58a3')
-        .attr('stroke', d => d.invisible ? 'none' : '#5b2c55')
+        .attr('fill', d => {
+          if (d.id === 'w_central') return 'red'; // nodo centrale rosso
+          return d.invisible ? 'none' : '#ae58a3';
+        })
+        .attr('stroke', d => {
+          if (d.id === 'w_central') return 'darkred'; // bordo più scuro
+          return d.invisible ? 'none' : '#5b2c55';
+        })
         .attr('stroke-width', 2)
         .attr('data-id', d => d.id)
         .attr('class', d => `node-lobbyist node-lobbyist-${d.id}`);
@@ -1017,17 +1023,18 @@ export class D3Service {
 
     private createCentralRepulsionForce(): d3.Force<any, any> {
       const force = (alpha: number) => {
-        const central = this.originalNodes.find(n => n.id === 'w_central');
-        if (!central) return;
+        const nodes = this.simulation?.nodes() ?? [];
+        const central = nodes.find(n => n.id === 'w_central');
+        if (!central || central.fx == null || central.fy == null) return;
 
-        for (const node of this.originalNodes) {
+        for (const node of nodes) {
           if (node.id === 'w_central' || node.invisible) continue;
-          if (node.degree === 0) continue; // Solo nodi "connessi"
+          if (node.degree === 0) continue;
 
           const dx = node.x - central.fx;
           const dy = node.y - central.fy;
           const dist2 = dx * dx + dy * dy + 0.01;
-          const repulsion = 4000 / dist2; // aumenta per più forza
+          const repulsion = 5000 / dist2;
 
           node.vx += dx * repulsion * alpha;
           node.vy += dy * repulsion * alpha;
@@ -1070,6 +1077,8 @@ export class D3Service {
           target: typeof d.target === 'object' ? d.target.id : d.target
         })) ?? [];
 
+        this.originalNodes = this.simulation.nodes();
+
         const repNodes = this.prepareGraphLayout(
           this.originalNodes,
           filteredLinks,
@@ -1081,9 +1090,7 @@ export class D3Service {
 
         this.simulation
           .force('charge', d3.forceManyBody().strength((d: any) => {
-            if (d.id === 'w_central') return 0;
-            if (d.invisible && d.id === 'w_k') return 0;
-            return -50;
+            return (!d.invisible && d.id !== 'w_central') ? -50 : 0;
           }))
           .force('link', d3.forceLink(filteredLinks)
             .id((d: any) => d.id)
@@ -1099,10 +1106,14 @@ export class D3Service {
           .force('repelRepresentatives', this.createRepulsionForce(repNodes))
           .force('repelFromCentral', this.createCentralRepulsionForce());
 
-        // Sblocca i nodi
         this.simulation.nodes().forEach((node: any) => {
-          node.fx = null;
-          node.fy = null;
+          if (node.id === 'w_central') {
+            node.fx = this.originalNodes.find(n => n.id === 'w_central')?.fx;
+            node.fy = this.originalNodes.find(n => n.id === 'w_central')?.fy;
+          } else {
+            node.fx = null;
+            node.fy = null;
+          }
         });
 
         this.simulation.alpha(1.0).restart();
@@ -1117,6 +1128,7 @@ export class D3Service {
         this.simulation.force('link', null);
         this.simulation.force('collide', null);
         this.simulation.force('repelRepresentatives', null);
+        this.simulation.force('repelFromCentral', null);
 
         // Azzera velocità dei nodi
         this.simulation.nodes().forEach((node: any) => {

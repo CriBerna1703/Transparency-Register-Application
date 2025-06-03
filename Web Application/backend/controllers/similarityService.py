@@ -11,7 +11,7 @@ def parse_date(date_str):
     return datetime.strptime(date_str, "%d/%m/%Y")
 
 def extract_blocks_within_dates(text, start_date, end_date):
-    lines = [line.strip() for line in text.strip().split('\n') if line.strip()]  # elimina righe vuote
+    lines = [line.strip() for line in text.strip().split('\n') if line.strip()]
     filtered = []
     i = 0
     while i < len(lines) - 1:
@@ -22,9 +22,9 @@ def extract_blocks_within_dates(text, start_date, end_date):
             date = datetime.strptime(date_line, "%d/%m/%Y")
             if start_date <= date <= end_date:
                 filtered.append(content_line)
-            i += 2  # salta la coppia data + contenuto
+            i += 2
         except ValueError:
-            i += 1  # se non è una data, passa alla riga successiva
+            i += 1
     return '\n'.join(filtered)
 
 def cosine_similarity(vec1, vec2):
@@ -87,8 +87,6 @@ def main():
         for i in selected_indices
     ], key=lambda x: x["word"])
 
-
-
     file_vectors = {}
     for filename, text in D_triple_prime.items():
         words = text.lower().split()
@@ -105,7 +103,6 @@ def main():
             file2, vec2 = file_list[j]
             common_words = set(vec1.keys()) & set(vec2.keys())
 
-            sim_raw = sum(min(vec1[w], vec2[w]) for w in common_words)
             sim_cosine = cosine_similarity(vec1, vec2)
             sim_jaccard = jaccard_similarity(vec1, vec2)
 
@@ -114,19 +111,10 @@ def main():
             results.append({
                 "lobbyist1": os.path.splitext(file1)[0],
                 "lobbyist2": os.path.splitext(file2)[0],
-                "similarity_raw": sim_raw,
                 "similarity_cosine": round(sim_cosine, 4),
                 "similarity_jaccard": round(sim_jaccard, 4),
                 "shared_keywords": shared_keywords
             })
-
-    all_scores = [r["similarity_raw"] for r in results]
-    min_sim = min(all_scores)
-    max_sim = max(all_scores)
-    range_sim = max_sim - min_sim if max_sim > min_sim else 1
-
-    for r in results:
-        r["similarity_NumJaccard"] = round((r.pop("similarity_raw") - min_sim) / range_sim, 4)
 
     json.dump({
         "similarities": results,

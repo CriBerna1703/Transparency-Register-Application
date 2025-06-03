@@ -81,7 +81,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
 
   public keywordSortOrder: 'abc' | 'score' = 'abc';
 
-  public selectedTextMetric: 'similarity_NumJaccard' | 'similarity_cosine' | 'similarity_jaccard' = 'similarity_cosine';
+  public selectedTextMetric: 'similarity_cosine' | 'similarity_jaccard' = 'similarity_cosine';
   selectedLink: { source: string; target: string } | undefined = undefined;
   filterGraphApplied: boolean = false;
   commonFields: string[] = [];
@@ -550,8 +550,6 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   }
 
 
-
-
 private getFilteredLinks(): Link[] {
   if (this.graphType === 'interest') {
     const allLinks: Link[] = [];
@@ -665,8 +663,6 @@ private getFilteredLinks(): Link[] {
     }
 
   }
-
-
 
   onSimulationToggle(running: boolean): void {
     this.d3Service.setSimulationRunning(running);
