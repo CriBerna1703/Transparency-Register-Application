@@ -713,6 +713,7 @@ export class D3Service {
       this.svg = d3.select(element)
         .append('svg')
         .attr('width', width)
+        .attr('class', 'force-graph')
         .attr('height', height)
         .attr('preserveAspectRatio', 'xMidYMid meet')
         .attr('viewBox', `0 0 ${width} ${height}`);
@@ -747,6 +748,9 @@ export class D3Service {
       this.svg!
         .on('mousedown.lasso', (event) => {
           if (event.button !== 0) return;
+
+          event.preventDefault();
+
           const transform = d3.zoomTransform(this.svg!.node()!);
           const [rawX, rawY] = d3.pointer(event);
           const x = (rawX - transform.x) / transform.k;
