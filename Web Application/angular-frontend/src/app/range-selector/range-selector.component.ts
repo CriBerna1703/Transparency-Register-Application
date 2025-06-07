@@ -104,6 +104,8 @@ export class RangeSelectorComponent implements OnChanges {
       return false; // Blocked forward
     }
   
+    //console.log(this.minDate)
+    console.log(this.startDate)
     if (direction < 0 && this.startDate.getTime() === this.minDate.getTime()) {
       return false; // Blocked backward
     }
@@ -112,7 +114,6 @@ export class RangeSelectorComponent implements OnChanges {
   }
   
   
-
   public updateWindowSize(event: Event): void {
     this.selectedWindowSize = +(event.target as HTMLSelectElement).value;
     this.recalculateEndDate();

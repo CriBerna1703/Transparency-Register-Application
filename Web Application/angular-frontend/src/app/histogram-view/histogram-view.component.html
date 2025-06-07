@@ -13,12 +13,22 @@
     <select id="aggregation" [(ngModel)]="selectedAggregation" (change)="updateHistogram()">
       <option *ngFor="let option of aggregationOptions" [value]="option.value">{{ option.label }}</option>
     </select>
+
+    <!-- ✅ Totale accanto a "Group by" -->
+    <span class="total-label" *ngIf="activeTabId && activeTabType">
+      <ng-container *ngFor="let tab of tabs">
+        <ng-container *ngIf="tab.id === activeTabId && tab.type === activeTabType && tab.total !== undefined">
+          &nbsp;|&nbsp; <span style="font-size: 0.81rem;"><strong>Total meetings:</strong> {{ tab.total }}</span>
+        </ng-container>
+      </ng-container>
+    </span>
   </div>
 
   <div class="tab-content" *ngFor="let tab of tabs" [hidden]="tab.id !== activeTabId || tab.type !== activeTabType">
     <div class="scroll-container">
       <input type="range" min="100" max="2000" step="50" [(ngModel)]="zoomLevel" (input)="updateZoom()">
     </div>
+
     <div class="histogram" [id]="'histogram-' + tab.id"></div>
   </div>
 </div>

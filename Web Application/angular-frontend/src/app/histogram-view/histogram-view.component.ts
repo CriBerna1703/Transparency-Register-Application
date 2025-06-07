@@ -16,6 +16,7 @@ interface HistogramTab {
   rawData: Date[];
   filteredData: number[];
   maxDegree: number;
+  total?: number;
   isLoading?: boolean;
   error?: string;
 }
@@ -182,6 +183,8 @@ export class HistogramViewComponent implements OnChanges {
 
     const aggregatedData = this.aggregateData(activeTab.rawData, this.selectedAggregation);
     activeTab.filteredData = aggregatedData.values;
+
+    activeTab.total = activeTab.filteredData.reduce((sum, val) => sum + val, 0);
 
     setTimeout(() => this.createHistogram(activeTab, aggregatedData.labels));
   }
