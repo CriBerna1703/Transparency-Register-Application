@@ -149,8 +149,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     }
   
     const dates = meetings.map(d => d.date);
-    const minDate = new Date(Math.min(...dates.map(d => d.getTime())));
-    const maxDate = new Date(Math.max(...dates.map(d => d.getTime())));
+    const minDate = this.filterService.getCurrentFilters().date_from ? new Date(this.filterService.getCurrentFilters().date_from) : new Date(Math.min(...dates.map(d => d.getTime())));
+    const maxDate = this.filterService.getCurrentFilters().date_to ? new Date(this.filterService.getCurrentFilters().date_to) : new Date(Math.max(...dates.map(d => d.getTime())));
     this.dateRangeChange.emit({ minDate, maxDate, hasMeetings: true });
   }
 

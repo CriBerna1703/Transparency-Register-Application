@@ -76,37 +76,41 @@ export class RangeSelectorComponent implements OnChanges {
     if (!this.hasMeetings || !this.minDate || !this.maxDate) return;
 
     const stepMonths = this.selectedStepSize;
-    let newStartDate = new Date(this.startDate);
-    let newEndDate = new Date(this.endDate);
+    const startDate = new Date(this.startDate);
+    const endDate = new Date(this.endDate);
+
+    startDate.setHours(12, 0, 0, 0);
+    endDate.setHours(12, 0, 0, 0);
+    let newStartDate = new Date(startDate);
+    let newEndDate = new Date(endDate);
 
     newStartDate.setMonth(newStartDate.getMonth() + direction * stepMonths);
     newEndDate.setMonth(newEndDate.getMonth() + direction * stepMonths);
 
     if (newEndDate > this.maxDate) {
-      newEndDate = new Date(this.maxDate);
-      newStartDate = new Date(newEndDate);
-      newStartDate.setMonth(newStartDate.getMonth() - this.selectedWindowSize);
-    } else if (newStartDate < this.minDate) {
-      newStartDate = new Date(this.minDate);
       newEndDate = new Date(newStartDate);
       newEndDate.setMonth(newEndDate.getMonth() + this.selectedWindowSize);
+    } else if (newStartDate < this.minDate) {
+      newStartDate = new Date(newEndDate);
+      newStartDate.setMonth(newStartDate.getMonth() - this.selectedWindowSize);
     }
 
-    this.startDate = newStartDate;
-    this.endDate = newEndDate;
+    newStartDate.setHours(12, 0, 0, 0);
+    newEndDate.setHours(12, 0, 0, 0);
+
+    this.startDate = new Date(newStartDate.toISOString().split('T')[0]);
+    this.endDate = new Date(newEndDate.toISOString().split('T')[0]);
     this.emitDateRangeChange();
   }
 
   public canChangeRange(direction: number): boolean {
     if (!this.hasMeetings || !this.minDate || !this.maxDate) return false;
-  
-    if (direction > 0 && this.endDate.getTime() === this.maxDate.getTime()) {
+
+    if (direction > 0 && this.endDate.getTime() >= this.maxDate.getTime()) {
       return false; // Blocked forward
     }
-  
-    //console.log(this.minDate)
-    console.log(this.startDate)
-    if (direction < 0 && this.startDate.getTime() === this.minDate.getTime()) {
+
+    if (direction < 0 && this.startDate.getTime() <= this.minDate.getTime()) {
       return false; // Blocked backward
     }
   
