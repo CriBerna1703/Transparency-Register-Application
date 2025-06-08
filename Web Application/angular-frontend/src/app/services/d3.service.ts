@@ -223,6 +223,7 @@ export class D3Service {
 
   drawMeetingNode(
     svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    date: Date,
     x: number,
     y: number,
     size: number,
@@ -243,11 +244,13 @@ export class D3Service {
       .attr('stroke', stroke)
       .attr('stroke-width', strokeWidth)
       .attr('class', className)
-      .style('cursor', 'pointer');
-  
+      .style('cursor', 'pointer')
+      .append('title')
+      .text(`${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`);
+
     return node;
   }
-  
+
   drawNode(
     svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
     x: number,

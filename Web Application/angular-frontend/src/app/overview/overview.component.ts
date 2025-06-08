@@ -86,22 +86,60 @@ export class OverviewComponent implements OnInit {
 
   private generateDateRange(start: Date, end: Date, aggregation: string): string[] {
     const dates: string[] = [];
-    const current = new Date(start);
+    const current = this.alignToAggregationStart(new Date(start), aggregation);
 
     while (current <= end) {
       dates.push(this.getAggregationKey(new Date(current), aggregation));
 
       switch (aggregation) {
-        case 'month': current.setMonth(current.getMonth() + 1); break;
-        case 'quarter': current.setMonth(current.getMonth() + 3); break;
-        case 'semester': current.setMonth(current.getMonth() + 6); break;
-        case 'year': current.setFullYear(current.getFullYear() + 1); break;
-        case 'biennium': current.setFullYear(current.getFullYear() + 2); break;
-        default: current.setDate(current.getDate() + 1);
+        case 'month':
+          current.setMonth(current.getMonth() + 1);
+          break;
+        case 'quarter':
+          current.setMonth(current.getMonth() + 3);
+          break;
+        case 'semester':
+          current.setMonth(current.getMonth() + 6);
+          break;
+        case 'year':
+          current.setFullYear(current.getFullYear() + 1);
+          break;
+        case 'biennium':
+          current.setFullYear(current.getFullYear() + 2);
+          break;
+        default:
+          current.setDate(current.getDate() + 1);
       }
     }
 
     return dates;
+  }
+
+  private alignToAggregationStart(date: Date, aggregation: string): Date {
+    const aligned = new Date(date);
+
+    switch (aggregation) {
+      case 'month':
+        aligned.setDate(1);
+        break;
+      case 'quarter':
+        aligned.setMonth(Math.floor(aligned.getMonth() / 3) * 3, 1);
+        break;
+      case 'semester':
+        aligned.setMonth(aligned.getMonth() < 6 ? 0 : 6, 1);
+        break;
+      case 'year':
+        aligned.setMonth(0, 1);
+        break;
+      case 'biennium':
+        aligned.setFullYear(Math.floor(aligned.getFullYear() / 2) * 2, 0, 1);
+        break;
+      default:
+        break;
+    }
+
+    aligned.setHours(0, 0, 0, 0);
+    return aligned;
   }
 
   private getAggregationKey(date: Date, aggregation: string): string {

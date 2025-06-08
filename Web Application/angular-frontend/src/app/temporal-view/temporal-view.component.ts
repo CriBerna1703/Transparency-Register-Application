@@ -570,6 +570,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const classList = [`meeting-node`, ...meetingIds.map(id => `meeting-link-${id}`), ...entityLinks].join(' ');
       const node = this.d3Service.drawMeetingNode(
         svg,
+        new Date(date),
         xPosition,
         yPosition,
         10,
@@ -813,6 +814,13 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         this.temporalViewSvg?.selectAll(selector).classed(classToAdd, true);
       }
     }
+  }
+
+  private formatDate(date: Date): string {
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
   }
 }
 
