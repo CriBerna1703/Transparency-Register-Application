@@ -8,7 +8,6 @@ const meetingRoutes = require('./routes/meetingRoutes');
 const directorateRoutes = require('./routes/directorateRoutes');
 const commissionRepresentativeRoutes = require('./routes/commissionRepresentativeRoutes');
 const similarityRoutes = require('./routes/similarityRoutes');
-const lobbyistTextRoutes = require('./routes/lobbyistTextRoutes');
 
 
 // Creazione dell'app Express
@@ -37,7 +36,6 @@ app.use('/api/meetings', meetingRoutes);
 app.use('/api/directorates', directorateRoutes);
 app.use('/api/commission-representatives', commissionRepresentativeRoutes);
 app.use('/api/similarities', similarityRoutes);
-app.use('/api/lobbyistText', lobbyistTextRoutes);
 
 
 module.exports = app;
