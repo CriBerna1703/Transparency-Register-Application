@@ -103,8 +103,4 @@ export class DataService {
     return this.http.post(`${this.apiUrl}/similarities`, payload);
   }
   
-  getLobbyistText(lobbyistId: string): Observable<{ text: string }> {
-    return this.http.get<{ text: string }>(`${this.apiUrl}/lobbyistText/${lobbyistId}/text`);
-  }
-  
 }
