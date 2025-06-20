@@ -238,39 +238,39 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   }
 
   private updateInterestGraph(): void {
-  const containerEl = this.graphContainer.nativeElement;
-  const nodes: Node[] = this.formattedMeetings.map(l => ({
-    id: l.lobbyist_id,
-    name: l.lobbyist_name
-  }));
+    const containerEl = this.graphContainer.nativeElement;
+    const nodes: Node[] = this.formattedMeetings.map(l => ({
+      id: l.lobbyist_id,
+      name: l.lobbyist_name
+    }));
 
-  const allSimilarities: {
-    source: string;
-    target: string;
-    sim: number;
-    sharedFieldIds: number[];
-  }[] = [];
+    const allSimilarities: {
+      source: string;
+      target: string;
+      sim: number;
+      sharedFieldIds: number[];
+    }[] = [];
 
-  for (let i = 0; i < this.formattedMeetings.length; i++) {
-    for (let j = i + 1; j < this.formattedMeetings.length; j++) {
-      const sim = this.cosineSimilarity(
-        this.formattedMeetings[i].fieldVector,
-        this.formattedMeetings[j].fieldVector
-      );
+    for (let i = 0; i < this.formattedMeetings.length; i++) {
+      for (let j = i + 1; j < this.formattedMeetings.length; j++) {
+        const sim = this.cosineSimilarity(
+          this.formattedMeetings[i].fieldVector,
+          this.formattedMeetings[j].fieldVector
+        );
 
-      if (sim > 0) {
-        const sharedFieldIds = this.formattedMeetings[i].fieldVector
-          .map((v, idx) => v === 1 && this.formattedMeetings[j].fieldVector[idx] === 1 ? idx + 1 : null)
-          .filter((id): id is number => id !== null);
+        if (sim > 0) {
+          const sharedFieldIds = this.formattedMeetings[i].fieldVector
+            .map((v, idx) => v === 1 && this.formattedMeetings[j].fieldVector[idx] === 1 ? idx + 1 : null)
+            .filter((id): id is number => id !== null);
 
-        allSimilarities.push({
-          source: this.formattedMeetings[i].lobbyist_id,
-          target: this.formattedMeetings[j].lobbyist_id,
-          sim,
-          sharedFieldIds
-        });
+          allSimilarities.push({
+            source: this.formattedMeetings[i].lobbyist_id,
+            target: this.formattedMeetings[j].lobbyist_id,
+            sim,
+            sharedFieldIds
+          });
+        }
       }
-    }
   }
 
   const links: Link[] = [];

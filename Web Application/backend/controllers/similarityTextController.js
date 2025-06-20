@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 const path = require('path');
 
-async function computeSimilarities(req, res) {
+async function computeTextSimilarities(req, res) {
   const { startDate, endDate, lobbyist_ids } = req.body;
 
   const scriptPath = path.join(__dirname, 'similarityService.py');
@@ -37,5 +37,5 @@ async function computeSimilarities(req, res) {
 }
 
 module.exports = {
-  computeSimilarities
+  computeTextSimilarities
 };
