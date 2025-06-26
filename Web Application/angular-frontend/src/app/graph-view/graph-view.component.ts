@@ -513,6 +513,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
       this.isTextGraphLoading = true;
     }
 
+    console.log('Chiamata a getSimilarities con payload:', payload);
     this.dataService.getSimilarities(payload).subscribe({
       next: response => {
         this.isTextGraphLoading = false;

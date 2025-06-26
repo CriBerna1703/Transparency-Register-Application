@@ -585,7 +585,7 @@ export class D3Service {
     }
 
       return components;
-    }
+  }
 
     private prepareGraphLayout(nodes: any[], links: any[], width: number, height: number, options: ForceGraphOptions, preservePosition = false): any[] {
        const degreeMap = new Map<string, number>();
