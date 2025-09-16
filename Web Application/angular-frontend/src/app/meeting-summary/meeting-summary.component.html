@@ -9,13 +9,21 @@
       </tr>
     </thead>
     <tbody>
+      <!-- Meetings -->
       <tr>
         <td>Meetings</td>
         <td>{{ totalMeetings }}</td>
       </tr>
+
+      <!-- Lobbyists -->
       <tr (click)="toggleSection('lobbyists')" style="cursor: pointer;">
         <td>Lobbyists</td>
-        <td>{{ totalLobbyists }} <span *ngIf="!useOverviewData">{{ expandedSections.lobbyists ? '▲' : '▼' }}</span></td>
+        <td>
+          {{ totalLobbyists }}
+          <span *ngIf="!useOverviewData">
+            {{ expandedSections.lobbyists ? '▲' : '▼' }}
+          </span>
+        </td>
       </tr>
       <tr *ngIf="expandedSections.lobbyists && !useOverviewData">
         <td colspan="2">
@@ -33,15 +41,23 @@
                   type="checkbox"
                   [checked]="isSelected(lob, 'lobbyist')"
                   (change)="toggleSelection(lob, 'lobbyist')"
-                /> {{ lob.name }}
+                />
+                {{ lob.name }}
               </label>
             </li>
           </ul>
         </td>
       </tr>
+
+      <!-- Representatives -->
       <tr (click)="toggleSection('representatives')" style="cursor: pointer;">
         <td>Eur. Comm. officials</td>
-        <td>{{ totalRepresentatives }} <span *ngIf="!useOverviewData">{{ expandedSections.representatives ? '▲' : '▼' }}</span></td>
+        <td>
+          {{ totalRepresentatives }}
+          <span *ngIf="!useOverviewData">
+            {{ expandedSections.representatives ? '▲' : '▼' }}
+          </span>
+        </td>
       </tr>
       <tr *ngIf="expandedSections.representatives && !useOverviewData">
         <td colspan="2">
@@ -59,15 +75,23 @@
                   type="checkbox"
                   [checked]="isSelected(rep, 'representative')"
                   (change)="toggleSelection(rep, 'representative')"
-                /> {{ rep.name }}
+                />
+                {{ rep.name }}
               </label>
             </li>
           </ul>
         </td>
       </tr>
+
+      <!-- Directorates -->
       <tr (click)="toggleSection('directorates')" style="cursor: pointer;">
         <td>Directorates</td>
-        <td>{{ totalDirectorates }} <span *ngIf="!useOverviewData">{{ expandedSections.directorates ? '▲' : '▼' }}</span></td>
+        <td>
+          {{ totalDirectorates }}
+          <span *ngIf="!useOverviewData">
+            {{ expandedSections.directorates ? '▲' : '▼' }}
+          </span>
+        </td>
       </tr>
       <tr *ngIf="expandedSections.directorates && !useOverviewData">
         <td colspan="2">
@@ -85,7 +109,42 @@
                   type="checkbox"
                   [checked]="isSelected(dir, 'directorate')"
                   (change)="toggleSelection(dir, 'directorate')"
-                /> {{ dir.name }}
+                />
+                {{ dir.name }}
+              </label>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Cabinets -->
+      <tr (click)="toggleSection('cabinets')" style="cursor: pointer;">
+        <td>Cabinets</td>
+        <td>
+          {{ totalCabinets }}
+          <span *ngIf="!useOverviewData">
+            {{ expandedSections.cabinets ? '▲' : '▼' }}
+          </span>
+        </td>
+      </tr>
+      <tr *ngIf="expandedSections.cabinets && !useOverviewData">
+        <td colspan="2">
+          <button (click)="clearSelection('cabinets')">Deselect all</button>
+          <input
+            type="text"
+            placeholder="Search Cabinet..."
+            [(ngModel)]="searchCabinet"
+            (input)="filterList('cabinets', searchCabinet)"
+          />
+          <ul class="entity-list">
+            <li *ngFor="let cab of filteredCabinets">
+              <label>
+                <input
+                  type="checkbox"
+                  [checked]="isSelected(cab, 'cabinet')"
+                  (change)="toggleSelection(cab, 'cabinet')"
+                />
+                {{ cab.name }}
               </label>
             </li>
           </ul>
@@ -100,7 +159,7 @@
       <ng-template #loadingSpinner>
         <span class="spinner"></span> Loading...
       </ng-template>
-    </button>    
+    </button>
     <button *ngIf="useOverviewData" (click)="cancelSelection()">Modify Filters</button>
   </div>
 </div>

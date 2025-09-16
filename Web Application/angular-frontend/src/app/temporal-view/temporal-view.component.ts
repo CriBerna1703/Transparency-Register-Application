@@ -33,6 +33,11 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   private selectedInfoTab: { id: string; type: string } | null = null;
   private selectedHistogramTab: { id: string; type: string } | null = null;
   public activeMeetingNode: { color: string, count: number, textColor: string } | null = null;
+  public activeRepresentativeAllocations: {
+    name: string;
+    directorates: { name: string; startYear: number; endYear: number }[];
+    cabinets: { name: string; startDate: Date; endDate: Date }[];
+  } | null = null;
   public lobbyistDegreeThreshold: number = 1;
   public maxVisibleLobbyistDegree: number = 10; 
 
@@ -40,6 +45,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     lobbyist: this.lobbyistHeight,
     representative: this.representativeHeight,
     directorate: this.directorateHeight,
+    cabinet: this.directorateHeight,
     meeting: this.meetingHeight,
   };
 
@@ -60,15 +66,19 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       this.createVisualization();
     });
     this.meetingsSubscription = this.filterService.meetings$.subscribe(meetings => {
-      const formattedMeetings = meetings.map(meeting => ({
-        meeting_number: meeting.meeting_number,
-        lobbyist_name: meeting.Lobbyist.organization_name,
-        date: new Date(meeting.meeting_date),
-        representative_name: meeting.CommissionRepresentative.name,
-        lobbyist_id: meeting.lobbyist_id,
-        representative_id: meeting.CommissionRepresentative.id,
-        directorate_id: meeting.CommissionRepresentative.RepresentativeAllocations?.[0]?.Directorate?.id || "",
-        directorate_name: meeting.CommissionRepresentative.RepresentativeAllocations?.[0]?.Directorate?.name || "?"
+      const formattedMeetings: MeetingData[] = meetings.map(meeting => ({
+        meeting_number: meeting.commission_meetings.meeting_number,
+        lobbyist_id: meeting.commission_meetings.lobbyist_id,
+        lobbyist_name: meeting.lobbyist_profile.organization_name,
+        date: new Date(meeting.commission_meetings.meeting_date),
+        participants: meeting.participants.map((p: RawParticipant): ParticipantData => ({
+          representative_id: p.commission_representative.id,
+          representative_name: p.commission_representative.name,
+          directorate_id: p.directorate.id || "",
+          directorate_name: p.directorate.name || "?",
+          cabinet_id: p.directorate.id ? p.commission_cabinet.id || "" : p.commission_cabinet.id || "DUMMY-ID",
+          cabinet_name: p.commission_cabinet.name || "?"
+        }))
       }));
     
       this.meetingManager.setMeetingsData(formattedMeetings);
@@ -96,7 +106,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     });
 
     this.selectionService.selectedNodes$.subscribe(nodes => {
-      this.selectedNodes = new Set(nodes.map(n => n.id));
+      this.selectedNodes = new Set(nodes.map(n => this.makeKey(n.id, n.type as any)));
       this.createVisualization();
     });
 
@@ -132,7 +142,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private updateLabelSizes(): void {
-    const labels = this.el.nativeElement.querySelectorAll('.label-lobbyist, .label-representative, .label-directorate');
+    const labels = this.el.nativeElement.querySelectorAll('.label-lobbyist, .label-representative, .label-directorate, .label-cabinet');
     labels.forEach((label: HTMLElement) => {
       label.style.fontSize = `${this.labelSize}px`;
     });
@@ -185,11 +195,12 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         this.drawEntities(this.temporalViewSvg, 'representative', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
       } else {
         this.drawEntities(this.temporalViewSvg, 'directorate', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
+        this.drawEntities(this.temporalViewSvg, 'cabinet', calculatedWidth, displayStartDate, displayEndDate, undefined, filteredMeetings);
       }
       this.temporalViewSvg.selectAll('.meeting-node').raise();
       const meetingIds = meetings.map(m => `meeting_${m.lobbyist_id}_${m.meeting_number}`);
       meetingIds.forEach(meetingId => {
-        if (this.selectedNodes.has(meetingId)) {
+        if (this.selectedNodes.has(this.makeKey(meetingId, 'meeting'))) {
           d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
             d3.select(this).classed(`node-meeting-pinned`, true);
           });
@@ -211,7 +222,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
 
   private drawEntities(
     svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
-    entityType: 'lobbyist' | 'representative' | 'directorate',
+    entityType: 'lobbyist' | 'representative' | 'directorate' | 'cabinet',
     width: number,
     displayStartDate: Date,
     displayEndDate: Date,
@@ -219,16 +230,18 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     filteredMeetings: MeetingData[],
   ): void {
     const yPosition = this.entityPositions[entityType];
-    const entityPositions = this.meetingManager.computeOptimizedNodePositions(entityType, width, this.startDate, this.endDate, displayStartDate, displayEndDate);    
+    const entityPositions = this.meetingManager.computeOptimizedNodePositions(entityType, width, this.startDate, this.endDate, displayStartDate, displayEndDate);
 
     const sortedEntities = Array.from(entityPositions.entries()).sort((a, b) => a[1] - b[1]);
-
     this.drawGroupingRectangles(svg, sortedEntities, filteredMeetings);
 
     sortedEntities.forEach(([id, xPosition], index, array) => {
       const entity = { id, type: entityType };
       const isGrouped = String(id).startsWith("grouped-");
-      const entityName = isGrouped ? "Lobbyist Group" : this.meetingManager.getEntityName(id, entityType);
+      var entityName = isGrouped ? "Lobbyist Group" : this.meetingManager.getEntityName(id, entityType);
+      if(entityType === 'cabinet' && id === 'DUMMY-ID') {
+        entityName = "?";
+      }
 
       this.drawConnections(svg, entity, xPosition, this.d3Service.getTimeScale(width, displayStartDate, displayEndDate), yPosition, filteredMeetings);
       let truncatedLength = 5;
@@ -239,7 +252,10 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         }
       }
 
-      let isLabelFixed = this.selectedNodes.has(entity.id) || this.selectedInfoTab?.id === entity.id || this.selectedHistogramTab?.id === entity.id;
+      let isLabelFixed =
+        this.selectedNodes.has(this.makeKey(entity.id, entityType)) ||
+        this.selectedInfoTab?.id === entity.id ||
+        this.selectedHistogramTab?.id === entity.id;
 
       const labelYPosition = entityType === 'lobbyist' ? yPosition - 20 : yPosition + 30;
 
@@ -258,7 +274,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         .attr("data-original-text", entityName)
         .text(this.fullLabels ? entityName : entityName.substring(0, truncatedLength))
         .attr("font-size", `${this.labelSize}px`)
-        .attr("fill", entityType === 'lobbyist' ? '#004b87' : entityType === 'representative' ? '#54c459' : '#3CB371')
+        .attr("fill", entityType === 'lobbyist' ? '#004b87' : entityType === 'representative' ? '#54c459' : entityType === 'directorate' ? '#3CB371' : '#29437aff')
         .attr("data-original-text", entityName)
         .attr("data-truncated", entityName.substring(0, truncatedLength))
         .attr("class", `label-text label-${entityType}`)
@@ -278,15 +294,16 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       }
     
       const connectedMeetings = filteredMeetings
-        .filter(d => 
+        .filter(d =>
           (entityType === 'lobbyist' && d.lobbyist_id === id) ||
-          (entityType === 'representative' && d.representative_id === id) ||
-          (entityType === 'directorate' && d.directorate_id === id)
+          (entityType === 'representative' && d.participants.some(p => p.representative_id === id)) ||
+          (entityType === 'directorate' && d.participants.some(p => p.directorate_id === id)) ||
+          (entityType === 'cabinet' && d.participants.some(p => p.cabinet_id === id))
         )
         .map(d => `meeting-link-meeting_${d.lobbyist_id}_${d.meeting_number}`)
         .join(' ');
 
-      const isDummyDirectorate = entityType === 'directorate' && entityName === "?";
+      const isDummyDirectorate = (entityType === 'directorate' || entityType === 'cabinet') && entityName === "?";
 
       const self = this;
 
@@ -311,15 +328,17 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         const lobbyistNodeClasses = groupedLobbists
             .map(id => `node-lobbyist-${id} link-lobbyist-${id}`)
             .join(' ');
-        const isGroupSelected = groupedLobbists.some(lobbyistId => self.selectedNodes.has(lobbyistId));
+        const isGroupSelected = groupedLobbists.some(lobbyistId =>
+          self.selectedNodes.has(self.makeKey(lobbyistId, 'lobbyist'))
+        );
 
         const groupedNode = this.d3Service.drawGroupedNode(
           svg,
           xPosition,
           yPosition,
           10,
-          entityType === 'lobbyist' ? '#e6c7e0' : entityType === 'representative' ? '#80EF80' : '#3CB371',
-          entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
+          '#e6c7e0',
+          '#5b2c55',
           2,
           `node-${entityType} link-${entity.type}-${entity.id} ${connectedMeetings} ${lobbyistNodeClasses}`
         ).on("click", () => this.toggleGrouping(id.replace("grouped-", "")))
@@ -365,13 +384,14 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           });
         }
       } else {
+        const allocations = self.meetingManager.representativeAllocations.get(entity.id);
         const node = this.d3Service.drawNode(
           svg,
           xPosition,
           yPosition,
           8,
-          entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#80EF80' : '#3CB371',
-          entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#1bd41b' : '#297a4d',
+          entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#539c53ff' : entityType === 'directorate' ? '#3CB371' : '#29437aff',
+          entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#128612ff' : entityType === 'directorate' ? '#297a4d' : '#29437aff',
           2,
           `node-${entityType} node-${entity.type}-${entity.id} link-${entity.type}-${entity.id} ${connectedMeetings} ${isDummyDirectorate ? 'dummy-directorate' : ''}`
         ).on('click', () => this.onNodeClick(entity))
@@ -404,6 +424,28 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
             d3.select(this).classed('node-hover', true);
           });
+
+          if (entityType === 'representative') {
+            const repName = entityName;
+
+            if (allocations) {
+              self.activeRepresentativeAllocations = {
+                name: repName,
+                directorates: Array.from(allocations.directorates.entries()).map(([name, d]) => ({
+                  name,
+                  startYear: d.startYear,
+                  endYear: d.endYear
+                })),
+                cabinets: Array.from(allocations.cabinets.entries()).map(([name, c]) => ({
+                  name,
+                  startDate: c.startDate,
+                  endDate: c.endDate
+                }))
+              };
+            } else {
+              self.activeRepresentativeAllocations = null;
+            }
+          }
         })
         .on('mouseout', function (this: SVGCircleElement) {
           d3.selectAll('.node-hover').each(function () {
@@ -430,6 +472,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
                 .style("display", "block");
             }
           }
+          if (entityType === 'representative') {
+            self.activeRepresentativeAllocations = null;
+          }
         })
         .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
           event.preventDefault();
@@ -441,24 +486,27 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           d3.selectAll(`.node-${entity.type}-${entity.id}`).each(function () {
             d3.select(this).classed(`node-${entity.type}-pinned`, isLabelFixed);
           });
-          if (isLabelFixed) {        
-            self.selectedNodes.add(entity.id);
+          const key = self.makeKey(entity.id, entity.type);
+          if (isLabelFixed) {
+            self.selectedNodes.add(key);
             self.selectionService.selectNode(entity);
           } else {
-            self.selectedNodes.delete(entity.id);
-            self.selectionService.deselectNode(entity.id);
+            self.selectedNodes.delete(key);
+            self.selectionService.deselectNode(entity);
           }
-
         });
 
-        if (this.selectedNodes.has(entity.id)) {
+        if (allocations && allocations.cabinets.size !== 0) {
+          node.classed('node-cabinet-associated', true);
+        }
+
+        if (this.selectedNodes.has(this.makeKey(entity.id, entityType))) {
           d3.selectAll(`.node-${entity.type}-${entity.id}`).each(function () {
             d3.select(this).classed(`node-${entity.type}-pinned`, isLabelFixed);
           });
         }
       }
     });
-  
   }
 
   private drawConnections(
@@ -480,8 +528,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         } else {
             if (
                 (entity.type === 'lobbyist' && d.lobbyist_id !== entity.id) ||
-                (entity.type === 'representative' && d.representative_id !== entity.id) ||
-                (entity.type === 'directorate' && d.directorate_id !== entity.id)
+                (entity.type === 'representative' && !d.participants.some(p => p.representative_id === entity.id)) ||
+                (entity.type === 'directorate' && !d.participants.some(p => p.directorate_id === entity.id)) ||
+                (entity.type === 'cabinet' && !d.participants.some(p => p.cabinet_id === entity.id))
             ) {
                 return;
             }
@@ -498,7 +547,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         const path = d3.path();
         path.moveTo(cx1, yStart);
   
-        if (entity.type === 'representative' || entity.type === 'directorate') {
+        if (entity.type === 'representative' || entity.type === 'directorate' || entity.type === 'cabinet') {
           path.lineTo(cx1, yStart - 15); // Vertical line upwards
           path.bezierCurveTo(cx1, yStart - 15 - controlPointOffsetEntity, cx2, cy2 + controlPointOffsetMeeting, cx2, cy2 + verticalSegmentLengthMeeting); // Curva di Bézier verso il basso
         } else {
@@ -513,17 +562,18 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           .on('contextmenu', function (this: SVGPathElement, event: MouseEvent) {
             event.preventDefault();
             
-            let isMeetingPinned = self.selectedNodes.has(meetingId);
+            const key = self.makeKey(meetingId, 'meeting');
+            let isMeetingPinned = self.selectedNodes.has(key);
             isMeetingPinned = !isMeetingPinned;
             d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
               d3.select(this).classed('node-meeting-pinned', isMeetingPinned);
             });
-            if(isMeetingPinned) {
-              self.selectedNodes.add(meetingId);
+            if (isMeetingPinned) {
+              self.selectedNodes.add(key);
               self.selectionService.selectNode({ id: meetingId, type: 'meeting' });
-            } else {  
-              self.selectedNodes.delete(meetingId);
-              self.selectionService.deselectNode(meetingId);
+            } else {
+              self.selectedNodes.delete(key);
+              self.selectionService.deselectNode({ id: meetingId, type: 'meeting' });
             }
           });
       });
@@ -557,15 +607,20 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const meetingCount = meetings.length;
       const nodeColor = colorScale(meetings.length);
       const textColor = this.isDarkColor(nodeColor) ? 'white' : 'black';
-      const entityLinks = meetings.flatMap(d => [
-        `node-lobbyist-${d.lobbyist_id}`,
-        `node-representative-${d.representative_id}`,
-        `node-directorate-${d.directorate_id}`,
-        `link-lobbyist-${d.lobbyist_id}`,
-        `link-representative-${d.representative_id}`,
-        `link-directorate-${d.directorate_id}`,
-        `link-lobbyist-grouped-${date}`
-      ]);
+      const entityLinks = meetings.flatMap(d =>
+        d.participants.flatMap(p => [
+          `node-representative-${p.representative_id}`,
+          `node-directorate-${p.directorate_id}`,
+          `node-cabinet-${p.cabinet_id}`,
+          `link-representative-${p.representative_id}`,
+          `link-directorate-${p.directorate_id}`,
+          `link-cabinet-${p.cabinet_id}`
+        ]).concat([
+          `node-lobbyist-${d.lobbyist_id}`,
+          `link-lobbyist-${d.lobbyist_id}`,
+          `link-lobbyist-grouped-${date}`
+        ])
+      );
       const self = this;
       const classList = [`meeting-node`, ...meetingIds.map(id => `meeting-link-${id}`), ...entityLinks].join(' ');
       const node = this.d3Service.drawMeetingNode(
@@ -615,22 +670,25 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       })
       .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
         event.preventDefault();
-        const allPinned = meetingIds.every(meetingId => self.selectedNodes.has(meetingId));
+        const meetingKeys = meetingIds.map(id => self.makeKey(id, 'meeting'));
+        const allPinned = meetingKeys.every(key => self.selectedNodes.has(key));
+
         if (allPinned) {
           meetingIds.forEach(meetingId => {
             d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
               d3.select(this).classed('node-meeting-pinned', false);
             });
-            self.selectedNodes.delete(meetingId);
-            self.selectionService.deselectNode(meetingId);
+            self.selectedNodes.delete(self.makeKey(meetingId, 'meeting'));
+            self.selectionService.deselectNode({ id: meetingId, type: 'meeting' });
           });
         } else {
           meetingIds.forEach(meetingId => {
-            if (!self.selectedNodes.has(meetingId)) {
+            const key = self.makeKey(meetingId, 'meeting');
+            if (!self.selectedNodes.has(key)) {
               d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
                 d3.select(this).classed('node-meeting-pinned', true);
               });
-              self.selectedNodes.add(meetingId);
+              self.selectedNodes.add(key);
               self.selectionService.selectNode({ id: meetingId, type: 'meeting' });
             }
           });
@@ -655,17 +713,21 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     const visibleLobbyists = new Set<string>();
     const visibleRepresentatives = new Set<string>();
     const visibleDirectorates = new Set<string>();
-  
+    const visibleCabinets = new Set<string>();
+
     meetings.forEach(meeting => {
       const meetingDate = new Date(meeting.date);
       if (meetingDate >= startDate && meetingDate <= endDate) {
         if (meeting.lobbyist_id) visibleLobbyists.add(meeting.lobbyist_id);
-        if (meeting.representative_id) visibleRepresentatives.add(meeting.representative_id);
-        if (meeting.directorate_id) visibleDirectorates.add(meeting.directorate_id);
+        meeting.participants.forEach(p => {
+          if (p.representative_id) visibleRepresentatives.add(p.representative_id);
+          if (p.directorate_id) visibleDirectorates.add(p.directorate_id);
+          if (p.cabinet_id) visibleCabinets.add(p.cabinet_id);
+        });
       }
     });
-  
-    return Math.max(visibleLobbyists.size, visibleRepresentatives.size, visibleDirectorates.size);
+
+    return Math.max(visibleLobbyists.size, visibleRepresentatives.size, visibleDirectorates.size, visibleCabinets.size);
   }
 
   private getVisualizationDimensions() {
@@ -786,8 +848,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       meeting: ['.node-lobbyist-selected', '.meeting-link-selected'],
       representative: ['.node-representative-selected', '.node-directorate-selected'],
       directorate: ['.node-representative-selected', '.node-directorate-selected'],
+      cabinet: ['.node-cabinet-selected'],
       'lobbyist-meeting': ['.node-lobbyist-selected', '.meeting-link-selected'],
-      'representative-directorate': ['.node-representative-selected', '.node-directorate-selected']
+      'representative-directorate-cabinet': ['.node-representative-selected', '.node-directorate-selected', '.node-cabinet-selected']
     };
 
     const selectMap: Record<string, ((id: string) => string) | null> = {
@@ -795,8 +858,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       meeting: id => `.meeting-link-${id}`,
       representative: id => this.showRepresentatives ? `.node-representative-${id}` : '',
       directorate: id => !this.showRepresentatives ? `.node-directorate-${id}` : '',
+      cabinet: id => !this.showRepresentatives ? `.node-cabinet-${id}` : '',
       'lobbyist-meeting': null,
-      'representative-directorate': null
+      'representative-directorate-cabinet': null
     };
 
     const deselectors = deselectMap[selectedTab.type];
@@ -822,6 +886,37 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
   }
+
+  private makeKey(
+    id: string,
+    type: 'lobbyist' | 'representative' | 'directorate' | 'cabinet' | 'meeting'
+  ): string {
+    return `${type}:${id}`;
+  }
+}
+
+export interface RawParticipant {
+  commission_representative: {
+    id: string;
+    name: string;
+  };
+  directorate: {
+    id?: string;
+    name?: string;
+  };
+  commission_cabinet: {
+    id?: string;
+    name?: string;
+  };
+}
+
+export interface ParticipantData {
+  representative_id: string;
+  representative_name: string;
+  directorate_id: string;
+  directorate_name: string;
+  cabinet_id: string;
+  cabinet_name: string;
 }
 
 export interface MeetingData {
@@ -829,8 +924,6 @@ export interface MeetingData {
   lobbyist_id: string;
   lobbyist_name: string;
   date: Date;
-  representative_id: string; 
-  representative_name: string; 
-  directorate_id: string; 
-  directorate_name: string; 
+  participants: ParticipantData[];
 }
+

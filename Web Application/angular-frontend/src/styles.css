@@ -58,3 +58,8 @@ text.node-lobbyist-pinned {
 .node-lobbyist-draggable circle {
   fill: #b22222;
 }
+
+.node-cabinet-associated {
+  fill: #80EF80;
+  stroke: #1bd41b;
+}

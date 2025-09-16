@@ -7,6 +7,8 @@ const Membership = require('./Membership');
 const Directorate = require('./Directorate');
 const CommissionRepresentative = require('./CommissionRepresentative');
 const RepresentativeAllocation = require('./RepresentativeAllocation');
+const CommissionCabinet = require('./CommissionCabinet')
+const MeetingRepresentative = require('./MeetingRepresentative');
 
 module.exports = {
     sequelize,
@@ -18,4 +20,6 @@ module.exports = {
     Directorate,
     CommissionRepresentative,
     RepresentativeAllocation,
+    CommissionCabinet,
+    MeetingRepresentative
 };

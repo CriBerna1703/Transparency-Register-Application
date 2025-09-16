@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 export interface SelectedNode {
   id: string;
-  type: 'lobbyist' | 'representative' | 'directorate' | 'meeting';
+  type: 'lobbyist' | 'representative' | 'directorate' | 'meeting' | 'cabinet';
 }
 
 export interface ActiveInfoTab {
@@ -13,14 +13,14 @@ export interface ActiveInfoTab {
 
 export interface ActiveHistogramTab {
   id: string | null;
-  type: 'representative' | 'directorate' | 'representative-directorate' | null;
+  type: 'representative' | 'directorate' | 'cabinet' | 'representative-directorate-cabinet' | null;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class SelectionService {
-  private selectedNodes = new Set<string>();
+  private selectedNodes = new Map<SelectedNode['type'], Set<string>>();
   private selectedNodesSubject = new BehaviorSubject<SelectedNode[]>([]);
   selectedNodes$ = this.selectedNodesSubject.asObservable();
 
@@ -31,25 +31,33 @@ export class SelectionService {
   activeHistogramTab$ = this.histogramTabSubject.asObservable();
 
   selectNode(node: SelectedNode) {
-    this.selectedNodes.add(node.id);
+    if (!this.selectedNodes.has(node.type)) {
+      this.selectedNodes.set(node.type, new Set<string>());
+    }
+    this.selectedNodes.get(node.type)!.add(node.id);
     this.emit();
   }
 
-  deselectNode(id: string) {
-    this.selectedNodes.delete(id);
+  deselectNode(node: SelectedNode) {
+    this.selectedNodes.get(node.type)?.delete(node.id);
     this.emit();
   }
 
   toggleNode(node: SelectedNode) {
-    if (this.selectedNodes.has(node.id)) {
-      this.deselectNode(node.id);
+    const set = this.selectedNodes.get(node.type);
+    if (set?.has(node.id)) {
+      this.deselectNode(node);
     } else {
       this.selectNode(node);
     }
   }
 
   private emit() {
-    this.selectedNodesSubject.next(Array.from(this.selectedNodes).map(id => ({ id, type: 'lobbyist' })));
+    const all: SelectedNode[] = [];
+    this.selectedNodes.forEach((ids, type) => {
+      ids.forEach(id => all.push({ id, type }));
+    });
+    this.selectedNodesSubject.next(all);
   }
 
   clearAll() {
@@ -63,5 +71,10 @@ export class SelectionService {
 
   setActiveHistogramTab(tab: ActiveHistogramTab | null) {
     this.histogramTabSubject.next(tab);
+  }
+
+  clearSection(type: SelectedNode['type']) {
+    this.selectedNodes.delete(type);
+    this.emit();
   }
 }

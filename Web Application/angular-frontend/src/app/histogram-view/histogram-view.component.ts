@@ -65,7 +65,7 @@ export class HistogramViewComponent implements OnChanges {
     this.selectionService.setActiveHistogramTab(
       {
         id,
-        type: (type === 'representative' || type === 'directorate') ? type : 'representative-directorate'
+        type: (type === 'representative' || type === 'directorate' || type === 'cabinet') ? type : 'representative-directorate-cabinet'
       }
     );
     this.activeTabId = id;
@@ -78,6 +78,7 @@ export class HistogramViewComponent implements OnChanges {
 
     const isRepresentative = entity.type === 'representative';
     const isDirectorate = entity.type === 'directorate';
+    const isCabinet = entity.type === 'cabinet';
     const existingTab = this.tabs.find(tab => tab.id === entity.id && tab.type === entity.type);
     
     if (existingTab) {
@@ -85,7 +86,7 @@ export class HistogramViewComponent implements OnChanges {
         this.updateHistogram();
     } else {
         const allMeetings = this.filterService.getCurrentMeetings();
-        const maxDegree = this.calculateMaxDegree(allMeetings, entity.type as 'representative' | 'directorate');
+        const maxDegree = this.calculateMaxDegree(allMeetings, entity.type as 'representative' | 'directorate' | 'cabinet');
 
         const newTab: HistogramTab = {
             id: entity.id,
@@ -100,9 +101,9 @@ export class HistogramViewComponent implements OnChanges {
         this.setActiveTab({ id: newTab.id, type: newTab.type });
 
         this.fetchMeetingData(entity).subscribe(meetingDates => {
-          console.log('Fetched meeting dates:', meetingDates);  
           newTab.rawData = meetingDates;
-            this.updateHistogram(newTab);
+          this.updateHistogram(newTab);
+          console.log('Fetched meeting dates:', meetingDates);
         });
 
         // Representative
@@ -125,6 +126,23 @@ export class HistogramViewComponent implements OnChanges {
         // Directorate
         if (isDirectorate) {
           this.dataService.getDirectorateDetails(entity.id).pipe(
+            tap((data) => {
+              newTab.isLoading = false;
+              newTab.title = `${data.name}`;
+              this.tabs = [...this.tabs];
+            }),
+            catchError((error) => {
+              newTab.isLoading = false;
+              newTab.error = 'Error retrieving meeting information.';
+              console.error('Error:', error);
+              return of(null);
+            })
+          ).subscribe();
+        }
+
+        // Cabinet
+        if (isCabinet) {
+          this.dataService.getCabinetDetails(entity.id).pipe(
             tap((data) => {
               newTab.isLoading = false;
               newTab.title = `${data.name}`;
@@ -162,12 +180,14 @@ export class HistogramViewComponent implements OnChanges {
       currentFilters.directorate_ids = [entity.id];
     } else if (entity.type === 'representative') {
       currentFilters.representative_ids = [entity.id];
+    } else if (entity.type === 'cabinet') {
+      currentFilters.cabinet_ids = [entity.id];
     } else {
       return of([]);
     }
 
     return this.dataService.getFilteredMeetings(currentFilters).pipe(
-      map((meetings: { meeting_date: string }[]) => meetings.map(meeting => new Date(meeting.meeting_date))),
+      map((meetings: { commission_meetings: { meeting_date: string } }[]) => meetings.map(meeting => new Date(meeting.commission_meetings.meeting_date))),
       catchError((error: any) => {
       console.error('Error retrieving data:', error);
       return of<Date[]>([]);
@@ -323,29 +343,42 @@ export class HistogramViewComponent implements OnChanges {
     this.updateHistogram();
   }
 
-  private calculateMaxDegree(meetings: any[], entityType: 'representative' | 'directorate'): number {
+  private calculateMaxDegree(
+    meetings: any[],
+    entityType: 'representative' | 'directorate' | 'cabinet'
+  ): number {
     const countByNodeAndTime: { [key: string]: { [timeKey: string]: number } } = {};
 
     for (const meeting of meetings) {
-      const nodeId = entityType === 'representative' ? meeting.representative_id : meeting.CommissionRepresentative.RepresentativeAllocations?.[0]?.Directorate?.id;
-      
+      const nodeId =
+        entityType === 'representative'
+          ? meeting.representative_id
+          : entityType === 'directorate'
+          ? meeting.directorate_id
+          : meeting.cabinet_id;
+
       if (!nodeId) continue;
-  
-      const timeKey = this.getAggregationKey(new Date(meeting.meeting_date), this.selectedAggregation);
-  
+
+      const timeKey = this.getAggregationKey(
+        new Date(meeting.meeting_date),
+        this.selectedAggregation
+      );
+
       countByNodeAndTime[nodeId] = countByNodeAndTime[nodeId] || {};
-      countByNodeAndTime[nodeId][timeKey] = (countByNodeAndTime[nodeId][timeKey] || 0) + 1;
-    }  
+      countByNodeAndTime[nodeId][timeKey] =
+        (countByNodeAndTime[nodeId][timeKey] || 0) + 1;
+    }
 
     let maxDegree = 0;
     Object.values(countByNodeAndTime).forEach(timeCounts => {
-        maxDegree = Math.max(maxDegree, ...Object.values(timeCounts));
+      maxDegree = Math.max(maxDegree, ...Object.values(timeCounts));
     });
 
     return maxDegree;
   }
 
-  
+
+
   createHistogram(tab: HistogramTab, labels: string[]): void {
     const element = this.el.nativeElement.querySelector(`#histogram-${tab.id}`);
     this.d3Service.drawHistogram(element, tab.filteredData, labels, this.zoomLevel, 300, tab.maxDegree);

@@ -64,28 +64,28 @@
     </div>
     <!-- Show Contents for Meeting -->
     <div *ngIf="!tab.isLoading && tab.type === 'meeting'">
-      <h2>Meeting on {{ tab.data.meeting_date | date }}</h2>
+      <h2>Meeting on {{ tab.data.commission_meetings.meeting_date | date:'longDate' }}</h2>
       <p>
-        <strong>Topic:</strong> {{ tab.data.topic }}
+        <strong>Topic:</strong> {{ tab.data.commission_meetings.topic || 'N/A' }}
       </p>
       <p>
-        <strong>Location:</strong> {{ tab.data.location }}
+        <strong>Lobbyist:</strong> {{ tab.data.lobbyist_profile.organization_name }}
       </p>
-      <p>
-        <strong>Commission Representative:</strong> {{ tab.data.CommissionRepresentative.name }}
-      </p>
-      <ng-container *ngIf="tab.data.CommissionRepresentative.RepresentativeAllocations && tab.data.CommissionRepresentative.RepresentativeAllocations.length > 0">
-        <h3>Allocations:</h3>
+
+      <!-- Participants -->
+      <div *ngIf="tab.data.participants && tab.data.participants.length > 0">
+        <h3>Participants:</h3>
         <ul>
-          <li *ngFor="let allocation of tab.data.CommissionRepresentative.RepresentativeAllocations">
-            {{ allocation.role }} - {{ allocation.Directorate.name }} ({{ allocation.year }})
+          <li *ngFor="let participant of tab.data.participants">
+            <strong>{{ participant.commission_representative?.name }}</strong>
+            <ul>
+              <li *ngIf="participant.allocation?.role">Role: {{ participant.allocation.role }}</li>
+              <li *ngIf="participant.allocation?.year">Year: {{ participant.allocation.year }}</li>
+              <li *ngIf="participant.directorate?.name">Directorate: {{ participant.directorate.name }}</li>
+              <li *ngIf="participant.commission_cabinet?.name">Cabinet: {{ participant.commission_cabinet.name }}</li>
+            </ul>
           </li>
         </ul>
-      </ng-container>
-      <div *ngIf="tab.data.Lobbyist">
-        <p>
-          <strong>Lobbyist:</strong> {{ tab.data.Lobbyist.organization_name }}
-        </p>
       </div>
     </div>
   </div>

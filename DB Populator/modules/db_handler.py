@@ -42,7 +42,9 @@ class DBHandler:
         self.delete_table_data('proposals')
         self.delete_table_data('memberships')
         self.delete_table_data('commission_representative')
+        self.delete_table_data('meeting_representatives')
         self.delete_table_data('directorate')
+        self.delete_table_data('commission_cabinet')
 
     def get_field_id(self, table, column_name, value, id_column):
         sql = f"""

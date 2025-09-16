@@ -11,8 +11,10 @@ export class MeetingManager {
   private uniqueEntities: { [key: string]: Map<string, string> } = {
     lobbyist: new Map(),
     representative: new Map(),
-    directorate: new Map()
+    directorate: new Map(),
+    cabinet: new Map()
   };
+  public representativeAllocations: Map<string, { directorates: Map<string, { startYear: number, endYear: number }>, cabinets: Map<string, { startDate: Date, endDate: Date }> }> = new Map();
   public groupedDates: Map<string, boolean> = new Map();
   public lobbyistDegreeThreshold: number = 1;
   public maxVisibleLobbyistDegree: number = 10;
@@ -49,19 +51,58 @@ export class MeetingManager {
     this.uniqueEntities['lobbyist'].clear();
     this.uniqueEntities['representative'].clear();
     this.uniqueEntities['directorate'].clear();
+    this.uniqueEntities['cabinet'].clear();
+    this.representativeAllocations.clear();
 
     this.meetingsData.forEach(meeting => {
       this.uniqueEntities['lobbyist'].set(meeting.lobbyist_id, meeting.lobbyist_name);
-      this.uniqueEntities['representative'].set(meeting.representative_id, meeting.representative_name);
-      this.uniqueEntities['directorate'].set(meeting.directorate_id, meeting.directorate_name);
+
+      if (Array.isArray(meeting.participants)) {
+        meeting.participants.forEach(p => {
+            this.uniqueEntities['representative'].set(p.representative_id, p.representative_name);
+            this.uniqueEntities['directorate'].set(p.directorate_id, p.directorate_name);
+            this.uniqueEntities['cabinet'].set(p.cabinet_id, p.cabinet_name);
+
+            if (!this.representativeAllocations.has(p.representative_id)) {
+            this.representativeAllocations.set(p.representative_id, {
+                directorates: new Map(),
+                cabinets: new Map()
+            });
+            }
+
+            const repData = this.representativeAllocations.get(p.representative_id)!;
+
+            if (p.directorate_name && p.directorate_name !== '?') {
+                const year = new Date(meeting.date).getFullYear();
+                if (!repData.directorates.has(p.directorate_name)) {
+                    repData.directorates.set(p.directorate_name, { startYear: year, endYear: year });
+                } else {
+                    const d = repData.directorates.get(p.directorate_name)!;
+                    d.startYear = Math.min(d.startYear, year);
+                    d.endYear = Math.max(d.endYear, year);
+                }
+            }
+
+            if (p.cabinet_name && p.cabinet_name !== '?') {
+                const meetingDate = new Date(meeting.date);
+                if (!repData.cabinets.has(p.cabinet_name)) {
+                    repData.cabinets.set(p.cabinet_name, { startDate: meetingDate, endDate: meetingDate });
+                } else {
+                    const c = repData.cabinets.get(p.cabinet_name)!;
+                    c.startDate = (meetingDate < c.startDate) ? meetingDate : c.startDate;
+                    c.endDate = (meetingDate > c.endDate) ? meetingDate : c.endDate;
+                }
+            }
+        });
+      }
     });
   }
 
-  getUniqueEntities(entityType: 'lobbyist' | 'representative' | 'directorate'): Map<string, string> {
+  getUniqueEntities(entityType: 'lobbyist' | 'representative' | 'directorate' | 'cabinet'): Map<string, string> {
     return this.uniqueEntities[entityType];
   }
 
-  getEntityName(id: string, type: 'lobbyist' | 'representative' | 'directorate'): string {
+  getEntityName(id: string, type: 'lobbyist' | 'representative' | 'directorate' | 'cabinet'): string {
     return this.uniqueEntities[type].get(id) || '';
   }
 
@@ -80,62 +121,94 @@ export class MeetingManager {
         meeting.date <= endDate &&
         lobbyistMeetingCount.get(meeting.lobbyist_id)! >= this.lobbyistDegreeThreshold
     );
-}
+  }
 
 
   computeOptimizedNodePositions(
-    entityType: 'lobbyist' | 'representative' | 'directorate',
+    entityType: 'lobbyist' | 'representative' | 'directorate' | 'cabinet',
     width: number,
     startDate: Date,
     endDate: Date,
     displayStartDate: Date,
     displayEndDate: Date
-): Map<string, number> {
-    const timeScale = d3.scaleTime()
-        .domain([displayStartDate, displayEndDate])
-        .range([50, width - 50]);
-        
-    let filteredMeetings = this.getFilteredMeetingsByInterval(startDate, endDate);
+  ): Map<string, number> {
+      const timeScale = d3.scaleTime()
+          .domain([displayStartDate, displayEndDate])
+          .range([50, width - 50]);
 
-    if (entityType === "lobbyist") {
-      filteredMeetings = this.replaceLobbistsWithGroups(filteredMeetings);
-    }
+      let filteredMeetings = this.getFilteredMeetingsByInterval(startDate, endDate);
 
-    const entityMeetings = new Map<string, number[]>();
+      if (entityType === "lobbyist") {
+          filteredMeetings = this.replaceLobbistsWithGroups(filteredMeetings);
+      }
 
-    filteredMeetings.forEach(meeting => {
-        let id =
-            entityType === 'lobbyist'
-                ? meeting.lobbyist_id
-                : entityType === 'representative'
-                ? meeting.representative_id
-                : meeting.directorate_id;
+      const entityMeetings = new Map<string, { positions: number[], type: 'lobbyist' | 'representative' | 'directorate' | 'cabinet' | 'dummy' }>();
 
-        if (!entityMeetings.has(id)) {
-            entityMeetings.set(id, []);
-        }
-        entityMeetings.get(id)?.push(timeScale(meeting.date));
-    });
+      filteredMeetings.forEach(meeting => {
+          if (entityType === 'lobbyist') {
+              const id = meeting.lobbyist_id;
+              if (!entityMeetings.has(id)) entityMeetings.set(id, { positions: [], type: 'lobbyist' });
+              entityMeetings.get(id)!.positions.push(timeScale(meeting.date));
 
-    const sortedEntities = Array.from(entityMeetings.entries())
-        .map(([id, positions]) => ({
-            id,
-            centroid: positions.reduce((a, b) => a + b, 0) / positions.length
-        }))
-        .sort((a, b) => a.centroid - b.centroid);
+          } else if (entityType === 'representative') {
+              meeting.participants.forEach(part => {
+                  const id = part.representative_id;
+                  if (!entityMeetings.has(id)) entityMeetings.set(id, { positions: [], type: 'representative' });
+                  entityMeetings.get(id)!.positions.push(timeScale(meeting.date));
+              });
 
-    const finalPositions = new Map<string, number>();
-    let previousX = 0;
-    const minSpacing = 20;
-    const maxX = width - 10;
+          } else if (entityType === 'directorate' || entityType === 'cabinet') {
+              meeting.participants.forEach(part => {
+                  if (part.directorate_id) {
+                      if (!entityMeetings.has(part.directorate_id) || entityMeetings.get(part.directorate_id)!.type !== 'directorate') {
+                          entityMeetings.set(part.directorate_id, { positions: [], type: 'directorate' });
+                      }
+                      entityMeetings.get(part.directorate_id)!.positions.push(timeScale(meeting.date));
+                  }
+                  if (part.cabinet_id) {
+                      if (!entityMeetings.has(part.cabinet_id) || entityMeetings.get(part.cabinet_id)!.type !== 'cabinet') {
+                          entityMeetings.set(part.cabinet_id, { positions: [], type: 'cabinet' });
+                      }
+                      entityMeetings.get(part.cabinet_id)!.positions.push(timeScale(meeting.date));
+                  }
+                  if(!part.directorate_id && !part.cabinet_id) {
+                      const id = 'DUMMY-ID';
+                      if (!entityMeetings.has(id)) entityMeetings.set(id, { positions: [], type: 'cabinet' });
+                      entityMeetings.get(id)!.positions.push(timeScale(meeting.date));
+                  }
+              });
+          }
+      });
 
-    sortedEntities.forEach(({ id, centroid }) => {
-        const optimalX = Math.max(centroid, previousX + minSpacing);
-        finalPositions.set(id, optimalX);
-        previousX = optimalX;
-    });
+      const sortedEntities = Array.from(entityMeetings.entries())
+          .map(([id, data]) => ({
+              id,
+              type: data.type,
+              centroid: data.positions.reduce((a, b) => a + b, 0) / data.positions.length
+          }))
+          .sort((a, b) => a.centroid - b.centroid);
 
-    return this.shiftNodes(finalPositions, maxX);
+      const finalPositions = new Map<string, number>();
+      let previousX = 0;
+      const minSpacing = 20;
+      const maxX = width - 10;
+
+      sortedEntities.forEach(({ id, centroid }) => {
+          const optimalX = Math.max(centroid, previousX + minSpacing);
+          finalPositions.set(id, optimalX);
+          previousX = optimalX;
+      });
+
+      const shifted = this.shiftNodes(finalPositions, maxX);
+
+      const filteredFinal = new Map<string, number>();
+      sortedEntities.forEach(({ id, type }) => {
+          if ((type === entityType && shifted.has(id))) {
+              filteredFinal.set(id, shifted.get(id)!);
+          }
+      });
+
+      return filteredFinal;
   }
 
   shiftNodes(map: Map<string, number>, maxValue: number): Map<string, number> {

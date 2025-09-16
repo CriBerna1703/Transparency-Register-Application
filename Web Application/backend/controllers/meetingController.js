@@ -1,5 +1,7 @@
-const { Meeting, CommissionRepresentative, Directorate, Lobbyist, RepresentativeAllocation, Field } = require('../models');
+const { Meeting, CommissionRepresentative, Directorate, Lobbyist, RepresentativeAllocation, Field, MeetingRepresentative, CommissionCabinet} = require('../models');
 const { Op, Sequelize } = require('sequelize');
+const sequelize = require('../config/db');
+const mysql = require('mysql2/promise');
 
 function ensureArray(param) {
     if (!param) return [];
@@ -7,6 +9,7 @@ function ensureArray(param) {
 }
 
 module.exports = {
+
     async getFilteredMeetings(req, res) {
         try {
             const { filter_type, keywords, date_from, date_to } = req.query;
@@ -17,114 +20,163 @@ module.exports = {
             const field_ids = ensureArray(req.query.field_ids);
             const minBudget = parseInt(req.query.minBudget);
             const maxBudget = parseInt(req.query.maxBudget);
+            const meeting_number = req.query.meeting_number;
+            const cabinet_ids = ensureArray(req.query.cabinet_ids);
 
-            let whereClause = {};
+            let whereClauses = [];
+            let params = [];
 
+            // Date range
             if (date_from && date_to) {
-                whereClause.meeting_date = {
-                    [Op.between]: [new Date(date_from), new Date(date_to)],
-                };
+                whereClauses.push("cm.meeting_date BETWEEN ? AND ?");
+                params.push(date_from, date_to);
             }
 
-            if (keywords && keywords.length > 0) {
-                const keywordArray = ensureArray(keywords);
-              
-                const topicConditions = keywordArray.map((keyword) => {
-                  const trimmed = keyword.trim();
-              
-                  if (trimmed.startsWith('"') && trimmed.endsWith('"')) {
-                    const clean = trimmed.slice(1, -1).trim();
-                    const escaped = clean.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-              
-                    return Sequelize.where(
-                      Sequelize.col('topic'),
-                      {
-                        [Op.regexp]: `(^|[\\s.,;!?()/:\\-])${escaped}([\\s.,;!?()/:\\-]|$)`
-                      }
-                    );
-                  } else {
-                    return {
-                      topic: { [Op.like]: `%${trimmed}%` }
-                    };
-                  }
+            // Meeting number
+            if (meeting_number) {
+                whereClauses.push("cm.meeting_number = ?");
+                params.push(meeting_number);
+            }
+
+            // Keywords in topic
+            if (keywords) {
+                const kws = Array.isArray(keywords) ? keywords : [keywords];
+                let keywordConditions = kws.map(kw => {
+                if (kw.startsWith('"') && kw.endsWith('"')) {
+                    return "cm.topic REGEXP ?";
+                } else {
+                    return "cm.topic LIKE ?";
+                }
                 });
-              
-                filter_type === 'AND'
-                  ? (whereClause[Op.and] = topicConditions)
-                  : (whereClause[Op.or] = topicConditions);
-              }
-                        
+                whereClauses.push(`(${keywordConditions.join(filter_type === 'AND' ? ' AND ' : ' OR ')})`);
 
-            if (lobbyist_ids.length > 0) {
-                whereClause.lobbyist_id = { [Op.or]: lobbyist_ids };
+                kws.forEach(kw => {
+                if (kw.startsWith('"') && kw.endsWith('"')) {
+                    params.push(`(^|[\\s.,;!?()/:\\-])${kw.slice(1, -1)}([\\s.,;!?()/:\\-]|$)`);
+                } else {
+                    params.push(`%${kw}%`);
+                }
+                });
             }
 
-            let representativeWhereClause = {};
-            if (representative_ids.length > 0) {
-                representativeWhereClause.id = { [Op.or]: representative_ids };
+            // Filtri su id
+            if (lobbyist_ids?.length) {
+                whereClauses.push(`cm.lobbyist_id IN (${lobbyist_ids.map(() => '?').join(',')})`);
+                params.push(...lobbyist_ids);
+            }
+            if (representative_ids?.length) {
+                whereClauses.push(`cr.id IN (${representative_ids.map(() => '?').join(',')})`);
+                params.push(...representative_ids);
+            }
+            if (directorate_ids?.length) {
+                whereClauses.push(`d.id IN (${directorate_ids.map(() => '?').join(',')})`);
+                params.push(...directorate_ids);
+            }
+            if (cabinet_ids?.length) {
+                whereClauses.push(`cc.id IN (${cabinet_ids.map(() => '?').join(',')})`);
+                params.push(...cabinet_ids);
+            }
+            if (field_ids?.length) {
+                whereClauses.push(`fi.id IN (${field_ids.map(() => '?').join(',')})`);
+                params.push(...field_ids);
             }
 
-            let directorateWhereClause = {};
-            if (directorate_ids.length > 0) {
-                directorateWhereClause.id = { [Op.or]: directorate_ids };
+            // Filtri budget
+            if (minBudget && maxBudget) {
+                whereClauses.push("(lp.annual_cost_estimate_min <= ? AND lp.annual_cost_estimate_max >= ?)");
+                params.push(maxBudget, minBudget);
+            } else if (minBudget) {
+                whereClauses.push("lp.annual_cost_estimate_max >= ?");
+                params.push(minBudget);
+            } else if (maxBudget) {
+                whereClauses.push("lp.annual_cost_estimate_min <= ?");
+                params.push(maxBudget);
             }
 
-            let fieldWhereClause = {};
-            if (field_ids.length > 0) {
-                fieldWhereClause.field_id = { [Op.or]: field_ids };
-            }
+            // Query finale
+            const query = `
+                SELECT DISTINCT
+                    lp.lobbyist_id,
+                    lp.organization_name,
+                    cr.id AS representative_id,
+                    cr.name AS representative_name,
+                    d.id AS directorate_id,
+                    d.name AS directorate_name,
+                    cc.id AS cabinet_id,
+                    cc.name AS cabinet_name,
+                    cm.meeting_number,
+                    cm.meeting_date,
+                    cm.topic,
+                    ra.role as representative_role,
+                    ra.year as representative_year
+                FROM commission_meetings AS cm
+                LEFT JOIN meeting_representatives AS mr
+                    ON cm.lobbyist_id = mr.lobbyist_id AND cm.meeting_number = mr.meeting_number
+                LEFT JOIN commission_representative AS cr
+                    ON mr.representative_id = cr.id
+                LEFT JOIN representative_allocation AS ra
+                    ON cr.id = ra.representative_id AND YEAR(cm.meeting_date) = ra.year
+                LEFT JOIN directorate AS d
+                    ON ra.directorate_id = d.id
+                LEFT JOIN commission_cabinet AS cc
+                    ON mr.cabinet_id = cc.id
+                INNER JOIN lobbyist_profile AS lp
+                    ON cm.lobbyist_id = lp.lobbyist_id
+                LEFT JOIN lobbyist_fields_of_interest AS lfi
+                    ON lp.lobbyist_id = lfi.lobbyist_id
+                LEFT JOIN fields_of_interest AS fi
+                    ON lfi.field_id = fi.field_id
+                ${whereClauses.length ? 'WHERE ' + whereClauses.join(' AND ') : ''}
+                ORDER BY cm.meeting_date DESC
+            `;
 
-            let lobbyistWhereClause = {};
+            const [rows] = await sequelize.query(query, { replacements: params });
+            const meetingsMap = {};
 
-            if (!isNaN(minBudget) && !isNaN(maxBudget)) {
-                lobbyistWhereClause[Op.and] = [
-                    { annual_cost_estimate_min: { [Op.lte]: maxBudget } },
-                    { annual_cost_estimate_max: { [Op.gte]: minBudget } }
-                ];
-            } else if (!isNaN(minBudget)) {
-                lobbyistWhereClause.annual_cost_estimate_max = { [Op.gte]: minBudget };
-            } else if (!isNaN(maxBudget)) {
-                lobbyistWhereClause.annual_cost_estimate_min = { [Op.lte]: maxBudget };
-            }
+            rows.forEach(row => {
+                const key = `${row.lobbyist_id}_${row.meeting_number}`;
+                
+                if (!meetingsMap[key]) {
+                    meetingsMap[key] = {
+                        lobbyist_profile: {
+                            lobbyist_id: row.lobbyist_id,
+                            organization_name: row.organization_name
+                        },
+                        commission_meetings: {
+                            lobbyist_id: row.lobbyist_id,
+                            meeting_number: row.meeting_number,
+                            meeting_date: row.meeting_date,
+                            topic: row.topic
+                        },
+                        participants: []
+                    };
+                }
 
-            const meetings = await Meeting.findAll({
-                where: whereClause,
-                include: [
-                    {
-                        model: CommissionRepresentative,
-                        required: representative_ids.length > 0 || directorate_ids.length > 0,
-                        where: representativeWhereClause,
-                        include: [
-                            {
-                                model: RepresentativeAllocation,
-                                required: directorate_ids.length > 0,
-                                where: Sequelize.literal('YEAR(Meeting.meeting_date) = `CommissionRepresentative->RepresentativeAllocations`.year'),
-                                include: [
-                                    {
-                                        model: Directorate,
-                                        required: directorate_ids.length > 0,
-                                        where: directorateWhereClause,
-                                    },
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        model: Lobbyist,
-                        required: true,
-                        where: lobbyistWhereClause,
-                        include: [
-                            {
-                                model: Field,
-                                required: field_ids.length > 0,
-                                where: fieldWhereClause,
-                            },
-                        ],
-                    },
-                ],
+                if (row.representative_id || row.directorate_id || row.cabinet_id) {
+                    meetingsMap[key].participants.push({
+                        commission_representative: {
+                            id: row.representative_id,
+                            name: row.representative_name
+                        },
+                        directorate: {
+                            id: row.directorate_id,
+                            name: row.directorate_name
+                        },
+                        allocation: {
+                            role: row.representative_role,
+                            year: row.representative_year
+                        },
+                        commission_cabinet: {
+                            id: row.cabinet_id,
+                            name: row.cabinet_name
+                        }
+                    });
+                }
             });
 
-            res.json(meetings);
+            const result = Object.values(meetingsMap);
+
+            res.json(result);
         } catch (error) {
             console.error(error);
             res.status(500).json({ error: 'Errore nel recupero degli incontri.', details: error.message });
@@ -139,49 +191,6 @@ module.exports = {
             res.json(meetings);
         } catch (error) {
             res.status(500).json({ error: 'Errore nel recupero degli incontri.', details: error.message });
-        }
-    },
-
-    // Nuovo metodo per recuperare un incontro filtrando per lobbyist_id e meeting_number
-    async getMeetingByLobbyistAndNumber(req, res) {
-        try {
-            const { lobbyist_id, meeting_number } = req.params;
-
-            const meeting = await Meeting.findOne({
-                where: { lobbyist_id, meeting_number },
-                include: [
-                    {
-                        model: CommissionRepresentative,
-                        required: false,
-                        include: [
-                            {
-                                model: RepresentativeAllocation,
-                                required: false,
-                                where: Sequelize.literal('YEAR(Meeting.meeting_date) = `CommissionRepresentative->RepresentativeAllocations`.year'),
-                                include: [
-                                    {
-                                        model: Directorate,
-                                        required: false,
-                                    },
-                                ],
-                            },
-                        ],
-                    },
-                    {
-                        model: Lobbyist,
-                        required: false,
-                    },
-                ],
-            });
-
-            if (meeting) {
-                res.json(meeting);
-            } else {
-                res.status(404).json({ error: 'Meeting non trovato.' });
-            }
-        } catch (error) {
-            console.error(error);
-            res.status(500).json({ error: 'Errore nel recupero dell\'incontro.', details: error.message });
         }
     },
 };

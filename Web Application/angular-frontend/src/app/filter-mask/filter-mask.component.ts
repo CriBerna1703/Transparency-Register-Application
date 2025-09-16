@@ -22,12 +22,12 @@ export class FilterMaskComponent {
   directorates: any[] = [];
   lobbyists: any[] = [];
   fields: any[] = [];
-  commissioners: any[] = [];
+  commissioners: RepresentativeWithCabinets[] = [];
 
   filteredDirectorates: any[] = [];
   filteredLobbyists: any[] = [];
   filteredFields: any[] = [];
-  filteredCommissioners: any[] = [];
+  filteredCommissioners: RepresentativeWithCabinets[] = [];
 
   selectedDirectorates: any[] = [];
   selectedLobbyists: any[] = [];
@@ -67,7 +67,11 @@ export class FilterMaskComponent {
     commissioners: false,
     keywords: false,
     budget: false
-  };  
+  };
+
+  viewMode: 'flat' | 'tree' = 'flat';
+  cabinetGroups: CabinetGroup[] = [];
+  filteredCabinetGroups: CabinetGroup[] = [];
 
   constructor(private dataService: DataService, private filterService: FilterService) {}
 
@@ -91,9 +95,12 @@ export class FilterMaskComponent {
       this.fields = data;
       this.filteredFields = [...this.fields];
     });
-    this.dataService.getCommissioners().subscribe(data => {
-      this.commissioners = data;
+    this.dataService.getCommissioners().subscribe((data: RepresentativeWithCabinets[]) => {
+      this.commissioners = (data || []).map(r => ({ ...r, cabinets: r.cabinets ?? [] }));
       this.filteredCommissioners = [...this.commissioners];
+
+      this.cabinetGroups = this.buildCabinetTree(this.commissioners);
+      this.filteredCabinetGroups = [...this.cabinetGroups];
     });
   }
 
@@ -172,9 +179,81 @@ export class FilterMaskComponent {
   }
 
   filterCommissioners() {
-    this.filteredCommissioners = this.commissioners.filter(comm =>
-      comm.name.toLowerCase().includes(this.searchCommissioner.toLowerCase())
-    );
+    const q = this.norm(this.searchCommissioner);
+
+    this.filteredCommissioners = this.commissioners.filter(comm => {
+      if (!q) return true;
+      return this.norm(comm.name).includes(q);
+    });
+
+    const allGroups = this.buildCabinetTree(this.commissioners);
+    if (!q) {
+      this.filteredCabinetGroups = allGroups;
+      return;
+    }
+
+    this.filteredCabinetGroups = allGroups
+      .map(g => {
+        const cabinetMatch = this.norm(g.cabinetName).includes(q);
+        const childMatches = g.reps.filter(r => this.norm(r.name).includes(q));
+        if (cabinetMatch) return g;
+        if (childMatches.length) return { ...g, reps: childMatches };
+        return null;
+      })
+      .filter(Boolean) as CabinetGroup[];
+  }
+
+  isRepSelected(repId: number): boolean {
+    return this.selectedCommissioners.some(s => s.id === repId);
+  }
+
+  toggleRepSelection(repId: number, name: string) {
+    const i = this.selectedCommissioners.findIndex(s => s.id === repId);
+    if (i >= 0) this.selectedCommissioners.splice(i, 1);
+    else this.selectedCommissioners.push({ id: repId, name });
+  }
+
+  toggleCabinetRepSelection(group: CabinetGroup) {
+    if (!group.cabinetRepresentativeId) return;
+    this.toggleRepSelection(group.cabinetRepresentativeId, group.cabinetName || 'No cabinet');
+  }
+
+  private groupAllIds(group: CabinetGroup): {id: number, name: string}[] {
+    const list = [...group.reps];
+    if (group.cabinetRepresentativeId && !list.some(x => x.id === group.cabinetRepresentativeId)) {
+      list.unshift({ id: group.cabinetRepresentativeId, name: group.cabinetName || 'No cabinet' });
+    }
+    return list;
+  }
+
+  isCabinetAllSelected(group: CabinetGroup): boolean {
+    const all = this.groupAllIds(group);
+    return all.length > 0 && all.every(r => this.isRepSelected(r.id));
+  }
+
+  isCabinetSomeSelected(group: CabinetGroup): boolean {
+    const all = this.groupAllIds(group);
+    if (!all.length) return false;
+    const selected = all.filter(r => this.isRepSelected(r.id)).length;
+    return selected > 0 && selected < all.length;
+  }
+
+  toggleCabinetSelection(group: CabinetGroup) {
+    const all = this.groupAllIds(group);
+    const allSelected = all.every(r => this.isRepSelected(r.id));
+
+    if (allSelected) {
+      all.forEach(r => {
+        const i = this.selectedCommissioners.findIndex(s => s.id === r.id);
+        if (i >= 0) this.selectedCommissioners.splice(i, 1);
+      });
+    } else {
+      all.forEach(r => {
+        if (!this.isRepSelected(r.id)) {
+          this.selectedCommissioners.push({ id: r.id, name: r.name });
+        }
+      });
+    }
   }
 
   addKeyword() {
@@ -239,5 +318,66 @@ export class FilterMaskComponent {
       console.warn("There are errors in the date fields.");
     }
   }
-  
+
+  private buildCabinetTree(reps: RepresentativeWithCabinets[]): CabinetGroup[] {
+    const map = new Map<string, CabinetGroup>();
+
+    for (const r of reps) {
+      const cabinets = (r.cabinets && r.cabinets.length)
+        ? r.cabinets
+        : [{ id: null, name: 'No cabinet', representative_id: null }];
+
+      for (const c of cabinets) {
+        const key = `${c.id ?? 'null'}|${c.name ?? 'No cabinet'}`;
+        if (!map.has(key)) {
+          map.set(key, {
+            cabinetId: c.id ?? null,
+            cabinetName: c.name ?? 'No cabinet',
+            cabinetRepresentativeId: c.representative_id ?? null,
+            reps: []
+          });
+        }
+        const g = map.get(key)!;
+        if (!g.reps.some(x => x.id === r.id)) {
+          g.reps.push({ id: r.id, name: r.name });
+        }
+      }
+    }
+
+    const groups = Array.from(map.values())
+      .sort((a, b) => (a.cabinetName || '').localeCompare(b.cabinetName || ''));
+    groups.forEach(g => g.reps.sort((a, b) => a.name.localeCompare(b.name)));
+
+    return groups;
+  }
+
+
+  private norm(v: any): string {
+    return (v ?? '')
+      .toString()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .trim();
+  }
 }
+
+interface CabinetLink {
+  id: number | null;
+  name: string | null;
+  representative_id: number | null;
+}
+
+interface RepresentativeWithCabinets {
+  id: number;
+  name: string;
+  cabinets: CabinetLink[];
+}
+
+interface CabinetGroup {
+  cabinetId: number | null;
+  cabinetName: string | null;
+  cabinetRepresentativeId: number | null;
+  reps: { id: number; name: string }[];
+}
+

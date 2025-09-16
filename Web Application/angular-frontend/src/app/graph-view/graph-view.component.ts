@@ -117,8 +117,8 @@ export class GraphViewComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.meetingsSubscription = this.filterService.meetings$.subscribe(meetings => {
       const meetingLobbyists = meetings.map(meeting => ({
-        lobbyist_id: meeting.lobbyist_id,
-        lobbyist_name: meeting.Lobbyist.organization_name
+        lobbyist_id: meeting.lobbyist_profile.lobbyist_id,
+        lobbyist_name: meeting.lobbyist_profile.organization_name
       }));
 
       const uniqueLobbyistsMap = new Map<string, string>();
@@ -136,7 +136,7 @@ export class GraphViewComponent implements OnInit, OnDestroy {
         fieldVector: new Array(40).fill(0)
       })).sort((a, b) => a.lobbyist_name.localeCompare(b.lobbyist_name));
 
-      const dates = meetings.map(m => new Date(m.meeting_date));
+      const dates = meetings.map(m => new Date(m.commission_meetings.meeting_date));
       this.startDate = new Date(Math.min(...dates.map(d => d.getTime())));
       this.endDate = new Date(Math.max(...dates.map(d => d.getTime())));
 

@@ -92,31 +92,93 @@
           </div>
         </div>
       </div>
-      <!-- Accordion Commissioners -->
+      <!-- Commissionersi -->
       <div class="filter-group">
-        <div class="accordion-header" (click)="toggleSection('commissioners')"> Eur. Comm. officials ({{ selectedCommissioners.length === 0 ? 'All selected' : selectedCommissioners.length + ' selected' }}) <span class="arrow">{{ expandedSections.commissioners ? '▲' : '▼' }}</span>
+        <div class="accordion-header" (click)="toggleSection('commissioners')">
+          Eur. Comm. officials ({{ selectedCommissioners.length === 0 ? 'All selected' : selectedCommissioners.length + ' selected' }})
+          <span class="arrow">{{ expandedSections.commissioners ? '▲' : '▼' }}</span>
         </div>
+
         <div *ngIf="expandedSections.commissioners" class="accordion-content">
-          <input type="text" placeholder="Search Commissioner..." [(ngModel)]="searchCommissioner" (input)="filterCommissioners()">
+          <div class="view-switch">
+            <label><input type="radio" name="commView" value="flat" [(ngModel)]="viewMode"> Flat</label>
+            <label><input type="radio" name="commView" value="tree" [(ngModel)]="viewMode"> By Cabinet</label>
+          </div>
+
+          <input type="text" placeholder="Search Commissioner or Cabinet..." [(ngModel)]="searchCommissioner" (input)="filterCommissioners()">
+
+          <!-- Any -->
           <div class="multi-select">
             <ul>
               <li>
                 <label>
-                  <input type="checkbox" [checked]="isAnySelected(selectedCommissioners)" 
-                         (change)="toggleAnySelection(selectedCommissioners)">
+                  <input type="checkbox" [checked]="isAnySelected(selectedCommissioners)"
+                        (change)="toggleAnySelection(selectedCommissioners)">
                   Any
                 </label>
               </li>
+            </ul>
+          </div>
+
+          <!-- VISTA PIATTA -->
+          <div *ngIf="viewMode === 'flat'" class="multi-select">
+            <ul>
               <li *ngFor="let comm of filteredCommissioners">
                 <label>
-                  <input type="checkbox" [checked]="isSelected(comm, selectedCommissioners, 'id')" (change)="toggleSelection(comm, selectedCommissioners, 'id')">
+                  <input type="checkbox"
+                        [checked]="isSelected(comm, selectedCommissioners, 'id')"
+                        (change)="toggleSelection(comm, selectedCommissioners, 'id')">
                   {{ comm.name }}
                 </label>
               </li>
             </ul>
           </div>
+
+
+          <!-- VISTA AD ALBERO PER CABINET -->
+          <div *ngIf="viewMode === 'tree'" class="cabinet-tree">
+            <ul class="cabinet-list">
+              <li *ngFor="let group of filteredCabinetGroups" class="cabinet-item">
+
+                <!-- Titolo livello 1 -->
+                <label class="cabinet-label"
+                      [class.indeterminate]="isCabinetSomeSelected(group) && !isCabinetAllSelected(group)">
+                  <input type="checkbox"
+                        [checked]="isCabinetAllSelected(group)"
+                        (change)="toggleCabinetSelection(group)">
+                  Team member of {{ group.cabinetName || 'No cabinet' }}
+                  <small>({{ group.reps.length + (group.cabinetRepresentativeId ? 1 : 0) }})</small>
+                </label>
+
+                <!-- Livello 2 -->
+                <ul class="rep-list">
+
+                  <li class="cabinet-self" *ngIf="group.cabinetRepresentativeId">
+                    <label class="cabinet-self-label">
+                      <input type="checkbox"
+                            [checked]="isRepSelected(group.cabinetRepresentativeId)"
+                            (change)="toggleCabinetRepSelection(group)">
+                      <strong>{{ group.cabinetName }}</strong>
+                    </label>
+                  </li>
+
+                  <li *ngFor="let rep of group.reps"
+                      [hidden]="group.cabinetRepresentativeId && rep.id === group.cabinetRepresentativeId">
+                    <label>
+                      <input type="checkbox"
+                            [checked]="isRepSelected(rep.id)"
+                            (change)="toggleRepSelection(rep.id, rep.name)">
+                      {{ rep.name }}
+                    </label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
+
       <!-- Accordion Keywords -->
       <div class="filter-group">
         <div class="accordion-header" (click)="toggleSection('keywords')"> Keywords ({{ keywords.length }} added) <span class="arrow">{{ expandedSections.keywords ? '▲' : '▼' }}</span>

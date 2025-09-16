@@ -96,9 +96,9 @@ export class InfoTabsComponent implements OnChanges {
   
         this.dataService.getMeetingByLobbyistAndNumber(lobbyistId, meetingNumber).pipe(
           tap((data) => {
-            newTab.data = data;
+            newTab.data = data[0];
             newTab.isLoading = false;
-            newTab.title = `Meeting on ${new Date(data.meeting_date).toLocaleDateString()}`;
+            newTab.title = `Meeting on ${new Date(data[0].commission_meetings.meeting_date).toLocaleDateString()}`;
           }),
           catchError((error) => {
             newTab.isLoading = false;

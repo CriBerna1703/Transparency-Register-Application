@@ -92,18 +92,36 @@ CREATE TABLE IF NOT EXISTS directorate (
     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Table for Commission cabinets
+CREATE TABLE IF NOT EXISTS commission_cabinet (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE,          -- Nome del gabinetto
+    creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Table for meetings with the European Commission
 CREATE TABLE IF NOT EXISTS commission_meetings (
     lobbyist_id VARCHAR(50),                     -- Lobbyist ID (foreign key)
     meeting_number INT,                          -- Meeting number
     meeting_date DATE,                           -- Meeting date
     topic TEXT,                                  -- Meeting topic
-    representative_id INT,                       -- Main representative of the Commission
     location VARCHAR(255),                       -- Corresponding department or office
     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (lobbyist_id, meeting_number),   -- Composite primary key
-    FOREIGN KEY (lobbyist_id) REFERENCES lobbyist_profile(lobbyist_id) ON DELETE CASCADE,
-    FOREIGN KEY (representative_id) REFERENCES commission_representative(id) ON DELETE CASCADE
+    FOREIGN KEY (lobbyist_id) REFERENCES lobbyist_profile(lobbyist_id) ON DELETE CASCADE
+);
+
+-- Table to link meetings and representatives
+CREATE TABLE IF NOT EXISTS meeting_representatives (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    lobbyist_id VARCHAR(50) NOT NULL,          -- parte della chiave esterna verso meeting
+    meeting_number INT NOT NULL,               -- parte della chiave esterna verso meeting
+    representative_id INT NOT NULL,            -- FK verso commission_representative
+    cabinet_id INT NULL,                       -- FK verso commission_cabinet (opzionale)
+    creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (lobbyist_id, meeting_number) REFERENCES commission_meetings(lobbyist_id, meeting_number) ON DELETE CASCADE,
+    FOREIGN KEY (representative_id) REFERENCES commission_representative(id) ON DELETE CASCADE,
+    FOREIGN KEY (cabinet_id) REFERENCES commission_cabinet(id) ON DELETE SET NULL
 );
 
 -- Table for representatives allocation
@@ -116,4 +134,12 @@ CREATE TABLE IF NOT EXISTS representative_allocation (
     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (representative_id) REFERENCES commission_representative(id) ON DELETE CASCADE,
     FOREIGN KEY (directorate_id) REFERENCES directorate(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    role VARCHAR(50) DEFAULT 'user', -- ad esempio: 'admin', 'read-only', ecc.
+    last_password_change DATETIME DEFAULT CURRENT_TIMESTAMP
 );

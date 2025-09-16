@@ -31,6 +31,10 @@ export class DataService {
     return this.http.get(`${this.apiUrl}/directorates/${directorate_id}`);
   }
 
+  getCabinetDetails(cabinet_id: string): Observable<any> {
+    return this.http.get(`${this.apiUrl}/cabinets/${cabinet_id}`);
+  }
+
   getCommissioners(): Observable<any> {
     return this.http.get(`${this.apiUrl}/commission-representatives`);
   }
@@ -75,6 +79,11 @@ export class DataService {
         params = params.append('directorate_ids', id.toString());
       });
     }
+    if (filters.cabinet_ids && filters.cabinet_ids.length > 0) {
+      filters.cabinet_ids.forEach((id: number) => {
+        params = params.append('cabinet_ids', id.toString());
+      });
+    }
     if (filters.field_ids && filters.field_ids.length > 0) {
       filters.field_ids.forEach((id: number) => {
         params = params.append('field_ids', id.toString());
@@ -96,7 +105,10 @@ export class DataService {
   }
   
   getMeetingByLobbyistAndNumber(lobbyistId: string, meetingNumber: string): Observable<any> {
-    return this.http.get(`${this.apiUrl}/meetings/${lobbyistId}/${meetingNumber}`);
+    let params = new HttpParams()
+      .set('lobbyist_ids', lobbyistId)
+      .set('meeting_number', meetingNumber);
+    return this.http.get(`${this.apiUrl}/meetings/filter`, { params });
   }
   
   getSimilarities(payload: { startDate: string; endDate: string; lobbyist_ids: string[] }): Observable<any> {

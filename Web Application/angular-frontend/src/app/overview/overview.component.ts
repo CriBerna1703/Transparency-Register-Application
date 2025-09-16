@@ -41,7 +41,7 @@ export class OverviewComponent implements OnInit {
     const allMeetings = this.filterService.getCurrentMeetings();
     this.maxDegree = this.calculateMaxDegree(allMeetings);
 
-    this.rawData = allMeetings.map(m => new Date(m.meeting_date));
+    this.rawData = allMeetings.map(m => new Date(m.commission_meetings.meeting_date));
     const aggregatedData = this.aggregateData(this.rawData, this.selectedAggregation);
     
     this.labels = aggregatedData.labels;
