@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { tap } from 'rxjs/operators';
 import { jwtDecode } from 'jwt-decode';
+import { environment } from '../../environments/environment';
 
 interface JwtPayload {
   exp: number; // standard claim
@@ -14,12 +15,12 @@ interface JwtPayload {
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:8089/api/auth'; // backend login route
+  private apiUrl = environment.apiBaseUrl + '/auth/login';
 
   constructor(private http: HttpClient, private router: Router) {}
 
   login(username: string, password: string) {
-    return this.http.post<{ token: string }>(`${this.apiUrl}/login`, { username, password })
+    return this.http.post<{ token: string }>(`${this.apiUrl}`, { username, password })
       .pipe(
         tap(response => {
           localStorage.setItem('auth_token', response.token);
