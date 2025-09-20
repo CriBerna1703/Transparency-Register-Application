@@ -360,6 +360,55 @@ export class FilterMaskComponent {
       .toLowerCase()
       .trim();
   }
+
+  page = 1;
+  pageSize = 100;
+  pageInput = 1;
+
+  get paginatedLobbyists() {
+    const start = (this.page - 1) * this.pageSize;
+    return this.filteredLobbyists.slice(start, start + this.pageSize);
+  }
+
+  get totalPages() {
+    return Math.ceil(this.filteredLobbyists.length / this.pageSize);
+  }
+
+  nextPage() {
+    if (this.page < this.totalPages) {
+      this.page++;
+      this.pageInput = this.page;
+    }
+  }
+
+  prevPage() {
+    if (this.page > 1) {
+      this.page--;
+      this.pageInput = this.page;
+    }
+  }
+
+  goFirst() {
+    this.page = 1;
+    this.pageInput = this.page;
+  }
+
+  goLast() {
+    this.page = this.totalPages;
+    this.pageInput = this.page;
+  }
+
+  goToPage() {
+    const target = Math.min(Math.max(1, this.pageInput), this.totalPages);
+    this.page = target;
+    this.pageInput = target;
+  }
+
+  trackByLobbyist(index: number, item: any): number {
+    return item.lobbyist_id; // ID univoco
+  }
+
+
 }
 
 interface CabinetLink {

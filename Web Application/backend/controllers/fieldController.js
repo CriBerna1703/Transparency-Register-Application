@@ -14,8 +14,6 @@ module.exports = {
     async getFieldsByLobbyist(req, res) {
         try {
             const { lobbyist_id } = req.params;
-            console.log("Lobbyist ID ricevuto:", lobbyist_id);
-
             const fields = await Field.findAll({
                 include: [{
                     model: Lobbyist,
@@ -24,7 +22,6 @@ module.exports = {
                 }]
             });
 
-            console.log("Campi trovati:", fields);
             res.json(fields);
         } catch (error) {
             console.error("Errore nel recupero dei campi di interesse:", error);

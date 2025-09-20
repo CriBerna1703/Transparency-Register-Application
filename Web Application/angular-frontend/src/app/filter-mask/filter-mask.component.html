@@ -57,14 +57,28 @@
                   Any
                 </label>
               </li>
-              <li *ngFor="let lob of filteredLobbyists">
+              <li *ngFor="let lob of paginatedLobbyists; trackBy: trackByLobbyist">
                 <label>
-                  <input type="checkbox" [checked]="isSelected(lob, selectedLobbyists, 'lobbyist_id')" (change)="toggleSelection(lob, selectedLobbyists, 'lobbyist_id')">
+                  <input type="checkbox"
+                        [checked]="isSelected(lob, selectedLobbyists, 'lobbyist_id')"
+                        (change)="toggleSelection(lob, selectedLobbyists, 'lobbyist_id')">
                   {{ lob.organization_name }}
                 </label>
               </li>
             </ul>
           </div>
+          <div class="pagination">
+              <button (click)="goFirst()" [disabled]="page === 1">⏮ First</button>
+              <button (click)="prevPage()" [disabled]="page === 1">◀ Prev</button>
+              <span>
+                Page 
+                <input type="number" [(ngModel)]="pageInput" (keydown.enter)="goToPage()" 
+                      [min]="1" [max]="totalPages" style="width: 60px; text-align: center;">
+                / {{ totalPages }}
+              </span>
+              <button (click)="nextPage()" [disabled]="page === totalPages">Next ▶</button>
+              <button (click)="goLast()" [disabled]="page === totalPages">Last ⏭</button>
+            </div>
         </div>
       </div>
       <!-- Accordion Fields -->

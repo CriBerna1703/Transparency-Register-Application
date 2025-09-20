@@ -1,14 +1,14 @@
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = process.env.JWT_SECRET || 'supersecret';
+const ACCESS_SECRET = process.env.ACCESS_SECRET || 'accesssecret';
 
 function authenticateToken(req, res, next) {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
   if (!token) return res.sendStatus(401);
 
-  jwt.verify(token, JWT_SECRET, (err, user) => {
+  jwt.verify(token, ACCESS_SECRET, (err, user) => {
     if (err) return res.sendStatus(403);
-    req.user = user; // contiene { id, username }
+    req.user = user;
     next();
   });
 }

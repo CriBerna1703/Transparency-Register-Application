@@ -103,7 +103,6 @@ export class HistogramViewComponent implements OnChanges {
         this.fetchMeetingData(entity).subscribe(meetingDates => {
           newTab.rawData = meetingDates;
           this.updateHistogram(newTab);
-          console.log('Fetched meeting dates:', meetingDates);
         });
 
         // Representative
