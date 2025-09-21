@@ -80,8 +80,12 @@
             <strong>{{ participant.commission_representative?.name }}</strong>
             <ul>
               <li *ngIf="participant.allocation?.role">Role: {{ participant.allocation.role }}</li>
-              <li *ngIf="participant.allocation?.year">Year: {{ participant.allocation.year }}</li>
-              <li *ngIf="participant.directorate?.name">Directorate: {{ participant.directorate.name }}</li>
+              <li *ngIf="participant.directorate?.name && participant.directorate?.is_commissioner === false">
+                Directorate: {{ participant.directorate.name }}
+              </li>
+              <li *ngIf="participant.directorate?.name && participant.directorate?.is_commissioner === true">
+                Commission: {{ participant.directorate.name }}
+              </li>              
               <li *ngIf="participant.commission_cabinet?.name">Cabinet: {{ participant.commission_cabinet.name }}</li>
             </ul>
           </li>

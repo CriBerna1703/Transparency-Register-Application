@@ -1,0 +1,8 @@
+2025-09-20 11:03:50,876 - INFO - Log salvato in: execution_logs\script_execution_2025-09-20_11-03-50.log
+2025-09-20 11:03:50,877 - INFO - Inizio esecuzione script principale.
+2025-09-20 11:03:50,877 - INFO - Step 2: Estrazione dei rappresentanti della commissione.
+2025-09-20 11:03:50,910 - INFO - package: mysql.connector.plugins
+2025-09-20 11:03:50,911 - INFO - plugin_name: caching_sha2_password
+2025-09-20 11:03:50,911 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+2025-09-20 11:03:50,913 - ERROR - Errore durante l'estrazione dei rappresentanti: [Errno 2] No such file or directory: 'Dizionario CE.xlsx'
+2025-09-20 11:03:50,913 - ERROR - Errore critico: [Errno 2] No such file or directory: 'Dizionario CE.xlsx'. Terminazione dello script.

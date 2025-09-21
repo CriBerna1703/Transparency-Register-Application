@@ -122,7 +122,7 @@
           <input type="text" placeholder="Search Commissioner or Cabinet..." [(ngModel)]="searchCommissioner" (input)="filterCommissioners()">
 
           <!-- Any -->
-          <div class="multi-select">
+          <div>
             <ul>
               <li>
                 <label>
@@ -150,7 +150,7 @@
 
 
           <!-- VISTA AD ALBERO PER CABINET -->
-          <div *ngIf="viewMode === 'tree'" class="cabinet-tree">
+          <div *ngIf="viewMode === 'tree'" class="cabinet-tree multi-select">
             <ul class="cabinet-list">
               <li *ngFor="let group of filteredCabinetGroups" class="cabinet-item">
 
@@ -160,7 +160,7 @@
                   <input type="checkbox"
                         [checked]="isCabinetAllSelected(group)"
                         (change)="toggleCabinetSelection(group)">
-                  Team member of {{ group.cabinetName || 'No cabinet' }}
+                  Team member of {{ 'Commissioner ' + group.cabinetName || 'No cabinet' }}
                   <small>({{ group.reps.length + (group.cabinetRepresentativeId ? 1 : 0) }})</small>
                 </label>
 

@@ -63,3 +63,12 @@ text.node-lobbyist-pinned {
   fill: #80EF80;
   stroke: #1bd41b;
 }
+
+.node-representative.node-commissioner {
+  fill: #539c53ff;
+  stroke: #128612ff;
+}
+.node-directorate.node-commissioner {
+  fill: #29437aff;
+  stroke: #1a2a4dff;
+}

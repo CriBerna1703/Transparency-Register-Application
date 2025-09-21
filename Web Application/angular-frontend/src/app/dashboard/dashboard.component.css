@@ -1,12 +1,12 @@
 .theme-green {
   /* Tema verde (default) */
-  --primary-bg: #3CB371;
+  --primary-bg: #55a4ffff;
   --primary-bg-light: #80EF80;
-  --primary-border: #3CB371;
+  --primary-border: #55a4ffff;
   --primary-hover: #80EF80;
-  --primary-switch: #3CB371;
+  --primary-switch: #55a4ffff;
   --primary-switch-checked: #80EF80;
-  --primary-label: #3CB371;
+  --primary-label: #55a4ffff;
   --primary-label-light: #80EF80;
 }
 

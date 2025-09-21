@@ -102,8 +102,13 @@ module.exports = {
                     cr.name AS representative_name,
                     d.id AS directorate_id,
                     d.name AS directorate_name,
+                    dg_alloc.dg_start_year,
+                    dg_alloc.dg_end_year,
+                    dg_alloc.was_commissioner,
                     cc.id AS cabinet_id,
                     cc.name AS cabinet_name,
+                    cab_alloc.cabinet_start_year,
+                    cab_alloc.cabinet_end_year,
                     cm.meeting_number,
                     cm.meeting_date,
                     cm.topic,
@@ -118,8 +123,31 @@ module.exports = {
                     ON cr.id = ra.representative_id AND YEAR(cm.meeting_date) = ra.year
                 LEFT JOIN directorate AS d
                     ON ra.directorate_id = d.id
+                LEFT JOIN (
+                    SELECT
+                        representative_id,
+                        directorate_id,
+                        MIN(year) AS dg_start_year,
+                        MAX(year) AS dg_end_year,
+                        MAX(CASE WHEN LOWER(role) = 'commissario' THEN 1 ELSE 0 END) AS was_commissioner
+                    FROM representative_allocation
+                    GROUP BY representative_id, directorate_id
+                ) dg_alloc
+                    ON cr.id = dg_alloc.representative_id
+                    AND d.id = dg_alloc.directorate_id
                 LEFT JOIN commission_cabinet AS cc
                     ON mr.cabinet_id = cc.id
+                LEFT JOIN (
+                    SELECT representative_id, cabinet_id, MIN(YEAR(cm.meeting_date)) AS cabinet_start_year, MAX(YEAR(cm.meeting_date)) AS cabinet_end_year
+                    FROM meeting_representatives mr
+                    JOIN commission_meetings cm
+                    ON mr.lobbyist_id = cm.lobbyist_id
+                    AND mr.meeting_number = cm.meeting_number
+                    WHERE mr.cabinet_id IS NOT NULL
+                    GROUP BY representative_id, cabinet_id
+                ) cab_alloc
+                    ON cr.id = cab_alloc.representative_id
+                    AND cc.id = cab_alloc.cabinet_id
                 INNER JOIN lobbyist_profile AS lp
                     ON cm.lobbyist_id = lp.lobbyist_id
                 LEFT JOIN lobbyist_fields_of_interest AS lfi
@@ -160,7 +188,10 @@ module.exports = {
                         },
                         directorate: {
                             id: row.directorate_id,
-                            name: row.directorate_name
+                            name: row.directorate_name,
+                            start_year: row.dg_start_year,
+                            end_year: row.dg_end_year,
+                            is_commissioner: row.was_commissioner === 1
                         },
                         allocation: {
                             role: row.representative_role,
@@ -168,7 +199,9 @@ module.exports = {
                         },
                         commission_cabinet: {
                             id: row.cabinet_id,
-                            name: row.cabinet_name
+                            name: row.cabinet_name,
+                            start_year: row.cabinet_start_year,
+                            end_year: row.cabinet_end_year
                         }
                     });
                 }

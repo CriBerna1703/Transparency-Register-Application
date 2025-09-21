@@ -23,7 +23,18 @@
 <div class="bottom-info-box" *ngIf="activeRepresentativeAllocations">
   <div class="rep-name">{{ activeRepresentativeAllocations.name }}</div>
 
-  <div *ngIf="activeRepresentativeAllocations.directorates.length > 0" class="alloc-section">
+  <!-- Commissions -->
+  <div *ngIf="activeRepresentativeAllocations?.commissions?.length" class="alloc-section">
+    <div class="section-title">Commissions</div>
+    <ul>
+      <li *ngFor="let d of activeRepresentativeAllocations.commissions">
+        {{ d.name }} ({{ d.startYear }} - {{ d.endYear }})
+      </li>
+    </ul>
+  </div>
+
+  <!-- Directorates -->
+  <div *ngIf="activeRepresentativeAllocations?.directorates?.length" class="alloc-section">
     <div class="section-title">Directorates</div>
     <ul>
       <li *ngFor="let d of activeRepresentativeAllocations.directorates">
@@ -32,11 +43,12 @@
     </ul>
   </div>
 
-  <div *ngIf="activeRepresentativeAllocations.cabinets.length > 0" class="alloc-section">
+  <!-- Cabinets -->
+  <div *ngIf="activeRepresentativeAllocations?.cabinets?.length" class="alloc-section">
     <div class="section-title">Cabinets</div>
     <ul>
       <li *ngFor="let c of activeRepresentativeAllocations.cabinets">
-        {{ c.name }} ({{ c.startDate | date:'yyyy-MM-dd' }} → {{ c.endDate | date:'yyyy-MM-dd' }})
+        {{ c.name }} ({{ c.startYear }} → {{ c.endYear }})
       </li>
     </ul>
   </div>

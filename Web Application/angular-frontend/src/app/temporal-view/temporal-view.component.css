@@ -37,11 +37,11 @@
 }
 
 .directorate {
-  color: #3CB371;
+  color: #D35400;
 }
 
 .representative {
-  color: #80EF80;
+  color: #F4D03F;
 }
 
 .switch {
@@ -64,7 +64,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #3CB371;
+  background-color: #55a4ffff;
   transition: 0.4s;
   border-radius: 28px;
 }

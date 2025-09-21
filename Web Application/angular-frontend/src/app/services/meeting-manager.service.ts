@@ -14,7 +14,8 @@ export class MeetingManager {
     directorate: new Map(),
     cabinet: new Map()
   };
-  public representativeAllocations: Map<string, { directorates: Map<string, { startYear: number, endYear: number }>, cabinets: Map<string, { startDate: Date, endDate: Date }> }> = new Map();
+  public representativeAllocations: Map<string, { directorates: Map<string, { startYear: number | undefined, endYear: number | undefined, isCommissioner: boolean | undefined }>, cabinets: Map<string, { startYear: number | undefined, endYear: number | undefined }> }> = new Map();
+  public directoratesWithCommissioners: Set<string> = new Set();
   public groupedDates: Map<string, boolean> = new Map();
   public lobbyistDegreeThreshold: number = 1;
   public maxVisibleLobbyistDegree: number = 10;
@@ -73,24 +74,17 @@ export class MeetingManager {
             const repData = this.representativeAllocations.get(p.representative_id)!;
 
             if (p.directorate_name && p.directorate_name !== '?') {
-                const year = new Date(meeting.date).getFullYear();
                 if (!repData.directorates.has(p.directorate_name)) {
-                    repData.directorates.set(p.directorate_name, { startYear: year, endYear: year });
-                } else {
-                    const d = repData.directorates.get(p.directorate_name)!;
-                    d.startYear = Math.min(d.startYear, year);
-                    d.endYear = Math.max(d.endYear, year);
+                    repData.directorates.set(p.directorate_name, { startYear: p.directorate_start_year, endYear: p.directorate_end_year, isCommissioner: p.is_commissioner });
+                }
+                if (p.is_commissioner) {
+                    this.directoratesWithCommissioners.add(p.directorate_id);
                 }
             }
 
             if (p.cabinet_name && p.cabinet_name !== '?') {
-                const meetingDate = new Date(meeting.date);
                 if (!repData.cabinets.has(p.cabinet_name)) {
-                    repData.cabinets.set(p.cabinet_name, { startDate: meetingDate, endDate: meetingDate });
-                } else {
-                    const c = repData.cabinets.get(p.cabinet_name)!;
-                    c.startDate = (meetingDate < c.startDate) ? meetingDate : c.startDate;
-                    c.endDate = (meetingDate > c.endDate) ? meetingDate : c.endDate;
+                    repData.cabinets.set(p.cabinet_name, { startYear: p.cabinet_start_year, endYear: p.cabinet_end_year });
                 }
             }
         });
@@ -122,6 +116,27 @@ export class MeetingManager {
         lobbyistMeetingCount.get(meeting.lobbyist_id)! >= this.lobbyistDegreeThreshold
     );
   }
+
+  getAllocationsInRange(repId: string, fromYear: number, toYear: number) {
+    const allocations = this.representativeAllocations.get(repId);
+    if (!allocations) return { directorates: [], cabinets: [] };
+
+    const filterByRange = (item: { startYear?: number; endYear?: number }) => {
+        const startOk = !item.endYear || item.endYear >= fromYear;
+        const endOk   = !item.startYear || item.startYear <= toYear;
+        return startOk && endOk;
+    };
+
+    return {
+        directorates: Array.from(allocations.directorates.entries())
+        .map(([name, d]) => ({ name, ...d }))
+        .filter(filterByRange),
+        cabinets: Array.from(allocations.cabinets.entries())
+        .map(([name, c]) => ({ name, ...c }))
+        .filter(filterByRange)
+    };
+  }
+
 
 
   computeOptimizedNodePositions(

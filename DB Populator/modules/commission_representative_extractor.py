@@ -16,19 +16,21 @@ class CommissionRepresentativeExtractor:
         # Itera sulle righe del DataFrame
         for _, row in df.iterrows():
             # Combina nome e cognome
-            name = f"{row['NOME']} {row['COGNOME']}".strip()
+            firstName = str(row['NOME']).strip()
+            lastName = str(row['COGNOME']).strip()
+            name = f"{firstName} {lastName}".strip()
 
             representative_id = self.db_conn.get_field_id('commission_representative', 'name', name, 'id')
             if not representative_id:
                 self.db_conn.insert_data('commission_representative', ['name'], [name])
                 representative_id = self.db_conn.get_field_id('commission_representative', 'name', name, 'id')
 
-            # Itera sugli anni dal 2011 al 2024
-            for year in range(2011, 2025):
+            # Itera sugli anni dal 2011 al 2025
+            for year in range(2011, 2026):
                 directorate_col = f'DIREZIONE ANNO {year}'
                 role_col = f'RUOLO ANNO {year}'
-                directorate = row[directorate_col] if pd.notna(row[directorate_col]) else None
-                role = row[role_col] if pd.notna(row[role_col]) else None
+                directorate = str(row[directorate_col]).strip() if pd.notna(row[directorate_col]) else None
+                role = str(row[role_col]).strip() if pd.notna(row[role_col]) else None
 
                 # Inserisci i dati se direttorato e ruolo sono presenti
                 if directorate and role:

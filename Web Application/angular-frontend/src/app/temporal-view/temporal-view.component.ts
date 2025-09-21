@@ -35,8 +35,9 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   public activeMeetingNode: { color: string, count: number, textColor: string } | null = null;
   public activeRepresentativeAllocations: {
     name: string;
-    directorates: { name: string; startYear: number; endYear: number }[];
-    cabinets: { name: string; startDate: Date; endDate: Date }[];
+    directorates: { name: string; startYear: number | undefined; endYear: number | undefined }[];
+    commissions: { name: string; startYear: number | undefined; endYear: number | undefined }[];
+    cabinets: { name: string; startYear: number | undefined; endYear: number | undefined }[];
   } | null = null;
   public lobbyistDegreeThreshold: number = 1;
   public maxVisibleLobbyistDegree: number = 10; 
@@ -76,8 +77,13 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           representative_name: p.commission_representative.name,
           directorate_id: p.directorate.id || "",
           directorate_name: p.directorate.name || "?",
+          directorate_start_year: p.directorate.start_year || undefined,
+          directorate_end_year: p.directorate.end_year || undefined,
+          is_commissioner: p.directorate.id ? p.directorate.is_commissioner : false,
           cabinet_id: p.directorate.id ? p.commission_cabinet.id || "" : p.commission_cabinet.id || "DUMMY-ID",
-          cabinet_name: p.commission_cabinet.name || "?"
+          cabinet_name: p.commission_cabinet.name || "?",
+          cabinet_start_year: p.commission_cabinet.start_year || undefined,
+          cabinet_end_year: p.commission_cabinet.end_year || undefined,
         }))
       }));
     
@@ -268,6 +274,11 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         .attr("fill", "rgba(255, 255, 255, 1)")
         .attr("rx", 4)
         .attr("ry", 4);
+
+      if (entityType === 'cabinet' && entityName !== "?") {
+        entityName = 'Cabinet of ' + entityName;
+      }
+
       const label = labelGroup.append("text")
         .attr("x", xPosition)
         .attr("y", labelYPosition)
@@ -384,14 +395,13 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           });
         }
       } else {
-        const allocations = self.meetingManager.representativeAllocations.get(entity.id);
         const node = this.d3Service.drawNode(
           svg,
           xPosition,
           yPosition,
           8,
-          entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#539c53ff' : entityType === 'directorate' ? '#3CB371' : '#29437aff',
-          entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#128612ff' : entityType === 'directorate' ? '#297a4d' : '#29437aff',
+          entityType === 'lobbyist' ? '#ae58a3' : entityType === 'representative' ? '#F4D03F' : entityType === 'directorate' ? '#D35400' : '#55a4ffff',
+          entityType === 'lobbyist' ? '#5b2c55' : entityType === 'representative' ? '#a77d00ff' : entityType === 'directorate' ? '#865a12ff' : '#3366a0ff',
           2,
           `node-${entityType} node-${entity.type}-${entity.id} link-${entity.type}-${entity.id} ${connectedMeetings} ${isDummyDirectorate ? 'dummy-directorate' : ''}`
         ).on('click', () => this.onNodeClick(entity))
@@ -428,18 +438,23 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           if (entityType === 'representative') {
             const repName = entityName;
 
+            const allocations = self.meetingManager.representativeAllocations.get(entity.id);
             if (allocations) {
+              const directoratesArray = Array.from(allocations.directorates.entries()).map(([name, d]) => ({
+                name,
+                startYear: d.startYear,
+                endYear: d.endYear,
+                isCommissioner: d.isCommissioner
+              }));
+
               self.activeRepresentativeAllocations = {
                 name: repName,
-                directorates: Array.from(allocations.directorates.entries()).map(([name, d]) => ({
-                  name,
-                  startYear: d.startYear,
-                  endYear: d.endYear
-                })),
+                commissions: directoratesArray.filter(d => d.isCommissioner),
+                directorates: directoratesArray.filter(d => !d.isCommissioner),
                 cabinets: Array.from(allocations.cabinets.entries()).map(([name, c]) => ({
                   name,
-                  startDate: c.startDate,
-                  endDate: c.endDate
+                  startYear: c.startYear,
+                  endYear: c.endYear
                 }))
               };
             } else {
@@ -496,9 +511,28 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
           }
         });
 
-        if (allocations && allocations.cabinets.size !== 0) {
-          node.classed('node-cabinet-associated', true);
+        if (entityType === 'representative') {
+          const allocations = self.meetingManager.getAllocationsInRange(
+            entity.id,
+            displayStartDate.getFullYear(),
+            displayEndDate.getFullYear()
+          );
+
+          if (allocations.cabinets.length > 0) {
+            node.classed('node-cabinet-associated', true);
+          }
+
+          if (allocations.directorates.length > 0) {
+            if (allocations.directorates.some(d => d.isCommissioner)) {
+              node.classed('node-commissioner', true);
+            }
+          }
+        } else if (entityType === 'directorate') {
+          if (self.meetingManager.directoratesWithCommissioners.has(entity.id)) {
+            node.classed('node-commissioner', true);
+          }
         }
+
 
         if (this.selectedNodes.has(this.makeKey(entity.id, entityType))) {
           d3.selectAll(`.node-${entity.type}-${entity.id}`).each(function () {
@@ -903,10 +937,15 @@ export interface RawParticipant {
   directorate: {
     id?: string;
     name?: string;
+    start_year?: number;
+    end_year?: number;
+    is_commissioner?: boolean;
   };
   commission_cabinet: {
     id?: string;
     name?: string;
+    start_year?: number;
+    end_year?: number;
   };
 }
 
@@ -915,8 +954,13 @@ export interface ParticipantData {
   representative_name: string;
   directorate_id: string;
   directorate_name: string;
+  directorate_start_year?: number;
+  directorate_end_year?: number;
+  is_commissioner?: boolean;
   cabinet_id: string;
   cabinet_name: string;
+  cabinet_start_year?: number;
+  cabinet_end_year?: number;
 }
 
 export interface MeetingData {

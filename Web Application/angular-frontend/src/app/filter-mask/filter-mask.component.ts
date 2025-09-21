@@ -321,6 +321,7 @@ export class FilterMaskComponent {
 
   private buildCabinetTree(reps: RepresentativeWithCabinets[]): CabinetGroup[] {
     const map = new Map<string, CabinetGroup>();
+    const cabinetRepIds = new Set<number>();
 
     for (const r of reps) {
       const cabinets = (r.cabinets && r.cabinets.length)
@@ -341,12 +342,25 @@ export class FilterMaskComponent {
         if (!g.reps.some(x => x.id === r.id)) {
           g.reps.push({ id: r.id, name: r.name });
         }
+
+        if (c.representative_id) {
+          cabinetRepIds.add(c.representative_id);
+        }
       }
     }
 
+    const noCabinetKey = `null|No cabinet`;
+    if (map.has(noCabinetKey)) {
+      const g = map.get(noCabinetKey)!;
+      g.reps = g.reps.filter(r => !cabinetRepIds.has(r.id));
+    }
+
     const groups = Array.from(map.values())
-      .sort((a, b) => (a.cabinetName || '').localeCompare(b.cabinetName || ''));
-    groups.forEach(g => g.reps.sort((a, b) => a.name.localeCompare(b.name)));
+      .sort((a, b) => {
+        if ((a.cabinetName || '') === 'No cabinet') return 1;
+        if ((b.cabinetName || '') === 'No cabinet') return -1;
+        return (a.cabinetName || '').localeCompare(b.cabinetName || '');
+      });
 
     return groups;
   }

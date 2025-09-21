@@ -13,7 +13,7 @@ import { MeetingSummaryComponent } from '../meeting-summary/meeting-summary.comp
 })
 export class OverviewComponent implements OnInit {
   zoomLevel: number = 900;
-  selectedAggregation: string = 'month';
+  selectedAggregation: string = 'semester';
   aggregationOptions = [
     { value: 'month', label: 'Month' },
     { value: 'quarter', label: 'Quarter' },
