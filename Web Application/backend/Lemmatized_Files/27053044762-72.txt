@@ -1,5 +1,5 @@
 17/06/2015
-REACH
+reach
 
 25/02/2016
 Criteria endocrine disruptor
@@ -14,7 +14,7 @@ circular economy
 endocrine disruptor
 
 30/03/2017
-Reach Evaluation
+reach Evaluation
 
 05/05/2017
 endocrine disruptor reach
@@ -23,7 +23,7 @@ endocrine disruptor reach
 food contact material
 
 11/10/2017
-Discussion Food Contact material
+Discussion Food Contact Materials
 
 04/06/2020
 VC meeting Chemicals Strategy
@@ -32,10 +32,10 @@ VC meeting Chemicals Strategy
 VC meeting discuss Chemicals Strategy
 
 09/07/2020
-Green Deal Chemicals Strategy Sustainability
+Green Deal Chemicals Strategy sustainability
 
 23/07/2020
-discuss Chemicals Strategy Sustainability especially relation endocrine disruptor
+discuss Chemicals Strategy sustainability especially relation endocrine disruptor
 
 03/09/2020
 exchange view context preparation sustainable chemical strategy
@@ -44,52 +44,61 @@ exchange view context preparation sustainable chemical strategy
 implementation chemical strategy sustainability
 
 08/06/2021
-chemical Strategy Sustainability restriction roadmap
+chemical Strategy sustainability restriction roadmap
 
 24/06/2021
 discussion implementation chemical strategy sustainability
 
 08/12/2021
-discuss Chemicals Strategy Sustainability pfa
+discuss Chemicals Strategy sustainability pfa
 
 08/12/2021
-chemical Strategy Sustainability pfa
+chemical Strategy sustainability pfa
 
 08/12/2021
-chemical Strategy Sustainability pfa
+chemical Strategy sustainability pfa
 
 03/03/2022
-restriction Roadmap css implementation
+restriction Roadmap CSS implementation
 
 08/07/2022
-implementation Chemicals Strategy Sustainability REACH revision
+Implementation Chemicals Strategy sustainability reach revision
 
 08/07/2022
-implementation Chemicals Strategyfor Sustainability REACH revision
+Implementation Chemicals Strategy sustainability reach revision
 
 02/12/2022
-implementation Chemicals Strategy Sustainability REACH revision
+Implementation Chemicals Strategy sustainability reach revision
 
 14/03/2023
-implementation Chemicals Strategy Sustainability PFAS relate measure
+Implementation Chemicals Strategy sustainability PFAS relate measure
 
 07/02/2024
-implementation Chemicals Strategy
+Implementation Chemicals Strategy
 
 07/02/2024
-implementation Chemicals Strategy
+Implementation Chemicals Strategy
 
 16/01/2025
 restriction reach
 
+14/02/2025
+chemical regulation reach revision
+
 10/03/2025
-chemical regulation REACH
+chemical regulation reach
 
 18/03/2025
 CHEM Trust ’s recommendation reach revision
 
 03/04/2025
-REACH
+reach
 
 11/04/2025
 exchange view reach revision
+
+25/06/2025
+reach revision inclusion MAF polymer scientist presentation
+
+04/07/2025
+reach revision

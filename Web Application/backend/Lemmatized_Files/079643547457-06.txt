@@ -2,10 +2,10 @@
 meet mobility apprentice
 
 29/03/2023
-euroappmobilityeu
+EuroAppMobilityEU
 
 06/12/2023
-echange sur les moyens de soutenir la formation professionnelle et la mobilité des travailleurs en Europe notammenten ce qui concerne les apprentis
+echange sur les moyens de soutenir la formation professionnelle et la mobilité des travailleur en Europe notamment en ce qui concerne les apprentis
 
 06/12/2023
 La formation professionnelle et la mobilité des apprentis
@@ -17,7 +17,7 @@ La formation professionnelle et la mobilité des apprentis
 meet mobility apprentice
 
 09/04/2024
-Erasmus learn mobility
+Erasmus Learning mobility
 
 19/06/2024
 meet mobility apprentice
@@ -26,4 +26,7 @@ meet mobility apprentice
 meet mobility apprentice
 
 01/04/2025
-meeting ERASMUS VET APPRENTICESHIPS
+meet erasmus vet apprenticeship
+
+01/07/2025
+discussion promote Mobility Apprentices within Vocational Education Training VET Framework

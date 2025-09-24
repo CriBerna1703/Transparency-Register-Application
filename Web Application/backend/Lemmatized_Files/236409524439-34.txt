@@ -1,5 +1,5 @@
 27/04/2017
-state play TAP
+state play tap
 
 30/01/2018
 Trans Adriatic Pipeline
@@ -8,13 +8,13 @@ Trans Adriatic Pipeline
 Hydrogen Green Deal Climateneutral Smart Cities
 
 15/11/2022
-Fluxys present work hydrogen network inbelgium
+Fluxys present work hydrogen network Belgium
 
 20/12/2022
-Energy Platform Bulgargaz SPP EPH DEPA Geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
+Energy Platform Bulgargaz spp eph DEPA Geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
 
 20/12/2022
-Energy Platform Bulgargaz SPP EPH DEPA Geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
+Energy Platform Bulgargaz spp eph DEPA Geoplin Eesti Gaas Enovos defa Conexus Baltic Grid GOGC participate well
 
 15/05/2023
 presentation company late view upcoming hydrogen gas decarbonisation package
@@ -23,16 +23,22 @@ presentation company late view upcoming hydrogen gas decarbonisation package
 energy market
 
 07/07/2023
-Hydrogen CCUS
+hydrogen ccus
 
 24/08/2023
-future regulatory framework co2
+future regulatory framework CO2
 
 01/10/2024
 waterstof en CO2 captatie
 
 08/01/2025
-fluxys plan envisage hydrogen carbon dioxide network Belgium
+Fluxys plan envisage hydrogen carbon dioxide network Belgium
+
+28/03/2025
+H2 Financing Facility
 
 03/04/2025
 North Sea
+
+11/04/2025
+LNG contract phase russian supply

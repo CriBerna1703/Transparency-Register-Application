@@ -8,16 +8,16 @@ Juncker Priorities Digital Market
 copyright
 
 04/03/2015
-data protection legislation
+datum protection legislation
 
 27/03/2015
 Information Technology Agreement negotiation Korea FTA trade file relevant electronic ICT sector
 
 16/04/2015
-investment plan
+Investment Plan
 
 16/04/2015
-e health
+e Health
 
 07/05/2015
 mhealth internet thing
@@ -29,7 +29,7 @@ executive dialogue
 Digital Skills
 
 02/07/2015
-DSM copyright internet thing
+DSM Copyright internet thing
 
 16/07/2015
 Turkey safeguard measure
@@ -47,25 +47,25 @@ digital transformation industry
 meet current relation Egypt
 
 19/09/2016
-DSM standardisation
+dsm standardisation
 
 19/09/2016
 standardisation international IoT
 
 19/09/2016
-Standardisation International IoT
+standardisation International IoT
 
 15/11/2016
-Prep meeting mission VP Ansip Seoul November 2016
+prep meeting mission VP Ansip Seoul November 2016
 
 17/11/2016
-Meeting Samsung Electronics 5 g standard datum e governance
+Meeting Samsung Electronics 5 G standard datum e governance
 
 15/11/2018
 possible safeguard
 
 21/02/2019
-cyber security
+Cyber security
 
 10/04/2019
 regional innovation policy
@@ -77,7 +77,7 @@ Vietnam FTA WTO future trade relation UK
 artifical intelligence 5 g cybersecurity common charger
 
 29/01/2021
-Digital issue particular mobile digital identity solution decentralise hardware base architecture communication equipment ORAN VRAN diversification standardisation process operator need
+digital issue particular mobile digital identity solution decentralise hardware base architecture communication equipment ORAN VRAN diversification standardisation process operator need
 
 03/06/2021
 microelectronic 5 g
@@ -98,19 +98,19 @@ address market industry impact Commission Regulation 2019/2021 consumption limit
 Ecodesign Regulation Energy Efficiency Electronic Displays Tier II requirement Systematic Error Administration
 
 06/10/2022
-regulation 2019 /2021 finding solution respect review clause consumption limit electronic display
+regulation 2019 /2021 find solution respect review clause consumption limit electronic display
 
 13/12/2022
-Critical Raw Materials Act Forced Labour Product Prohibition Regulation directive Corporate Sustainability Due Diligence
+Critical Raw Materials Act force Labour Product Prohibition Regulation Directive Corporate Sustainability due diligence
 
 13/12/2022
-csrd
+CSRD
 
 04/02/2025
-exchange view consumer protection sustainability data protection online safety
+exchange view consumer protection sustainability datum protection online safety
 
 11/02/2025
-Opening Session DSA roundtable discussion online advertising Article 46 DSA
+Opening Session DSA roundtable discussion online advertising article 46 DSA
 
 12/02/2025
 exchange view industrial policy market
@@ -123,3 +123,6 @@ trade agenda
 
 18/03/2025
 Samsung ’s contribution Europe ’s green digital transition
+
+12/06/2025
+exchange view relation International Digital Strategy

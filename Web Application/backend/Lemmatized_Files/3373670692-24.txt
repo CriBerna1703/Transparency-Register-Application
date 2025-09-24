@@ -1,11 +1,11 @@
 29/01/2015
-CMU long term saving product disclosure
+CMU long term saving Product disclosure
 
 21/05/2015
 CMU
 
 22/03/2017
-fund Distribution PEPP
+Fund Distribution PEPP
 
 14/03/2018
 pepp
@@ -14,7 +14,7 @@ pepp
 CMU sustainable finance
 
 24/03/2021
-aifmd ELTIF CMU
+AIFMD ELTIF CMU
 
 13/07/2021
 CMU ISSUES
@@ -23,16 +23,16 @@ CMU ISSUES
 CMU ISSUES
 
 14/09/2021
-Mandatory Buy rule CSRD review
+mandatory Buy rule csrd review
 
 14/10/2021
-Mandatory Buy rule CSRD review
+mandatory Buy rule csrd review
 
 09/11/2021
 introductory discussion financial literacy retail investor
 
 10/11/2021
-Review Markets Financial Instruments Regulation
+Review Markets Financial Instruments regulation
 
 14/01/2022
 financial literacy
@@ -47,13 +47,13 @@ retail investment strategy
 retail investment strategy
 
 18/07/2023
-distribution retailfinancial product
+Distribution retail financial product
 
 09/01/2025
 UK Financial Regulatory Forum
 
 25/02/2025
-aifmd ucit /Securitisation MMFR review
+AIFMD ucit /securitisation mmfr review
 
 04/03/2025
 financial service industry association debrief UK Financial Regulatory Forum
@@ -65,10 +65,16 @@ Discussion ESMA ’s final report regard transparency requirement bond
 exchange relevant market regulatory development
 
 14/03/2025
-integrated reporting
+integrate reporting
 
 28/03/2025
 roundtable Investing Water Resilience
 
 22/04/2025
-fida
+FIDA
+
+02/06/2025
+Exchange asset manager integration capital market
+
+03/07/2025
+efama view ESRS VSME

@@ -8,7 +8,7 @@ capital market
 Priorities Commission
 
 13/03/2015
-Financial Services Policy
+Financial Services policy
 
 13/03/2015
 Financial Transaction Tax FTT
@@ -20,7 +20,7 @@ banking regulation particular Bank Structural reform payment
 Capital Markets Bank Structural Reform Money Market fund
 
 18/09/2015
-Capital Markets Banking Net Stable Funding Ratio Bank Structural Measures TLAC MREL ifrs 9
+Capital Markets Banking Net Stable Funding Ratio Bank Structural Measures TLAC MREL IFRS 9
 
 25/09/2015
 situation du secteur bancaire français
@@ -35,7 +35,7 @@ bank regulatory issue include preparation EDIS
 tour dhorizon topical financial service issue
 
 26/10/2015
-situation du système bancaire français
+situation du système bancaire françai
 
 04/11/2015
 FTT initiative field taxation
@@ -53,7 +53,7 @@ SME support factor
 aspect liés à la lutte contre le financement du terrorisme
 
 03/02/2016
-safe harbour cloud cybersecurity blockchain technology DSM platform
+safe harbour cloud cybersecurity blockchain technology dsm platform
 
 02/03/2016
 TLAC MREL CRR call evidence
@@ -62,7 +62,7 @@ TLAC MREL CRR call evidence
 overview bank regulatory matter
 
 27/05/2016
-MREL TLAC PillarII
+MREL TLAC pillarii
 
 21/06/2016
 international regulatory framework bank Basel ongoing agenda
@@ -71,7 +71,7 @@ international regulatory framework bank Basel ongoing agenda
 international regulatory framework bank Basel ongoing agenda
 
 07/07/2016
-lunch Debat grande entreprise Françaises Better Regulation
+Lunch Debat Grandes Entreprises Françaises Better regulation
 
 30/08/2016
 Green Finance
@@ -101,10 +101,10 @@ financial service agenda
 financial service agenda
 
 24/07/2017
-PSD2
+psd2
 
 06/09/2017
-PSD2
+psd2
 
 14/09/2017
 négociation Bâle et à la DSP2
@@ -113,7 +113,7 @@ négociation Bâle et à la DSP2
 cybersecurity
 
 01/12/2017
-Free Flow Data General Data Protection Regulation
+Free Flow Data General Data Protection regulation
 
 16/01/2018
 sustainable finance
@@ -122,16 +122,16 @@ sustainable finance
 Green Finance
 
 29/01/2018
-sustainable Finance Banking Package
+Sustainable Finance Banking Package
 
 08/02/2018
 Bale Paquet de réduction des risque sujet numérique des marchés de capitaux
 
 16/04/2018
-Paquet bancaire et Renforcement de l’union économique et monétaire
+paquet bancaire et Renforcement de l’union économique et monétaire
 
 08/06/2018
-Cybersecurity datum
+Cybersecurity Data
 
 15/06/2018
 cybersecurity fintech
@@ -143,10 +143,10 @@ Transposition Basel III Banking package Banking Capital market
 Transposition de l’accord de Bâle mesure d équivalence dans le cadre du Brexit
 
 27/06/2019
-fond de Résolution Unique
+Fonds de Résolution Unique
 
 09/09/2019
-Basel implementation
+basel implementation
 
 09/09/2019
 Basel implementaton
@@ -161,10 +161,10 @@ implementation Basel III Banking Deposit Guarantee Scheme
 FR bank energy transition
 
 07/02/2020
-Basel III Securitisation market Banking Green Deal Payments Initiative
+Basel III securitisation market Banking Green Deal Payments Initiative
 
 06/03/2020
-Discussion sur la mise en oeuvre de la stratégie des données dans le domaine bancaire et financier
+discussion sur la mise en oeuvre de la stratégie des données dans le domaine bancaire et financier
 
 06/03/2020
 Payments Initiative
@@ -185,10 +185,10 @@ general discussion EPI
 introductory meeting discuss banking topic
 
 02/12/2020
-Discussion Implementation Basel III Europe
+discussion Implementation Basel III Europe
 
 08/01/2021
-MiFID II Derivative Trading Obligation dto
+MiFID II Derivative Trading Obligation DTO
 
 17/02/2021
 Basel III
@@ -197,7 +197,7 @@ Basel III
 Basel 111 implementation
 
 05/03/2021
-Basel implementation
+basel implementation
 
 19/03/2021
 Basel III
@@ -209,7 +209,7 @@ financial service policy
 implementation Basel 3
 
 29/04/2021
-sustainable finance
+sustainable Finance
 
 26/05/2021
 sustainable finance
@@ -218,7 +218,7 @@ sustainable finance
 current issue finance service policy
 
 17/06/2021
-role bank recovery SME lend Basel transposition digital transformation
+role bank recovery SME lending Basel transposition digital transformation
 
 25/06/2021
 Basel III SRF
@@ -248,28 +248,28 @@ Basel transposition inter service consultation
 Basel III implementation
 
 12/01/2022
-Retail Investments strategy
+Retail Investments Strategy
 
 06/05/2022
 Banking Capital Markets next step
 
 19/05/2022
-panel discussion role bank economic recovery
+Panel discussion role bank economic recovery
 
 08/06/2022
-organisation event Commissioner
+Organisation event Commissioner
 
 16/09/2022
-SOTEU energy repowereu Recovery Resilience Facility
+SOTEU energy RepowerEU Recovery Resilience Facility
 
 29/09/2022
-Bank crisis management securitisation clear retail investment strategy
+bank crisis management securitisation clear retail investment strategy
 
 09/11/2022
 preparation meeting Commissioner McGuinness ceo french bank
 
 01/02/2023
-Retail InvestmentStrategy
+Retail Investment Strategy
 
 01/02/2023
 retail investment strategy
@@ -293,13 +293,13 @@ Digital Europe
 CSDDD
 
 11/07/2023
-corporate sustainability Due Diligence Directive
+corporate Sustainability due Diligence directive
 
 18/07/2023
 report Sustainability Standards
 
 24/10/2023
-cercle des grande Entreprises française
+cercle des Grandes Entreprises française
 
 28/11/2023
 1 Finalization Basel Package 2 Digital Euro 3 Retail Investment Strategy 3 CMDI
@@ -308,7 +308,7 @@ cercle des grande Entreprises française
 priority next Commission
 
 22/02/2024
-CMU competitiveness
+CMU Competitiveness
 
 15/01/2025
 omnibus directive
@@ -317,7 +317,7 @@ omnibus directive
 simplification
 
 17/01/2025
-Meeting Federation Bancaire Francaise FBF
+Meeting Federation Bancaire Francaise fbf
 
 17/01/2025
 exchange view presentation Consumer Agenda 2025 2030 Consumer Credit directive
@@ -336,3 +336,21 @@ meet FBF housing
 
 26/03/2025
 macroprudential framework banking
+
+05/05/2025
+exchange view reform crisis management deposit insurance framework bank competitiveness
+
+22/05/2025
+omnibus
+
+22/05/2025
+update meeting
+
+12/06/2025
+banking issue
+
+23/06/2025
+SIU impact banking sector
+
+27/06/2025
+DG FISMAs priority

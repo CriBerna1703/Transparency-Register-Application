@@ -1,14 +1,14 @@
 11/12/2014
-presentation Annual Growth Survey 2015 outline main priority job growth agenda /in context flagship conference Reinvigorating Economy Policies Foster Jobs Growth Innovation
+Presentation Annual Growth Survey 2015 outline main priority job growth agenda /in context flagship conference Reinvigorating Economy Policies Foster Jobs Growth Innovation
 
 15/01/2015
-ICT skill
+ICT Skills
 
 16/01/2015
-Round table Gender diversity
+Round Table Gender Diversity
 
 21/01/2015
-Data Flows Data Protection Safe Harbour TTIP
+datum Flows Data Protection Safe Harbour TTIP
 
 21/01/2015
 ICT education policy
@@ -17,7 +17,7 @@ ICT education policy
 datum protection
 
 02/02/2015
-Digital Market iot interoperability
+Digital Market IoT interoperability
 
 09/02/2015
 IBM meet Smart city Nicholas Hodac Katrien Hoogwijs Yves van Seters
@@ -44,7 +44,7 @@ transport
 dsm
 
 16/06/2015
-transatlantic relationship context DSM
+transatlantic relationship context dsm
 
 16/06/2015
 dsm
@@ -62,7 +62,7 @@ dsm
 Digitisation Industry
 
 17/09/2015
-DSM iot free flow datum datum protection e health e payment
+DSM IoT free flow datum datum protection e health e payment
 
 21/09/2015
 Digital Trade
@@ -74,7 +74,7 @@ Horizon 2020 FP7 Industry 40
 IBMs research activity Europe
 
 30/10/2015
-Digitising Industry
+digitising Industry
 
 10/11/2015
 meet IBM Slovenia respresentative
@@ -86,13 +86,13 @@ Roll Investment Plan
 digital transformation industry
 
 09/12/2015
-investment opportunitie digital market
+investment opportunity digital market
 
 15/12/2015
 Skills Pact Youth
 
 21/12/2015
-Automated Connected car
+Automated Connected Cars
 
 11/01/2016
 digitisation industry Safe Harbour datum economy europa
@@ -101,7 +101,7 @@ digitisation industry Safe Harbour datum economy europa
 skill employment social condition
 
 14/01/2016
-AECA Round Table deal regulatory Burden
+AECA Round Table deal Regulatory Burden
 
 16/02/2016
 test
@@ -110,7 +110,7 @@ test
 Privacy Shield Diversity workplace woman decision make
 
 19/04/2016
-free flow datum cloud standardisation internet thing US Privacy Shield
+Free flow datum cloud standardisation internet thing US Privacy Shield
 
 20/04/2016
 trade
@@ -125,7 +125,7 @@ connected vehicle
 Digital Market
 
 01/06/2016
-cppp
+cPPP
 
 01/06/2016
 dsm
@@ -149,13 +149,13 @@ digital trade
 Digitalisation Energy Sector
 
 07/11/2016
-dsm relate issue ibms late business development Europe
+dsm relate issue IBMs late business development Europe
 
 08/11/2016
 copyright text datum mining Free Flow Data Iniative
 
 23/11/2016
-ict education
+ICT education
 
 25/11/2016
 e privacy directive Privacy Shield
@@ -164,7 +164,7 @@ e privacy directive Privacy Shield
 copyright datum text datum mining
 
 26/01/2017
-EU ’s Quality Framework anticipation change restructure
+EU ’s Quality Framework anticipation change restructuring
 
 17/02/2017
 Digital Market free flow datum
@@ -176,13 +176,13 @@ Blockchain Technology
 e privacy review directive
 
 11/05/2017
-Digital Market Update Watson Health Center Excellence Project General discussion discussion ongoing Italy concern main relevant Dossiers DSMIndustry 40 Digital transformation Italy prioritie activity
+Digital Market Update Watson Health Center Excellence Project general discussion discussion ongoing Italy concern main relevant Dossiers DSM Industry 40 Digital transformation Italy prioritie activity
 
 07/06/2017
 dsm
 
 20/06/2017
-Digital skill
+digital skill
 
 20/06/2017
 skill
@@ -194,10 +194,10 @@ diversity
 TopTeam Sports IBM
 
 06/10/2017
-Digital education
+digital education
 
 10/10/2017
-free flow datum e health cybersecurity D4D
+Free flow datum e health cybersecurity D4D
 
 10/10/2017
 DSM Cybersecurity Strategy
@@ -212,7 +212,7 @@ research IBM participation Horizon 2020 future Research Framework Programme
 privacy shield GDPR datum flow artificial intelligence robotic encryption woman sector
 
 11/10/2017
-future Transatlantic Relationship Data flow fta
+Future Transatlantic Relationship Data flow fta
 
 11/10/2017
 progress potential strategic partnership HPC Europe
@@ -221,13 +221,13 @@ progress potential strategic partnership HPC Europe
 Robotics AI ePrivacy Cybersecurity
 
 21/11/2017
-cyber security
+Cyber security
 
 07/12/2017
 Data Flows Trade agreement
 
 13/12/2017
-Pillar Social Rights Skills Agenda Europe Revisions write statement directive IBM internal policy hr management work force retention skill forecast training
+Pillar Social Rights Skills Agenda Europe Revisions write statement Directive IBM internal policy hr management work force retention skill forecasting training
 
 14/12/2017
 independent worker access social protection
@@ -278,13 +278,13 @@ low power processor microprocessor AI
 Conference Digital Europe
 
 11/12/2019
-presentation ibm point view digital trade priority Commission
+presentation IBMs point view digital trade priorities Commission
 
 11/12/2019
 Horizon Europe Digital Industry Digital Education
 
 11/12/2019
-presentation IBM ’s point view digital trade priority Commission
+presentation IBM ’s point view digital trade priorities Commission
 
 20/02/2020
 Cloud datum portability artificial intelligence outcome orient approach standard open 5 g standard
@@ -320,10 +320,10 @@ DSA DMA
 Commissions Research agenda particularly relation technology sector well forthcoming technological development
 
 22/04/2021
-digital sovereignty Cloud strategy Digital Markets Act Digital Services Act Artificial Intelligence
+Digital sovereignty Cloud strategy Digital Markets Act Digital Services Act Artificial Intelligence
 
 26/04/2021
-EUs trade agenda particularly relation technology ict sector incl transatlantic relationship transatlantic data flow Trade Technology Council initiative also digital part Recovery Resilience Facility
+EUs trade agenda particularly relation technology ICT sector incl transatlantic relationship transatlantic datum flow Trade Technology Council initiative also digital part Recovery Resilience Facility
 
 04/05/2021
 Commissions Research agenda relation technology sector
@@ -332,10 +332,10 @@ Commissions Research agenda relation technology sector
 Semiconductor Quantum Computing
 
 14/10/2021
-mtg IBM EES contractor Lisa together ato Leonardo
+mtg IBM EES contractor Lisa together ATOS Leonardo
 
 02/12/2021
-rd technology opportunitie technology development digital AI quantum flagship programme
+rd technology opportunity technology development digital AI quantum flagship programme
 
 29/03/2022
 Data Act Artificial Intelligence Act
@@ -347,10 +347,10 @@ Digital skill AI employment platform work EC plan rest mandate
 meet Green Digital Coalition Main topic state play sustainable digitalization
 
 08/11/2022
-technology development datum interoperability
+technology development data interoperability
 
 15/11/2022
-data protection
+datum protection
 
 29/11/2022
 exchange view technology innovation
@@ -359,25 +359,25 @@ exchange view technology innovation
 public sector modernisation cybersecurity
 
 06/02/2023
-Work Councils
+Work council
 
 06/02/2023
-Year skill
+year skill
 
 05/06/2023
 Trade Technology Council Global Steel Aluminum Arrangement Critical Minerals Agreement
 
 15/11/2023
-Roundtable Europe ’s Energy Future reef
+roundtable Europe ’s Energy Future REEF
 
 16/11/2023
-Works Councils
+work Councils
 
 19/12/2023
 Works Council directive
 
 17/01/2024
-Digital regulation
+digital regulation
 
 29/02/2024
 AI technology
@@ -398,7 +398,7 @@ presentation research activity technological area mutual interest quantum techno
 security open source post quantum cryptography cooperation ENISA NIS2 CRA implementation
 
 17/01/2025
-cyber priority Hospitals Action Plan
+cyber priorities Hospitals Action Plan
 
 22/01/2025
 exchange IBM ’s skill initiative SkillsBuild training platform well Union Skills UoS
@@ -410,13 +410,34 @@ information exchange Artificial Intelligence workplace
 Artificial Intelligence datum protection Digital Fairness Act DFA
 
 14/02/2025
+lunch discussion protection critical infrastructure
+
+14/02/2025
 meeting margin Munich Cyber Security Conference cybersecurity policy role private sector level crisis management
 
 15/02/2025
 private roundtable transatlantic global cooperation tech
 
 20/02/2025
-exchange view IBM ’s activity digital upskille collaboration possibility various organization community
+exchange view IBM ’s activitie digital upskille collaboration possibility various organization community
 
 01/04/2025
 update respective quantum activity
+
+19/05/2025
+chat AI sustainability context
+
+20/05/2025
+simplification
+
+22/05/2025
+GPAI Code Practice
+
+05/06/2025
+US trade relation
+
+26/06/2025
+Business Software Alliance member consultation EU ’s upcoming Cloud AI Development Act
+
+14/07/2025
+exchange view late update AI quantum US trade negotiation regulatory simplification agenda

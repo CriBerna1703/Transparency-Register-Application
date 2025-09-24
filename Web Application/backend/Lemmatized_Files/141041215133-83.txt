@@ -5,40 +5,40 @@ introductory meeting
 US Regulatory Agenda Financial Services
 
 19/03/2015
-Market Infrastructure Regulation EMIR
+market Infrastructure Regulation EMIR
 
 25/01/2016
-Financial Services Policy
+Financial Services policy
 
 11/02/2016
-market Financial Instruments directive
+Markets Financial Instruments directive
 
 05/10/2016
-bank mifid implementation EMIR
+bank MIFID implementation EMIR
 
 19/01/2017
 EMIR CCP Financial Stability CMU
 
 23/01/2017
-call evidence focus EMIR review report requirements• FSB cpmi IOSCO work international level mainly resolution CCP RR CCP rr consistency
+call evidence focus EMIR review reporting requirements• FSB CPMI iosco work international level mainly resolution CCP RR CCP rr consistency
 
 28/03/2017
-EMIR Equivalence
+EMIR equivalence
 
 09/11/2017
 international regulatory cooperation CCP supervision
 
 24/01/2018
-mifid CMU
+MiFID CMU
 
 20/11/2018
 introductory meeting discussion international cooperation EU ’s equivalence system
 
 20/11/2018
-introductory meeting discussion international cooperationand EU ’s equivalence system
+introductory meeting discussion international cooperation EU ’s equivalence system
 
 05/06/2019
-international role euro
+international role Euro
 
 14/10/2019
 emir implementation
@@ -47,10 +47,10 @@ emir implementation
 MIFID II
 
 24/01/2020
-Capital Market EMIR sustainable finance
+capital Market EMIR sustainable finance
 
 07/02/2020
-international role euro mifid review
+international role euro MiFID review
 
 02/12/2020
 introductory meeting
@@ -59,7 +59,7 @@ introductory meeting
 technical follow meeting Commissioner ICE exchange trade derivative
 
 12/02/2021
-MiFID II
+MiFID ii
 
 26/04/2022
 Clearing Strategy ccp
@@ -74,16 +74,16 @@ Commission proposal high energy price function gas market ICE Endex subsidiary c
 energy crisis response MCM proposal
 
 06/12/2022
-market Correction Mechanism ICE Endex subsidiary company
+Market Correction Mechanism ICE Endex subsidiary company
 
 26/01/2023
 MCM TTF market
 
 24/04/2023
-energy market MiFID R
+energy market MiFID r
 
 11/07/2024
-mifid commodity review
+MiFID commodity review
 
 20/11/2024
 energy market
@@ -92,10 +92,28 @@ energy market
 energy market
 
 31/01/2025
+Clean Industrial Stratgy
+
+31/01/2025
 gas trading
 
 14/02/2025
-dynamic gas market
+Dynamics gas market
 
 24/04/2025
-emir 3 SIU
+SIU Targeted Consultation capital market integration
+
+24/04/2025
+EMIR 3 SIU
+
+28/04/2025
+visit NYSE
+
+16/05/2025
+exchange trading venue integration capital market
+
+19/05/2025
+exchange ICE SIU
+
+27/05/2025
+Intercontinental Exchange follow implementation CRCF great interest would glad exchange implementation CRCF provide input ice believe CRCF calibrate appropriately could play lead role

@@ -2,7 +2,7 @@
 regulation Markets Crypto Assets MiCA
 
 16/03/2023
-Digital Currencies
+Digital currency
 
 25/09/2024
 operation circle stable coin
@@ -15,3 +15,6 @@ exchange view crypto asset
 
 14/04/2025
 crypto asset
+
+25/06/2025
+circle representative introduce present company

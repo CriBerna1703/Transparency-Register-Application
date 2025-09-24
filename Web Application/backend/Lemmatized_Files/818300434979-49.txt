@@ -2,7 +2,7 @@
 State Energy
 
 16/01/2020
-preparatory meeting pge
+preparatory meet pge
 
 28/01/2020
 Decarbonisation Poland climate neutrality
@@ -14,7 +14,7 @@ Green Deal
 climate law
 
 11/03/2020
-Green Deal priority transition offshore wind
+Green Deal prioritie transition offshore wind
 
 15/04/2020
 power sector decarbonisation
@@ -26,16 +26,16 @@ outcome vote Climate Law
 ia2030
 
 08/03/2022
-RePowerEU
+repowereu
 
 17/03/2022
-Fit 55
+fit 55
 
 17/03/2022
 Fit 55 package Transition Fund
 
 29/11/2022
-emission Trading System Transition Fund
+Emissions Trading System Transition Fund
 
 08/02/2023
 discuss Electricity Market Design Reform
@@ -51,3 +51,6 @@ competitiveness Clean Industrial Deal energy impact industry
 
 03/02/2025
 exchange view simplification energy market
+
+28/04/2025
+Water Resilience Strategy

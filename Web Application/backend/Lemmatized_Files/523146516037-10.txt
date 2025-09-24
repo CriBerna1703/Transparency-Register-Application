@@ -5,7 +5,7 @@ de marché des capitaux
 CMU Europe US Brexit
 
 01/07/2019
-Green finance fintech
+green finance fintech
 
 07/12/2020
 Taxonomy Solvency II
@@ -17,7 +17,7 @@ Q International Financial forum
 sustainable finance CMU
 
 22/05/2023
-ESG Ratings
+ESG rating
 
 23/07/2024
 securitisation
@@ -27,3 +27,6 @@ Basel
 
 05/05/2025
 revival securitization Saving Investment
+
+21/05/2025
+exchange financial service topic

@@ -1,5 +1,5 @@
 16/04/2015
-Sprectrum policy 700mhz
+sprectrum policy 700mhz
 
 24/09/2015
 spectrum

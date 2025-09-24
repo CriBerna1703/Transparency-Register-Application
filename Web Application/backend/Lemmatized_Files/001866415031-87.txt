@@ -11,7 +11,7 @@ trade
 investment initiative
 
 15/12/2014
-bank stress test LCR CMU Bank structural reform TLAC
+bank stress test LCR CMU Bank structural reform tlac
 
 11/02/2015
 Business Growth Fund SME finance
@@ -29,13 +29,13 @@ financing growth
 BSR
 
 03/09/2015
-Présentation de la stratégie dHSBC à la fois globalement et en Europe discuter sur Capital Markets et les sujet de liquidité sur les marchés
+présentation de la stratégie dHSBC à la fois globalement et en Europe discuter sur Capital Markets et les sujets de liquidité sur les marchés
 
 10/09/2015
 Capital Markets
 
 22/09/2015
-market liquiditythe Basel pipeline”Credit Valuation Adjustment CVA Bank Structural ReformCapital Markets include securitization
+market liquidityThe Basel pipeline”Credit Valuation Adjustment CVA Bank Structural ReformCapital Markets include securitization
 
 24/09/2015
 High Level Group Energy Infrastructure Europe
@@ -59,13 +59,13 @@ banking reform CMU call evidence
 action terrorism financing
 
 23/02/2016
-investment small medium sized company
+Investments small medium sized company
 
 23/02/2016
 Business Growth Fund
 
 15/03/2016
-Financial Services Policy
+Financial Services policy
 
 02/06/2016
 CCP Resolution
@@ -92,7 +92,7 @@ terrorist finance
 CRR2 package
 
 02/02/2017
-CEF Blending Call
+CEF Blending call
 
 07/03/2017
 Presentaton report trade service want invite Commissioner event
@@ -107,10 +107,10 @@ perform loan
 economic outlook
 
 01/12/2017
-introductory remark roundtable EUfinancial industry afisma European Chamber Commerce financial reform banking
+introductory remark roundtable financial industry AFISMA European Chamber Commerce financial reform banking
 
 10/04/2018
-sustainable Finance taxonomy Disclosure Investor duty
+sustainable Finance Taxonomy Disclosure Investor duty
 
 16/04/2018
 brexit
@@ -122,7 +122,7 @@ China connectivity
 Cyber Security FinTech
 
 07/11/2018
-Update Trade situation Information hsbc trading ASEAN
+Update Trade situation information HSBCs trading ASEAN
 
 21/03/2019
 CMU Banking
@@ -134,7 +134,7 @@ sustainable finance international role euro possibly relation Asia
 SME funding
 
 08/06/2021
-SMEs equity investment
+sme equity investment
 
 20/07/2021
 preparation call Cssr HSBC ceo
@@ -161,7 +161,7 @@ introductory meeting Director General
 Telecom policy investment
 
 22/02/2024
-finance renewable energy
+financing renewable energy
 
 05/06/2024
 CMU Agenda
@@ -174,3 +174,6 @@ exchange view Recovery Resilience Facility impact
 
 28/03/2025
 Global Gateway
+
+26/06/2025
+compétitivité relation use UE csrd cs3d simplification

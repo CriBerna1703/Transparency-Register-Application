@@ -2,7 +2,7 @@
 Capital Markets
 
 03/07/2015
-market Financial Instruments Directive II
+Markets Financial Instruments Directive II
 
 07/06/2016
 Capital Markets
@@ -17,22 +17,22 @@ CMU MIFID2 Regularoty Framework
 exchange view regulation policy
 
 05/12/2018
-Speech International ConferenceEU Capital Markets 2024
+Speech International Conference Capital Markets 2024
 
 05/12/2018
 CMU Mifid
 
 26/04/2019
-MiFID II
+MiFID ii
 
 29/10/2019
 CMU
 
 20/02/2020
-equity market structure market datum etd
+equity market structure Market datum etd
 
 15/04/2020
-CMU MiFID II MiFIR
+CMU mifid ii MiFIR
 
 19/06/2020
 upcoming MIFID MIFIR quick fix open access
@@ -59,31 +59,31 @@ capital market
 exchange capital market file possible visit Commissioner McGuinness stock exchange
 
 01/10/2021
-MiFIR Review Consolidated Tape
+MiFIR Review Consolidated tape
 
 25/10/2021
 MiFIR review
 
 16/11/2021
-Capital Markets review Markets Financial Instruments Regulation Directive
+Capital Markets review Markets Financial Instruments Regulation directive
 
 11/01/2022
-investment Firms prudential framework
+Investment Firms prudential framework
 
 11/01/2022
-investment Firms prudential framework
+Investment Firms prudential framework
 
 21/03/2022
-Care Strategy social dialogue social service sector
+care Strategy social dialogue social service sector
 
 31/05/2022
-CMU MiFIR Review
+CMU mifir review
 
 10/06/2022
 consolidated tape
 
 17/06/2022
-MiFIR meet Rosa Armesto FESE
+MiFIR meeting Rosa Armesto fese
 
 25/12/2022
 MiFIR review
@@ -95,7 +95,7 @@ digital euro
 CMU mifir negotiation
 
 18/07/2023
-distribution retail financial product
+Distribution retail financial product
 
 27/06/2024
 FESE Manifesto CMU
@@ -107,7 +107,7 @@ UK Financial Regulatory Forum
 RTS equity transparency negotiate trade
 
 15/01/2025
-exchange view transparency security market consolidate tape Securities Investments role DG FESE
+exchange view transparency security market consolidated tape Securities Investments role DG fese
 
 12/02/2025
 meeting discuss market development
@@ -116,4 +116,10 @@ meeting discuss market development
 financial service industry association debrief UK Financial Regulatory Forum
 
 07/04/2025
-SIU Communication target Consultation capital market integration supervision
+SIU Communication Targeted Consultation capital market integration supervision
+
+16/05/2025
+exchange trading venue integration capital market
+
+19/06/2025
+exchange view FESE Commission representative fese response Commission public consultation market integration area trading

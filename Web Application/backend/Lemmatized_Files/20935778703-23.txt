@@ -17,10 +17,10 @@ Corporate Tax Transparency
 Corporate Tax Transparency
 
 08/10/2015
-Prospectus Directive
+Prospectus directive
 
 21/03/2016
-public CBCR
+public cbcr
 
 04/04/2016
 vat rate apply e publication
@@ -32,7 +32,7 @@ prospectus
 CMU midterm review
 
 09/09/2019
-CMU sustainable finance
+CMU Sustainable finance
 
 04/12/2019
 preparation meeting Commissioner Reynders
@@ -59,7 +59,7 @@ sustainable finance
 country country report
 
 20/04/2021
-financial sustainable taxonomy
+financial sustainable Taxonomy
 
 07/05/2021
 sustainable corporate governance
@@ -68,16 +68,16 @@ sustainable corporate governance
 sustainable corporate governance
 
 12/10/2021
-sustainable Corporate Governance Initiative
+Sustainable Corporate Governance Initiative
 
 12/10/2021
-sustainable Corporate Governance Initiative
+Sustainable Corporate Governance Initiative
 
 29/08/2023
-corporate sustainability Due Diligence Directive
+corporate Sustainability due Diligence directive
 
 26/09/2023
-list company CMU ESG
+listed company CMU ESG
 
 30/01/2025
 simplification omnibus
@@ -95,7 +95,10 @@ Meeting Issuers impact financial regulation competitiveness
 Commission Communication Savings Investments SIU Commission Omnibus Simplification package proposal concern Corporate Sustainability Reporting Directive csrd
 
 15/04/2025
-Speech General Assembly EuropeanIssuers EU ’s agenda strengthen capital market notably Savings investment SIU late development Omnibus proposal aim future simplification effort
+Speech General Assembly EuropeanIssuers EU ’s agenda strengthen capital market notably Savings Investments SIU late development Omnibus proposal aim future simplification effort
 
 15/04/2025
-Omnibus
+omnibus
+
+23/06/2025
+ESRS revision efrag progress report

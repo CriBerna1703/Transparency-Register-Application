@@ -1,5 +1,5 @@
 26/01/2015
-ENERGY EFFICIENCY product TRANSPORT building
+ENERGY EFFICIENCY PRODUCTS TRANSPORT building
 
 05/02/2015
 energy
@@ -11,7 +11,7 @@ industry 40
 Energy Climate Action
 
 20/04/2015
-co2 car post 2020 General Safety Regulation
+CO2 car post 2020 General Safety Regulation
 
 29/04/2015
 dsm
@@ -26,16 +26,16 @@ connect mobility
 RDE
 
 09/11/2015
-automated driving
+automate driving
 
 14/02/2016
-roundtable business Singapore
+roundtable Businesses Singapore
 
 12/04/2016
 skill agenda radicalisation
 
 19/04/2016
-co2 car
+CO2 car
 
 19/05/2016
 company site visit
@@ -50,22 +50,22 @@ decarbonisation transport
 decarbonisation transport
 
 08/07/2016
-connect automated drive decarbonisation transport
+connected automate drive decarbonisation transport
 
 11/07/2016
 decarbonisation transport
 
 15/09/2016
-Energy Efficiency
-
-15/09/2016
 energy policy
 
+15/09/2016
+Energy Efficiency
+
 19/10/2016
-Strategy Low emission mobility
+Strategy low emission mobility
 
 22/03/2017
-connected Automated driving
+Connected Automated Driving
 
 21/11/2017
 CO2 émission regulation
@@ -74,7 +74,7 @@ CO2 émission regulation
 cybersecurity internet thing
 
 02/07/2018
-low EMISSION mobility
+LOW emission MOBILITY
 
 17/10/2018
 copyright
@@ -86,10 +86,10 @@ visit Bosch RD Centre focus road safety
 Research Innovation
 
 04/12/2019
-meet CEO Bosch
+Meeting CEO Bosch
 
 04/12/2019
-AI datum economy
+AI data economy
 
 07/04/2020
 discussion covid 19
@@ -113,7 +113,7 @@ transport
 artificial intelligence green deal industrial policy
 
 27/10/2020
-datum AI hydrogen processor
+Data AI hydrogen processor
 
 03/11/2020
 Green Deal
@@ -125,16 +125,16 @@ roundtable processor
 RRF industry strategy digital strategy
 
 23/02/2021
-datum economy
+data economy
 
 25/02/2021
 green digital transition Decarbonisation path automotive industry Trade Policy Review
 
 03/03/2021
-roundtable transport value chain alliance transformation automotive value chain context green recovery
+roundtable transport value chain alliance Transformation automotive value chain context green recovery
 
 03/03/2021
-roundtable transport value chain alliance transformation automotive value chain context green recovery
+roundtable transport value chain alliance Transformation automotive value chain context green recovery
 
 08/04/2021
 IPCEI Microelectronics virtual meeting
@@ -143,16 +143,16 @@ IPCEI Microelectronics virtual meeting
 decarbonize road transport sector
 
 07/05/2021
-Alliance microelectronic
+alliance microelectronic
 
 03/06/2021
 Clean Hydrogen Alliance regulatory framework
 
 21/06/2021
-co2 standard car van Euro 7
+CO2 standard car van Euro 7
 
 29/06/2021
-Discussion Industry expectation Fit 55 Package
+discussion Industry expectation Fit 55 Package
 
 23/09/2021
 semiconductor
@@ -191,7 +191,7 @@ digital policy
 taxonomy
 
 06/12/2022
-revision F gas regulation
+revision f gas regulation
 
 09/02/2023
 late insight CO2 HDV standard
@@ -203,13 +203,13 @@ Dr Heyn want present priority Euro 7
 energy market
 
 25/04/2023
-chip Act State aid
+Chips Act State aid
 
 29/08/2023
 energy transition security
 
 18/10/2023
-automotive industry co2 regulation HDV interaction AFIR Euro 7 possible regulation access vehicle datum
+automotive industry CO2 regulation HDV interaction AFIR Euro 7 possible regulation access vehicle datum
 
 24/06/2024
 effective technology pathway transport decarbonization towards 2040
@@ -227,7 +227,7 @@ future automotive sector
 future automotive sector
 
 19/02/2025
-dialogue future automotive sector Suppliers session
+Dialogue future automotive sector Suppliers Session
 
 24/03/2025
 Automotive Industrial Action Plan NXP Infineon STMicroelectronics Bosch
@@ -236,7 +236,31 @@ Automotive Industrial Action Plan NXP Infineon STMicroelectronics Bosch
 trade relation economic security
 
 03/04/2025
+semiconductor industry review Chips Act
+
+03/04/2025
 exchange implication recent US trade measure broad geopolitical environment semiconductor industry
 
+10/04/2025
+impact US tariff
+
 15/04/2025
-implementation Automotive Industrial Action Plan NXP Infineon stmicroelectronic Bosch Axelera AI
+Implementation Automotive Industrial Action Plan NXP Infineon STMicroelectronics Bosch Axelera AI
+
+17/06/2025
+competitiveness automotive supplier international context
+
+24/06/2025
+Presentation Bosch DB technology development perception autonomous driving train regulatory challenge
+
+03/07/2025
+Presentation ESIA semiconductor industry Europe
+
+10/07/2025
+exchange view e fuel monitor methodology
+
+11/07/2025
+exchange enable scalable AI robotic end user leadership industry
+
+14/07/2025
+omnibus

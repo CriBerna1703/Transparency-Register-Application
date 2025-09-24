@@ -11,13 +11,10 @@ presentation company connectivity service
 presentation company
 
 28/01/2025
-future harmonise 2 ghz Mobile Satellite Service Frequency Band
-
-14/02/2025
-lunch discussion protection critical infrastructure
+future harmonised 2 ghz Mobile Satellite Service Frequency Band
 
 25/02/2025
-space law NIS2 directive
+space law NIS2 Directive
 
 25/03/2025
 recent Viasat Direct Device initiative
@@ -30,6 +27,9 @@ exchange view satellite mobile communication
 
 26/03/2025
 tech competitiveness agenda space
+
+26/03/2025
+presentation service provide viasat aviation
 
 27/03/2025
 cybersecurity space

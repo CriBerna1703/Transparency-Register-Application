@@ -11,7 +11,7 @@ verbund
 energy
 
 23/06/2015
-Internal Electricity market
+Internal Electricity Market
 
 14/09/2015
 Hydropower Energy
@@ -29,7 +29,7 @@ oesterreichische Energiethemen
 Green Deal Priorities
 
 11/04/2022
-REPowerEU Security energy supply energytransition
+repowereu Security energy supply Energy transition
 
 08/11/2022
 current economic development
@@ -44,7 +44,7 @@ renewable Hydrogen Electricity market design
 presentation business group
 
 04/05/2023
-importance hydropower ensure electricity system flexibility application electricity market reform hydropow strengthen visibility hydropower one key source renewable energy
+importance hydropower ensure electricity system flexibility application electricity market reform hydropow strengthen visibility hydropow one key source renewable energy
 
 24/05/2023
 EMD reform proposal renewable hydrogen

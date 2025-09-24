@@ -2,7 +2,7 @@
 transparency notably TiSA
 
 01/03/2017
-Transparency Register
+transparency Register
 
 15/07/2021
 DSA DMA

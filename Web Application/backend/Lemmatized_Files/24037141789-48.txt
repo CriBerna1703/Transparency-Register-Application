@@ -11,10 +11,10 @@ Meeting Intesa Sanpaolo presentation activitie International Regulatory Affairs 
 Meeting Intesa Sanpaolo Bank Cortesy visit
 
 07/07/2015
-Financial Services Policy
+Financial Services policy
 
 22/07/2015
-Financial Services Policy
+Financial Services policy
 
 18/09/2015
 virtual currency
@@ -23,7 +23,7 @@ virtual currency
 legislative initiative recently publish Croatian Government
 
 21/09/2015
-Financial Services Policy
+Financial Services policy
 
 26/01/2016
 banking
@@ -47,7 +47,7 @@ banking
 eba draft RTS Strong Customer Authentication Secure Communication
 
 26/10/2017
-cyber security
+Cyber security
 
 10/11/2017
 bank NPL
@@ -62,13 +62,13 @@ investment maritime med area
 italian Macro economic situation
 
 06/06/2018
-Cyber security fintech
+Cyber security Fintech
 
 11/10/2018
 transport study
 
 15/11/2018
-italian banking system Intesa Sanpaolo perform loan package Banking package
+italian banking system Intesa Sanpaolo perform loan package banking package
 
 16/11/2018
 Intesa Sanpaolo late result business strategy
@@ -77,7 +77,7 @@ Intesa Sanpaolo late result business strategy
 SME access finance sustainable finance Fintech
 
 28/05/2019
-report Mediterraneanand italian Energy
+report Mediterranean Italian Energy
 
 11/10/2019
 instant payment
@@ -92,7 +92,7 @@ payment
 breakfast institutional economic stakeholder organise Rep Comin partner
 
 04/11/2020
-late macroeconomic development npl
+late macroeconomic development NPLs
 
 16/03/2021
 sustainable finance Green recovery
@@ -101,7 +101,7 @@ sustainable finance Green recovery
 Discussion Conference Future Europe
 
 27/04/2021
-sustainable finance
+sustainable Finance
 
 17/05/2021
 economy recovery phase
@@ -113,7 +113,7 @@ analysis italian economy
 Primary Dealer Network
 
 27/04/2022
-banking
+bank
 
 29/04/2022
 impact war economy gas import consumption fiscal policy RRP overview banking sector
@@ -146,7 +146,7 @@ transition circular economy role banking sector action Intesa Sanpaolo
 transition circular economy role banking sector action Intesa Sanpaolo
 
 27/04/2023
-transition circular economy role thebanking sector action Intesa Sanpaolo
+transition circular economy role banking sector action Intesa Sanpaolo
 
 17/01/2024
 macro economic situation Banking sector
@@ -161,10 +161,16 @@ Basel III
 Digital Euro
 
 12/03/2025
-Meeting South America Critical Raw Materials CRM Coalition Willing Dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
+Meeting South America Critical Raw Materials CRM Coalition Willing dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
 
 12/03/2025
 financial service policy
 
 12/03/2025
 global economic outlook
+
+26/05/2025
+SIU Targeted Consultation capital market integration
+
+04/07/2025
+payment

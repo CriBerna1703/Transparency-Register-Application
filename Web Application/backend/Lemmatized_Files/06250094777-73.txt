@@ -2,16 +2,16 @@
 decarbonisation transport position ICCT
 
 31/05/2016
-Decarbonisation transport
+decarbonisation transport
 
 01/06/2016
 low emission mobility
 
 21/09/2016
-standard LDV HDV
+Standards LDV HDV
 
 24/10/2016
-presentation Biofrontiers report
+Presentation Biofrontiers report
 
 22/11/2016
 biofrontier report
@@ -26,7 +26,7 @@ co2 emission transport
 electric vehicle
 
 13/02/2020
-review light duty co2 standard
+review light duty CO2 standard
 
 17/05/2021
 Euro 7
@@ -38,7 +38,7 @@ zero emission transport Fit 2030 package
 climate transport area
 
 12/02/2025
-dialogue future automotive sector Thematic Working Group Clean Transition Decarbonisation
+Dialogue future automotive sector Thematic Working Group Clean Transition Decarbonisation
 
 12/03/2025
 future automotive sector
@@ -47,4 +47,10 @@ future automotive sector
 ICCT publication
 
 21/03/2025
-shipping aviation decarbonisation
+ship aviation decarbonisation
+
+01/07/2025
+study battery CO2 standard car van life cycle emission
+
+28/07/2025
+discussion CO2 standard car van

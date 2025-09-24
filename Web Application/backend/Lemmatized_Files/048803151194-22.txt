@@ -1,5 +1,5 @@
 05/10/2023
-Join Purchase Gas
+Join Purchase gas
 
 05/10/2023
 energy
@@ -8,7 +8,7 @@ energy
 exchange view US oil gas company
 
 10/03/2025
-exchange view US international oil gas company
+Exchange view US international oil gas company
 
 10/03/2025
 energy situation US Europe

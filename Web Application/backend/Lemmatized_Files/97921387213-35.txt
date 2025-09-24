@@ -1,5 +1,5 @@
 23/11/2017
-ICT research innovation DSM
+ICT research innovation dsm
 
 12/09/2019
 Input IMEC Horizon Europe
@@ -8,7 +8,7 @@ Input IMEC Horizon Europe
 discussion covid 19
 
 05/10/2020
-roundtable skill Microelectronics
+roundtable skill microelectronic
 
 05/10/2020
 Pact Skills roundtable microelectronic sector
@@ -26,10 +26,10 @@ Digital decade
 Digital decade
 
 22/11/2021
-presentation Interuniversity Microelectronics Centre
+Presentation Interuniversity Microelectronics Centre
 
 22/11/2021
-organised Belgian PermRep Presentation IMEC world lead RD hub nano digital technology semiconductor
+Organised belgian PermRep Presentation IMEC world lead RD hub nano digital technology semiconductor
 
 10/01/2022
 CEO Round Table Semiconductors
@@ -41,7 +41,7 @@ semiconductor
 chip act
 
 07/02/2022
-visit imec premise
+visit IMEC premise
 
 23/10/2022
 informal dinner keynote speaker eve Grand Challenges conference
@@ -68,7 +68,7 @@ semiconductor
 chip cool
 
 13/02/2025
-NOAK next kind pv imec venture reshore pv international value chain partnership
+noak Next Kind PV IMEC venture reshore PV international value chain partnership
 
 18/02/2025
 automotive
@@ -77,4 +77,10 @@ automotive
 invitation EVP Virkkunen IMEC Technology Forum World ITF 2025
 
 10/04/2025
-Semiconductor industry
+semi ’s global activity semiconductor
+
+10/04/2025
+semiconductor industry
+
+22/05/2025
+advance Chips strategy strengthen collaboration industrial end user IMEC

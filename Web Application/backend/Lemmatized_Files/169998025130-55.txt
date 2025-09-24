@@ -2,7 +2,7 @@
 trading post trading landscape derivative market
 
 13/01/2021
-mifid II market structure
+MiFID ii market structure
 
 15/09/2021
 MiFIR review CMU

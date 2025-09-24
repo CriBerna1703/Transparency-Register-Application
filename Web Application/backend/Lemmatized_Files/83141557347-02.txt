@@ -2,7 +2,7 @@
 infrastrcuture project
 
 01/07/2015
-Situation French Outermost Regions
+situation french Outermost Regions
 
 03/07/2015
 electricity network
@@ -32,4 +32,4 @@ support Outermost Regions particular Guiana
 support Outermost Regions particular Guiana
 
 20/07/2018
-transition énergétique performance énergétique des bâtiment
+transition énergétique performance énergétique de bâtiment

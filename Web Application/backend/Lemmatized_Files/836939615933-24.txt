@@ -2,19 +2,19 @@
 CMU Mifid
 
 07/10/2015
-MiFID II
+MiFID ii
 
 07/10/2015
-market Financial Instruments Directive II
+Markets Financial Instruments Directive II
 
 28/01/2016
-MiFID II
+MiFID ii
 
 23/06/2016
 Market Liquidity
 
 10/11/2016
-mifid EMIR
+MiFID EMIR
 
 25/01/2017
 EMIR Review
@@ -23,40 +23,46 @@ EMIR Review
 EMIR CCP Recovery Resolution
 
 01/03/2018
-EMIR MiFID II
+EMIR MiFID ii
 
 13/11/2018
-EMIR MiFID II
+EMIR MiFID ii
 
 06/02/2019
 Capital Market International Role Euro
 
 11/11/2019
-mifid II review
+MiFID ii review
 
 09/09/2021
 mifid
 
 16/11/2021
-consolidated Tape transparency
+Consolidated Tape transparency
 
 23/03/2022
-CMU Consolidated tape PFOF
+CMU consolidated tape PFOF
 
 27/09/2022
-Basel iii mifir review proposal macro prudential framework
+Basel iii MiFIR review proposal macro prudential framework
 
 28/09/2022
 MiFIR review third country branch
 
 25/01/2023
-ifr reclassification MiFIR review ccp payment order flow
+IFR reclassification mifir review ccp payment order flow
 
 19/06/2024
 Capital Markets
 
 05/03/2025
-exchange view forthcoming legislative agenda particular saving investment /market supervision role bank market maker play support development market
+exchange view forthcoming legislative agenda particular saving investment /markets supervision role bank market maker play support development market
 
 09/04/2025
 EUROFI exchange regulatory framework
+
+02/06/2025
+Exchange asset manager integration capital market
+
+19/06/2025
+Energy Markets

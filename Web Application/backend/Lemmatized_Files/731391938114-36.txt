@@ -24,3 +24,9 @@ consumer protection rule DSA
 
 25/03/2025
 exchange view consumer protection
+
+11/06/2025
+exchange view consumer protection
+
+27/06/2025
+Digital Identity Wallet Age Verification solution

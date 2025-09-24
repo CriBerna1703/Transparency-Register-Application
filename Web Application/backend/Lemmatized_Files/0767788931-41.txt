@@ -1,5 +1,5 @@
 05/02/2015
-Public Banking Sector
+Public Banking sector
 
 06/03/2015
 Capital Markets Semester
@@ -11,7 +11,7 @@ Capital Markets
 Capital Markets
 
 10/09/2015
-Capital Markets Banking Regulation
+Capital Markets Banking regulation
 
 21/10/2015
 deposit insurance
@@ -32,10 +32,10 @@ Banking EDIS CMU
 CRR CRD promotional bank
 
 07/11/2016
-Digitisation area finance service
+digitisation area finance service
 
 06/04/2017
-priority programme VÖB President Finalisation Basel III CRD Review
+priorities programme VÖB President Finalisation Basel III CRD Review
 
 05/09/2017
 banking ESA review CRR CRD PSD2
@@ -50,10 +50,10 @@ MFF
 Banking Basel III Green Finance
 
 06/06/2018
-panel discussion banking
+Panel discussion banking
 
 16/10/2018
-InvestEU programme
+InvestEU Programme
 
 28/11/2018
 MFF
@@ -65,7 +65,7 @@ Basel III
 Basel III
 
 10/03/2022
-covid crisis Banking Package sustainable finance
+covid crisis Banking Package Sustainable Finance
 
 07/11/2022
 article 8 disclosure
@@ -90,6 +90,12 @@ simplification
 
 21/03/2025
 exchange simplification regulatory development
+
+14/04/2025
+sustainability Omnibus
+
+05/05/2025
+impact digitalisation financial sector discussion mitigate regulatory burden banking sector
 
 06/05/2025
 exchange view macroprudential review bank

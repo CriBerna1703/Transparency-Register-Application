@@ -5,7 +5,7 @@ TSM
 Digital Financial Business Models cyber security datum protection
 
 15/03/2016
-Review Financial Regulatory Reform Agenda Call evidence Digital Market Europe growth agenda
+review Financial Regulatory Reform Agenda Call Evidence Digital Market Europe growth agenda
 
 18/04/2016
 financial policy Digital
@@ -23,10 +23,10 @@ cybersecurity
 Cyber Security FinTech
 
 09/10/2018
-fintech
+FINTECH
 
 23/01/2020
-sustainable finance
+sustainable Finance
 
 27/01/2020
 Basel III implementation Insurance Capital Standard Solvency II review sustainable finance
@@ -35,16 +35,16 @@ Basel III implementation Insurance Capital Standard Solvency II review sustainab
 Green Deal recovery
 
 14/09/2020
-tbd
+Exchange view Commission prioritie field digital sovereignty Next Generation programme
 
 14/09/2020
-exchange view Commission priority field digital sovereignty Next Generation programme
+tbd
 
 24/09/2020
 MdM give introductory remark ASGS RRF
 
 26/01/2021
-Integrated Financial market
+Integrated Financial Market
 
 23/02/2021
 Basel III Solvency 2 CMU mifid
@@ -74,4 +74,7 @@ PSD2 open finance
 banking capital market competitiveness resilience trade green digital transition
 
 26/03/2025
-Exchange Financial Services Round Table competitiveness Savings Investments simplification
+Exchange Financial Services Round Table Competitiveness Savings Investments simplification
+
+27/05/2025
+simplification

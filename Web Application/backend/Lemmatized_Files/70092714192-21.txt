@@ -5,4 +5,4 @@ EURIBORLIBOR BMR
 courtesy meeting
 
 04/09/2024
-update emmi activity
+update EMMIs activity

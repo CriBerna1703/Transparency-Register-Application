@@ -5,7 +5,7 @@ platoone
 logistic
 
 07/02/2019
-RI mobility
+ri mobility
 
 12/11/2020
 interview sustainable logistic
