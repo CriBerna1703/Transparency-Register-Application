@@ -15,8 +15,8 @@ class MeetingExtractor:
         self.columns = ['lobbyist_id', 'meeting_number', 'meeting_date', 'topic', 'location']
         self.known_titles = ['Principal Legal Adviser', 'Director of Office', 'Head of JRC Department','High Representative of the Union for Foreign Affairs and Security Policy and Vice-President', 'Commissioner', 'High Representative / Vice-President', 'Acting Head of Representation', 'Acting Deputy Director-General',
                             'Head of Representation', 'Deputy Secretary-General', 'Secretary-General', 'Executive Vice-President', 'First Vice-President',
-                            'Hors Classe Adviser', 'Vice-President', 'President', 'Directorate-General for', 'Acting Director-General', 'Director-General', 'High Representative',
-                            'Deputy Director-General', 'Acting Director', 'Director', 'Acting Head of Unit', 'Seconded Head of Unit', 'Head of Unit', 'Regulatory Scrutiny Board', 'Acting Principal Adviser', 'Principal Adviser']
+                            'Hors Classe Adviser', 'Vice-President', 'President', 'Acting Director-General', 'Director-General', 'High Representative',
+                            'Deputy Director-General', 'Acting Director', 'Director', 'Acting Head of Unit', 'Seconded Head of Unit', 'Head of Unit (Ad interim)', 'Head of Unit', 'Regulatory Scrutiny Board', 'Acting Principal Adviser', 'Principal Adviser']
         self.department_titles = ['Agriculture and Rural Development', 'Budget', 'Climate Action', 'Communications Networks, Content and Technology',
                              'Communication Networks, Content and Technology', 'Communication', 'Competition', 'Data Protection Officer', 'Directorate-General for International Partnerships',
                              'Directorate- General for International Partnerships', 'Defence Industry and Space', 'Digital Services', 'Economic and Financial Affairs',
@@ -152,7 +152,7 @@ class MeetingExtractor:
         ]
         self.db_conn.insert_data(self.table, self.columns, values)
 
-        rep_blocks = self.parse_all_representatives(meeting_data["commission_representative"])
+        rep_blocks = self.parse_all_representatives(meeting_data["commission_representative"], meeting_data["meeting_date"])
 
         for representative_name, commission_cabinet in rep_blocks:
             representative_id = self.db_conn.get_field_id('commission_representative', 'name', representative_name, 'id')
@@ -173,38 +173,80 @@ class MeetingExtractor:
                 [self.lobbyist_id, meeting_data["meeting_number"], representative_id, cabinet_id]
             )
 
-    def parse_all_representatives(self, commission_representative_block: str):
-        removed_spaces = re.sub(r'\s+', ' ', commission_representative_block.replace('\n', ' ').replace('- ', '-').replace(' -', '-')).strip()
-        pattern = r'(?:' + '|'.join(map(re.escape, self.known_titles + self.department_titles)) + r')'
-        normalized = re.sub(pattern, '', removed_spaces).replace(' ,', ',').replace(', ', ',').replace(',,', ',')
-        normalized = normalized.replace('Valeriu,Dan Dionisie', 'Dan Dionisie').replace('Adina Vălean', 'Adina-Ioana Vălean').replace('Glenn Micalle', 'Glenn Micallef').replace('Glenn Micalleff', 'Glenn Micallef').strip()
+    def parse_all_representatives(self, commission_representative_block: str, meeting_date: str):
+        removed_spaces = re.sub(
+            r'\s+',
+            ' ',
+            commission_representative_block.replace('\n', ' ')
+                                        .replace('- ', '-')
+                                        .replace(' -', '-')
+        ).strip()
+        normalized = removed_spaces.replace('Valeriu, Dan Dionisie', 'Dan Dionisie').replace('Adina Vălean', 'Adina-Ioana Vălean').replace('Glenn Micalle', 'Glenn Micallef').replace('Glenn Micalleff', 'Glenn Micallef').strip()
 
         raw_blocks = [b.strip() for b in normalized.split('<<<BR>>>') if b.strip()]
         results = []
-        last_representative = None
+        roles = []
 
-        for i, block in enumerate(raw_blocks):
-            block_split = block.split(',')
-            for j, part in enumerate(block_split):
-                part = part.strip()
-                if not part:
-                    continue
+        for block in raw_blocks:
+            found_titles = []
+            found_department = None
 
-                if j == 2:
-                    raise ValueError("Unexpected third element in representative block")
+            for dept in sorted(self.department_titles, key=len, reverse=True):
+                if dept in block:
+                    found_department = dept
+                    block = block.replace(dept, "")
+                    break
 
-                if j == 0:
-                    last_representative = part
-                    results.append((last_representative, None))
-                    continue
-                else:
-                    if('Cabinet member of' in part):
+            for title in sorted(self.known_titles, key=len, reverse=True):
+                if title in block:
+                    found_titles.append(title)
+                    block = block.replace(title, "")
+
+            block = re.sub(r'\s+', ' ', block)
+            block = re.sub(r'\s*,\s*', ',', block)
+            block = block.strip(" ,")
+
+            found_title = ", ".join(found_titles) if found_titles else None
+
+            if found_title and found_department:
+                name_part = block.split(',', 1)[0].strip()
+                roles.append({
+                    "name": name_part,
+                    "title": found_title,
+                    "department": found_department
+                })
+
+            parts = [p.strip() for p in block.split(',') if p.strip()]
+            if not parts:
+                continue
+
+            last_representative = parts[0]
+            results.append((last_representative, None))
+
+            if len(parts) > 1:
+                for part in parts[1:]:
+                    if 'Cabinet member of' in part:
                         cabinet = part.replace('Cabinet member of', '').strip()
-                        if results:
-                            results[-1] = (results[-1][0], cabinet)
-                        continue
+                        results[-1] = (results[-1][0], cabinet)
                     else:
-                        raise ValueError(f"Unexpected part in representative block: {part}")
+                        raise ValueError(f"Unexpected part in representative block: {commission_representative_block}")
+
+        for role in roles:
+            representative_id = self.db_conn.get_field_id('commission_representative', 'name', role["name"], 'id')
+            if not representative_id:
+                self.db_conn.insert_data('commission_representative', ['name'], [role["name"]])
+                representative_id = self.db_conn.get_field_id('commission_representative', 'name', role["name"], 'id')
+
+            directorate_id = self.db_conn.get_field_id('directorate', 'name', role["department"], 'id')
+            if not directorate_id:
+                self.db_conn.insert_data('directorate', ['name'], [role["department"]])
+                directorate_id = self.db_conn.get_field_id('directorate', 'name', role["department"], 'id')
+
+            self.db_conn.insert_data(
+                'representative_allocation',
+                ['representative_id', 'year', 'directorate_id', 'role'],
+                [representative_id, meeting_date.year, directorate_id, role["title"]]
+            )
 
         return results
 

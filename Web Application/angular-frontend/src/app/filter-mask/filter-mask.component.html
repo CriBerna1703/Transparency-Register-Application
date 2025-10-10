@@ -160,7 +160,7 @@
                   <input type="checkbox"
                         [checked]="isCabinetAllSelected(group)"
                         (change)="toggleCabinetSelection(group)">
-                  Team member of {{ 'Commissioner ' + group.cabinetName || 'No cabinet' }}
+                      Team member of {{ group.cabinetName !== 'No cabinet' ? ('Commissioner ' + group.cabinetName) : 'No cabinet' }}
                   <small>({{ group.reps.length + (group.cabinetRepresentativeId ? 1 : 0) }})</small>
                 </label>
 
