@@ -8,10 +8,10 @@ CMU Covid 19 capital market recovery package
 CMU Covid 19 capital market recovery package
 
 31/05/2022
-MiFIR
+mifir
 
 18/07/2023
-distribution retail financial product
+Distribution retail financial product
 
 30/01/2024
 IFR IFD Europe ’s capital market

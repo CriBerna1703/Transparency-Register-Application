@@ -8,7 +8,7 @@ Space Strategy Europe
 dsm
 
 10/11/2016
-space strategy
+Space Strategy
 
 17/03/2017
 satellite connectivity telecom review
@@ -17,10 +17,10 @@ satellite connectivity telecom review
 connectivity spectrum 5 g
 
 19/09/2017
-spectrum broadband AVMSD
+Spectrum broadband AVMSD
 
 23/03/2018
-rôle du satellite dans le déploiement de la 5 g fréquence satellite pour la prochaine Conférence Mondiale des Radiocommunications 2019 future mise en œuvre de la directive Services de Médias audiovisuel
+rôle du satellite dans le déploiement de la 5 G fréquence satellite pour la prochaine Conférence Mondiale des Radiocommunications 2019 future mise en œuvre de la directive Services de Médias Audiovisuels
 
 22/01/2020
 economic situation space sector
@@ -47,10 +47,22 @@ space
 Media Freedom Act medium sanction
 
 16/01/2023
-meeting discuss secure connectivity eutelsat potential contribution IRIS2 initiative
+meeting discuss secure connectivity Eutelsats potential contribution IRIS2 initiative
 
 06/03/2023
-space Policy
+Space Policy
 
 22/03/2023
 space policy
+
+10/06/2025
+presentation EUTELSAT operation
+
+19/06/2025
+visit eutelsat premise
+
+26/06/2025
+compétitivité relation use UE csrd cs3d simplification
+
+15/07/2025
+exchange view opportunity challenge satellite connectivity Greenland

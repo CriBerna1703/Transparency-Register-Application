@@ -1,5 +1,5 @@
 31/01/2020
-eurohpc dep
+eurohpc DEP
 
 18/01/2021
 LUMI Supercomputer state play video meeting
@@ -17,7 +17,7 @@ presentation company digital policy
 digitalisation include climate impact digitalisation particular point view CSCs climate neutral datum centre Kajaani Finland LUMI locate
 
 06/03/2024
-topical issue upcoming priority research innovation landscape include FP10 role potential digital research
+topical issue upcoming priorities research innovation landscape include FP10 role potential digital research
 
 26/09/2024
 research innovation landscape include FP10 role potential digital research infrastructure LUMI supercomputer CSC operate

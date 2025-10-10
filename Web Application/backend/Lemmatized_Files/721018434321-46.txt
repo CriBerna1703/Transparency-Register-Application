@@ -2,16 +2,16 @@
 education science Marie Sklodowska Curie Actions
 
 03/03/2020
-achievement Quantum Flagship mff future programming process
+Achievements Quantum Flagship MFF future programming process
 
 17/11/2020
 current plan Quantum Technologies context upcoming Horizon Europe Framework Programme
 
 01/06/2022
-quantum
+Quantum
 
 27/02/2023
-quantum
+Quantum
 
 29/05/2024
 meeting Presidents G6 Research Network g6 president share view future Research
@@ -21,3 +21,6 @@ Quantum technology
 
 23/01/2025
 Quantum technology
+
+27/06/2025
+Development Quantum technology

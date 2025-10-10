@@ -14,10 +14,10 @@ biomass
 topic relate bioenergy sector
 
 26/07/2017
-position aebiom bioenergy sustainability
+position AEBIOM bioenergy sustainability
 
 19/10/2018
-les atouts de la bioénergie en term dedéveloppement économique de création demplois mais aussi de sécurité énergétique et de réduction des émission
+les atouts de la bioénergie en termes de développement économique de création demplois mais aussi de sécurité énergétique et de réduction des émission
 
 05/11/2018
 Long Term Strategy exchange view bioenergy sector
@@ -32,7 +32,7 @@ bio economy strategy
 role bioenergy clean energy transition
 
 24/06/2021
-RED revision
+RED Revision
 
 24/06/2021
 Fit 55 package Review REDII criterion particular sustainability criterion solid biomass
@@ -41,7 +41,7 @@ Fit 55 package Review REDII criterion particular sustainability criterion solid 
 Draft Climate Energy Environmental State aid guideline
 
 08/11/2021
-forest base industry
+Forest base industry
 
 09/11/2021
 tbc

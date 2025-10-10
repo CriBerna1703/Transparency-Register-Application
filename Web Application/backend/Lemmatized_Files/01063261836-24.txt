@@ -5,13 +5,13 @@ College Better Regulation
 IoT H2020
 
 12/11/2015
-joint mtg energy assoc /Markets Financial Instruments Directive II
+Joint mtg energy assoc /Markets Financial Instruments Directive II
 
 02/09/2016
-food Ingredients Bio issue
+Food Ingredients Bio Issues
 
 25/09/2016
-future market
+future Markets
 
 19/11/2018
 bio economy
@@ -29,7 +29,7 @@ energy derivative market
 sustainable food system
 
 20/03/2023
-discuss Cargill 2022 ESG Report sustainability strategy
+discuss Cargill 2022 ESG Report Sustainability strategy
 
 22/11/2023
 regenerative agriculture carbon removal certification
@@ -39,3 +39,9 @@ cereal oilseed market development
 
 18/03/2025
 presentation Cargill SilvAir solution methane emission reduction animal nutrition
+
+01/07/2025
+regenerative agriculture crcf biofuel
+
+15/07/2025
+risk supply shortage critical agrifood feed import link geopolitical turbulence eudr implementation

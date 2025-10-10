@@ -8,7 +8,7 @@ dsm
 dsm
 
 18/02/2016
-DSM startup
+dsm startup
 
 18/04/2016
 platform
@@ -17,10 +17,10 @@ platform
 datum protection
 
 26/01/2018
-DSM general copyright ePrivacy
+dsm general copyright eprivacy
 
 12/04/2018
-start up innovation
+start up Innovation
 
 26/03/2020
 artificial intelligence
@@ -35,7 +35,10 @@ Pact Skills roundtable representative health sector
 Exchange Europes digital ambition startup community
 
 09/10/2023
-introduction ahead Climate SME Start up dialogue
+introduction ahead Climate SME Start up Dialogue
 
 25/04/2025
 second meeting Startup Scaleup Forum Discussion draft building block Startup Scaleup Strategy structure along identify obstacle possible solution
+
+18/06/2025
+exchange view forthcoming Digital Fairness Act

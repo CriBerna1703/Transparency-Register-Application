@@ -2,7 +2,7 @@
 CMU
 
 28/05/2015
-well regulation context CapitalMarkets securitisation bank lending
+well regulation context Capital Markets securitisation bank lending
 
 29/05/2015
 long term financing /securitisation
@@ -11,7 +11,7 @@ long term financing /securitisation
 CCP recovery resolution
 
 14/09/2015
-remuneration policy CRD iv eba guideline proportionality
+remuneration policy CRD IV EBA guideline proportionality
 
 15/09/2017
 esa review
@@ -20,22 +20,22 @@ esa review
 discussion sur les travaux de la Commission européenne sur la transparence fiscale et des conséquence sur lindustrie financière
 
 01/10/2019
-aifmd review sustainable finance
+AIFMD review sustainable finance
 
 23/01/2020
-presentation alternative credit council report discussion exist regulatory framework national regime ELTIF Discussion economic situation leverage loan macro prudential policy
+Presentation Alternative credit council report discussion exist regulatory framework national regime ELTIF Discussion economic situation leverage loan macro prudential policy
 
 31/01/2020
 Capital Market Asset management regulation
 
 17/04/2020
-impact covid 19 alternative investment management industry
+impact COVID 19 alternative investment management industry
 
 28/01/2021
 economic recovery post Brexit Capital Markets
 
 15/02/2021
-substainable Corporate Governance
+Substainable Corporate Governance
 
 24/02/2021
 aifmd gamestop
@@ -68,4 +68,7 @@ Savings Investments securitisation
 exchange securitisation
 
 12/05/2025
-Sustainability Omnibus SFDR revision
+sustainability Omnibus sfdr revision
+
+14/05/2025
+SIU Markets Financial Instruments Directive MiFID ii Regulation mifir Short Selling regulation ssr

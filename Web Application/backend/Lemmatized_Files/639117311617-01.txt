@@ -23,13 +23,13 @@ China relation
 Safe Harbour
 
 07/04/2016
-GDPR dp
+GDPR DP
 
 02/05/2016
 dsm
 
 05/05/2016
-TTIP
+ttip
 
 24/08/2016
 collaboration status SAP update Digital Agenda
@@ -41,13 +41,13 @@ dual use
 datum privacy
 
 07/11/2016
-ict education
+ICT education
 
 30/03/2017
 e privacy review directive
 
 04/10/2017
-free flow datum cybersecurity
+Free flow datum cybersecurity
 
 13/10/2017
 digital policy
@@ -59,22 +59,22 @@ Meeting Task Force Preparation Conduct Negotiations United Kingdom Article 50 TE
 handshake Mrs Fox Martin
 
 17/01/2019
-digitalisation data privacy
+digitalisation datum privacy
 
 30/01/2020
-digital publicadministration
+digital public administration
 
 10/02/2020
 datum strategy AI Green Deal
 
 29/06/2020
-global player digital 5 g deployment condition foreign subsidy white paper cloud adoption Europe switch possibility contestability cloud market need clear standard security requirement datum governance
+global player digital 5 g deployment condition foreign subsidy white paper cloud adoption Europe switch possibility contestability cloud market need clear standard security requirement data governance
 
 03/07/2020
 telecom connectivité
 
 16/07/2020
-contact tracing app Cloud Gaia X datum space AI
+contact trace app Cloud Gaia X data space AI
 
 01/10/2020
 Discussion Green Recovery
@@ -89,7 +89,7 @@ secure cloud video meeting
 carbon footprint product
 
 16/12/2020
-roundtable Cloud Alliance
+Roundtable Cloud Alliance
 
 17/12/2020
 DSA DMA
@@ -101,7 +101,7 @@ participation roundtable Occupational Safety Health OSH
 Green Deal growth strategy
 
 19/07/2021
-skill Roundtable Digital
+Skills Roundtable Digital
 
 19/07/2021
 Pact Skills roundtable digital transition sector
@@ -110,19 +110,19 @@ Pact Skills roundtable digital transition sector
 1 Discussion current future cooperation SAP DIGIT department Commission 2 Lessons learn COVID Crisis 3 view Digital Commission
 
 03/11/2021
-Digital issue
-
-03/11/2021
 Digital Policy issue e g Sovereign Cloud AI DMA DSA Cybersecurity overall digital green transition
 
+03/11/2021
+digital issue
+
 07/04/2022
-meeting CEO Alliance Digitising Energy Action Plan
+Meeting CEO Alliance Digitising Energy Action Plan
 
 13/12/2022
 defence
 
 10/01/2023
-taxonomy ESG rating csrd
+Taxonomy ESG rating csrd
 
 07/09/2023
 discussion AI Act
@@ -134,7 +134,7 @@ presentation software
 sustainability policy particular csrd taxonomy
 
 08/10/2024
-general discussion taxonomy CSRD deployment
+general discussion Taxonomy CSRD deployment
 
 16/10/2024
 mandate future tel
@@ -150,3 +150,24 @@ exchange view policy innovation action harvest potential AI compliance AI Act
 
 28/03/2025
 Global Gateway
+
+26/05/2025
+CSRD Omnibus carbon accounting
+
+12/06/2025
+trade policy
+
+19/06/2025
+exchange view AI Gigafactories initiative
+
+26/06/2025
+Digital sovereignty Data Act
+
+26/06/2025
+Business Software Alliance member consultation EU ’s upcoming Cloud AI Development Act
+
+11/07/2025
+exchange view implementation Pillar 2 directive
+
+16/07/2025
+exchange view Data Act

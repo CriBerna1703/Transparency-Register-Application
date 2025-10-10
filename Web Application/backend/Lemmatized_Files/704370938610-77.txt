@@ -8,7 +8,7 @@ competition
 preparatory meeting meet Commissioner
 
 10/10/2023
-Digital Payments
+Digital payment
 
 10/10/2023
 electronic payment
@@ -18,3 +18,6 @@ presentation work challenge payment
 
 11/06/2024
 EUs Payments landscape Digital Euro
+
+10/06/2025
+payment IFR PSD PSR Digital Euro

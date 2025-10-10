@@ -5,7 +5,7 @@ investment initiative
 courtesy meeting
 
 10/12/2014
-investment plan
+Investment Plan
 
 10/12/2014
 courtesy meeting
@@ -14,7 +14,7 @@ courtesy meeting
 FTT
 
 31/03/2015
-Le rôle du secteur bancaire en Europe pour le financement des PMEs
+Le rôle du secteur bancaire en Europe pour le financement des pme
 
 06/05/2015
 Financial Policy
@@ -32,7 +32,7 @@ investment initiative
 Financial Policy
 
 03/02/2016
-safe harbour cloud cybersecurity blockchain technology DSM platform
+safe harbour cloud cybersecurity blockchain technology dsm platform
 
 03/02/2016
 call evidence CRR MDA TLAC MREL
@@ -47,13 +47,13 @@ FISMA regulatory agenda
 Romania
 
 06/07/2016
-update TLAC MREL /cmu
+Update TLAC MREL /CMU
 
 13/07/2016
 financial service
 
 01/02/2017
-BCBS negotiation initial thought CRD5 CRR package EMIR
+bcbs negotiation initial thought CRD5 CRR package EMIR
 
 11/05/2017
 financial service agenda
@@ -65,7 +65,7 @@ CRR
 introductory remark roundtable financial industry AFISMA European Chamber Commerce financial reform banking
 
 06/09/2018
-RRM Package Basel IV Brexit Sustainable Finance npl
+RRM Package Basel IV Brexit Sustainable Finance NPLs
 
 20/09/2018
 recent development trade policy
@@ -77,7 +77,7 @@ banking
 EMU
 
 04/09/2019
-implementation Basel Capital Markets
+Implementation Basel Capital Markets
 
 21/01/2020
 implementation Basel III Banking Deposit Guarantee Scheme
@@ -95,16 +95,16 @@ CMU financial market regulation
 Basel III
 
 27/01/2021
-Solar pv manufacture
+Solar PV manufacturing
 
 27/01/2021
-Solar pv manufacture revision Renewable Directive Energy Efficiency role renewable solar Climate Target Plan
+Solar PV manufacturing revision renewable Directive Energy Efficiency role renewable solar Climate Target Plan
 
 12/02/2021
 Basel 3 banking next step general overview upcoming initiative sector
 
 27/04/2021
-sustainable finance
+sustainable Finance
 
 14/09/2021
 next generation
@@ -116,10 +116,10 @@ Basel III implementation
 Basel III AML
 
 25/10/2021
-Brexit dto ccp
+Brexit DTO ccp
 
 17/05/2022
-open finance digitalagenda
+open finance digital agenda
 
 05/07/2022
 CRR3 CRD6
@@ -158,7 +158,7 @@ Retail Investment Strategy
 retail investment strategy
 
 24/04/2023
-emir clear Digital euro Retail investor strategy
+EMIR clearing Digital euro Retail investor strategy
 
 14/09/2023
 clear Retail Investment Strategy RIS Financial Data Access FIDA framework
@@ -170,7 +170,7 @@ Basel III CBDC CMU cs3d
 selection topical file include priority legislative cycle
 
 22/02/2024
-CMU competitiveness
+CMU Competitiveness
 
 26/03/2024
 implementation revise economic governance framework
@@ -179,7 +179,7 @@ implementation revise economic governance framework
 decarbonization road transport
 
 14/01/2025
-Omnibus directive
+omnibus directive
 
 14/01/2025
 financing corporate sustainability report
@@ -194,22 +194,28 @@ csrd SFDR GAR
 clean corporate fleet
 
 07/02/2025
-Omnibus
+omnibus
 
 13/02/2025
 discussion level 2 measure transparency requirement equity equity instrument synchronisation business clock transaction report good execution
 
 12/03/2025
-Meeting South America Critical Raw Materials CRM Coalition Willing Dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
+Meeting South America Critical Raw Materials CRM Coalition Willing dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
 
 25/03/2025
 exchange view crypto regulation
 
 28/03/2025
-car lease decarbonisation agenda
+car leasing decarbonisation agenda
 
 28/03/2025
 green Corporate Fleets
 
 10/04/2025
 EUROFI exchange regulatory framework
+
+05/06/2025
+simplification taxonomy
+
+24/06/2025
+payment

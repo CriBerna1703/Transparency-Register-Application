@@ -1,5 +1,5 @@
 11/02/2015
-EMIR CCP recognition mifid Level 2 nordic business issue
+EMIR CCP recognition MiFID Level 2 nordic business issue
 
 19/02/2015
 capital market
@@ -8,7 +8,7 @@ capital market
 energy
 
 30/06/2015
-economy Financing update EstoniaFinancial Markets
+economy Financing update Estonia Financial Markets
 
 21/01/2016
 Nasdaqs role Europe trend recent development market equity investment capital market
@@ -32,7 +32,7 @@ MiFiD LSE DB merger
 CMU mifid 2 ESG report
 
 12/05/2017
-sls MiFID II
+sl MiFID ii
 
 25/09/2017
 Brexit Capital Markets mifid
@@ -47,31 +47,31 @@ financial market regulation Capital Markets
 financial market regulation Capital Markets
 
 06/02/2018
-mifid II esa Review
+MiFID ii esa review
 
 22/03/2018
-sustainable FinanceFintech Nasdaq Baltic region MiFID II
+Sustainable Finance Fintech Nasdaq Baltic region MiFID ii
 
 22/03/2018
 sustainable finance MiFID FinTech
 
 16/05/2018
-MiFID II
+MiFID ii
 
 25/06/2018
-CMU MIFID II indexing challenge Small Markets
+CMU MIFID II Indexing Challenges Small Markets
 
 06/11/2018
-mifid Equivalence
+mifid equivalence
 
 28/11/2018
 closing remark Capital Markets Nordic Financial Ecosystem Forum
 
 04/12/2018
-presentation company light SME awards Explanation Commissions work
+presentation company light SME award Explanation Commissions work
 
 04/04/2019
-mifid 2 implementation
+MIFID 2 implementation
 
 13/05/2019
 mifid implementation
@@ -98,16 +98,16 @@ MiFID II Market Structure /consolidated tape
 exchange view development capital market US sustainable finance agenda digital agenda
 
 09/11/2021
-meet Ludovic Aigrot Vice President Head Government Relations Europe NASDAQ Topics discuss state play preparation Commission propose MiFID II
+meet Ludovic Aigrot Vice President Head Government Relations Europe NASDAQ Topics discuss state play preparation Commission propose MiFID ii
 
 11/11/2021
-Review Markets Financial Instruments Regulation
+Review Markets Financial Instruments regulation
 
 18/11/2021
 Transatlantic Partnership focus digital sustainable agenda
 
 30/03/2022
-consolidated tape digital finance Financial market
+consolidated tape digital finance financial market
 
 10/06/2022
 consolidated tape
@@ -125,16 +125,16 @@ RTS equity transparency negotiate trade
 exchange view advancement Capital Markets Discussion experience nordic capital market
 
 20/01/2025
-Exchange ImpactEurope andSwedish company Savings Investments
+Exchange ImpactEurope swedish company Savings Investments
 
 21/01/2025
-Benchmark Regulation
+Benchmark regulation
 
 24/01/2025
 MiFIR Review
 
 27/01/2025
-MiFID MiFIR RTS1
+MiFID mifir RTS1
 
 03/02/2025
 pisces trading platform
@@ -149,7 +149,28 @@ recent economic development EU US
 exchange view AI policy AI Act
 
 18/03/2025
-csdr mifid
+CSDR mifid
+
+20/03/2025
+exchange representative Nasdaq market Europe
 
 24/03/2025
 discussion market regulatory development
+
+02/04/2025
+saving Investments discussion swedish financial market infrastructure representative
+
+16/05/2025
+exchange trading venue integration capital market
+
+22/05/2025
+SIU Targeted Consultation capital market integration
+
+28/05/2025
+aspect relate financial market saving investment
+
+03/07/2025
+exchange view initiative include Savings Investments communication
+
+03/07/2025
+representative Nasdaq Stockholm meet Task Force member topic relate financing startup scaleup public equity market

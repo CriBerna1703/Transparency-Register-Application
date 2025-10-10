@@ -1,2 +1,5 @@
 07/11/2023
 late development HDV CO2 standard
+
+10/07/2025
+exchange view e fuel monitor methodology

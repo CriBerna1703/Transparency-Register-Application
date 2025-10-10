@@ -2,7 +2,7 @@
 modernisation health system patient mobility quality care
 
 28/11/2016
-Sustainability Healthcare AMR ERN
+sustainability Healthcare AMR ERN
 
 29/01/2019
 ERN
@@ -11,4 +11,7 @@ ERN
 health
 
 31/03/2025
-meet healthcare long term care service elderly
+meeting healthcare long term care service elderly
+
+26/05/2025
+Healthcare workforce management attract generation caregiver b digitalization health system Health Data Space c hospital landscape

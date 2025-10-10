@@ -2,13 +2,13 @@
 Jobs Growth Stability Capital Markets Recovery Resolution CCPS
 
 02/12/2014
-Financial Services Policy
+Financial Services policy
 
 03/12/2014
 SME programme Elite Europe general economic outlook
 
 23/01/2015
-Financial Services Policy
+Financial Services policy
 
 05/03/2015
 legal policy development
@@ -17,22 +17,22 @@ legal policy development
 Capital Markets
 
 10/07/2015
-Financial Services Policy
+Financial Services policy
 
 10/07/2015
-Financial Services Policy
+Financial Services policy
 
 12/10/2015
 Capital Markets
 
 12/10/2015
-market Financial Instruments Directive II /Prospectus directive
+Markets Financial Instruments Directive II /Prospectus directive
 
 13/01/2016
 Capital Market presentation elite programme sme
 
 18/04/2016
-Merge LSE Deutsche borse
+Merge LSE Deutsche Borse
 
 02/05/2016
 Capital Markets Settlement United Kingdom
@@ -56,7 +56,7 @@ Green Finance
 CMU relate issue
 
 15/11/2016
-location policy UK referendum com depth investigation lse /Deutsche börse merger
+location policy UK referendum com depth investigation lse /deutsche Börse merger
 
 30/11/2016
 digitisation financial service capital
@@ -86,7 +86,7 @@ Capital Markets
 sustainable benchmark
 
 24/04/2018
-sustainable Finance Benchmarks Fiduciary Duties
+Sustainable Finance Benchmarks Fiduciary duty
 
 16/10/2018
 brexit
@@ -116,13 +116,13 @@ Mifid Review Capital Markets
 covid 19 situation impact financial market
 
 14/12/2020
-mifid II Derivative Trading Obligation dto
+MiFID ii Derivative Trading Obligation DTO
 
 21/01/2021
 Introductory Meeting Brexit Sustainable Finance Digital Resilience
 
 09/09/2021
-sustainable Finance Market Infrastructure
+sustainable Finance Market infrastructure
 
 02/12/2021
 UK CCP
@@ -137,34 +137,34 @@ Clearing Strategy ccp
 central clearing
 
 07/07/2022
-clear business competitiveness ccp dto equivalence supervision
+clear business competitiveness ccp DTO equivalence supervision
 
 07/07/2022
-dto ccp
+DTO ccp
 
 08/11/2022
 sustainable finance
 
 09/12/2022
-ccp MiFIR
+ccp mifir
 
 02/02/2023
-exchange view implementation strategy include recently agree Pay Transparency directive Gender Balance Board directive share LSEG ’s corporate experience manage mitigate gender inequality well
+exchange view implementation Strategy include recently agree Pay Transparency directive Gender Balance Board directive share LSEG ’s corporate experience manage mitigate gender inequality well
 
 09/02/2023
-Digital trade datum
+digital trade datum
 
 22/06/2023
 EMIR III clearing ecosystem
 
 21/01/2025
-Benchmark Regulation
+Benchmark regulation
 
 23/01/2025
-Omnibus
+omnibus
 
 23/01/2025
-Omnibus
+omnibus
 
 24/01/2025
 MiFIR Review
@@ -174,3 +174,12 @@ exchange view omnibus sustainable finance broadly
 
 10/04/2025
 exchange view sustainable finance
+
+15/05/2025
+introductory meeting ceo
+
+03/06/2025
+clear SIU
+
+03/06/2025
+clear government bond repo transaction

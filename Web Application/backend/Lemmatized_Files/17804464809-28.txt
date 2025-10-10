@@ -5,7 +5,7 @@ capital market
 Capital Markets initiative
 
 19/02/2015
-market Financial Instruments Directive MiFID Capital Markets Union European Market Infrastructure Regulation EMIR
+Markets Financial Instruments Directive MiFID Capital Markets Union European Market Infrastructure Regulation EMIR
 
 26/02/2015
 research innovation policy
@@ -14,34 +14,34 @@ research innovation policy
 de marché des capitaux Règlementation financière
 
 16/06/2016
-Financial Regulation
+financial regulation
 
 21/06/2016
-Innovation Finance
+innovation Finance
 
 04/07/2016
-Post Brexit financialarchitecture Europe
+Post Brexit financial architecture Europe
 
 12/10/2017
-overview Ongoing Future project
+overview ongoing Future project
 
 11/09/2018
 Mifid II
 
 31/10/2018
-MiFID MiFIR Brexit
+MiFID mifir Brexit
 
 04/04/2019
-mifid 2 implementation
+MIFID 2 implementation
 
 04/03/2020
-Capital Markets Markets Financial Instruments Directive MiFID II
+Capital Markets Markets Financial Instruments Directive MiFID ii
 
 05/11/2020
-Capital Markets Recovery Package MIFID II
+Capital Markets Recovery Package MIFID ii
 
 22/01/2021
-Introductory Meeting equivalence CSDs Brexit
+Introductory Meeting equivalence csd Brexit
 
 29/04/2021
 ngeu borrowing strategy
@@ -53,25 +53,25 @@ ngeu financing programme
 Discussion Capital Markets
 
 30/06/2021
-Next Generation ngeu
+next Generation ngeu
 
 17/09/2021
 CMU consolidated tape
 
 25/10/2021
-Next generation
+next generation
 
 17/11/2021
-MiFIR topic
+mifir topic
 
 02/02/2022
 csdr refit
 
 24/02/2022
-clearing
+clear
 
 09/03/2022
-list Act initiative MiFIR review
+Listing Act initiative MiFIR review
 
 26/04/2022
 Clearing Strategy ccp
@@ -80,13 +80,13 @@ Clearing Strategy ccp
 consolidated tape
 
 17/06/2022
-NextGenerationEU
+nextgenerationeu
 
 24/01/2023
 MIFIR review Listing Act
 
 07/02/2023
-euronext share concern relation ongoing negotiation MIFID R review
+Euronext share concern relation ongoing negotiation MIFID r review
 
 08/03/2023
 transparent market
@@ -110,13 +110,13 @@ current state play equity market include Euronext Dublin
 IFR IFD Europe ’s capital market
 
 06/02/2024
-list Act initiative
+Listing Act initiative
 
 14/01/2025
 RTS equity transparency negotiate trade
 
 22/01/2025
-MiFIR
+mifir
 
 03/02/2025
 UK ’s idea intermittent market private equity also know pisce
@@ -124,5 +124,32 @@ UK ’s idea intermittent market private equity also know pisce
 10/04/2025
 EUROFI exchange regulatory framework
 
+15/04/2025
+Exchange Savings Investments
+
 23/04/2025
-csdr Refit SIU
+CSDR Refit SIU
+
+15/05/2025
+Exchange Euronext siu
+
+16/05/2025
+exchange trading venue integration capital market
+
+21/05/2025
+exchange view priips kid
+
+24/06/2025
+overview Paris stock exchange
+
+26/06/2025
+compétitivité relation use UE csrd cs3d simplification
+
+03/07/2025
+information exchange Euronext cross border activity
+
+24/07/2025
+market development
+
+25/07/2025
+exchange view SIU workstream

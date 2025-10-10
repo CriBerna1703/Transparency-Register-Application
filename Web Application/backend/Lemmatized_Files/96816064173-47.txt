@@ -1,5 +1,5 @@
 18/02/2015
-market Financial Instruments Directive MiFID Capital Markets CMU
+Markets Financial Instruments Directive MiFID Capital Markets CMU
 
 05/11/2015
 call evidence Capital Markets
@@ -8,7 +8,7 @@ call evidence Capital Markets
 CMU AIF Recovery resolution fund asset manager
 
 02/02/2017
-CMU Call evidence aifmd esa
+CMU Call evidence AIFMD esa
 
 02/02/2017
 esa review Macroprudential review
@@ -20,7 +20,7 @@ ESA Review AIFMD Review systemic risk asset manager
 financial service agenda
 
 30/05/2017
-ESA review PEPP systemic risk asset manager aifmd review
+ESA review PEPP systemic risk asset manager AIFMD review
 
 12/07/2017
 review esa
@@ -32,16 +32,16 @@ mifid
 esa review CMU PEPP
 
 26/04/2018
-PEPP PRIIPS esa Brexit
+PEPP priips esa brexit
 
 15/05/2018
-sustainable finance
+sustainable Finance
 
 12/06/2018
-PRIIPs Cross border Fund distribution sustainable finance
+PRIIPs Cross border Fund Distribution Sustainable Finance
 
 23/10/2018
-meet vat rule investment fund financial sector
+meet VAT rule investment fund financial sector
 
 22/01/2019
 MFF
@@ -59,19 +59,19 @@ asset management Capital Markets
 CMU digital finance non financial reporting
 
 12/05/2021
-bvi provide short introduction work association comment difficulty timing relation datum provision scope NFRD reporting SFDR upcoming rts comment
+bvi provide short introduction work association comment difficulty timings relation datum provision scope NFRD reporting SFDR upcoming rts comment
 
 17/05/2021
-sustainable finance
+sustainable Finance
 
 12/01/2022
-Retail Investments strategy
+Retail Investments Strategy
 
 22/02/2022
-aifmd sustainable Finance Funds Industry competitiveness
+aifmd Sustainable Finance Funds Industry competitiveness
 
 22/02/2022
-competitiveness asset management industry ensure regulation foster financial stability protect consumer time hamper industry competitiveness Need global perspective
+competitiveness asset management industry ensure regulation foster financial stability protect consumer time hamper industry competitiveness need global perspective
 
 18/01/2023
 Retail Investment Strategy
@@ -80,7 +80,7 @@ Retail Investment Strategy
 retail investment strategy etfs
 
 21/01/2025
-Savings Investments
+saving Investments
 
 21/01/2025
 financial security market
@@ -93,3 +93,21 @@ exchange view Savings Investments Communication
 
 26/03/2025
 participation panel SF Omnibus
+
+15/04/2025
+sustainability Omnibus
+
+22/05/2025
+exchange view review SFDR
+
+22/05/2025
+keynote speaker BVI Insights event BVI proactive support involvement recent Commission initiative Defence Industrial Investment Forum shape future defence
+
+02/06/2025
+Exchange asset manager integration capital market
+
+24/06/2025
+investment asset management industry Germany VC market
+
+26/06/2025
+SIU Asset management market

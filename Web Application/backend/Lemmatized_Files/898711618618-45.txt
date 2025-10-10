@@ -1,5 +1,5 @@
 29/07/2015
-Visit Company
+visit Company
 
 03/09/2015
 cybersecurity
@@ -14,7 +14,7 @@ NXP Strategy innovation technology
 discussion covid 19
 
 05/10/2020
-roundtable skill Microelectronics
+roundtable skill microelectronic
 
 05/10/2020
 Pact Skills roundtable microelectronic sector
@@ -26,10 +26,10 @@ roundtable processor
 IPCEI Microelectronics virtual meeting
 
 04/05/2021
-Alliance microelectronic
+alliance microelectronic
 
 07/05/2021
-Alliance microelectronic
+alliance microelectronic
 
 17/09/2021
 semiconductor strategy
@@ -50,16 +50,22 @@ CEO Round Table Semiconductors
 semiconductor
 
 04/07/2022
-present view chip ecosystem resilience Chips Act Market Emergency instrument
+present view chip ecosystem resilience Chips Act Market Emergency Instrument
 
 25/04/2023
-chip Act State aid
+Chips Act State aid
 
 10/09/2024
 prevent circumvention sanction sensitive good
 
 10/09/2024
 high level executive roundtable prevent circumvention sanction sensitive good
+
+14/02/2025
+private roundtable handle dependency critical input semiconductor
+
+27/02/2025
+opportunity cooperation India field research innovation Start Ups innovation ecosystem
 
 24/03/2025
 Automotive Industrial Action Plan NXP Infineon STMicroelectronics Bosch
@@ -68,10 +74,19 @@ Automotive Industrial Action Plan NXP Infineon STMicroelectronics Bosch
 trade relation economic security
 
 03/04/2025
+semiconductor industry review Chips Act
+
+03/04/2025
 exchange implication recent US trade measure broad geopolitical environment semiconductor industry
 
 15/04/2025
-implementation Automotive Industrial Action Plan NXP Infineon stmicroelectronic Bosch Axelera AI
+Implementation Automotive Industrial Action Plan NXP Infineon STMicroelectronics Bosch Axelera AI
 
 30/04/2025
-exchange semiconductor outlook
+Exchange semiconductor outlook
+
+20/05/2025
+Review Chips Act
+
+03/07/2025
+Presentation ESIA semiconductor industry Europe

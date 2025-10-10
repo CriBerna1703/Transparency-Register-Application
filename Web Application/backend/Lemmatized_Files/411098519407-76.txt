@@ -5,7 +5,7 @@ report standard financial reporting disclosure
 financial reporting directive
 
 28/06/2021
-Sustainability Financial Public reporting
+sustainability Financial Public reporting
 
 03/02/2022
 sustainability reporting standard
@@ -14,16 +14,31 @@ sustainability reporting standard
 ESRS report standard
 
 06/07/2023
-ESRS
+esr
 
 20/09/2023
-csrd
+CSRD
 
 08/01/2025
-Omnibus proposal
+omnibus proposal
 
 08/01/2025
-Omnibus proposal
+omnibus proposal
 
 21/01/2025
 sustainability reporting standard
+
+28/03/2025
+esrs revision
+
+14/05/2025
+simplification
+
+16/05/2025
+esrs revision
+
+16/05/2025
+sustainability Reporting Standards
+
+16/06/2025
+esrs revision

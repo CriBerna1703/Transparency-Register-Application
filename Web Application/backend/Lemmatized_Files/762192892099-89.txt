@@ -1,2 +1,2 @@
 06/05/2025
-exchange view implementation Regulation EC 2073 /2005 regard Listeria monocytogene
+exchange view implementation regulation EC 2073 /2005 regard Listeria monocytogene

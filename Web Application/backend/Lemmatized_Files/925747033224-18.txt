@@ -1,8 +1,8 @@
 03/05/2019
-regular update ECA activity
+regular update eca activity
 
 12/06/2019
-regular update ECA activity
+regular update eca activity
 
 19/09/2019
 development go moment update
@@ -12,3 +12,6 @@ Commissioner Cabinet
 
 12/01/2024
 Sport Model future governance football Europe
+
+31/05/2025
+presentation ECA activity

@@ -1,2 +1,2 @@
 09/02/2025
-Bilateral Cohere model
+bilateral Cohere model

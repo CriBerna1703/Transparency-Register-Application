@@ -5,7 +5,7 @@ copyright
 Digital Market
 
 28/08/2015
-DSM copyright
+dsm copyright
 
 16/02/2016
 dsm
@@ -35,7 +35,7 @@ Digital Market
 Digital Market
 
 20/06/2018
-Digital taxation
+digital taxation
 
 19/07/2019
 culture et cinéma
@@ -45,3 +45,6 @@ exchange impact covid 19 recovery plan initiative audio visual medium ecosystem
 
 17/04/2023
 audiovisual policy
+
+22/05/2025
+audiovisual industry

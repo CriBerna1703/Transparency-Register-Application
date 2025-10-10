@@ -29,13 +29,16 @@ Digital Internal Market Strategy
 Digital Market
 
 05/09/2018
-eida
+eIDAS
 
 09/09/2020
-Digital issue
+digital issue
 
 23/11/2020
 Digital Identity Digital Services Act
 
 16/12/2020
-roundtable Cloud Alliance
+Roundtable Cloud Alliance
+
+23/06/2025
+roundtable discussion develop sovereign Cloud Edge Continuum

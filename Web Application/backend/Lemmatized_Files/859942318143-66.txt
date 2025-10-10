@@ -2,10 +2,10 @@
 energy
 
 14/10/2015
-medicated feed
+skill strategy
 
 14/10/2015
-skill strategy
+medicated feed
 
 10/11/2015
 Introduction Institute
@@ -17,16 +17,16 @@ energy policy
 innovation
 
 14/06/2016
-audiovisual iot
+audiovisual IoT
 
 22/06/2016
-échanges sur les opportunités de coopération
+échange sur les opportunités de coopération
 
 22/06/2017
 HTA
 
 11/07/2017
-innovation Clean Energy Package
+Innovation Clean Energy Package
 
 13/07/2017
 digitalisation energy transition
@@ -38,7 +38,7 @@ discussion energy policy
 presentation think tank activity
 
 29/04/2020
-com Virtual Power Breakfast Anne BUCHER impetus Health Policies agenda time crisis
+Com Virtual Power Breakfast Anne BUCHER impetus Health Policies agenda time crisis
 
 29/09/2020
 Cancer Plan
@@ -47,19 +47,25 @@ Cancer Plan
 EDAP
 
 08/10/2024
-preparation head Cabinets participation Com event energy
-
-19/02/2025
-Introductory Meeting activity Think Tank
-
-19/02/2025
-instituto per la Competitivita present company activity
+Preparation Head Cabinets participation Com event energy
 
 19/02/2025
 introduction meeting
 
+19/02/2025
+Instituto per la Competitivita present company activity
+
+19/02/2025
+Introductory Meeting activity Think Tank
+
 20/02/2025
-com present activity
+Com present activity
 
 20/03/2025
 introductory meeting
+
+16/05/2025
+competitiveness
+
+11/06/2025
+discussion preparation paper AI Act

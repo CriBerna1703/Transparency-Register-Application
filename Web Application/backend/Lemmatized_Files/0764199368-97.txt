@@ -14,7 +14,7 @@ Capital Markets
 banking market development
 
 04/03/2015
-accounting
+account
 
 17/03/2015
 financial regulation
@@ -35,7 +35,7 @@ dsm
 dsm
 
 07/09/2015
-securitisation Prospectus Directive
+securitisation Prospectus directive
 
 21/10/2015
 digitalisation public eServices interoperability
@@ -62,10 +62,10 @@ digitisation
 MFF Mid term review
 
 22/06/2016
-dsm
+complete EMU particular EDIS
 
 22/06/2016
-complete EMU particular EDIS
+dsm
 
 08/09/2016
 CRR CRD IV
@@ -89,13 +89,13 @@ financial service agenda
 towards Challenging Year
 
 30/08/2017
-PSD2
+psd2
 
 05/09/2017
 banking ESA review CRR CRD PSD2
 
 19/10/2017
-Financial Services EMU
+Financial Services emu
 
 19/10/2017
 CMU
@@ -107,13 +107,13 @@ digital payment
 Basel
 
 10/01/2018
-Meeting Mr Hans Walter Peters Banking Deepening Economic Monetary
+Meeting Mr Hans Walter Peters Banking deepen Economic Monetary
 
 10/01/2018
 exchange view future EMU
 
 23/04/2018
-panel discussion conference future change banking sector
+Panel discussion conference future change banking sector
 
 06/02/2019
 International Role Euro
@@ -131,10 +131,10 @@ DIGITAL FINANCE
 capital requirement fintech
 
 18/02/2020
-presentation german bank position Basel III
+presentation german Banks position Basel III
 
 08/04/2020
-discuss upcomingreview Interchange Fee Regulation IFR
+discuss upcoming review Interchange Fee Regulation ifr
 
 25/05/2020
 Covid 19 Banking package CRR Quick fix
@@ -149,7 +149,7 @@ key topic banking sector economic recovery
 sustainable finance
 
 13/01/2021
-banking AML sustainable finance
+banking AML Sustainable Finance
 
 21/01/2021
 Basel III
@@ -179,7 +179,7 @@ implementation Basel 3
 open Strategic Autonomy
 
 05/05/2021
-sustainable finance
+sustainable Finance
 
 28/06/2021
 Basel III
@@ -191,13 +191,13 @@ Basel III reform
 Basel III
 
 07/09/2021
-Pre record Awards Ceremony
+pre record Awards Ceremony
 
 29/09/2021
-sustainable Finance Basel III
+Sustainable Finance Basel III
 
 21/01/2022
-data economy open finance
+datum economy open finance
 
 28/01/2022
 Basel III macroprudential policy banking
@@ -215,7 +215,7 @@ sustainable finance taxonomy
 Digital euro
 
 08/11/2022
-sustainable finance
+sustainable Finance
 
 08/11/2022
 Digital Euro
@@ -227,13 +227,13 @@ Digital Euro
 Economic Governance Review Recovery Resilience Facility macroeconomic policy energy policy
 
 16/11/2022
-association German Banks explain position concern relation 1 Basel package negotiation 2 support CMU initiative 3 CMDI 4 Digital Euro
+Association German Banks explain position concerns relation 1 Basel package negotiation 2 support CMU initiative 3 CMDI 4 Digital Euro
 
 10/01/2023
 Retail Investment legislative package
 
 10/01/2023
-bank macroprudential regulation
+Bank macroprudential regulation
 
 11/01/2023
 introductory meeting
@@ -267,3 +267,15 @@ meet ceo German Banking Industry Committee competitiveness
 
 28/02/2025
 discussion increase retail investor participation capital market need strengthen capital market culture create trust Investments saving plan exist Germany
+
+15/05/2025
+sustainable Omnibus
+
+02/07/2025
+exchange view 28th regime
+
+02/07/2025
+exchange view 28th regime
+
+03/07/2025
+saving Investment

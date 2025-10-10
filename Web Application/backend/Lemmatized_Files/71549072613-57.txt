@@ -2,7 +2,10 @@
 revision Batteries directive
 
 20/10/2020
-restriction primary battery use recycle material Collection target portable battery
+restriction primary battery use recycled material Collection target portable battery
 
 01/04/2025
-Omnibus
+omnibus
+
+05/05/2025
+battery Regulation due Diligence Omnibus proposal

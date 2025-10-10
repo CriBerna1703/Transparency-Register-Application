@@ -8,7 +8,7 @@ CCP Recovery resolution
 CCP Recovery Resolution
 
 28/03/2017
-EMIR CRR CRD mifid 2
+EMIR CRR CRD MiFID 2
 
 26/04/2022
 Clearing Strategy ccp

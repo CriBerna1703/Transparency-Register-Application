@@ -17,7 +17,7 @@ copyright DSM
 TVA et presse en ligne
 
 12/11/2015
-copyright issue relate magazine newspaper
+copyright issue related magazine newspaper
 
 19/11/2015
 copyright
@@ -47,7 +47,7 @@ Digital Market
 AVMSD
 
 06/06/2016
-publisher right AVMSD vat online newspaper ebook
+publisher right AVMSD VAT online newspaper ebook
 
 29/08/2016
 copyright reform
@@ -77,7 +77,7 @@ vat rate electronically supply publication
 eprivacy directive
 
 23/11/2016
-E privacy review
+e privacy review
 
 20/12/2016
 Digital Market
@@ -95,7 +95,7 @@ GDPR Implementation Privacy Shield
 copyright
 
 12/10/2017
-dicussion VAT
+dicussion vat
 
 22/11/2017
 e privacy regulation
@@ -116,10 +116,10 @@ copyright
 copyright
 
 17/01/2020
-newspaper magazine sectoral developmentsplatform distribution ePrivacy digital service
+newspaper magazine sectoral development platform distribution ePrivacy digital service
 
 24/02/2020
-Digital policy
+digital policy
 
 17/04/2020
 economic impact covid 19
@@ -128,7 +128,7 @@ economic impact covid 19
 discussion numeric
 
 14/05/2020
-Digital services Act
+Digital service Act
 
 06/10/2020
 DSA
@@ -140,7 +140,7 @@ discuss Digital Services Act
 EDAP MAAP Rule Law
 
 25/11/2020
-medium Action Plan DMA
+Media Action Plan DMA
 
 22/03/2021
 DMA
@@ -155,7 +155,7 @@ medium freedom medium pluralism
 eprivacy regulation
 
 24/06/2021
-E Privacy Regulation
+E Privacy regulation
 
 29/06/2021
 digital levy
@@ -191,10 +191,10 @@ AI copyright
 Media Freedom act
 
 21/01/2025
-exchange views context preparatory work draft guideline article 181 Media Freedom Act EMFA issue Commission Article 189 emfa
+exchange view context preparatory work draft guideline Article 181 Media Freedom Act EMFA issue Commission Article 189 EMFA
 
 11/02/2025
-Opening Session DSA roundtable discussion online advertising Article 46 DSA
+Opening Session DSA roundtable discussion online advertising article 46 DSA
 
 24/02/2025
 introductory meeting
@@ -216,3 +216,6 @@ Code Conduct Online Advertising Workshop 3
 
 19/03/2025
 Code Conduct Online Advertising Workshop 4
+
+22/05/2025
+consultation medium representative association context preparation upcoming Democracy Shield focus group

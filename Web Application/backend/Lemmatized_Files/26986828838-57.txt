@@ -29,7 +29,7 @@ rp3
 aviation issue
 
 26/11/2020
-Aviation Roundtable report
+Aviation Roundtable Report
 
 16/12/2020
 aviation roundtable report
@@ -38,7 +38,7 @@ aviation roundtable report
 transport policy priority
 
 17/05/2021
-SES
+se
 
 27/01/2022
 aviation recovery
@@ -53,10 +53,16 @@ SES 2 legislative package
 SES 2 SJU Innovation Sustainability
 
 16/09/2024
-RP4 target set challenge face ansp Europe RP5 sesar
+rp4 target set challenge face ANSPs Europe RP5 SESAR
 
 13/11/2024
-SES2 ATM master plan Air traffic
+SES2 ATM master plan air traffic
 
 06/02/2025
-destination 2050 update roadmap
+DESTINATION 2050 update roadmap
+
+17/03/2025
+discussion pansa CANSO representative together member Germany Croatia challenge face ATM service provider Site visit pansa facility
+
+13/05/2025
+effect shift traffic flow aviation performance increase importance civil /military integration /requirements SES ATC SESAR post 2027 ATM MP

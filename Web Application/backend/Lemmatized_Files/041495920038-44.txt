@@ -1,5 +1,5 @@
 15/12/2016
-free flow datum standardisation
+Free flow datum standardisation
 
 02/12/2020
 Digital Services Act Digital Markets Act
@@ -14,4 +14,7 @@ DMA cloud
 Cloud policy
 
 08/04/2025
-DG CONNECT e2 Unit policy initiative AI Cloud CISPE ’s governance update
+DG CONNECT E2 Unit policy initiative AI Cloud CISPE ’s governance update
+
+05/06/2025
+Digital sovereignty
