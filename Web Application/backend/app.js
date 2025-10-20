@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const lobbyistRoutes = require('./routes/lobbyistRoutes');
+const allLobbyistRoutes = require('./routes/allLobbyistRoutes');
 const fieldRoutes = require('./routes/fieldRoutes');
 const membershipRoutes = require('./routes/membershipRoutes');
 const proposalRoutes = require('./routes/proposalRoutes');
@@ -32,6 +33,7 @@ const authenticateToken = require('./middleware/auth');
 
 // Rotte protette
 app.use('/api/lobbyists', authenticateToken, lobbyistRoutes);
+app.use('/api/allLobbyists', authenticateToken, allLobbyistRoutes);
 app.use('/api/fields', authenticateToken, fieldRoutes);
 app.use('/api/memberships', authenticateToken, membershipRoutes);
 app.use('/api/proposals', authenticateToken, proposalRoutes);

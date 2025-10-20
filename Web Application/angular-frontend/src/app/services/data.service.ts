@@ -19,6 +19,11 @@ export class DataService {
     return this.http.get(`${this.apiUrl}/lobbyists/${lobbyistId}/details`);
   }
 
+  getAllLobbyistsDetails(lobbyistIds: string[]): Observable<any[]> {
+    const params = new HttpParams().set('lobbyist_ids', lobbyistIds.join(','));
+    return this.http.get<any[]>(`${this.apiUrl}/allLobbyists`, { params });
+  }
+
   getFields(): Observable<any> {
     return this.http.get(`${this.apiUrl}/fields`);
   }

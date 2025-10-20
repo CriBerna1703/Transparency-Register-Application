@@ -1,6 +1,11 @@
 const { Lobbyist, Field, Membership, Proposal, Meeting, RepresentativeAllocation, CommissionRepresentative, Directorate, MeetingRepresentative } = require('../models');
 const sequelize = require('../config/db');
 
+function ensureArray(param) {
+    if (!param) return [];
+    return Array.isArray(param) ? param : [param];
+}
+
 module.exports = {
     async getAllLobbyists(req, res) {
         try {
@@ -116,6 +121,77 @@ module.exports = {
             console.error(error);
             res.status(500).json({ error: 'Errore nel recupero delle informazioni del lobbyist.', details: error.message });
         }
+    },
+
+    async getLobbyistsDetails(req, res) {
+        try {
+            const lobbyist_ids = typeof req.query.lobbyist_ids === 'string'
+            ? req.query.lobbyist_ids.split(',').map(id => id.trim()).filter(Boolean)
+            : Array.isArray(req.query.lobbyist_ids)
+                ? req.query.lobbyist_ids
+                : [];
+
+            if (!lobbyist_ids.length) {
+            return res.status(400).json({ error: 'Nessun lobbyist_id fornito.' });
+            }
+
+            const query = `
+            SELECT
+                lp.lobbyist_id,
+                lp.organization_name,
+                lp.registration_number,
+                lp.registration_date,
+                lp.last_update_date,
+                lp.next_update_date,
+                lp.acronym,
+                lp.entity_form,
+                lp.website,
+                lp.head_office_address,
+                lp.head_office_phone,
+                lp.eu_office_address,
+                lp.eu_office_phone,
+                lp.legal_representative,
+                lp.legal_representative_role,
+                lp.eu_relations_representative,
+                lp.eu_relations_representative_role,
+                lp.transparency_register_url,
+                lp.country,
+                lp.annual_cost_estimate_min,
+                lp.annual_cost_estimate_max,
+                GROUP_CONCAT(DISTINCT fi.field_name ORDER BY fi.field_name SEPARATOR '; ') AS fields_of_interest,
+                GROUP_CONCAT(DISTINCT m.membership_name ORDER BY m.membership_name SEPARATOR '; ') AS memberships,
+                GROUP_CONCAT(DISTINCT p.proposal_description ORDER BY p.proposal_description SEPARATOR '; ') AS proposals
+            FROM lobbyist_profile AS lp
+            LEFT JOIN lobbyist_fields_of_interest AS lfi
+                ON lp.lobbyist_id = lfi.lobbyist_id
+            LEFT JOIN fields_of_interest AS fi
+                ON lfi.field_id = fi.field_id
+            LEFT JOIN lobbyist_memberships AS lm
+                ON lp.lobbyist_id = lm.lobbyist_id
+            LEFT JOIN memberships AS m
+                ON lm.membership_id = m.membership_id
+            LEFT JOIN lobbyist_proposals AS lpj
+                ON lp.lobbyist_id = lpj.lobbyist_id
+            LEFT JOIN proposals AS p
+                ON lpj.proposal_id = p.proposal_id
+            WHERE lp.lobbyist_id IN (:lobbyist_ids)
+            GROUP BY lp.lobbyist_id
+            ORDER BY lp.organization_name ASC;
+            `;
+
+            const [rows] = await sequelize.query(query, {
+            replacements: { lobbyist_ids },
+            });
+
+            res.json(rows);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({
+            error: 'Errore durante il recupero dei dettagli dei lobbisti.',
+            details: error.message,
+            });
+        }
     }
+
 
 };

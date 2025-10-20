@@ -51,13 +51,20 @@ export class FilterService {
   }
 
   public showMeetings() {
-    let allFields:{ field_id: number; field_name: string }[] = [];
-    this.dataService.getFields().subscribe(data => {
-      allFields = data;
-      this.meetingCsvData = this.csvService.generateMeetingCsvData(this.overviewSubject.getValue());
-      this.lobbyistCsvData = this.csvService.generateLobbyistCsvData(this.overviewSubject.getValue(), allFields);
+    const meetingsData = this.overviewSubject.getValue();
+    this.meetingCsvData = this.csvService.generateMeetingCsvData(meetingsData);
+
+    const lobbyistIds = Array.from(
+      new Set(meetingsData.map(m => m.lobbyist_profile?.lobbyist_id))
+    ).filter(id => !!id);
+
+    this.dataService.getFields().subscribe(allFields => {
+      this.dataService.getAllLobbyistsDetails(lobbyistIds).subscribe(lobbyistData => {
+        this.lobbyistCsvData = this.csvService.generateLobbyistCsvData(lobbyistData, allFields);
+      });
     });
-    this.meetingsSubject.next([...this.overviewSubject.getValue()]);
+
+    this.meetingsSubject.next([...meetingsData]);
   }
 
   getCurrentFilters(): any {

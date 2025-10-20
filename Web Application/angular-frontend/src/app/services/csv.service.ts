@@ -34,36 +34,43 @@ export class CsvService {
   }
 
   generateMeetingCsvData(jsonData: any[]): any[] {
-    return jsonData.map(item => {
-      const repAlloc = item.CommissionRepresentative?.RepresentativeAllocations?.[0] || {};
-      return {
-        meeting_number: item.meeting_number,
-        meeting_date: item.meeting_date,
-        topic: item.topic?.replace(/\n/g, ' '),
-        location: item.location?.replace(/\n/g, ' '),
-        lobbyist_id: item.Lobbyist?.lobbyist_id?.replace(/\n/g, ' ') || '',
-        lobbyist_name: item.Lobbyist?.organization_name?.replace(/\n/g, ' ') || '',
-        representative_name: item.CommissionRepresentative?.name?.replace(/\n/g, ' ') || '',
-        directorate_name: repAlloc.Directorate?.name?.replace(/\n/g, ' ') || '',
-        role: repAlloc.role?.replace(/\n/g, ' ') || ''
-      };
-    });
-  }
-
-  generateLobbyistCsvData(jsonData: any[], allFields: { field_id: number; field_name: string }[]): any[] {
-    const lobbyistMap = new Map<string, any>();
-    const INFINITE = 9223372036854775807;
+    const csvData: any[] = [];
 
     jsonData.forEach(item => {
-      const lobbyist = item.Lobbyist;
-      if (!lobbyist || lobbyistMap.has(lobbyist.lobbyist_id)) return;
+      const meeting = item.commission_meetings;
+      const lobbyist = item.lobbyist_profile;
+      const firstParticipant = item.participants?.[0] || {};
+      const representative = firstParticipant.commission_representative || {};
+      const directorate = firstParticipant.directorate || {};
+      const allocation = firstParticipant.allocation || {};
 
+      csvData.push({
+        meeting_number: meeting?.meeting_number || '',
+        meeting_date: meeting?.meeting_date || '',
+        topic: meeting?.topic?.replace(/\n/g, ' ') || '',
+        location: meeting?.location?.replace(/\n/g, ' ') || '',
+        lobbyist_id: lobbyist?.lobbyist_id || '',
+        lobbyist_name: lobbyist?.organization_name?.replace(/\n/g, ' ') || '',
+        representative_name: representative?.name?.replace(/\n/g, ' ') || '',
+        directorate_name: directorate?.name?.replace(/\n/g, ' ') || '',
+        role: allocation?.role?.replace(/\n/g, ' ') || ''
+      });
+    });
+
+    return csvData;
+  }
+
+
+  generateLobbyistCsvData(lobbyists: any[], allFields: { field_id: number; field_name: string }[]): any[] {
+    const INFINITE = 9223372036854775807;
+
+    return lobbyists.map(lobbyist => {
       const min = lobbyist.annual_cost_estimate_min ?? '';
       const max = lobbyist.annual_cost_estimate_max === INFINITE
         ? '∞'
         : lobbyist.annual_cost_estimate_max ?? '';
 
-      const lobbyistData: { [key: string]: any } = {
+      const lobbyistData: any = {
         lobbyist_id: lobbyist.lobbyist_id || '',
         organization_name: lobbyist.organization_name?.replace(/\n/g, ' ') || '',
         registration_number: lobbyist.registration_number?.replace(/\n/g, ' ') || '',
@@ -84,25 +91,16 @@ export class CsvService {
         transparency_register_url: lobbyist.transparency_register_url?.replace(/\n/g, ' ') || '',
         country: lobbyist.country?.replace(/\n/g, ' ') || '',
         annual_cost_estimate_min: min,
-        annual_cost_estimate_max: max
+        annual_cost_estimate_max: max,
       };
 
       allFields.forEach(field => {
-        lobbyistData[field.field_name] = 0;
+        lobbyistData[field.field_name] = lobbyist.fields_of_interest?.includes(field.field_name) ? 1 : 0;
       });
 
-      if (lobbyist.Fields) {
-        lobbyist.Fields.forEach((field: { field_name: string }) => {
-          if (field.field_name in lobbyistData) {
-            lobbyistData[field.field_name] = 1;
-          }
-        });
-      }
-
-      lobbyistMap.set(lobbyist.lobbyist_id, lobbyistData);
+      return lobbyistData;
     });
-
-    return Array.from(lobbyistMap.values());
   }
+
 
 }

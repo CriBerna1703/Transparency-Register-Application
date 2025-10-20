@@ -95,6 +95,12 @@ module.exports = {
 
             // Query finale
             const query = `
+                WITH latest_allocation AS (
+                    SELECT
+                        ra.*,
+                        ROW_NUMBER() OVER (PARTITION BY ra.representative_id, ra.year ORDER BY ra.id DESC) AS rn
+                    FROM representative_allocation ra
+                )
                 SELECT DISTINCT
                     lp.lobbyist_id,
                     lp.organization_name,
@@ -112,6 +118,7 @@ module.exports = {
                     cm.meeting_number,
                     cm.meeting_date,
                     cm.topic,
+                    cm.location,
                     ra.role as representative_role,
                     ra.year as representative_year
                 FROM commission_meetings AS cm
@@ -119,8 +126,10 @@ module.exports = {
                     ON cm.lobbyist_id = mr.lobbyist_id AND cm.meeting_number = mr.meeting_number
                 LEFT JOIN commission_representative AS cr
                     ON mr.representative_id = cr.id
-                LEFT JOIN representative_allocation AS ra
-                    ON cr.id = ra.representative_id AND YEAR(cm.meeting_date) = ra.year
+                LEFT JOIN latest_allocation AS ra
+                    ON cr.id = ra.representative_id
+                    AND ra.year = YEAR(cm.meeting_date)
+                    AND ra.rn = 1
                 LEFT JOIN directorate AS d
                     ON ra.directorate_id = d.id
                 LEFT JOIN (
@@ -174,7 +183,8 @@ module.exports = {
                             lobbyist_id: row.lobbyist_id,
                             meeting_number: row.meeting_number,
                             meeting_date: row.meeting_date,
-                            topic: row.topic
+                            topic: row.topic,
+                            location: row.location
                         },
                         participants: []
                     };
