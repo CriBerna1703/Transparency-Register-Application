@@ -564,3 +564,6 @@ app-histogram-view {
   text-overflow: unset;
 }
 
+button:disabled {
+  cursor: not-allowed;
+}

@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, firstValueFrom } from 'rxjs';
 import { DataService } from './data.service';
 import { CsvService } from './csv.service';
-import { Subscription } from 'rxjs';
+import { Subscription, forkJoin } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +13,7 @@ export class FilterService {
   private overviewSubject = new BehaviorSubject<any[]>([]);
   private loadingSubject = new BehaviorSubject<boolean>(false);
   private currentRequest?: Subscription;
+  public isCsvReady: boolean = false;
 
   filters$ = this.filtersSubject.asObservable();
   meetings$ = this.meetingsSubject.asObservable();
@@ -50,22 +51,33 @@ export class FilterService {
     );
   }
 
-  public showMeetings() {
-    const meetingsData = this.overviewSubject.getValue();
-    this.meetingCsvData = this.csvService.generateMeetingCsvData(meetingsData);
 
+  public async showMeetings() {
+    this.isCsvReady = false;
+
+    const meetingsData = this.overviewSubject.getValue();
     const lobbyistIds = Array.from(
       new Set(meetingsData.map(m => m.lobbyist_profile?.lobbyist_id))
     ).filter(id => !!id);
 
-    this.dataService.getFields().subscribe(allFields => {
-      this.dataService.getAllLobbyistsDetails(lobbyistIds).subscribe(lobbyistData => {
-        this.lobbyistCsvData = this.csvService.generateLobbyistCsvData(lobbyistData, allFields);
-      });
-    });
+    try {
+      const allFields = await firstValueFrom(this.dataService.getFields());
+      const lobbyistData = await this.dataService.getLobbyistsDetailsSequentially(lobbyistIds, 1000);
 
-    this.meetingsSubject.next([...meetingsData]);
+      this.lobbyistCsvData = this.csvService.generateLobbyistCsvData(lobbyistData, allFields);
+      this.meetingCsvData = this.csvService.generateMeetingCsvDataWithLobbyistData(
+        meetingsData,
+        lobbyistData,
+        allFields
+      );
+
+      this.meetingsSubject.next([...meetingsData]);
+      this.isCsvReady = true;
+    } catch (error) {
+      console.error('Errore durante il caricamento dei dati:', error);
+    }
   }
+
 
   getCurrentFilters(): any {
     return this.filtersSubject.getValue();

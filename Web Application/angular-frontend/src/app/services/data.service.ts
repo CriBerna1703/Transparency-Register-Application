@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -22,6 +22,23 @@ export class DataService {
   getAllLobbyistsDetails(lobbyistIds: string[]): Observable<any[]> {
     const params = new HttpParams().set('lobbyist_ids', lobbyistIds.join(','));
     return this.http.get<any[]>(`${this.apiUrl}/allLobbyists`, { params });
+  }
+
+  async getLobbyistsDetailsSequentially(lobbyistIds: string[], batchSize = 1000): Promise<any[]> {
+    const results: any[] = [];
+
+    for (let i = 0; i < lobbyistIds.length; i += batchSize) {
+      const batch = lobbyistIds.slice(i, i + batchSize);
+
+      try {
+        const batchResult = await firstValueFrom(this.getAllLobbyistsDetails(batch));
+        results.push(...batchResult);
+      } catch (error) {
+        console.error(`Errore durante il caricamento del batch ${i / batchSize + 1}:`, error);
+      }
+    }
+
+    return results;
   }
 
   getFields(): Observable<any> {

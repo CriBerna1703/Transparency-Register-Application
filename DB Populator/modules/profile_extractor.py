@@ -15,7 +15,8 @@ class ProfileDataExtractor:
             'registration_number', 'registration_status', 'registration_date',
             'last_update_date', 'next_update_date', 'acronym', 'entity_form', 'website',
             'head_office_address', 'head_office_phone', 'eu_office_address', 'eu_office_phone', 'legal_representative', 'legal_representative_role',
-            'eu_relations_representative', 'eu_relations_representative_role', 'transparency_register_url', 'country', 'annual_cost_estimate_min', 'annual_cost_estimate_max'
+            'eu_relations_representative', 'eu_relations_representative_role', 'transparency_register_url', 'country', 'annual_cost_estimate_min', 'annual_cost_estimate_max',
+            'category_of_registration'
         ]
         self.country_names = self.load_country_names(country_file)
 
@@ -61,6 +62,15 @@ class ProfileDataExtractor:
             else:
                 profile_data.update(section_data)
         
+        category_section = self.soup.find('h2', id='category-of-registration')
+        category_of_registration = ''
+        if category_section:
+            category_table = category_section.find_next('table')
+            if category_table:
+                section_data = extract_section_data_from_element(category_table)
+                category_of_registration = section_data.get('Categoria di registrazione', '') or \
+                                           section_data.get('Categoria di registrazione:', '')
+
         registration_number = profile_data.get('Numero di registrazione:', '')
         registration_status = profile_data.get('Stato:', '')
         
@@ -128,7 +138,7 @@ class ProfileDataExtractor:
             last_update_date, next_update_date, acronym, entity_form, website,
             head_office_address, head_office_phone, eu_office_address, eu_office_phone, legal_representative, legal_representative_role,
             eu_relations_representative, eu_relations_representative_role, self.search_url, country,
-            annual_cost_min, annual_cost_max
+            annual_cost_min, annual_cost_max, category_of_registration
         ]
         self.db_conn.update_data(self.table, self.columns, values, self.lobbyist_id)
 

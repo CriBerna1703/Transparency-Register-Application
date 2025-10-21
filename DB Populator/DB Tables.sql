@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS lobbyist_profile (
     country VARCHAR(255),                          -- Country
 	annual_cost_estimate_min BIGINT,              -- Annual cost estimate (min)
     annual_cost_estimate_max BIGINT,              -- Annual cost estimate (max)
+    category_of_registration VARCHAR(255),        -- Category of registration
     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

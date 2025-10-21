@@ -41,7 +41,7 @@ export class DashboardComponent {
   @ViewChild(TemporalViewComponent) temporalViewComponent!: TemporalViewComponent;
   @ViewChild(OverviewComponent) overviewComponent!: OverviewComponent;
 
-  constructor(private cdr: ChangeDetectorRef, private filterService: FilterService) {}
+  constructor(private cdr: ChangeDetectorRef, public filterService: FilterService) {}
 
   toggleFilter() {
     this.isFilterCollapsed = !this.isFilterCollapsed;

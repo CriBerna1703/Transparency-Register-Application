@@ -16,7 +16,7 @@ class MeetingExtractor:
         self.known_titles = ['Principal Legal Adviser', 'Director of Office', 'Head of JRC Department','High Representative of the Union for Foreign Affairs and Security Policy and Vice-President', 'Commissioner', 'High Representative / Vice-President', 'Acting Head of Representation', 'Acting Deputy Director-General',
                             'Head of Representation', 'Deputy Secretary-General', 'Secretary-General', 'Executive Vice-President', 'First Vice-President',
                             'Hors Classe Adviser', 'Vice-President', 'President', 'Acting Director-General', 'Director-General', 'High Representative',
-                            'Deputy Director-General', 'Acting Director', 'Director', 'Acting Head of Unit', 'Seconded Head of Unit', 'Head of Unit (Ad interim)', 'Head of Unit', 'Regulatory Scrutiny Board', 'Acting Principal Adviser', 'Principal Adviser']
+                            'Deputy Director-General', 'Acting Director', 'Director', 'Acting Head of Unit', 'Seconded Head of Unit', 'Head of Unit (Ad interim)', 'Head of Unit', 'Regulatory Scrutiny Board', 'Acting Principal Adviser', 'Principal Adviser', 'Chief Economist']
         self.department_titles = ['Agriculture and Rural Development', 'Budget', 'Climate Action', 'Communications Networks, Content and Technology',
                              'Communication Networks, Content and Technology', 'Communication', 'Competition', 'Data Protection Officer', 'Directorate-General for International Partnerships',
                              'Directorate- General for International Partnerships', 'Defence Industry and Space', 'Digital Services', 'Economic and Financial Affairs',

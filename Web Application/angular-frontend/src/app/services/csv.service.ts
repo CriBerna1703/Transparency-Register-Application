@@ -33,33 +33,72 @@ export class CsvService {
     document.body.removeChild(a);
   }
 
-  generateMeetingCsvData(jsonData: any[]): any[] {
-    const csvData: any[] = [];
+  generateMeetingCsvDataWithLobbyistData(
+    meetings: any[],
+    lobbyists: any[],
+    allFields: { field_id: number; field_name: string }[]
+  ): any[] {
+    const INFINITE = 9223372036854775807;
+    const lobbyistMap = new Map(lobbyists.map(l => [l.lobbyist_id, l]));
 
-    jsonData.forEach(item => {
+    return meetings.map(item => {
       const meeting = item.commission_meetings;
       const lobbyist = item.lobbyist_profile;
-      const firstParticipant = item.participants?.[0] || {};
-      const representative = firstParticipant.commission_representative || {};
-      const directorate = firstParticipant.directorate || {};
-      const allocation = firstParticipant.allocation || {};
+      const fullLobbyist = lobbyistMap.get(lobbyist?.lobbyist_id) || {};
 
-      csvData.push({
+      const representativesSummary = (item.participants || [])
+      .map((p: { commission_representative?: { name?: string }; allocation?: { role?: string }; directorate?: { name?: string } }) => {
+        const rep = p.commission_representative?.name?.replace(/\n/g, ' ') || '';
+        const role = p.allocation?.role?.replace(/\n/g, ' ') || '';
+        const dg = p.directorate?.name?.replace(/\n/g, ' ') || '';
+        return [rep, role, dg].filter(Boolean).join(' - ');
+      })
+      .join('; ');
+
+      const min = fullLobbyist.annual_cost_estimate_min ?? '';
+      const max =
+        fullLobbyist.annual_cost_estimate_max === INFINITE
+          ? '∞'
+          : fullLobbyist.annual_cost_estimate_max ?? '';
+
+      const mergedData: any = {
         meeting_number: meeting?.meeting_number || '',
         meeting_date: meeting?.meeting_date || '',
         topic: meeting?.topic?.replace(/\n/g, ' ') || '',
         location: meeting?.location?.replace(/\n/g, ' ') || '',
-        lobbyist_id: lobbyist?.lobbyist_id || '',
-        lobbyist_name: lobbyist?.organization_name?.replace(/\n/g, ' ') || '',
-        representative_name: representative?.name?.replace(/\n/g, ' ') || '',
-        directorate_name: directorate?.name?.replace(/\n/g, ' ') || '',
-        role: allocation?.role?.replace(/\n/g, ' ') || ''
+        representatives_summary: representativesSummary,
+
+        lobbyist_id: fullLobbyist.lobbyist_id || '',
+        organization_name: fullLobbyist.organization_name?.replace(/\n/g, ' ') || '',
+        registration_number: fullLobbyist.registration_number?.replace(/\n/g, ' ') || '',
+        registration_date: fullLobbyist.registration_date?.replace(/\n/g, ' ') || '',
+        last_update_date: fullLobbyist.last_update_date?.replace(/\n/g, ' ') || '',
+        next_update_date: fullLobbyist.next_update_date?.replace(/\n/g, ' ') || '',
+        acronym: fullLobbyist.acronym?.replace(/\n/g, ' ') || '',
+        entity_form: fullLobbyist.entity_form?.replace(/\n/g, ' ') || '',
+        website: fullLobbyist.website?.replace(/\n/g, ' ') || '',
+        head_office_address: fullLobbyist.head_office_address?.replace(/\n/g, ' ') || '',
+        head_office_phone: fullLobbyist.head_office_phone?.replace(/\n/g, ' ') || '',
+        eu_office_address: fullLobbyist.eu_office_address?.replace(/\n/g, ' ') || '',
+        eu_office_phone: fullLobbyist.eu_office_phone?.replace(/\n/g, ' ') || '',
+        legal_representative: fullLobbyist.legal_representative?.replace(/\n/g, ' ') || '',
+        legal_representative_role: fullLobbyist.legal_representative_role?.replace(/\n/g, ' ') || '',
+        eu_relations_representative: fullLobbyist.eu_relations_representative?.replace(/\n/g, ' ') || '',
+        eu_relations_representative_role: fullLobbyist.eu_relations_representative_role?.replace(/\n/g, ' ') || '',
+        transparency_register_url: fullLobbyist.transparency_register_url?.replace(/\n/g, ' ') || '',
+        country: fullLobbyist.country?.replace(/\n/g, ' ') || '',
+        annual_cost_estimate_min: min,
+        annual_cost_estimate_max: max,
+        category_of_registration: fullLobbyist.category_of_registration?.replace(/\n/g, ' ') || ''
+      };
+
+      allFields.forEach(field => {
+        mergedData[field.field_name] = fullLobbyist.fields_of_interest?.includes(field.field_name) ? 1 : 0;
       });
+
+      return mergedData;
     });
-
-    return csvData;
   }
-
 
   generateLobbyistCsvData(lobbyists: any[], allFields: { field_id: number; field_name: string }[]): any[] {
     const INFINITE = 9223372036854775807;
@@ -92,6 +131,7 @@ export class CsvService {
         country: lobbyist.country?.replace(/\n/g, ' ') || '',
         annual_cost_estimate_min: min,
         annual_cost_estimate_max: max,
+        category_of_registration: lobbyist.category_of_registration?.replace(/\n/g, ' ') || ''
       };
 
       allFields.forEach(field => {

@@ -50,6 +50,7 @@ module.exports = {
                     lp.country,
                     lp.annual_cost_estimate_min,
                     lp.annual_cost_estimate_max,
+                    lp.category_of_registration,
                     f.field_id,
                     f.field_name,
                     m.membership_id,
@@ -91,6 +92,7 @@ module.exports = {
                 country: rows[0].country,
                 annual_cost_estimate_min: rows[0].annual_cost_estimate_min,
                 annual_cost_estimate_max: rows[0].annual_cost_estimate_max,
+                category_of_registration: rows[0].category_of_registration,
                 Fields: [],
                 Memberships: [],
                 Proposals: [],
@@ -158,6 +160,7 @@ module.exports = {
                 lp.country,
                 lp.annual_cost_estimate_min,
                 lp.annual_cost_estimate_max,
+                lp.category_of_registration,
                 GROUP_CONCAT(DISTINCT fi.field_name ORDER BY fi.field_name SEPARATOR '; ') AS fields_of_interest,
                 GROUP_CONCAT(DISTINCT m.membership_name ORDER BY m.membership_name SEPARATOR '; ') AS memberships,
                 GROUP_CONCAT(DISTINCT p.proposal_description ORDER BY p.proposal_description SEPARATOR '; ') AS proposals
