@@ -131,10 +131,16 @@ export class DashboardComponent {
     }
   }
 
-  downloadCSV(){
+  async downloadCSV() {
+    if (!this.filterService.isCsvReady && !this.filterService.isCsvGenerating) {
+      await this.filterService.downloadCsv();
+    }
+
     this.filterService.downloadMeetingCsv();
     this.filterService.downloadLobbyistCsv();
   }
+
+
 
   public onLabelTextChange(newText: string) {
     this.labelText = newText;

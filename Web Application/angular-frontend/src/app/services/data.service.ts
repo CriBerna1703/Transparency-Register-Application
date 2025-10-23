@@ -24,7 +24,7 @@ export class DataService {
     return this.http.get<any[]>(`${this.apiUrl}/allLobbyists`, { params });
   }
 
-  async getLobbyistsDetailsSequentially(lobbyistIds: string[], batchSize = 1000): Promise<any[]> {
+  async getLobbyistsDetailsSequentially(lobbyistIds: string[], batchSize = 300): Promise<any[]> {
     const results: any[] = [];
 
     for (let i = 0; i < lobbyistIds.length; i += batchSize) {
