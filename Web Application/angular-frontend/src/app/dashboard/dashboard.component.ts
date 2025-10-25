@@ -37,6 +37,7 @@ export class DashboardComponent {
   public minDate?: Date = new Date();
   public maxDate?: Date = new Date();
   public hasMeetings: boolean = true;
+  public circumference = 2 * Math.PI * 14;
 
   @ViewChild(TemporalViewComponent) temporalViewComponent!: TemporalViewComponent;
   @ViewChild(OverviewComponent) overviewComponent!: OverviewComponent;

@@ -17,6 +17,7 @@ export class FilterService {
   private currentRequest?: Subscription;
   public isCsvGenerating: boolean = false; 
   public isCsvReady: boolean = false;
+  public csvProgress: number = 0;
 
   filters$ = this.filtersSubject.asObservable();
   meetings$ = this.meetingsSubject.asObservable();
@@ -58,6 +59,7 @@ export class FilterService {
     this.meetingsSubject.next([...this.overviewSubject.getValue()]);
     this.isCsvGenerating = false;
     this.isCsvReady = false;
+    this.csvProgress = 0;
   }
 
   public downloadCsv(): Promise<void> {
@@ -85,8 +87,8 @@ export class FilterService {
           });
 
           worker.onmessage = ({ data }) => {
-            if (data.progress) {
-              console.log(`Caricati ${data.progress}/${data.total} lobbisti`);
+            if (data.progress && data.total) {
+              this.csvProgress = Math.round((data.progress / data.total) * 100);
             }
 
             if (data.done) {
@@ -101,6 +103,7 @@ export class FilterService {
 
               this.isCsvGenerating = false;
               this.isCsvReady = true;
+              this.csvProgress = 100;
 
               worker.terminate();
               resolve();

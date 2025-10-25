@@ -476,7 +476,7 @@ app-histogram-view {
 
 
 .download-btn {
-  position: absolute;
+  position: relative;
   background: #67acec;
   border: none;
   width: 30px;
@@ -504,6 +504,36 @@ app-histogram-view {
 .download-btn:active {
   transform: scale(0.9);
 }
+
+.hourglass-wrapper {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hourglass {
+  font-size: 16px;
+  animation: flip 1.5s infinite ease-in-out;
+}
+
+.progress-ring {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle {
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+@keyframes flip {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 .scroll-container {
   display: flex;
