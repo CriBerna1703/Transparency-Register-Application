@@ -365,6 +365,30 @@ export class FilterMaskComponent {
     return groups;
   }
 
+  areAllCabinetsSelectedExceptNo(): boolean {
+    const validGroups = this.filteredCabinetGroups.filter(g => g.cabinetName !== 'No cabinet');
+    if (validGroups.length === 0) return false;
+    return validGroups.every(g => this.isCabinetAllSelected(g));
+  }
+
+  toggleAllCabinetsExceptNo() {
+    const validGroups = this.filteredCabinetGroups.filter(g => g.cabinetName !== 'No cabinet');
+    const allSelected = validGroups.every(g => this.isCabinetAllSelected(g));
+
+    validGroups.forEach(group => {
+      const reps = this.groupAllIds(group);
+      reps.forEach(rep => {
+        const idx = this.selectedCommissioners.findIndex(s => s.id === rep.id);
+        if (allSelected && idx >= 0) {
+          // deseleziona
+          this.selectedCommissioners.splice(idx, 1);
+        } else if (!allSelected && idx === -1) {
+          // seleziona
+          this.selectedCommissioners.push({ id: rep.id, name: rep.name });
+        }
+      });
+    });
+  }
 
   private norm(v: any): string {
     return (v ?? '')

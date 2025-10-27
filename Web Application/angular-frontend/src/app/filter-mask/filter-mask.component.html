@@ -130,6 +130,12 @@
                         (change)="toggleAnySelection(selectedCommissioners)">
                   Any
                 </label>
+                <label style="margin-left: 12px;">
+                  <input type="checkbox"
+                        [checked]="areAllCabinetsSelectedExceptNo()"
+                        (change)="toggleAllCabinetsExceptNo()">
+                  All Cabinets
+                </label>
               </li>
             </ul>
           </div>

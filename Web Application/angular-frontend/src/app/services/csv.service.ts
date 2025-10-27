@@ -55,6 +55,16 @@ export class CsvService {
       })
       .join('; ');
 
+      const cabinetsInvolved = Array.from(
+        new Set(
+          (item.participants || [])
+            .map((p: { commission_representative?: { name?: string }; allocation?: { role?: string }; directorate?: { name?: string }; commission_cabinet?: { name?: string } }) => p.commission_cabinet?.name)
+            .filter((name: string | undefined): name is string => !!name && name.trim().toLowerCase() !== 'no cabinet')
+        )
+      )
+      .map(name => `Team member of ${name}`)
+      .join('; ');
+
       const min = fullLobbyist.annual_cost_estimate_min ?? '';
       const max =
         fullLobbyist.annual_cost_estimate_max === INFINITE
@@ -67,6 +77,7 @@ export class CsvService {
         topic: meeting?.topic?.replace(/\n/g, ' ') || '',
         location: meeting?.location?.replace(/\n/g, ' ') || '',
         representatives_summary: representativesSummary,
+        cabinets_involved: cabinetsInvolved || '',
 
         lobbyist_id: fullLobbyist.lobbyist_id || '',
         organization_name: fullLobbyist.organization_name?.replace(/\n/g, ' ') || '',
