@@ -70,56 +70,7 @@ export class DataService {
   }
 
   getFilteredMeetings(filters: any): Observable<any> {
-    let params = new HttpParams();
-
-    if (filters.date_from) {
-      params = params.set('date_from', filters.date_from);
-    }
-    if (filters.date_to) {
-      params = params.set('date_to', filters.date_to);
-    }
-    if (filters.filter_type) {
-      params = params.set('filter_type', filters.filter_type);
-    }
-    if (filters.keywords && filters.keywords.length > 0) {
-      filters.keywords.forEach((keyword: string) => {
-        params = params.append('keywords', keyword);
-      });
-    }
-    if (filters.lobbyist_ids && filters.lobbyist_ids.length > 0) {
-      filters.lobbyist_ids.forEach((id: string) => {
-        params = params.append('lobbyist_ids', id.toString());
-      });
-    }
-    if (filters.representative_ids && filters.representative_ids.length > 0) {
-      filters.representative_ids.forEach((id: number) => {
-        params = params.append('representative_ids', id.toString());
-      });
-    }
-    if (filters.directorate_ids && filters.directorate_ids.length > 0) {
-      filters.directorate_ids.forEach((id: number) => {
-        params = params.append('directorate_ids', id.toString());
-      });
-    }
-    if (filters.cabinet_ids && filters.cabinet_ids.length > 0) {
-      filters.cabinet_ids.forEach((id: number) => {
-        params = params.append('cabinet_ids', id.toString());
-      });
-    }
-    if (filters.field_ids && filters.field_ids.length > 0) {
-      filters.field_ids.forEach((id: number) => {
-        params = params.append('field_ids', id.toString());
-      });
-    }
-
-    if (filters.minBudget != null) {
-      params = params.set('minBudget', filters.minBudget.toString());
-    }
-    if (filters.maxBudget != null) {
-      params = params.set('maxBudget', filters.maxBudget.toString());
-    }
-
-    return this.http.get(`${this.apiUrl}/meetings/filter`, { params });
+    return this.http.post(`${this.apiUrl}/meetings/filter`, filters);
   }
 
   getLobbyistFieldOfInterest(lobbyistId: string): Observable<any> {
@@ -127,10 +78,11 @@ export class DataService {
   }
   
   getMeetingByLobbyistAndNumber(lobbyistId: string, meetingNumber: string): Observable<any> {
-    let params = new HttpParams()
-      .set('lobbyist_ids', lobbyistId)
-      .set('meeting_number', meetingNumber);
-    return this.http.get(`${this.apiUrl}/meetings/filter`, { params });
+    const filters = {
+      lobbyist_ids: [lobbyistId],
+      meeting_number: meetingNumber
+    };
+    return this.http.post(`${this.apiUrl}/meetings/filter`, filters);
   }
   
   getSimilarities(payload: { startDate: string; endDate: string; lobbyist_ids: string[] }): Observable<any> {
