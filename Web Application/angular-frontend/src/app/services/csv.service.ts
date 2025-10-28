@@ -47,23 +47,42 @@ export class CsvService {
       const fullLobbyist = lobbyistMap.get(lobbyist?.lobbyist_id) || {};
 
       const representativesSummary = (item.participants || [])
-      .map((p: { commission_representative?: { name?: string }; allocation?: { role?: string }; directorate?: { name?: string } }) => {
-        const rep = p.commission_representative?.name?.replace(/\n/g, ' ') || '';
-        const role = p.allocation?.role?.replace(/\n/g, ' ') || '';
-        const dg = p.directorate?.name?.replace(/\n/g, ' ') || '';
-        return [rep, role, dg].filter(Boolean).join(' - ');
-      })
-      .join('; ');
+        .map((p: {
+          commission_representative?: { name?: string };
+          allocation?: { role?: string };
+          directorate?: { name?: string };
+        }) => {
+          const rep = p.commission_representative?.name?.replace(/\n/g, ' ') || '';
+          const role = p.allocation?.role?.replace(/\n/g, ' ') || '';
+          const dg = p.directorate?.name?.replace(/\n/g, ' ') || '';
+          return [rep, role, dg].filter(Boolean).join(' - ');
+        })
+        .join('; ');
 
-      const cabinetsInvolved = Array.from(
+      let cabinetsInvolved = Array.from(
         new Set(
           (item.participants || [])
-            .map((p: { commission_representative?: { name?: string }; allocation?: { role?: string }; directorate?: { name?: string }; commission_cabinet?: { name?: string } }) => p.commission_cabinet?.name)
-            .filter((name: string | undefined): name is string => !!name && name.trim().toLowerCase() !== 'no cabinet')
+            .map((p: {
+              commission_cabinet?: { name?: string };
+            }) => p.commission_cabinet?.name)
+            .filter(
+              (name: string | undefined): name is string =>
+                !!name && name.trim().toLowerCase() !== 'no cabinet'
+            )
         )
       )
-      .map(name => `Team member of ${name}`)
-      .join('; ');
+        .map(name => `Team member of ${name}`)
+        .join('; ');
+
+      if (
+        !cabinetsInvolved &&
+        (item.participants || []).some(
+          (p: { directorate?: { is_commissioner?: boolean } }) =>
+            p.directorate?.is_commissioner === true
+        )
+      ) {
+        cabinetsInvolved = 'Commissioner';
+      }
 
       const min = fullLobbyist.annual_cost_estimate_min ?? '';
       const max =
@@ -104,7 +123,8 @@ export class CsvService {
       };
 
       allFields.forEach(field => {
-        mergedData[field.field_name] = fullLobbyist.fields_of_interest?.includes(field.field_name) ? 1 : 0;
+        mergedData[field.field_name] =
+          fullLobbyist.fields_of_interest?.includes(field.field_name) ? 1 : 0;
       });
 
       return mergedData;
