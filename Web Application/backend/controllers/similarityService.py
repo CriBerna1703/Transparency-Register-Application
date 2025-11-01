@@ -51,7 +51,7 @@ def main():
     print(f"End date: {end_date.strftime('%d/%m/%Y')}", file=sys.stderr)
     lobbyist_ids = set(input_data.get("lobbyist_ids", []))
 
-    input_dir = 'Lemmatized_Files'
+    input_dir = os.path.join(os.path.dirname(__file__), '..', 'Lemmatized_Files')
     all_files = sorted([
         f for f in os.listdir(input_dir)
         if f.endswith('.txt') and os.path.splitext(f)[0] in lobbyist_ids

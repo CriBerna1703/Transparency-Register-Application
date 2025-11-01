@@ -12,6 +12,8 @@ from modules.meetings_extractor import MeetingExtractor
 from modules.utils import get_soup
 from modules.log_handler import configure_logging  # Importa il modulo di log
 
+import subprocess
+
 # Configura il logging all'inizio
 configure_logging()
 
@@ -85,6 +87,26 @@ def process_lobbyists(batch_size, country_file):
         raise e
 
 
+def generate_lobbyist_files():
+    logging.info("Step 5: Generazione file dei lobbisti (estrazione meeting).")
+    try:
+        subprocess.run(["python", "fetch_meetings.py"], check=True)  # <-- nome del tuo primo script
+        logging.info("File dei lobbisti generati con successo.")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Errore durante la generazione dei file dei lobbisti: {e}")
+        raise e
+
+
+def lemmatize_lobbyist_files():
+    logging.info("Step 6: Lemmatizzazione dei file dei lobbisti.")
+    try:
+        subprocess.run(["python", "lemmatize_files.py"], check=True)  # <-- nome del tuo secondo script
+        logging.info("File lemmatizzati con successo.")
+    except subprocess.CalledProcessError as e:
+        logging.error(f"Errore durante la lemmatizzazione dei file: {e}")
+        raise e
+    
+
 if __name__ == "__main__":
     logging.info("Inizio esecuzione script principale.")
     try:
@@ -103,6 +125,11 @@ if __name__ == "__main__":
         batch_size = 100
         country_file = "countries_mapping.yml"
         process_lobbyists(batch_size, country_file)
+
+        #step 5: Generazione file dei lobbisti
+        generate_lobbyist_files()
+        lemmatize_lobbyist_files()
+
 
         logging.info("Esecuzione script completata con successo.")
     except Exception as e:

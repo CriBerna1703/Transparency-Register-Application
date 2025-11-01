@@ -5,7 +5,7 @@ async function computeTextSimilarities(req, res) {
   const { startDate, endDate, lobbyist_ids } = req.body;
 
   const scriptPath = path.join(__dirname, 'similarityService.py');
-  const py = spawn('python3', [scriptPath]);
+  const py = spawn(process.platform === 'win32' ? 'python' : 'python3', [scriptPath]);
   let output = '';
   let errorOutput = '';
 
