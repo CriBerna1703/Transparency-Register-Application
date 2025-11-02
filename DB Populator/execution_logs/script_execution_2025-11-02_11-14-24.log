@@ -1,0 +1,8 @@
+2025-11-02 11:14:24,964 - INFO - Log salvato in: execution_logs\script_execution_2025-11-02_11-14-24.log
+2025-11-02 11:14:24,965 - INFO - Inizio esecuzione script principale.
+2025-11-02 11:14:24,965 - INFO - Step 1: Backup del database e troncamento delle tabelle.
+2025-11-02 11:14:25,133 - INFO - Backup del database completato: db_history\backup_2025-11-02_11-14-25.sql
+2025-11-02 11:14:25,137 - INFO - Backup e troncamento completati con successo.
+2025-11-02 11:14:25,138 - INFO - Step 2: Estrazione dei rappresentanti della commissione.
+2025-11-02 11:14:25,155 - ERROR - Errore durante l'estrazione dei rappresentanti: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2025-11-02 11:14:25,155 - ERROR - Errore critico: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.. Terminazione dello script.

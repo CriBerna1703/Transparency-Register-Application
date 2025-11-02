@@ -1,3 +1,4 @@
+import os
 import time
 import sys
 import logging
@@ -90,7 +91,8 @@ def process_lobbyists(batch_size, country_file):
 def generate_lobbyist_files():
     logging.info("Step 5: Generazione file dei lobbisti (estrazione meeting).")
     try:
-        subprocess.run(["python", "fetch_meetings.py"], check=True)  # <-- nome del tuo primo script
+        script_path = os.path.join(os.path.dirname(__file__), 'fetch_meetings.py')
+        subprocess.run(['python', script_path], check=True)
         logging.info("File dei lobbisti generati con successo.")
     except subprocess.CalledProcessError as e:
         logging.error(f"Errore durante la generazione dei file dei lobbisti: {e}")
@@ -100,8 +102,8 @@ def generate_lobbyist_files():
 def lemmatize_lobbyist_files():
     logging.info("Step 6: Lemmatizzazione dei file dei lobbisti.")
     try:
-        subprocess.run(["python", "lemmatize_files.py"], check=True)  # <-- nome del tuo secondo script
-        logging.info("File lemmatizzati con successo.")
+        script_path = os.path.join(os.path.dirname(__file__), 'lemmatize_files.py')
+        subprocess.run(['python', script_path], check=True)
     except subprocess.CalledProcessError as e:
         logging.error(f"Errore durante la lemmatizzazione dei file: {e}")
         raise e
@@ -114,7 +116,7 @@ if __name__ == "__main__":
         truncate_all_tables_with_backup()
 
         # Step 2: Estrazione dei rappresentanti della commissione
-        file_path = 'Dizionario CE.xlsx'
+        file_path = './Dizionario CE.xlsx'
         extract_commission_representatives(file_path)
 
         # Step 3: Raccolta degli ID dei lobbisti

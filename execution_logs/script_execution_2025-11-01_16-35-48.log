@@ -1,0 +1,5 @@
+2025-11-01 16:35:48,932 - INFO - Log salvato in: execution_logs\script_execution_2025-11-01_16-35-48.log
+2025-11-01 16:35:48,932 - INFO - Inizio esecuzione script principale.
+2025-11-01 16:35:48,932 - INFO - Step 5: Generazione file dei lobbisti (estrazione meeting).
+2025-11-01 16:35:48,965 - ERROR - Errore durante la generazione dei file dei lobbisti: Command '['python', './fetch_meetings.py']' returned non-zero exit status 2.
+2025-11-01 16:35:48,965 - ERROR - Errore critico: Command '['python', './fetch_meetings.py']' returned non-zero exit status 2.. Terminazione dello script.

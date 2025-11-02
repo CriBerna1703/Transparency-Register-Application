@@ -1,0 +1,23 @@
+2025-11-02 10:19:43,882 - INFO - Log salvato in: execution_logs\script_execution_2025-11-02_10-19-43.log
+2025-11-02 10:19:43,883 - INFO - Inizio esecuzione script principale.
+2025-11-02 10:19:43,884 - INFO - Step 6: Lemmatizzazione dei file dei lobbisti.
+2025-11-02 10:19:56,162 - ERROR - Traceback (most recent call last):
+2025-11-02 10:19:56,163 - ERROR - File "c:\Users\Utente\Desktop\Tesi\Transparency-Register-Application\DB Populator\main.py", line 133, in <module>
+    lemmatize_lobbyist_files()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+2025-11-02 10:19:56,163 - ERROR - File "c:\Users\Utente\Desktop\Tesi\Transparency-Register-Application\DB Populator\main.py", line 106, in lemmatize_lobbyist_files
+    subprocess.run(['python', script_path], check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-02 10:19:56,164 - ERROR - File "C:\Users\Utente\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 556, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-02 10:19:56,164 - ERROR - File "C:\Users\Utente\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1214, in communicate
+    self.wait()
+    ~~~~~~~~~^^
+2025-11-02 10:19:56,165 - ERROR - File "C:\Users\Utente\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1280, in wait
+    return self._wait(timeout=timeout)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+2025-11-02 10:19:56,165 - ERROR - File "C:\Users\Utente\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 1606, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+                                         timeout_millis)
+2025-11-02 10:19:56,165 - ERROR - KeyboardInterrupt
