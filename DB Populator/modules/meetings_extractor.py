@@ -27,7 +27,7 @@ class MeetingExtractor:
                              'European Innovation Council and Small and Medium-sized Enterprises Executive Agency', 
                              'European Neighbourhood and Enlargement Negotiations', 'European Personnel Selection Office',
                              'European Research Council Executive Agency (ERCEA)', 'European Research Executive Agency',
-                             'European School of Administration', 'Eurostat - European statistics',
+                             'European School of Administration', 'Eurostat-European statistics', 'Eurostat - European statistics',
                              'Financial Stability, Financial Services and Capital Markets Union',
                              'Foreign Policy Instruments', 'Health and Food Safety', 'Health Emergency Preparedness and Response Authority',
                              'Historical Archives Service', 'Human Resources and Security', 'Infrastructure and Logistics in Brussels',
