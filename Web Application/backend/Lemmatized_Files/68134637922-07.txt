@@ -8,7 +8,7 @@ energy
 energy energy distribution
 
 21/05/2015
-utility telco synergy infrastructure roll smart technology smart meter
+utility telco synergies infrastructure roll smart technology smart meter
 
 28/05/2015
 energy
@@ -32,13 +32,13 @@ Smart grid
 energy policy
 
 30/03/2016
-Corridors Européens de moblité éléctrique
+corridor Européens de moblité éléctrique
 
 23/06/2016
 digitalization energy area
 
 04/07/2021
-Role DSOs energy transition
+role dso energy transition
 
 24/03/2023
 Data Act
@@ -48,3 +48,6 @@ clean industrial deal Financement Simplification
 
 22/07/2025
 environmental policy
+
+23/10/2025
+exchange view upcoming Cloud AI Development Act regulation data centre

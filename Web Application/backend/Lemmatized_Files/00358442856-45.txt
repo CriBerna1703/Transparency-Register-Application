@@ -11,7 +11,7 @@ investment competitiveness
 IPR issue China
 
 06/03/2015
-Standards Digital Market
+standard Digital Market
 
 23/03/2015
 dsm
@@ -23,7 +23,7 @@ Digital Market
 Digital Market
 
 22/04/2015
-dsm focus wireless IoT
+DSM focus wireless IoT
 
 22/04/2015
 presentation og Qualcomm internet thing
@@ -32,13 +32,13 @@ presentation og Qualcomm internet thing
 patent standard ICT sector
 
 22/06/2015
-IP issue technology market
+ip issue technology market
 
 23/06/2015
-intellectual property right generally US TTIP
+intellectual property right generally US ttip
 
 16/09/2015
-dsm innovation
+DSM innovation
 
 25/10/2015
 dsm
@@ -71,22 +71,22 @@ dsm
 5 g
 
 06/09/2016
-standardisation IoT 5 g
+standardisation iot 5 g
 
 27/09/2016
-5 G IoT standard interoperability
+5 g iot standard interoperability
 
 27/09/2016
 dsm
 
 27/09/2016
-Working lunch Telecom reform roam
+working lunch Telecom reform roam
 
 09/11/2016
-dsm 5 g
+DSM 5 g
 
 15/02/2017
-standard connect car
+standard connected car
 
 15/02/2017
 Research Innovation
@@ -104,7 +104,7 @@ Standard Essential Patents
 5 g spectrum cybersecurity
 
 20/03/2018
-5 g IoT connected autonomous car Security Qualcomm ’s development plan Europe
+5 g iot connected autonomous car Security Qualcomm ’s development plan Europe
 
 22/06/2018
 Quantum technology
@@ -125,13 +125,13 @@ security issue
 security issue
 
 11/04/2019
-dsm 5 g
+DSM 5 g
 
 09/07/2019
-future outlook 5 G Digital Market
+future outlook 5 g Digital Market
 
 02/12/2019
-Commission future agenda 5 G AI cloud
+Commission future agenda 5 g AI cloud
 
 05/02/2020
 Digital Policy
@@ -143,13 +143,13 @@ digital policy 5 g
 Telecoms Digital issue
 
 10/09/2020
-digital future
+Digital future
 
 02/06/2021
 5 g
 
 05/10/2021
-5 G semiconductor ARM DMA
+5 g semiconductor ARM DMA
 
 20/10/2021
 semiconductor
@@ -176,7 +176,7 @@ digital
 Semiconductors DMA AI
 
 07/11/2023
-digital issue
+Digital issue
 
 08/11/2023
 exchange thought recent development semiconductor automotive mobile industry relate legislation include sharing view EU ’s economic relation US China
@@ -197,7 +197,7 @@ presentation company share company view recent regulatory development
 global industrial development AI semiconductor
 
 01/04/2025
-qualcomm business policy development
+Qualcomm business policy development
 
 27/05/2025
 competitiveness Digital Sector
@@ -207,3 +207,6 @@ exchange view recent development
 
 27/05/2025
 tech sector current geopolitical context
+
+30/09/2025
+AI continent action plan qualcomm development area

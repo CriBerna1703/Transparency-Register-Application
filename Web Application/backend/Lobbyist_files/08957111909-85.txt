@@ -62,10 +62,10 @@ Digital Single Market, Financial Services
 Telco policy
 
 31/05/2016
-Telecoms Framework Review
+Exchange of views on telecoms regulatory framework
 
 31/05/2016
-Exchange of views on telecoms regulatory framework
+Telecoms Framework Review
 
 31/05/2016
 Telecom review
@@ -101,10 +101,10 @@ Review ePrivacy Directive
 ETNO
 
 26/10/2016
-e-privace directive
+ePrivacy directive
 
 26/10/2016
-ePrivacy directive
+e-privace directive
 
 08/11/2016
 ePrivacy directive
@@ -182,7 +182,7 @@ mobile standard 5G and electromagnetic field emissions
 EMF and current feedback from EU markets on the issue
 
 02/12/2019
-Meeting with CEOs in theTelecom sector
+Meeting with CEOs in the Telecom sector
 
 21/01/2020
 Data, 5G, cybersecurity, roaming, connected mobility
@@ -218,10 +218,10 @@ Broadband cost reduction, digital identity, ePrivacy, Digital Decade / Digital C
 Latest developments and the work in progress regarding the Trade and Technology Council (TTC)
 
 19/07/2021
-Skills Roundtable on Digital
+Pact for Skills roundtable with the digital transition sector.
 
 19/07/2021
-Pact for Skills roundtable with the digital transition sector.
+Skills Roundtable on Digital
 
 23/11/2021
 Sustainable Finance, Taxonomy
@@ -262,15 +262,30 @@ Touch Base on Standards and the HLF on standardisation
 14/01/2025
 To hear interest representatives’ view on EU competition and telecom policy, and perspectives on clean, just, and competitive transition policies.
 
+03/02/2025
+Discussion on planned initiatives in the area of connectivity
+
 05/02/2025
 Discussion on planned initiatives in the area of connectivity
 
 13/02/2025
 Exchange of views on the topics of fraud and role of electronic communication service providers (ECSPs) in the context of the Payment Services package.
 
+12/03/2025
+Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
 07/04/2025
 Exchange of views on consumer protection
 
 15/04/2025
 Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+22/05/2025
+Follow-up to the call for input concerning the future DNA. The aim was to present and discuss Connect Europe views on the spectrum policy, as well as discuss the 5G spectrum roadmap and satellite-related issues.
+
+27/06/2025
+Implementation details of the inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+11/09/2025
+Connect Europe presented a reflection paper on LEO Satellite connectivity
 

@@ -1,7 +1,4 @@
 21/01/2015
-Copyright
-
-21/01/2015
 Digital Single Market
 
 21/01/2015
@@ -9,6 +6,9 @@ Interoperability and promotion of quality digital educational resources
 
 21/01/2015
 Digital Single Market, copyright
+
+21/01/2015
+Copyright
 
 03/02/2015
 Digital Single Market
@@ -26,6 +26,9 @@ Platforms and data
 Digital Single Market
 
 26/02/2015
+Working lunch
+
+26/02/2015
 Copyright, DSM
 
 26/02/2015
@@ -34,11 +37,8 @@ Receives CEOs of European Publisher Groups
 26/02/2015
 Copyright, DSM
 
-26/02/2015
-Working lunch
-
 25/03/2015
-Digital Single Market andCopyright
+Digital Single Market and Copyright
 
 30/03/2015
 Digital Single Market
@@ -59,10 +59,10 @@ Digital Single Market
 copyright
 
 02/12/2015
-AVMSD
+copyright
 
 02/12/2015
-copyright
+AVMSD
 
 11/12/2015
 DSM, copyright
@@ -150,4 +150,16 @@ Code of Conduct on Online Advertising – Workshop 3
 
 19/03/2025
 Code of Conduct on Online Advertising – Workshop 4
+
+21/05/2025
+Publishers industry
+
+22/05/2025
+Consultation of media representatives and associations in the context of the preparation of the upcoming European Democracy Shield (“focus group”).
+
+17/09/2025
+EU competition policy and Digital Markets Act (DMAEU competition policy and Digital Markets Act (DMA)
+
+01/10/2025
+Exchange of views on the challenges faced by the news media sector in the context of AI
 

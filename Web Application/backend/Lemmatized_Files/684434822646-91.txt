@@ -2,7 +2,7 @@
 cyber security cppp
 
 06/04/2017
-Cybersecurity PPP
+cybersecurity PPP
 
 11/04/2017
 cybersecurity
@@ -26,7 +26,7 @@ cybersecurity
 cybersecurity package
 
 10/01/2018
-Cyber security
+cyber security
 
 01/02/2018
 cybersecurity topic
@@ -35,7 +35,7 @@ cybersecurity topic
 MFF
 
 02/05/2018
-Cyber Security
+Cyber security
 
 21/06/2018
 cybersecurity
@@ -53,7 +53,7 @@ Women4Cyber
 cybersecurity overview
 
 28/01/2020
-exchange future Europe ’s cybersecurity ecosystem prioritie research youth education women4cyber well view possible evolution level Public Private Cooperation
+exchange future Europe ’s cybersecurity ecosystem priority research youth education Women4Cyber well view possible evolution level Public private cooperation
 
 08/05/2020
 cybersecurity ecso initiative
@@ -68,4 +68,7 @@ cybersecurity
 update ecso ongoing cybersecurity work priority
 
 27/03/2025
-initiative area cybersecurity
+initiatives area cybersecurity
+
+16/09/2025
+presentation ECSO ciso community discussion ongoing cyber initiative

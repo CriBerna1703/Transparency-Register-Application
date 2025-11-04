@@ -11,7 +11,7 @@ AI Act implementation AI Office
 tech agenda
 
 12/02/2025
-exchange view CoP GPAI model provider template summary training content
+exchange view cop gpai model provider template summary training content
 
 04/03/2025
 exchange view Code Practice
@@ -26,4 +26,10 @@ Marché intérieur Compétitivité Sécurité économique Simplification Relatio
 exchange view copyright AI
 
 01/07/2025
-exchange view implementation timeline GPAI Code Practice template summary training content
+exchange view implementation timeline gpai Code Practice template summary training content
+
+10/10/2025
+exchange view competitiveness
+
+16/10/2025
+start up scale up Artificial Intelligence

@@ -26,10 +26,10 @@ ETS post 2020 reform
 AEGIS Europe and MES China
 
 17/09/2015
-Market economy status for China
+AEGIS presenting new study on consequences of granting MES to China
 
 17/09/2015
-AEGIS presenting new study on consequences of granting MES to China
+Market economy status for China
 
 17/09/2015
 Presentation of a study
@@ -56,7 +56,7 @@ Implementation of the EU Emissions Trading system
 Implications on the non- ferrous metals industry of the withdrawal of the UK from the EU
 
 25/09/2018
-Joint meeting withEurometaux, EUROBAT and RECHARGE to discuss the future of batteries and related chemicals management
+Joint meeting with Eurometaux, EUROBAT and RECHARGE to discuss the future of batteries and related chemicals management
 
 23/11/2018
 clean energy transition and decarbonisation
@@ -128,7 +128,7 @@ Carbon Borden Adjustment Mechanism
 Implementation of the chemicals strategy for sustainability
 
 18/05/2021
-Waste legislation: futurerevisions of Waste Shipment Regulation, Waste Framework Directive and ELV Directive
+Waste legislation: future revisions of Waste Shipment Regulation, Waste Framework Directive and ELV Directive
 
 07/06/2021
 Carbon Border Adjustment Mechanism
@@ -155,7 +155,7 @@ Raw materials.
 Energy market situations and decarbonisation plans
 
 06/09/2022
-Transition to a circular economy, availability ofmetals and overview of KU Leuven’s Metals for Clean Energy study findings
+Transition to a circular economy, availability of metals and overview of KU Leuven’s Metals for Clean Energy study findings
 
 26/01/2023
 Critical Raw Materials
@@ -220,6 +220,12 @@ Exchange of views on the Steel and Metals Action Plan
 14/03/2025
 Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
 
+18/03/2025
+Metals
+
+19/03/2025
+Circular economy
+
 25/03/2025
 Impact of energy prices on the metal industry
 
@@ -234,4 +240,46 @@ The future of the critical metals sector in Europe
 
 10/04/2025
 Impact of US tariffs
+
+10/04/2025
+Impact of US tariffs
+
+11/04/2025
+The reform of the CBAM and the potential extension to other sectors beyond the remit of Aluminium and Ferro- Alloys.
+
+08/05/2025
+Water Resilience Strategy and WFD
+
+23/05/2025
+Discussion on the availability of copper scrap in the EU market
+
+26/05/2025
+Minutes meeting Eurometaux on rules of origin 26/05
+
+03/06/2025
+Discussion on the competitiveness of the European metal industry.
+
+19/06/2025
+Eurometaux – meeting with the Trade Committee.
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+11/07/2025
+REACH and lithium
+
+15/07/2025
+Exchange of views on Advanced Materials
+
+19/09/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+30/09/2025
+Chemicals Management Week of Eurometaux: upcoming environmental omnibus.
+
+07/10/2025
+EU-US trade relations; availability of aluminum and copper scrap; EU trade defence measures.
 

@@ -167,7 +167,7 @@ Licensing of standard essential patents
 Digital issues
 
 29/06/2020
-European global players in digital; 5G deployment conditions; foreign subsidies white paper; cloud adoption in Europe,switching possibilities, contestability of cloud markets - need for clear standards and security requirements; data governance.
+European global players in digital; 5G deployment conditions; foreign subsidies white paper; cloud adoption in Europe, switching possibilities, contestability of cloud markets - need for clear standards and security requirements; data governance.
 
 03/07/2020
 telecom/connectivité
@@ -266,7 +266,7 @@ Team Europe and digital infrastructure. GG Flagships and HL events
 Courtesy meeting on the EU approach on defence sector.
 
 10/09/2024
-High-level executiveroundtable: preventing the circumvention of EU sanctions on sensitive goods.
+High-level executive roundtable: preventing the circumvention of EU sanctions on sensitive goods.
 
 10/09/2024
 Preventing the circumvention of EU sanctions on sensitive goods
@@ -302,7 +302,7 @@ Advancing concrete technology solutions for a more competitive, resilient and se
 Build on the EU and LAC digital transformation partnership experience and discuss bi-regional opportunities and challenges for EU private sector investment on secure and meaningful connectivity within the EU-LAC Digital Alliance.
 
 31/03/2025
-Build on the EU and LAC digital transformation partnership experience and discuss bi-regional opportunities and challenges for EUprivate sector investment on secure and meaningful connectivity within the EU-LAC Digital Alliance.
+Build on the EU and LAC digital transformation partnership experience and discuss bi-regional opportunities and challenges for EU private sector investment on secure and meaningful connectivity within the EU-LAC Digital Alliance.
 
 01/04/2025
 Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
@@ -321,4 +321,34 @@ White Paper on the future of defence, Withdrawal of the Standard Essential Paten
 
 12/05/2025
 Exchange of views on the HPC, AI Factories, and AI Gigafactories initiatives
+
+04/06/2025
+Artificial Intelligence (AI), and secure and advanced connectivity.
+
+04/06/2025
+Exchange of views on Nokia’s areas of interest
+
+04/06/2025
+Exchange of views on Nokia’s areas of interest
+
+17/07/2025
+Telecommunications and defense
+
+17/07/2025
+EU policies related to standard-essential patents (‘SEPs’).
+
+24/07/2025
+Global Gateway Forum 2025
+
+25/07/2025
+Exchange of views on the expansion of the Port of San Antonio in Chile
+
+15/09/2025
+current priorities
+
+22/09/2025
+General presentation of Nokia, and current challenges in the domain of telecommunication networks. Overview of activity of Nokia in defence. Future activities in the domain of telecommunication network and digital defence applications.
+
+23/09/2025
+Follow up on current issues
 

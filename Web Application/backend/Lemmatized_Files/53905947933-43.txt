@@ -1,8 +1,8 @@
 30/01/2015
-Financial Services policy
+Financial Services Policy
 
 03/03/2015
-avm
+AVMS
 
 03/03/2015
 Digital Market copyright
@@ -38,13 +38,13 @@ Digital Market
 copyright proposal
 
 24/10/2016
-Free flow datum initiative
+free flow datum initiative
 
 07/03/2017
-DSM strategy
+DSM Strategy
 
 07/03/2017
-dsm general online platform
+DSM general online platform
 
 06/07/2017
 platform
@@ -68,16 +68,16 @@ copyright
 disinformation
 
 02/02/2020
-digital package Digital Services Act
+Digital package Digital Services Act
 
 27/03/2020
-Disinformation COVID 19
+disinformation covid 19
 
 07/05/2020
 Digital Services Act
 
 23/07/2020
-Covid disinformation EDAP
+covid disinformation EDAP
 
 16/12/2020
 EDAPDSA
@@ -104,13 +104,13 @@ ongoing work priority next Commission field digital policy
 disinformation
 
 16/01/2025
-GPAI Code Practice AI Act ongoing implementation work DSA
+gpai Code Practice AI Act ongoing implementation work DSA
 
 20/01/2025
-exchange view context preparatory work draft guideline Article 181 Media Freedom Act EMFA issue Commission Article 189 EMFA
+exchange views context preparatory work draft guideline article 181 Media Freedom Act EMFA issue Commission Article 189 emfa
 
 11/02/2025
-Opening Session DSA roundtable discussion online advertising article 46 DSA
+Opening Session DSA roundtable discussion online advertising Article 46 DSA
 
 18/02/2025
 systemic risk management DSA Audits DSA

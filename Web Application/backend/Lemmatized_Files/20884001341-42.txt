@@ -26,7 +26,7 @@ financial service regulation include CMU propose merger DB LSE
 digitisation financial service capital
 
 12/01/2017
-Digitisation financial service
+digitisation financial service
 
 02/03/2017
 digitisation financial sector regulation
@@ -41,7 +41,7 @@ EMIR CMU
 EMIR
 
 19/03/2018
-CCP supervision EMIR REFIT amendmend Capital Market
+CCP supervision EMIR refit amendmend Capital Market
 
 26/04/2018
 CCP
@@ -50,7 +50,7 @@ CCP
 MIFID II Brexit
 
 23/05/2018
-Emir REFIT Emir supervision
+Emir refit Emir supervision
 
 11/10/2018
 CSD
@@ -83,13 +83,13 @@ CMU Action Plan mifid
 financial market infrastructure international role euro
 
 15/04/2021
-prioritie Capital Markets International Role Euro Sovereignty MiFID Review
+priority Capital Markets International Role Euro Sovereignty mifid Review
 
 08/09/2021
 CMU Europe ’s recovery
 
 16/11/2021
-clear mandatory buy mifid review consolidated tape
+clear mandatory buy mifid review Consolidated tape
 
 26/01/2022
 clear
@@ -107,7 +107,7 @@ EMIR
 open finance digital euro
 
 28/01/2025
-Exchange CEO Deutsche Bourse Mr Leithner
+exchange ceo Deutsche Bourse Mr Leithner
 
 03/02/2025
 Private Intermittent Securities Capital Exchange Service pisce
@@ -118,5 +118,11 @@ exchange view SIU
 16/05/2025
 exchange trading venue integration capital market
 
+18/06/2025
+Exchange Clearstream subsidiary Deutsche Börse AG Savings Investments
+
 26/06/2025
 Visit Deutsche Börse SIU
+
+05/09/2025
+Compétitivité des entreprise Marché intérieur Protection de la souveraineté et du pouvoir d’achat Relation US EU

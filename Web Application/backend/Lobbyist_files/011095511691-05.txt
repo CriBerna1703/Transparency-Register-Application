@@ -26,10 +26,10 @@ Cybersecurity
 Commission's digital tax proposals: informative exchange of views. Multinationals concerned about impact of change
 
 15/10/2018
-developments around the JCPOA
+International payments system
 
 15/10/2018
-International payments system
+developments around the JCPOA
 
 23/10/2020
 European payments infrastructure, International role of the euro
@@ -47,16 +47,16 @@ Sanctions
 Global finance, Sanctions
 
 08/09/2022
-Instant payments and sanctions
-
-08/09/2022
 Application of sanctions to Russia
 
-17/01/2024
-digital euro
+08/09/2022
+Instant payments and sanctions
 
 17/01/2024
 The interlocutors outlined the current situation in the financial services sector. They raised as well the implementation of sanctions against Russia due to the war of aggression in Ukraine.
+
+17/01/2024
+digital euro
 
 24/09/2024
 presentation Swift activities payments
@@ -78,4 +78,7 @@ Update on implementation of P16 measures and a potential new package
 
 15/04/2025
 Exchange with SWIFT on the Savings and Investments Union and other portfolio related matters
+
+30/07/2025
+Restrictive measures (sanctions).
 

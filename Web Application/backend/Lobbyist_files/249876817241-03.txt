@@ -26,10 +26,10 @@ Cybersecurity, DSM mid- term review
 stand visit
 
 06/09/2017
-Tallinn Digital Summit
+Cybersecurity
 
 06/09/2017
-Cybersecurity
+Tallinn Digital Summit
 
 12/10/2017
 Strategic exchange on new technology and innovation
@@ -59,7 +59,7 @@ Euro HPC, Microprocessor initiative
 Euro HPC, Microprocessor initiative
 
 23/05/2019
-digitisation approachesand the technology landscape, with a particular focus on innovation and organisational development
+digitisation approaches and the technology landscape, with a particular focus on innovation and organisational development
 
 21/06/2019
 Stratégie Exascale d'ATOS, Industrie 4.0
@@ -81,4 +81,7 @@ meeting with the Green Digital Coalition - Main topic : state of play on sustain
 
 15/01/2025
 The European Processor RHEA-1 designed by SIPEARL and the installation of the JUPITER cluster by EVIDEN
+
+06/10/2025
+Digital Policy
 

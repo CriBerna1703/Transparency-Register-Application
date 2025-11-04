@@ -1,8 +1,8 @@
 02/12/2014
-Jobs, Growth, Stability and Capital Markets Union - Recovery and Resolution of CCPS
+Financial Services Policy
 
 02/12/2014
-Financial Services Policy
+Jobs, Growth, Stability and Capital Markets Union - Recovery and Resolution of CCPS
 
 03/12/2014
 SME programme- Elite Europe and general economic outlook
@@ -137,10 +137,10 @@ EU Clearing Strategy CCPs
 Central clearing
 
 07/07/2022
-Clearing business in the EU: competitiveness of EU CCPs, DTO equivalence, EU supervision.
+DTO CCPs
 
 07/07/2022
-DTO CCPs
+Clearing business in the EU: competitiveness of EU CCPs, DTO equivalence, EU supervision.
 
 08/11/2022
 sustainable finance
@@ -174,4 +174,13 @@ Exchange of view on the omnibus and sustainable finance more broadly
 
 10/04/2025
 Exchange of views on sustainable finance
+
+15/05/2025
+Introductory meeting with new CEO
+
+03/06/2025
+Clearing of government bond repo transactions
+
+03/06/2025
+Clearing, SIU
 

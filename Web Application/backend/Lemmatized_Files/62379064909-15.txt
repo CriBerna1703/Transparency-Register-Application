@@ -14,7 +14,7 @@ semester
 investment initiative
 
 15/07/2015
-Financial Services policy
+Financial Services Policy
 
 28/08/2015
 banking issue
@@ -23,7 +23,7 @@ banking issue
 deposit insurance /Banking
 
 13/10/2015
-exchange deepen emu
+exchange deepen EMU
 
 22/10/2015
 commission plan deposit guarantee reinsurance scheme capital market greenbook retail financing
@@ -38,7 +38,7 @@ Deposit Insurance Scheme Capital Markets
 Hessische Reginalbankenkonferenz
 
 17/02/2016
-meet Mr Fahrenschon Präsident des Deuschen Sparkassen und Giroverbands
+meet Mr Fahrenschon Präsident des Deuschen Sparkassen und giroverband
 
 14/04/2016
 Deposit Insurance Scheme
@@ -80,13 +80,13 @@ MFF
 SME Financing Germany current situation next MFF
 
 10/07/2018
-Banking Banking Package EDIS perform loan NPLs
+Banking Banking Package EDIS perform loan npl
 
 18/10/2018
 MFF
 
 13/12/2018
-bank
+banking
 
 13/12/2018
 banking package
@@ -110,7 +110,7 @@ banking
 Basel III implementation
 
 07/04/2021
-meet w/ cab Dombrovskis Basel III
+Meeting w/ cab Dombrovskis Basel III
 
 07/04/2021
 Basel III
@@ -119,13 +119,13 @@ Basel III
 Fit 55 sustainable finance
 
 12/01/2022
-Retail Investments Strategy
+Retail Investments strategy
 
 25/03/2022
 Payments Initiative
 
 25/10/2022
-financial literacy
+Financial Literacy
 
 18/01/2023
 Retail Investment Strategy
@@ -149,7 +149,7 @@ CMDI Digital Euro
 introduction CEO exchange SME Relief Package well impact sme csrd cs3d
 
 28/03/2023
-Round Table Digital Euro EVP Dombrovskis DG fisma
+Round Table Digital Euro EVP Dombrovskis DG FISMA
 
 20/04/2023
 Retail Investment Strategy CMDI Review
@@ -164,10 +164,10 @@ CMDI review
 financial literacy
 
 18/07/2023
-Distribution retail financial product
+distribution retail financial product
 
 11/09/2023
-digital issue
+Digital issue
 
 03/09/2024
 competitiveness economy
@@ -176,7 +176,7 @@ competitiveness economy
 development financial service sector
 
 16/01/2025
-saving Investments
+Savings Investments
 
 16/01/2025
 upcoming topic sustainable finance
@@ -188,7 +188,7 @@ Banking Union third pillar
 discuss Commission ’s simplification agenda explore possible approach constructive contribution financial sector
 
 17/03/2025
-saving Investment
+Savings Investment
 
 07/04/2025
 role private banking sector well support security defence industry
@@ -200,4 +200,7 @@ exchange view reform bank crisis management deposit insurance framework CMDI rev
 financial datum access framework FIDA
 
 26/06/2025
-saving Investment SIU improve access capital market product support long term wealth creation strengthen retirement planning
+saving investment SIU improve access capital market product support long term wealth creation strengthen retirement planning
+
+14/10/2025
+exchange view proposal Competitiveness Fund

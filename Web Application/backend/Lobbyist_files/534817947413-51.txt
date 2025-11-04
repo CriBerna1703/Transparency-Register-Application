@@ -11,7 +11,7 @@ presentation of the company, Payment Services Regulation (PSR), digital euro, Fi
 Retail investment
 
 04/09/2024
-Digital finance, SingleMarket for Financial Services
+Digital finance, Single Market for Financial Services
 
 04/09/2024
 Presentation of Revolut’s business and European digital finance policies, sharing their views on the priorities for the upcoming political cycle, particularly regarding European competitiveness and the Single Market
@@ -36,4 +36,22 @@ Revolut presented their company and services, as well as future ambitions
 
 31/03/2025
 Payment Services
+
+02/06/2025
+General presentation, open data
+
+26/06/2025
+Exchange of views on EU internal security, in particular cybercrime
+
+15/07/2025
+Revolut in the European Payments Ecosystem.
+
+16/07/2025
+Payments
+
+01/10/2025
+Exchange on banking and payments
+
+01/10/2025
+Exchange of views on EU digital policies, notably against financial scams, on the remaining obstacles to a functioning single market and how they affect a bank like Revolut.
 

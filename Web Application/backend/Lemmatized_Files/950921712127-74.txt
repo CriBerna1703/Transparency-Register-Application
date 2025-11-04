@@ -11,7 +11,7 @@ les question liées à la régulation bancaire européenne LUnion des marchés d
 financial instrument innovation
 
 26/02/2018
-role National Promotional Institutions next MFF
+role National Promotional Institutions next mff
 
 01/04/2020
 Horizon Europe EIC role national innovation agency
@@ -23,10 +23,10 @@ Covid19 impact investment sector also regional angle
 covid 19 economic impact
 
 29/04/2020
-introductory meeting courtesy call NPBI investeu sme
+introductory meeting courtesy call NPBI InvestEU sme
 
 09/07/2020
-presentation activitie Bpifrance
+presentation activity Bpifrance
 
 15/07/2020
 recovery plan taxonomy
@@ -38,10 +38,10 @@ Recovery Investment webex together CAB BRETON representative
 EIC role National innovation agency
 
 08/01/2021
-présentation des mesure de soutien de Bpifrance aux entreprise innovante dans le cadre du plan de relance français Proposition de Bpifrance concernant le partenariat de co investissement avec lEIC Accelerator Invest fenêtre
+Présentation des mesures de soutien de Bpifrance aux entreprise innovantes dans le cadre du plan de relance français Proposition de Bpifrance concernant le partenariat de co investissement avec leic Accelerator Invest fenêtre
 
 25/01/2021
-Mesures de soutien de Bpifrance aux entreprise innovante dans le cadre du plan de relance français Proposition de Bpifrance concernant le partenariat de co investissement avec leic Accelerator Invest
+Mesures de soutien de Bpifrance aux entreprise innovantes dans le cadre du plan de relance français Proposition de Bpifrance concernant le partenariat de co investissement avec leic Accelerator Invest
 
 05/02/2021
 rôle des banque publique en Europe et de leur business model plan relance européen
@@ -77,16 +77,16 @@ futur scoreboard aide d Etat 2023 mesure possible à venir en soutien aux petite
 Speech Bpifrance Annual Reception
 
 11/12/2024
-investeu implement partner
+InvestEU implement partner
 
 24/02/2025
-implementation art21 GBR risk finance
+implementation art21 gbr risk finance
 
 05/03/2025
 transport investment
 
 14/05/2025
-exchange view AI strategy include recently publish AI Continent Action Plan development Apply AI Strategy
+exchange view AI strategy include recently publish AI Continent Action Plan development Apply AI strategy
 
 14/05/2025
 access capital startup scaleup
@@ -95,10 +95,13 @@ access capital startup scaleup
 access capital startup scaleup
 
 27/05/2025
-Landscape public bank competitiveness simplification
+landscape public bank competitiveness simplification
 
 11/06/2025
-future EIC specificitie italian stakeholder
+future EIC specificity italian stakeholder
 
 22/07/2025
 environmental policy
+
+08/09/2025
+trade policy

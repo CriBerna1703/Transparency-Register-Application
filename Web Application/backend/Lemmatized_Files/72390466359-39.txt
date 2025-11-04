@@ -2,16 +2,16 @@
 education skill youth policy
 
 20/02/2015
-Financial Services policy
+Financial Services Policy
 
 16/04/2015
-Financial Services policy
+Financial Services Policy
 
 02/06/2015
-Markets Financial Instruments Directive II
+market Financial Instruments Directive II
 
 20/10/2015
-tour dHorizon Topical Financial Services issue
+Tour dHorizon Topical Financial Services Issues
 
 01/12/2015
 introduction meeting
@@ -26,13 +26,13 @@ CMU Basel Agenda Financial conduct issue
 CRR CMU TLAC
 
 02/12/2016
-Cyber Security
+Cyber security
 
 12/01/2017
-psd2
+PSD2
 
 21/06/2017
-conclude remark sustainable finance joint Acca Aviva Barclays IIRC conference
+concluding remark sustainable finance joint Acca Aviva Barclays IIRC Conference
 
 23/11/2017
 Financial Services issue
@@ -50,7 +50,7 @@ introductory remark roundtable financial industry AFISMA European Chamber Commer
 cybersecurity
 
 15/05/2018
-speech EBRD acca Barclays event empower business engage sustainable finance sdg
+Speech EBRD acca Barclays event empower business engage sustainable finance sdg
 
 29/01/2019
 general financial service issue
@@ -68,7 +68,7 @@ UK regulatory cooperation financial service
 courtesy meeting
 
 01/12/2021
-ngeu
+NGEU
 
 10/12/2021
 NGEU macroeconomic development
@@ -83,22 +83,22 @@ banking package csdr
 Basel III SF
 
 31/05/2022
-mifir
+MiFIR
 
 20/06/2022
-ECB Comp Assessment mapping exercise Basel III Gender Diversity financial service banking financial literacy Fragmentation CMU Brexit RU invasion UA food energy insecurity sanction
+ECB Comp Assessment mapping exercise Basel III Gender Diversity financial service bank financial literacy Fragmentation CMU Brexit RU invasion UA food energy insecurity sanction
 
 20/06/2022
 implementation sanction
 
 20/09/2022
-next Generation ngeu
+Next Generation ngeu
 
 21/09/2022
 energy derivative market
 
 27/09/2022
-Basel iii MiFIR review proposal macro prudential framework
+Basel iii mifir review proposal macro prudential framework
 
 28/09/2022
 MiFIR review third country branch
@@ -120,3 +120,6 @@ meeting preparation Speaker Invitation 21st AEFSC Financing Europe Conference
 
 17/03/2025
 Basel SIU
+
+12/06/2025
+Exchange Barclays simplification capital market integration

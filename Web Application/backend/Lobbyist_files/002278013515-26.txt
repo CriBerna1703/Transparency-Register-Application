@@ -1,11 +1,11 @@
 22/01/2015
-Meeting with Uber
-
-22/01/2015
 Digital Single Market
 
 22/01/2015
 Introductory meeting
+
+22/01/2015
+Meeting with Uber
 
 13/04/2015
 Exchange of views on Commission Work Programme in coming years
@@ -56,9 +56,6 @@ Collaborative economy
 Collaborative economy
 
 23/05/2016
-Meeting with Uber CEO
-
-23/05/2016
 Collaborative economy
 
 23/05/2016
@@ -66,6 +63,9 @@ collaborative economy
 
 23/05/2016
 Collaborative economy
+
+23/05/2016
+Meeting with Uber CEO
 
 23/05/2016
 European Innovation Council / Boost disruptive innovation
@@ -128,10 +128,10 @@ Future of Urban mobility
 Presentation of the company
 
 31/05/2017
-Meeting with Adam Gromis, Uber Global Sustainable MobilityManager
+Sustainable urban mobility
 
 31/05/2017
-Sustainable urban mobility
+Meeting with Adam Gromis, Uber Global Sustainable Mobility Manager
 
 07/07/2017
 collaborative economy
@@ -161,10 +161,10 @@ Data protection
 Presentation of the company's activities & issues relevant for JUST portofolio
 
 22/01/2020
-Transports
+Uber's actions in diversity and safety
 
 22/01/2020
-Uber's actions in diversity and safety
+Transports
 
 22/01/2020
 Skills agenda/Platform workers
@@ -197,7 +197,7 @@ Meeting on platform work.
 Presentation of Uber's ongoing activities, Platform Workers legislation
 
 20/09/2021
-Consultation hearing with digital labour platformson the Initiative on improving working conditions in platform work. (to be completed)
+Consultation hearing with digital labour platforms on the Initiative on improving working conditions in platform work. (to be completed)
 
 24/09/2021
 conditions of people working through platforms
@@ -255,4 +255,22 @@ Exchange about ride- hailing and Private Hire Vehicles with driver (PHV) – nat
 
 23/04/2025
 Greening Corporate Fleet
+
+05/06/2025
+Exchange of views on AI at the workplace and AI Act implementation
+
+06/06/2025
+Algorithmic transparency
+
+17/07/2025
+Corporate Fleets strategic dialogue
+
+10/09/2025
+Discussion on the interplay of EU pieces of legislation applicable to online platforms.
+
+10/09/2025
+Exchange of views on the forthcoming Delivery Act and other initiatives
+
+02/10/2025
+Exchange of views on the upcoming Digital Omnibus Package, with an emphasis on simplification and harmonisation of digital legislation.
 

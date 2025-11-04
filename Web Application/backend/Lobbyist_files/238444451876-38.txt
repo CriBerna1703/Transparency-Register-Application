@@ -4,3 +4,6 @@ Telecom policy
 31/01/2025
 Meeting organized by ARCEP with local authorities and operators on fiber (FTTH) network infrastructure in France. Operators took part only to some part of the meetings.
 
+30/06/2025
+SFR’s main challenges and objectives as a telco operator in the French market.
+

@@ -1,5 +1,5 @@
 26/04/2018
-meeting discuss Directive du Conseil sur le système commun de taxe sur les service numérique
+meeting discuss directive du Conseil sur le système commun de taxe sur les service numérique
 
 17/01/2020
 platform worker
@@ -27,3 +27,6 @@ GDPR consumer
 
 20/02/2025
 information exchange Platform Work directive
+
+02/10/2025
+exchange view upcoming Digital Omnibus Package emphasis simplification harmonisation digital legislation

@@ -89,7 +89,7 @@ DSM Strategy, investments, digitalisation of industry
 Digital Single Market
 
 15/03/2016
-Telco review andvectoring case.
+Telco review and vectoring case.
 
 22/03/2016
 DSM
@@ -215,7 +215,7 @@ Western Balkans Digital Agenda / Roaming roadmap
 Latest developments re EU-Western Balkans.
 
 04/07/2018
-Investments in networks, 5G and connected cars, ElectronicCommunication Code, e- privacy
+Investments in networks, 5G and connected cars, Electronic Communication Code, e- privacy
 
 04/07/2018
 GDPR, e-privacy
@@ -266,7 +266,7 @@ Update on trade and investment screening
 Chinese tech companites
 
 25/02/2019
-EU Telecoms regulatory framework, Radio Spectrum, ePrivacy, MFF,Digital Europe Program
+EU Telecoms regulatory framework, Radio Spectrum, ePrivacy, MFF, Digital Europe Program
 
 25/02/2019
 Cyber security
@@ -413,7 +413,7 @@ National RRF Plans /Digital Decade/ Industrial Strategy/Covid 19 Virtual meeting
 EU Recovery and Resilience Fund in the context of achieving the EU’s Digital Decade targets
 
 20/07/2021
-Matters within the digitalportfolio
+Matters within the digital portfolio
 
 14/10/2021
 Data privacy
@@ -443,7 +443,7 @@ Communication role and initiatives/activities of Vodafone in different sectors a
 Discuss the current agri- food context
 
 11/05/2022
-Presentation of the work of Vodafone's Foundation in relation tothe situation in Ukraine.
+Presentation of the work of Vodafone's Foundation in relation to the situation in Ukraine.
 
 10/06/2022
 Issues within Competition portfolio.
@@ -532,6 +532,30 @@ European defence industry development
 09/04/2025
 Present the interest representatives’ view on EU competition and telecom policy
 
+10/04/2025
+Meeting on EU-US trade relations
+
 24/04/2025
 Discussion on international topics of common interest
+
+02/05/2025
+Overview of the mobile telecommunications sector in Europe and of Vodafone’s operations
+
+05/05/2025
+EU-UK relations
+
+27/05/2025
+Exchange of views on the upcoming Digital Networks Act proposal
+
+05/06/2025
+Exchange of views on upcoming Digital Networks Act and related initiatives
+
+17/07/2025
+Vodafone’s sovereign cloud solutions offerings
+
+19/08/2025
+Exchange of views on the membership of the interest representative to the European Alliance for Industrial Data, Edge and Cloud (Cloud Alliance) and their views on the Cloud and AI Development Act (CADA).
+
+26/08/2025
+Digital Network Act (DNA) and the Recommendation on Relevant Markets
 

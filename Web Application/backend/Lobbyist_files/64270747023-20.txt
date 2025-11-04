@@ -380,7 +380,7 @@ Trade Issues
 Panel discussion on digital technologies and the Green Deal
 
 21/04/2020
-Impact of Covid19 ondigital companies
+Impact of Covid19 on digital companies
 
 24/04/2020
 EU digital policy / COVID19 crisis
@@ -419,7 +419,7 @@ Virtual meeting about European Health Data Space
 The role of digital technology in delivering the Green Deal
 
 22/10/2020
-Recovery and ResilienceFacility
+Recovery and Resilience Facility
 
 26/10/2020
 DSA and DMA
@@ -485,7 +485,7 @@ Digitalisation of health sector
 Green deal
 
 20/07/2021
-Discuss their involvementin the Industrial Forum, digital technologies across several ecosystems, and the monitoring of digital technologies uptake.
+Discuss their involvement in the Industrial Forum, digital technologies across several ecosystems, and the monitoring of digital technologies uptake.
 
 26/08/2021
 The role of digital in Europe’s Green Deal ambitions
@@ -610,6 +610,54 @@ Exchange of views on the future Multiannual Financial Framework and other EU pri
 15/04/2025
 Exchange of views on competitiveness, simplification, AI, GDPR, forthcoming 28th regime and Digital Fairness Act
 
+24/04/2025
+Exchange of views on access to EU Funding
+
+05/05/2025
+Exchange of views on the copyright levies system in the European Union
+
+06/05/2025
+Cybersecurity of hospitals and healthcare providers
+
 07/05/2025
 Digitalisation and Ecodesign
+
+08/05/2025
+GROW H meeting with DigitalEurope on the technical specifications in the context of the 3rd omnibus proposal on mid- caps
+
+26/05/2025
+Meeting with DIGITALEUROPE new Director for the Single Market & Digital Competitiveness - State of play European semiconductor policies and Chips Act review
+
+28/05/2025
+Exchange on AI declaration of DigitalEurope and preparation of VIP roundtable on Digital Omnibus
+
+04/06/2025
+Sustainability Omnibus
+
+06/06/2025
+Digitally transforming industries in the EU
+
+12/06/2025
+Meeting with DIGITALEUROPE members on implementation of European semiconductor policy and Chips Act review.
+
+30/06/2025
+Digital industries in the current geopolitical context
+
+16/07/2025
+Presentation of Digital Europe and their view of scaling opportunities for European digital tech startups
+
+18/09/2025
+Meeting with business associations on the way forward of the implementation of the Single Market Strategy/” Terrible Ten”
+
+01/10/2025
+Regulatory challenges for the driving in Europe
+
+08/10/2025
+- Introduction to DIGITALEUROPE work on standardisation - HLF new mandate - Revision Regulation 1025/201
+
+21/10/2025
+Exchange of views on the environmental omnibus, the Packaging and packaging waste regulation (PPWR), the WEEE review and WEEE own resources
+
+22/10/2025
+Digital Europe Health Executive Council. Simplification in the Healthcare sector with a focus on AI and AI deployment.
 

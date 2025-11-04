@@ -1,5 +1,5 @@
 15/04/2025
-Implementation Automotive Industrial Action Plan NXP Infineon STMicroelectronics Bosch Axelera AI
+implementation Automotive Industrial Action Plan NXP Infineon stmicroelectronic Bosch Axelera AI
 
 20/05/2025
 AI Chips Europe

@@ -65,7 +65,7 @@ Hydrogen
 • Short introduction of RWE; • Fit for 55 package, especially the revision of the Renewable Energy Directive; • Delegated Act on Art. 27.3 of the Renewable Energy Directive regarding criteria for renewable hydrogen.
 
 27/01/2022
-The CEOs of the leading wind energy companies presented the keybarriers to renewable energy project permitting they had experienced, and suggest some possible good practices for the upcoming Commission guidance on this topic.
+The CEOs of the leading wind energy companies presented the key barriers to renewable energy project permitting they had experienced, and suggest some possible good practices for the upcoming Commission guidance on this topic.
 
 21/09/2022
 Energy derivatives markets
@@ -136,6 +136,12 @@ Clean energy
 23/01/2025
 Discussion on the future of European energy policy and competitiveness.
 
+04/02/2025
+Exchange with the CFO of RWE on MiFID/Energy Trading
+
+04/02/2025
+MiFID
+
 05/02/2025
 MiFID II commodities review
 
@@ -150,4 +156,10 @@ MiFID II commodities Consultation Paper (Chapter 1 - Data Aspects)
 
 08/04/2025
 Wind energy, electrification, competitiveness, permitting, grids
+
+26/05/2025
+Commodity Derivatives Consultation
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’achat - Relation US/EU
 

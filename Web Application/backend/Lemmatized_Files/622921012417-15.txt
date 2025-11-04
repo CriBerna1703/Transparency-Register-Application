@@ -1,11 +1,11 @@
 12/12/2014
-Capital Markets MiFID ii
+Capital Markets MiFID II
 
 03/02/2015
 CMU Mifid level 2
 
 04/02/2015
-CMU MIFID ii
+CMU MIFID II
 
 02/06/2015
 Capital Markets
@@ -23,7 +23,7 @@ financial regulation CMU MiFIDII MiFIR
 Capital Markets esa review
 
 29/11/2018
-mifir
+MiFIR
 
 05/11/2021
-MiFID mifir
+MiFID MiFIR

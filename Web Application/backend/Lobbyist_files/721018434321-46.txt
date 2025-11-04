@@ -22,3 +22,6 @@ Quantum technology
 23/01/2025
 Quantum technologies
 
+27/06/2025
+Development of Quantum technologies
+

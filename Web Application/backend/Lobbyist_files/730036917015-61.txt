@@ -5,10 +5,10 @@ Copyright / DSM
 Copyright, data protection, safe harbour
 
 01/09/2015
-Data protection, Digital Single Market
+DSM
 
 01/09/2015
-DSM
+Data protection, Digital Single Market
 
 02/09/2015
 copyright
@@ -32,7 +32,7 @@ Copyright & Plattformen
 Publishers rights
 
 06/04/2017
-Presentation of Cliqz - e-privacy and the use of data
+Presentation of Cliqz - e- privacy and the use of data
 
 06/04/2017
 e-privacy
@@ -66,4 +66,7 @@ Competitiveness of the EU
 
 22/01/2025
 WEF roundtable with several EU tech startups and investors: iGenius, AprioriBio, Technogym, Hubert Burda Media, Einride, Poolside, Algorithmiq Inc, evolution, D-CRBN, you. com, Hugging Face, GovTech Campus Deutschland, General Catalyst
+
+25/06/2025
+Scaleup funding for European startups
 

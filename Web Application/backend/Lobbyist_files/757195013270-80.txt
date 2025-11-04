@@ -32,19 +32,19 @@ Car industry and social impact of energy transition; situation of steel industry
 Clean Energy for All Europeans - Package; CWP 2017
 
 31/01/2017
-TDI, steel, MES/AD calculation, CETA
+Decarbonization of transport, POST 2020 Co2 standard cars
 
 31/01/2017
-Connected and Automated Driving
-
-31/01/2017
-Decarbonization oftransport, POST 2020 Co2 standard cars
+Decarbonization of transport, POST 2020 Co2 standard cars
 
 31/01/2017
 Trade Defence Instruments
 
 31/01/2017
-Decarbonization of transport, POST 2020 Co2 standard cars
+Connected and Automated Driving
+
+31/01/2017
+TDI, steel, MES/AD calculation, CETA
 
 10/02/2020
 Industrial decarbonisation and the Green Deal: challenges for the European steel industry and workers in the transformation
@@ -65,7 +65,7 @@ Panelist at Livestream IG Metall "Fit for 55"
 Mr Jörg Hofmann and the works councils of major OEMs and suppliers from the automotive industry are interested to exchange views on Euro 7.
 
 06/09/2021
-Participation at an Executive Board meeting of the German Trade union IG Metall on the transformation of theeconomy and the maintaining of industrial labour in EU and how social partners can play a key role for the just transition.
+Participation at an Executive Board meeting of the German Trade union IG Metall on the transformation of the economy and the maintaining of industrial labour in EU and how social partners can play a key role for the just transition.
 
 06/09/2021
 Social dialogue
@@ -93,4 +93,7 @@ European steel deal
 
 26/03/2025
 Exchange of views on State aid policy matters, in particular the State aid framework accompanying the Clean Industrial Deal
+
+30/09/2025
+The implementation of the Steel and Metals Action Plan
 

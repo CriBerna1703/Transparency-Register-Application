@@ -23,10 +23,10 @@ exchange view current topic
 HTA
 
 14/01/2019
-list ADCA Annex XIV reach
+list adca Annex XIV reach
 
 05/02/2019
-Plastics Strategy
+plastic strategy
 
 20/04/2020
 covid 19 economic impact Energy intensive industry
@@ -35,10 +35,13 @@ covid 19 economic impact Energy intensive industry
 Green Deal MFF negotiation resource
 
 23/11/2021
-draft State aid Guidelines Climate environmental protection energy
+draft state aid Guidelines Climate environmental protection Energy
 
 22/05/2025
-discuss interested stakeholder practical aspect challenge ensure compliance Art55 PPWR concern PFAS limit food contact packaging
+discuss interested stakeholder practical aspect challenge ensure compliance Art55 ppwr concern PFAS limit food contact packaging
 
 16/06/2025
 EuPC Annual Conference devote the Future Plastics Circular Competitive
+
+29/09/2025
+discussion several issue plastic value chain facing

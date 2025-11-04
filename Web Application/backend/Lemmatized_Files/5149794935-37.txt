@@ -8,10 +8,10 @@ IORP II Solvency II CMU
 Solvency II
 
 26/02/2016
-ttip
+TTIP
 
 27/01/2017
-priip
+PRIIPs
 
 19/11/2020
 Address Webinar Solvency II review
@@ -35,7 +35,7 @@ exchange view macroeconomic outlook role insurance sector support Capital Market
 datum et Intelligence Artificielle
 
 22/04/2024
-capital Markets
+capital market
 
 05/01/2025
 role insurer achieve competitiveness
@@ -46,6 +46,9 @@ mental health
 28/03/2025
 role insurance sector achieve goal
 
+28/03/2025
+exchange France Assureurs Savings Investments FIDA
+
 14/05/2025
 exchange policy development
 
@@ -53,4 +56,7 @@ exchange policy development
 investor ’s round table
 
 23/06/2025
-overview insurance landscape France presentation France assureur
+overview insurance landscape France presentation France Assureurs
+
+12/09/2025
+insurance sector face increase climate environmental risk

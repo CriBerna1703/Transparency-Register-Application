@@ -20,25 +20,25 @@ Financial Services
 PSD2
 
 08/11/2017
-Basel
+Banking Union and Capital Markets Union
 
 08/11/2017
-Banking Union and Capital Markets Union
+Basel
 
 06/03/2018
 EMU and Banking Union
 
 14/05/2019
-The finalization of Basel IV, and the European implementation of the new Basel requirements.
-
-14/05/2019
 Basel Implementation
 
-03/03/2020
-Nordic Finance sectors
+14/05/2019
+The finalization of Basel IV, and the European implementation of the new Basel requirements.
 
 03/03/2020
 Implementaion of Basel
+
+03/03/2020
+Nordic Finance sectors
 
 20/11/2020
 Discussion Implementation Basel III Europe
@@ -75,4 +75,10 @@ Exchange with Finance Denmark
 
 24/03/2025
 Exchange on regulatory developments
+
+02/06/2025
+Exchange with asset managers on the integration of EU capital market
+
+24/09/2025
+Exchange about important digital policy priorities with representatives of Nordic Financial Associations
 

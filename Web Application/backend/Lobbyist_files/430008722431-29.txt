@@ -1,8 +1,8 @@
 29/06/2016
-Labour market functioning and skills agenda
+Labour market trends and economic indicators
 
 29/06/2016
-Labour market trends and economic indicators
+Labour market functioning and skills agenda
 
 30/06/2016
 New Skills Agenda for Europe
@@ -98,7 +98,7 @@ Exchange of views on skills and human capital in the clean transition
 First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
 
 06/02/2025
-First meeting between the Commission and Signatories on the implementation of the Code of conduct oncountering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
+First meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”), after its integration into the DSA framework
 
 11/02/2025
 Opening Session: DSA roundtable discussions on online advertising (Article 46 DSA)
@@ -116,8 +116,20 @@ Exchange of views on AI and contribution to job creation and economic growth
 Uptake of artificial intelligence in the workplace
 
 02/04/2025
+Uptake of artificial intelligence in the workplace
+
+02/04/2025
 AI Act and LinkedIn’s implementation strategy
 
 02/04/2025
 EU Digital Policy
+
+13/06/2025
+Exchange of views and possible input by LinkedIn to the Union of Skills
+
+15/09/2025
+Meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”)
+
+15/10/2025
+The role of LinkedIn in providing skills intelligence and of AI
 

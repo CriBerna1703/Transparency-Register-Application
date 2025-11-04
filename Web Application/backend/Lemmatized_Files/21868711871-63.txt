@@ -1,5 +1,5 @@
 29/05/2015
-Data Protection regulation
+Data Protection Regulation
 
 22/01/2018
 retail financial service fintech
@@ -23,4 +23,4 @@ clarification scope definition AI system
 financial service industry association debrief UK Financial Regulatory Forum
 
 02/07/2025
-Deployment AI financial service
+deployment AI financial service

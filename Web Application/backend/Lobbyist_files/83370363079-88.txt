@@ -35,7 +35,7 @@ Financial Services Policy
 Overview on Financial Regulation
 
 30/09/2015
-Better regulation in the area of financial services legislation; generalquestions on the portfolio
+Better regulation in the area of financial services legislation; general questions on the portfolio
 
 15/10/2015
 banking and DSM
@@ -119,10 +119,10 @@ Payment for Order Flow (PFOF) MiFIR review
 Topic: Polish loans in foreign currency (CHF) and the UCTD Directive. Eu Commission made it clear that we do not interfere in cases before the ECJ and with the SJ work in this regard.
 
 16/11/2022
-Transparent and standardised securitisation
+Securitisation
 
 16/11/2022
-Securitisation
+Transparent and standardised securitisation
 
 01/02/2023
 Retail Investment Strategy
@@ -150,4 +150,19 @@ High-level executive roundtable: preventing the circumvention of EU sanctions on
 
 17/03/2025
 Banking issues
+
+27/05/2025
+Commerzbank’s use of cloud services and on the Commission’s ongoing initiatives (e.g. Cloud and AI development Act, revision of CSA)
+
+02/06/2025
+Exchange on developments in financial services
+
+02/06/2025
+Simplification
+
+02/06/2025
+Simplification and coordination between financial services and digital horizontal legislation
+
+01/09/2025
+Securitization Package, SIU and Simplification (FiDA).
 

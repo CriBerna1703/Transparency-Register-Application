@@ -11,7 +11,7 @@ swiss relation notably financial service
 swiss relation notably financial service
 
 05/12/2018
-mifir
+MiFIR
 
 22/10/2019
 MIFID II
@@ -23,4 +23,4 @@ Capital Markets MIFID EMIR Listing act Retail Investment Strategy
 SIU CMU simplification strategy
 
 27/05/2025
-SIU MiFID ii market infrastructure consolidation ipos
+SIU mifid II market infrastructure consolidation ipo

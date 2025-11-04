@@ -17,7 +17,7 @@ Presentation BMW office; Digital Agenda with respect to Transport
 Decarbonization
 
 28/05/2015
-Meeting to present the BMW's positions on diesel strategy and theelectrification of fleets
+Meeting to present the BMW's positions on diesel strategy and the electrification of fleets
 
 04/06/2015
 startups, innovation, data
@@ -296,16 +296,19 @@ Exchange of views on automotive sector
 Simplification
 
 21/02/2025
-High-level meeting with the Automotive industry
+CSDR, EU Taxonomy
 
 21/02/2025
-CSDR, EU Taxonomy
+High-level meeting with the Automotive industry
 
 03/03/2025
 EU Automotive Action Plan
 
 19/03/2025
 Future of the automotive sector
+
+25/03/2025
+Automotive Action Plan
 
 26/03/2025
 Discussion on data initiatives related to vehicle data
@@ -318,4 +321,76 @@ EU Digital Policy
 
 03/04/2025
 Exchange of views on automotive sector
+
+12/05/2025
+Working Programme of the ITS Directive 2024-2028
+
+13/05/2025
+Regulatory simplification for automotive industry
+
+21/05/2025
+CO2 emissions standards for light-duty vehicles (LDV)
+
+26/05/2025
+EU-US trade relations
+
+11/06/2025
+EU-US relations
+
+13/06/2025
+Discussion about the Data Union Strategy and access to in-vehicle data
+
+23/06/2025
+EU-US and the EU-China relations
+
+25/06/2025
+Battery
+
+02/07/2025
+EU-US relations
+
+11/07/2025
+Exchange on enabling scalable AI robotics through end-user leadership in industry.
+
+14/07/2025
+Fuels and CO2 standards for cars and vans
+
+18/07/2025
+Battery sector and related policies
+
+04/09/2025
+Meeting with BMW on semiconductor for automotive
+
+04/09/2025
+Introductory meeting
+
+04/09/2025
+Follow-up Discussion on European Connected and Autonomous Vehicle Alliance [ECAVA]
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’ achat - Relation US/EU
+
+10/09/2025
+Exchange of views on automotive issues
+
+11/09/2025
+- Compétitivité des entreprises - Marché intérieur - Decarbonation - Neutralité carbonne - Voiture électrique
+
+17/09/2025
+Challenges for the EU automotive sector and progressing on the Industrial Action Plan for R&I related aspects
+
+23/09/2025
+Physical meeting - Exchange of views on the Carbon Border Adjustment mechanism (CBAM)
+
+29/09/2025
+Sustainable/ transition finance; international carbon credits
+
+01/10/2025
+Meeting with BMW on regulatory issues.
+
+02/10/2025
+Automotive industry and type approval timeline in Euro 7
+
+08/10/2025
+Regulatory landscape for the automotive industry, especially the Batteries Regulation
 

@@ -23,13 +23,13 @@ China relation
 Safe Harbour
 
 07/04/2016
-GDPR DP
+GDPR dp
 
 02/05/2016
 dsm
 
 05/05/2016
-ttip
+TTIP
 
 24/08/2016
 collaboration status SAP update Digital Agenda
@@ -41,13 +41,13 @@ dual use
 datum privacy
 
 07/11/2016
-ICT education
+ict education
 
 30/03/2017
 e privacy review directive
 
 04/10/2017
-Free flow datum cybersecurity
+free flow datum cybersecurity
 
 13/10/2017
 digital policy
@@ -59,22 +59,22 @@ Meeting Task Force Preparation Conduct Negotiations United Kingdom Article 50 TE
 handshake Mrs Fox Martin
 
 17/01/2019
-digitalisation datum privacy
+digitalisation data privacy
 
 30/01/2020
-digital public administration
+Digital public administration
 
 10/02/2020
 datum strategy AI Green Deal
 
 29/06/2020
-global player digital 5 g deployment condition foreign subsidy white paper cloud adoption Europe switch possibility contestability cloud market need clear standard security requirement data governance
+global player digital 5 g deployment condition foreign subsidy white paper cloud adoption Europe switch possibility contestability cloud market need clear standard security requirement datum governance
 
 03/07/2020
 telecom connectivité
 
 16/07/2020
-contact trace app Cloud Gaia X data space AI
+contact tracing app Cloud Gaia X datum space AI
 
 01/10/2020
 Discussion Green Recovery
@@ -89,7 +89,7 @@ secure cloud video meeting
 carbon footprint product
 
 16/12/2020
-Roundtable Cloud Alliance
+roundtable Cloud Alliance
 
 17/12/2020
 DSA DMA
@@ -101,7 +101,7 @@ participation roundtable Occupational Safety Health OSH
 Green Deal growth strategy
 
 19/07/2021
-Skills Roundtable Digital
+skill Roundtable Digital
 
 19/07/2021
 Pact Skills roundtable digital transition sector
@@ -113,16 +113,16 @@ Pact Skills roundtable digital transition sector
 Digital Policy issue e g Sovereign Cloud AI DMA DSA Cybersecurity overall digital green transition
 
 03/11/2021
-digital issue
+Digital issue
 
 07/04/2022
-Meeting CEO Alliance Digitising Energy Action Plan
+meeting CEO Alliance Digitising Energy Action Plan
 
 13/12/2022
 defence
 
 10/01/2023
-Taxonomy ESG rating csrd
+taxonomy ESG rating csrd
 
 07/09/2023
 discussion AI Act
@@ -134,7 +134,7 @@ presentation software
 sustainability policy particular csrd taxonomy
 
 08/10/2024
-general discussion Taxonomy CSRD deployment
+general discussion taxonomy CSRD deployment
 
 16/10/2024
 mandate future tel
@@ -161,7 +161,7 @@ trade policy
 exchange view AI Gigafactories initiative
 
 26/06/2025
-Digital sovereignty Data Act
+digital sovereignty Data Act
 
 26/06/2025
 Business Software Alliance member consultation EU ’s upcoming Cloud AI Development Act
@@ -171,3 +171,9 @@ exchange view implementation Pillar 2 directive
 
 16/07/2025
 exchange view Data Act
+
+05/09/2025
+Compétitivité des entreprise Marché intérieur Protection de la souveraineté et du pouvoir d’achat Relation US EU
+
+15/10/2025
+physical meeting International taxation

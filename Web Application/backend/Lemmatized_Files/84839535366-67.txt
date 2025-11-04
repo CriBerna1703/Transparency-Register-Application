@@ -2,7 +2,7 @@
 connectivity
 
 12/03/2015
-meet FIA
+meet fia
 
 23/09/2015
 datum relate issue automobile sector
@@ -20,7 +20,7 @@ connectivity
 Mobility Service maas change personal transportation
 
 12/04/2016
-car datum connectivity
+Car Data connectivity
 
 06/02/2017
 transport issue
@@ -35,19 +35,19 @@ Meeting Mr Todt
 3rd Mobility package
 
 09/03/2018
-Connected Car
+connected car
 
 27/03/2018
 Motor Insurance Directive
 
 14/05/2018
-Meeting CEO
+meet CEO
 
 18/05/2018
-dinner President Vice President Fia well President ADAC
+Dinner President Vice President fia well President ADAC
 
 19/05/2018
-Meeting Mr Jean Todt President FIA Road Safety e Mobility E Formula race
+Meeting Mr Jean Todt President FIA Road Safety e mobility e formula race
 
 26/06/2018
 agreement FIA Pledge implement good governance sport
@@ -74,16 +74,16 @@ Young Women Closing Conference
 meet FIA Region digitalisation transport sector
 
 29/05/2020
-meeting discuss impact COVID 19 sector
+meeting discuss impact covid 19 sector
 
 11/06/2020
-meeting discuss Automotive sector
+meeting discuss automotive sector
 
 22/10/2020
 fia event presentation
 
 24/03/2021
-conversation FIA 1 Euroboard ssms
+conversation fia 1 Euroboard ssm
 
 27/10/2021
 datum
@@ -92,7 +92,7 @@ datum
 prep meeting meeting Commissioner Breton 16/6
 
 16/06/2022
-datum Act vehicle datum
+Data Act vehicle datum
 
 22/06/2022
 clean energy transition inexorable move towards e vehicle importance car industry contribute
@@ -104,7 +104,7 @@ Data Act Regulation Specific legislation access vehicle data function
 vehicle datum
 
 23/11/2023
-cooperation innovation ethic sport tackling online hate speech illegal content piracy sport event
+cooperation innovation ethic sport tackle online hate speech illegal content piracy sport event
 
 20/02/2024
 Speaker event Forum Mobility Society 2040 climate target
@@ -126,3 +126,6 @@ introductory meeting discussion fia activity include overview structure work foc
 
 11/06/2025
 co2 fleet target
+
+04/09/2025
+Approval Driver Control Assistance Systems DCAS

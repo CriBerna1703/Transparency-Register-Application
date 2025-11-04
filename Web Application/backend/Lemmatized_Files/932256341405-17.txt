@@ -2,7 +2,7 @@
 introduction association
 
 20/06/2023
-urban micro mobility
+Urban micro mobility
 
 24/10/2023
 role potential challenge domain micro mobility
@@ -15,3 +15,6 @@ micro mobility Europe challenge
 
 01/07/2025
 deployment e mobility across Europe
+
+16/10/2025
+presentation challenge opportunity relate micro mobility

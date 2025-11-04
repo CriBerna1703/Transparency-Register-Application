@@ -11,13 +11,13 @@ Politique Spatiale
 energy
 
 01/12/2015
-Statut des activite EC au sujet de la Strategie Spatiale statut des activtités Galileo Services lie à cette initiative
+statut des activite EC au sujet de la Strategie Spatiale statut des activtités Galileo Services lie à cette initiative
 
 02/12/2015
 space strategy
 
 28/04/2016
-Space Strategy Galileo Market Uptake
+Space Strategy Galileo Market uptake
 
 25/04/2018
 space sector FP9
@@ -29,10 +29,13 @@ EC proposal Space Programme Horizon Europe
 exchange view support downstream space sector
 
 20/05/2025
-review digitalisation utilization spatial resource fishery aquaculture sector
+review digitalisation utilization spatial resource fisherie aquaculture sector
 
 18/06/2025
-Presentation Space position paper Satellite base Services Competitive Autonomous Resilient Europe
+presentation Space position paper Satellite base Services Competitive Autonomous Resilient Europe
 
 26/06/2025
 exchange space downstream sector
+
+26/06/2025
+Satellite connection Global Gateway

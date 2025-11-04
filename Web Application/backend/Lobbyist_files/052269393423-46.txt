@@ -2,7 +2,7 @@
 Company visit to ASML
 
 10/09/2024
-High-level executive roundtable: preventingthe circumvention of EU sanctions on sensitive goods.
+High-level executive roundtable: preventing the circumvention of EU sanctions on sensitive goods.
 
 16/10/2024
 new mandate and future of tel
@@ -19,8 +19,14 @@ European semiconductor equipment providers priorities and competitiveness
 10/02/2025
 EU agenda on AI and tech sovereignty
 
+20/02/2025
+Semiconductor Policy – AI continent AP
+
 11/03/2025
 Clean industrial deal, Trade
+
+14/04/2025
+ASML engagement in various domains
 
 15/04/2025
 US export controls China - UE – US Relation New technology Sovereignty
@@ -30,4 +36,31 @@ Exchange on semiconductor outlook
 
 24/04/2025
 ESIA & ASML : Exchange on semiconductor outlook
+
+08/05/2025
+Semiconductor manufacturing equipment
+
+16/05/2025
+EU’s trade policy
+
+20/06/2025
+Global industrial developments on semiconductor manufacturing equipment
+
+03/07/2025
+Presentation of ESIA and the semiconductor industry in Europe
+
+09/07/2025
+Chips Act 2.0
+
+14/07/2025
+Meeting with ASML on the state of play of the European Semiconductor ecosystem and market
+
+08/09/2025
+Exchange of views on the scaleup gap in Europe and recent EU initiatives to support scaleup financing in Europe, including the recent Scaleup Europe Fund initiative.
+
+29/09/2025
+Discussion on recent developments in the international trade and export control measures
+
+29/10/2025
+Discussion about the Data Act
 

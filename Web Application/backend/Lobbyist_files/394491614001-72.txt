@@ -2,10 +2,10 @@
 DSM
 
 02/07/2015
-DSM
+Preparation of the Internet Forum
 
 02/07/2015
-Preparation of the Internet Forum
+DSM
 
 03/07/2015
 DSM, data, innovation
@@ -98,10 +98,10 @@ The impact of COVID-19 on hate speech, child abuse and terrorist content online.
 1. Hate speech and Code of conduct on hate speech - 2. Disinformation and need to preserve our democratic processes - 3. Artificial Intelligence - 4. Data protection
 
 04/06/2020
-Disinformation COVID 19, Media Pluralism, Data Protection, Hate Speech
+Online safety, and the future EU digital landscape
 
 04/06/2020
-Online safety, and the future EU digital landscape
+Disinformation COVID 19, Media Pluralism, Data Protection, Hate Speech
 
 22/06/2020
 Twitter's actions on their platform to ensure that users receive credible information on COVID- 19, the Commissions work on COVID dis and misinformation and the need for platforms to cooperate and deliver better results.
@@ -207,4 +207,7 @@ Code of Conduct on Online Advertising – Workshop 1
 
 07/04/2025
 Discussion about the Code of Practice on General Purpose AI models and the related guidelines and the current work of the AI Office.
+
+15/09/2025
+Meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”)
 

@@ -122,7 +122,7 @@ Discussion on the Sustainable Development Goals
 European electricity sector
 
 09/04/2018
-Sustainable Finance,Sustainable Finance Expert Group
+Sustainable Finance, Sustainable Finance Expert Group
 
 25/04/2018
 MFF post-2020
@@ -161,7 +161,7 @@ Introductory meeting - electrification in the energy transition - Commissioner�
 Risk-prepardness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal.
 
 15/04/2020
-Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energyinitiatives under the Green Deal
+Risk-preparedness in electricity sector, impact of crisis on clean energy investments, priorities of electricity sector for the upcoming energy initiatives under the Green Deal
 
 13/05/2020
 Phone call to present Eurelectric proposals on COVID-19 crisis and its implications on the power sector.
@@ -245,7 +245,7 @@ Questions around the co- existence of biodiversity enhancement and renewable ene
 Questions around the co- existence of biodiversity enhancement and renewable energy deployment.
 
 20/01/2023
-U.S.-EU Task Force: Bestpractices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California Energy Commission, ASE, AEE, ComEd, Octopus Energy, OPower, Uplight
+U.S.-EU Task Force: Best practices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California Energy Commission, ASE, AEE, ComEd, Octopus Energy, OPower, Uplight
 
 01/02/2023
 Electricity market functioning, long-term decarbonisation goals and electricity market design reform
@@ -278,7 +278,7 @@ Electricity Market Design.
 Delivering the RePowerEU targets
 
 23/10/2023
-Roundtable meeting with 10 Secretary Generals and CEOs of theElectrification Alliance on the revised Renewable Energy Directive (revised REDII), electricity market design, grids and storage.
+Roundtable meeting with 10 Secretary Generals and CEOs of the Electrification Alliance on the revised Renewable Energy Directive (revised REDII), electricity market design, grids and storage.
 
 16/11/2023
 Green Deal
@@ -331,6 +331,9 @@ Dialogue on the future of the automotive sector - Thematic Working Group on 'Cle
 04/03/2025
 Discussion on the Clean Industrial Deal and the Affordable Energy Action Plan. The importance of electrification
 
+14/03/2025
+Clean Industrial Deal, Affordable Energy Action Plan and new State aid Framework (CISAF), Electrification Action Plan
+
 27/03/2025
 Roundtable “Water, Agriculture, and the Food Supply Chain”
 
@@ -339,4 +342,25 @@ Clean Industrial Deal, Electrification Action Plan, Affordable Energy Plan, CISA
 
 09/04/2025
 Exchange of views on competitiveness
+
+29/04/2025
+Exchange of views on the new State aid rules being developed to accompany the Clean Industrial Deal.
+
+23/06/2025
+EU’s climate agenda
+
+09/07/2025
+Exchange of views on Eurelectric‘s flagship project ‘Power2People 2.0’ and retail policy issues.
+
+01/09/2025
+JEAG position on commodity derivatives consultation
+
+11/09/2025
+Pumped storage hydropower
+
+03/10/2025
+Discussion about the Data Act and its application in the electricity generation industry
+
+15/10/2025
+attached
 

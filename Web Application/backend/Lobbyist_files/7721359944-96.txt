@@ -176,7 +176,7 @@ Blockchain Technology
 e-privacy review directive
 
 11/05/2017
-Digital Single Market - Update of the Watson Health Center of Excellence Project - General discussion about the discussion ongoing in Italy concerning the main relevant Dossiers (DSM,Industry 4.0) - Digital transformation in Italy: priorities and activities
+Digital Single Market - Update of the Watson Health Center of Excellence Project - General discussion about the discussion ongoing in Italy concerning the main relevant Dossiers (DSM, Industry 4.0) - Digital transformation in Italy: priorities and activities
 
 07/06/2017
 DSM
@@ -410,14 +410,41 @@ Information exchange on Artificial Intelligence in the workplace
 Artificial Intelligence, data protection, Digital Fairness Act (DFA)
 
 14/02/2025
+Lunch discussion on protection of critical infrastructure
+
+14/02/2025
 Meeting in the margins of the Munich Cyber Security Conference on EU cybersecurity policies and the role of private sector in EU-level crisis management.
 
 15/02/2025
-Private roundtable on transatlantic and global cooperation on tech
+Private roundtable on transatlantic and global cooperation on tech organised on the margins of the Munich Security Conference
 
 20/02/2025
 Exchange of views on IBM’s activities on digital upskilling and collaboration possibilities with various EU organizations and communities
 
 01/04/2025
 Update on respective quantum activities
+
+19/05/2025
+Chat on AI in a sustainability context
+
+19/05/2025
+Digitalisation, decabornisation
+
+20/05/2025
+Simplification
+
+22/05/2025
+GPAI Code of Practice
+
+05/06/2025
+EU-US trade relations
+
+26/06/2025
+Business Software Alliance and its members consultation on the EU’s upcoming Cloud and AI Development Act.
+
+14/07/2025
+Exchange of views on latest updates on AI, quantum, US-EU trade negotiations and regulatory simplification agenda
+
+06/08/2025
+WebMethods (IBM tool)
 

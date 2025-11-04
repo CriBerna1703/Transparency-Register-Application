@@ -20,7 +20,7 @@ UK CCPs
 MiFID II
 
 01/02/2021
-Discussion on future relation with the Uk, equivalence decisions with the UK (equivalence under EMIR Art. 2a andderivative trading obligation), EMIR 2.2 and ESMA CCP Supervisory Committee.
+Discussion on future relation with the Uk, equivalence decisions with the UK (equivalence under EMIR Art. 2a and derivative trading obligation), EMIR 2.2 and ESMA CCP Supervisory Committee.
 
 16/03/2021
 Markets, Innovation and financial sustainability
@@ -42,6 +42,9 @@ EMIR 3.0, MiFID II Review
 
 09/01/2025
 EU-UK Financial Regulatory Forum
+
+03/02/2025
+Exchange with Futures Industry Association (FIA) Board
 
 04/02/2025
 Capital Market Union, EMIR

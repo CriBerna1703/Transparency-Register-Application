@@ -40,3 +40,15 @@ SES2, Sesar
 17/09/2021
 SES
 
+13/05/2025
+Effects of shifts in traffic flows on aviation performance, Increasing importance of civil /military integration /requirements, SES, ATC, SESAR post 2027, ATM MP
+
+04/09/2025
+Next steps in SESAR development and deployment phases
+
+18/09/2025
+New Service Delivery Model (NSDM) and automation in ATM DFS Implementation Status for CP1
+
+02/10/2025
+Next steps in SESAR development and deployment phases
+

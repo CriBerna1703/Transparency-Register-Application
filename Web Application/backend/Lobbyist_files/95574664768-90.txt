@@ -2,16 +2,16 @@
 Investing in Europe and Energy Union
 
 20/01/2015
-Digitalisation of Transport, electrification of transport
-
-20/01/2015
-Investing in EU
+EXCHANGE OF VIEWS ON CURRENT TOPICS
 
 20/01/2015
 Industrial Policy
 
 20/01/2015
-EXCHANGE OF VIEWS ON CURRENT TOPICS
+Investing in EU
+
+20/01/2015
+Digitalisation of Transport, electrification of transport
 
 21/01/2015
 Energy Union priorities for the automotive sector
@@ -23,28 +23,28 @@ Digital Single Market
 DSM, automated driving
 
 25/02/2015
-Meeting with VDA präsident, Mr Matthias Wissmann on Air quality policy
+Ongoing Trade negotiations
 
 25/02/2015
 E-Mobility, Connected Cars and competitiveness of the automotive sector and relaunch of Cars 2020
 
 25/02/2015
-Ongoing Trade negotiations
-
-26/02/2015
-Meeting with VDA
+Meeting with VDA präsident, Mr Matthias Wissmann on Air quality policy
 
 26/02/2015
 Current EU Policy Issues
+
+26/02/2015
+Meeting with VDA
 
 04/06/2015
 Transport, Mobility in the Energy Union/Situation of car industry
 
 07/07/2015
-connected mobility
+decarbonisation of transport
 
 07/07/2015
-decarbonisation of transport
+connected mobility
 
 11/09/2015
 Energy Union Strategy with a forward-looking climate policy
@@ -56,10 +56,10 @@ RDE/DIESEL
 Situation German Automotive Industry
 
 17/02/2016
-decarbonisation and digitalisation of transport
+electro mobility, digitisation
 
 17/02/2016
-electro mobility, digitisation
+decarbonisation and digitalisation of transport
 
 10/03/2016
 connected cars
@@ -86,10 +86,10 @@ future of automotive industry
 Meeting with the Task Force for the Preparation and Conduct of the Negotiations with the United Kingdom under Article 50 TEU
 
 29/06/2017
-CO2 regulation, IAA
+Connected automated cars
 
 29/06/2017
-Connected automated cars
+CO2 regulation, IAA
 
 17/10/2017
 Energy Union
@@ -119,22 +119,22 @@ US measures on steel an aluminium and ongoing trade negotiations
 farewell speech, automotive industry
 
 05/09/2018
-EU-US relations
+future of automobile industry, electromobility
 
 05/09/2018
-future of automobile industry, electromobility
+EU-US relations
 
 28/11/2018
 EU-US trade relations
 
 22/01/2019
-Exchange on the most recent issues regarding climate change policy in the sector
+Trade and customs in the automotive sector
 
 22/01/2019
 232 Cars
 
 22/01/2019
-Trade and customs in the automotive sector
+Exchange on the most recent issues regarding climate change policy in the sector
 
 29/05/2019
 European elections
@@ -152,7 +152,7 @@ To discuss with you the consequences of COVID- 19 on the automotive industry
 Green deal and the automotive sector
 
 13/05/2020
-COVID-19 impact on the automotive industry; EU’s crisis response; recoverystrategy; the green transition and carbon dioxide targets.
+COVID-19 impact on the automotive industry; EU’s crisis response; recovery strategy; the green transition and carbon dioxide targets.
 
 18/05/2020
 The meeting was a courtesy meeting to touch base after the appointment of Ms. Jorna as Director General of DG GROW and discuss future recovery in pandemic
@@ -164,10 +164,10 @@ VDA would like to discuss the level of ambition of the CO2 proposal and interpla
 VDA Position Paper "Fit for 55" and info study regarding the effects of electromobility on employment in Germany.
 
 16/11/2021
-Meeting CEO
+Discuss Euro 7 and access to in-vehicle data.
 
 16/11/2021
-Discuss Euro 7 and access to in-vehicle data.
+Meeting CEO
 
 03/02/2022
 Automotive industry
@@ -176,13 +176,13 @@ Automotive industry
 Situation of automotive industry; Fit for 55
 
 16/06/2022
-Green and digital transition of the automotive industry; raw materials availability
+Sanctions
 
 16/06/2022
 Green transition, strategic autonomy, supply chain disruptions, ETS
 
 16/06/2022
-Sanctions
+Green and digital transition of the automotive industry; raw materials availability
 
 08/11/2022
 Venue of President to Brussels- discuss state of play of Data, Euro 7, energy crisis, supply shortages
@@ -203,13 +203,13 @@ The automotive industry, global competitiveness and trade relations.
 - State of the automotive industry - European competitiveness and industry location - Charging infrastructure – next steps AFIR - Access to vehicle data, functions and resources
 
 19/06/2024
-European Research & Innovation policy and Industrial Competitiveness
+current situation of the automotive industry
 
 19/06/2024
 EU-China relations
 
 19/06/2024
-current situation of the automotive industry
+European Research & Innovation policy and Industrial Competitiveness
 
 30/09/2024
 Exchange on European competitiveness
@@ -218,10 +218,10 @@ Exchange on European competitiveness
 Digital and green transformation, European competitiveness, transatlantic relations and EU-China relations.
 
 20/11/2024
-High Level European Car Summit, organised by EPP and ACEA. EVP Dombrovskis was invited to give a speech.
+Beziehungen der EU zu China und den USA, Mercosur, Rahmenbedingungen für die Transformation bis zu bürokratischen Belastungen.
 
 20/11/2024
-Beziehungen der EU zu China und den USA, Mercosur, Rahmenbedingungen fürdie Transformation bis zu bürokratischen Belastungen.
+High Level European Car Summit, organised by EPP and ACEA. EVP Dombrovskis was invited to give a speech.
 
 19/12/2024
 Automotive sector : Euro 5
@@ -230,10 +230,10 @@ Automotive sector : Euro 5
 EU Digital Vehicle ecosystem
 
 14/01/2025
-Challenges of mid-cap automotive suppliers
+Competitiveness of the European car industry and how digital/data initiatives can help make the European car industry more competitive.
 
 14/01/2025
-Competitiveness of the European car industry and how digital/data initiatives can help make the European car industry more competitive.
+Challenges of mid-cap automotive suppliers
 
 15/01/2025
 Dinner discussion
@@ -260,19 +260,22 @@ Evolution of the Automotive Industry in view of the Automotive Action Plan
 EVP invitation to IAA MOBILITY 9-12/09/2025 and automotive industry
 
 27/02/2025
-Automotive industry
+Exchange of views on environment priorities
 
 27/02/2025
 automotive
 
 27/02/2025
-Exchange of views on environment priorities
+Automotive industry
 
 17/03/2025
 EU Digital Vehicle ecosystem
 
 19/03/2025
 Future of the automotive sector
+
+25/03/2025
+Automotive Action Plan
 
 27/03/2025
 The Position of the Automotive Industry within the Current EU Paradigm
@@ -281,11 +284,62 @@ The Position of the Automotive Industry within the Current EU Paradigm
 Follow-up meeting between INTPA and VDA
 
 10/04/2025
-Exchange on the EU- Mercosur Agreement and its value for the sector
+Exchange about the situation in the German and European automotive industry
 
 10/04/2025
-Exchange about the situation in the German and European automotive industry
+Exchange on the EU- Mercosur Agreement and its value for the sector
 
 25/04/2025
 Automotive Action Plan and CO2 standards
+
+20/05/2025
+CO2 emissions from plug- in hybrid vehicles
+
+26/05/2025
+Automotive
+
+03/06/2025
+VDA webinar series: “America First Trade Policy – Consequences and Options for the EU and Germany”
+
+25/06/2025
+Competitiveness of the automotive sector
+
+25/06/2025
+Challenges for the EU automotive sector and progressing on the Industrial Action Plan for R&I related aspects
+
+26/06/2025
+Automotive Action Plan (AAP) - pillar “Innovation and Digitalisation”
+
+04/07/2025
+Automotive Action Plan
+
+23/07/2025
+Exchange of views on the general situation of the automotive industry
+
+10/09/2025
+Exchange of views on automotive issues
+
+11/09/2025
+- Compétitivité des entreprises - Marché intérieur - Decarbonation - Neutralité carbonne - Voiture électrique
+
+18/09/2025
+Automotive industry
+
+24/09/2025
+CO2 standards Regulation for cars and vans
+
+09/10/2025
+VDA Input to Automotive Omnibus
+
+09/10/2025
+Automotive industry
+
+13/10/2025
+Automotive industry
+
+13/10/2025
+The green and digital transformation, the CO2 fleet regulations for cars vans, and HDV, and the ongoing work in the strategic dialogue.
+
+14/10/2025
+Meeting on the transition in the automotive industry
 

@@ -40,3 +40,6 @@ Digital Identity, Digital Services Act
 16/12/2020
 Roundtable - Cloud Alliance
 
+23/06/2025
+Roundtable discussion on developing a sovereign Cloud Edge Continuum
+

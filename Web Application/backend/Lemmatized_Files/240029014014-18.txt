@@ -1,17 +1,17 @@
 11/12/2014
-Presentation Annual Growth Survey 2015 outline main priority job growth agenda /in context flagship conference Reinvigorating Economy Policies Foster Jobs Growth Innovation
+presentation Annual Growth Survey 2015 outline main priority job growth agenda /in context flagship conference Reinvigorating Economy Policies Foster Jobs Growth Innovation
 
 23/04/2015
-presentation CA Technologies DSM application economy
+open access H2020
 
 23/04/2015
 Digital Market Strategy
 
 23/04/2015
-open access H2020
+presentation CA Technologies DSM application economy
 
 19/06/2015
-dsm cloud
+DSM cloud
 
 21/09/2015
 Digital Market
@@ -26,7 +26,7 @@ Safe Harbour discussion
 Digital Skills
 
 21/01/2016
-dsm skill
+DSM skill
 
 01/06/2016
 dsm
@@ -35,7 +35,7 @@ dsm
 DSM Strategy cybersecurity development digital skill
 
 20/10/2016
-digital education
+Digital education
 
 20/10/2016
 Digital Skills
@@ -59,25 +59,25 @@ cybersecurity package
 discuss cybersecurity AI
 
 13/07/2020
-discuss datum policy
+discuss data policy
 
 05/11/2021
 Data Act
 
 10/06/2022
-Cyber Resilience Act
+digital policy
 
 10/06/2022
-digital policy
+Cyber Resilience Act
 
 12/01/2024
 competition digital issue
 
 14/01/2025
-Cloud infrastructure
+Broadcom ’s approach private AI
 
 14/01/2025
-Broadcom ’s approach private AI
+Cloud infrastructure
 
 15/04/2025
 Cloud policy sovereignty

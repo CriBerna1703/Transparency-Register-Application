@@ -17,10 +17,10 @@ Discussion on the adoption of European Data Economy and Privacy package
 EU US Privacy Shield, GDPR, Online hate speech, e-evidence
 
 26/09/2018
-Privacy shield
+Big data, AI, e-privacy
 
 26/09/2018
-Big data, AI, e-privacy
+Privacy shield
 
 25/06/2019
 Blockchain, GDPR, Digital Single Market, Data transfer between EU and EU
@@ -71,10 +71,10 @@ Data protection
 Latest developments and the work in progress regarding the Trade and Technology Council (TTC)
 
 08/06/2022
-International data transfers and artificial intelligence
+AI Act.
 
 08/06/2022
-AI Act.
+International data transfers and artificial intelligence
 
 06/12/2022
 Green Deal state of play
@@ -87,4 +87,7 @@ Artificial Intelligence (AI), data protection
 
 21/02/2025
 Artificial Intelligence (AI), cloud services, simplification
+
+18/09/2025
+EU – US relations
 

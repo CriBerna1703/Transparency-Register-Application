@@ -2,7 +2,7 @@
 power spot market
 
 27/01/2015
-introduction Market Design Smart Grids Capacity
+Introduction Market Design Smart Grids Capacity
 
 27/01/2015
 Introduction Market design
@@ -11,10 +11,10 @@ Introduction Market design
 energy
 
 05/03/2015
-Electricity Markets
+Electricity market
 
 17/07/2015
-market drive Demand Response
+market drive Demand response
 
 16/02/2016
 Market Design
@@ -53,16 +53,22 @@ make international hybrid offshore project possible near future TenneTs position
 offshore energy development need prospect
 
 12/10/2022
-energy crisis response fit 55 permit
+energy crisis response fit 55 permitting
 
 06/09/2023
-high level dinner ENSTO e grid event discussion challenge network electrification
+high level dinner ENSTO E grid event discussion challenge network electrification
 
 15/11/2023
-roundtable Europe ’s Energy Future REEF
+Roundtable Europe ’s Energy Future reef
 
 05/12/2024
 energy market
 
 05/02/2025
-TenneT ENER C3 exchange topic current relevance capacity market bid zone flexibility
+TenneT ENER C3 exchange topic current relevance capacity market bidding zone flexibility
+
+02/09/2025
+electricity market system security grid connection queue battery
+
+16/09/2025
+discussion german electricity market

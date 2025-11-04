@@ -14,7 +14,7 @@ energy sector in China
 creation of a network of Energy Union Business Ambassadors
 
 17/02/2016
-The implementation ofEU legislation currently in development
+The implementation of EU legislation currently in development
 
 17/05/2016
 energy & climate policy
@@ -110,7 +110,7 @@ Discussion on security of supply, diversification, energy prices and the energy 
 SOTEU, energy, RepowerEU, Recovery and Resilience Facility
 
 13/10/2022
-Reducing dependence on Russian gas, exploitation of the resources in the EEZ of Cyprus, energysecurity strategy of the EU incl. EU platform for the common purchase of gas, LNG and hydrogen.
+Reducing dependence on Russian gas, exploitation of the resources in the EEZ of Cyprus, energy security strategy of the EU incl. EU platform for the common purchase of gas, LNG and hydrogen.
 
 25/10/2022
 Green Deal state of play
@@ -119,10 +119,10 @@ Green Deal state of play
 Joint purchasing options.
 
 20/12/2022
-Energy Platform. Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid and GOGC participated as well.
+EU Energy Platform; Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid, GOGC participated as well.
 
 20/12/2022
-EU Energy Platform; Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid, GOGC participated as well.
+Energy Platform. Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid and GOGC participated as well.
 
 16/02/2023
 Critical Raw Materials package
@@ -173,7 +173,7 @@ Energy market
 IOGP Roundtable
 
 14/05/2024
-Meeting on integration of digital technologies inothe green transition
+Meeting on integration of digital technologies ino the green transition
 
 06/12/2024
 Investments in sustainable liquid fuels production in the EU
@@ -203,6 +203,9 @@ Security of Supply, decarbonization target
 Clean Industrial Deal and the climate targets, and some other climate and energy-related priorities
 
 11/03/2025
+LNG, SAF and power generation
+
+11/03/2025
 The role of hydrogen for heavy-duty vehicles
 
 11/03/2025
@@ -210,9 +213,6 @@ SFDR
 
 11/03/2025
 Omnibus
-
-11/03/2025
-LNG, SAF and power generation
 
 12/03/2025
 Exchange of views on various aspects of EU energy policy.
@@ -223,9 +223,60 @@ Clean Industrial Deal Simplification Trade
 17/03/2025
 Carbon Capture and Storage (CCS) and the upcoming Delegated Act under the Net-Zero Industry Act (NZIA).
 
+23/03/2025
+Exchange of views with EU maritime industry on key maritime policy developments in Singapore and ASEAN
+
 01/04/2025
 Exchange of views on the challenges and opportunities for renewable hydrogen development in Latin America and the Caribbean (LAC)
 
 01/04/2025
 Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
+
+30/04/2025
+LNG supply, hydrogen and CCUS
+
+23/05/2025
+Total Energies Investments in Morocco
+
+27/05/2025
+R&D for decarbonised industrial uses, hydrogen
+
+18/06/2025
+Bioeconomy - Bioplastics
+
+26/06/2025
+Compétitivité; relations USE-UE, CSRD/CS3D, Simplification
+
+04/07/2025
+Sustainability Omnibus
+
+10/07/2025
+Clean industrial deal Financement Simplification
+
+22/07/2025
+EU environmental policies
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’achat - Relation US/EU
+
+16/09/2025
+Transition to ow carbon technologies
+
+16/09/2025
+Discuss some of the challenges the company is facing on its journey to Net Zero by 2050.
+
+16/09/2025
+simplification
+
+16/09/2025
+Transition to low-carbon technologies
+
+16/09/2025
+Discuss some of the challenges the company is facing on its journey to Net Zero by 2050.
+
+24/09/2025
+State of play in decarbonisation technologies
+
+03/10/2025
+Meeting with TotalEnergies - Carbon Removals and Nature Based Solutions
 

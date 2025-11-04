@@ -86,22 +86,22 @@ data privacy, cybersecurity, data flows
 courtesy
 
 20/03/2019
-AI incl draft ethics guidelines, ePrivacy, GDPR, cybersecurity, Next Generation internet, US digital policies
-
-20/03/2019
 General state of play trade / doing business in China
 
-21/03/2019
-EU-U.S. trade, WTO, international data flows
+20/03/2019
+AI incl draft ethics guidelines, ePrivacy, GDPR, cybersecurity, Next Generation internet, US digital policies
 
 21/03/2019
 tech policy
 
-28/01/2020
-Introduction association; artificial intelligence & data strategy; digital services act
+21/03/2019
+EU-U.S. trade, WTO, international data flows
 
 28/01/2020
 Priorities for tech regulation, single market and enforcement
+
+28/01/2020
+Introduction association; artificial intelligence & data strategy; digital services act
 
 28/01/2020
 Overall digital policy, including technological sovereignty, open multilateral economic governance, trade in technology, data strategy
@@ -158,10 +158,10 @@ Data Act, AI Act, EU-US Trade and Technology Council
 Artificial Intelligence, EU- U.S. cooperation, cyber- security
 
 24/01/2024
-Digital issues
+AI
 
 24/01/2024
-AI
+Digital issues
 
 11/03/2025
 Priorities related to the competitiveness compass
@@ -184,9 +184,30 @@ International trade developments
 13/03/2025
 EU digital policy
 
+26/03/2025
+Discussion on how the global tech industry can support the EU’s climate goals
+
 23/04/2025
 Exchange of views on AI Act implementation
 
 28/04/2025
 Digitalization for decarbonization in industry
+
+29/04/2025
+Implementation of the Ecodesign for Sustainable Products Regulation (ESPR)
+
+15/05/2025
+State of play on the Cloud and AI Development Act.
+
+15/05/2025
+ProtectEU Strategy
+
+22/05/2025
+Digital trade policy
+
+11/09/2025
+Exchange of views on copyright and AI
+
+14/10/2025
+ITI Sustainability Committee
 

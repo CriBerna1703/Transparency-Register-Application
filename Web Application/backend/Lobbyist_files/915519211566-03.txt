@@ -11,7 +11,7 @@ Banquing Union
 Italian economy and banking sector
 
 24/05/2016
-Non-performing loansand "Atlante" fund
+Non-performing loans and "Atlante" fund
 
 28/09/2016
 Basel, BSR
@@ -125,13 +125,13 @@ Exchange on the impact of the energy crisis on the banking sector and on the eco
 general discussion on the economic situation and the war in Ukraine (with Erik Burckhardt)
 
 01/02/2023
-Basel III and Bank crisis management
-
-01/02/2023
 Retail Investment Strategy
 
 01/02/2023
 retail investment strategy
+
+01/02/2023
+Basel III and Bank crisis management
 
 22/02/2023
 CMDI
@@ -159,4 +159,7 @@ Competitiveness
 
 06/03/2025
 Exchange of views on banking matters in the context of the Savings and Investment Union
+
+05/09/2025
+SIMPLIFICATION
 

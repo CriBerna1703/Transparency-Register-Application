@@ -2,31 +2,31 @@
 Digital Society
 
 16/12/2014
-meeting MEP C turme xGWP Gigawatt Fab
+Meeting MEP C Turmes xGWP Gigawatt Fab
 
 16/11/2015
 dsm
 
 19/11/2015
-prep meeting meeting President Fraunhofer Commissioner Moedas
-
-03/12/2015
-Innovation Council
+prep meeting meet President Fraunhofer Commissioner Moedas
 
 03/12/2015
 dsm
 
+03/12/2015
+Innovation Council
+
 10/06/2016
-Standards IoT
+standard IoT
 
 06/07/2016
 dsm
 
 07/02/2017
-business discussion
+digitize agriculture
 
 07/02/2017
-digitizing agriculture
+business discussion
 
 03/03/2017
 standardisation
@@ -41,7 +41,7 @@ visit CEBIT stand eHealth AI IoT Cyverscecurity Vertigo Starts project
 RTO Innovation Summit
 
 04/04/2019
-Research MFF
+research MFF
 
 05/04/2019
 research
@@ -84,3 +84,6 @@ Research Innovation
 
 31/03/2025
 exchange role RI next MFF focus propose Competitiveness Fund ECF
+
+06/10/2025
+Data Space Business Alliance AI Continent Action Plan

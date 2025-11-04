@@ -56,10 +56,10 @@ connected & automated driving and decarbonisation of transport
 decarbonisation of transport
 
 15/09/2016
-Energy Efficiency
+Energy policy
 
 15/09/2016
-Energy policy
+Energy Efficiency
 
 19/10/2016
 European Strategy for Low-emission Mobility
@@ -223,6 +223,9 @@ Exchange on mobility operations
 16/01/2025
 Future of the automotive sector
 
+28/01/2025
+Exchange on Circular Economy Act
+
 12/02/2025
 Future of the automotive sector
 
@@ -233,11 +236,56 @@ Dialogue on the future of the automotive sector – Suppliers Session
 Automotive Industrial Action Plan with : - NXP - Infineon - STMicroelectronics - Bosch
 
 03/04/2025
+The European semiconductor industry and the review of the Chips Act
+
+03/04/2025
 Trade relations and economic security
 
 03/04/2025
 Exchange on the implications of recent US trade measures and the broader geopolitical environment on the European semiconductor industry
 
+10/04/2025
+Impact of US tariffs
+
 15/04/2025
 Implementation of the Automotive Industrial Action Plan with : - NXP - Infineon - STMicroelectronics - Bosch - Axelera AI
+
+05/06/2025
+Follow-up to visit of Commisioner Tzitzikostas in Munich
+
+17/06/2025
+Competitiveness of automotive suppliers in international context
+
+24/06/2025
+Presentation of Bosch – DB technology development “Perception” for autonomous driving trains and its regulatory challenges
+
+03/07/2025
+Presentation of ESIA and the semiconductor industry in Europe
+
+10/07/2025
+Exchange of views on e- fuels and monitoring methodology.
+
+11/07/2025
+Exchange on enabling scalable AI robotics through end-user leadership in industry.
+
+14/07/2025
+Omnibus
+
+14/07/2025
+Upcoming reviews of the CO2 Standards for passenger cars and HDV, the upcoming review of the CBAM as well as ETS2.
+
+01/09/2025
+Heavy-duty sector and the role of carbon- neutral fuels
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’achat - Relation US/EU
+
+11/09/2025
+- Compétitivité des entreprises - Marché intérieur - Decarbonation - Neutralité carbonne - Voiture électrique
+
+25/09/2025
+Regulatory framework, climate targets
+
+29/09/2025
+Exchange on issues related to the current trade context
 

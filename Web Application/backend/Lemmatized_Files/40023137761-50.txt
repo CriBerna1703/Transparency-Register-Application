@@ -2,10 +2,13 @@
 beryllium market
 
 11/05/2017
-revision Carcinogen Directives
+revision Carcinogen directive
 
 12/05/2017
-Beryllium
+beryllium
 
 19/03/2025
-exchange view recycling target Beryllium
+exchange view recycle target Beryllium
+
+01/07/2025
+role Beryllium high performance technology defense system

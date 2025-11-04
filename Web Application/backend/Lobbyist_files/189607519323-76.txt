@@ -56,13 +56,13 @@ DSA, DMA
 Introductory meeting, DSA, DMA, AI Act
 
 06/03/2024
-Platform regulation
+GDPR, consumers
 
 06/03/2024
 Competitiveness and talent, Platform work directive, Artificial Intelligence regulation and opportunities
 
 06/03/2024
-GDPR, consumers
+Platform regulation
 
 06/03/2024
 DMA, DSA, AI
@@ -92,5 +92,14 @@ Challenges for European tech companies that want to leverage AI to compete globa
 Exchange of views on AI Act, DSA, enforcement cooperation, digital taxation.
 
 29/04/2025
+Exchange of views on the forthcoming Digital Fairness Act
+
+17/09/2025
+Simplification of EU digital legislation and Digital Fairness Act
+
+13/10/2025
+Exchange on selected topics of the PSD3/PSR legislative package
+
+15/10/2025
 Exchange of views on the forthcoming Digital Fairness Act
 

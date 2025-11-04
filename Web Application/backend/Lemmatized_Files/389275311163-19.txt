@@ -1,5 +1,5 @@
 11/12/2014
-company activity drax
+company activity DRAX
 
 30/09/2015
 biomass policy sustainablility
@@ -8,7 +8,7 @@ biomass policy sustainablility
 energy
 
 29/06/2016
-energy research Innovation competitiveness
+energy research innovation competitiveness
 
 07/09/2016
 sustainability
@@ -20,10 +20,10 @@ sustainable forest biomass
 biomass sustainability
 
 18/05/2021
-discuss options Commission currently consider review biomass sustainability within proposal REDIII discuss role sustainable bioenergy EU ’s energy climate plan
+discuss option Commission currently consider review biomass sustainability within proposal rediii discuss role sustainable bioenergy EU ’s energy climate plan
 
 18/05/2021
-Forest biomass Fit 55
+forest biomass Fit 55
 
 07/09/2022
 Discussion Commission ’s upcoming proposal carbon removal certification
@@ -32,7 +32,7 @@ Discussion Commission ’s upcoming proposal carbon removal certification
 wood pellet EUDR
 
 02/07/2024
-Carbon removal technology
+carbon removal technology
 
 30/09/2024
 introductory meeting
@@ -42,3 +42,6 @@ Upcoming Bioeconomy Strategy
 
 19/05/2025
 BECCS Bioenergy carbon capture storage
+
+20/05/2025
+discuss key priority opportunity relate carbon dioxide removal context Clean Industrial Deal

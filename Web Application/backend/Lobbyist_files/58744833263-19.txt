@@ -29,7 +29,7 @@ Energy Union and role of decarbonisation of transport
 Energy Union
 
 09/03/2015
-Transport in the EnergyUnion
+Transport in the Energy Union
 
 23/03/2015
 TTIP; Environment; Transport
@@ -245,7 +245,7 @@ The new renewable energy directive (REDII)
 CO2 regulation, November mobility package
 
 11/09/2017
-CO2 regulation, EU ZEVand battery policy and wider November mobility package
+CO2 regulation, EU ZEV and battery policy and wider November mobility package
 
 12/09/2017
 Meeting with Mr Todts
@@ -368,7 +368,7 @@ Battery package
 MRV Revision, ETS extention to shipping, Alternative marine fuels, IMO ISWG7
 
 17/02/2020
-The Green Deal and roadtransport
+The Green Deal and road transport
 
 18/02/2020
 Transport
@@ -434,10 +434,10 @@ A Green Deal for Transport - High Level Event
 To discuss what the different transport modes can do up to 2030
 
 15/09/2020
-2030 Climate Target Plan
+Sustainable finance
 
 15/09/2020
-Sustainable finance
+2030 Climate Target Plan
 
 15/09/2020
 2030 Climate Target Plan, Renewable, Hydrogen, Sustainability Criteria Transport
@@ -659,7 +659,7 @@ EU battery production and electric vehicles, IRA, critical raw materials
 Critical raw materials, European response to inflation reduction act
 
 18/01/2023
-CO2 Standards for heavy-duty vehicles
+CO2 Standards for heavy- duty vehicles
 
 19/01/2023
 Reply to US IRA; CO2 standards for trucks; critical raw materials act
@@ -788,7 +788,7 @@ Future of the automotive sector
 Circularity and recycling
 
 07/02/2025
-Discussion on maritimedecarbonisation
+Discussion on maritime decarbonisation
 
 10/02/2025
 Automotive Dialogue
@@ -817,6 +817,12 @@ High-level meeting with the Automotive industry
 25/02/2025
 Exchange of views on automotive sector
 
+11/03/2025
+Fuels, methane
+
+14/03/2025
+Clean Industrial Deal, Affordable Energy Action Plan and new State aid Framework (CISAF), Electrification Action Plan
+
 07/04/2025
 Clean Industrial Deal, Electrification Action Plan, Affordable Energy Plan, CISAF
 
@@ -825,6 +831,9 @@ Sustainability agenda of the European Commission
 
 23/04/2025
 Greening Corporate Fleet
+
+24/04/2025
+Transport, Automotive
 
 25/04/2025
 Exchange of views on extractive waste management and shortcomings of the Extractive Waste Directive (EWD), in particular in light of the need for raw materials for the green transition and recent developments under the Critical Raw Materials Act.
@@ -838,6 +847,102 @@ Sustainability Omnibus
 29/04/2025
 Sustainability Omnibus
 
+30/04/2025
+Presentation findings report " Assembly plant or battery powerhouse?"
+
+08/05/2025
+Preparation Industrial decarbonisation accelerator act
+
 13/05/2025
 Clean Industrial Deal to deliver a Joint Decarbonisation and Competitiveness Roadmap
+
+21/05/2025
+Meeting with T&E
+
+22/05/2025
+Clean Industrial Deal and State Aid NZIA Electrification Action Plan
+
+28/05/2025
+Support for clean tech technologies in particular batteries and notably for direct production
+
+06/06/2025
+Exchange on rail passenger rights
+
+06/06/2025
+Exchange of views on future transport investments
+
+06/06/2025
+Decarbonising Corporate Fleets
+
+10/06/2025
+Discuss proposals to deliver a strong 2040 target that can deliver climate and ensure investment stability
+
+10/06/2025
+to follow
+
+11/06/2025
+Exchange of views on the future Multiannual Financial Framework and other EU priorities
+
+17/06/2025
+EU climate policy
+
+20/06/2025
+Discussion on fraud prevention and relevant sanctions
+
+01/07/2025
+Exchange of views on the next MFF climate change priorities
+
+01/07/2025
+Strategic Dialogue on the EU Industrial Maritime Strategy
+
+01/07/2025
+EU Strategic Dialogue on the EU Industrial Maritime Strategy.
+
+01/07/2025
+Strategic Dialogue on the EU Port Strategy
+
+04/07/2025
+Electrification and alternative fuels in road transport, shipping and aviation
+
+10/07/2025
+Discussion on the future Multiannual Financial Framework
+
+15/07/2025
+Battery
+
+16/07/2025
+T&E Report on the state of the global eSAF marke
+
+17/07/2025
+Corporate Fleets strategic dialogue
+
+11/08/2025
+Corporate fleets and decarbonisation of automotive sector
+
+25/08/2025
+Greening corporate fleets
+
+02/09/2025
+Auto dialogue
+
+03/09/2025
+T&E offered their support on additional data for the IA. Additional follow-up meetings might follow.
+
+11/09/2025
+Exchange of views on the a) simplification agenda and the forthcoming omnibus on environmental policies, b) new MFF proposal, and c) implementation efforts for Nature Restoration Regulation (NRR) and EU Deforestation Regulation (EUDR)
+
+15/09/2025
+The review of the EU Emissions Trading System (ETS)
+
+15/09/2025
+Integrating contrails and non-CO2 emissions in the Single European Sky framework
+
+19/09/2025
+T&E recommendations on EIB Climate Bank Roadmap Phase 2
+
+06/10/2025
+Role of plug-in hybrid electric vehicles and CO2 emissions
+
+09/10/2025
+ETS2 and MSR
 

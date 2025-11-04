@@ -1,11 +1,11 @@
 19/12/2014
-telecom Market Broadband
+Telecoms Market Broadband
 
 07/01/2015
-telecom Market Broadband
+Telecoms Market Broadband
 
 30/03/2015
-Telecommunication Policy
+telecommunication policy
 
 30/04/2015
 Digital Market
@@ -14,7 +14,7 @@ Digital Market
 telecom review
 
 25/05/2016
-telecom Review regulatory framework
+telecom review regulatory framework
 
 06/06/2016
 telecom policy
@@ -44,4 +44,4 @@ Digital Agenda
 DSA DMA
 
 15/07/2025
-Workshop fibre deployment Germany
+workshop fibre deployment Germany

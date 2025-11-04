@@ -1,2 +1,2 @@
 07/02/2025
-Obligations Reuse system
+obligation reuse system

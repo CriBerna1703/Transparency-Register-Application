@@ -2,22 +2,22 @@
 Introductory Meeting
 
 07/05/2015
-Markets Financial Instruments Directive II /Basel
+market Financial Instruments Directive II /basel
 
 21/06/2016
-sme Proportionality Basel MREL TLAC EDIS priip
+sme Proportionality Basel MREL TLAC EDIS PRIIPs
 
 04/10/2016
 Review Basel 3 CRR review Leverage ratio EDIS
 
 23/04/2018
-esa review sustainable finance
+esa review Sustainable Finance
 
 15/11/2018
 implementation PDS2 Benchmark Regulation Banking Package
 
 14/05/2020
-Roundtables Stakeholders Capital Requirements regulation
+Roundtables Stakeholders Capital Requirements Regulation
 
 28/05/2020
 covid 19 relief measure
@@ -50,13 +50,13 @@ CMDI
 economy Basel reform
 
 28/03/2023
-Round Table Digital Euro EVP Dombrovskis DG fisma
+Round Table Digital Euro EVP Dombrovskis DG FISMA
 
 27/04/2023
 digital Euro
 
 18/07/2023
-Distribution retail financial product
+distribution retail financial product
 
 22/01/2024
 AGRI Dialogue
@@ -65,7 +65,7 @@ AGRI Dialogue
 open discussion business model farmer transition sustainable agriculture role cooperative bank play financing need farming sector
 
 25/04/2024
-CMU Competitiveness
+CMU competitiveness
 
 08/07/2024
 sustainable finance digital finance co operative bank
@@ -80,13 +80,13 @@ outlook 2025 prospective priority
 SF Sustainability Omnibus
 
 17/02/2025
-promote SIU EACB propose simplify reporting requirement simple low risk investment product propose entrance fee encourage people start invest support review securitisation framework
+promote SIU EACB propose simplified reporting requirement simple low risk investment product propose entrance fee encourage people start invest support review securitisation framework
 
 20/02/2025
 Meeting Association Co operative Banks regulatory development
 
 22/04/2025
-FIDA
+fida
 
 14/05/2025
 financial datum access framework FIDA
@@ -96,3 +96,9 @@ exchange regulatory file
 
 14/07/2025
 exchange view role cooperative bank agricultural financing
+
+09/09/2025
+exchange view proposal Regulation framework Financial Data Access FIDA digital euro retail investment strategy RIS omnibus proposal
+
+09/10/2025
+implementation two obligation payment service provider Instant Payments Regulation

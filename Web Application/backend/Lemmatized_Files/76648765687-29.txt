@@ -1,5 +1,5 @@
 11/02/2015
-EMIR CCP recognition MiFID Level 2 nordic business issue
+EMIR CCP recognition mifid Level 2 nordic business issue
 
 19/02/2015
 capital market
@@ -32,7 +32,7 @@ MiFiD LSE DB merger
 CMU mifid 2 ESG report
 
 12/05/2017
-sl MiFID ii
+sls MiFID II
 
 25/09/2017
 Brexit Capital Markets mifid
@@ -47,31 +47,31 @@ financial market regulation Capital Markets
 financial market regulation Capital Markets
 
 06/02/2018
-MiFID ii esa review
+mifid II esa Review
 
 22/03/2018
-Sustainable Finance Fintech Nasdaq Baltic region MiFID ii
+sustainable Finance Fintech Nasdaq Baltic region MiFID II
 
 22/03/2018
 sustainable finance MiFID FinTech
 
 16/05/2018
-MiFID ii
+MiFID II
 
 25/06/2018
-CMU MIFID II Indexing Challenges Small Markets
+CMU MIFID II indexing challenge Small Markets
 
 06/11/2018
-mifid equivalence
+mifid Equivalence
 
 28/11/2018
 closing remark Capital Markets Nordic Financial Ecosystem Forum
 
 04/12/2018
-presentation company light SME award Explanation Commissions work
+presentation company light SME awards Explanation Commissions work
 
 04/04/2019
-MIFID 2 implementation
+mifid 2 implementation
 
 13/05/2019
 mifid implementation
@@ -98,16 +98,16 @@ MiFID II Market Structure /consolidated tape
 exchange view development capital market US sustainable finance agenda digital agenda
 
 09/11/2021
-meet Ludovic Aigrot Vice President Head Government Relations Europe NASDAQ Topics discuss state play preparation Commission propose MiFID ii
+meet Ludovic Aigrot Vice President Head Government Relations Europe NASDAQ Topics discuss state play preparation Commission propose MiFID II
 
 11/11/2021
-Review Markets Financial Instruments regulation
+Review Markets Financial Instruments Regulation
 
 18/11/2021
 Transatlantic Partnership focus digital sustainable agenda
 
 30/03/2022
-consolidated tape digital finance financial market
+consolidated tape digital finance Financial market
 
 10/06/2022
 consolidated tape
@@ -125,16 +125,16 @@ RTS equity transparency negotiate trade
 exchange view advancement Capital Markets Discussion experience nordic capital market
 
 20/01/2025
-Exchange ImpactEurope swedish company Savings Investments
+exchange ImpactEurope Swedish company Savings Investments
 
 21/01/2025
-Benchmark regulation
+Benchmark Regulation
 
 24/01/2025
 MiFIR Review
 
 27/01/2025
-MiFID mifir RTS1
+MiFID MiFIR RTS1
 
 03/02/2025
 pisces trading platform
@@ -149,7 +149,7 @@ recent economic development EU US
 exchange view AI policy AI Act
 
 18/03/2025
-CSDR mifid
+csdr mifid
 
 20/03/2025
 exchange representative Nasdaq market Europe
@@ -158,7 +158,7 @@ exchange representative Nasdaq market Europe
 discussion market regulatory development
 
 02/04/2025
-saving Investments discussion swedish financial market infrastructure representative
+Savings Investments discussion swedish financial market infrastructure representative
 
 16/05/2025
 exchange trading venue integration capital market
@@ -173,4 +173,10 @@ aspect relate financial market saving investment
 exchange view initiative include Savings Investments communication
 
 03/07/2025
-representative Nasdaq Stockholm meet Task Force member topic relate financing startup scaleup public equity market
+Representatives Nasdaq Stockholm meet Task Force member topic relate financing startup scaleup public equity market
+
+09/09/2025
+SIU market integration
+
+24/09/2025
+SIU Markets Financial Instruments Directive MiFID II regulation mifir

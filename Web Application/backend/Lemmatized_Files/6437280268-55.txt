@@ -20,10 +20,10 @@ datum protection
 connect mobility
 
 02/07/2015
-Meeting GDV
+meet GDV
 
 14/07/2015
-Cyber security
+cyber security
 
 22/07/2015
 Solvency II Capital Markets Insurance Distribution directive
@@ -32,19 +32,19 @@ Solvency II Capital Markets Insurance Distribution directive
 well regulation
 
 07/01/2016
-delegate act Insurance Distribution directive
+delegated act Insurance distribution directive
 
 16/06/2016
 MFF Mid term review
 
 29/06/2016
-Austausch über Ausblick auf die Volkswirtschaft der Eurozone
+austausch über Ausblick auf die Volkswirtschaft der Eurozone
 
 29/06/2016
-Credit Rating agency
+Credit Rating Agencies
 
 28/04/2017
-Solvency II UFR esa Review
+Solvency II UFR ESAs Review
 
 30/06/2017
 reflection paper
@@ -83,7 +83,7 @@ Green Deal ECB strategic review
 demographic development Green Paper age pension insurance
 
 28/02/2020
-forthcoming demography report Pan Personal Pension Product
+forthcome demography report Pan Personal Pension product
 
 18/11/2020
 CMU Action Plan MIFID Solvency II
@@ -92,13 +92,13 @@ CMU Action Plan MIFID Solvency II
 Address Webinar Solvency II review
 
 23/11/2020
-priips
+PRIIPS
 
 26/11/2020
 introduction discussion Solvency II review
 
 03/02/2021
-datum protection AI
+data protection AI
 
 04/02/2021
 digital finance
@@ -116,7 +116,7 @@ Address GDV annual conference insurance ceo
 datum protection
 
 14/07/2021
-Forthcoming Solvency II review legislative proposal
+forthcoming Solvency II review legislative proposal
 
 22/11/2022
 datum exchange mobility sector
@@ -134,7 +134,7 @@ Retail Investment Strategy
 Retail Investment Strategy
 
 26/01/2023
-GDV want discuss main concern relation upcoming Retail investment Strategy proposal
+GDV want discuss main concern relation upcoming retail investment Strategy proposal
 
 15/02/2023
 vehicle datum
@@ -176,7 +176,7 @@ clarification scope definition AI system
 simplification agenda competitiveness
 
 18/03/2025
-solvency II SIU
+Solvency II SIU
 
 27/03/2025
 long term life insurance pension product
@@ -191,7 +191,7 @@ exchange key topic relevant insurance industry include Savings Investments Retai
 EUROFI exchange regulatory framework
 
 22/04/2025
-exchange view Savings Investments SIU strategy
+exchange view Savings investment SIU strategy
 
 10/06/2025
 information exchange
@@ -200,4 +200,19 @@ information exchange
 information exchange
 
 27/06/2025
-german insurance market
+german Insurance market
+
+03/09/2025
+CSRD ESRS omnibus
+
+03/09/2025
+Address German Insurance Association
+
+04/09/2025
+physical meeting Discuss tax incentive context Savings Investments
+
+22/09/2025
+data policy digital simplification omnibus
+
+21/10/2025
+Innovation Investment Pact Scaleup Europe Fund

@@ -8,13 +8,13 @@ Capital Markets
 capital market
 
 17/12/2014
-Investment Plan Capital Markets
+investment Plan Capital Markets
 
 27/02/2015
 US Regulatory Agenda Financial Services
 
 08/06/2015
-Markets Financial Instruments Directive II
+market Financial Instruments Directive II
 
 09/06/2015
 CMU
@@ -35,16 +35,16 @@ CCS follow Norway
 priority
 
 22/06/2017
-CMU Brexit aifmd
+CMU mid term review financial service
 
 22/06/2017
-CMU mid term review financial service
+CMU Brexit aifmd
 
 13/11/2017
 esa review EMIR Investment Firm Review
 
 14/12/2017
-ESA review mifid prudential regime investment firm
+ESA review MiFID prudential regime investment firm
 
 14/12/2017
 Prudential Regime proposal
@@ -56,13 +56,13 @@ Capital Markets
 investment Firm Review IFR Brexit
 
 04/04/2019
-réforme des mesure prudentielle l’impact du Brexit sur l’activité des fond d’investissements américain dans l’Union européenne
+Réforme des mesure prudentielle l’impact du Brexit sur l’activité des fond d’investissements américain dans l’Union européenne
 
 08/07/2019
 CMU sustainable finance
 
 08/07/2019
-CMU Sustainable finance
+CMU sustainable finance
 
 14/11/2019
 CMU sustainable finance
@@ -77,16 +77,16 @@ financial service
 discussion concern upcoming event
 
 10/05/2022
-AIFMD review ELTIF Regulation review mmfs
+aifmd review ELTIF Regulation review MMFs
 
 20/07/2022
-AIFMD MFA Europe
+aifmd MFA Europe
 
 13/01/2023
-short Selling Regulation CMU AIFMD
+Short Selling Regulation CMU aifmd
 
 06/06/2023
-CMU ris ssr
+CMU RIS SSR
 
 07/11/2023
 Capital Markets

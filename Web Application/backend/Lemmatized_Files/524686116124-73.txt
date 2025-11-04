@@ -8,7 +8,7 @@ discussion Neighbourhood Enlargement policy
 Meeting Director Strategic Foresight Atlantic Council Washington
 
 15/09/2015
-datum protection DSM
+data protection DSM
 
 15/09/2015
 dsm strategy
@@ -32,7 +32,7 @@ Speech Europes Staying Power
 Ukraine
 
 12/10/2016
-dsm cloud compute
+DSM cloud computing
 
 13/10/2016
 Wroclaw Forum
@@ -56,16 +56,16 @@ Eastern Neighbourhood
 current geopolitical issue
 
 07/11/2017
-Neighbourhood Policy
+neighbourhood policy
 
 31/01/2019
-5 G security
+5 g security
 
 08/02/2019
 disinformation
 
 13/02/2019
-5 G telecommunications security transatlantic cooperation
+5 g telecommunication security transatlantic cooperation
 
 13/02/2019
 US cooperation energy
@@ -89,7 +89,7 @@ presentation AC activitie energy transatlantic cooperation
 US energy cooperation Energy Security context Green Deal
 
 08/05/2020
-US 70 way Forward
+US 70 way forward
 
 20/05/2020
 Webinar Democracy Covid 19 crisis
@@ -98,7 +98,7 @@ Webinar Democracy Covid 19 crisis
 covid 19 disinformation
 
 28/07/2020
-high Level Roundtable Discussion State 2020 EUs Global Engagement Covid 19 world Via Webex
+High Level Roundtable Discussion State 2020 eu Global Engagement Covid 19 world Via Webex
 
 08/12/2020
 EDAP
@@ -140,7 +140,7 @@ energy market
 energy transition
 
 12/01/2024
-preparatory meet WEF 2024
+preparatory meeting WEF 2024
 
 19/01/2024
 US relation light upcoming election US Atlantic Council invitation HR VP Borrell participate highly level event DC Brussels
@@ -193,6 +193,9 @@ exchange view late development US relation
 26/02/2025
 exchange view state play US relation transatlantic security war Ukraine
 
+03/04/2025
+US Relations competitiveness
+
 29/04/2025
 Meeting Atlantic Council transatlantic relation field energy broad discussion upcoming legislation
 
@@ -210,3 +213,6 @@ current state US trading relation
 
 06/06/2025
 transatlantic relation simplification
+
+02/07/2025
+exchange external energy policy

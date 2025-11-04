@@ -53,7 +53,7 @@ legislative proposal for the revision of the ETS Directive; Energy Union governa
 Energy Union
 
 10/09/2015
-Governance of the Energy Union; reform of the wholesale electricitymarket; revision of the renewable energy directive
+Governance of the Energy Union; reform of the wholesale electricity market; revision of the renewable energy directive
 
 21/09/2015
 Research & Innovation in renewable energies
@@ -269,7 +269,7 @@ Renewable energy
 Green transition and the revision of temporary State aid rules
 
 02/02/2023
-Hydrogen bank proposaland the Green Deal Industrial Plan
+Hydrogen bank proposal and the Green Deal Industrial Plan
 
 21/02/2023
 European competitiveness, including of its wind sector, and the Green Deal Industrial Plan
@@ -290,7 +290,7 @@ Discussion on how to strengthen the EU-US cooperation to increase the deployment
 Presentation of new report on smart electrification.
 
 26/07/2023
-Expose the difficulties ofthe situation in Europe of wind energy supply chain
+Expose the difficulties of the situation in Europe of wind energy supply chain
 
 31/08/2023
 Energy transition
@@ -311,7 +311,7 @@ Clean Transition Dialogue on EGD Infrastructures
 Clean Transition Dialogue on EGD Infrastructures
 
 03/07/2024
-The meeting has beenintroduced by the Renewable Hydrogen Coalition and focused of the state of play of the current renewable hydrogen market.
+The meeting has been introduced by the Renewable Hydrogen Coalition and focused of the state of play of the current renewable hydrogen market.
 
 26/07/2024
 Exchange on renewables and grid infrastructure.
@@ -349,8 +349,14 @@ Disinformation related to wind energy
 12/03/2025
 Wind power projects – environmental permitting
 
+14/03/2025
+Clean Industrial Deal, Affordable Energy Action Plan and new State aid Framework (CISAF), Electrification Action Plan
+
 17/03/2025
 Discussion on EU Recovery and Resilience Fund and wind energy projects
+
+19/03/2025
+Exchange of notes ahead of Baku Energy Ministerial
 
 26/03/2025
 Clean Industrial Deal
@@ -363,4 +369,43 @@ Clean Industrial Deal, Electrification Action Plan, Affordable Energy Plan, CISA
 
 08/04/2025
 Wind energy, electrification, competitiveness, permitting, grids
+
+14/05/2025
+Implementation of Clean Industrial Deal
+
+28/05/2025
+Wind industry
+
+05/06/2025
+Proposal for a European Fund for Wind Research & Competitiveness and the future MFF
+
+05/06/2025
+Exchange of views on how the EU can best support research and innovation in the wind energy sector
+
+25/06/2025
+WindEurope Annual Summer Reception
+
+01/07/2025
+Strategic Dialogue on the EU Industrial Maritime Strategy
+
+01/07/2025
+EU Strategic Dialogue on the EU Industrial Maritime Strategy.
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+07/07/2025
+Skills and Workforce for the Wind Industry
+
+17/09/2025
+The potential and challenges of Europe’s Wind Industry
+
+03/10/2025
+Vestas presentation on wind turbines size developments
+
+07/10/2025
+US and EU Trade Relations concerning tariff rates on the steel industry, specifically the wind energy sector
 

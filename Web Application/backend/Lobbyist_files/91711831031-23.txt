@@ -80,7 +80,7 @@ Defence, Sapce, AI, PIEEC,
 spatial, identité numérique
 
 18/10/2021
-Purpose of the meeting was to elaborate on general overview and discussions on Europeanissues in space, update on the space market and EU programs (Copernicus, Galileo, Egnos, etc.), Future Flagships (Space Connectivity).
+Purpose of the meeting was to elaborate on general overview and discussions on European issues in space, update on the space market and EU programs (Copernicus, Galileo, Egnos, etc.), Future Flagships (Space Connectivity).
 
 26/01/2022
 Programmes spatiaux européens
@@ -110,6 +110,9 @@ Exchange of views on the side of the visit to the Paris Air Show (Le Bourget).
 Exchange on key priorities for the year to come and beyond - meeting with Hervé Derrey - Deputy Director General of Thales Group
 
 28/01/2025
+Meeting on the side of Space Conference - discussion on EU space programmes.
+
+28/01/2025
 Presentation of Thales Alenia Space and exchange on the future of space in Europe.
 
 18/02/2025
@@ -122,11 +125,80 @@ Cooperation on satellite connectivity in Kazakhstan
 Exchange of views on the state of the Air Traffic Management reform in Europe, the competitiveness of the European ATM industry at the world market and the priorities for Thales in the next MFF period.
 
 26/03/2025
+Exchange of views on the European legislative and financial architecture on the defence industry
+
+26/03/2025
 Space and Defence policy
+
+09/04/2025
+The meeting discussed the implementation of the White Paper on European Defence and EU's defence readiness.
 
 10/04/2025
 Thales’ Artificial Intelligence (AI) strategy and use cases and the European AI Office’s latest initiatives and stakeholder consultation procedures
 
+16/04/2025
+Upcoming EU defence instruments (SAFE & EDIP)
+
 29/04/2025
 Simplification, marché interieur, compétivité, défense
+
+13/05/2025
+Modernisation of European Air Traffic Management (ATM) and the New ATM Service Delivery Model. Implementation of European Regulation 2021/116 - Common Project (CP1)
+
+15/05/2025
+Support to innovation in the aviation sector
+
+15/05/2025
+Thales Group is closely monitoring developments to ensure that our avionics and ground /airborne collaboration systems can be supported in line with the current challenges of reducing aviation's carbon footprint and digitalization.
+
+15/05/2025
+Aerospace
+
+15/05/2025
+Discussion on the state of play of semiconductor advanced packaging in Europe
+
+26/05/2025
+Fucino Space Center (Telespazio) visit
+
+26/05/2025
+Visit of the Thales Alenia Space - Smart Space Factory
+
+06/06/2025
+The modernisation of European Air Traffic Management (ATM) and the New ATM Service Delivery Model.
+
+16/06/2025
+Compétitivité, Clean Industrial Deal, sécurité économique, SAF, Défense, Transport, souvenaineté, droits de douane. Visite conjointe avec le Commissaire Tzitzikostas et son cabinet.
+
+07/07/2025
+THALES cloud offerings solutions for sensitive sectors and cybersecurity provisions
+
+08/07/2025
+Quantum Europe
+
+08/07/2025
+Cybersecurity
+
+16/07/2025
+Connectivity projects in Mongolia
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’achat - Relation US/EU
+
+22/09/2025
+Connectivity projects in Mongolia
+
+23/09/2025
+Next EU Multiannual Financial Framework & Access to Space
+
+09/10/2025
+Connectivity projects in Mongolia
+
+14/10/2025
+Discussion on the upcoming Cloud and AI Development Act, with particular focus on provisions related to European autonomy and demand for trusted EU cloud service providers.
+
+14/10/2025
+Connectivity projects in Mongolia
+
+15/10/2025
+Exchange of views on inertial confinement fusion and Europe’s fusion strategy.
 

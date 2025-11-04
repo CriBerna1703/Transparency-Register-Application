@@ -5,7 +5,7 @@ Priorities Commission area Financial Services
 Financial Services Policy 2015 especially capital market
 
 27/03/2015
-réforme bancaire et stabilité financière en Europe
+Réforme bancaire et stabilité financière en Europe
 
 06/05/2015
 securitisation
@@ -17,10 +17,10 @@ securitisation
 Financial Policy
 
 10/06/2015
-Plan Juncker Gouvernance uem
+Plan Juncker Gouvernance UEM
 
 17/06/2015
-Covered Bonds Capital Markets
+cover Bonds Capital Markets
 
 10/09/2015
 Capital Markets Banking regulation
@@ -32,13 +32,13 @@ High Level Group Energy Infrastructure Europe
 règlementation bancaire
 
 13/01/2016
-Interview Mr Peter de Keyzer write book Nations reform economy labour market
+interview Mr Peter de Keyzer write book Nations reform economy labour market
 
 02/02/2016
 Fundamental Review Trading Book
 
 15/02/2016
-MREL tlac
+MREL TLAC
 
 19/02/2016
 economic reform estonian experience interview BNP Paribas Fortis
@@ -53,13 +53,13 @@ current issue banking sector
 CRR review
 
 21/06/2016
-final calibration Net Stable Funding ratio Fundamental review trading book
+final calibration Net stable Funding ratio Fundamental review trading book
 
 16/09/2016
 CRR review BSR
 
 28/09/2016
-Upcoming Basel standard revision DRD CRR G SIB surcharge
+upcoming Basel standard revision DRD CRR G SIB surcharge
 
 14/11/2016
 CCR crd4review
@@ -68,7 +68,7 @@ CCR crd4review
 CRR CRD
 
 02/05/2017
-blue Economy financing principle
+Blue Economy Financing Principles
 
 10/05/2017
 investment enegy efficiency smartene city
@@ -134,10 +134,10 @@ MiFIR EU UK regulatory secondary market liquidity
 open Strategic Autonomy
 
 28/04/2021
-basel implementation
+Basel implementation
 
 05/05/2021
-basel implementation sustainable finance
+Basel implementation sustainable finance
 
 26/05/2021
 sustainable finance
@@ -149,10 +149,10 @@ current issue finance service policy
 overall discussion financial service
 
 15/07/2021
-Sustainable Finance Green Bonds
+sustainable Finance Green Bonds
 
 15/07/2021
-Sustainable Finance Green Bonds
+sustainable Finance Green Bonds
 
 09/09/2021
 economic outlook Basel III Banking
@@ -164,7 +164,7 @@ Basel III
 economic recovery Situation financial sector sustainable finance
 
 29/09/2021
-MiFID mifir
+MiFID MiFIR
 
 09/10/2021
 economic outlook Basel III Banking
@@ -176,13 +176,13 @@ Meeting Jacques de Larosière Adviser BNP Paribas
 Retail Investment Strategy
 
 12/10/2021
-ngeu
+NGEU
 
 25/10/2021
-Brexit DTO ccp
+Brexit dto ccp
 
 10/11/2021
-CMU mifir review clearing
+CMU MiFIR review clearing
 
 02/12/2021
 G SIB
@@ -218,7 +218,7 @@ BNP Paribas view potential price cap liquidity measure context energy crisis
 energy market liquidity measure
 
 28/09/2022
-DTO ccp
+dto ccp
 
 09/11/2022
 preparation meeting Commissioner McGuinness ceo french bank
@@ -242,10 +242,10 @@ banking Retail Investment Strategy Digital Euro
 CCP UK India Retail Investment Strategy
 
 22/09/2023
-mifir OTC derivative identifier capital market regulatory framework
+MIFIR OTC derivative identifier capital market regulatory framework
 
 28/11/2023
-EMIR 3 indian ccp Settlement efficiency Retail Investment Strategy
+emir 3 indian CCPs Settlement efficiency Retail Investment Strategy
 
 29/11/2023
 energy transition
@@ -257,7 +257,7 @@ exchange view banking finance policy include Basel III legislation
 Basel III standard implementation
 
 21/12/2023
-financing renewable energy
+finance renewable energy
 
 21/02/2024
 priority next Commission
@@ -266,7 +266,7 @@ priority next Commission
 Capital Market Retail Investment Strategy
 
 11/04/2024
-DTO exemption indian ccp NSFR
+dto exemption indian ccp NSFR
 
 12/06/2024
 decarbonization road transport
@@ -290,7 +290,7 @@ clean corporate fleet
 sustainable Finance Disclosure Regulation review
 
 30/01/2025
-Capital Requirements regulation
+Capital Requirements Regulation
 
 13/02/2025
 discussion level 2 measure transparency requirement equity equity instrument synchronisation business clock transaction report good execution
@@ -305,7 +305,7 @@ financial service policy
 green Corporate Fleets
 
 28/03/2025
-car leasing decarbonisation agenda
+car lease decarbonisation agenda
 
 01/04/2025
 omnibus other
@@ -323,7 +323,7 @@ exchange view Savings Investments package topic
 Informal Workshop integration capital market
 
 05/06/2025
-securitization Package
+Securitization Package
 
 24/06/2025
 payment
@@ -333,3 +333,30 @@ compétitivité relation use UE csrd cs3d simplification
 
 30/06/2025
 Meeting Entreprise et Société group belgian ceo amongst BNP Paribas Fortis Ackermans Van Haren Carmeuse Topic challenge face moment
+
+05/09/2025
+Compétitivité des entreprise Marché intérieur Protection de la souveraineté et du pouvoir d’achat Relation US EU
+
+11/09/2025
+discussion bank market development
+
+11/09/2025
+exchange view financial institution Japan
+
+02/10/2025
+Operational risk
+
+02/10/2025
+defense financing
+
+07/10/2025
+CSRD ESRS
+
+09/10/2025
+FRTB simplification
+
+10/10/2025
+Public Affairs Seminar session Commission work NBFI macroprudential framework
+
+21/10/2025
+CMDI review

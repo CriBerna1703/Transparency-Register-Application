@@ -14,7 +14,7 @@ physical meeting Exchange view cbam
 Steel Metals Action Plan SMAP Aluminium industry
 
 16/05/2025
-physical meeting Exchange view Carbon Border Adjustment Mechanism cbam
+physical meeting Exchange view Carbon Border Adjustment mechanism cbam
 
 20/05/2025
 trade defence action aluminum sector
@@ -24,3 +24,6 @@ aluminium industry melt pour system
 
 16/07/2025
 Indirect ETS cost compensation impact aluminum sector
+
+17/09/2025
+aluminium sector

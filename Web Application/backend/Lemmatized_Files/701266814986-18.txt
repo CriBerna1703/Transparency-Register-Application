@@ -14,22 +14,22 @@ Dialogue Creating Capital Markets
 US Regulatory Agenda Financial Services
 
 04/03/2015
-CEO Survey
+ceo survey
 
 13/03/2015
-Financial Services policy
+Financial Services Policy
 
 23/04/2015
 Capital Markets State EU US banking market
 
 09/07/2015
-Discuss G20 agenda UK Europe geopolitical issue
+Discuss G20 agenda UK Europe Geopolitical issue
 
 23/09/2015
-ttip
+TTIP
 
 29/10/2015
-Macroeconomic development CMU
+macroeconomic development CMU
 
 29/10/2015
 current economic situation emerge market growth investment CMU
@@ -38,7 +38,7 @@ current economic situation emerge market growth investment CMU
 dsm
 
 29/10/2015
-Courtesy visit tour dhorizon financial service issue
+courtesy visit tour dhorizon financial service issue
 
 16/01/2016
 implementation COP 21 role renewable
@@ -50,13 +50,13 @@ global business outlook
 overview ongoing financial regulatory agenda
 
 27/04/2016
-Capital Markets /Call evidence
-
-27/04/2016
 growth agenda
 
+27/04/2016
+Capital Markets /Call evidence
+
 26/07/2016
-Outlook financial service
+outlook financial service
 
 07/10/2016
 CMU Basel issue
@@ -68,13 +68,13 @@ CRD IV CRR II
 telecom regulation
 
 06/04/2017
-Brexit eu/ US regulatory landscape Prudential agenda
+Brexit eu/ US regulatory landscape prudential agenda
 
 12/04/2017
 Financial Services agenda
 
 12/05/2017
-CMU Prudential reform agenda US regulatory review
+CMU prudential reform agenda US regulatory review
 
 17/05/2017
 EMIR
@@ -83,10 +83,10 @@ EMIR
 Juncker Plan EMU ’s challenge structural reform potential growth investment
 
 25/07/2017
-Brexit relate matter
+brexit relate matter
 
 14/09/2017
-CMU international cooperation
+CMU International cooperation
 
 13/10/2017
 current geopolitical issue
@@ -98,13 +98,13 @@ current geopolitical issue
 trade defence policy
 
 11/12/2017
-FINTECH digital issue
+fintech digital issue
 
 22/12/2017
 US trade priority
 
 25/01/2018
-CMU Package esa Review Brexit
+CMU Package ESAs Review Brexit
 
 05/03/2018
 MFF
@@ -134,7 +134,7 @@ brexit
 brexit
 
 13/05/2019
-CMU mifid PRIIPs Sustainable finance
+CMU mifid PRIIPs sustainable finance
 
 24/06/2019
 Meeting Mr José Manuel Barroso ahead presentation book La commission européenne 1986 2000 Histoire et mémoire d’une institution
@@ -155,7 +155,7 @@ Recovery Fund
 sustainable finance Green recovery
 
 27/04/2021
-sustainable Finance
+sustainable finance
 
 27/04/2021
 MiFIR EU UK regulatory secondary market liquidity
@@ -164,7 +164,7 @@ MiFIR EU UK regulatory secondary market liquidity
 energy derivative market
 
 19/09/2023
-meet Geoffrey Okamoto Marc rothemund
+meet Geoffrey Okamoto Marc Rothemund
 
 20/09/2023
 current macroeconomic development
@@ -176,7 +176,7 @@ energy transition
 online meeting GS share perspective energy transition Green Finance Working Group
 
 19/01/2024
-financing renewable energy
+finance renewable energy
 
 19/06/2024
 Capital Markets
@@ -188,7 +188,7 @@ macroeconomic development DG FISMA policy agenda CMU Banking
 commodity derivative
 
 03/02/2025
-review ets
+review ETS
 
 05/02/2025
 use DLT Tokenisation Financial Markets
@@ -197,7 +197,7 @@ use DLT Tokenisation Financial Markets
 discuss market structure issue incl propose ESMA bond transparency RTS next step commodity debrief US approach market regulation Trump Administration
 
 11/02/2025
-CSRD CSDDD Taxonomy CBAM US situation
+CSRD CSDDD taxonomy cbam US situation
 
 11/02/2025
 Macroprudential Review Bank Financial Intermediation NBFI
@@ -209,19 +209,22 @@ overview green building policy
 discussion US order protection rule
 
 17/03/2025
-Commission ’s CSRD Taxonomy omnibus simplification proposal
+Commission ’s csrd taxonomy omnibus simplification proposal
 
 07/04/2025
-saving Investments
+Savings Investments
 
 15/04/2025
 recent development gold market price flow rationale
 
-29/04/2025
-investment opportunity within Global Gateway framework
+28/04/2025
+competitiveness agenda
 
 29/04/2025
-investment opportunity within Global Gateway framework
+investment opportunity within global Gateway framework
+
+29/04/2025
+investment opportunity within global Gateway framework
 
 14/05/2025
 Informal Workshop integration capital market
@@ -231,3 +234,12 @@ outlook banking sector
 
 10/07/2025
 discussion liquidity landscape
+
+23/09/2025
+competitiveness compass simplification
+
+24/09/2025
+exchange capital market SIU
+
+09/10/2025
+SIU T1 CCP clearing

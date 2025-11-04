@@ -8,7 +8,7 @@ MiCA crypto asset
 Digital euro MICA
 
 23/11/2023
-DeFI
+defi
 
 03/02/2025
 Exchange Coinbase MiCA implementation
@@ -17,7 +17,10 @@ Exchange Coinbase MiCA implementation
 Digital finance
 
 16/05/2025
-coinbase roundtable explore blockchain base tokenization modernise capital market highlight public permissione chain digital twin native asset rollout call harmonised flexible regulation
+coinbase roundtable explore blockchain base tokenization modernise capital market highlight public permissione chain digital twin native asset rollout call harmonise flexible regulation
 
 01/07/2025
 MiCA implementation DLT pilot
+
+02/10/2025
+Digital Euro

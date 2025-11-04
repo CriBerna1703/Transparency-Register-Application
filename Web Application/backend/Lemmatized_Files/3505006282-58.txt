@@ -8,7 +8,7 @@ state play taxation file FTT CCCTB
 Capital Markets
 
 02/12/2015
-Undertakings Collective Investment Transferable Securities directive
+undertaking Collective Investment Transferable Securities directive
 
 01/03/2017
 Banking Investment fund distribution EDIS
@@ -26,19 +26,19 @@ Meeting Task Force Preparation Conduct Negotiations United Kingdom Article 50 TE
 esa review package Brexit Sustainable finance
 
 06/07/2020
-Entrevue sur les investissement dan les compétence et la transition numérique pour accélér la reprise les stratégie numérique et industrielle les PME
+Entrevue sur les investissement dan les compétence et la transition numérique pour accélérer la reprise les stratégie numérique et industrielles les PME
 
 06/07/2020
-Entrevue sur les investissement dan les compétence et la transition numérique pour accélér la reprise les stratégie numérique et industrielle les PME
+Entrevue sur les investissement dan les compétence et la transition numérique pour accélérer la reprise les stratégie numérique et industrielles les PME
 
 02/09/2020
-tour d’horizon de l actualité européenne et situation de l’emploi dans le secteur financier luxembourgeois
+Tour d’horizon de l actualité européenne et situation de l’emploi dans le secteur financier luxembourgeois
 
 12/03/2021
 meeting fund banking sector Luxembourg teleworke Right Disconnect R2D
 
 22/04/2021
-Basel III capital market regulation AML AIFMD
+Basel III capital market regulation AML aifmd
 
 13/12/2021
 overview recent upcoming regulatory initiative financial service
@@ -50,7 +50,16 @@ Banking Package Mifid
 stakeholder roundtable Luxembourg Market Strategy Consultation
 
 25/02/2025
-Role financial sector financing agriculture rural area
+role financial sector finance agriculture rural area
 
 22/05/2025
 exchange view topic relate Savings Investment Internal Market simplification
+
+18/06/2025
+Working lunch financial association Savings Investments
+
+07/10/2025
+competitiveness simplification SIU
+
+23/10/2025
+discussion simplification Savings Investments

@@ -2,10 +2,10 @@
 CMU and Mifid
 
 07/10/2015
-MiFID II
+Markets in Financial Instruments Directive II
 
 07/10/2015
-Markets in Financial Instruments Directive II
+MiFID II
 
 28/01/2016
 MiFID II
@@ -60,4 +60,22 @@ Exchange of views on the forthcoming legislative agenda, and in particular on th
 
 09/04/2025
 EUROFI – Exchanges on regulatory framework
+
+02/06/2025
+Exchange with asset managers on the integration of EU capital market
+
+19/06/2025
+European Union Energy Markets
+
+24/09/2025
+Exchange of views on market and prudential issues
+
+24/09/2025
+Exchange views on the European capital markets and discuss ongoing and upcoming trends in market infrastructure for investment firms
+
+25/09/2025
+Discussion on the Commission’s enforcement of the Foreign Subsidies Regulation
+
+25/09/2025
+Exchange of views on merger control framework in the EU
 

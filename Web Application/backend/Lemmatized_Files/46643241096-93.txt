@@ -2,28 +2,28 @@
 Capital Markets /Markets Financial Instruments directive
 
 09/06/2015
-Markets Financial Instruments Directive II /Classes financial instrument approach
+market Financial Instruments Directive II /Classes financial instrument approach
 
 11/12/2015
-market Infrastructure Regulation
+Market Infrastructure Regulation
 
 26/10/2016
 recovery resolution ccp
 
 26/10/2017
-BRRD
-
-26/10/2017
 BRRD II
 
+26/10/2017
+brrd
+
 07/11/2017
-trading Obligation RTS mifid
+Trading Obligation RTS mifid
 
 26/02/2018
-Capital Markets Supervision Central Counterparties Bank Recovery Resolution Directive risk free rate
+Capital Markets Supervision Central Counterparties Bank Recovery Resolution Directive Risk free rate
 
 27/06/2018
-ccp Brexit Capital Requirements proposal Cross border regulation derivative business
+CCPs Brexit Capital Requirements proposal cross border regulation derivative business
 
 15/03/2019
 EMIR
@@ -35,10 +35,10 @@ Keynote address ISDA 35th Annual General Meeting
 MIFID Basel Post Brexit relationship UK
 
 21/06/2022
-Basel Package CRR CRD mifir
+Basel Package CRR CRD MiFIR
 
 21/06/2022
-1pre post trade transparency MIFIR review Importance level play field 2 EMIR review pension scheme public entity supervision active account role esma 3 Basel proposal market risk level playing field
+1pre post trade transparency MIFIR review Importance level playing field 2 EMIR review pension scheme public entity supervision active account role esma 3 Basel proposal market risk level playing field
 
 09/02/2023
 EMIR Bank Recovery Resolution Directive Benchmark Regulation sustainable finance
@@ -47,7 +47,7 @@ EMIR Bank Recovery Resolution Directive Benchmark Regulation sustainable finance
 US current market stress EMIR III
 
 22/09/2023
-mifir OTC derivative identifier capital market regulatory framework
+MIFIR OTC derivative identifier capital market regulatory framework
 
 09/04/2024
 touch number climate relate issue mutual interest include carbon market
@@ -62,7 +62,7 @@ CMU policy nbfi /UK relation area FS
 UK Financial Regulatory Forum
 
 27/01/2025
-Benchmark regulation
+Benchmark Regulation
 
 04/03/2025
 financial service industry association debrief UK Financial Regulatory Forum
@@ -71,13 +71,22 @@ financial service industry association debrief UK Financial Regulatory Forum
 implementation EMIR 3
 
 24/03/2025
-market risk regulation
-
-24/03/2025
 discussion focus financial interconnectedness liquidity risk margin transparency collateral eligibility potential wide system wide stress test part consultation assess adequacy macroprudential tool NBFI
 
+24/03/2025
+market Risk Regulation
+
 25/03/2025
-FRTB siu
+FRTB SIU
 
 28/03/2025
-exchange view Green Claim directive carbon credit consider part financial market
+exchange view Green Claim Directive carbon credit consider part financial market
+
+08/09/2025
+FCD SFD
+
+18/09/2025
+simplification financial service
+
+10/10/2025
+FRTB

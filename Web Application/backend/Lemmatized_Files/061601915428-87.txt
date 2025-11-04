@@ -14,7 +14,7 @@ Safe Harbour transatlantic datum flow
 Safe Harbour
 
 29/01/2016
-datum protection
+data protection
 
 08/04/2016
 US Privacy Shield
@@ -29,7 +29,7 @@ introductory meeting DSM datum flow state aid tax issue
 datum flow trade agreement
 
 20/09/2016
-datum privacy copyright
+data privacy copyright
 
 20/09/2016
 Jobs Growth Agenda
@@ -44,13 +44,13 @@ dsm
 Privacy Shield GDPR implementation
 
 23/03/2017
-US Privacy shield Implementation GDPR e Privacy regulation
+US Privacy shield Implementation GDPR e Privacy Regulation
 
 21/09/2017
 meeting discuss COM communication taxation digital sector adopt week
 
 07/11/2017
-dsm general
+DSM general
 
 16/11/2017
 cybersecurity discussion
@@ -65,7 +65,7 @@ forthcoming digital tax initiative
 technology sector investment screening
 
 21/03/2018
-digital taxation
+Digital taxation
 
 18/04/2018
 cybersecurity
@@ -74,46 +74,46 @@ cybersecurity
 GDPR privacy shield e privacy
 
 09/10/2018
-connect Initiatives AI cybersecurity eprivacy
+connect Initiatives AI cybersecurity ePrivacy
 
 09/10/2018
 digital policy
 
 11/10/2018
-data privacy cybersecurity datum flow
+datum privacy cybersecurity datum flow
 
 18/03/2019
 courtesy
 
 20/03/2019
-AI incl draft ethic guideline ePrivacy GDPR cybersecurity Next Generation internet US digital policy
-
-20/03/2019
 general state play trade business China
 
-21/03/2019
-US trade WTO international datum flow
+20/03/2019
+AI incl draft ethic guideline ePrivacy GDPR cybersecurity Next Generation internet US digital policy
 
 21/03/2019
 tech policy
 
+21/03/2019
+US trade WTO international datum flow
+
 28/01/2020
-priority tech regulation market enforcement
+priorities tech regulation market enforcement
+
+28/01/2020
+introduction association artificial intelligence datum strategy digital services act
 
 28/01/2020
 overall digital policy include technological sovereignty open multilateral economic governance trade technology datum strategy
 
-28/01/2020
-Introduction association artificial intelligence datum strategy digital service act
-
 03/03/2020
-Presentation ITI discuss priority regard privacy datum protection
+presentation ITI discuss priority regard privacy datum protection
 
 05/03/2020
-trade issue
+Trade Issues
 
 05/03/2020
-trade issue
+Trade Issues
 
 02/02/2021
 Digital prioritie Europe
@@ -122,7 +122,7 @@ Digital prioritie Europe
 DSA DMA AI Privacy datum flow
 
 19/02/2021
-policy file relevant technology industry transatlantic trade datum flow Digital Decade digital green Artificial Intelligence Digital Services Act Digital Markets Act
+policy file relevant technology industry transatlantic trade data flow Digital Decade digital green Artificial Intelligence Digital Services Act Digital Markets Act
 
 19/02/2021
 DSA DMA AI
@@ -140,7 +140,7 @@ meet global debate government access datum notably within OECD
 privacy datum flow transatlantic cooperation
 
 26/04/2022
-datum transfer
+data transfer
 
 18/05/2022
 Digital Services Act Data Act
@@ -158,10 +158,10 @@ Data Act AI Act US Trade Technology Council
 Artificial Intelligence US cooperation cyber security
 
 24/01/2024
-digital issue
+AI
 
 24/01/2024
-AI
+Digital issue
 
 11/03/2025
 priority relate competitiveness compass
@@ -170,7 +170,7 @@ priority relate competitiveness compass
 exchange view Green Deal legislation EU ’s sustainability goal
 
 12/03/2025
-Inform discuss commission work Digitalisation Justice AI datum consumer law Digital Fairness Act
+inform discuss Commissions work Digitalisation Justice AI datum consumer law Digital Fairness Act
 
 13/03/2025
 simplification
@@ -194,7 +194,7 @@ exchange view AI Act implementation
 digitalization decarbonization industry
 
 29/04/2025
-implementation Ecodesign Sustainable Products Regulation ESPR
+implementation Ecodesign sustainable Products Regulation ESPR
 
 15/05/2025
 state play Cloud AI Development Act
@@ -204,3 +204,9 @@ ProtectEU strategy
 
 22/05/2025
 digital trade policy
+
+11/09/2025
+exchange view copyright AI
+
+14/10/2025
+ITI Sustainability Committee

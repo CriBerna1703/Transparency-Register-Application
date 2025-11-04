@@ -2,25 +2,25 @@
 Fintech Action Plan PSD2
 
 28/02/2018
-scale Europe
+Scaling Europe
 
 24/04/2018
 Company Presentation Fintech Action Plan
 
 16/10/2019
-Startup Environment
-
-16/10/2019
 electronic payment system
 
-17/10/2019
-prospect further innovative entrepreneurial ecosystem
+16/10/2019
+Startup Environment
 
 17/10/2019
 technology
 
+17/10/2019
+prospect further innovative entrepreneurial ecosystem
+
 10/06/2020
-impact COVID 19 virtual
+impact covid 19 virtual
 
 27/08/2020
 patronage voucher
@@ -29,22 +29,25 @@ patronage voucher
 Payment Services
 
 27/10/2021
-opportunity small tech company market
+Digital Market
 
 27/10/2021
 Digital Market adoption e commerce Europe
 
 27/10/2021
-Digital Market
+opportunity small tech company market
 
 12/09/2022
-digital issue
+Digital issue
 
 12/10/2022
-innovation agenda
+payment service
 
 12/10/2022
-digital finance payment
+duplicate
+
+12/10/2022
+follow
 
 12/10/2022
 start up
@@ -56,28 +59,25 @@ presentation company Artificial Intelligence
 start up
 
 12/10/2022
-duplicate
+digital finance payment
 
 12/10/2022
-follow
-
-12/10/2022
-payment service
+innovation agenda
 
 28/02/2023
 instant payment financial literacy payment
 
 27/06/2023
-support development carbon removal technology discuss public private sector work together nurture promise company innovative field
+support development carbon removal technology Discuss public private sector work together nurture promise company innovative field
 
 26/09/2023
-startup policy
+payment regulation reform Digital Euro PSD3 /psdr
 
 26/09/2023
 competitiveness SME relief agenda
 
 26/09/2023
-payment regulation reform Digital Euro PSD3 /PSDR
+startup policy
 
 22/07/2024
 introductory meeting
@@ -87,3 +87,6 @@ challenge tech company want leverage AI compete globally need coherent proportio
 
 07/04/2025
 Presentation Stripe exchange agenda tech competitiveness
+
+23/09/2025
+fintech evolve use stablecoin

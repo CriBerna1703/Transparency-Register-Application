@@ -1,8 +1,8 @@
 16/12/2014
-Internet governance, copyright, data protection, telecoms single market
+Internet Governance
 
 16/12/2014
-Internet Governance
+Internet governance, copyright, data protection, telecoms single market
 
 09/01/2015
 Data protection
@@ -62,7 +62,7 @@ Cooperation in fight against terrorism
 Political advertising and European Democracy Action Plan Digital policies and strategies
 
 05/05/2020
-1.COVID-19 situation - Role of digitial technologies and data in combating the outbreak 2. E-evidence proposals3. Terrorist Content Online. State of negotiations: possible areas of compromise. 4. AI policy
+1.COVID-19 situation - Role of digitial technologies and data in combating the outbreak 2. E-evidence proposals 3. Terrorist Content Online. State of negotiations: possible areas of compromise. 4. AI policy
 
 12/11/2020
 EDAP, DSA
@@ -90,4 +90,7 @@ Exchange on range of issues related to Commissioner’s portfolio including simp
 
 19/03/2025
 Code of Conduct on Online Advertising – Workshop 4
+
+09/07/2025
+Exchange of views on the GPAI Code of Practice and the timeline of AI Act obligations and enforcement powers.
 

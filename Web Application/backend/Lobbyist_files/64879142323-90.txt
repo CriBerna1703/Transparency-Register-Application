@@ -86,7 +86,7 @@ Cefic views on summer package
 Competitiveness, TTIP Chemicals, Better Regulation Package
 
 20/10/2015
-Growth andcompetitiveness
+Growth and competitiveness
 
 29/10/2015
 Competitiveness of the sector, regulatory costs, energy security, innovation issues
@@ -281,7 +281,7 @@ Video call with Pharmaceutical Industrial Associations, the European Medicines A
 Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 08/05/2020
-Video call with Pharmaceutical Industrial Associations, the European MedicinesAgency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
+Video call with Pharmaceutical Industrial Associations, the European Medicines Agency and the European Centre for Disease Prevention and Control, to discuss Possible shortages of medicines and medical devices for the Covid-19 outbreak
 
 11/05/2020
 Discussion on the impact of COVID-19
@@ -308,7 +308,7 @@ Chemicals strategy, decarbonisation, circular economy, HFCs
 Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicines and medical devices including diagnostic tests in the context of COVID- 19 pandemic
 
 29/06/2020
-Call with pharmaceutical and medical deviceindustry associations on COVID-19
+Call with pharmaceutical and medical device industry associations on COVID-19
 
 08/07/2020
 Pharmaceutical Strategy
@@ -335,7 +335,7 @@ To discuss Chemicals Strategy, with the focus on innovation, safe and sustainabl
 Decarbonisation; chemicals strategy for sustainability
 
 06/11/2020
-Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicinesand medical devices including diagnostic tests in the context of COVID- 19 pandemic
+Videoconference with Pharmaceutical Industry Associations to discuss shortages of medicines and medical devices including diagnostic tests in the context of COVID- 19 pandemic
 
 10/11/2020
 European Green Deal and the implementation of the EU Chemicals Strategy for Sustainability
@@ -377,10 +377,10 @@ Decarbonisation of the chemical industry through electrification and clean hydro
 Hydrogen
 
 24/03/2021
-tbc
+Commissioner Breton meeting with CEOs from Energy Intensive Industries on Industrial strategy & fit for 55.
 
 24/03/2021
-Commissioner Breton meeting with CEOs from Energy Intensive Industries on Industrial strategy & fit for 55.
+tbc
 
 16/04/2021
 Videoconference - Discussion on a forthcoming proposal for a CBAM and its interaction with the forthcoming ETS reform.
@@ -497,7 +497,7 @@ Follow-up to Antwerp Summit & exchange on state of EU chemicals industry
 Physical meeting - CBAM and Chemicals
 
 07/11/2024
-Ambrosetti Club Europe -Transport and mobility priorities
+Ambrosetti Club Europe - Transport and mobility priorities
 
 15/11/2024
 Physical meeting - Global Chemical Industry convention - Global CEOs Roundtable on CBAM
@@ -521,10 +521,10 @@ The European fermentation industry’s access to feedstock (sugar and glucose).
 Clean industrial deal
 
 17/01/2025
-Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+Meeting between DDG ENV and CEFIC
 
 17/01/2025
-Meeting between DDG ENV and CEFIC
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
 
 17/01/2025
 Meeting between DDG ENV, DDG GROW and CEFIC
@@ -581,6 +581,9 @@ Concerns from the silicone sector on the potential nomination of the substances 
 Roundtable “Water, Agriculture, and the Food Supply Chain”
 
 10/04/2025
+Impact of US tariffs
+
+10/04/2025
 Meeting minutes - Current situation of the EU chemical industry with CEFIC, Brussels 10 /04/2025
 
 10/04/2025
@@ -595,9 +598,108 @@ REACH revision/ follow- up to CARACAL meeting
 28/04/2025
 Chemicals Industry Package and REACH revision
 
+28/04/2025
+Data protection under the Biocidal Products Regulation
+
 29/04/2025
 Study visit of students to Brussels
 
+06/05/2025
+Exchange of views on regulatory developments in REACH
+
+07/05/2025
+Programme Council Product Stewardship Working Breakfast
+
 14/05/2025
 Implementation of Clean Industrial Deal
+
+15/05/2025
+Chemicals, Ukraine, Mercosur, fertilisers
+
+22/05/2025
+EU chemical sector in the current geopolitical landscape
+
+22/05/2025
+Exchange of views on the general simplification issues in the context of the works on the Action Plan for the European chemicals sector
+
+05/06/2025
+Exchange of view about the implementation of the Industrial Emissions Directive (IED)
+
+05/06/2025
+Small midcaps recommendation
+
+10/06/2025
+Chemicals industry in the current geopolitical landscape
+
+11/06/2025
+Exchange of views on the forthcoming CUS codes regulatory obligations in 2027
+
+13/06/2025
+Arctic siloxane monitoring program and silicones regulation
+
+18/06/2025
+Meeting with Cefic
+
+19/06/2025
+Discussion on the upcoming legislation concerning chemicals sector
+
+19/06/2025
+Meeting TDI- CEFIC
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+11/07/2025
+Implementation dialogue on customs legislation - Rules of origin
+
+15/07/2025
+Draft Implementing Decision on recycled content (including mass balance accounting) under the Single-Use Plastics Directive
+
+28/08/2025
+REACH and chemical policy at large
+
+02/09/2025
+Cefic’s priorities related to chemical policies
+
+03/09/2025
+Strengthening EU capacity in manufacturing active pharmaceutical ingredients (API)
+
+03/09/2025
+20 years AdBlue
+
+11/09/2025
+Product benchmark update – ethylene
+
+11/09/2025
+Data protection under Article 95 of Regulation (EU) No 528/2012 on biocidal products (BPR)
+
+11/09/2025
+To discuss data around REACH revision (polymer registration)
+
+15/09/2025
+Chemical recycling and the upcoming methodology on mass balance accounting of the chemical recycled content
+
+19/09/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+25/09/2025
+Product benchmark update – VCM and PVC
+
+26/09/2025
+INC 5.2 follow-up
+
+29/09/2025
+Discussion on chemicals industry
+
+30/09/2025
+Polymer registration under REACH Regulation
+
+02/10/2025
+Competitiveness of European Chemical sector
+
+06/10/2025
+Latest developments concerning EU chemical industry
 

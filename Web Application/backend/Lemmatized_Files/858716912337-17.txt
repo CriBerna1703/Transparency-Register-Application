@@ -23,7 +23,7 @@ Capital Markets
 Overview Financial Services
 
 24/05/2016
-Retail Financial Services digitalisation
+Retail Financial Services Digitalisation
 
 30/05/2016
 exchange view tax issue
@@ -44,22 +44,22 @@ exchange view tax priority
 third country aspect current financial service legislation
 
 24/05/2018
-MiFIR EMIR AIFMD
-
-27/02/2019
-swiss relation
+MiFIR EMIR aifmd
 
 27/02/2019
 relation 3rd country connect issue incl Cyber resilience DSM Free flow datum Blockchain
 
+27/02/2019
+swiss relation
+
 04/06/2019
-MiFID PRIIPs BASEL
+mifid PRIIPs BASEL
 
 05/12/2019
 update international tax issue
 
 16/12/2019
-general discussion Commissions priorities Commission ’s approach third country Markets Financial Instruments Directive Capital requirement directive
+general discussion Commissions priority Commission ’s approach third country Markets Financial Instruments Directive Capital requirement directive
 
 04/02/2020
 Digital finance
@@ -68,7 +68,7 @@ Digital finance
 discuss current state play Switzerland relation
 
 24/11/2020
-videoconference Exchange Suisse tax priority
+Videoconference Exchange Suisse tax priority
 
 02/03/2022
 late regulatory political development financial sector relevant SFC Members UBS Credit Suisse
@@ -95,7 +95,7 @@ global economic financial outlook development
 discussion sustainable finance development Switzerlands priority
 
 06/06/2025
-sustainability Omnibus
+Sustainability Omnibus
 
 15/07/2025
-esr
+ESRS

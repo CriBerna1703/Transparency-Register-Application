@@ -11,10 +11,10 @@ DSM
 Prep meeting for meeting with President of Fraunhofer with Commissioner Moedas
 
 03/12/2015
-European Innovation Council
+DSM
 
 03/12/2015
-DSM
+European Innovation Council
 
 10/06/2016
 Standards/IoT
@@ -23,10 +23,10 @@ Standards/IoT
 DSM
 
 07/02/2017
-Business discussion
+Digitizing agriculture
 
 07/02/2017
-Digitizing agriculture
+Business discussion
 
 03/03/2017
 Standardisation
@@ -79,6 +79,12 @@ Semiconductors
 27/06/2024
 to discuss Fraunhofer Roadmap "Circular Bioeconomy"
 
+13/03/2025
+Research and Innovation
+
 31/03/2025
 Exchange on the role of R&I in the next MFF, with a focus on the proposed European Competitiveness Fund (ECF)
+
+06/10/2025
+Data Space Business Alliance on the AI Continent Action Plan
 

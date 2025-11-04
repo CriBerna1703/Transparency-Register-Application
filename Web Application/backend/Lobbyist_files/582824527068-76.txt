@@ -1,8 +1,8 @@
 21/02/2018
-Outreach for the World Circular Economy Forum 2018
+World Circular Economy Forum 2018, Circular Economy Mission
 
 21/02/2018
-World Circular Economy Forum 2018, Circular Economy Mission
+Outreach for the World Circular Economy Forum 2018
 
 27/02/2018
 Human-driven data economy and links to GDPR, EIDAS, PSD2 (presentation of ongoing work in SITRA)
@@ -95,7 +95,7 @@ Data policies
 Issues related to democracy - deliberative democracy & citizen engagement and demographic trends
 
 28/03/2023
-Circular economy,biodiversity and the use of biomass
+Circular economy, biodiversity and the use of biomass
 
 17/10/2023
 Data economy: DSA, DMA
@@ -126,4 +126,16 @@ Exchange on Democracy
 
 09/04/2025
 A follow up meeting to present Sitra’s ‘GDPR repair kit’
+
+26/05/2025
+Discussion about Sitra’s work on RegTech and future ideas for data policies
+
+27/05/2025
+Presentation of SITRA’s work of relevance to the digital portfolio
+
+26/08/2025
+Visit to Sitra - The Finnish Innovation Fund – and discussion on circular economy
+
+23/09/2025
+Exchange of views on the impact assessment on AI infrastructure in the Nordics, conducted by Sitra for the Finnish government.
 

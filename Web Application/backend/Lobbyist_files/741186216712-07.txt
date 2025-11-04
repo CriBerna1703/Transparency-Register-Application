@@ -34,3 +34,6 @@ The core purpose of the proposed meeting would be an initial get-to-know you as 
 30/01/2025
 Exchange of views on the importance of Open Source for AI
 
+09/07/2025
+Commission preliminary policy ideas on cloud sovereignty and open source within the Cloud and AI Development Act
+

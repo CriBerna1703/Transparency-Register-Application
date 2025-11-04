@@ -8,7 +8,7 @@ Dual use
 Semiconductor industry in the EU
 
 10/09/2024
-High-level executiveroundtable: preventing the circumvention of EU sanctions on sensitive goods.
+High-level executive roundtable: preventing the circumvention of EU sanctions on sensitive goods.
 
 10/09/2024
 Preventing the circumvention of EU sanctions on sensitive goods
@@ -28,6 +28,9 @@ Exchange on the implications of recent US trade measures and the broader geopoli
 03/04/2025
 Trade relations and economic security
 
+03/04/2025
+The European semiconductor industry and the review of the Chips Act
+
 23/04/2025
 European semiconductors state of play
 
@@ -39,4 +42,19 @@ ESIA & ASML : Exchange on semiconductor outlook
 
 30/04/2025
 Exchange on semiconductor outlook
+
+03/07/2025
+Presentation of ESIA and the semiconductor industry in Europe
+
+09/07/2025
+Multistakeholder event on European semiconductor policies and investment
+
+09/07/2025
+Meeting with the Board members of the European Semiconductor Industry Association
+
+01/09/2025
+Recent developments on trade and tariffs impacting the semiconductor sector
+
+29/09/2025
+Competitiveness of the EU based semiconductor industry
 

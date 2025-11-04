@@ -59,10 +59,10 @@ Europe and the role of Research & Innovation
 Electronic Communication Code; 5G
 
 26/02/2018
-Code, ePrivacy, Net neutrality
+5G
 
 26/02/2018
-5G
+Code, ePrivacy, Net neutrality
 
 30/05/2018
 Cybersecurity
@@ -74,7 +74,7 @@ Key challenges and trends in network development
 e-privacy
 
 15/10/2018
-5G Deployment, telecoms general marketdevelopment
+5G Deployment, telecoms general market development
 
 16/10/2018
 Digital Single Market

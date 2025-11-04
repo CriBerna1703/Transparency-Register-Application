@@ -17,7 +17,7 @@ Digital Market Telecom Market investment
 Digital Market
 
 05/02/2015
-telecom Market
+Telecoms market
 
 02/03/2015
 TSM
@@ -68,7 +68,7 @@ dsm
 DSM cross border service standard
 
 22/09/2015
-DSM strategy
+DSM Strategy
 
 29/09/2015
 DSM cross border service standard
@@ -86,7 +86,7 @@ dsm
 fiware core industry
 
 21/01/2016
-big datum IoT standard
+big datum iot standard
 
 21/01/2016
 dsm
@@ -101,7 +101,7 @@ ICT development cooperation
 telco policy
 
 22/02/2016
-dsm review telecom regulatory framework
+DSM review telecom regulatory framework
 
 23/02/2016
 DSM Strategy investment digitalisation industry
@@ -122,13 +122,13 @@ dsm
 industrial package
 
 12/05/2016
-dsm general
+DSM general
 
 30/05/2016
 sur DSM cadre réglementaire
 
 10/06/2016
-Standards IoT
+standard IoT
 
 13/06/2016
 Telecom review
@@ -137,13 +137,13 @@ Telecom review
 Digital Market
 
 07/07/2016
-Lunch Debat Grandes Entreprises Françaises Better regulation
+lunch Debat grande entreprise Françaises Better Regulation
 
 14/07/2016
 telco review consumer protection access regulation spectrum
 
 27/09/2016
-Working lunch Telecom reform roam
+working lunch Telecom reform roam
 
 08/11/2016
 electronic communication code
@@ -158,10 +158,10 @@ Telecom review roam
 Digital Market
 
 12/01/2017
-Digital4Development
+digital4development
 
 27/02/2017
-5 G roam spectrum investment consolidation
+5 g roam spectrum investment consolidation
 
 08/03/2017
 exchange develop approach development digital Africa
@@ -182,7 +182,7 @@ réglementation sectorielle numérique télécommunication
 dsm policy Electronic Communication Code Connectivity Europe 5 g
 
 05/10/2017
-règlementation sectorielle
+Règlementation sectorielle
 
 17/10/2017
 Digital Market
@@ -206,28 +206,28 @@ e privacy
 caractéristique néo banque en ligne
 
 02/12/2019
-meet ceo Telecom sector
+meeting ceo Telecom sector
 
 27/05/2020
-licensing standard essential patent
+license standard essential patent
 
 27/05/2020
-digital issue
+Digital issue
 
 06/11/2020
-videoconference Discussion digital taxation
+Videoconference Discussion digital taxation
 
 16/12/2020
-Roundtable Cloud Alliance
+roundtable Cloud Alliance
 
 02/02/2021
 future telecom industry
 
 10/03/2021
-connectivité Europe et Afrique projet europeen de connectivité par satellite
+connectivité Europe et afrique projet europeen de connectivité par satellite
 
 07/05/2021
-Cloud Data Alliance CEO roundtable
+Cloud Data Alliance CEO Roundtable
 
 19/07/2021
 fibre deployment
@@ -245,16 +245,16 @@ datum strategy Cloud Alliance
 exchange view issue relate Groupe Orange ’s activity
 
 13/01/2022
-Investments telecom infrastructure
+investment telecom infrastructure
 
 02/02/2022
-politique de concurrence sur les marchés des télécoms
+politique de concurrence sur les marchés des télécom
 
 29/03/2022
 effort facilitate roam Ukraine
 
 08/04/2022
-endorse joint statement roam International call Ukraine
+endorse joint statement roam international call Ukraine
 
 03/05/2022
 Digital decade
@@ -263,7 +263,7 @@ Digital decade
 meet Green Digital Coalition Main topic state play sustainable digitalization
 
 16/09/2022
-SOTEU energy RepowerEU Recovery Resilience Facility
+SOTEU energy repowereu Recovery Resilience Facility
 
 10/10/2022
 future connectivity infrastructure
@@ -283,17 +283,14 @@ digital transition Middle East North Africa
 29/03/2023
 Digital transition Africa Middle East
 
-24/05/2023
-meet orange
-
 06/06/2023
 Telecom policy
 
 30/06/2023
-discussion taxation regulation telecommunications sector
+discussion taxation regulation telecommunication sector
 
 24/10/2023
-cercle des Grandes Entreprises française
+cercle des grande Entreprises française
 
 10/11/2023
 telecom
@@ -305,13 +302,13 @@ brief exchange margin speech Telecom policy
 sustainability policy particular csrd taxonomy
 
 15/07/2024
-transport mobility priority Funding Decarbonization solution
+transport mobility priority funding Decarbonization solution
 
 09/09/2024
 physical meeting Exchange Taxation Customs policy priority
 
 08/10/2024
-general discussion Taxonomy CSRD deployment
+general discussion taxonomy CSRD deployment
 
 12/12/2024
 current market development view future sector
@@ -320,7 +317,7 @@ current market development view future sector
 hear interest representative view competition telecom policy perspective clean competitive transition policy
 
 31/01/2025
-meeting organize ARCEP local authority operators fiber FTTH network infrastructure France Operators take part part meeting
+meeting organize ARCEP local authority operator fiber FTTH network infrastructure France Operators take part part meeting
 
 12/02/2025
 Discussion Emissions Trading System ETS extension maritime situation cable layer vessel
@@ -341,7 +338,7 @@ simplification sustainability report
 presentation Orange Marine activity relation recently adopt Action Plan security submarine cable
 
 07/04/2025
-future harmonised 2 ghz Mobile Satellite Service Frequency Band future use Upper 6 ghz frequency band
+future harmonise 2 ghz Mobile Satellite Service Frequency Band future use Upper 6 ghz frequency band
 
 09/04/2025
 Cable Security
@@ -352,8 +349,32 @@ exchange view upcoming Digital Networks Act DNA review romanian wholesale broadb
 26/06/2025
 circular economy ict sector
 
+27/06/2025
+implementation detail inclusion Ukraine Roam like Home EU RLAH area
+
 10/07/2025
 clean industrial deal Financement Simplification
 
 22/07/2025
 environmental policy
+
+04/09/2025
+future connectivity trend
+
+05/09/2025
+Compétitivité des entreprise Marché intérieur Protection de la souveraineté et du pouvoir d’achat Relation US EU
+
+08/09/2025
+ETS maritime Offshore
+
+17/09/2025
+artificial intelligence gpai Agentic AI
+
+18/09/2025
+US China relation trade agreement economic security trade defence measure upcoming initiative
+
+18/09/2025
+US China relation trade agreement economic security trade defence measure upcoming initiative
+
+20/10/2025
+Via Africa Submarine Cable Global Gateway Investment Hub

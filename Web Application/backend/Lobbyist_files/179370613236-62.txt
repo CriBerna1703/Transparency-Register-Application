@@ -14,7 +14,7 @@ Specificities of mutuals in banking regulation and Basel III
 Basel III,MiFID 2, Sustainable Finance and CMU
 
 02/02/2021
-Basel and financing ofEuropean economy
+Basel and financing of European economy
 
 01/06/2021
 Current issues in finance services policy
@@ -44,13 +44,13 @@ Crisis Management and Deposit Insurance
 Preparation of the meeting between Commissioner McGuinness and the CEOs of French banks
 
 15/12/2022
-Digital Euro
-
-15/12/2022
 digital euro
 
+15/12/2022
+Digital Euro
+
 29/03/2023
-Presentation of BPCEgroup and its activities across France
+Presentation of BPCE group and its activities across France
 
 04/04/2023
 Sustainable finance
@@ -62,16 +62,16 @@ topics include digital € and financial data access (with Erik Burckhardt)
 Distribution of Retail financial products
 
 21/02/2024
-priorities of the next Commission
-
-21/02/2024
 important files until end of mandate: CMDI, RIS, digital euro, PSR/PSD
 
-26/04/2024
-Banking union, payment services.
+21/02/2024
+priorities of the next Commission
 
 26/04/2024
 Achievements of the VDL Commission and priorities for the future Commission
+
+26/04/2024
+Banking union, payment services.
 
 16/01/2025
 Upcoming topics in sustainable finance
@@ -81,4 +81,7 @@ Retail Investment Strategy, Capital Markets Union, objectives of Poland's EU Pre
 
 05/03/2025
 Overview of current regulatory topics
+
+02/10/2025
+Operational Risk
 

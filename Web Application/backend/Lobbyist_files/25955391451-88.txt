@@ -1,5 +1,5 @@
 11/12/2014
-Presentation of the Annual Growth Survey2015 outlining the main priorities for the jobs and growth agenda /in the context of the flagship conference ‘Reinvigorating the European Economy: Policies to Foster Jobs, Growth and Innovation’.
+Presentation of the Annual Growth Survey 2015 outlining the main priorities for the jobs and growth agenda /in the context of the flagship conference ‘Reinvigorating the European Economy: Policies to Foster Jobs, Growth and Innovation’.
 
 12/12/2014
 e-Skills, digital competencies, ICT and women, coding
@@ -23,10 +23,10 @@ State of play of relationship Oracle-DIGIT
 Oracle presentation, Cloud, Big Data, Management of Human Resources and Talents
 
 01/06/2016
-DSM
+cPPP
 
 01/06/2016
-cPPP
+DSM
 
 14/07/2016
 State of play of relationship ORACLE– DIGIT and Follow up the USA study trip
@@ -69,4 +69,19 @@ Ambrosetti Club Europe - Transport and mobility priorities
 
 24/03/2025
 EU tech and digital agenda, Oracle activities, transatlantic relations
+
+05/06/2025
+Sovereign cloud
+
+05/06/2025
+Oracle sovereign cloud solutions offerings
+
+13/06/2025
+Oracle's pledge to the EU Cybersecurity Skills Academy.
+
+26/06/2025
+Business Software Alliance and its members consultation on the EU’s upcoming Cloud and AI Development Act.
+
+27/06/2025
+Oracle sovereign cloud solutions offerings
 

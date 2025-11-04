@@ -8,7 +8,7 @@ energy
 Hydrocarbon BREF LCP BREF
 
 13/04/2015
-oil Gas
+oil gas
 
 26/11/2015
 Hydrocarbons BREF
@@ -20,7 +20,7 @@ energy
 upcoming winter package
 
 03/02/2016
-Energy Policy
+energy policy
 
 11/02/2016
 security gas supply
@@ -35,7 +35,7 @@ upcoming winter package
 issue relate Energy objective
 
 09/11/2016
-Revision ETS post 2020
+revision ETS post 2020
 
 06/12/2016
 energy policy
@@ -47,10 +47,10 @@ energy policy
 energy policy
 
 15/10/2018
-Long Term Strategy Carbon Capture storage
+Long Term Strategy Carbon Capture Storage
 
 12/11/2018
-sustainable Finance Taxonomy
+sustainable Finance taxonomy
 
 17/12/2019
 Green Deal methane emission decarbonisation
@@ -59,25 +59,25 @@ Green Deal methane emission decarbonisation
 Green Deal
 
 29/01/2020
-green deal investment Plan Renewable energy
+Green deal investment Plan renewable energy
 
 29/01/2020
 Green Deal
 
 31/01/2020
-green deal implication oil gas producer
+Green deal implication oil gas producer
 
 17/02/2020
-Green Deal work programme ten E review smart sector integration
+Green Deal work programme ten e review smart sector integration
 
 19/05/2020
 Hydrogen CCS
 
 02/06/2020
-green deal
+Green deal
 
 05/06/2020
-clean energy investment sustainable finance solution transport decarbonisation power generation heat hydrogen CCS
+clean energy investment sustainable finance solution transport decarbonisation power generation heating hydrogen CCS
 
 22/06/2020
 Green Deal
@@ -86,7 +86,7 @@ Green Deal
 Energy System Integration idea CCUS Forum
 
 22/10/2020
-sustainable Finance Taxonomy
+sustainable Finance taxonomy
 
 18/11/2020
 Taxonomy Regulation
@@ -110,10 +110,10 @@ preparation CCUS Forum go work hydrogen
 energy transition
 
 28/03/2022
-discussion 8 March Commission communication ongoing work diversify gas supply diminish fossil fuel supply Russia IOGP ability help process
+discussion 8 March Commission communication ongoing work diversify gas supply diminish fossil fuel supply Russia iogp ability help process
 
 12/05/2022
-RePowerEU Plan diversification gas supply
+repowereu plan diversification gas supply
 
 13/10/2022
 IOGP study gas supply diversification potential
@@ -122,7 +122,7 @@ IOGP study gas supply diversification potential
 short long term perspective additional gas supply Europe context current energy crisis future plan CCUS technology deployment production hydrogen Europe
 
 14/12/2022
-study Rebalancing Europes gas supply
+Study Rebalancing Europes gas supply
 
 15/12/2022
 discussion strategic foresight
@@ -137,7 +137,7 @@ Green Deal Industrial Plan
 energy environmental digital challenge time
 
 12/06/2023
-NZIA forthcoming Commission Communication ccus
+nzia forthcoming Commission Communication CCUS
 
 18/07/2023
 Net Zero Industry Act proposal CO2 injection target oil gas company plan respect need transition net zero emission 2050
@@ -146,7 +146,7 @@ Net Zero Industry Act proposal CO2 injection target oil gas company plan respect
 physical meeting Discussion Commission report solidarity contribution Council Regulation 2022 /1854
 
 25/10/2023
-1 CCS nzia beyond 2 regulation methane emission reduction energy sector 3 IOGP Europe feedback DG CLIMA DG ener paper light COP28 preparation
+1 CCS NZIA beyond 2 regulation methane emission reduction energy sector 3 IOGP Europe feedback DG CLIMA DG ENER paper light COP28 preparation
 
 23/01/2024
 Industrial Carbon Management Strategy
@@ -164,7 +164,7 @@ presentation recommendation forthcoming Clean Industrial Deal
 investissement en Europe
 
 14/02/2025
-discussion Regulation 2024/1735 upcoming workshop organise IOGP
+Discussion Regulation 2024/1735 upcoming workshop organise IOGP
 
 14/02/2025
 Clean Industrial Deal Affordable Energy Action Plan
@@ -178,8 +178,20 @@ follow omnibus
 29/04/2025
 simplification
 
+29/04/2025
+simplification
+
 13/05/2025
-impact Methane Emission Regulation security gas supply
+Impact Methane Emission Regulation security gas supply
 
 20/05/2025
 exchange view possible support mechanism carbon capture storage
+
+01/09/2025
+JEAG position commodity derivative consultation
+
+17/09/2025
+discussion accelerate permit propose 2nd industry workshop Industrial Permitting
+
+16/10/2025
+discuss environmental omnibus permitting

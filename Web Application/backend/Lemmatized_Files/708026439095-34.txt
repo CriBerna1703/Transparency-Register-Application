@@ -5,4 +5,4 @@ transparent market
 exchange trading venue integration capital market
 
 27/05/2025
-SIU MiFID ii market infrastructure consolidation ipos
+SIU mifid II market infrastructure consolidation ipo

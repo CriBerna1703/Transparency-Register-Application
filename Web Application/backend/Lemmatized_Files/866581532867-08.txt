@@ -5,7 +5,7 @@ list ADCA
 list adca Annex XIV Reach
 
 14/01/2019
-list ADCA Annex XIV reach
+list adca Annex XIV reach
 
 13/01/2021
 regulatory framework authorisation substance

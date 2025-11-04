@@ -14,7 +14,7 @@ DSM TSM
 Digital Market net neutrality spectrum
 
 29/04/2015
-Digital Market policy rd spectrum
+Digital Market policy RD spectrum
 
 04/05/2015
 dsm
@@ -38,10 +38,10 @@ collaborative industry standard
 collaborative industry standard
 
 26/04/2016
-dsm 5 g patent standardisation
+DSM 5 g patent standardisation
 
 10/06/2016
-Standards IoT
+standard IoT
 
 08/09/2016
 dual use
@@ -68,7 +68,7 @@ copyright
 datum protection
 
 31/01/2017
-Cyber security
+cyber security
 
 27/02/2017
 stand visit MWC
@@ -77,7 +77,7 @@ stand visit MWC
 5 g spectrum
 
 13/03/2017
-Cybersecurity DSM mid term review
+cybersecurity DSM mid term review
 
 22/06/2017
 investment policy
@@ -89,7 +89,7 @@ standardisation patent
 Digital Market
 
 04/09/2017
-dsm general cybersecurity
+DSM general cybersecurity
 
 04/09/2017
 Upcoming Commission initiative
@@ -98,13 +98,13 @@ Upcoming Commission initiative
 Industrial Policy
 
 05/09/2017
-Cyber security
+cyber security
 
 05/03/2018
-Exchange propose Cyber Security certification framework future mandate ENISA European Cyber Security policy
+exchange propose Cyber Security certification framework future mandate ENISA European Cyber Security policy
 
 23/05/2018
-Foreign Direct Investment Screening
+Foreign Direct Investment screening
 
 13/06/2018
 5 g
@@ -116,40 +116,40 @@ cybersecurity package
 cybersecurity
 
 11/03/2019
-Cyber security
+cyber security
 
 11/03/2019
-5 G Cyber security
+5 g Cyber security
 
 11/03/2019
-Cyber security
+cyber security
 
 11/03/2019
-dsm cybersecurity
+DSM cybersecurity
 
 03/04/2019
-5 G security
+5 g security
 
 08/04/2019
-5 G security
+5 g security
 
 07/05/2019
 5 g cyber security
 
 10/12/2019
-5 G technology development roll cybersecurity telecom market
+5 g technology development roll cybersecurity telecom market
 
 16/01/2020
-Echanges sur le marché intérieur européen et les capacités industrielle de lUE dans le domaine des télécommunication
+Echanges sur le marché intérieur européen et les capacités industrielles de lUE dans le domaine des télécommunication
 
 22/01/2020
 field visit telecommunication network
 
 27/05/2020
-licensing standard essential patent
+license standard essential patent
 
 27/05/2020
-digital issue
+Digital issue
 
 24/06/2020
 discussion 5 g
@@ -161,13 +161,13 @@ telecom connectivité
 virtual meeting topic G20 preparation
 
 13/10/2020
-digital issue
+Digital issue
 
 02/11/2020
-digital infrastructure
+Digital infrastructure
 
 05/11/2020
-digital infrastructure
+Digital infrastructure
 
 06/11/2020
 digital sovereignty set standard
@@ -176,28 +176,28 @@ digital sovereignty set standard
 5 g connectivity investment legal framework
 
 16/12/2020
-Roundtable Cloud Alliance
+roundtable Cloud Alliance
 
 07/01/2021
-OpenRAN cybersecurity
+openran cybersecurity
 
 12/02/2021
-meet SVP cto Ericsson
+meet SVP CTO ericsson
 
 19/02/2021
 late news technology
 
 09/03/2021
-digital connectivity everywhere
+Digital connectivity everywhere
 
 11/03/2021
-Open RAN 5 g Cloud alliance
+open RAN 5 g Cloud alliance
 
 27/04/2021
 discuss digital telecom infrastructure Europe global context backdrop G7 Digital Ministerial
 
 07/05/2021
-Cloud Data Alliance CEO roundtable
+Cloud Data Alliance CEO Roundtable
 
 26/07/2021
 external affair international digital policy
@@ -212,7 +212,7 @@ Digital Policy issue e g Sovereign Cloud AI DMA DSA Cybersecurity overall digita
 sustainable telecom network
 
 13/01/2022
-President ’s digital agenda geopolitical dimension US TTC OpenRAN vendor diversity topic relate issue
+President ’s digital agenda geopolitical dimension US TTC openran vendor diversity topic relate issue
 
 03/02/2022
 standardisation strategy
@@ -221,7 +221,7 @@ standardisation strategy
 5 g
 
 07/04/2022
-Meeting CEO Alliance Digitising Energy Action Plan
+meeting CEO Alliance Digitising Energy Action Plan
 
 08/06/2022
 cybersecurity
@@ -233,31 +233,31 @@ discuss proposal revise Regulation 1025/2012
 TTC
 
 11/11/2022
-OpenRAN context US TTC update around security include supply chain cyber
+openran context US TTC update around security include supply chain cyber
 
 26/01/2023
 Connectivity Trade Technology Council
 
 22/03/2023
-licensing standard essential patent
+license standard essential patent
 
 04/07/2023
-digital issue
+Digital issue
 
 10/07/2023
 Telecom policy
 
 20/09/2023
-Standardization Standard Essential Patent
+Standardization Standard Essential patent
 
 12/10/2023
-digital connectivity third country
+Digital connectivity third country
 
 02/02/2024
 telecom policy
 
 06/03/2024
-discuss outcome recent World Mobile Congress include implementation 5 G Cybersecurity toolbox Member state
+discuss outcome recent World Mobile Congress include implementation 5 G Cybersecurity toolbox Member States
 
 06/03/2024
 Mobile World Congress
@@ -293,19 +293,19 @@ mandate tel future
 exchange priority include global gateway ongoing global development
 
 13/11/2024
-Courtesy meet discussion ongoing global development
+courtesy meeting discussion ongoing global development
 
 13/11/2024
 telecom emerge technology
 
 12/12/2024
-discussion priorities Commission
+discussion priority Commission
 
 12/12/2024
 current market development view future sector
 
 12/12/2024
-Exchange Ericsson ’s prioritie competitiveness
+Exchange Ericsson ’s priority competitiveness
 
 13/01/2025
 Ericsson ’s view Clean Industrial Deal sustainable network Code Conduct Taxonomy sustainability topic
@@ -317,7 +317,7 @@ competitiveness economy current global context
 competitiveness economy current global context
 
 22/01/2025
-economic State play sector
+Economic State play sector
 
 03/02/2025
 exchange view recent development competition law
@@ -341,19 +341,19 @@ Commission prioritie technology policy
 Commission prioritie technology policy
 
 11/03/2025
-exchange international tech landscape Ericsson ’s activitie third country
+exchange international tech landscape Ericsson ’s activity third country
 
 18/03/2025
 state play US trade relation
 
 14/04/2025
-discussion recent upcoming initiative Artificial Intelligence AI advance connectivity cloud semi conductor
+discussion recent upcoming initiative Artificial Intelligence AI advanced connectivity cloud semi conductor
 
 03/06/2025
-strengthen swedish voice policymaking process
+strengthen swedish voice policymake process
 
 18/06/2025
-follow meet Executive Vice President Henna Virkkunen Ericsson
+follow meeting Executive Vice President Henna Virkkunen Ericsson
 
 18/06/2025
 private sector Global Gateway framework
@@ -364,5 +364,29 @@ simplification
 18/06/2025
 advanced connectivity policy include 5 g 6 g
 
+18/06/2025
+Ericsson ’s contribution Global Gateway project
+
 08/07/2025
 impact industrial policy global trade tension digital infrastructure market
+
+15/09/2025
+current priority
+
+19/09/2025
+open RAN security
+
+19/09/2025
+Revision Regulation 1025/2012
+
+19/09/2025
+open RAN security
+
+19/09/2025
+exchange view Executive Vice President priority
+
+19/09/2025
+open RAN security
+
+02/10/2025
+5 g deployment Tech Business Offer

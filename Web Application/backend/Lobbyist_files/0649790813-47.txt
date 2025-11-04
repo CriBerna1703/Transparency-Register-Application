@@ -92,7 +92,7 @@ ITS
 connected automated driving
 
 12/01/2016
-Emissions and how to build the future formobility connecting decarbonisation with digitalisation of transport solutions
+Emissions and how to build the future for mobility connecting decarbonisation with digitalisation of transport solutions
 
 21/01/2016
 Decarbonisation of transport
@@ -137,7 +137,7 @@ Occupational health and safety
 Prep meeting for High Level Mtg
 
 16/09/2016
-data, standardisation,events
+data, standardisation, events
 
 06/10/2016
 Meeting with ACEA Board members
@@ -299,7 +299,7 @@ mobility package
 Safeguard measures / steel tariffs
 
 05/11/2018
-Exchange on EU safeguard measures on steel and cooperationwith China on car standards
+Exchange on EU safeguard measures on steel and cooperation with China on car standards
 
 12/11/2018
 Implementation of the European Battery Alliance and regional development
@@ -380,7 +380,7 @@ Automotive industry and green deal
 Introductory meeting and presentation of ACEA concerns about future of automation and the Impact of Covid-19 on industry in general
 
 07/05/2020
-Videoconference meeting on the situation of the automotive industry in the crisis, theCommission response to the crisis and initiatives on up-skilling and reskilling.
+Videoconference meeting on the situation of the automotive industry in the crisis, the Commission response to the crisis and initiatives on up-skilling and reskilling.
 
 13/05/2020
 Automotive industry
@@ -521,7 +521,7 @@ Decarbonisation of the automotive sector
 Supply chain, Market access.
 
 18/10/2022
-Access to in-vehicle data,Data act, MVBER
+Access to in-vehicle data, Data act, MVBER
 
 19/10/2022
 Automotive industry
@@ -632,6 +632,9 @@ Data / vehicle of the future
 Automotive sector
 
 20/09/2024
+Situation of the EU automotive industry, EU anti-subsidy investigation into BEVs from China
+
+20/09/2024
 Meeting with European car manufacturers
 
 23/09/2024
@@ -651,6 +654,9 @@ Examining the critical enabling conditions for the transition — from rechargin
 
 20/11/2024
 High Level European Car Summit, organised by EPP and ACEA. EVP Dombrovskis was invited to give a speech.
+
+20/11/2024
+Ongoing negotiations between EU Commission and Chinese government in the context of EU anti- subsidy measures against imports of Battery Electric Vehicles form China; overall competitiveness of the EU automotive sector
 
 27/11/2024
 automobile sector issues
@@ -701,7 +707,7 @@ Invitation to a High-Level Meeting on Technological and Digital Innovation – S
 Automotive Action Plan
 
 19/02/2025
-Automotive TF REACHfollow up on art 4.2 of the POPs Regulation
+Automotive TF REACH follow up on art 4.2 of the POPs Regulation
 
 19/02/2025
 ACEA’s recommendations for the EU Industrial Action Plan for Automotive Sector
@@ -715,6 +721,12 @@ Exchange of views on the situation of the automotive industry
 19/02/2025
 Dialogue on the future of the automotive sector – Battery Session
 
+21/02/2025
+High-level meeting with the Automotive industry
+
+03/03/2025
+EU Automotive Action Plan
+
 03/03/2025
 Exchange of views on circular economy and sustainability in the automotive sector
 
@@ -727,11 +739,11 @@ Euro 7 implementation, access to battery data
 18/03/2025
 US and trade relations with China
 
+18/03/2025
+Meeting with ACEA (European Automobile Manufacturers’ Association)
+
 19/03/2025
 Industrial Action Plan for the European automotive sector and competitiveness of the sector
-
-20/03/2025
-Water
 
 24/03/2025
 Review of the Technology Transfer Block Exemption Regulation (TTBER) and its accompanying Guidelines – questions on the call for evidence and public consultation questionnaire
@@ -751,8 +763,17 @@ Exchange of views on the regulatory simplification for the automotive sector
 31/03/2025
 Simplification
 
+02/04/2025
+Automotive
+
 04/04/2025
 Relationship with the US and impact on automobile sector
+
+10/04/2025
+Trade policy in the automotive sector
+
+10/04/2025
+Impact of US tariffs
 
 10/04/2025
 Impact of US tariffs
@@ -762,4 +783,85 @@ Exchange of views on the regulatory simplification for the automotive sector –
 
 29/04/2025
 Exchange of views on the regulatory simplification for the automotive sector – second meeting
+
+14/05/2025
+Discussion of developments in China's export control, data, and investment
+
+21/05/2025
+ACEA TF REACH Meeting
+
+21/05/2025
+Relationship with the US and impact on automobile sector China
+
+27/05/2025
+Discussion about ACEA’s contribution to the ongoing work on the Guidance document related to in-vehicle data
+
+28/05/2025
+Choose Europe agenda, and the Industrial Decarbonisation Accelerator Act
+
+10/06/2025
+Technical regulations for motor vehicles
+
+17/06/2025
+Meeting between DG TRADE and ACEA to prepare for the INTA hearing on the EU- Mercosur Agreement.
+
+25/06/2025
+Automotive Action Plan / TRADE
+
+25/06/2025
+Automotive
+
+26/06/2025
+Exchange on the preparation of the Industrial Decarbonisation Accelerator Act in relation to the automotive industry
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+08/07/2025
+E20 and FQD
+
+11/07/2025
+Implementation dialogue on customs legislation - Rules of origin
+
+17/07/2025
+Exchange on situation of automotive sector
+
+17/07/2025
+Corporate Fleets strategic dialogue
+
+22/07/2025
+Challenges of EU automotive manufacturers in China
+
+23/07/2025
+Competitiveness Simplification agenda
+
+25/08/2025
+to follow
+
+03/09/2025
+Clean mobility
+
+08/09/2025
+Implementation of Automotive Action Plan and Automotive Dialogue
+
+08/09/2025
+Various matters relevant for the EU automotive sector.
+
+17/09/2025
+Upcoming meeting on HDV
+
+25/09/2025
+HDV Task Force meeting
+
+30/09/2025
+Simplification, Small Cars Initiative
+
+30/09/2025
+Simplification, Small Cars Initiative
+
+08/10/2025
+US and EU Trade Relations concerning tariff rates on the European heavy-duty vehicles sector
+
+22/10/2025
+Open public consultation on the CO2 standards for light duty vehicles
 

@@ -1,11 +1,11 @@
 06/01/2015
+H2020
+
+06/01/2015
+H2020
+
+06/01/2015
 Politic orientation of the new Commission, Access to vehicles data + C-ITS Platform, Climate change: post 2020 + competitiveness of the sector
-
-06/01/2015
-H2020
-
-06/01/2015
-H2020
 
 16/04/2015
 Automotive Industry
@@ -29,13 +29,13 @@ New regulation on cars and lorries
 Connected and Automated Driving
 
 15/07/2016
+Circular Economy Package
+
+15/07/2016
+Circular Economy Package
+
+15/07/2016
 decarbonisation and diigitalisation of transport
-
-15/07/2016
-Circular Economy Package
-
-15/07/2016
-Circular Economy Package
 
 27/09/2016
 Car industry
@@ -80,16 +80,16 @@ Possible safeguards
 EU-US Trade relations
 
 29/01/2019
-the future of the automotive industry, European competitiveness /industrial policy, the ECJ ruling on Euro6 conformity factors
-
-29/01/2019
 Automotive suppliers’ industry
 
-11/02/2019
-R&I in Mobility
+29/01/2019
+the future of the automotive industry, European competitiveness /industrial policy, the ECJ ruling on Euro6 conformity factors
 
 11/02/2019
 Road safety
+
+11/02/2019
+R&I in Mobility
 
 17/07/2019
 Future of Europe
@@ -101,10 +101,10 @@ EU ROAD SAFETY EXCHANGE EVENT - 09/10 /2019
 Sustainable Mobility
 
 14/10/2019
-Future of Europe
+Sustainability, climate neutrality
 
 14/10/2019
-Sustainability, climate neutrality
+Future of Europe
 
 02/12/2019
 Courtesy meeting to introduce themselves and present their priorities
@@ -125,10 +125,10 @@ the automotive industry ecosystem - recovery measures
 Videoconference meeting on the situation of the automotive industry in the crisis, the Commission response to the crisis and initiatives on up-skilling and reskilling.
 
 13/05/2020
-Recovery and Green Deal in Transport
+Automotive industry
 
 13/05/2020
-Automotive industry
+Recovery and Green Deal in Transport
 
 30/06/2020
 Introduction to automotive suppliers industry, political priorities
@@ -191,7 +191,7 @@ Meeting on skills and transitions
 Green transition in automotive
 
 06/10/2022
-Transport policy:emission limits
+Transport policy: emission limits
 
 20/12/2022
 CO2 standards trucks and buses
@@ -227,16 +227,16 @@ EU trade policy priorities
 Exchange on NZIA and Carbon neutral vehicles
 
 04/06/2024
-Discussion on preparation of delegated act on conditions to access data for repairand maintenance activities
+Discussion on preparation of delegated act on conditions to access data for repair and maintenance activities
 
 10/09/2024
 Preventing the circumvention of EU sanctions on sensitive goods
 
 11/09/2024
-EU Research and Innovation Policy
+- European Research & Innovation Policy - Partnerships
 
 11/09/2024
-- European Research & Innovation Policy - Partnerships
+EU Research and Innovation Policy
 
 07/11/2024
 Ambrosetti Club Europe - Transport and mobility priorities
@@ -272,13 +272,16 @@ Action plan for automotive industry
 Discussion on IPCEI candidates in the automotive industry
 
 19/02/2025
-Exchange of views on the situation of the automotive industry
+Dialogue on the future of the automotive sector – Suppliers Session
 
 19/02/2025
-Dialogue on the future of the automotive sector – Suppliers Session
+Exchange of views on the situation of the automotive industry
 
 21/02/2025
 High-level meeting with the Automotive industry
+
+27/02/2025
+to follow
 
 13/03/2025
 Regulatory topics concerning automotive industry
@@ -291,4 +294,52 @@ Exchange on short- and medium term challenges faced by vehicle component manufac
 
 10/04/2025
 Impact of US tariffs
+
+10/04/2025
+Impact of US tariffs
+
+14/05/2025
+Automotive
+
+16/05/2025
+Meeting with CLEPA
+
+16/05/2025
+• EU support for automotive sector • Challenges for the EU automotive sector • Current and future automotive relavant partnerships under Horizon Europe
+
+20/05/2025
+Implementation of automotive action plan
+
+06/06/2025
+CLEPA Member’s Day
+
+25/06/2025
+Automotive
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+09/07/2025
+Multistakeholder event on European semiconductor policies and investment
+
+15/07/2025
+Exchange of views on the regulatory simplification for the automotive sector
+
+15/07/2025
+Exchange of views on the regulatory simplification for the automotive sector
+
+17/07/2025
+Corporate Fleets strategic dialogue
+
+04/09/2025
+Strategic Dialogue on the European automotive industry
+
+29/09/2025
+Exchange on issues related to the current trade context
+
+08/10/2025
+US and EU Trade Relations concerning tariff rates on the European heavy-duty vehicles sector
 

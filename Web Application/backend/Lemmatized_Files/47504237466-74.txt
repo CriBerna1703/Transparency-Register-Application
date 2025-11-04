@@ -1,5 +1,5 @@
 04/06/2015
-meeting exchange view call summer package
+meeting exchange view call Summer package
 
 08/04/2016
 future electricity market Electricity Market Design
@@ -14,13 +14,13 @@ energy sector
 Energy Market reform
 
 18/01/2019
-late development Energy sector Spain Europe
+late development energy sector Spain Europe
 
 10/12/2019
 Clean Energy Islands
 
 21/02/2022
-spike energy price ecs toolbox Fit 55 proposal taxonomy
+spike energy price ec toolbox Fit 55 proposal taxonomy
 
 27/04/2022
 electricity market design proposal spanish portuguese government
@@ -36,3 +36,6 @@ discussion implementation repower objective Portugal
 
 19/05/2025
 Blackout Spain 28 April 2025
+
+18/09/2025
+electrification tripartite contract storage flexibility grid

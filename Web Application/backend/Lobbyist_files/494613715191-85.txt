@@ -8,10 +8,10 @@ ET 2020 Framework
 Digital Single Market
 
 27/02/2015
-General developments in digitalisation
+CISCO: general developments in digitalisation
 
 27/02/2015
-CISCO: general developments in digitalisation
+General developments in digitalisation
 
 17/04/2015
 Internet of Everything / digital transformation
@@ -35,10 +35,10 @@ DSM
 ICT standardisation
 
 20/01/2016
-DSM, investments in Europe, AVMS directive, copyright, platforms, TDM, big data, safe harbour
+DSM
 
 20/01/2016
-DSM
+DSM, investments in Europe, AVMS directive, copyright, platforms, TDM, big data, safe harbour
 
 20/01/2016
 Digital Single Market
@@ -77,13 +77,13 @@ Transatlantic relations
 Telecoms code, spectrum, data flows
 
 02/03/2017
+Gender equality, Privacy Shiled, GDPR
+
+02/03/2017
 Digital Single Market
 
 02/03/2017
 MFF
-
-02/03/2017
-Gender equality, Privacy Shiled, GDPR
 
 10/05/2017
 Privacy, Human rights, Transatlantic relationship
@@ -107,13 +107,13 @@ Meeting to discuss digital taxation
 Trade and technology development
 
 08/03/2018
-Europe digitization and support to the start-up ecosystem
-
-08/03/2018
 Free flow of data, EU-US Privacy Shield, Artificial Intelligence
 
 08/03/2018
 Cybersecurity
+
+08/03/2018
+Europe digitization and support to the start-up ecosystem
 
 05/04/2018
 e-privacy regulation /follow-up
@@ -140,13 +140,13 @@ MFF
 5G security
 
 07/05/2019
-Cyber security
+DSM, cybersecurity
 
 07/05/2019
 Cibersecurity
 
 07/05/2019
-DSM, cybersecurity
+Cyber security
 
 07/05/2019
 cyber security
@@ -256,6 +256,36 @@ State of play on US-EU trade relations
 08/04/2025
 State of play on US-EU trade relations
 
+23/04/2025
+Exchange of views on the upcoming Digital Networks Act (DNA) and the Cloud and AI development Act (CADA)
+
 25/04/2025
 Second meeting of the European Startup and Scaleup Forum. Discussion on the draft building blocks of the EU Startup and Scaleup Strategy structured along the identified obstacles and possible solutions.
+
+12/06/2025
+Challenges and opportunities in Europe’s Water Sector
+
+26/06/2025
+Business Software Alliance and its members consultation on the EU’s upcoming Cloud and AI Development Act.
+
+10/07/2025
+EU-US trade relations
+
+10/07/2025
+Digital Omnibus
+
+10/07/2025
+Cisco’s engagement in AI and datacentre infrastructure and the relating EU digital policy initiatives
+
+30/09/2025
+Exchange of views on the simplification of GDPR and CSDDD
+
+30/09/2025
+CAIDA and Internet Governance
+
+30/09/2025
+Exchange of views on Cisco's activities and the Commission's priorities in digital
+
+16/10/2025
+DNA, the upper 6 GHz band in Europe
 

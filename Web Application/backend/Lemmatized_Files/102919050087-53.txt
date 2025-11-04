@@ -3,3 +3,9 @@ solvency II CRD CMU
 
 24/06/2025
 Digital euro
+
+09/09/2025
+Digital Euro FIDA
+
+16/10/2025
+exchange view Implementation Central Electronic System payment information cesop

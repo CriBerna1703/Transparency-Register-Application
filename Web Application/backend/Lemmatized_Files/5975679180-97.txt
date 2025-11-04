@@ -1,17 +1,17 @@
 19/05/2015
-money market fund
+Money Market fund
 
 20/10/2015
 SST securitisation
 
 26/04/2016
-package retail insurance base investment product
+packaged retail insurance base investment product
 
 17/01/2017
-priip level ii
+PRIIPS level II
 
 17/01/2017
-PRIIPS level ii
+PRIIPs level II
 
 26/06/2017
 Pan Personal Pension initiative
@@ -38,7 +38,7 @@ Digitalisation Artificial Intelligence Sustainable Finance
 Capital Markets
 
 07/12/2020
-Keynote speech Assett Management Policy
+keynote speech Assett Management Policy
 
 11/10/2021
 Retail Investment Strategy
@@ -47,7 +47,7 @@ Retail Investment Strategy
 asset management distribution model Data provider CMU package
 
 12/01/2022
-Retail Investments Strategy
+Retail Investments strategy
 
 14/03/2023
 retail investment strategy
@@ -83,7 +83,7 @@ retail investment strategy Savings Investment
 exchange view Omnibus Level 1 proposal ECG datum availability asset manager
 
 28/04/2025
-Omnibus Simplification package proposal csrd esr
+Omnibus Simplification package proposal csrd ESRS
 
 24/06/2025
-CSRD Omnibus sfdr revision
+csrd Omnibus SFDR revision

@@ -2,7 +2,10 @@
 simple transparent standardised securitisation
 
 17/02/2025
-Exchange CEO Prime Collateralised Securities PCS securitisation
+exchange CEO Prime Collateralised Securities PCS securitisation
 
 17/07/2025
 securitisation package
+
+13/10/2025
+securitisation CRR calibration

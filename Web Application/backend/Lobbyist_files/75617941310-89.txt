@@ -8,7 +8,7 @@ European research policy
 Alzheimer's disease: research to prevent Alzheimer
 
 22/02/2018
-EU Intellectual PropertyRights framework
+EU Intellectual Property Rights framework
 
 02/05/2018
 New deal for consumers – Representative actions proposal
@@ -50,10 +50,10 @@ AI Act, European Health Data Space, Data Act.
 Medical devices legislation and EU sanctions
 
 20/06/2024
-Digitalisation of healthcare.
+AI technology and their implications for the health sector
 
 20/06/2024
-AI technology and their implications for the health sector
+Digitalisation of healthcare.
 
 20/03/2025
 J&J requested the meeting to address issues related to the recent adoption of the Commission proposal for a Critical Medicines Act (CMA) and other activities envisaged by the Commission which are deemed relevant to the pharmaceutical industry.
@@ -63,4 +63,13 @@ Discussion on Artificial Intelligence (AI), MedTech technologies and digital hea
 
 04/04/2025
 Scientific roundtable discussion between the European Commission’s Joint Research Centre and the pharmaceutical industry on the topic of leveraging health data and data sciences for innovation
+
+03/06/2025
+Exchange of views on application of the AI Act to the healthcare sector.
+
+25/09/2025
+EU – US relations
+
+17/10/2025
+EU – US relations
 

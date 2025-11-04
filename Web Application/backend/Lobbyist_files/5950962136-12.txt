@@ -116,7 +116,7 @@ Copyright
 Copyright
 
 17/01/2020
-newspaper/magazine sectoral developments,platform distribution, ePrivacy, digital services
+newspaper/magazine sectoral developments, platform distribution, ePrivacy, digital services
 
 24/02/2020
 Digital policy
@@ -161,10 +161,10 @@ E-Privacy Regulation
 digital levy
 
 07/10/2021
-Media remuneration in DMA
+Digital Services Act, Digital Markets Act
 
 07/10/2021
-Digital Services Act, Digital Markets Act
+Media remuneration in DMA
 
 15/03/2022
 Media Freedom Act
@@ -216,4 +216,13 @@ Code of Conduct on Online Advertising – Workshop 3
 
 19/03/2025
 Code of Conduct on Online Advertising – Workshop 4
+
+22/05/2025
+Consultation of media representatives and associations in the context of the preparation of the upcoming European Democracy Shield (“focus group”).
+
+03/09/2025
+Exchange of views on the forthcoming Digital Fairness Act and Democracy Shield
+
+15/09/2025
+EU digital policy
 

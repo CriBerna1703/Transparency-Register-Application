@@ -5,7 +5,7 @@ infrastructure policy Meeting Mr John Prime
 interconnection
 
 07/01/2016
-interconnections innovation
+interconnection innovation
 
 15/02/2016
 interconnection energy policy
@@ -17,19 +17,19 @@ North Sea Link
 Market Design
 
 20/06/2016
-Market Design infrastructure project
+market Design infrastructure project
 
 20/09/2016
 56039866688 26
 
 28/09/2016
-Energy Policy
+energy policy
 
 29/09/2016
-energy research Innovation competitiveness
+energy research innovation competitiveness
 
 24/11/2016
-cybersecurity issue Critical Infrastructure Protection
+cybersecurity issue Critical Infrastructure protection
 
 09/02/2017
 interconnection
@@ -38,7 +38,7 @@ interconnection
 security issue
 
 02/10/2017
-Electricity Markets
+Electricity market
 
 21/11/2017
 Cybersecurity Package
@@ -56,4 +56,7 @@ US Task Force Convening energy efficiency energy saving California Energy Commis
 US Task Force Best practice Energy Savings Flexibility participant Cleantech Cluster Energy ELVIA DSO Entity California Energy Commission ASE AEE ComEd Octopus Energy OPower Uplight
 
 15/11/2023
-roundtable Europe ’s Energy Future REEF
+Roundtable Europe ’s Energy Future reef
+
+22/07/2025
+exchange energy policy

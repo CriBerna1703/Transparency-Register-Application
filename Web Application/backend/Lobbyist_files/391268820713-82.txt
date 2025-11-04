@@ -2,10 +2,10 @@
 Implementation of the Single-use Plastics Directive
 
 16/03/2021
-Pact for Skills roundtable with the textile, clothing, leather and footwear sectors.
+Skills roundtable on textile
 
 16/03/2021
-Skills roundtable on textile
+Pact for Skills roundtable with the textile, clothing, leather and footwear sectors.
 
 03/05/2022
 Circular economy transition, microplastics and bio-based plastics
@@ -18,4 +18,10 @@ To exchange on the commitments of the EU Strategy for Sustainable and Circular T
 
 05/03/2024
 Explanation of EU State Aid rules for activities in the field of greening /sustainability.
+
+13/05/2025
+Ecodesign for Sustainable Products Regulation (ESPR)
+
+02/06/2025
+Textiles
 

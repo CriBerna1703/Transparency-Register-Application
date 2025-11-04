@@ -47,10 +47,10 @@ Third country aspects of current financial services legislation
 MiFIR, EMIR, AIFMD
 
 27/02/2019
-EU Swiss relations
+Relations with 3rd countries for CONNECT issues incl. Cyber- resilience, DSM, Free flow of data, Blockchain
 
 27/02/2019
-Relations with 3rd countries for CONNECT issues incl. Cyber- resilience, DSM, Free flow of data, Blockchain
+EU Swiss relations
 
 04/06/2019
 MiFID, PRIIPs, BASEL
@@ -59,7 +59,7 @@ MiFID, PRIIPs, BASEL
 Update on international tax issues
 
 16/12/2019
-General discussion on Commission's priorities; Commission’s approachto third countries in Markets in Financial Instruments Directive and Capital requirements directive
+General discussion on Commission's priorities; Commission’s approach to third countries in Markets in Financial Instruments Directive and Capital requirements directive
 
 04/02/2020
 Digital finance
@@ -87,4 +87,16 @@ T+1 implementation, Basel III, EU Capital Markets Union
 
 30/10/2024
 • Future of CMU project and market access • Review of client categorisation framework to support the CMU • Basel III implementation in the EU, Switzerland and other jurisdictions
+
+15/05/2025
+Global economic and financial outlook and EU developments
+
+03/06/2025
+Discussion on sustainable finance developments in the EU and Switzerland's priorities
+
+06/06/2025
+Sustainability Omnibus
+
+15/07/2025
+ESRS
 

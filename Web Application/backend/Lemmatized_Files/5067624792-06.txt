@@ -8,7 +8,7 @@ gamble
 drone
 
 09/12/2020
-investment Migration
+Investment Migration
 
 27/06/2022
 transition circular economy fibre base packaging
@@ -17,7 +17,7 @@ transition circular economy fibre base packaging
 circular economy revision packaging rule
 
 21/03/2023
-YARA International share concern dutch government might impose RFNBO target ammonia facility even though 100 CO2 capture
+YARA International share concern dutch government might impose rfnbo target ammonia facility even though 100 co2 capture
 
 21/04/2023
 energy sector priority 2023
@@ -27,3 +27,12 @@ Action Plan automotive sector
 
 06/05/2025
 5th Defence Security Conference
+
+12/06/2025
+regulation battery
+
+31/07/2025
+Business Bridge Europe conference
+
+23/09/2025
+US relation

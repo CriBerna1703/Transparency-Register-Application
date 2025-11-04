@@ -1,0 +1,3 @@
+12/09/2025
+Access to vehicle battery state of health data
+

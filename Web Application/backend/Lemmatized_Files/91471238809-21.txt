@@ -20,7 +20,7 @@ copyright
 dsm
 
 29/02/2016
-Spectrum UHF band
+spectrum UHF band
 
 14/10/2016
 spectrum policy
@@ -32,10 +32,10 @@ copyright
 Digital Market
 
 06/09/2018
-copyright Directive Fake news Disinformation
+copyright directive Fake news disinformation
 
 03/04/2020
-impact du COVID 19 sur le secteur audiovisuel et medium
+impact du covid 19 sur le secteur audiovisuel et medium
 
 21/04/2020
 economic impact covid 19
@@ -50,7 +50,7 @@ emfa
 labour skill shortage EUs social target Pillar Social Rights Action Plan
 
 24/01/2025
-exchange view medium relate policy include Media Freedom Act EMFA consumer protection
+exchange view medium relate policy include Media Freedom Act emfa consumer protection
 
 04/03/2025
 Code Conduct Online Advertising Workshop 1
@@ -63,3 +63,9 @@ Code Conduct Online Advertising Workshop 3
 
 19/03/2025
 Code Conduct Online Advertising Workshop 4
+
+04/09/2025
+roundtable representative media industry
+
+04/09/2025
+meet commercial broadcaster

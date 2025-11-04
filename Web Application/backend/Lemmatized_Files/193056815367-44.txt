@@ -8,7 +8,7 @@ introductory meeting
 Meeting Amadeus representative
 
 14/03/2016
-aviation Strategy White Paper Transport Air Passenger right
+Aviation Strategy White Paper Transport Air Passenger right
 
 27/09/2016
 digitalisation transport
@@ -17,7 +17,7 @@ digitalisation transport
 CRS Shift2Rail
 
 31/10/2017
-update industry development engagement COM
+update industry development engagement com
 
 25/04/2018
 aviation issue
@@ -32,16 +32,16 @@ Digital stategy
 covid 19 economic impact tourism industry
 
 22/04/2020
-Impact Covid 19 Tourism follow meeting
+impact Covid 19 Tourism follow meeting
 
 23/06/2020
-DSA scope rule gatekeeper platform B2C vs B2B access processable data rule datum share reassuring cloud data location international user due less aggressive datum localisation rule
+DSA scope rule gatekeeper platform B2C vs B2B access processable datum rule datum share reassure cloud datum location international user due less aggressive datum localisation rule
 
 23/06/2020
-digital issue
+Digital issue
 
 29/06/2020
-global player digital 5 g deployment condition foreign subsidy white paper cloud adoption Europe switch possibility contestability cloud market need clear standard security requirement data governance
+global player digital 5 g deployment condition foreign subsidy white paper cloud adoption Europe switch possibility contestability cloud market need clear standard security requirement datum governance
 
 03/07/2020
 telecom connectivité
@@ -56,10 +56,10 @@ Pact Skills roundtable tourism sector
 DMA
 
 16/12/2020
-Roundtable Cloud Alliance
+roundtable Cloud Alliance
 
 07/05/2021
-Cloud Data Alliance CEO roundtable
+Cloud Data Alliance CEO Roundtable
 
 03/11/2021
 Digital Policy issue e g Sovereign Cloud AI DMA DSA Cybersecurity overall digital green transition
@@ -86,10 +86,10 @@ transport
 industry research innovation
 
 29/11/2023
-Amadeus request meeting discuss future transport relate initiative level benefit impact consumer DG MOVE ’s initiative Multimodal Digital Mobility Services mdm highly support
+amadeus request meeting discuss future transport relate initiative level benefit impact consumer DG MOVE ’s initiative Multimodal Digital Mobility Services MDMS highly support
 
 28/01/2025
-Data Spaces data sharing tourism mobility sector
+Data Spaces datum share tourism mobility sector
 
 01/04/2025
 Plenary Feedback round previously hold GGIA Working Group session 9 different thematical group regard Latin America Caribbean LAC
@@ -98,10 +98,13 @@ Plenary Feedback round previously hold GGIA Working Group session 9 different th
 Cloud measure Data Act Cloud relate ipcei
 
 16/06/2025
-exchange view online ticket market
+exchange view online ticketing market
 
 01/07/2025
 exchange view International Digital Strategy private sector engagement
 
 01/07/2025
-digital legislation
+Digital legislation
+
+29/09/2025
+GDPR simplification

@@ -26,7 +26,7 @@ DSM TSM
 datum protection reform
 
 12/05/2015
-Telecom market
+Telecom Market
 
 18/05/2015
 dsm
@@ -47,13 +47,13 @@ dsm
 dsm
 
 16/09/2015
-research DSM
+Research DSM
 
 24/09/2015
 Teco review connectivity
 
 24/09/2015
-Presentation Sustainability strategy Telefonica
+presentation Sustainability strategy Telefonica
 
 24/09/2015
 dsm
@@ -65,7 +65,7 @@ Digital skill apprenticeship
 dsm
 
 14/10/2015
-digital trade
+Digital trade
 
 22/10/2015
 DSM telecom review
@@ -95,7 +95,7 @@ telco policy
 telco policy
 
 22/02/2016
-dsm review telecom regulatory framework
+DSM review telecom regulatory framework
 
 23/02/2016
 DSM Strategy investment digitalisation industry
@@ -116,7 +116,7 @@ EFSI
 Digital Market
 
 03/05/2016
-leadership Telefónica Ten proposal build strong Digital Europe document
+leadership Telefónica ten proposal build strong Digital Europe document
 
 07/06/2016
 copyright
@@ -134,7 +134,7 @@ discussion initiative ProFuturo promote quality equitable education child young 
 discussion mission Buenos Aires
 
 08/11/2016
-digital package negotiation Council Parliament
+Digital package negotiation Council Parliament
 
 08/11/2016
 eprivacy directive
@@ -146,7 +146,7 @@ roam telecom review
 ePrivacy Review
 
 27/02/2017
-5 G roam spectrum investment consolidation
+5 g roam spectrum investment consolidation
 
 07/03/2017
 roam telecom review e privacy
@@ -158,10 +158,10 @@ negotiation Mercosur
 telecommunication
 
 05/10/2017
-Presentation ProFuturo project school digitalisation Africa Asia Latin America
+presentation ProFuturo project school digitalisation Africa Asia Latin America
 
 19/10/2017
-ePrivacy regulation
+ePrivacy Regulation
 
 20/11/2017
 e privacy GDPR
@@ -176,7 +176,7 @@ dsm
 Digital Market
 
 23/02/2018
-e Privacy Fundamental Rights Privacy datum protection
+e privacy Fundamental Rights Privacy datum protection
 
 26/02/2018
 Code ePrivacy net neutrality
@@ -200,10 +200,10 @@ well regulation future telecom digital policy
 Digital Agenda Circular Economy
 
 26/02/2019
-Dialogue industry possibility opportunity industry leadership
+dialogue industry possibility opportunity industry leadership
 
 25/03/2019
-datum Portability
+Data portability
 
 04/06/2019
 market evolution Germany
@@ -215,13 +215,13 @@ discussion private sector engagement education emergency
 late development field Digital policy
 
 02/07/2019
-digital policy
+Digital policy
 
 05/09/2019
-future funding Media platform
+future fund medium platform
 
 02/12/2019
-meet ceo Telecom sector
+meeting ceo Telecom sector
 
 03/12/2019
 spectrum 5 g deployment
@@ -230,7 +230,7 @@ spectrum 5 g deployment
 digital policy
 
 22/01/2020
-digital agenda
+Digital agenda
 
 22/01/2020
 External Digital Connectivity
@@ -248,31 +248,31 @@ telecom market development
 Telefonica Liberty Gobal agreement virtual
 
 19/10/2020
-Webex meeting discuss possible implication Brexit negotiation Telefonica
+webex meeting discuss possible implication Brexit negotiation Telefonica
 
 24/11/2020
 Digital Services Act Digital Markets Act
 
 09/12/2020
-digital agenda digital bill right
+Digital agenda digital bill right
 
 16/12/2020
-Roundtable Cloud Alliance
+roundtable Cloud Alliance
 
 02/02/2021
 future telecom industry
 
 27/05/2021
-public funding 5 G rural area Spain cybersecurity
+public funding 5 g rural area Spain cybersecurity
 
 31/05/2021
-5 G deployment meet target Digital Decade
+5 g deployment meet target Digital Decade
 
 04/06/2021
 5 g deployment
 
 08/06/2021
-Next Digital Decade connectivity target virtual meeting
+Next Digital decade connectivity target virtual meeting
 
 14/09/2021
 emerge challenge telecommunication provider
@@ -290,22 +290,22 @@ contribution telecom Digital Decade
 current security issue
 
 12/01/2022
-e evidence e privacy datum act data retention
+e evidence e privacy data act datum retention
 
 12/01/2022
-e evidence e privacy Data Act datum retention
+e evidence e privacy Data Act data retention
 
 15/03/2022
 digital policy
 
 08/04/2022
-endorse joint statement roam International call Ukraine
+endorse joint statement roam international call Ukraine
 
 21/04/2022
 development telecom market
 
 17/05/2022
-Update Telecom industry issue
+update Telecom industry issue
 
 06/09/2022
 meet Green Digital Coalition Main topic state play sustainable digitalization
@@ -329,7 +329,7 @@ Telefonicas Infrastructure Connectivity package
 future connectivity infrastructure
 
 11/10/2022
-digital issue
+Digital issue
 
 11/10/2022
 telecom competition policy
@@ -344,7 +344,7 @@ discussion regard agenda Latin America Caribbean LAC Digital Alliance well inves
 Latin America Caribbean
 
 10/01/2023
-Taxonomy ESG rating csrd
+taxonomy ESG rating csrd
 
 11/01/2023
 DG Mr Pablo de Carvajal want discuss engagement plan Summit Latin America share experience region focus regulatory issue cooperation
@@ -359,7 +359,7 @@ preparation meeting 10/2
 connectivity package
 
 10/02/2023
-Échange sur la situation du secteur des télécommunication en Europe se défis et ses opportunités
+Échange sur la situation du secteur des télécommunications en Europe ses défis et ses opportunités
 
 10/02/2023
 future telecom sector
@@ -380,10 +380,10 @@ Telecom policy
 digital policy
 
 30/06/2023
-discussion taxation regulation telecommunications sector
+discussion taxation regulation telecommunication sector
 
 05/07/2023
-physical meeting tax policy
+physical meeting Tax policy
 
 13/10/2023
 network investment revenue market consolidation ex ante regulation
@@ -398,7 +398,7 @@ current market development view future sector
 hear interest representative view competition telecom policy perspective clean competitive transition policy
 
 29/01/2025
-evolution electronic communication market Germany
+Evolution electronic communication market Germany
 
 19/02/2025
 update process include Ukraine Moldova Roam like Home EU RLAH area
@@ -422,16 +422,19 @@ IPCEI CIS Cloud AI development act
 exchange view international tax issue
 
 01/04/2025
-Chips Act Telecom
+chip Act Telecom
 
 01/04/2025
 Plenary Feedback round previously hold GGIA Working Group session 9 different thematical group regard Latin America Caribbean LAC
+
+10/04/2025
+GSMA Commission methodology mapping qos 5 g network
 
 15/04/2025
 implementation detail possible inclusion Ukraine Roam like Home EU RLAH area
 
 22/04/2025
-datum protection e privacy simplification
+data protection e privacy simplification
 
 23/04/2025
 telecom sector relevant aspect industrial competition policy
@@ -440,16 +443,16 @@ telecom sector relevant aspect industrial competition policy
 exchange view AI Factories AI Gigafactories initiative
 
 12/05/2025
-frame ongoing debate defence security want discuss role Telefónica telecommunications sector play secure critical infrastructure
+frame ongoing debate defence security want discuss role Telefónica telecommunication sector play secure critical infrastructure
 
 12/05/2025
-meet Economic Theory Competition Participants Telefonica Juan MONTERO Maria Amaia betelu BAZO Fernando HERRERA GONZALEZ Beatriz SANZ FERNANDEZ VEGA
+meet Economic Theory Competition Participants Telefonica Juan MONTERO Maria Amaia BETELU BAZO Fernando HERRERA GONZALEZ Beatriz SANZ FERNANDEZ VEGA
 
 13/05/2025
 macroeconomic fiscal outlook spanish economy
 
 05/06/2025
-Courtesy meeting discussion Commission initiative Data Retention
+courtesy meeting discussion Commission initiative Data Retention
 
 18/06/2025
 advanced connectivity policy
@@ -457,5 +460,29 @@ advanced connectivity policy
 18/06/2025
 Telefonica stress opportunity AI deep tech provide mobile service also accompany investment need overcome national fragmentation highlight Draghi report need review net neutrality
 
+27/06/2025
+implementation detail inclusion Ukraine Roam like Home EU RLAH area
+
 15/07/2025
 taxonomy
+
+15/07/2025
+discussion Taxonomy tool drive sustainability telecommunication sector
+
+09/09/2025
+AI Continent Action Plan apply AI Strategy AI Factories Gigafactories
+
+22/09/2025
+exchange view evolution competitiveness role telecom sector
+
+24/09/2025
+economic security critical infrastructure
+
+24/09/2025
+Digital telecom policy
+
+24/09/2025
+competitiveness simplification telecommunication sector
+
+01/10/2025
+exchange view DNA

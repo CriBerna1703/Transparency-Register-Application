@@ -62,7 +62,7 @@ Handshake with Mrs Fox- Martin
 Digitalisation, data, privacy
 
 30/01/2020
-Digital publicadministration
+Digital public administration
 
 10/02/2020
 Data strategy; AI; Green Deal
@@ -110,10 +110,10 @@ Pact for Skills roundtable with the digital transition sector.
 1. Discussion on current and future cooperation between SAP and DIGIT (IT department of the Commission) 2. Lessons learned from the COVID Crisis 3. A view on the Digital Commission
 
 03/11/2021
-Digital issues
+EU Digital Policy issues (e. g. Sovereign Cloud, AI, DMA/DSA, Cybersecurity, the overall digital & green transition)
 
 03/11/2021
-EU Digital Policy issues (e. g. Sovereign Cloud, AI, DMA/DSA, Cybersecurity, the overall digital & green transition)
+Digital issues
 
 07/04/2022
 Meeting with CEO Alliance on Digitising Energy Action Plan
@@ -150,4 +150,31 @@ Exchange of views on policy and innovation actions to harvest the potential of A
 
 28/03/2025
 Global Gateway
+
+26/05/2025
+CSRD Omnibus and carbon accounting
+
+12/06/2025
+Trade policy
+
+19/06/2025
+Exchange of views on the AI Gigafactories initiative
+
+26/06/2025
+Digital sovereignty, Data Act
+
+26/06/2025
+Business Software Alliance and its members consultation on the EU’s upcoming Cloud and AI Development Act.
+
+11/07/2025
+Exchange of views on the implementation of the EU Pillar 2 Directive
+
+16/07/2025
+Exchange of views on the Data Act
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’achat - Relation US/EU
+
+15/10/2025
+Physical meeting - International taxation
 

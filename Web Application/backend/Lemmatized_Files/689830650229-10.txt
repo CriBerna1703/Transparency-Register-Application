@@ -1,2 +1,5 @@
 22/09/2023
-mifir OTC derivative identifier capital market regulatory framework
+MIFIR OTC derivative identifier capital market regulatory framework
+
+02/10/2025
+market Financial Instruments Directive MiFID II regulation mifir

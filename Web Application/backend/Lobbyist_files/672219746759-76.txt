@@ -20,10 +20,10 @@ DSA
 AI
 
 26/09/2023
-AI Act
+Artificial intelligence Act and Artificial intelligence policy developments
 
 26/09/2023
-Artificial intelligence Act and Artificial intelligence policy developments
+AI Act
 
 01/11/2023
 Artificial intelligence
@@ -81,4 +81,43 @@ Exchange of views on the expected evolution of technology, on the AI Continent A
 
 10/04/2025
 Exchange of views on AI regulation
+
+29/04/2025
+Exchange of views on the General-Purpose AI Code of Practice and template for public summary of training data
+
+29/04/2025
+Preparation of possible meeting of EVP Virkkuenn with OpenAI CEO in San Francisco.
+
+22/05/2025
+GPAI Code of Practice
+
+04/06/2025
+Exchange of views on the General-Purpose AI Code of Practice and the Template on training data.
+
+24/06/2025
+EU AI agenda and Open AI activities
+
+02/07/2025
+AI
+
+02/07/2025
+OpenAI
+
+11/09/2025
+Discussion about data- related achievements of the past mandate and brief outlook on the Data Union Strategy
+
+11/09/2025
+Cloud and Internet Governance and AI
+
+24/09/2025
+Exchange of views on cloud and AI policy
+
+24/09/2025
+Competition policy and Digital Markets Act (DMA).
+
+09/10/2025
+AI and Copyright
+
+10/10/2025
+Exchange of views on copyright and AI
 

@@ -59,7 +59,7 @@ Presentation of intel's activities on Cybersecurity and to share views on the fu
 European Partnership for Responsible Minerals (EPRM)
 
 11/03/2021
-Videomeeting: Intel plansin Europe & microelectronics (virtual meeting)
+Videomeeting: Intel plans in Europe & microelectronics (virtual meeting)
 
 25/03/2021
 Investments, innovation, open strategic autonomy
@@ -98,10 +98,10 @@ Cross interview on chips- act
 Semiconductors and Chips Act
 
 09/11/2021
-Semiconductors
+Preparation chips act
 
 09/11/2021
-Preparation chips act
+Semiconductors
 
 14/01/2022
 Semiconductors
@@ -149,7 +149,7 @@ Planned expansion of Intel's chip manufacturing capacity in Europe
 semiconductors
 
 05/06/2023
-Trade & Technology Council, Global Steel and Aluminum Arrangement,Critical Minerals Agreement
+Trade & Technology Council, Global Steel and Aluminum Arrangement, Critical Minerals Agreement
 
 28/09/2023
 Discussion of Intel’s investment plans in the EU
@@ -198,4 +198,7 @@ High-level executive roundtable: preventing the circumvention of EU sanctions on
 
 11/03/2025
 Intel state of play on their European and global semiconductor operations and business development
+
+01/10/2025
+EU – US relations
 

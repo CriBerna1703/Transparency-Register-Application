@@ -2,10 +2,10 @@
 bank structural reform
 
 17/12/2014
-capital market
+CMU
 
 17/12/2014
-CMU
+capital market
 
 16/01/2015
 Capital Markets
@@ -26,10 +26,10 @@ event preparation
 discussion study impact NSFR capital market
 
 10/04/2015
-Markets Financial Instruments directive
+market Financial Instruments directive
 
 16/04/2015
-Markets Financial Instruments directive
+market Financial Instruments directive
 
 17/07/2015
 Capital Markets
@@ -41,19 +41,19 @@ Financial Policy
 securitisation
 
 11/01/2016
-joint meeting Markets Financial Instruments Directive level2
-
-27/01/2016
-investment plan
+joint meeting Markets Financial Instruments directive level2
 
 27/01/2016
 Capital Markets
+
+27/01/2016
+investment plan
 
 18/04/2016
 Securitisation Banking prudential issue
 
 05/07/2016
-finance Innovation
+Finance Innovation
 
 20/09/2016
 Basel
@@ -80,10 +80,10 @@ CRD5 package
 Banking Package ESA review
 
 07/03/2017
-Keynote speech Conference Shortage Risk Capital Europes High Growth
+Better Regulation Capital Markets Transparency
 
 07/03/2017
-well Regulation Capital Markets Transparency
+Keynote speech Conference Shortage Risk Capital Europes High Growth
 
 07/04/2017
 retail banking secor analysis General Data protection regulation GDPR
@@ -95,43 +95,43 @@ first part regulatory review cross Border regulatory coordination cyber security
 CMU Banking
 
 16/03/2018
-LCR LCR Solvency ii securitisation
+LCR LCR Solvency II securitisation
 
 23/03/2018
 PRIIPs sustainable finance esa review
 
 06/06/2018
-cybersecurity
+Cyber security fintech
 
 06/06/2018
-Cyber security Fintech
+cybersecurity
 
 06/07/2018
 Prudential Board meeting Banking Capital Markets
 
 12/09/2018
-securitisation
-
-12/09/2018
 post trade
 
+12/09/2018
+securitisation
+
 15/11/2018
-priip
+PRIIPs
 
 20/11/2018
 perform loan package
 
 17/02/2020
-presentation AFME ’s position paper Basel III
+presentation afme ’s position paper Basel III
 
 03/04/2020
 covid 19 Financial Markets MIFID Review CMU Securitisation AFME priority
 
 15/04/2020
-covid 19 Financial Markets afme coronavirus initiative csdr buy in MiFID CMU securitisation
+covid 19 Financial Markets AFME coronavirus initiative CSDR buy in MiFID CMU securitisation
 
 04/05/2020
-Capital Requirements regulation
+Capital Requirements Regulation
 
 29/05/2020
 digital finance
@@ -140,7 +140,7 @@ digital finance
 Covid 19 economic recovery Capital market
 
 20/07/2020
-Update Covid 19 pandemic Capital market Capital Market Recovery Package
+update Covid 19 pandemic Capital market Capital Market Recovery Package
 
 17/09/2020
 banking capital market
@@ -149,7 +149,7 @@ banking capital market
 CMU Action Plan mifid
 
 10/12/2020
-presentation afme upcone Sustainable Finance Strategy Future UK EU relation
+presentation AFME upcone sustainable Finance Strategy Future UK EU relation
 
 19/01/2021
 update sustainable finace ou exchange view sustainable finance
@@ -161,34 +161,34 @@ Digital finance
 substainable corporate governance
 
 24/02/2021
-sustainable Finance
+sustainable finance
 
 16/03/2021
 sustainable finance Green recovery
 
 12/04/2021
-Substainable Corporate Governance
-
-27/04/2021
-sustainable Finance
-
-27/04/2021
-sustainable Finance
-
-27/04/2021
-sustainable Finance
+substainable Corporate Governance
 
 27/04/2021
 MiFIR EU UK regulatory secondary market liquidity
+
+27/04/2021
+sustainable finance
+
+27/04/2021
+sustainable finance
+
+27/04/2021
+sustainable finance
 
 28/04/2021
 CRR3 legislative package
 
 05/05/2021
-basel implementation sustainable finance
+Cab Dombrovskis Basel III
 
 05/05/2021
-Cab Dombrovskis Basel III
+Basel implementation sustainable finance
 
 13/07/2021
 forthcoming consolidated tape proposal
@@ -215,13 +215,13 @@ Capital Markets
 MiFIR bond market liquidity
 
 18/07/2023
-Distribution retail financial product
+distribution retail financial product
 
 29/08/2023
 T1 Settlement Cycle MifiR
 
 14/09/2023
-banking regulation Corporate Sustainability due Diligence directive
+banking regulation Corporate Sustainability Due Diligence Directive
 
 09/01/2025
 UK Financial Regulatory Forum
@@ -233,13 +233,13 @@ commodity derivative
 simplification
 
 05/02/2025
-use DLT Tokenisation Financial Markets
-
-05/02/2025
 AFMEs Annual Financial Services Policy Dinner
 
+05/02/2025
+use DLT Tokenisation Financial Markets
+
 11/02/2025
-sustainability Omnibus
+Sustainability Omnibus
 
 12/02/2025
 meeting discuss market development
@@ -248,13 +248,13 @@ meeting discuss market development
 discussion level 2 measure transparency requirement equity equity instrument synchronisation business clock transaction report good execution
 
 27/02/2025
-Simplification Savings Investments distribute Ledger Technology
-
-04/03/2025
-financial service industry association debrief UK Financial Regulatory Forum
+simplification Savings Investments distribute Ledger Technology
 
 04/03/2025
 exchange view FRTB international implementation
+
+04/03/2025
+financial service industry association debrief UK Financial Regulatory Forum
 
 19/03/2025
 discussion transaction report
@@ -263,22 +263,22 @@ discussion transaction report
 banking policy
 
 03/04/2025
-Exchange view FIDA proposal
+exchange view FIDA proposal
 
 16/04/2025
 financial service policy
 
 22/04/2025
-FIDA
+fida
 
 14/05/2025
 Informal Workshop integration capital market
 
 21/05/2025
-firseside chat state play Sustainable Finance framework
+firseside chat state play sustainable Finance framework
 
 21/05/2025
-firseside chat state play Sustainable Finance framework
+firseside chat state play sustainable Finance framework
 
 22/05/2025
 exchange AFME Retail Investment Strategy
@@ -293,4 +293,22 @@ state play cloud policy
 exchange view reform bank crisis management deposit insurance framework CMDI review
 
 07/07/2025
-mifir market consolidation
+MiFIR market consolidation
+
+11/09/2025
+csdr
+
+24/09/2025
+level 2 measure
+
+02/10/2025
+securitisation AFME ’s comment Commission ’s securitization package
+
+09/10/2025
+Digital omnibus
+
+10/10/2025
+SIU equity trading structure
+
+15/10/2025
+development EC ’S SIU strategy

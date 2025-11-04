@@ -32,7 +32,7 @@ relation Clean Transition dialogue EVP lead city
 green transition 2040 climate target
 
 28/08/2024
-COP priority preparation
+cop priority preparation
 
 17/01/2025
 clean industrial deal
@@ -56,7 +56,10 @@ Green Growth
 clean industrial deal
 
 07/07/2025
-letter 16 signatory Competitiveness Fund deliver climate energy security citizen sme
+letter 16 signatorie Competitiveness Fund deliver climate energy security citizen sme
 
 14/07/2025
 simplification csrd CSDDD
+
+10/09/2025
+simplification sustainability

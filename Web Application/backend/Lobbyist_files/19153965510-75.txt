@@ -41,7 +41,7 @@ Pact for skills: re /upskilling needs for a successful green and digital transit
 Carbon Border Adjustment Mechanism
 
 14/10/2021
-High energy prices and how this is affecting the competitiveness ofEuropean companies in the energy intensive sectors.
+High energy prices and how this is affecting the competitiveness of European companies in the energy intensive sectors.
 
 07/03/2024
 Energy
@@ -57,4 +57,10 @@ Discussions on technical issues concerning the design and implementation of the 
 
 06/05/2025
 EU’s steel industry
+
+11/09/2025
+The situation of the ferroalloys industry in the EU
+
+19/09/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
 

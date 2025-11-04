@@ -2,13 +2,13 @@
 industrial strategy green transition
 
 16/04/2021
-action methane ccus
+action methane CCUS
 
 22/04/2022
-exchange view ccus
+exchange view CCUS
 
 17/05/2022
-Carbon capture storage tool decarbonise industry
+carbon capture storage tool decarbonise industry
 
 18/04/2023
 Africa Energy
@@ -20,7 +20,7 @@ Africa energy
 energy transition
 
 09/10/2023
-Industrial decarbonisation carbon capture storage methane emission
+industrial decarbonisation carbon capture storage methane emission
 
 06/12/2023
 energy transition
@@ -36,6 +36,9 @@ discussion role nuclear energy Commission Nuclear Illustrative Programme PINC
 
 15/04/2025
 climate policy carbon removal
+
+15/04/2025
+methane
 
 13/05/2025
 follow

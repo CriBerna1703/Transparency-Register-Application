@@ -47,7 +47,7 @@ presentation of the company + discussions on ongoing tax initiatives
 Exchange of views on tax issues
 
 02/02/2016
-DSM, platforms and geo-blocking
+DSM, platforms and geo- blocking
 
 04/02/2016
 Data protection, Consumer policy
@@ -293,7 +293,7 @@ Production audiovisuelle Amazon
 Dinner discussion - EU policy on the sustainability transition
 
 24/05/2023
-Discuss the Commission’s plans on the Green Claims Initiative and introduce Amazon's major investments to support the green and digital transition.
+Discuss the Commission’ s plans on the Green Claims Initiative and introduce Amazon's major investments to support the green and digital transition.
 
 25/05/2023
 Discussion on circular economy, including packaging, and biodiversity
@@ -323,7 +323,7 @@ ImpactEurope, together with Amazon and Implement Economics, presented an interna
 Artificial intelligence act
 
 29/11/2023
-EU Payments and other aspects of regulatoryenvironment for platforms
+EU Payments and other aspects of regulatory environment for platforms
 
 04/12/2023
 Physical meeting - EU Marketplace VAT Collection (Deemed Supplier) regime
@@ -356,7 +356,7 @@ Digital finance technologies AI/GenAI
 E-commerce
 
 16/10/2024
-Payments andsustainability reporting
+Payments and sustainability reporting
 
 17/10/2024
 Transport and environmental priorities / Recharging Infrastructure / Amazon’s freight partners programme
@@ -383,7 +383,7 @@ exchange of view on the negotiation of the EU-US agreement on access to data
 Exchange on key consumer protection files
 
 12/02/2025
-Exchange on Amazon’sweb services
+Exchange on Amazon’s web services
 
 12/02/2025
 AWS’ state of play and future plans in terms of deployment and operation of computing infrastructures, notably cloud and AI-optimised data centres.
@@ -407,7 +407,7 @@ Amazon’s feedback to the General-Purpose AI Code of Practice
 Exchange on policy priorities
 
 13/03/2025
-Various topics related to the digital policyframework
+Various topics related to the digital policy framework
 
 13/03/2025
 Exchange on range of issues related to Commissioner’s portfolio including simplification, digital, data privacy and technology-related developments
@@ -446,10 +446,10 @@ Discussion on deepening the Single Market and e- Commerce
 Meeting with Amazon representatives
 
 10/04/2025
-Amazon’s presence in Europe and the General- Purpose AI Code of Practice
+Exchange of views on the Artificial Intelligence (AI) Act, Digital Markets Act (DMA), Digital Services Act (DSA), Data Act and Digital Networks Act
 
 10/04/2025
-Data Act matters
+Amazon’s presence in Europe and the General- Purpose AI Code of Practice
 
 10/04/2025
 Exchange of views on sovereign cloud offer
@@ -457,6 +457,78 @@ Exchange of views on sovereign cloud offer
 30/04/2025
 Exchange of views on the Commission’s priorities for cloud, AI, cybersecurity and quantum.
 
+30/04/2025
+Meeting on EU-U.S. trade relations and how their business activities differ from US tech companies
+
+05/05/2025
+Opportunities for the private sector engagement in the Global Gateway framework
+
 08/05/2025
 Update on integration of EU Digital Identity Wallets with Amazon services
+
+08/05/2025
+Digital euro
+
+16/05/2025
+Exchange of views on digital labelling
+
+21/05/2025
+Satellite broadband in the context of the Digital Decade
+
+22/05/2025
+GPAI Code of Practice
+
+22/05/2025
+Rural economy – Digital farming
+
+05/06/2025
+AWS introducing their services for operational excellence and maximum security, high-level guiding principles. We will also discuss innovation trends we see globally and AWS European Sovereign Cloud capabilities.
+
+05/06/2025
+Data Act
+
+13/06/2025
+Discussion on the future Circular Economy Act, specifically on the role of EPR and the possibility to digitalise the registration and reporting obligations
+
+18/06/2025
+DNA and satellite
+
+02/07/2025
+Meeting to discuss accessibility to Amazon services and products for customers with disabilities
+
+15/07/2025
+Future EU Cloud policy and Amazon’s investments and activities in cloud and edge services in Europe
+
+15/07/2025
+Digital Networks Act
+
+15/07/2025
+Digital Markets Act
+
+15/07/2025
+Digital Markets Act (DMA) and competition policy.
+
+17/09/2025
+DORA
+
+01/10/2025
+Challenges for the EU Heavy-duty vehicles (HDV) industry sector and ecosystem as well as progress on the Industrial Action Plan for R&I related aspects
+
+07/10/2025
+Exchange of views on the possible involvement of Amazon in the AI Gigafactories initiative
+
+14/10/2025
+Physical meeting - International taxation and EU reform of the Union Customs Code
+
+15/10/2025
+Challenges faced by Amazon in the Single Market
+
+16/10/2025
+EU-US Trade relations, Custom Reform, and Related Implementation Matters
+
+16/10/2025
+Competitiveness, Digital Market Act, Single Market, e-commerce
+
+20/10/2025
+AVMSD evaluation and review Copyright Directive
 

@@ -725,7 +725,7 @@ Exchange of views on the effects of the COVID-19 crisis.
 Discussion of environment- and climate-related legislation.
 
 05/05/2020
-Migrants’ challenges in the current COVID-19crisis and their contribution to economic recovery
+Migrants’ challenges in the current COVID-19 crisis and their contribution to economic recovery
 
 06/05/2020
 Discussion on Europe's Recovery Plan due to COVID-19
@@ -761,7 +761,7 @@ ERA Communication and Business Europe position paper on Open Research Data
 High-level hearing with Executive Vice-President Dombrovskis and the Social Partners on the Action plan to implement the European Pillar of Social Rights.
 
 08/06/2020
-Consultation meeting with Executive Vice- President Dombrovskisand the Social Partners on the European Pillar of Social Rights.
+Consultation meeting with Executive Vice- President Dombrovskis and the Social Partners on the European Pillar of Social Rights.
 
 11/06/2020
 Skills Agenda
@@ -818,7 +818,7 @@ Data protection and international data transfers
 Artificial Intelligence, data protection and Sustainable corporate governance
 
 07/10/2020
-Maroš Šefčovič participates in aninformal meeting with social partners on CWP 2021/Better Regulation /Strategic Foresight.
+Maroš Šefčovič participates in an informal meeting with social partners on CWP 2021/Better Regulation /Strategic Foresight.
 
 11/11/2020
 Meeting with EU Social Partners on the Pharmaceutical Strategy and Europe’s Beating Cancer Plan
@@ -887,7 +887,7 @@ Meeting on the Individual Learning Accounts (ILA).
 Skills
 
 23/04/2021
-Sustainable CorporateGovernance
+Sustainable Corporate Governance
 
 28/04/2021
 tbc
@@ -1028,7 +1028,7 @@ ASG CEO Event planning meeting
 Skills and Talent Package, help for Ukrainian refugees.
 
 23/03/2022
-To discuss ,,Business Europe“ position on theupcoming Commission proposals concerning the Sustainable Products Initiative (SPI), the Industrial Emission Directive Revision and the REACH revision
+To discuss ,,Business Europe“ position on the upcoming Commission proposals concerning the Sustainable Products Initiative (SPI), the Industrial Emission Directive Revision and the REACH revision
 
 29/03/2022
 SPI, Industrial Emissions Directive, REACH
@@ -1109,7 +1109,7 @@ Follow up call - CEO Event of 10 November 2023. Discussed running of the event a
 Social Dialogue initiative.
 
 11/12/2022
-Meeting with the CEOs from Business Europeand ERT (European Round Table for Industry) Topic: Implementation of Global Gateway
+Meeting with the CEOs from Business Europe and ERT (European Round Table for Industry) Topic: Implementation of Global Gateway
 
 13/12/2022
 Trade and competitiveness of European businesses
@@ -1151,7 +1151,7 @@ Green transition of European businesses
 Green Deal, FTA, EU-India relations, US Trade and Technology Council.
 
 07/03/2023
-Meeting with new President ofBusinessEurope Discussions on EU-UK Relations and Better Regulation/ease of doing business
+Meeting with new President of BusinessEurope Discussions on EU-UK Relations and Better Regulation/ease of doing business
 
 10/03/2023
 Data Act
@@ -1283,7 +1283,7 @@ Exchange of thoughts on international trade developments on Australia and WTO to
 Clean Transition Dialogue on Energy Intensive Industries
 
 07/12/2023
-Mr Moutarlier participated to the BusinessEurope ASGQuarterly meeting. BusinessEurope sitting with the representatives of their Board.
+Mr Moutarlier participated to the BusinessEurope ASG Quarterly meeting. BusinessEurope sitting with the representatives of their Board.
 
 15/12/2023
 R&I policy and the perspective from the European Industry.
@@ -1393,6 +1393,9 @@ Innovation Policy - Upcoming innovation policy developments, including the start
 31/01/2025
 Innovation policy
 
+03/02/2025
+Ominibus
+
 11/02/2025
 reduction of administrative burden in the EU
 
@@ -1407,6 +1410,9 @@ Competitiveness
 
 25/02/2025
 EU tech and digital competitiveness
+
+06/03/2025
+The EU competitiveness agenda
 
 06/03/2025
 The EU competitiveness agenda
@@ -1426,8 +1432,17 @@ state of play of the negotiations
 12/03/2025
 Introductory meeting
 
+17/03/2025
+CSRD/ESRS revision
+
+18/03/2025
+CSD Contact Group meeting-Overview of Trade priorities and rolling calendar
+
 20/03/2025
 BusinessEurope Transport Working Group
+
+20/03/2025
+New US Administration
 
 20/03/2025
 Clean Industrial Deal
@@ -1447,11 +1462,17 @@ PEPP/IORP
 02/04/2025
 Business Europe Better Regulation Working Group
 
+04/04/2025
+EFRAG and the upcoming simplification of ESRS set 1
+
 08/04/2025
 Meeting at the request of BE to discuss the implementation of the SME Relief Package and additional actions in support of SMEs.
 
 09/04/2025
 Interplay between the competitiveness of the European economy and its trade and economic security policy
+
+10/04/2025
+Impact of US tariffs
 
 10/04/2025
 Impact of US tariffs
@@ -1469,8 +1490,113 @@ Economic security - mechanism being set up to monitor imports in view of the US 
 Inter-institutional agreement on better law making
 
 29/04/2025
+Priorities for State aid policy and the future Clean Industrial State aid framework
+
+29/04/2025
 EU-US trade relationship
 
 05/05/2025
 EU-India FTA negotiations
+
+06/05/2025
+Customs Union Reform
+
+07/05/2025
+BusinessEurope’s Internal Market Committee meeting
+
+07/05/2025
+Simplification
+
+08/05/2025
+EU-US trade conflict & rebalancing measures
+
+12/05/2025
+DG CONNECT E2 policy initiatives in the Cloud and AI Development Act
+
+16/05/2025
+Support to innovation and scaling up
+
+16/05/2025
+Position paper published by Business Europe on the R&I funding in the next multiannual financial framework.
+
+23/05/2025
+Competitiveness, Affordable Energy Action Plan, Clean Industri Deal and the Energy Union
+
+27/05/2025
+Discussion on the Competitiveness Fund in the context of the next MFF
+
+02/06/2025
+Exchange of views on the Industrial Decarbonisation Accelerator Act
+
+04/06/2025
+Exchange of views on the possible involvement of the Administrative Cooperative Groups (AdCo) in the standardisation process
+
+05/06/2025
+Exchange of views on possible improvements to the functioning of the Trade Contact Group
+
+06/06/2025
+EU internal and external competitiveness challenges
+
+10/06/2025
+Current global trade environment
+
+16/06/2025
+CTIP South Africa
+
+18/06/2025
+Exchange of views on the future Multiannual Financial Framework
+
+23/06/2025
+CBAM
+
+01/07/2025
+Exchange on views on the implementation and application of FSR Discussion on the challenges ahead for the new unit G.3 and on the potential for simplification of FSR procedure (emphasized interest of Business Europe and its members)
+
+01/07/2025
+Meeting between Business Europe and TRADE Directorate G
+
+03/07/2025
+Presentation of the new Clean Industrial Deal State aid Framework and exchange of views on this framework
+
+08/07/2025
+Presentation and exchange on the consultation regarding the ongoing review of the merger guidelines.
+
+11/07/2025
+Implementation dialogue on customs legislation - Rules of origin
+
+16/07/2025
+EU trade agenda and economic security
+
+27/08/2025
+Exchange of views on the relationship between the EU and the United Kingdom in the economic area.
+
+03/09/2025
+- Gender equality with a specific focus on the Roadmap for Women’s Rights and the current and future Gender Equality Strategy as regards the role of and relevance for businesses. - the Pay transparency Directive
+
+09/09/2025
+Reflections on issues related to TDI investigations
+
+18/09/2025
+State of play of the free trade agreement negotiations with Australia and India
+
+18/09/2025
+Simplification efforts by the Commission
+
+29/09/2025
+State of play of the EU- US relations
+
+02/10/2025
+Preparation of EVP Virkkunen participation to the BusinessEurope CEOs Dialogue on 28/10/2025
+
+02/10/2025
+Exchange of views on the Commission’s ongoing simplification work in taxation
+
+02/10/2025
+State of play and exchange of views on the implementation of ViDA and on the pending VAT file in Council as well upcoming work in the field of VAT
+
+08/10/2025
+EU relations with key partners - US and China, economic security, and ongoing trade negotiations
+
+23/10/2025
+Exchange of views on developments in EU competition policy
 

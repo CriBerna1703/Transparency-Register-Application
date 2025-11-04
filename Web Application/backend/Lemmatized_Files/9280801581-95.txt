@@ -1,5 +1,5 @@
 26/04/2016
-speech general policy financial field Gesprächsrunde des Jungen Wirtschaftrates Brüssel
+Speech general policy financial field Gesprächsrunde des Jungen Wirtschaftrates Brüssel
 
 09/10/2017
 Health Policy
@@ -9,3 +9,6 @@ Health Policy
 
 05/02/2025
 mental health
+
+08/09/2025
+SFDR

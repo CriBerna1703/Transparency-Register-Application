@@ -98,7 +98,7 @@ REFIT platform
 Digitising European Industry
 
 14/06/2016
-Skills, VocationalEducation and Training
+Skills, Vocational Education and Training
 
 16/06/2016
 MFF Mid-term review
@@ -176,7 +176,7 @@ SMEs
 Industrial Strategy, SMEs strategy, Social Dialogue and Pillar of Social Rights, European Semester
 
 23/09/2021
-SMEs, Sustainable Corporate Governance,data access and standardisation
+SMEs, Sustainable Corporate Governance, data access and standardisation
 
 27/04/2023
 European Year of Skills, promotion of Vocational Education and Training, apprenticeships and dual education, as well as employment in skilled crafts sector
@@ -201,4 +201,10 @@ Exchange on skilled crafts and their consideration in EU legislation
 
 16/04/2025
 VSME standard and Sustainability Omnibus
+
+06/05/2025
+Crafts, competitiveness
+
+14/10/2025
+Competitiveness, simplification
 

@@ -50,7 +50,7 @@ BCG report on carbon leakage risks,
 European cement industry in transition, role of cement in economy. Decarbonization possibilities in cement industry, CCS and CCU Technologies. Circular economy in cement industry.
 
 07/02/2020
-how cement can be a part of a sustainable andinnovative EU
+how cement can be a part of a sustainable and innovative EU
 
 05/03/2020
 To address the Green Deal and its relevance for the cement industry. The overall discussion focused on the ambition of the industry to become carbon neutral along the cement and concrete value chain by 2050.
@@ -152,10 +152,10 @@ Conference : Cementing Europe’s Future: Buildings for a Net Zero Age
 Physical meeting with CEMBUREAU CEOs on CBAM
 
 15/01/2024
-Presentation of the company and of the cement sector's issues related to CCUS and how to incentivise CO2 use, incl. revising the ETS legislation.
+Exchanges on the upcoming industrial carbon management strategy, the role of CCS and CCU to decarbonise the EU cement sector. Vision on the forthcoming EU cement industry roadmap.
 
 15/01/2024
-Exchanges on the upcoming industrial carbon management strategy, the role of CCS and CCU to decarbonise the EU cement sector.Vision on the forthcoming EU cement industry roadmap.
+Presentation of the company and of the cement sector's issues related to CCUS and how to incentivise CO2 use, incl. revising the ETS legislation.
 
 26/01/2024
 Decarbonisation of energy intensive industries
@@ -179,7 +179,7 @@ Discussions on technical issues concerning the design and implementation of the 
 Exchange of views on policies for the construction industry including the Implementation of the Construction Product Regulation, the Affordable Housing Plan, the Clean Industrial Deal, and the Circular Economy Act.
 
 03/02/2025
-Exchange of views on enforcement of the Carbon Border Adjustment Mechanism(CBAM) for cement imports
+Exchange of views on enforcement of the Carbon Border Adjustment Mechanism (CBAM) for cement imports
 
 20/02/2025
 Discuss the CPR Acquis process and the next steps for the drafting of standardisation request for ready-mix concrete and its links with the standardisation request for cement, precast concrete and aggregates
@@ -198,4 +198,28 @@ Specific issues related to the decarbonation of the cement sector within the per
 
 11/04/2025
 Financing decarbonisation and competitiveness challenges of EU cement industry. Potential impact of US reciprocal tariffs.
+
+20/05/2025
+Exchange of views on the new State aid rules being developed to accompany the Clean Industrial Deal
+
+12/06/2025
+Housing
+
+24/06/2025
+CBAM
+
+03/07/2025
+Discuss decarbonisation of the cement industry.
+
+28/07/2025
+CBAM
+
+19/09/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+26/09/2025
+Exchange of views on the EU climate policies for the cement sector
+
+02/10/2025
+Product benchmark update for the cement sector
 

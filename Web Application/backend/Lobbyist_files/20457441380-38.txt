@@ -47,7 +47,7 @@ Electricity market design
 Energy policy
 
 07/07/2017
-Commissioner'sparticipation at the Annual BDEW high level Diner in November
+Commissioner's participation at the Annual BDEW high level Diner in November
 
 13/11/2017
 Preparation BDEW Congress June 2018
@@ -89,7 +89,7 @@ Energy transition
 Urban Wastewater Treatment Directive
 
 18/02/2025
-Exchange on the Clean Industrial Deal and Affordable Energy ActionPlan in the German context
+Exchange on the Clean Industrial Deal and Affordable Energy Action Plan in the German context
 
 04/03/2025
 Exchange of views on the Clean Industrial Deal, Action Plan for Affordable Energy and new State aid Framework
@@ -99,6 +99,9 @@ Clean Industrial Deal
 
 06/03/2025
 Affordable energy and industrial competitiveness
+
+12/03/2025
+Sustainability Omnibus and Affordable Energy Action Plan
 
 12/03/2025
 Exchange on EU Automotive Action Plan
@@ -111,4 +114,28 @@ Roundtable “Investing in Water Resilience”
 
 28/04/2025
 Omnibus / Urban Wastewater Treatment Directive
+
+20/05/2025
+EU climate policy
+
+09/07/2025
+Simplification
+
+15/07/2025
+Discussion on market and regulatory aspects of the European gas sector and gas supply security in the current geopolitical environment and EU regulatory framework
+
+16/07/2025
+EU Energy policy
+
+16/07/2025
+RePower EU, global energy markets and methane regulation
+
+16/07/2025
+Energy supply security, European gas sector, European hydrogen market, EU Methane Emission Regulation
+
+01/09/2025
+JEAG position on commodity derivatives consultation
+
+07/10/2025
+Urban Wastewater Treatment Directive, with particular focus on EPR
 

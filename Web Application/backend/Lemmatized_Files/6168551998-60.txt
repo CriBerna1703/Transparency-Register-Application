@@ -11,13 +11,13 @@ ecolabel
 ECO Label
 
 18/10/2017
-circular Economy Strategy plastic
+circular Economy Strategy Plastics
 
 13/02/2019
 presentation aise industry wide target sustainable packaging
 
 13/02/2019
-circular Economy Sustainability detergent
+circular Economy sustainability detergent
 
 12/02/2020
 circular economy
@@ -32,4 +32,7 @@ evaluation ethanol Regulation Biocidal Products BPR
 CLP reach
 
 09/07/2025
-exchange view reach revision Chemicals Industry Action Plan Urban Wastewater Treatment Directive animal test hazard classification ethanol
+exchange view reach revision Chemicals Industry Action Plan Urban Wastewater Treatment Directive animal testing hazard classification ethanol
+
+01/10/2025
+evaluation ethanol active substance biocidal product

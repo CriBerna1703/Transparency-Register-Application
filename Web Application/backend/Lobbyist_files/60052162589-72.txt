@@ -242,7 +242,7 @@ Electronic Communication Code
 Telecom CODE
 
 18/04/2018
-Western Balkans DigitalAgenda / Roaming roadmap
+Western Balkans Digital Agenda / Roaming roadmap
 
 02/05/2018
 Western Balkans Digital Agenda / Roaming roadmap
@@ -284,7 +284,7 @@ Western Balkans Roaming
 Meeting with CEOs in the Telecom sector
 
 28/10/2020
-Competitiveness of thetelecom sector
+Competitiveness of the telecom sector
 
 16/11/2020
 Secure cloud (video meeting)
@@ -317,7 +317,7 @@ EU Data strategy, European Cloud Alliance.
 Retail investments protection.
 
 08/04/2022
-Endorsing the Jointstatement on Roaming and International calls between EU and Ukraine
+Endorsing the Joint statement on Roaming and International calls between EU and Ukraine
 
 16/05/2022
 Engagement in the support for Ukraine and the ongoing dialogue around the security /resilience of our networks; the EC’s current & upcoming legislative agenda
@@ -340,17 +340,8 @@ Telecom policy
 30/06/2023
 Discussion on taxation and regulation of telecommunications sector
 
-28/11/2023
-to follow
-
-25/01/2024
-future of connectivity
-
 26/02/2024
 Brief exchange on the margin of a speech on Telecom policy
-
-25/09/2024
-priorities
 
 04/02/2025
 The telecoms landscape and EU Competition Policy
@@ -370,9 +361,21 @@ Opportunities and challenges in the telecoms sector
 03/03/2025
 Telecommunication sector and upcoming legislation
 
+12/03/2025
+Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
 27/03/2025
 Tech sovereignty, cloud policy, network transformation
 
+10/04/2025
+GSMA on the Commission’ s Methodology for mapping QoS of 5G networks
+
 15/04/2025
 Implementation details of a possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+15/07/2025
+Digital Networks Act (DNA)
+
+09/10/2025
+DNA, 5G methodology, EU 2 GHz Mobile Satellite Services (MSS) Band, 3.8- 4.2 GHz, upper 6 GHz band
 

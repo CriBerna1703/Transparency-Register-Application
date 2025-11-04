@@ -35,16 +35,16 @@ CMU, Consolidated tape
 Sanctions
 
 31/01/2023
-Introductory meeting
+ICMA’s current priorities and activities.
 
 31/01/2023
-ICMA’s current priorities and activities.
+Introductory meeting
 
 16/03/2023
 CSDR
 
 14/09/2023
-listing act, T+1settlements, clearing
+listing act, T+1 settlements, clearing
 
 21/11/2023
 CSDR
@@ -62,14 +62,23 @@ speech on CMU, sustainable finance, digital finance
 Sustainable Finance Disclosure Regulation
 
 15/01/2025
-capital markets
+Upcoming regulatory priorities in capital markets with a focus on fixed income, especially the CMU/SIU and proposals how bond markets can help achieve the EU policy
 
 15/01/2025
 DG FISMA and ICMA priorities under the new mandate
 
 15/01/2025
-Upcoming regulatory priorities in capital markets with a focus on fixed income, especially the CMU/SIU and proposals how bond markets can help achieve the EU policy
+capital markets
 
 21/02/2025
 Sustainable Finance Disclosure Regulation
+
+11/06/2025
+AMIC Steering Committee where the Commission was invited to discuss and exchange views on the macroprudential policy agenda for NBFIs and the SIU Consultation
+
+23/06/2025
+Settlement regime
+
+03/07/2025
+Challenges for the EU repo market in relation to the forthcoming move to a shorter settlement cycle (T+1)
 

@@ -2,10 +2,10 @@
 ISP liabilitiy, restrictions on platforms, parcel delivery, payment service directive
 
 17/09/2015
-Financial Services Policy
+role of payments in Europe's e-commerce market
 
 17/09/2015
-role of payments in Europe's e-commerce market
+Financial Services Policy
 
 23/02/2016
 e-payments and consumer protection in e- commerce
@@ -26,10 +26,10 @@ DSM
 How financial innovation and FinTech can foster EU jobs and growth
 
 12/10/2017
-fintech, financial services in the EU
+Digital payments
 
 12/10/2017
-Digital payments
+fintech, financial services in the EU
 
 26/02/2018
 Promoting e-commerce internationally
@@ -62,8 +62,14 @@ Discussion on payments in Europe, impact of the Digital Markets Act.
 Business Wallet
 
 03/04/2025
-Exchange of views on ongoing and planned Commission’s initiatives
+Exchange of views and ongoing and planned Commission's initiatives
 
 03/04/2025
-Exchange of views and ongoing and planned Commission's initiatives
+Exchange of views on ongoing and planned Commission’s initiatives
+
+30/06/2025
+Developments in the payments markets and enforcement of digital regulations
+
+01/07/2025
+EU digital policy
 

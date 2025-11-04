@@ -32,13 +32,13 @@ dsm
 DSM H2020
 
 10/07/2015
-telecommunication Policy
+Telecommunications Policy
 
 01/09/2015
 NIS TSM UK telco market
 
 28/10/2015
-skill apprenticeship
+Skills apprenticeship
 
 24/11/2015
 commission trade strategy
@@ -74,10 +74,10 @@ Digital Skills
 Telecom review framework UK regulatory development Content portability US access
 
 27/09/2016
-Telecom review portability dsm
+Telecom review portability DSM
 
 27/09/2016
-Working lunch Telecom reform roam
+working lunch Telecom reform roam
 
 17/10/2016
 telecom policy
@@ -86,7 +86,7 @@ telecom policy
 Digital Market
 
 17/10/2016
-meeting cover topic relate Telecomm ICT particular skill 5 G big datum
+meeting cover topic relate Telecomm ICT particular skill 5 g big datum
 
 08/11/2016
 dsm
@@ -104,7 +104,7 @@ BT Groups education apprenticeship activity
 outlook
 
 20/01/2017
-BT present approach innovation RD
+BT presenting approach innovation RD
 
 20/01/2017
 UK electronic communication review
@@ -113,16 +113,16 @@ UK electronic communication review
 cybersecurity
 
 07/02/2017
-trade general making case trade fight protectionism
+trade general make case trade fight protectionism
 
 21/02/2017
-Trade Telecommunications Electronic Communications Code EECC regulatory issue
+Trade Telecommunications Electronic Communications Code eecc regulatory issue
 
 21/02/2017
-telecom
+Telecom
 
 28/09/2017
-meet British Telecom concern digital transformation industry
+meet british Telecom concern digital transformation industry
 
 29/11/2017
 digital telecom market broadband cybersecurity
@@ -140,7 +140,7 @@ telecom development UK fibre USO 5 g
 security issue
 
 25/06/2019
-5 G security supply chain
+5 g security supply chain
 
 18/11/2020
 Digital Markets Act

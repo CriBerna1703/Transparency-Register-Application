@@ -5,7 +5,7 @@ Energy Union
 Energy Union
 
 18/02/2015
-Overview of EU development priorities in West Africa and Nigeria in particular; West Africa- EU Economic Partnership Agreement; EU blending facilities; Instability in the Niger Delta region;possibilities of collaboration between Shell and EU.
+Overview of EU development priorities in West Africa and Nigeria in particular; West Africa- EU Economic Partnership Agreement; EU blending facilities; Instability in the Niger Delta region; possibilities of collaboration between Shell and EU.
 
 17/03/2015
 Energy Union; Päris /COP21; ETS review post 2020
@@ -152,10 +152,10 @@ Energy Union
 Energy policy
 
 28/05/2018
-Long term decarbonisation strategy
+Future of the EU, sustainability
 
 28/05/2018
-Future of the EU, sustainability
+Long term decarbonisation strategy
 
 06/06/2018
 IRAN
@@ -200,7 +200,7 @@ European Green Deal
 Exchange of views on decarbonisation
 
 14/02/2020
-Energy policy priorities of the Commission, impact of the Green Deal on the energy sector andinnovative solutions that would help the EU reach its climate and energy targets
+Energy policy priorities of the Commission, impact of the Green Deal on the energy sector and innovative solutions that would help the EU reach its climate and energy targets
 
 14/04/2020
 Video conference on Sky Scenario EU 2050
@@ -314,10 +314,10 @@ ReFuelEU Aviation, FuelEU Maritime, AFIR
 Fit for 55
 
 20/12/2022
-EU Energy Platform; Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid, GOGC participated as well.
+Energy Platform. Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid and GOGC participated as well.
 
 20/12/2022
-Energy Platform. Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid and GOGC participated as well.
+EU Energy Platform; Bulgargaz, SPP, EPH, DEPA, Geoplin, Eesti Gaas, Enovos, DEFA, Conexus Baltic Grid, GOGC participated as well.
 
 23/02/2023
 Clean energy investments of Shell
@@ -391,6 +391,9 @@ Lead markets and industrial decarbonisation
 27/01/2025
 Clean Industrial Deal and the Decarbonisation Accelerator Act
 
+06/02/2025
+Presentation of the highlights of the Shell LNG Outlook 2025 report
+
 03/03/2025
 Gas in Ukraine
 
@@ -402,6 +405,9 @@ The role of hydrogen for heavy-duty vehicles
 
 21/03/2025
 - Marché intérieur - Compétitivité - Sécurité économique - Simplification - Relation USA / Europe
+
+24/03/2025
+Exchange of views with EU aviation and land transport industry on key policy developments in Singapore and ASEAN
 
 28/03/2025
 Global Gateway
@@ -415,6 +421,9 @@ Exchange of views on SAF and aviation decarbonisation
 09/04/2025
 NZIA and CID
 
+09/04/2025
+Hydrogen, CCUS
+
 10/04/2025
 The investment challenges for synthetic aviation fuels (eSAF)
 
@@ -426,4 +435,46 @@ Transition to low-carbon technologies
 
 30/04/2025
 preparation of a possible visit of the Commissioner
+
+01/05/2025
+Site visit to Nature Energy biomethane plant
+
+05/06/2025
+EU Energy Policy REPowerEU
+
+05/06/2025
+Importance of the EV charging industry for EU competitiveness.
+
+24/06/2025
+Decarbonisation of heavy-duty vehicle fleet
+
+03/07/2025
+Implementation of the Methane Regulation
+
+11/07/2025
+Transition to low-carbon technologies
+
+11/07/2025
+Transition to Low Carbon Technologies
+
+10/09/2025
+LNG cooperation and outlook
+
+18/09/2025
+Electrification, tripartites contracts, storage and flexibility, and grids
+
+30/09/2025
+Shell’s renewable hydrogen ongoing projects and regulatory framework
+
+01/10/2025
+Low carbon solutions
+
+06/10/2025
+Transition to low-carbon technologies
+
+06/10/2025
+Transition to low-carbon technologies
+
+17/10/2025
+transition pathways towards NZE 2050. To share the trends and pathways we anticipate playing out at EU level and other regions
 

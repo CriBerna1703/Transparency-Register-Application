@@ -125,7 +125,7 @@ Digital Contracts proposal
 Digital Single Market
 
 17/11/2015
-Digital single marketissues
+Digital single market issues
 
 24/11/2015
 copyright
@@ -281,7 +281,7 @@ Meeting with the Task Force for the Preparation and Conduct of the Negotiations 
 Privacy shield, GDPR
 
 07/03/2017
-e-Privacy proposal, general data protection regulation-state of play,privacy shield and international transfer
+e-Privacy proposal, general data protection regulation-state of play, privacy shield and international transfer
 
 13/03/2017
 DSM Mid-term review
@@ -431,7 +431,7 @@ EU Platform for action on Diet, Physical Activity and Health
 Quality of financial (retail) advice in the EU.
 
 02/10/2019
-Roundtable to exchange on clean and smartmobility
+Roundtable to exchange on clean and smart mobility
 
 03/12/2019
 Consumer empowerment in the context of clean energy transition
@@ -668,7 +668,7 @@ Exchange of views on the key priorities of the reform of the pharmaceutical stra
 BEUC would like to discuss about the following topics: Product safety and market surveillance, toy safety directive, product liability directive, standardisation /liability, forced labour / sustainable corporate governance, and possibly supply chain
 
 25/05/2022
-Retail InvestmentStrategy
+Retail Investment Strategy
 
 07/06/2022
 consumer policy
@@ -704,7 +704,7 @@ FU on Standardisation
 US-EU Task Force Convening: energy efficiency and energy savings. The California Energy Commission, ACEEE, ASE, Advanced Energy Economy, Arcadia, ComEd, Octopus Energy, OhmConnect, OPower, Uplight and the Covenant of Mayors also participated.
 
 26/10/2022
-Exchange of views on EU labelling rules and thepharmaceutical reform.
+Exchange of views on EU labelling rules and the pharmaceutical reform.
 
 09/11/2022
 EU standardisation strategy
@@ -848,6 +848,9 @@ Market Surveillance
 product safety and e- commerce
 
 24/01/2025
+Exchange with representatives of BEUC, the European Consumer Organisation
+
+24/01/2025
 Exchange views on the Commission's better regulation and simplification.
 
 24/01/2025
@@ -895,6 +898,9 @@ Exchange on BEUC’s position on the mission letter of Commissioner Tzitzikostas
 17/03/2025
 Invitation to JUST to attend annual event of the Transatlantic Consumer Dialogue (TACD) on 24 June
 
+18/03/2025
+CSD Contact Group meeting-Overview of Trade priorities and rolling calendar
+
 19/03/2025
 Code of Conduct on Online Advertising – Workshop 4
 
@@ -922,9 +928,66 @@ Omnibus and Data Union Strategy
 10/04/2025
 Impact of US tariffs
 
+10/04/2025
+Impact of US tariffs
+
 16/04/2025
 Exchange of views on EU consumer protection
 
 23/04/2025
 Greening Corporate Fleet
+
+23/04/2025
+Exchange of views on upcoming digital legislation, in particular the digital simplification package and the Digital Networks Act
+
+22/05/2025
+Discussions on Water Resilience Strategy
+
+27/05/2025
+State of play of FTA negotiations with Australia, Malaysia, the Philippines, Indonesia, Thailand and India
+
+16/06/2025
+Exchange of views on upcoming Commission initiatives on consumer law and digital policy.
+
+18/06/2025
+Presentation on the Public Consultation on the review of Merger Guidelines.
+
+25/06/2025
+Omnibus for the chemical sector; REACH
+
+26/06/2025
+Simplification
+
+03/07/2025
+The upcoming Digital Networks Act (DNA) proposal and its relevance for consumers.
+
+15/07/2025
+EU Customs Reform – State of Play, E- commerce
+
+16/07/2025
+Outcome of the latest EU- UK SPS negotiations related in particular to food safety and animal welfare
+
+25/08/2025
+CO2 standards and other automotive-related files
+
+02/09/2025
+Automotive files
+
+09/09/2025
+Complaints lodged by BEUC members under the GDPR, follow-up to the GDPR Implementation Dialogue
+
+15/09/2025
+Consumer protection dimension of specific dossiers
+
+18/09/2025
+Exchange of views with BEUC on the upcoming Citizens Energy Package as well as on energy efficient product policy
+
+23/09/2025
+Participation as speaker at the roundtable “Rising E-commerce from third countries and the role of online marketplaces: Challenges and Solutions)”
+
+23/09/2025
+Exchange on transport related matters
+
+22/10/2025
+Exchange on several topics of interest for BEUC
 

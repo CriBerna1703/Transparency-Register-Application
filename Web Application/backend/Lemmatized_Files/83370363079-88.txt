@@ -1,11 +1,11 @@
 02/12/2014
-structural reform
+Structural reform
 
 27/01/2015
 banking
 
 27/01/2015
-Current Financial Issues
+current Financial Issues
 
 27/01/2015
 BSR TLAC CMU
@@ -14,7 +14,7 @@ BSR TLAC CMU
 banking
 
 28/01/2015
-bank reform capital market
+Bank reform capital market
 
 20/03/2015
 Digital Market
@@ -23,16 +23,16 @@ Digital Market
 ifrs
 
 01/09/2015
-TTIP VIP lunch
+ttip VIP lunch
 
 01/09/2015
 dsm
 
 21/09/2015
-Financial Services policy
+Financial Services Policy
 
 28/09/2015
-overview Financial Regulation
+Overview Financial Regulation
 
 30/09/2015
 well regulation area financial service legislation general question portfolio
@@ -41,10 +41,10 @@ well regulation area financial service legislation general question portfolio
 bank DSM
 
 19/10/2015
-datum Protection
+Data Protection
 
 19/10/2015
-Financial Services policy
+Financial Services Policy
 
 02/05/2016
 Datensicherheit und Banken
@@ -68,7 +68,7 @@ digitisation geopolitical context
 eba draft RTS Strong Customer Authentication Secure Communication
 
 11/01/2018
-Monetary issure EMU Basel III
+Monetary Issures EMU Basel III
 
 28/02/2018
 EMIR
@@ -80,7 +80,7 @@ MFF
 polish financial service legislation
 
 16/06/2020
-MiFID ii review
+mifid II review
 
 08/09/2020
 green recovery Financing Green Deal
@@ -92,7 +92,7 @@ sure instrument
 sustainable corporate governance
 
 06/09/2021
-next generation
+Next generation
 
 07/09/2021
 Basel III implementation sustainable finance retail investment
@@ -113,7 +113,7 @@ green digital transition competitiveness banking sector
 BU CMU
 
 17/03/2022
-payment Order Flow PFOF mifir review
+payment order Flow PFOF mifir review
 
 07/07/2022
 topic polish loan foreign currency CHF UCTD Directive Commission make clear interfere case ECJ SJ work regard
@@ -131,7 +131,7 @@ Retail Investment Strategy
 retail investment strategy
 
 04/05/2023
-update DG budg strategy prioritie upcoming month
+update DG budg strategy priority upcoming month
 
 25/10/2023
 Capital Markets
@@ -162,3 +162,6 @@ simplification
 
 02/06/2025
 simplification coordination financial service digital horizontal legislation
+
+01/09/2025
+securitization Package SIU Simplification FiDA

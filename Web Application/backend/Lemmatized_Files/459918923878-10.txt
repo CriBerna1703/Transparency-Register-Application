@@ -1,5 +1,8 @@
 08/05/2025
-EPC ’s information session DG COMP new development EPC activity
+EPC ’s information session DG COMP new development epc activity
 
 25/06/2025
-discussion EPC EPC ’s VoP scheme
+discussion EPC EPC ’s vop scheme
+
+09/10/2025
+implementation two obligation payment service provider Instant Payments Regulation

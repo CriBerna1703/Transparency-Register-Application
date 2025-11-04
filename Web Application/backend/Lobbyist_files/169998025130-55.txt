@@ -10,3 +10,6 @@ MiFIR review, CMU
 14/03/2024
 EU's capital markets and next CMU workstream. Implementation of MIFIR.
 
+25/09/2025
+Integration of EU capital markets
+

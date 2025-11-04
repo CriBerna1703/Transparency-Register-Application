@@ -32,7 +32,7 @@ Regulatory issues
 Digital skills
 
 04/03/2015
-Microsoft educationprogrammes
+Microsoft education programmes
 
 23/03/2015
 Cooperation with Microsoft
@@ -383,7 +383,7 @@ European Green deal
 Disinformation, AI
 
 18/06/2020
-Collaboration in the fight against COVID-19, Support research and further strengthenEurope’s ability to move to virtual classrooms
+Collaboration in the fight against COVID-19, Support research and further strengthen Europe’s ability to move to virtual classrooms
 
 23/06/2020
 e-Debate - Regulatory models for online platforms
@@ -542,7 +542,7 @@ Ukraine and war crimes
 meeting with the Green Digital Coalition - Main topic : state of play on sustainable digitalization
 
 03/10/2022
-Action plan for thedigitalisation of the energy sector.
+Action plan for the digitalisation of the energy sector.
 
 03/10/2022
 Meeting with Mr Brad Smith, CEO of Microsoft. Topics discussed - CSA and other digital topics from Commissioner Johansson portfolio
@@ -578,7 +578,7 @@ Data protection and AI
 EU policy and regulatory measures on accessibility and Microsoft accessibility-related policy and initiatives.
 
 29/06/2023
-Technological developments, AI, Cloud,Cybersecurity, Privacy, Public Sector.
+Technological developments, AI, Cloud, Cybersecurity, Privacy, Public Sector.
 
 02/08/2023
 Artificial intelligence
@@ -646,8 +646,11 @@ Microsoft meeting the cabinet of the EVP in charge of competition
 12/02/2025
 Meeting requested by Microsoft. Aim - to provide a deeper presentation of projects and experiences of the company that could be of application relevance to the Data Hub as described in the Customs Reform proposal.
 
+14/02/2025
+Lunch discussion on protection of critical infrastructure
+
 15/02/2025
-Private roundtable on transatlantic and global cooperation on tech
+Private roundtable on transatlantic and global cooperation on tech organised on the margins of the Munich Security Conference
 
 16/02/2025
 Exchange of views on the removal of harmful online content and cybersecurity.
@@ -685,6 +688,78 @@ EU digital policy
 15/04/2025
 Exchange of views on the forthcoming Digital Fairness Act
 
+22/04/2025
+Digital Affairs and Youth
+
 30/04/2025
 Exchange of views on digital commitments, data protection and consumer protection
+
+30/04/2025
+Exchange of views on EU policies of relevance to Microsoft, including digital regulation, and Microsoft’s European operations and investments
+
+06/05/2025
+Demographic Policy
+
+15/05/2025
+Exchange views on advancing disability inclusion in Europe.
+
+19/05/2025
+Digitalisation and AI
+
+20/05/2025
+General-purpose AI model regulation and Code of Practice
+
+22/05/2025
+GPAI Code of Practice
+
+03/06/2025
+AI in Science and for Startups
+
+04/06/2025
+Decarbonization, digitalisation
+
+10/06/2025
+Exchange of views on the GPAI Code of Practice
+
+24/06/2025
+search for clarity of the Commission’s vision for Europe’s competitiveness and climate action
+
+26/06/2025
+Business Software Alliance and its members consultation on the EU’s upcoming Cloud and AI Development Act.
+
+08/07/2025
+Exchange on policy and legislation as well as implementation of accessibility for persons with disabilities and on artificial intelligence
+
+02/09/2025
+Microsoft presented their activities in Africa
+
+11/09/2025
+Presenting the initiatives "Close the AI language gap" and "Safeguard Europe’s cultural heritage"
+
+15/09/2025
+Meeting between the Commission and Signatories on the implementation of the Code of conduct on countering illegal hate speech online+ (“Code of conduct+”)
+
+16/09/2025
+Cybersecurity
+
+16/09/2025
+Exchange of views on security, the EU-U.S. e- evidence agreement, child sexual abuse and access to data.
+
+16/09/2025
+Women Leaders’ Lunch on “Shaping Europe’s Competitiveness in the Digital Era”
+
+29/09/2025
+Data Centre and Cloud policies
+
+08/10/2025
+- Introduction to Microsoft Standards officer, also elected as the chair of JTC1- ISO /IEC Joint Technical Committee as of 2026. - Exchange on the European Standardisation System - Revision Regulation 1025 /2012
+
+29/10/2025
+Discussion on the Cloud and AI Development Act and concerns over current framework.
+
+29/10/2025
+Environmental Omnibus: permitting
+
+29/10/2025
+Microsoft's views on simplification in relation to environment.
 

@@ -227,7 +227,7 @@ Future of telecom industry
 connectivité Europe et Afrique, projet europeen de connectivité par satellites
 
 07/05/2021
-Cloud & Data Alliance -CEO Roundtable
+Cloud & Data Alliance - CEO Roundtable
 
 19/07/2021
 Fibre deployment
@@ -283,9 +283,6 @@ Digital transition in the Middle East and North Africa
 29/03/2023
 Digital transition in Africa and the Middle East
 
-24/05/2023
-meeting with orange
-
 06/06/2023
 Telecom policy
 
@@ -326,7 +323,7 @@ Meeting organized by ARCEP with local authorities and operators on fiber (FTTH) 
 Discussion on the EU Emissions Trading System (ETS) extension to maritime and the situation of cable-layers vessels
 
 05/03/2025
-Update on the process of the possible inclusion ofUkraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+Update on the process of the possible inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
 
 05/03/2025
 Commission priorities in technology policy
@@ -348,4 +345,37 @@ Cable Security
 
 24/04/2025
 Exchange of views on the upcoming Digital Networks Act (DNA), the review of the Romanian wholesale broadband market, and the status of Roaming for Ukraine and Moldova
+
+26/06/2025
+Circular economy in the ICT sector
+
+27/06/2025
+Implementation details of the inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
+
+10/07/2025
+Clean industrial deal Financement Simplification
+
+22/07/2025
+EU environmental policies
+
+04/09/2025
+Future connectivity trends
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’achat - Relation US/EU
+
+08/09/2025
+ETS maritime/Offshore
+
+17/09/2025
+Artificial intelligence (GPAI and Agentic AI)
+
+18/09/2025
+US and EU-China relations, trade agreements, economic security and trade defence measures, upcoming EU initiatives
+
+18/09/2025
+US and EU-China relations, trade agreements, economic security and trade defence measures, upcoming EU initiatives
+
+20/10/2025
+Via Africa Submarine Cable and Global Gateway Investment Hub
 

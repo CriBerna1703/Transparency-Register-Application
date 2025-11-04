@@ -149,7 +149,7 @@ Clean Hydrogen alliance; fit for 55 package
 e-mobility
 
 03/06/2021
-Study on the role of hydrogen in the decarbonisation of steelsector
+Study on the role of hydrogen in the decarbonisation of steel sector
 
 07/06/2021
 Révision de la directive REDII.
@@ -215,7 +215,7 @@ Energy crisis and Fit For 55
 Energy Market
 
 30/03/2023
-Availability of EDF’s nuclear and hydropower fleet, maintenanceplanning. Future role of nuclear energy. EDF’s RES production.
+Availability of EDF’s nuclear and hydropower fleet, maintenance planning. Future role of nuclear energy. EDF’s RES production.
 
 17/04/2023
 Energy market
@@ -310,6 +310,9 @@ Presentation of EDF activities and priorities to support electrification
 29/01/2025
 Future of EU energy policy - discussion was with EDF's Belgian subsidiary Luminus
 
+29/01/2025
+Exchange of views on security of electricity supply
+
 06/02/2025
 Clean Industrial Deal
 
@@ -320,10 +323,16 @@ Visit to the European Pressurized Reactor (EPR) at the Flamanville EDF Nuclear P
 Exchange of views on: - Clean industrial deal and perspectives for the decarbonisation bank - Energy-related funding under the post-2027 multiannual financial framework
 
 13/03/2025
+Physical meeting - Exchange of views on CBAM and ETD
+
+13/03/2025
 Action Plan for Affordable Energy and the upcoming Electrification Action Plan
 
 18/03/2025
 Échange entre EDF et la DG ENV sur la mise en œuvre des politiques environnementales européennes et les perspectives de collaboration sur la restauration de la nature, la résilience et les instruments financiers associés.
+
+28/03/2025
+H2 Financing Facility
 
 01/04/2025
 Plenary Feedback round on previously held GGIA Working Group sessions of 9 different thematical groups regarding Latin America and the Caribbean (LAC).
@@ -340,9 +349,63 @@ EDF requested the meeting to discuss current and future nuclear decommissioning 
 07/04/2025
 Energy systems and electricity market in Europe.
 
+07/04/2025
+Exchange of views in the context of the Clean Industrial Deal and the CISAF
+
 08/04/2025
 Wind energy, electrification, competitiveness, permitting, grids
 
 23/04/2025
+to follow
+
+23/04/2025
 EU industrial and decarbonisation strategy
+
+20/05/2025
+3rd meeting of the Working Group on Regional Electricity Integration in Latin America and the Caribbean.
+
+04/06/2025
+Meeting between EC and EDF on the European Commission Roadmap towards ending Russian energy imports
+
+18/06/2025
+EDF presented their submission to the stakeholder consultation on the Clean Industrial Deal State Aid Framework (CISAF) and shared its view on the Industrial Decarbonisation Bank (IDB)
+
+27/06/2025
+Compétitivité, Marché interieur, prix de l’énergie
+
+10/07/2025
+présentation du programme nucléaire d’ EDF
+
+10/07/2025
+Programme Nouveau Nucléaire
+
+10/07/2025
+Clean industrial deal Financement Simplification
+
+10/09/2025
+ETS directive
+
+10/09/2025
+Electrification Action Plan, EDF nuclear programme
+
+18/09/2025
+Electrification, tripartites contracts, storage and flexibility, and grids
+
+19/09/2025
+Échange sur IAA, Paquet Réseaux et Plan d’action pour l’électrification
+
+23/09/2025
+Challenges and opportunities of accelerating electrification in Europe, with a particular emphasis on grid development, permitting processes, sectoral priorities and
+
+23/09/2025
+Digital Omnibus and Data Centre policy
+
+25/09/2025
+Energy efficiency, electrification and tripartite agreements
+
+06/10/2025
+AI and data centres.
+
+06/10/2025
+EDF’s strategy to support the deployment of data centres in France
 

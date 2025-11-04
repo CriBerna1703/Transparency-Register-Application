@@ -50,7 +50,7 @@ Roundtable on Processors
 Semiconductors - 2030 Digital Compass Communication
 
 26/03/2021
-ipcei microelectronics(virtual)
+ipcei microelectronics (virtual)
 
 13/04/2021
 Industrial and trade policy
@@ -71,10 +71,10 @@ Chips Act
 Visit of major semiconductor research and production sites in preparation of EU Chips Act
 
 10/01/2022
-CEO Round Table on Semiconductors
+Semiconductors
 
 10/01/2022
-Semiconductors
+CEO Round Table on Semiconductors
 
 25/04/2023
 Chips Act, State Aid
@@ -98,19 +98,22 @@ Private roundtable on how to handle EU dependency for critical inputs such as se
 Competitiveness of EU semiconductor industry
 
 24/03/2025
-Automotive Industrial Action Plan with : - NXP -Infineon - STMicroelectronics - Bosch
+Automotive Industrial Action Plan with : - NXP - Infineon - STMicroelectronics - Bosch
 
 27/03/2025
 Preparation of meeting of EVP Virkkunen with European Semiconductor Industry Association (ESIA) on 3 April
 
 31/03/2025
-EU trade agenda and transatlantic relations
+Discussion on Chips Act 2.0 and future development in transatlantic trade relations
 
 31/03/2025
-Discussion on Chips Act 2.0 and future development in transatlantic trade relations
+EU trade agenda and transatlantic relations
 
 03/04/2025
 Trade relations and economic security
+
+03/04/2025
+The European semiconductor industry and the review of the Chips Act
 
 03/04/2025
 Exchange on the implications of recent US trade measures and the broader geopolitical environment on the European semiconductor industry
@@ -123,4 +126,19 @@ Implementation of the Automotive Industrial Action Plan with : - NXP - Infineon 
 
 30/04/2025
 Exchange on semiconductor outlook
+
+12/06/2025
+Exchange of views and discussions on candidate IPCEI on Circular Advanced Materials; Infineon FP10 Position Paper ‘Advancing European Competitiveness: Key Levers for an Effective Research, Technology and Innovation Programme’
+
+03/07/2025
+Presentation of ESIA and the semiconductor industry in Europe
+
+01/09/2025
+Recent developments on trade and tariffs impacting the semiconductor sector
+
+05/09/2025
+- Compétitivité des entreprises - Marché intérieur - Protection de la souveraineté et du pouvoir d’achat - Relation US/EU
+
+01/10/2025
+EU – US relations
 

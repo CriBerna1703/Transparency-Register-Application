@@ -3,3 +3,6 @@ Digital Euro
 
 20/03/2025
 current priority development financial payment sector
+
+09/09/2025
+General update FISMA

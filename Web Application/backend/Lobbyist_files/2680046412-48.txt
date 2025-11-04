@@ -224,7 +224,7 @@ will follow
 REPowerEU
 
 18/05/2022
-Energy Security andREPowerEU
+Energy Security and REPowerEU
 
 13/07/2022
 Renewable energies, Labour market and skills
@@ -322,6 +322,9 @@ Discussion on inverters and solar energy
 09/12/2024
 Discussion with Electrification Alliance
 
+14/01/2025
+Energy security & EU competitiveness
+
 20/01/2025
 Latest developments and challenges in the solar industry, with link to electricity grids
 
@@ -337,11 +340,17 @@ Solar panels on farmland
 06/02/2025
 Disinformation related to solar energy
 
+06/02/2025
+Clean Industrial Deal Affordable Energy Action Plan
+
 10/02/2025
 Exchange of views on Power Purchase Agreements (PPA) and the Batteries Regulation, specifically the Delegated Act (DA) on the methodology for the calculation and verification of the carbon footprint for electric vehicle batteries.
 
 12/02/2025
 Clean Industrial Deal
+
+14/03/2025
+Clean Industrial Deal, Affordable Energy Action Plan and new State aid Framework (CISAF), Electrification Action Plan
 
 25/03/2025
 Clean Industrial Deal
@@ -351,4 +360,16 @@ Clean Industrial Deal, Electrification Action Plan, Affordable Energy Plan, CISA
 
 10/04/2025
 Role of solar energy in agriculture
+
+25/04/2025
+RE-Source platform presentation
+
+21/05/2025
+Solutions to PV cyber risks
+
+01/07/2025
+SolarPower Europe proposals for the sector development and the EU involvement.
+
+11/07/2025
+Implementation dialogue on customs legislation - Rules of origin
 

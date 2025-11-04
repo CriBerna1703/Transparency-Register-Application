@@ -59,7 +59,7 @@ Planning future event
 Energy Intensive Industries, ETS, HLG EII
 
 29/05/2015
-Steel market and tradepolicy
+Steel market and trade policy
 
 17/06/2015
 The role of the steel sector within the Energy intensive industrie
@@ -359,10 +359,10 @@ EUROFER to present their views on Draft Delegated Act on Taxonomy
 Speech at EUROFER & WV Stahl webinar - The Green Deal and European Steel
 
 24/03/2021
-tbc
+Commissioner Breton meeting with CEOs from Energy Intensive Industries on Industrial strategy & fit for 55.
 
 24/03/2021
-Commissioner Breton meeting with CEOs from Energy Intensive Industries on Industrial strategy & fit for 55.
+tbc
 
 25/03/2021
 EEAG
@@ -476,7 +476,7 @@ To discuss issues relevant for the decarbonisation of the EU steel industry and 
 Global Arrangement for Sustainable Steel and Aluminum
 
 07/07/2023
-ETS reform implementation ; overview of the situationfor the steel sector
+ETS reform implementation ; overview of the situation for the steel sector
 
 22/09/2023
 Physical meeting - Meeting on CBAM
@@ -518,7 +518,7 @@ Competitiveness and energy transition
 Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
 
 27/01/2025
-Discussion on the challenges faced by the steel industry and theneeded policy interventions
+Discussion on the challenges faced by the steel industry and the needed policy interventions
 
 04/02/2025
 To hear interest representatives’ view on state of play in the steel industry.
@@ -531,6 +531,9 @@ Impact of the US 232 measures on steel and aluminium
 
 13/02/2025
 To discuss solutions aimed at keeping steel sector competitive and bringing forward the necessary investments in decarbonization.
+
+13/02/2025
+Discussion on the challenges that the European Steel sector faces
 
 20/02/2025
 Exchange of views on the policy design and implementation of the Carbon Border Adjustment Mechanism (CBAM) for steel imports.
@@ -551,7 +554,7 @@ Discuss climate relevant issues for the Steel and Metals Action Plan and the CID
 Metals Action Plan
 
 13/03/2025
-Exchange of views on the current challenges of the steel industry and on thedraft new State aid Framework accompanying the Clean Industrial Deal Communication (‘CISAF’)
+Exchange of views on the current challenges of the steel industry and on the draft new State aid Framework accompanying the Clean Industrial Deal Communication (‘CISAF’)
 
 14/03/2025
 CBAM
@@ -560,10 +563,10 @@ CBAM
 Meeting ahead of the publication of the Steel and Metals Action Plan
 
 14/03/2025
-Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+EUROFER concerns and proposals presented regarding the forthcoming Steel and Metals Action Plan.
 
 14/03/2025
-EUROFER concerns and proposals presented regarding the forthcoming Steel and Metals Action Plan.
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
 
 14/03/2025
 EUROFER concerns and proposals presented regarding the forthcoming Steel and Metals Action Plan.
@@ -572,13 +575,19 @@ EUROFER concerns and proposals presented regarding the forthcoming Steel and Met
 EUROFER concerns and proposals presented regarding the fortcoming Steel and Metals Action Plan.
 
 17/03/2025
-Physical meeting - Exchange of views onCBAM
+Physical meeting - Exchange of views on CBAM
 
 17/03/2025
 Steel and Metals Action Plan
 
+19/03/2025
+Steel
+
 24/03/2025
 Current situation of the European Steel industry and key policy needs
+
+24/03/2025
+Circular economy and sustainability
 
 03/04/2025
 Surveillance
@@ -586,6 +595,81 @@ Surveillance
 10/04/2025
 Impact of US tariffs
 
+10/04/2025
+Impact of US tariffs
+
+29/04/2025
+Preparation meeting for Commissioner Kubilius: Introduce their sector and explain its role for the EU’s economic resilience, including the defence sector
+
 29/04/2025
 Steel industry and its challenges
+
+19/05/2025
+CBAM
+
+21/05/2025
+CBAM
+
+26/05/2025
+CISAF consultation
+
+04/06/2025
+Steel industry developments and challenges
+
+05/06/2025
+Exchange of view about the implementation of the Industrial Emissions Directive (IED)
+
+12/06/2025
+EU SMAP communication
+
+17/06/2025
+Meeting on the draft Clean Industrial Deal State Aid Framework (CISAF)
+
+20/06/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+23/06/2025
+Industrial Decarbonisation Bank – Eurofer position
+
+23/06/2025
+CBAM
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+11/07/2025
+Implementation dialogue on customs legislation - Rules of origin
+
+16/07/2025
+CISAF, network charges, CfDs and PPAs
+
+24/07/2025
+The Water Framework Directive (WFD) and metals for the green transition
+
+09/09/2025
+Discussion on 5 main topics relevant for the steel industry (trade defense measure, scrap trade measure, CBAM, EU content and energy prices)
+
+10/09/2025
+Trade and raw materials, energy and industrial needs
+
+15/09/2025
+Steel sector & Industrial Accelerator Act
+
+19/09/2025
+Discussions on technical issues concerning the design and implementation of the Carbon Border Adjustment Mechanism (CBAM)
+
+19/09/2025
+The implementation of the Steel and Metals Action Plan and the upcoming steel measure
+
+30/09/2025
+Physical meeting - Exchange of views on the Carbon Border Adjustment Mechanism (CBAM)
+
+16/10/2025
+Exchange of views on anti-circumvention for the Carbon Border Adjustment mechanism (CBAM).
+
+17/10/2025
+Decarbonisation of steel production
 

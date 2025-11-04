@@ -80,7 +80,7 @@ Discussion on ecodesign, semiconductors, standardisation and internal market
 US-EU Task Force Convening: energy efficiency and energy savings. The California Energy Commission, ACEEE, ASE, Advanced Energy Economy, Arcadia, ComEd, Octopus Energy, OhmConnect, OPower, Uplight and the Covenant of Mayors also participated.
 
 20/01/2023
-U.S.-EU Task Force: Best practices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California Energy Commission, ASE, AEE,ComEd, Octopus Energy, OPower, Uplight
+U.S.-EU Task Force: Best practices in Energy Savings and Flexibility Other participants: Cleantech-Cluster Energy, ELVIA, EU DSO Entity, California Energy Commission, ASE, AEE, ComEd, Octopus Energy, OPower, Uplight
 
 11/07/2023
 Energy efficiency potential and related regulatory initiatives
@@ -105,4 +105,37 @@ Energy efficient appliances, Clean Industrial Deal and Affordable Energy Action 
 
 31/03/2025
 CBAM
+
+13/05/2025
+Discussion of the challenges that the European manufacturers face and potential solutions.
+
+19/05/2025
+Meeting between DG GROW and APPLiA on Standardisation and New Legislative Framework
+
+20/05/2025
+Physical meeting - Exchange of views on the Carbon Border Adjustment Mechanism (CBAM)
+
+04/06/2025
+Chemical legislation (including the REACH revision & PFAS)
+
+24/06/2025
+Exchange on trade, competitiveness and sustainability
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+02/07/2025
+EU Clean Industrial Dialogue on Circularity
+
+02/07/2025
+Exchange of views on the upcoming Digital omnibus
+
+12/09/2025
+The Commission’s Digital Omnibus – simplification of Data Act and AI Act
+
+23/09/2025
+Exchange of views on the Environment Omnibus
+
+17/10/2025
+APPLiA requested a meeting to discuss the non-inclusion of hafnium, a substance used in their hot water storage products, in the European Positive List.
 

@@ -2,7 +2,7 @@
 service economic general service
 
 14/01/2015
-Meeting Social Partners
+meet Social Partners
 
 22/01/2015
 telecommunication policy
@@ -11,7 +11,7 @@ telecommunication policy
 meet social partner
 
 12/02/2015
-Meeting Social Partners
+meet Social Partners
 
 23/02/2015
 la question du dialogue sectoriel des administration centrale
@@ -20,7 +20,7 @@ la question du dialogue sectoriel des administration centrale
 energy
 
 13/07/2015
-Presentation Social Partners autonomous Work Programme 2015 2017 depth employment analysis
+presentation Social Partners autonomous Work Programme 2015 2017 depth employment analysis
 
 18/09/2015
 state play
@@ -29,7 +29,7 @@ state play
 market industry modernisation SME policy
 
 27/11/2015
-discussion focus Semester namely implementation structural reform five Presidents report particular Competitiveness Boards organisation timing Tripartite Social Summit
+discussion focus Semester namely implementation structural reform five president report particular Competitiveness Boards organisation timing Tripartite Social Summit
 
 01/12/2015
 make acquaintance review competition policy trend
@@ -53,7 +53,7 @@ Consultation Social Partners Energy
 Prep Discussion Social Partners 2nd Dialogue Skills Migration
 
 20/03/2017
-Pillar Social Rights Work Life Balance Working Time Directive
+Pillar Social Rights Work Life Balance Working Time directive
 
 20/04/2017
 update EC position vis à vis set sectoral social dialogue social service
@@ -95,7 +95,7 @@ public sector information proposal ePrivacy eGovernment
 introductory meeting reinforce fruitful cooperation
 
 09/01/2019
-PSI Directive
+PSI directive
 
 17/07/2019
 skill
@@ -107,7 +107,7 @@ minimum wage social economy
 minimum wage
 
 03/03/2020
-Consultations Pact migration
+Consultations Pact Migrations
 
 18/03/2020
 videoconference meeting impact Covid 19 crisis
@@ -116,10 +116,10 @@ videoconference meeting impact Covid 19 crisis
 exchange view effect covid 19 crisis
 
 29/04/2020
-videoconference meet social support care service COVID 19
+VC meeting Impact covid 19 Social Services risk person vulnerable situation
 
 29/04/2020
-VC meeting Impact COVID 19 Social Services risk person vulnerable situation
+videoconference meet social support care service covid 19
 
 05/05/2020
 migrant challenge current covid 19 crisis contribution economic recovery
@@ -128,10 +128,10 @@ migrant challenge current covid 19 crisis contribution economic recovery
 Videoconference Recovery Plan
 
 08/06/2020
-high level hearing Executive Vice President Dombrovskis Social Partners Action plan implement Pillar Social Rights
+consultation meeting Executive Vice President Dombrovskis Social Partners Pillar Social Rights
 
 08/06/2020
-consultation meeting Executive Vice President Dombrovskis Social Partners Pillar Social Rights
+high level hear Executive Vice President Dombrovskis Social Partners Action plan implement Pillar Social Rights
 
 09/06/2020
 exchange view impact Coronavirus woman ’s economic situation importance Gender Equality Strategy Pay Transparency measure
@@ -140,16 +140,16 @@ exchange view impact Coronavirus woman ’s economic situation importance Gender
 impact Corona virus
 
 11/06/2020
-Meeting Vice President Schinas Social Partners Skills
+Skills Agenda
 
 11/06/2020
-Skills Agenda
+meet Vice President Schinas Social Partners Skills
 
 10/11/2020
 long term vision rural area
 
 11/11/2020
-Meeting Social Partners Pharmaceutical Strategy Europe ’s beat Cancer Plan
+meet Social Partners Pharmaceutical Strategy Europe ’s Beating Cancer Plan
 
 16/11/2020
 Meeting Recovery Strategy
@@ -170,10 +170,10 @@ preparatory meeting organization Porto Social Summit
 present position paper recent consultation Commission Renewable Energy Directive II Energy Efficiency directive
 
 01/06/2021
-Fit 55 package
+Fit 55 Package
 
 01/06/2021
-Fit 55 package
+Fit 55 Package
 
 01/06/2021
 exchange Fit 55 package
@@ -182,7 +182,7 @@ exchange Fit 55 package
 Discussion Conference Future Europe
 
 24/06/2021
-fit 55 package
+Fit 55 package
 
 25/06/2021
 right disconnect Business Europe
@@ -197,16 +197,16 @@ videoconference social partner RRF implementation economic governance review
 Social Taxonomy
 
 17/03/2022
-Skills Talent Package help ukrainian refugee
+skill Talent Package help ukrainian refugee
 
 24/06/2022
 promotion social dialogue collective bargaining
 
 28/06/2022
-Social Partners Conference Strengthening Europe Social Dialogue Social Dialogue Work Programme 2022 2024
+Social Partners Conference strengthen Europe Social Dialogue Social Dialogue Work Programme 2022 2024
 
 08/07/2022
-care Strategy
+care strategy
 
 08/11/2022
 Social Dialogue Initiative
@@ -230,7 +230,7 @@ policy priority 2024 Commission Work Programme
 Tripartite Social Summit preparatory meeting
 
 17/11/2023
-Involvement social partners green transition
+involvement social partner green transition
 
 09/01/2024
 exchange challenge face inclusive affordable social housing
@@ -254,7 +254,7 @@ Clean Transition Dialogue EGD infrastructure
 Clean Transition Dialogue EGD infrastructure
 
 08/04/2024
-Dialogue Clean Mobility
+dialogue clean Mobility
 
 26/04/2024
 competitiveness
@@ -263,13 +263,13 @@ competitiveness
 social dialogue level
 
 16/01/2025
-exchange view engagement social partner Semester future implementation dialogue
+exchange view engagement social partner semester future implementation dialogue
 
 11/02/2025
 design resilient climate architecture beyond 2030
 
 20/02/2025
-Exchange priorities area employment social policy
+exchange priority area employment social policy
 
 18/03/2025
 revision public procurement rule
@@ -279,3 +279,9 @@ competitiveness
 
 03/06/2025
 Water Resilience Strategy Circular Economy Act
+
+10/09/2025
+public procurement revision Circular Economy Act
+
+11/09/2025
+exchange view social economy SGI Europe

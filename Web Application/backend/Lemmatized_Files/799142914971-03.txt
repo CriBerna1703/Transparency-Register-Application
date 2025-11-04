@@ -26,7 +26,7 @@ Investment Initiative
 dsm
 
 10/07/2015
-Financial Services policy
+Financial Services Policy
 
 13/07/2015
 Digital Market agenda
@@ -35,25 +35,25 @@ Digital Market agenda
 Digital Market agenda
 
 23/09/2015
-Financial Services policy
+Financial Services Policy
 
 28/09/2015
 Digital Market Agenda Role Financial Sector Project
 
 29/09/2015
-Financial Transaction tax
+Financial Transaction Tax
 
 12/11/2015
 investment initiative
 
 08/12/2015
-Role Financial Sector DSM
+role Financial Sector DSM
 
 09/12/2015
 Digital Market
 
 09/03/2016
-dsm digitisation banking
+DSM digitisation banking
 
 17/03/2016
 start up
@@ -71,7 +71,7 @@ capital deliverability
 financial education
 
 20/06/2017
-Exchange Views Financial Innovation Digital Tranformation
+exchange view Financial Innovation Digital Tranformation
 
 07/09/2017
 Basel Digital fintech Banking ccp
@@ -80,7 +80,7 @@ Basel Digital fintech Banking ccp
 Digital Agenda e identification Banco Santanders response Fintech Consultation relate issue
 
 09/01/2018
-Future financial service
+Future Financial service
 
 26/04/2018
 CRR BRRD review
@@ -92,13 +92,13 @@ fintech
 Fintech MFF
 
 05/06/2018
-Role financial sector digitalisation EC economy
+role financial sector digitalisation EC economy
 
 05/06/2018
 main financial regulatory topic digitalization financial sector
 
 05/06/2018
-digital tax proposal future emu
+digital tax proposal future EMU
 
 05/06/2018
 banking banking regulation PSD2
@@ -110,7 +110,7 @@ contribution financial sector Climate Energy objective
 situation US car datum
 
 28/06/2018
-financing Innovation
+Financing Innovation
 
 20/09/2018
 Cyber Security FinTech
@@ -134,10 +134,10 @@ situation économique dan l’union Européenne
 ongoing financial service proposal FinTech
 
 14/12/2018
-Long Term Strategy
+Long Term strategy
 
 20/12/2018
-long term Strategy follow
+long term strategy follow
 
 28/01/2019
 brexit
@@ -152,13 +152,13 @@ general financial service issue
 trade sme
 
 07/02/2019
-taxation digital service level play field payment service provider importance complete bu EDIS
+taxation digital service level play field payment service provider importance complete BU EDIS
 
 22/02/2019
 polish financial service legislation
 
 27/02/2019
-sustainable Finance
+sustainable finance
 
 25/06/2019
 PSD2 Digital payment
@@ -179,7 +179,7 @@ Discussion Multiple Point Entry Resolution strategy Basel III ’s approach oper
 future banking digitalization regulation
 
 18/02/2020
-datum economy plaftform policy
+data economy plaftform policy
 
 03/03/2020
 Basel III implementation particular focus operational risk Resolution strategy multiple point entry model
@@ -209,25 +209,25 @@ courtesy meeting
 digital agenda DSA /DMA proposal SME financing
 
 08/02/2021
-exiting covid Basel implementation
+exit covid Basel implementation
 
 10/02/2021
 Basel III
 
 05/03/2021
-Daisy chain
+Daisy Chains
 
 09/03/2021
 Basel III
 
 19/04/2021
-introductory meeting discussion banking file
+introductory meet discussion banking file
 
 26/04/2021
 Basel III covid response
 
 26/04/2021
-state play COVID19 guaranteed loan Spain support measure
+state play COVID19 guarantee loan Spain support measure
 
 02/06/2021
 recovery plan trade include Mercosur financial economic policy issue
@@ -248,7 +248,7 @@ Basel III
 Basel III meeting share Cabinet Dombrovskis
 
 09/12/2021
-Organization conference Future Finance
+organization conference Future Finance
 
 23/02/2022
 15 minute chat bank continue work digital transition
@@ -257,10 +257,10 @@ Organization conference Future Finance
 Data Act AI Act
 
 25/05/2022
-ngeu
+NGEU
 
 10/06/2022
-nextgenerationeu
+NextGenerationEU
 
 20/06/2022
 implementation sanction
@@ -275,7 +275,7 @@ energy situation finance green transition
 Digital euro Basel
 
 29/09/2022
-introductory meeting RRF implementation
+introductory meet RRF implementation
 
 19/10/2022
 Latin America digitalization artificial intelligence datum protection
@@ -284,7 +284,7 @@ Latin America digitalization artificial intelligence datum protection
 Basel III
 
 17/11/2022
-economic situation outlook economic social policy priorities recovery resilience plan
+economic situation outlook economic social policy priority recovery resilience plan
 
 10/01/2023
 Latin America Caribbean
@@ -347,7 +347,7 @@ Exchange Savings Investments
 simplification
 
 28/01/2025
-exchange view competitiveness Savings Investment
+exchange views competitiveness Savings investment
 
 04/02/2025
 SF Sustainability Omnibus
@@ -365,13 +365,13 @@ use DLT Tokenisation Financial Markets
 financial sector defence investment policy regulatory framework
 
 04/03/2025
-macroeconomic fiscal outlook spanish economy focus macroeconomic budgetary development recent quarter 2026 Discussion implementation RRP
+macroeconomic fiscal outlook spanish economy focus macroeconomic budgetary development recent quarter 2026 discussion implementation RRP
 
 12/03/2025
-Meeting South America Critical Raw Materials CRM Coalition Willing dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
+Meeting South America Critical Raw Materials CRM Coalition Willing Dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
 
 12/03/2025
-Energy Efficiency Financing first high level event Energy Efficiency Financing coalition
+Energy Efficiency financing first high level event Energy Efficiency Financing Coalition
 
 20/03/2025
 sustainability simplification effort Commission
@@ -380,7 +380,7 @@ sustainability simplification effort Commission
 exchange relevant development
 
 26/03/2025
-discuss Competitiveness Banking sector
+discuss Competitiveness Banking Sector
 
 27/03/2025
 simplification
@@ -404,7 +404,7 @@ discussion state play equity market
 Santander ’s work Latin America Caribbean
 
 12/06/2025
-discuss Santander ’s work skill Santander involve upskille reskille initiative SkillsPact skill large scaleregional partnership Individual Learning Accounts Microcredentials
+discuss Santander ’s work skill Santander involve upskille reskille initiative SkillsPact Skills large scaleregional partnership Individual Learning account microcredential
 
 12/06/2025
 exchange view PSD2 Digital Euro SIU
@@ -414,3 +414,6 @@ challenge repo market relation forthcoming move short settlement cycle T1
 
 24/07/2025
 Scaleup Europe Fund
+
+16/09/2025
+supervisory regulatory agenda

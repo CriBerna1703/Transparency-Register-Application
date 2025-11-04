@@ -14,4 +14,7 @@ introduction Valmet Biogas production technology energy waste
 cbam
 
 08/07/2025
-Carbon Border Adjustment Mechanism cbam
+Carbon Border Adjustment mechanism cbam
+
+10/10/2025
+exchange view Carbon Border Adjustment mechanism cbam

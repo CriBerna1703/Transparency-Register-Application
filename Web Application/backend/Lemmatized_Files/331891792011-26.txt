@@ -8,4 +8,7 @@ exchange view US oil gas company
 energy situation US Europe
 
 11/03/2025
-Exchange view US international oil gas company
+exchange view US international oil gas company
+
+09/09/2025
+LNG methane emission

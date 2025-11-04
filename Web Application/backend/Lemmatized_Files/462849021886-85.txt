@@ -1,17 +1,17 @@
 25/05/2016
-innovation funding
-
-25/05/2016
 performance assessment budget focus result
 
 25/05/2016
 energy transition skill
 
+25/05/2016
+innovation funding
+
 06/09/2016
-energy research Innovation competitiveness
+energy research innovation competitiveness
 
 20/09/2016
-energy research Innovation competitiveness
+energy research innovation competitiveness
 
 17/10/2016
 EURICS communication energy RI matter
@@ -29,10 +29,10 @@ energy innovation
 innoenergy dossier
 
 10/03/2017
-batterie raw material strategy
+battery raw material strategy
 
 04/09/2017
-late update energy issue
+late update Energy issue
 
 07/09/2017
 Clean Energy Europeans package RD
@@ -44,7 +44,7 @@ Financing Energy Transition
 late development energy
 
 10/01/2018
-fp9
+FP9
 
 31/05/2018
 battery
@@ -80,10 +80,10 @@ solar panel mafacture
 Battery Alliance
 
 27/01/2021
-Solar PV manufacturing
+Solar pv manufacture
 
 27/01/2021
-Solar PV manufacturing revision renewable Directive Energy Efficiency role renewable solar Climate Target Plan
+Solar pv manufacture revision Renewable Directive Energy Efficiency role renewable solar Climate Target Plan
 
 02/03/2021
 High Level Meeting Battery Alliance
@@ -101,7 +101,7 @@ presentation h2 Green Steel project
 virtual meeting smart mobility strategy Green Deal
 
 29/07/2021
-hyperloop transport
+Hyperloop transport
 
 20/09/2021
 battery hydrogen raw material
@@ -110,13 +110,13 @@ battery hydrogen raw material
 battery alliance
 
 18/10/2021
-fit 55 package EIT InnoEnergy support egd
+Fit 55 package EIT InnoEnergy support egd
 
 19/10/2021
 Discussion Hydrogen Batteries Alliance
 
 19/10/2021
-physical meeting Exchange view Commission proposal cbam
+physical meeting Exchange view Commission proposal CBAM
 
 11/11/2021
 round table discussion regulation hydrogen market
@@ -161,7 +161,7 @@ EBA250
 EIT EBA Academy Progress Report
 
 18/04/2023
-preparation eba ceo meeting
+preparation EBA ceo meeting
 
 05/06/2023
 upskille reskille challenge automotive sector order ensure transition across ecosystem
@@ -179,7 +179,7 @@ hydrogen
 Clean Transition Dialogue Energy Intensive Industries
 
 01/12/2023
-réunion ministérielle de l Alliance solaire
+réunion ministérielle de l Alliance Solaire
 
 17/01/2024
 Critical Raw Materials battery industry
@@ -188,16 +188,16 @@ Critical Raw Materials battery industry
 action accelerate manufacturing climate technology Europe
 
 14/02/2024
-present late news EIT InnoEnergy EBA battery material fund investment pipeline key area decarbonisation sustainable aviation fuel energy storage exchange view earmark Innovation Fund budget battery
+EIT InnoEnergy present eba battery material fund
 
 14/02/2024
-EIT InnoEnergy present EBA battery material fund
-
-22/02/2024
-Clean Transition Dialogue Clean Technologies
+present late news EIT InnoEnergy EBA battery material fund investment pipeline key area decarbonisation sustainable aviation fuel energy storage exchange view earmark Innovation Fund budget battery
 
 22/02/2024
 energy market
+
+22/02/2024
+Clean Transition Dialogue Clean Technologies
 
 26/02/2024
 Clean Transition Dialogue EGD infrastructure
@@ -209,7 +209,7 @@ Clean Transition Dialogue EGD infrastructure
 Clean Transition Dialogue Steel Sector
 
 22/03/2024
-discussion current challenge face steel sector attend private industry well minister official representative Italy Romania Poland Czechia Belgium Hungary Luxembourg
+discussion current challenge face steel sector attend private industry well Ministers official representative Italy Romania Poland Czechia Belgium Hungary Luxembourg
 
 02/04/2024
 financing need EU ’s green transition
@@ -218,13 +218,13 @@ financing need EU ’s green transition
 battery
 
 28/06/2024
-net zero academie
+net zero academy
 
 03/12/2024
-industrial value chain battery cell manufacturer resilience sustainability social criterion 1 ensure level playing field chinese PV panel Europe 2 incentivize demand make panel
+industrial value chain battery cell manufacturer resilience sustainability social criterion 1 ensure level playing field chinese pv panel Europe 2 incentivize demand make panel
 
 03/12/2024
-industrial value chain battery cell manufacturer resilience sustainability social criterion 1 ensure level playing field chinese PV panel Europe 2 incentivize demand make panel
+industrial value chain battery cell manufacturer resilience sustainability social criterion 1 ensure level playing field chinese pv panel Europe 2 incentivize demand make panel
 
 11/12/2024
 clean industry Battery PV
@@ -242,19 +242,19 @@ battery EBA Photovoltaïque ESIA
 transition finance
 
 19/02/2025
-Dialogue future automotive sector Battery Session
+dialogue future automotive sector Battery session
 
 19/02/2025
 exchange view situation automotive industry
 
 12/03/2025
-Meeting South America Critical Raw Materials CRM Coalition Willing dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
+Meeting South America Critical Raw Materials CRM Coalition Willing Dialogue private public sector stakeholder financial institution sustainable critical raw material value chain Latin America
 
 18/03/2025
 future battery sector
 
 03/04/2025
-Battery Value chain
+battery value chain
 
 23/05/2025
 InnoEnergy contribute growth early stage cleantech startup accelerate growth startup successful scaleup across continent
@@ -264,3 +264,6 @@ discussion possibility address market failure clean tech field increase derisk d
 
 11/06/2025
 battery
+
+15/09/2025
+Compétitivité des entreprise Relation Japon UE avec les USA Decarbonation Batterie chaine de valeur Voiture electrique

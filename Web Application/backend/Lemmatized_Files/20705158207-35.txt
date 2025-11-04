@@ -1,5 +1,5 @@
 03/06/2015
-capital IV Directive Denmarks possible join Banking Capital Markets
+Capital IV Directive Denmarks possible join Banking Capital Markets
 
 30/10/2015
 financial sector development
@@ -8,7 +8,7 @@ financial sector development
 Current Affairs
 
 04/03/2016
-covered Bonds CMU Call evidence proportionality
+cover Bonds CMU Call evidence proportionality
 
 18/05/2016
 current issue banking sector
@@ -17,31 +17,31 @@ current issue banking sector
 Financial Services
 
 31/08/2017
-psd2
-
-08/11/2017
-Basel
+PSD2
 
 08/11/2017
 Banking Capital Markets
+
+08/11/2017
+Basel
 
 06/03/2018
 EMU Banking
 
 14/05/2019
-finalization Basel IV implementation Basel requirement
+Basel implementation
 
 14/05/2019
-Basel implementation
+finalization Basel IV implementation Basel requirement
 
 03/03/2020
 Implementaion Basel
 
 03/03/2020
-Nordic Finance sector
+nordic Finance sector
 
 20/11/2020
-discussion Implementation Basel III Europe
+Discussion Implementation Basel III Europe
 
 19/03/2021
 Basel III
@@ -50,7 +50,7 @@ Basel III
 Basel 4 implementation
 
 05/11/2021
-MiFID mifir
+MiFID MiFIR
 
 09/12/2021
 Basel III
@@ -62,13 +62,13 @@ digital euro
 general economic outlook Denmark
 
 28/03/2023
-Round Table Digital Euro EVP Dombrovskis DG fisma
+Round Table Digital Euro EVP Dombrovskis DG FISMA
 
 11/09/2023
 communication priority upcoming State speech
 
 09/04/2024
-priority next term future agenda financial service
+priority next term Future agenda financial service
 
 21/01/2025
 Exchange Finance Denmark
@@ -77,4 +77,7 @@ Exchange Finance Denmark
 exchange regulatory development
 
 02/06/2025
-Exchange asset manager integration capital market
+exchange asset manager integration capital market
+
+24/09/2025
+exchange important digital policy priority representative Nordic Financial Associations

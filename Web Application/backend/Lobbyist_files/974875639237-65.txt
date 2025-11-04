@@ -17,7 +17,7 @@ EU Taxonomy
 Roundtable of the Clean Hydrogen Alliance: 3rd meeting of the co-chairs
 
 24/11/2021
-CEO Roundtable onindustrial application (hydrogen)
+CEO Roundtable on industrial application (hydrogen)
 
 02/12/2021
 EPBD - Energy efficiency - Minimum Energy Performance Standards
@@ -29,16 +29,16 @@ Discussion on the upcoming review of the F- gas regulation
 Investment opportunities in Algeria for EU companies.
 
 21/02/2023
-energy sector, wind energy
-
-21/02/2023
 Energy transition
 
 21/02/2023
-Support for the clean tech industry in Europe.
+energy sector, wind energy
 
 21/02/2023
 Exchange of views on the current challenges for Europe’s clean tech sector and the IRA
+
+21/02/2023
+Support for the clean tech industry in Europe.
 
 31/08/2023
 Energy transition
@@ -89,10 +89,10 @@ hydrogen and hydrogen technologies in Europe
 Hydrogen
 
 05/12/2024
-To discuss European wind industry
+Competitiveness and energy Transition
 
 05/12/2024
-Competitiveness and energy Transition
+To discuss European wind industry
 
 12/12/2024
 Financing Europe’s Clean Transition Strategy
@@ -116,6 +116,9 @@ Global Gateway investments
 Clean Industrial Deal
 
 24/03/2025
+Grids, wind energy, hydrogen
+
+24/03/2025
 Dinner at the House of Danish Industry and roundtable discussion
 
 28/03/2025
@@ -126,4 +129,58 @@ Wind energy, electrification, competitiveness, permitting, grids
 
 30/04/2025
 Energy transition and upcoming EU’s initiatives
+
+06/05/2025
+Shaping a new Team Europe approach towards Asia and Sub- Saharan Africa in order to develop rail projects in both regions while ensuring the competitiveness of the EU’s railways industry.
+
+19/05/2025
+Compétitivité, Simplification
+
+04/06/2025
+Exchange of views on the energy sector in Europe, notably the wind sector
+
+04/06/2025
+Current trade situation
+
+04/06/2025
+Meeting with CEO Christian Bruch
+
+04/06/2025
+Competitiveness and security of the EU Energy System
+
+06/06/2025
+Siemens Energy business interests in UAE
+
+06/06/2025
+Siemens Energy business interests in UAE
+
+12/06/2025
+High-level Roundtable on Colombian energy sector with exchange of views between Minister of Mines and Energy, IFIs and EU companies.
+
+17/06/2025
+Simplification agenda, Omnibus Packages; Clean Industrial Deal, Affordable Energy Action Plan
+
+18/06/2025
+Roundtable with key Global Gateway stakeholders on the next steps for business engagement
+
+25/06/2025
+Clean Industrial Deal State Aid Framework
+
+25/06/2025
+Presentation of Siemens Energy company; general questions about the next Multiannual Financial Framework.
+
+01/07/2025
+Competitiveness and transition energy
+
+01/07/2025
+Discussion on collaboration with INTPA
+
+30/07/2025
+Follow up of the Wind Action Plan Priorities of the Wind sector
+
+05/09/2025
+Exchange on the key priorities of the Commission
+
+23/10/2025
+EU hydrogen policy
 

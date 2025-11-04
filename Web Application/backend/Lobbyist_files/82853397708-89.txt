@@ -1,8 +1,8 @@
 03/12/2014
-Regulatory framework
+Investments and innovations in the digital sector
 
 03/12/2014
-Investments and innovations in the digital sector
+Regulatory framework
 
 04/12/2014
 Telecoms Single Market, broadband, consolidation
@@ -26,10 +26,10 @@ Telecoms
 DSM
 
 22/07/2015
-Telecommunication Policy
+Telecom, copyright
 
 22/07/2015
-Telecom, copyright
+Telecommunication Policy
 
 22/07/2015
 Digital Single Market
@@ -107,7 +107,7 @@ Endorsing the Joint statement on Roaming and International calls between EU and 
 Electrification of transport sector
 
 06/09/2022
-meeting with the Green Digital Coalition - Maintopic : state of play on sustainable digitalization
+meeting with the Green Digital Coalition - Main topic : state of play on sustainable digitalization
 
 20/09/2022
 presentation of the company, telecom.
@@ -126,4 +126,13 @@ State of play on US-EU trade relations
 
 08/04/2025
 State of play on US-EU trade relations
+
+09/04/2025
+Upcoming legislation in the Telecom sector
+
+13/06/2025
+Commission DNA proposal
+
+27/06/2025
+Implementation details of the inclusion of Ukraine into the EU Roam Like at Home (the ‘EU RLAH’) area
 

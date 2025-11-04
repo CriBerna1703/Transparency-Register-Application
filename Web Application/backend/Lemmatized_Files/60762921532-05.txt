@@ -1,11 +1,11 @@
 15/01/2015
-covered bond
+cover bond
 
 01/04/2016
 Consultation Covered Bonds NSFR
 
 07/09/2016
-covered bond
+cover bond
 
 05/09/2017
 banking ESA review CRR CRD PSD2
@@ -14,7 +14,7 @@ banking ESA review CRR CRD PSD2
 implementation Basel 3
 
 10/03/2021
-basel reform implementation
+Basel reform implementation
 
 07/04/2021
 Basel III

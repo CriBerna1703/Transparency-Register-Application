@@ -5,10 +5,10 @@ DSM
 DSM
 
 19/10/2016
-Startups
+pro-startup agenda
 
 19/10/2016
-pro-startup agenda
+Startups
 
 25/01/2018
 Commission's digital taxation proposal
@@ -17,10 +17,10 @@ Commission's digital taxation proposal
 Fintech Action Plan & Cryptocurrencies
 
 07/03/2018
-Meeting to discuss digital taxation (also with representatives from Deezer and Volumental)
+Meeting to discuss digital taxation
 
 07/03/2018
-Meeting to discuss digital taxation
+Meeting to discuss digital taxation (also with representatives from Deezer and Volumental)
 
 30/01/2020
 Exchange on start-ups and access to finance
@@ -38,10 +38,10 @@ European Innovation Area
 Exchange with startups and scaleups on EU digital policies
 
 19/02/2024
-Single Market barriers, public procurement and start-up financing
+Les enjeux du recrutement des startups et métiers de demain
 
 19/02/2024
-Les enjeux du recrutement des startups et métiers de demain
+Single Market barriers, public procurement and start-up financing
 
 15/04/2024
 present their study on AI Act
@@ -61,6 +61,39 @@ Exchange with France Digitale on a European Venture Capital Initiative to unlock
 04/03/2025
 Venture and growth capital
 
+09/04/2025
+28th regime
+
 25/04/2025
 Second meeting of the European Startup and Scaleup Forum. Discussion on the draft building blocks of the EU Startup and Scaleup Strategy structured along the identified obstacles and possible solutions.
+
+15/05/2025
+Company law / 28th regime
+
+24/06/2025
+Overview of the startup and venture capital landscape in France
+
+02/07/2025
+Review of the Commission’s Merger Guidelines
+
+23/07/2025
+28th Regime
+
+09/09/2025
+Subject matter: Propositions du Cloud and AI Development Act (CADA) et positions de France Digitale
+
+17/09/2025
+Consultation on the review of Merger Guidelines
+
+22/09/2025
+Digital Markets Act enforcement
+
+23/09/2025
+Public procurement, Common European Industrial Policy for Innovation and European Preference
+
+01/10/2025
+Digital Markets Act (DMA), Article 22 of the EC Merger Regulation (EUMR) and the review of the EU Merger Guidelines
+
+17/10/2025
+Exchange of views on the Data Act
 

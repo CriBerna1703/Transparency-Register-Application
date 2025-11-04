@@ -20,7 +20,7 @@ Hydrogen and gas sector decarbonisation package
 Discussion about security of supply and gas infrastructure.
 
 29/09/2022
-Infrastructure,preparedness and energy security.
+Infrastructure, preparedness and energy security.
 
 26/10/2022
 Joint purchasing options.
@@ -60,4 +60,10 @@ Clean Transition Dialogue on EGD Infrastructures
 
 30/01/2025
 Affordable Energy action Plan
+
+07/05/2025
+Hydrogen infrastructure development
+
+16/10/2025
+Exchange on revision of the energy security framework
 

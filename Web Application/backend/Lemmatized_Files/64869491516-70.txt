@@ -5,7 +5,7 @@ policy option decarbonise transport
 Energy Climate
 
 28/01/2015
-decarbonisation transport sector
+Decarbonisation transport sector
 
 03/03/2015
 Climate Action Energy
@@ -29,10 +29,10 @@ Circular Economy Energy
 decarbonization
 
 11/06/2015
-CO2 standard car
+co2 standard car
 
 16/06/2015
-meeting i24c
+meet i24c
 
 17/06/2015
 climate policy link development cooperation
@@ -107,7 +107,7 @@ EFSI
 Innovation Energy
 
 20/04/2016
-Workshop industrial innovation I2 4c
+workshop industrial innovation i2 4c
 
 25/04/2016
 low carbon road transport
@@ -122,25 +122,25 @@ current research
 Paris Agreement
 
 15/09/2016
-energy research Innovation competitiveness
+energy research innovation competitiveness
 
 22/09/2016
-energy research Innovation competitiveness
+energy research innovation competitiveness
 
 28/09/2016
-energy research Innovation competitiveness
+energy research innovation competitiveness
 
 19/10/2016
 energy efficiency energy issue
 
 28/10/2016
-innovation Competitiveness
+Innovation Competitiveness
 
 17/11/2016
 small appliance circular economy
 
 19/01/2017
-Clean Energy Package EE
+Clean Energy Package ee
 
 19/01/2017
 Energy Climate Action Investment
@@ -149,10 +149,10 @@ Energy Climate Action Investment
 energy policy regional cooperation
 
 13/03/2017
-clean economy
+Clean Economy
 
 11/05/2017
-carbon risk Sustainable Finance HLEG Sustainable Finance
+carbon risk Sustainable Finance HLEG sustainable Finance
 
 02/06/2017
 industrial strategy
@@ -176,7 +176,7 @@ discussion implementation Sustainable Development goal
 Energy Climate Governance
 
 23/02/2018
-cesec
+CESEC
 
 10/04/2018
 HDV Standards
@@ -188,7 +188,7 @@ economic impact deploy low emission hdv
 circular economy
 
 26/06/2018
-cop 24 2050 roadmap
+COP 24 2050 Roadmap
 
 26/06/2018
 exchange view COP24 mid century strategy
@@ -200,10 +200,10 @@ decarbonisation perspective
 industry dimension Commission ’s work mid century strategy
 
 11/10/2018
-financing Innovation
+Financing Innovation
 
 11/10/2018
-financing Innovation
+Financing Innovation
 
 12/10/2018
 finance climate change
@@ -224,13 +224,13 @@ strategy toward zero carbon emission
 presentation report report Net Zero 2050 whether
 
 06/11/2018
-Sustainable Finance Climate Change
+sustainable Finance Climate Change
 
 07/11/2018
-climate Change
+Climate change
 
 06/02/2019
-ECF Energy 2050 study
+ECF Energy 2050 Study
 
 06/02/2019
 decarbonisation strategy
@@ -278,7 +278,7 @@ development hydrogen market future transport need option hydrogen relate infrast
 shovel ready project green recovery
 
 27/07/2020
-high Level Roundtable Discussion State 2020 Green Deal Via Webex
+High Level Roundtable Discussion State 2020 Green Deal Via Webex
 
 04/08/2020
 private finance transition
@@ -290,10 +290,10 @@ sustainable finance
 climate agriculture
 
 18/11/2020
-green deal
+Green deal
 
 20/01/2021
-Draft delegate act Taxonomy
+draft delegate act taxonomy
 
 20/01/2021
 taxonomy sustainable activity
@@ -317,16 +317,16 @@ virtual meeting ETS fit 55
 virtual meeting ETS fit 55
 
 18/02/2021
-Transition South East Europe clean energy cooperation Southern Neighbourhood
+transition South East Europe clean energy cooperation Southern Neighbourhood
 
 23/02/2021
 taxonomy draft delegate act CEE country
 
 03/06/2021
-Summits 3rd Countries Sustainable Finance Trade
+Summits 3rd Countries sustainable Finance Trade
 
 03/06/2021
-Summits 3rd Countries Sustainable Finance Trade
+Summits 3rd Countries sustainable Finance Trade
 
 15/06/2021
 make zero emission road freight reality
@@ -335,7 +335,7 @@ make zero emission road freight reality
 Green Deal diplomacy
 
 01/09/2021
-COP26 outreach
+cop26 outreach
 
 27/09/2021
 transition industrial competitiveness
@@ -353,16 +353,16 @@ Climate Green Deal diplomacy
 Green Deal Semester
 
 25/05/2022
-reflect repowereu ies ECF improve support commission work
+reflect RePowerEU IES ECF improve support commission work
 
 27/06/2022
-discussion RePowerEU Plan impact climate neutrality objective
+discussion repowereu plan impact climate neutrality objective
 
 28/09/2022
 preparation COP27
 
 18/01/2023
-Response US IRA green transition industry
+response US IRA green transition industry
 
 18/01/2023
 support work around response US IRA need investment wave climate friendly technology upcoming electricity market design reform
@@ -383,7 +383,7 @@ response energy crisis accelerate energy transition
 discussion report COP28
 
 26/05/2023
-cop
+COP
 
 22/06/2023
 Global Financing Pact Summit COP28
@@ -392,13 +392,13 @@ Global Financing Pact Summit COP28
 Energy Transition participant Sequoia Climate Fund Energy Transition Fund Secure Energy Project Global Renewables Alliance Destination Zero Rocky Mountains Institute
 
 23/10/2023
-roundtable meeting 10 Secretary Generals ceo Electrification Alliance revise renewable Energy Directive revise REDII electricity market design grid storage
+roundtable meeting 10 Secretary Generals CEOs Electrification Alliance revise Renewable Energy directive revise REDII electricity market design grid storage
 
 15/11/2023
-climate Policy
+climate policy
 
 31/01/2024
-2040 Communication preparation COP29
+2040 communication preparation COP29
 
 05/02/2024
 2040 climate target
@@ -410,7 +410,7 @@ energy transition
 international taxation particular G7 G20 context
 
 20/01/2025
-introductory discussion Climate Foundation ECF share insight cop discussion
+introductory discussion Climate Foundation ECF share insight COP discussion
 
 20/01/2025
 introductory meeting ECF plan 2025
@@ -428,13 +428,19 @@ NDC diplomacy
 discussion decarbonise aviation
 
 28/04/2025
-cop 30 CID
+COP 30 CID
 
 14/05/2025
-Implementation Clean Industrial Deal
+implementation Clean Industrial Deal
 
 16/05/2025
 simplification
 
 13/06/2025
 discussion Nature credit
+
+03/09/2025
+Meeting Climate Foundation
+
+06/10/2025
+meet TRADE ECF

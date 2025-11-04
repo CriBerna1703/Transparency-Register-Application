@@ -2,10 +2,10 @@
 Bank structural reform
 
 17/12/2014
-Capital markets union
+CMU
 
 17/12/2014
-CMU
+Capital markets union
 
 16/01/2015
 Capital Markets Union
@@ -44,10 +44,10 @@ Securitisation
 Joint meeting/Markets in Financial Instruments Directive level2
 
 27/01/2016
-Investment plan
+Capital Markets Union
 
 27/01/2016
-Capital Markets Union
+Investment plan
 
 18/04/2016
 Securitisation; Banking prudential issues;
@@ -80,10 +80,10 @@ financial services agenda
 Banking Package; ESA review
 
 07/03/2017
-Keynote speech at the Conference on "The Shortage of Risk Capital for Europe's High Growth"
+Better Regulation, Capital Markets Union, Transparency
 
 07/03/2017
-Better Regulation, Capital Markets Union, Transparency
+Keynote speech at the Conference on "The Shortage of Risk Capital for Europe's High Growth"
 
 07/04/2017
 Retail banking secor, analysis of the General Data protection regulation (GDPR)
@@ -110,10 +110,10 @@ Cybersecurity
 Prudential Board meeting (on Banking Union and Capital Markets Union)
 
 12/09/2018
-Securitisation
+Post-trade
 
 12/09/2018
-Post-trade
+Securitisation
 
 15/11/2018
 PRIIPs
@@ -167,28 +167,28 @@ Sustainable Finance
 Sustainable finance, Green recovery
 
 12/04/2021
-Substainable CorporateGovernance
-
-27/04/2021
-Sustainable Finance
-
-27/04/2021
-Sustainable Finance
-
-27/04/2021
-Sustainable Finance
+Substainable Corporate Governance
 
 27/04/2021
 MiFIR, EU/UK regulatory and Secondary market liquidity
+
+27/04/2021
+Sustainable Finance
+
+27/04/2021
+Sustainable Finance
+
+27/04/2021
+Sustainable Finance
 
 28/04/2021
 CRR3 legislative package
 
 05/05/2021
-Basel implementation, sustainable finance
+with Cab Dombrovskis - Basel III
 
 05/05/2021
-with Cab Dombrovskis - Basel III
+Basel implementation, sustainable finance
 
 13/07/2021
 the forthcoming consolidated tape proposals
@@ -238,20 +238,23 @@ AFME's Annual Financial Services Policy Dinner
 05/02/2025
 Use of DLT and Tokenisation in Financial Markets
 
+11/02/2025
+Sustainability Omnibus
+
 12/02/2025
 Meeting to discuss market developments
 
 13/02/2025
-Discussion on level 2 measures on transparency requirements for equity and non-equity instruments, synchronisation ofbusiness clocks, transaction reporting and best execution
+Discussion on level 2 measures on transparency requirements for equity and non-equity instruments, synchronisation of business clocks, transaction reporting and best execution
 
 27/02/2025
 Simplification, Savings and Investments Union, Distributed Ledger Technology
 
 04/03/2025
-EU financial services industry associations debrief on EU-UK Financial Regulatory Forum
+Exchange of views on the FRTB international implementation
 
 04/03/2025
-Exchange of views on the FRTB international implementation
+EU financial services industry associations debrief on EU-UK Financial Regulatory Forum
 
 19/03/2025
 Discussion on transaction reporting
@@ -267,4 +270,46 @@ Financial services policies
 
 22/04/2025
 FIDA
+
+14/05/2025
+Informal Workshop on the integration of EU capital market
+
+21/05/2025
+Firseside chat on the state-of-play of the Sustainable Finance framework
+
+21/05/2025
+Firseside chat on the state-of-play of the Sustainable Finance framework
+
+22/05/2025
+Exchange with AFME on the Retail Investment Strategy
+
+12/06/2025
+DLT pilot review
+
+25/06/2025
+State of play on cloud policy
+
+26/06/2025
+Exchange of views on the reform of the bank crisis management and deposit insurance framework (CMDI review)
+
+07/07/2025
+MiFIR – market consolidation
+
+11/09/2025
+CSDR
+
+24/09/2025
+Level 2 measures
+
+02/10/2025
+Securitisation – AFME’s comments on the Commission’s securitization package
+
+09/10/2025
+Digital omnibus
+
+10/10/2025
+SIU: equity trading structure
+
+15/10/2025
+The development of the EC’S SIU strategy
 

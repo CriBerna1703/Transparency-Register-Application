@@ -65,7 +65,7 @@ Mobility package
 MFF
 
 11/10/2018
-European Labour Authority, transparent and predictable working conditions, coordinationof social security system and work-life balance
+European Labour Authority, transparent and predictable working conditions, coordination of social security system and work-life balance
 
 26/11/2018
 DSM, geoblocking, data, security, startups
@@ -107,10 +107,10 @@ Recovery. Wirtschaftsentwicklung.
 Speaker at WKÖ Wirtschaftsclub: Multiannual Financial Framework 2021-2027
 
 03/03/2021
-Post Covid-19 recovery with a focus on digital and industrial policy
+post Covid-19 recovery
 
 03/03/2021
-post Covid-19 recovery
+Post Covid-19 recovery with a focus on digital and industrial policy
 
 09/03/2021
 Digital green certificates Austrian post Covid-19 recovery and RRP Sustainable finance and taxonomy Industrial strategy and the role of SMEs
@@ -122,10 +122,10 @@ European Recovery Plans; Green Deal
 Basel reform, Sustainable finance, payment systems, Intra- EU investment treaties, AML
 
 28/09/2021
-Investment protection and facilitation
+Investment protection and facilitation.
 
 28/09/2021
-Investment protection and facilitation.
+Investment protection and facilitation
 
 11/10/2021
 European recovery; Green Deal.
@@ -173,10 +173,10 @@ CMRD6
 Current economic developments.
 
 15/05/2024
-Austauch mit Österreichischen Bauern
+Aktuelle fragen der gemeinsamen Agrarpolitik
 
 15/05/2024
-Aktuelle fragen der gemeinsamen Agrarpolitik
+Austauch mit Österreichischen Bauern
 
 11/06/2024
 V/C re Challenges for European companies private companies in Hungary
@@ -204,4 +204,31 @@ WKOnnect on “What direction does the 'Competitiveness Compass' point for Europ
 
 24/03/2025
 EU Digital Policy
+
+23/04/2025
+Exchange on views of small and young business leaders on current challenges in EU security and migration policy
+
+12/05/2025
+Skilled Labor Shortage and security of SMEs
+
+13/05/2025
+Exchange on the role of the retail sector to innovation
+
+13/05/2025
+- Savings- and investment Union - Competitiveness - Barriers in the Eurozone - Banking supervision - defence financing
+
+14/05/2025
+Roundtable on “Clean Industrial Deal – Gamechanger for the European industry?”
+
+02/06/2025
+Exchange of views on the Clean Industrial Deal
+
+17/07/2025
+Developments in the Austrian retail
+
+28/08/2025
+Skilled labour in regions and tourism
+
+15/10/2025
+Shipments of mixed municipal waste for energy recovery from Austria (Vorarlberg) to Switzerland in view of revised Waste Shipment Regulation (WSR)
 

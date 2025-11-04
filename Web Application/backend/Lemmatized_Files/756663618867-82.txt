@@ -11,7 +11,7 @@ policy devlopment relate digital economy
 dsm
 
 12/10/2017
-Cyber security
+cyber security
 
 14/02/2018
 cybersecurity e privacy
@@ -29,13 +29,19 @@ future connectivity
 telecom policy
 
 12/10/2023
-2030 connectivity target current dynamics internet content distribution edge cloud
+2030 connectivity target current dynamic internet content distribution edge cloud
 
 25/03/2025
 exchange view upcoming Digital Networks Act Akamai technology contribute EU ’s connectivity target
 
 26/03/2025
-Cloud Edge compute Content Delivery network
+Cloud Edge computing Content Delivery Networks
 
 26/06/2025
 Business Software Alliance member consultation EU ’s upcoming Cloud AI Development Act
+
+02/09/2025
+akamai state play plan term cloud AI compute infrastructure
+
+09/10/2025
+exchange view upcoming Digital Networks Act connectivity policy

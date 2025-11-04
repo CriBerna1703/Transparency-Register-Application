@@ -1,7 +1,4 @@
 21/01/2015
-copyright
-
-21/01/2015
 Digital Market
 
 21/01/2015
@@ -9,6 +6,9 @@ interoperability promotion quality digital educational resource
 
 21/01/2015
 Digital Market copyright
+
+21/01/2015
+copyright
 
 03/02/2015
 Digital Market
@@ -20,7 +20,10 @@ ancillary right
 publisher Digital Market
 
 19/02/2015
-Platforms datum
+platform datum
+
+26/02/2015
+Digital Market
 
 26/02/2015
 Working lunch
@@ -33,9 +36,6 @@ receive ceo Publisher group
 
 26/02/2015
 copyright DSM
-
-26/02/2015
-Digital Market
 
 25/03/2015
 Digital Market copyright
@@ -59,13 +59,13 @@ Digital Market
 copyright
 
 02/12/2015
-AVMSD
-
-02/12/2015
 copyright
 
+02/12/2015
+AVMSD
+
 11/12/2015
-dsm copyright
+DSM copyright
 
 23/02/2016
 Digital Market
@@ -95,7 +95,7 @@ copyright
 copyright
 
 23/11/2016
-e privacy review
+E privacy review
 
 01/02/2017
 Digital Market Strategy Investment Plan Europe
@@ -134,10 +134,10 @@ Media Freedom Act
 Media Freedom Act
 
 21/01/2025
-exchange view context preparatory work draft guideline Article 181 Media Freedom Act EMFA issue Commission Article 189 EMFA
+exchange views context preparatory work draft guideline article 181 Media Freedom Act EMFA issue Commission Article 189 emfa
 
 11/02/2025
-Opening Session DSA roundtable discussion online advertising article 46 DSA
+Opening Session DSA roundtable discussion online advertising Article 46 DSA
 
 04/03/2025
 Code Conduct Online Advertising Workshop 1
@@ -156,3 +156,9 @@ publisher industry
 
 22/05/2025
 consultation medium representative association context preparation upcoming Democracy Shield focus group
+
+17/09/2025
+competition policy Digital Markets Act DMAEU competition policy Digital Markets Act DMA
+
+01/10/2025
+exchange view challenge face news medium sector context AI

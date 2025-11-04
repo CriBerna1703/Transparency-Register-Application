@@ -29,7 +29,7 @@ CRR CMU TLAC
 capital deliverability
 
 13/03/2017
-Cybersecurity DSM mid term review
+cybersecurity DSM mid term review
 
 02/06/2017
 introduction Center Financial Education Capabilities Financial Education Summit
@@ -41,16 +41,16 @@ Digital Market FinTech innovation cybersecurity
 CRR CRD Basel implication PSD 2 Fintech
 
 05/03/2018
-Exchange propose Cyber Security certification framework future mandate ENISA European Cyber Security policy
+exchange propose Cyber Security certification framework future mandate ENISA European Cyber Security policy
+
+23/05/2018
+Digital transformation banking sector
 
 23/05/2018
 digital transformation banking sector
 
-23/05/2018
-digital transformation Banking sector
-
 06/06/2018
-Cyber security Fintech
+Cyber security fintech
 
 21/06/2018
 cybersecurity package
@@ -59,10 +59,10 @@ cybersecurity package
 Cyber Security FinTech
 
 08/10/2018
-digital transformation banking industry FinTech Banking package spanish banking sector
+Digital transformation banking industry FinTech Banking package spanish banking sector
 
 08/10/2018
-Digital transformation financial sector
+digital transformation financial sector
 
 08/10/2018
 Digital Transformation banking sector Digital skill perspectivie 2020 2025
@@ -71,7 +71,7 @@ Digital Transformation banking sector Digital skill perspectivie 2020 2025
 cybersecurity
 
 10/12/2018
-sustainable Finance
+sustainable finance
 
 07/02/2019
 Rule Law
@@ -80,7 +80,7 @@ Rule Law
 roadmap completion banking future Euribor
 
 20/01/2020
-trade issue
+Trade Issues
 
 22/04/2020
 discuss datum policy global digital competition
@@ -92,7 +92,7 @@ introductory meeting
 Digital Markets Act
 
 27/04/2021
-sustainable Finance
+sustainable finance
 
 23/09/2021
 economic recovery Situation financial sector sustainable finance
@@ -158,10 +158,10 @@ Telecom policy investment
 EMIR
 
 16/01/2025
-Commission ’s prioritie upcoming mandate
+Commission ’s priority upcoming mandate
 
 21/01/2025
-competitiveness regulatory framework international regulatory fragmentation Savings Investments Digital Euro
+competitiveness regulatory framework international regulatory fragmentation Savings investment Digital Euro
 
 21/01/2025
 exchange view implementation simplification agenda Commission potential simplification sustainability report
@@ -173,13 +173,28 @@ financial sector defence investment policy regulatory framework
 exchange view international tax issue
 
 25/03/2025
-Regulatory Simplification Omnibus Directive competitiveness
+Regulatory Simplification Omnibus directive Competitiveness
 
 30/04/2025
 Review Emissions Trading System Market Stability Reserve
+
+03/06/2025
+Information Exchange
 
 12/06/2025
 high level roundtable colombian energy sector exchange view Minister Mines Energy ifi company
 
 01/07/2025
 financial service policy
+
+17/09/2025
+competitiveness banking sector regulatory simplification
+
+22/09/2025
+financial service policy
+
+22/10/2025
+Omnibus taxonomy da
+
+22/10/2025
+revise taxonomy delegate act

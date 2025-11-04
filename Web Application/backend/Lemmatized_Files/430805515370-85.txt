@@ -5,7 +5,7 @@ copyright
 Digital Market
 
 28/08/2015
-dsm copyright
+DSM copyright
 
 16/02/2016
 dsm
@@ -35,7 +35,7 @@ Digital Market
 Digital Market
 
 20/06/2018
-digital taxation
+Digital taxation
 
 19/07/2019
 culture et cinéma
@@ -48,3 +48,6 @@ audiovisual policy
 
 22/05/2025
 audiovisual industry
+
+04/09/2025
+roundtable representative media industry

@@ -5,10 +5,10 @@ Copyright
 Digital Single Market
 
 27/04/2015
-Meeting with the CEO ofthe International Association of Scientific, Technical and Medical Publishers (STM) on Digital Single Market
+Digital Single Market and open access
 
 27/04/2015
-Digital Single Market and open access
+Meeting with the CEO of the International Association of Scientific, Technical and Medical Publishers (STM) on Digital Single Market
 
 27/05/2015
 Meeting with the CEO of the International Association of Scientific, Technical and Medical Publishers , STM on Digital Single Market, DSM communication and copyright reform, Text and Data Mining (TDM)
@@ -29,10 +29,10 @@ Copyright reform
 digitisation
 
 08/02/2016
-Copyright, text and data mining
+Copyright
 
 08/02/2016
-Copyright
+Copyright, text and data mining
 
 09/03/2016
 copyright
@@ -78,4 +78,7 @@ Economic analysis of possible ERA action 2 measures (an EU copyright and data le
 
 14/02/2025
 IPR, copyright and artificiel intelligence
+
+20/05/2025
+Exchange views on AI in science
 

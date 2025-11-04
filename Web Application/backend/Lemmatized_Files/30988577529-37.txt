@@ -11,10 +11,10 @@ Digital Market
 TSM DSM
 
 26/03/2015
-GSMA breakfast debate Trust across Borders Role Mobile e ID e signature
+gsma breakfast debate Trust across Borders Role Mobile e ID e signature
 
 23/06/2015
-GSMA position
+gsma position
 
 23/06/2015
 digital market
@@ -41,7 +41,7 @@ dsm
 DSM Strategy investment digitalisation industry
 
 23/02/2016
-Post Davos 5 g spectrum
+post Davos 5 g spectrum
 
 02/03/2016
 exchange view mobile telecom market
@@ -59,13 +59,13 @@ spectrum 700mhz 5 g e privacy
 Telecom Framework Review
 
 05/10/2016
-Preparation MWC 2017
+preparation MWC 2017
 
 06/10/2016
 Mobile World Congress
 
 07/11/2016
-ICT education
+ict education
 
 26/01/2017
 preparation mwc 2017
@@ -95,7 +95,7 @@ Digital Strategy Africa
 deal consumer
 
 28/08/2018
-5 G connected car next Commission Agenda
+5 g connected car next Commission Agenda
 
 20/09/2018
 GDPR privacy shield e privacy
@@ -110,31 +110,31 @@ Women4Tech
 MWC 2019
 
 07/02/2019
-5 G security
+5 g security
 
 25/02/2019
 connectivity
 
 26/02/2019
-Dialogue industry possibility opportunity industry leadership
+dialogue industry possibility opportunity industry leadership
 
 14/01/2020
 MWC 2020
 
 18/02/2020
-5 g roll strategic deployment agenda Delegated Act C ecall
+5 g roll strategic deployment agenda Delegated Act C eCall
 
 18/03/2020
-use Location datum
+Use Location datum
 
 29/06/2020
-Covid 19 disinformation role education
+covid 19 disinformation role education
 
 09/09/2020
 discussion telecom operator DSA
 
 12/10/2020
-VDL Commissions digital priority 5 G connectivity flagship recovery plan Cloud Federation Open RAN
+VDL Commissions digital priority 5 g connectivity flagship recovery plan Cloud Federation Open RAN
 
 13/10/2020
 Digital matter online meeting
@@ -152,7 +152,7 @@ Digital Services Act Digital Markets Act
 effort facilitate roam Ukraine
 
 08/04/2022
-endorse joint statement roam International call Ukraine
+endorse joint statement roam international call Ukraine
 
 22/09/2022
 preparation 10 10 roundtable
@@ -161,7 +161,7 @@ preparation 10 10 roundtable
 future connectivity infrastructure
 
 26/01/2023
-Presentation Commissioners invitation MWC
+presentation Commissioners invitation MWC
 
 23/10/2023
 telecom policy
@@ -173,7 +173,7 @@ discussion practical aspect view possible participation Commissioner Breton MWC
 follow
 
 27/01/2025
-1 Spectrum renewal 2 Spectrum policy lever meet revise Digital Decade target kpi 3 Harmonisation 38 42 ghz band 4 Spectrum 6 g role upper 6 ghz band 5 Spectrum policy competition policy
+1 spectrum renewal 2 Spectrum policy lever meet revised Digital Decade target kpi 3 Harmonisation 38 42 ghz band 4 spectrum 6 g role upper 6 ghz band 5 spectrum policy competition policy
 
 19/02/2025
 update process include Ukraine Moldova Roam like Home EU RLAH area
@@ -187,11 +187,20 @@ opportunity challenge telecom sector
 12/03/2025
 implementation detail possible inclusion Ukraine Roam like Home EU RLAH area
 
+10/04/2025
+GSMA Commission methodology mapping qos 5 g network
+
 15/04/2025
 implementation detail possible inclusion Ukraine Roam like Home EU RLAH area
 
 20/06/2025
 transition post quantum cryptography automotive sector
 
+27/06/2025
+implementation detail inclusion Ukraine Roam like Home EU RLAH area
+
 01/07/2025
 Discussion Data Strategy
+
+14/07/2025
+presentation recent study

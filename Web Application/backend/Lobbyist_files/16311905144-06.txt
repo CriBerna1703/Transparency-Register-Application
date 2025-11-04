@@ -38,7 +38,7 @@ Fundamental rights and digital policies
 Fundamental Rights, EC response to COVID 19, GDPR, Artificial Intelligence
 
 25/05/2020
-Fundamental rights anddigital policy
+Fundamental rights and digital policy
 
 01/07/2020
 To discuss Biometrics and Artificial Intelligence
@@ -111,4 +111,16 @@ Data protection, GDPR procedural rules proposal, international data flows, simpl
 
 28/04/2025
 Discussion on the text of the negotiated outcome of the EU- Singapore Digital Trade Agreement (DTA) and the EU-Korea DTA
+
+08/05/2025
+GDPR simplification in the context of the Small Mid-Caps Omnibus and Data Union Strategy
+
+17/06/2025
+Exchange of views on the forthcoming Digital Fairness Act
+
+25/07/2025
+Data protection and privacy
+
+18/09/2025
+GDPR simplification
 

@@ -5,7 +5,7 @@ role gas dso context gas market
 Green Deal renewable gas Europe
 
 10/09/2020
-energy system integration decarbonisation gas related regulatory framework methane emission
+energy system integration decarbonisation gas relate regulatory framework methane emission
 
 09/11/2020
 sustainable smart mobility strategy
@@ -14,31 +14,31 @@ sustainable smart mobility strategy
 virtual meeting Gas Package
 
 04/03/2021
-sustainable Smart Mobility Strategy
+sustainable Smart Mobility strategy
 
 08/03/2021
 taxonomy draft delegate act
 
 22/07/2021
-gas Distribution Sustainability
+gas distribution sustainability
 
 14/09/2021
-gas grid key enabler decarbonisation Discuss Energy Efficiency Directive TEN E regulation proposal reduce methane emission leak natural gas value chain
+gas grid key enabler decarbonisation Discuss Energy Efficiency Directive TEN E Regulation proposal reduce methane emission leak natural gas value chain
 
 12/10/2021
-presentation gd4s White Paper role gas network key enabler EUs energy transition
+presentation GD4S White Paper role gas network key enabler EUs energy transition
 
 08/11/2021
 gas market security supply framework
 
 15/03/2022
-repowereu
+RePowerEU
 
 19/04/2022
 sustainable gas carbon neutrality
 
 19/05/2022
-GD4S Sustainability Charter decarbonise gas grid key enabler climate neutral society
+GD4S Sustainability Charter Decarbonising gas grid key enabler climate neutral society
 
 06/09/2022
 CO2 Standards heavy duty vehicle
@@ -47,13 +47,19 @@ CO2 Standards heavy duty vehicle
 transport
 
 19/09/2022
-CO2 standard truck
+co2 standard truck
 
 28/06/2023
 renewable gas
 
 12/12/2023
-use biomethane renewable gas key unlocking full potential grid key enabler decarbonisation
+use biomethane renewable gas key unlock full potential grid key enabler decarbonisation
 
 13/05/2025
-Dialogue heating decarbonisation grid development
+dialogue heating decarbonisation grid development
+
+09/09/2025
+EU ’s build decarbonisation objective
+
+06/10/2025
+role gas hybrid system heating cool strategy

@@ -8,16 +8,16 @@ Scaling up in Europe
 Company Presentation and Fintech Action Plan
 
 16/10/2019
-Startup Environment
-
-16/10/2019
 Electronic payment systems
 
-17/10/2019
-Prospects for furthering an innovative and entrepreneurial ecosystem in the EU.
+16/10/2019
+Startup Environment
 
 17/10/2019
 Technology
+
+17/10/2019
+Prospects for furthering an innovative and entrepreneurial ecosystem in the EU.
 
 10/06/2020
 Impact of COVID-19 (virtual)
@@ -29,31 +29,19 @@ Patronage vouchers
 Payment Services
 
 27/10/2021
-Opportunities for small tech companies in the single market
+Digital Single Market
 
 27/10/2021
 Digital Single Market and the adoption of e- commerce in Europe
 
 27/10/2021
-Digital Single Market
+Opportunities for small tech companies in the single market
 
 12/09/2022
 Digital issues
 
 12/10/2022
-European innovation agenda
-
-12/10/2022
-Digital finance payments
-
-12/10/2022
-Start-ups
-
-12/10/2022
-presentation of the company, Artificial Intelligence
-
-12/10/2022
-start-ups
+payments services
 
 12/10/2022
 DUPLICATED
@@ -62,7 +50,19 @@ DUPLICATED
 Will follow
 
 12/10/2022
-payments services
+start-ups
+
+12/10/2022
+presentation of the company, Artificial Intelligence
+
+12/10/2022
+Start-ups
+
+12/10/2022
+Digital finance payments
+
+12/10/2022
+European innovation agenda
 
 28/02/2023
 Instant payments, financial literacy, payments
@@ -71,13 +71,13 @@ Instant payments, financial literacy, payments
 Supporting the development of carbon- removal technologies; Discuss how the public and private-sector can work together to nurture promising European companies in this innovative field.
 
 26/09/2023
-EU startup policy
+EU payments regulation reform Digital Euro PSD3 /PSDR
 
 26/09/2023
 on the competitiveness and SME relief agendas
 
 26/09/2023
-EU payments regulation reform Digital Euro PSD3 /PSDR
+EU startup policy
 
 22/07/2024
 Introductory meeting
@@ -87,4 +87,7 @@ Challenges for European tech companies that want to leverage AI to compete globa
 
 07/04/2025
 Presentation of Stripe and exchange on EU agenda for tech competitiveness
+
+23/09/2025
+Fintech's evolving use of stablecoins
 

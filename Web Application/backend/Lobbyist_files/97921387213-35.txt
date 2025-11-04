@@ -8,10 +8,10 @@ Input of IMEC to Horizon Europe
 Discussion of COVID-19
 
 05/10/2020
-Roundtable skills on Microelectronics
+Pact for Skills Roundtable with the microelectronic sector.
 
 05/10/2020
-Pact for Skills Roundtable with the microelectronic sector.
+Roundtable skills on Microelectronics
 
 27/11/2020
 Roundtable on Processors
@@ -26,16 +26,16 @@ Digital decade
 Digital decade
 
 22/11/2021
-Presentation of the Interuniversity Microelectronics Centre
-
-22/11/2021
 Organised by Belgian PermRep: Presentation by IMEC, world-leading R&D hub for nano/digital technologies, Semiconductors
 
-10/01/2022
-CEO Round Table on Semiconductors
+22/11/2021
+Presentation of the Interuniversity Microelectronics Centre
 
 10/01/2022
 Semiconductors
+
+10/01/2022
+CEO Round Table on Semiconductors
 
 21/01/2022
 Chips act
@@ -78,4 +78,16 @@ Invitation of EVP Virkkunen to the IMEC Technology Forum World (ITF) 2025
 
 10/04/2025
 Semiconductor industry
+
+10/04/2025
+SEMI’s global and European activities in semiconductor
+
+22/05/2025
+Advancing the EU Chips strategy and strengthening the collaboration between industrial end-users and IMEC
+
+29/09/2025
+Chips 2.0 and general developments in the semiconductor industry
+
+30/09/2025
+The video meeting discussed recent developments in international trade and export control measures related to nanoelectronics and semiconductors
 

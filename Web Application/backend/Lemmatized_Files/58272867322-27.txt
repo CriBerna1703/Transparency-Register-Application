@@ -8,7 +8,7 @@ Telecom review
 Discussion Electronic Communication Policy
 
 28/04/2015
-review telecom regulation access regulation investment broadband dsm
+review telecom regulation access regulation investment broadband DSM
 
 25/01/2016
 telecommunication market competition investment
@@ -29,7 +29,7 @@ Electronic Communication Code 5 g spectrum allocation Italy
 effort facilitate roam Ukraine
 
 08/04/2022
-endorse joint statement roam International call Ukraine
+endorse joint statement roam international call Ukraine
 
 31/03/2023
 italian telecom market
@@ -41,7 +41,10 @@ exchange view telecommunication digital service implementation italian recovery 
 DSA DMA
 
 04/04/2025
-Exchange AI priorities cloud use AI telecom
+exchange AI priority cloud use AI telecom
+
+04/04/2025
+Evolution Italian Electronic Communication Markets
 
 15/04/2025
 AI project market development

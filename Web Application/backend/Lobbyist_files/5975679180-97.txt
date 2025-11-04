@@ -8,10 +8,10 @@ SST securitisation
 Packaged retail and insurance-based investment products
 
 17/01/2017
-PRIIPs level II
+PRIIPS level II
 
 17/01/2017
-PRIIPS level II
+PRIIPs level II
 
 26/06/2017
 Pan-European Personal Pension initiative
@@ -81,4 +81,10 @@ Retail investment strategy and the Savings and Investment Union.
 
 24/04/2025
 Exchange of views on the Omnibus Level 1 proposal and the ECG data availability for asset managers
+
+28/04/2025
+Omnibus Simplification package proposals (CSRD and ESRS)
+
+24/06/2025
+CSRD Omnibus and SFDR revision
 

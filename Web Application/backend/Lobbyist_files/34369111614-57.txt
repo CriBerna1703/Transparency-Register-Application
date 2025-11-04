@@ -119,7 +119,7 @@ Basel III, AML
 Brexit, DTO, CCPs
 
 17/05/2022
-open finance digitalagenda
+open finance digital agenda
 
 05/07/2022
 CRR3/CRD6
@@ -213,4 +213,16 @@ Greening Corporate Fleets
 
 10/04/2025
 EUROFI – Exchanges on regulatory framework
+
+05/06/2025
+Simplification and taxonomy
+
+24/06/2025
+Payments
+
+17/09/2025
+Simplification and EU banks competitiveness
+
+14/10/2025
+Prudential treatment of banks’ exposures to crypto-assets
 

@@ -26,7 +26,7 @@ Industry 4.0
 data economy; Internet of Things; connected devices
 
 25/01/2018
-Europe and the role ofResearch & Innovation
+Europe and the role of Research & Innovation
 
 17/09/2018
 The impact of digitalisation and AI on the labour market. (keywords: digitalisation, skills agenda, AI)
@@ -60,4 +60,7 @@ Digital Government, Technology Developments
 
 28/01/2025
 Role of WiFi technology in advanced connectivity
+
+21/10/2025
+Hewlett Packard Enterprise Introduction and follow-up on submission to CADA consultation
 

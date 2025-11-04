@@ -8,16 +8,16 @@ Financial Data Access FIDA Payment Services Regulation PSR
 Connectivity Package
 
 28/02/2024
-meeting ccia hear concern ongoing discussion EP concern introduction discriminatory requirement propose Payment Services Regulation PSR propose regulation financial datum access FiDA
+meeting CCIA hear concern ongoing discussion ep concern introduction discriminatory requirement propose Payment Services Regulation PSR propose regulation financial datum access fida
 
 20/01/2025
-exchange view context preparatory work draft guideline Article 181 Media Freedom Act EMFA issue Commission Article 189 EMFA
+exchange views context preparatory work draft guideline article 181 Media Freedom Act EMFA issue Commission Article 189 emfa
 
 03/02/2025
 exchange view implementation copyright relate provision AI Act
 
 11/02/2025
-Opening Session DSA roundtable discussion online advertising article 46 DSA
+Opening Session DSA roundtable discussion online advertising Article 46 DSA
 
 04/03/2025
 Code Conduct Online Advertising Workshop 1
@@ -38,7 +38,7 @@ Code Conduct Online Advertising Workshop 3
 various topic relate digital policy framework
 
 18/03/2025
-Forthcoming Digital Fairness Act protection minor data protection simplification
+forthcome Digital Fairness Act protection minor datum protection simplification
 
 19/03/2025
 Code Conduct Online Advertising Workshop 4
@@ -47,4 +47,10 @@ Code Conduct Online Advertising Workshop 4
 Digital Policy
 
 13/05/2025
-DG CONNECT e2 policy initiative Cloud AI Development Act standard repository interoperability datum processing service Data Act
+DG connect e2 policy initiative Cloud AI Development Act standard repository interoperability datum processing service Data Act
+
+15/07/2025
+datum sharing FIDA
+
+11/09/2025
+accessibility Act implementation

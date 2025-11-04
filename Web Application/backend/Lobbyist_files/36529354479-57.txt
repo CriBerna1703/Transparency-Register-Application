@@ -1,8 +1,8 @@
 02/12/2014
-Presentation of study
+Exchange of views and priorities for the culture sector 2015
 
 02/12/2014
-Exchange of views and priorities for the culture sector 2015
+Presentation of study
 
 19/01/2015
 Digital Single Market
@@ -74,10 +74,10 @@ Copyright reform
 Copyright reform
 
 05/09/2016
-Copyright reform
+Freedom of panorama, copyright
 
 05/09/2016
-Freedom of panorama, copyright
+Copyright reform
 
 06/12/2016
 Digital Single Market
@@ -116,9 +116,6 @@ Exchange on implementation of the Copyright directive
 Exchange on COVID-19 impact on culture and creative sector
 
 26/01/2021
-the impact of the crisis on the cultural sector
-
-26/01/2021
 Discussion on effects of COVID19 crisis to the cultural and creative sectors; EU's support for culture and creative sectors, including Recovery and Resilience Facility
 
 26/01/2021
@@ -129,6 +126,9 @@ Conference on the Future of Europe
 
 26/01/2021
 Meeting on the impact of Covid-19 on the creative and cultural sector.
+
+26/01/2021
+the impact of the crisis on the cultural sector
 
 27/01/2021
 Main challenges and priorities for Cultural and Creative Industries to overcome the crisis and allow for the sector to help rebuilding the European economy at large
@@ -144,4 +144,13 @@ Exchange of views on copyright policy
 
 06/05/2025
 Exchange of views on copyright policy
+
+02/07/2025
+Code of Practice under the AI Act for General Purpose AI developers
+
+22/09/2025
+Exchange of views on copyright
+
+23/09/2025
+Discussion on the implementation of the AI Act
 

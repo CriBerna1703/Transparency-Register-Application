@@ -41,7 +41,7 @@ Circular Economy
 Ciruclar Economy
 
 14/09/2015
-Sustainable and socialinitiatives
+Sustainable and social initiatives
 
 21/09/2015
 Current IP /standardization issues
@@ -311,7 +311,7 @@ Internet freedom
 AI in EU elections
 
 17/12/2024
-Apple’s priorities in the new mandate related tosustainability and the clean transition
+Apple’s priorities in the new mandate related to sustainability and the clean transition
 
 17/12/2024
 To hear Apple’s view on EU competition policies.
@@ -344,7 +344,7 @@ A preparatory call in view of the call between Apple CEO and EVP Virkkunen on 06
 EU tech and digital agenda, Apple activities and interests in the EU, EU digital rules and proceedings, including regarding Apple
 
 06/03/2025
-Code of Conduct on Online Advertising –Workshop 2
+Code of Conduct on Online Advertising – Workshop 2
 
 11/03/2025
 Minor protection online
@@ -356,13 +356,16 @@ Apple activities and interests in the EU, EU digital rules and proceedings, Appl
 Connectivity policy
 
 13/03/2025
-Code of Conduct on Online Advertising – Workshop 3
-
-13/03/2025
 Various topics related to the digital policy framework
 
+13/03/2025
+Code of Conduct on Online Advertising – Workshop 3
+
 14/03/2025
-Testing aspects in theframework of compliance with Ecodesign requirements under Regulation 2023/1670 on mobile phones and tablets and Energy labelling Regulation 20223/1669 on smarpthones and tablets.
+Exchange on policy priorities
+
+14/03/2025
+Testing aspects in the framework of compliance with Ecodesign requirements under Regulation 2023/1670 on mobile phones and tablets and Energy labelling Regulation 20223/1669 on smarpthones and tablets.
 
 18/03/2025
 Apple priorities in Europe, including on competitiveness, cybersecurity, privacy, and environmental policy. Shared priorities in the field of trade and economic security.
@@ -387,4 +390,43 @@ Exchange of views on the forthcoming Digital Fairness Act
 
 29/04/2025
 Courtesy Meeting
+
+06/05/2025
+Preparation of possible meeting of EVP Virkkuenn with Apple CEO in San Francisco.
+
+06/05/2025
+Demographic Policy
+
+14/05/2025
+Agenda to boost tech innovation and competitiveness in the EU, in particular in the field of AI and deep tech.
+
+11/06/2025
+Share details about Apple work and its commitment to accessibility. How companies can contribute to fostering further the right of persons with disabilities.
+
+16/07/2025
+Competitiveness Simplification agenda
+
+22/07/2025
+Ongoing legislative discussions on Payment Services Regulation and Directive (PSR/D3).
+
+23/07/2025
+To introduce Apple’s innovation in the field of health, and to exchange on the European Commission’s policy priorities
+
+11/09/2025
+Platforms
+
+12/09/2025
+Exchange of views on EU digital policies
+
+12/09/2025
+Discussion on the implementation of the EU-US trade deal
+
+15/10/2025
+Exchange of views on upcoming initiatives in the consumer policy area - Consumer Agenda and the Action Plan for Consumers and Digital Fairness Act
+
+21/10/2025
+Apple requested a meeting to discuss EU product compliance initiatives, including the implementation of the Batteries Regulation, and how digitization can support simplification objectives from a supply chain perspective.
+
+21/10/2025
+Exchange of views on Batteries, Eco-design and the Circular Economy Act
 

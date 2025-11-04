@@ -2,10 +2,10 @@
 ifrs
 
 11/01/2016
-IFRS 9 IFRS 4
+ifrs 9 IFRS 4
 
 25/01/2017
-IFRS around world IFRS standard
+ifrs around world ifrs standard
 
 25/10/2018
 courtesy meeting
@@ -26,7 +26,7 @@ sustainability reporting standard
 sustainability disclosure
 
 14/01/2022
-issb
+ISSB
 
 02/02/2022
 issb sustainability report
@@ -38,16 +38,16 @@ sustainability disclosure
 sustainability standard
 
 07/12/2022
-sustainability Reporting Standards
+Sustainability Reporting Standards
 
 04/04/2023
-global baseline standard Banking financial stability
+global baseline standard bank financial stability
 
 14/04/2023
-sustainability Reporting Standards
+Sustainability Reporting Standards
 
 20/07/2023
-ESRS issb
+ESRS ISSB
 
 25/07/2023
 ESRS ISSB standard
@@ -59,7 +59,7 @@ issb standard
 international sustainability reporting standard
 
 17/01/2025
-Courtesy meet International Financial Reporting Standards IFRS Foundation
+courtesy meeting International Financial Reporting Standards IFRS Foundation
 
 22/01/2025
 sustainability reporting
@@ -68,16 +68,22 @@ sustainability reporting
 simplification sustainability report
 
 27/03/2025
-issb sustainability relate work
+sustainable reporting
 
 27/03/2025
 simplification
 
 27/03/2025
-sustainable reporting
+issb sustainability relate work
 
 02/04/2025
-recent development financial service policy
+recent development Financial service policy
 
 11/04/2025
-CSRD Omnibus ESRS revision
+csrd Omnibus ESRS revision
+
+15/09/2025
+interoperability ESRS ISSB
+
+23/09/2025
+global accounting sustainability standard

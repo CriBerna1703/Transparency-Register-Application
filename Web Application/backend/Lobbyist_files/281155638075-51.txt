@@ -32,10 +32,10 @@ Data / Cloud
 meeting with the Green Digital Coalition - Main topic : state of play on sustainable digitalization
 
 09/09/2022
-European Cybersecurity Certification Scheme for Cloud Services
+Digital policies.
 
 09/09/2022
-Digital policies.
+European Cybersecurity Certification Scheme for Cloud Services
 
 12/09/2022
 Inauguration du nouveau Datacentre Strasbourg
@@ -50,10 +50,10 @@ OVHcloud state of play and plans in terms of cloud computing
 EU Cloud policy
 
 17/03/2025
-- Quantum technologies - OVH Groupe was invited to respond to the Startup and Scaleup Strategy and future European Innovation Act consultations.
+Data protection, international data flows, simplification
 
 17/03/2025
-Data protection, international data flows, simplification
+- Quantum technologies - OVH Groupe was invited to respond to the Startup and Scaleup Strategy and future European Innovation Act consultations.
 
 18/03/2025
 US trade measures
@@ -63,4 +63,40 @@ OVH wished to discuss the revision of European directives on public procurement 
 
 14/05/2025
 European cloud policies
+
+14/05/2025
+OVHCloud state of play and plans in terms of cloud and AI-optimised compute infrastructure in Europe.
+
+15/05/2025
+Company law / 28th regime
+
+03/07/2025
+Exchange on cloud policies
+
+07/07/2025
+Data centres and the water-energy nexus.
+
+17/07/2025
+To explore collaboration opportunities between TAXUD & OVH for developing the cloud- based Data Hub, key component of the EU's customs reform. Discussions covered sovereign cloud solutions, technical requirements, and future operational strategies
+
+02/09/2025
+- Numérique - Relation US – UE - DSA DMA
+
+02/09/2025
+Discussion on upcoming meeting with the CEO of OVH and EVP Virkkunen on the 22nd of September.
+
+08/09/2025
+Feuille de route de la Commission européenne en matière de compétitivité et de souveraineté ; réforme des marchés publics ; Cyber resilience act ; localisation des data centers.
+
+22/09/2025
+Sovereign cloud in Europe
+
+22/09/2025
+European Cloud Policies
+
+22/09/2025
+European Cloud Policies
+
+29/09/2025
+EU Tech Business Offer
 

@@ -65,10 +65,10 @@ MiFID, EMIR, CCP Recovery and Resolution
 Gas Infrastructure
 
 21/06/2017
-Mtg with representatives from "Noble Energy" on Development of Gas resources in the eastern Mediterranean
+Credit Rating Agencies in Europe
 
 21/06/2017
-Credit Rating Agencies in Europe
+Mtg with representatives from "Noble Energy" on Development of Gas resources in the eastern Mediterranean
 
 22/11/2017
 CMU objectives
@@ -191,7 +191,7 @@ deferred tax; carbon border adjustment mechanism
 Investment Firms Directive and Regulation
 
 23/03/2022
-CMU, Consolidated tapeand PFOF
+CMU, Consolidated tape and PFOF
 
 19/09/2022
 Production and uptake of hydrogen
@@ -224,16 +224,16 @@ IFR reclassification, MiFIR review, CCPs, payment for order flows
 AI Act
 
 23/03/2023
-Medical devices and sanctions legislation
+Discussion on strategic Foresight
 
 23/03/2023
-Discussion on strategic Foresight
+Medical devices and sanctions legislation
 
 12/04/2023
 Digital euro, Crypto finance
 
 18/04/2023
-Sharing company's view on the Critical Raw Material Act and its rolein the hydrogen economy. Presenting several mining projects in Europe, including the Sakatti project in Finland.
+Sharing company's view on the Critical Raw Material Act and its role in the hydrogen economy. Presenting several mining projects in Europe, including the Sakatti project in Finland.
 
 24/10/2023
 P2S2 review and Open Finance Framework
@@ -264,4 +264,25 @@ Meeting on the forensic audit performed by FTI Consulting on the implementation 
 
 28/04/2025
 Market and regulatory developments
+
+12/06/2025
+Discussion on the simplification proposal for the Carbon Border Adjustment Mechanism (CBAM), examining impacts, implementation processes, and industry opportunities
+
+30/06/2025
+Mining
+
+18/09/2025
+Sustainable Omnibus
+
+24/09/2025
+Exchange of views on market and prudential issues
+
+24/09/2025
+Exchange views on the European capital markets and discuss ongoing and upcoming trends in market infrastructure for investment firms
+
+25/09/2025
+Discussion on various topics
+
+08/10/2025
+Discussion on selected elements of the PSD3 /PSR legislative package.
 

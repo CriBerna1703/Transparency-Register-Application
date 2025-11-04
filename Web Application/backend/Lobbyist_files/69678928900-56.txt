@@ -35,13 +35,13 @@ Data Act ; in-vehicle data
 Data Act Regulation and Specific legislation on ‘Access to in-vehicle data & functions’
 
 15/02/2023
-In-vehicle data
-
-15/02/2023
 Independent Service Providers meeting on in vehicle data
 
+15/02/2023
+In-vehicle data
+
 13/12/2023
-Discussion on the needfor a sector specific legislation on access to in-vehicle data to ensure a better choice of services to consumers, and with increased competition, reduced costs for consumers.
+Discussion on the need for a sector specific legislation on access to in-vehicle data to ensure a better choice of services to consumers, and with increased competition, reduced costs for consumers.
 
 04/06/2024
 Discussion on preparation of delegated act on conditions to access data for repair and maintenance activities
@@ -63,4 +63,13 @@ Action plan for the automotive sector
 
 19/02/2025
 Dialogue on the future of the automotive sector – Suppliers Session
+
+23/06/2025
+Revision of Vehicle Type- Approval Regulation (EU) 2018/858- Annex X (“Access to vehicle OBD information and vehicle repair and maintenance information”)
+
+27/08/2025
+Replacement of traction batteries in electric vehicles
+
+08/10/2025
+Data
 

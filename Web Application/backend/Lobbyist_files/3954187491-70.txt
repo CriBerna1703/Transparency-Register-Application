@@ -47,7 +47,7 @@ Energy policy
 energy policy
 
 15/10/2018
-Long-Term Strategy andCarbon Capture and Storage
+Long-Term Strategy and Carbon Capture and Storage
 
 12/11/2018
 Sustainable Finance and Taxonomy
@@ -119,7 +119,7 @@ RePowerEU Plan and diversification of gas supplies
 IOGP study on gas supply diversification potential
 
 24/11/2022
-Short and long-term perspectives for additional gas supplies for Europe in the context of the current energycrisis and future plans for CCUS technology deployment and the production of hydrogen in Europe
+Short and long-term perspectives for additional gas supplies for Europe in the context of the current energy crisis and future plans for CCUS technology deployment and the production of hydrogen in Europe
 
 14/12/2022
 Study "Rebalancing Europe's gas supply"
@@ -149,7 +149,7 @@ Physical meeting - Discussion on Commission report on the solidarity contributio
 1. CCS in NZIA and beyond 2. Regulation on methane emissions reduction in the energy sector 3. IOGP Europe feedback on the DG CLIMA/DG ENER non- paper in light of the COP28 preparation
 
 23/01/2024
-Industrial CarbonManagement Strategy
+Industrial Carbon Management Strategy
 
 23/01/2024
 industrial carbon management strategy
@@ -177,4 +177,22 @@ Follow up to the omnibus
 
 29/04/2025
 Simplification
+
+29/04/2025
+Simplification
+
+13/05/2025
+Impact of the EU Methane Emission Regulation on EU security of gas supply
+
+20/05/2025
+Exchange of views on possible support mechanisms for carbon capture and storage
+
+01/09/2025
+JEAG position on commodity derivatives consultation
+
+17/09/2025
+Discussions on Accelerating Permitting and on the proposed 2nd industry workshop on Industrial Permitting
+
+16/10/2025
+To discuss environmental omnibus (permitting)
 

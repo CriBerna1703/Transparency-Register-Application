@@ -8,7 +8,7 @@ Euro Mediterranean Region
 cybersecurity
 
 08/10/2015
-Clean sky
+Clean Skies
 
 13/10/2015
 cybersecurity
@@ -44,7 +44,7 @@ space
 Defence Space Strategy
 
 18/10/2017
-Space Policy
+space Policy
 
 22/11/2017
 future space policy
@@ -68,7 +68,7 @@ environmental sustainability aviation sector
 defence
 
 13/06/2018
-SESAR
+sesar
 
 26/06/2018
 space defence
@@ -95,10 +95,10 @@ Paris Air Show visit 2019
 defence relate issue
 
 27/01/2020
-Courtesy meeting introduce
+courtesy meeting introduce
 
 27/01/2020
-Courtesy meeting introduce
+courtesy meeting introduce
 
 25/03/2020
 videoconference ceo covid 19
@@ -110,16 +110,16 @@ videoconference ceo covid 19
 covid 19 impact aeronautic civil defence industry
 
 04/06/2020
-Call Telespazio discuss Space Programme next MFF recovery plan
+call Telespazio discuss Space Programme next MFF recovery plan
 
 16/10/2020
-Roundtable Aerospace Defence Pact Skills
+Pact Skills Roundtable Aerospace defence
 
 16/10/2020
-Pact Skills Roundtable Aerospace Defence
+Roundtable Aerospace Defence Pact skill
 
 15/01/2021
-Meeting Pact Skills
+Meeting Pact skill
 
 25/02/2021
 discussion proposal boost precision farming
@@ -134,7 +134,7 @@ taxonomy
 helicopter defence activity context sustainability potential link taxonomy
 
 08/11/2021
-meeting exchange view implementation EDF /EDIDP development space downstream sector zero emission aviation initiative secure connectivity
+meeting exchange views implementation EDF /EDIDP development space downstream sector zero emission aviation initiative secure connectivity
 
 15/11/2021
 sustainable finance taxonomy
@@ -149,13 +149,13 @@ short discussion aerospace industry socio economic role innovation research empl
 competition policy
 
 10/01/2023
-Taxonomy ESG rating csrd
+taxonomy ESG rating csrd
 
 22/02/2023
 general overview aviation sector
 
 01/03/2023
-Taxonomy environmentally sustainable activity
+taxonomy environmentally sustainable activity
 
 01/03/2023
 taxonomy environmentally sustainable activity
@@ -164,7 +164,7 @@ taxonomy environmentally sustainable activity
 exchange taxonomy delegate act
 
 09/03/2023
-Space Policy
+space Policy
 
 30/03/2023
 sustainable finance taxonomy
@@ -185,37 +185,40 @@ competition defence industry
 courtesy visit introduce activity Leonardo Telespazio
 
 15/01/2025
-discussion AI policy
-
-15/01/2025
 EMPL Director General outline key initiative Commission focus Skills Leonardo delegation provide overview skill set need industry
 
+15/01/2025
+Discussion AI policy
+
+28/01/2025
+meeting side Space Conference discussion space industrial strategy
+
 06/02/2025
-Presentation Leonardo Group activitie global industrial group build technological capability Aerospace Defence security
+presentation Leonardo Group activitie global industrial group build technological capability Aerospace Defence Security
 
 05/03/2025
 defence industry development
 
 06/03/2025
-exchange view RI policy Leonardo priority FP10
+exchange view RI policy Leonardo priority fp10
 
 24/03/2025
 Global Gateway
 
 31/03/2025
-Presentation Leonardo SpA
+presentation Leonardo spa
 
 01/04/2025
 meeting request Company aim present product view possible involvement forest firefighting operation
 
 16/04/2025
-exchange view LAC Digital Alliance synergie investment Leonardo Latin America Caribbean
+exchange view LAC Digital Alliance synergy investment Leonardo Latin America Caribbean
 
 13/05/2025
-Future ATM Programme SESAR deployment common project
+future ATM Programme sesar deployment common project
 
 15/05/2025
-Presentation Leonardo activity area defence space Discussion initiative space defence
+presentation Leonardo activity area defence space Discussion initiative space defence
 
 26/05/2025
 Fucino Space Center Telespazio visit
@@ -227,7 +230,7 @@ visit Thales Alenia Space Smart Space Factory
 modernisation Air Traffic Management ATM ATM Service Delivery Model
 
 13/06/2025
-support RI innovation defence sector
+Support RI innovation defence sector
 
 16/06/2025
 Compétitivité Clean Industrial Deal sécurité économique SAF Défense Transport souvenaineté droit de douane Visite conjointe avec le Commissaire Tzitzikostas et son cabinet
@@ -239,4 +242,10 @@ Quantum technology
 Leonardo ’s strategy vision regard forthcoming Competitiveness Fund FP10
 
 10/07/2025
-LEONARDO ’s activity domain Helicopters Drones /innovative air mobility Cybersecurity digital solution AI
+leonardo ’s activity domain Helicopters Drones /innovative air mobility Cybersecurity digital solution AI
+
+19/09/2025
+Service Delivery Model NSDM Future funding research deployment domain ATM
+
+15/10/2025
+presentation position paper Military Mobility

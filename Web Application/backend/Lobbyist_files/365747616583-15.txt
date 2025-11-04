@@ -80,7 +80,7 @@ DSM
 Platforms
 
 17/10/2017
-Platform to BusinessInitiative
+Platform to Business Initiative
 
 20/10/2017
 Digital Single Market
@@ -125,10 +125,10 @@ Meeting to discuss digital taxation
 plateform-to-business et taxation du numérique
 
 20/03/2018
-Platforms
+Digital Single Market
 
 20/03/2018
-Digital Single Market
+Platforms
 
 13/07/2018
 current EU policies / HR policy - diversity and inclusion
@@ -245,10 +245,10 @@ Exchange of views on the field of digital policies, including DMA, AI Act and co
 Discussion of the Commission's enforcement of the DMA
 
 25/02/2025
-Fostering a more competitive and innovation-friendly digital environment in Europe
+Introductory meeting with Spotify
 
 25/02/2025
-Introductory meeting with Spotify
+Fostering a more competitive and innovation-friendly digital environment in Europe
 
 13/03/2025
 Discussion of current affairs and US policies
@@ -257,8 +257,23 @@ Discussion of current affairs and US policies
 Exchange of views on the forthcoming Digital Fairness Act
 
 09/04/2025
+Digital Fairness Act (DFA)
+
+09/04/2025
 Regulation of gatekeeping
 
 30/04/2025
 Exchange of views on DMA, copyright, and AI
+
+11/06/2025
+Exchange of views on the forthcoming Digital Fairness Act
+
+12/06/2025
+EU digital policy
+
+30/09/2025
+Digital legislation
+
+30/09/2025
+Exchange of views on copyright
 

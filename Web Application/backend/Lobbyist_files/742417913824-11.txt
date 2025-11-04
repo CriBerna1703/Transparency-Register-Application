@@ -14,10 +14,10 @@ Media situation in Balkans, Digital Single Market and Data Protection
 General Data Protection Regulation
 
 17/06/2015
-Digital Single Market
+GDPR
 
 17/06/2015
-GDPR
+Digital Single Market
 
 29/06/2015
 DSM
@@ -119,7 +119,7 @@ Media Freedom Act
 Security of the internet
 
 16/11/2022
-Disinformation, Rule ofLaw, Media policy
+Disinformation, Rule of Law, Media policy
 
 28/03/2023
 Working dinner on China matters other guests: - Ambassador, Permanent Representation of Germany to the EU - Director North East Asia & China / Foreign, Commonwealth & Development Office, UK - Counsellor, Permanent Representation of Spain to the EU
@@ -131,10 +131,10 @@ AI Act and copyright
 Short introductory meeting
 
 15/01/2025
-Media situation in Western Balkans
+European Media Freedom Act (EMFA)
 
 15/01/2025
-European Media Freedom Act (EMFA)
+Media situation in Western Balkans
 
 16/01/2025
 Invitation to WELT Economic Summit; Copyright Directive
@@ -150,4 +150,7 @@ Code of Conduct on Online Advertising – Workshop 3
 
 19/03/2025
 Code of Conduct on Online Advertising – Workshop 4
+
+10/10/2025
+Discussion about ePrivacy and cookies
 

@@ -2,10 +2,13 @@
 trading post trading landscape derivative market
 
 13/01/2021
-MiFID ii market structure
+mifid II market structure
 
 15/09/2021
 MiFIR review CMU
 
 14/03/2024
 EUs capital market next CMU workstream implementation MIFIR
+
+25/09/2025
+integration capital market

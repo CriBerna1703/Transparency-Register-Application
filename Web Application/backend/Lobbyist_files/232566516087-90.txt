@@ -2,7 +2,7 @@
 CMU
 
 28/05/2015
-Better regulation in the context of CapitalMarkets Union, securitisation and non- bank lending.
+Better regulation in the context of Capital Markets Union, securitisation and non- bank lending.
 
 29/05/2015
 Long-term financing /securitisation
@@ -69,4 +69,10 @@ Exchange on securitisation
 
 12/05/2025
 Sustainability Omnibus and SFDR revision
+
+14/05/2025
+SIU, Markets in Financial Instruments Directive (MiFID II) and Regulation (MiFIR), Short Selling Regulation (SSR)
+
+01/09/2025
+Exchange of views on the review of the UCITS Eligible Assets Directive and the AIFMD II implementation
 
