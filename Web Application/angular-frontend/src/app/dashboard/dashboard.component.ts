@@ -10,6 +10,7 @@ import { InfoTabsComponent } from '../info-tabs/info-tabs.component';
 import { OverviewComponent } from '../overview/overview.component';
 import { MeetingSummaryComponent } from '../meeting-summary/meeting-summary.component';
 import { FilterService } from '../services/filter.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -42,7 +43,7 @@ export class DashboardComponent {
   @ViewChild(TemporalViewComponent) temporalViewComponent!: TemporalViewComponent;
   @ViewChild(OverviewComponent) overviewComponent!: OverviewComponent;
 
-  constructor(private cdr: ChangeDetectorRef, public filterService: FilterService) {}
+  constructor(private cdr: ChangeDetectorRef, public filterService: FilterService, private router: Router) {}
 
   toggleFilter() {
     this.isFilterCollapsed = !this.isFilterCollapsed;
@@ -141,7 +142,9 @@ export class DashboardComponent {
     this.filterService.downloadLobbyistCsv();
   }
 
-
+  goToWelcome() {
+    this.router.navigateByUrl('/welcome');
+  }
 
   public onLabelTextChange(newText: string) {
     this.labelText = newText;

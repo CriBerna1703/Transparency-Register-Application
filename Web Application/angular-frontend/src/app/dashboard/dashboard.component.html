@@ -1,5 +1,8 @@
 
 <div class="overlay" *ngIf="!isOverviewCollapsed || !isFilterCollapsed"></div>
+<button class="help-btn" (click)="goToWelcome()">
+  ℹ️
+</button>
 <div class="container" [class.filter-collapsed]="isFilterCollapsed">
   <div class="toggle-btn" (click)="toggleFilter()">
     {{ isFilterCollapsed ? '❯' : '❮' }}

@@ -1,0 +1,82 @@
+.welcome-container {
+  font-family: system-ui, sans-serif;
+  color: #1f2937;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f3f4f6;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+}
+
+.section {
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.placeholder {
+  background: repeating-linear-gradient(
+    45deg,
+    #e5e7eb,
+    #e5e7eb 10px,
+    #f3f4f6 10px,
+    #f3f4f6 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f9fafb;
+}
+
+button.primary {
+  background: #2563eb;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #374151;
+  color: white;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
