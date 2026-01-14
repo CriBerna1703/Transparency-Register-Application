@@ -2,9 +2,8 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, firstValueFrom } from 'rxjs';
 import { DataService } from './data.service';
 import { CsvService } from './csv.service';
-import { Subscription, forkJoin } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { environment } from '../../environments/environment';
-import { AuthService } from './auth.service';
 
 @Injectable({
   providedIn: 'root'
@@ -27,7 +26,7 @@ export class FilterService {
   meetingCsvData: any;
   lobbyistCsvData: any;
 
-  constructor(private dataService: DataService, private csvService: CsvService, private authService: AuthService) {}
+  constructor(private dataService: DataService, private csvService: CsvService) {}
 
   // Set filters and update meetings
   setFilters(filters: any) {
@@ -77,13 +76,11 @@ export class FilterService {
 
         if (typeof Worker !== 'undefined') {
           const worker = new Worker(new URL('../workers/csv.worker', import.meta.url));
-          const token = this.authService.getToken();
 
           worker.postMessage({
             lobbyistIds,
             chunkSize: 300,
-            apiUrl: environment.apiBaseUrl,
-            token
+            apiUrl: environment.apiBaseUrl
           });
 
           worker.onmessage = ({ data }) => {

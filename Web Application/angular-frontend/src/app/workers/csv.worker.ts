@@ -1,7 +1,7 @@
 /// <reference lib="webworker" />
 
 addEventListener('message', async ({ data }) => {
-  const { lobbyistIds, chunkSize, apiUrl, token } = data;
+  const { lobbyistIds, chunkSize, apiUrl } = data;
   const results: any[] = [];
 
   for (let i = 0; i < lobbyistIds.length; i += chunkSize) {
@@ -13,7 +13,6 @@ addEventListener('message', async ({ data }) => {
 
       const response = await fetch(`${apiUrl}/allLobbyists?${params.toString()}`, {
         headers: {
-          'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
         }
       });

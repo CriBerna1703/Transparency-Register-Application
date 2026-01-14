@@ -10,7 +10,6 @@ const directorateRoutes = require('./routes/directorateRoutes');
 const commissionRepresentativeRoutes = require('./routes/commissionRepresentativeRoutes');
 const similarityRoutes = require('./routes/similarityRoutes');
 const cabinetRoutes = require('./routes/cabinetRoutes');
-const authRoutes = require('./routes/authRoutes');
 
 // Creazione dell'app Express
 const app = express();
@@ -29,20 +28,16 @@ app.use(cors(corsOptions));
 // Middleware
 app.use(bodyParser.json());
 
-const authenticateToken = require('./middleware/auth');
-
 // Rotte protette
-app.use('/api/lobbyists', authenticateToken, lobbyistRoutes);
-app.use('/api/allLobbyists', authenticateToken, allLobbyistRoutes);
-app.use('/api/fields', authenticateToken, fieldRoutes);
-app.use('/api/memberships', authenticateToken, membershipRoutes);
-app.use('/api/proposals', authenticateToken, proposalRoutes);
-app.use('/api/meetings', authenticateToken, meetingRoutes);
-app.use('/api/directorates', authenticateToken, directorateRoutes);
-app.use('/api/commission-representatives', authenticateToken, commissionRepresentativeRoutes);
-app.use('/api/similarities', authenticateToken, similarityRoutes);
-app.use('/api/cabinets', authenticateToken, cabinetRoutes);
-
-app.use('/api/auth', authRoutes);
+app.use('/api/lobbyists', lobbyistRoutes);
+app.use('/api/allLobbyists', allLobbyistRoutes);
+app.use('/api/fields', fieldRoutes);
+app.use('/api/memberships', membershipRoutes);
+app.use('/api/proposals', proposalRoutes);
+app.use('/api/meetings', meetingRoutes);
+app.use('/api/directorates', directorateRoutes);
+app.use('/api/commission-representatives', commissionRepresentativeRoutes);
+app.use('/api/similarities', similarityRoutes);
+app.use('/api/cabinets', cabinetRoutes);
 
 module.exports = app;
