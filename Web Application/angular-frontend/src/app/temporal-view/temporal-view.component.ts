@@ -369,7 +369,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
                   .style("display", "block");
           }
           d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
-              d3.select(this).raise().classed('node-hover', true);
+              d3.select(this).classed('node-hover', true);
           });
         })
         .on('mouseout', function (this: SVGRectElement) {
@@ -426,10 +426,6 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
               .attr("height", bbox.height + 4)
               .style("display", "block");
           }
-          
-          d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
-            d3.select(this).raise();
-          });
   
           d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
             d3.select(this).classed('node-hover', true);
