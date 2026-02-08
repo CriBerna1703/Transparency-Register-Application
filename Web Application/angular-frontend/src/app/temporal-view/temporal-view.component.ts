@@ -682,11 +682,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         d3.selectAll('.node-hover').each(function () {
           d3.select(this).classed('node-hover', false);
         });
-        meetingIds.forEach(meetingId => {
-          d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
-            d3.select(this).raise();
-          });
-      
+        meetingIds.forEach(meetingId => {      
           d3.selectAll(`.meeting-link-${meetingId}`).each(function () {
             d3.select(this).classed('node-hover', true);
           });
