@@ -42,7 +42,7 @@ body {
 /* Contenitore principale */
 .container {
   display: flex;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 45px);
   overflow: hidden;
 }
 
@@ -315,6 +315,10 @@ app-temporal-view {
   transition: width 0.3s ease;
 }
 
+app-temporal-view.top-collapsed {
+  height: 80vh;
+}
+
 app-temporal-view.control-collapsed {
   width: 72vw;
 }
@@ -544,9 +548,20 @@ app-histogram-view {
   display: none;
 }
 
+.top-half.top-collapsed {
+  display: none;
+}
+
+.panel-toggle-row {
+  display: flex;
+  gap: 1px;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+}
+
 .bottom-panel-toggle {
-  margin-left: 1%;
-  width: 98%;
+  width: 100%;
   background-color: #007bff;
   color: white;
   border: none;

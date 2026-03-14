@@ -10,7 +10,7 @@
   <app-filter-mask [collapsed]="isFilterCollapsed" (toggle)="toggleFilter()" (showOverview)="showOverview()"></app-filter-mask>
   <app-meeting-summary *ngIf="!isOverviewCollapsed" [useOverviewData]="true" [collapsed]="isOverviewCollapsed" (confirm)="onConfirm()" (cancel)="onCancel()"></app-meeting-summary>
   <div class="main-content" [class.full-width]="isFilterCollapsed">
-    <div class="top-half">
+    <div class="top-half" [class.top-collapsed]="isTopCollapsed">
       <div class="overview-graph-container">
         <button 
           (click)="downloadCSV()" 
@@ -75,14 +75,39 @@
         <app-info-tabs [selectedEntity]="selectedInfoEntity"></app-info-tabs>
       </div>
     </div>   
-    <button [style.visibility]="activeTab === 'graph' ? 'visible' : 'hidden'" (click)="collapseBottom()" class="bottom-panel-toggle">
-      <span class="icon-rotate">
-        {{ isBottomCollapsed ? '❯' : '❮' }}
-      </span>
-    </button>    
+    <div class="panel-toggle-row">
+      <button
+        *ngIf="activeTab === 'graph'"
+        (click)="collapseBottom()"
+        class="bottom-panel-toggle"
+      >
+        <span class="icon-rotate">
+          {{ isBottomCollapsed ? '❯' : '❮' }}
+        </span>
+      </button>
+      <button
+        *ngIf="activeTab === 'graph'"
+        (click)="toggleTopPanel()"
+        class="bottom-panel-toggle"
+      >
+        <span class="icon-rotate">
+          {{ isTopCollapsed ? '❮' : '❯' }}
+        </span>
+      </button>
+      <button
+        *ngIf="activeTab !== 'graph'"
+        (click)="toggleTopPanel()"
+        class="bottom-panel-toggle"
+      >
+        <span class="icon-rotate">
+          {{ isTopCollapsed ? '❮' : '❯' }}
+        </span>
+      </button>
+    </div>
     <div class="bottom-half" [class.bottom-collapsed]="isBottomCollapsed">
       <div class="left-half">
         <app-temporal-view
+          [class.top-collapsed]="isTopCollapsed"
           [startDate]="startDate"
           [endDate]="endDate" 
           [labelSize]="labelSize"

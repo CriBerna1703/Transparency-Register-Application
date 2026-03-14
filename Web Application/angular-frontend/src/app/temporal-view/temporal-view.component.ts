@@ -50,7 +50,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     meeting: this.meetingHeight,
   };
 
-  private temporalViewSvg: d3.Selection<SVGSVGElement, unknown, null, undefined> | null = null;
+  private temporalViewSvg: d3.Selection<SVGGElement, unknown, null, undefined> | null = null;
 
   constructor(
     private filterService: FilterService,
@@ -190,8 +190,8 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
       const calculatedWidth = Math.max(width, maxNodesPerRow * minNodeSpacing);
 
       this.temporalViewSvg = this.d3Service.createSvg(element, calculatedWidth, height, this.zoomLevel);
-      this.d3Service.drawTimeline(this.temporalViewSvg, calculatedWidth, this.meetingHeight);
-      this.d3Service.drawMonths(this.temporalViewSvg, calculatedWidth, this.meetingHeight, displayStartDate, displayEndDate);
+      this.d3Service.drawTimeline(this.temporalViewSvg, calculatedWidth, this.entityPositions.meeting);
+      this.d3Service.drawMonths(this.temporalViewSvg, calculatedWidth, this.entityPositions.meeting, displayStartDate, displayEndDate);
 
       this.drawDottedLines(this.temporalViewSvg, calculatedWidth, height);
       const filteredMeetings = this.meetingManager.getFilteredMeetingsByInterval(this.startDate, this.endDate);
@@ -222,12 +222,12 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     const displayEndDate = new Date(this.endDate.getFullYear(), this.endDate.getMonth() + 1, 0);
     const svg = this.d3Service.createSvg(element, width, height, this.zoomLevel);
     this.drawDottedLines(svg, width, height);
-    this.d3Service.drawTimeline(svg, width, this.meetingHeight);
-    this.d3Service.drawMonths(svg, width, this.meetingHeight, displayStartDate, displayEndDate);
+    this.d3Service.drawTimeline(svg, width, this.entityPositions.meeting);
+    this.d3Service.drawMonths(svg, width, this.entityPositions.meeting, displayStartDate, displayEndDate);
   }
 
   private drawEntities(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     entityType: 'lobbyist' | 'representative' | 'directorate' | 'cabinet',
     width: number,
     displayStartDate: Date,
@@ -379,8 +379,14 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             });
             labelGroup.classed("label-visible", false);
             backgroundRect.style("display", "none");
-        }).on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
-          event.preventDefault();
+        }).on('contextmenu', function (this: SVGCircleElement, event: MouseEvent | undefined) {
+          if (!event) {
+            event = (d3 as any).event as MouseEvent | undefined;
+          }
+          if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
         });
 
         d3.selectAll(`.link-${entity.type}-${entity.id}`).each(function () {
@@ -487,8 +493,15 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             self.activeRepresentativeAllocations = null;
           }
         })
-        .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
-          event.preventDefault();
+        .on('contextmenu', function(this: SVGCircleElement, event: MouseEvent | undefined) {
+          if (!event) {
+            event = (d3 as any).event as MouseEvent | undefined;
+          }
+          if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
           isLabelFixed = !isLabelFixed;
 
           labelGroup.classed("label-fixed", isLabelFixed);
@@ -540,7 +553,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private drawConnections(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     entity: { id: string; type: string },
     cx1: number,
     timeScale: d3.ScaleTime<number, number>,
@@ -589,8 +602,14 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
         const self = this;
         this.d3Service.drawConnection(svg, path.toString(), entity, meetingId)
           .on('click', () => {if(!isGrouped) this.onNodeClick({ id: meetingId, type: 'meeting' })})
-          .on('contextmenu', function (this: SVGPathElement, event: MouseEvent) {
-            event.preventDefault();
+          .on('contextmenu', function (this: SVGPathElement, event: MouseEvent | undefined) {
+            if (!event) {
+              event = (d3 as any).event as MouseEvent | undefined;
+            }
+            if (event) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
             
             const key = self.makeKey(meetingId, 'meeting');
             let isMeetingPinned = self.selectedNodes.has(key);
@@ -610,7 +629,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private drawMeetingNodes(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     timeScale: d3.ScaleTime<number, number>,
     filteredMeetings: MeetingData[]
   ): void {
@@ -694,8 +713,14 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
             d3.select(this).classed('node-hover', false);
           });
       })
-      .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent) {
-        event.preventDefault();
+      .on('contextmenu', function (this: SVGCircleElement, event: MouseEvent | undefined) {
+        if (!event) {
+          event = (d3 as any).event as MouseEvent | undefined;
+        }
+        if (event) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
         const meetingKeys = meetingIds.map(id => self.makeKey(id, 'meeting'));
         const allPinned = meetingKeys.every(key => self.selectedNodes.has(key));
 
@@ -723,7 +748,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
     });
   }
   
-  private drawDottedLines(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, width: number, height: number): void {
+  private drawDottedLines(svg: d3.Selection<SVGGElement, unknown, null, undefined>, width: number, height: number): void {
     const yPositions = Object.values(this.entityPositions);
     yPositions.forEach(yPosition => {
       this.d3Service.drawDottedLine(svg, 50, yPosition, width - 50, yPosition);
@@ -757,9 +782,15 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private getVisualizationDimensions() {
+    this.entityPositions.lobbyist = 60 * (Math.sqrt(this.zoomLevel) / 10);
+    this.entityPositions.meeting = (window.innerHeight * 0.15 + 60) * (Math.sqrt(this.zoomLevel) / 10);
+    this.entityPositions.directorate = (window.innerHeight * 0.3 + 60) * (Math.sqrt(this.zoomLevel) / 10);
+    this.entityPositions.cabinet = (window.innerHeight * 0.3 + 60) * (Math.sqrt(this.zoomLevel) / 10);
+    this.entityPositions.representative = (window.innerHeight * 0.3 + 60) * (Math.sqrt(this.zoomLevel) / 10);
+
     return {
-      width: window.innerWidth * 0.9,
-      height: window.innerHeight * 0.4
+      width: window.innerWidth * 0.9 * (this.zoomLevel * this.zoomLevel / 10000),
+      height: window.innerHeight * 0.4 * (Math.sqrt(this.zoomLevel) / 10)
     };
   }
 
@@ -788,7 +819,7 @@ export class TemporalViewComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   private drawGroupingRectangles(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     sortedEntities: [string, number][],
     filteredMeetings: MeetingData[]
   ): void {

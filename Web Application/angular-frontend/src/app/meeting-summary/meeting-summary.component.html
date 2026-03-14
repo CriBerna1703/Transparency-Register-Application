@@ -153,13 +153,15 @@
     </tbody>
   </table>
 
-  <div class="button-group">
-    <button *ngIf="useOverviewData" [disabled]="loading" (click)="confirmSelection()">
-      <ng-container *ngIf="!loading; else loadingSpinner">Confirm</ng-container>
-      <ng-template #loadingSpinner>
-        <span class="spinner"></span> Loading...
-      </ng-template>
-    </button>
-    <button *ngIf="useOverviewData" (click)="cancelSelection()">Modify Filters</button>
+  <div *ngIf="useOverviewData">
+    <div class="button-group">
+      <button *ngIf="useOverviewData" [disabled]="loading" (click)="confirmSelection()">
+        <ng-container *ngIf="!loading; else loadingSpinner">Confirm</ng-container>
+        <ng-template #loadingSpinner>
+          <span class="spinner"></span> Loading...
+        </ng-template>
+      </button>
+      <button *ngIf="useOverviewData" (click)="cancelSelection()">Modify Filters</button>
+    </div>
   </div>
 </div>

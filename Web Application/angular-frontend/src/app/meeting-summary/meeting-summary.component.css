@@ -1,6 +1,6 @@
 .meeting-summary-modal {
     background: white;
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
     border-radius: 12px;
     transition: all 0.3s ease-in-out;
     text-align: center;
@@ -21,7 +21,6 @@
   /* Tabella */
   .summary-table {
     width: 100%;
-    margin: 20px 0;
     border-collapse: collapse;
     border-radius: 8px;
     overflow: hidden;

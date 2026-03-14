@@ -1,3 +1,7 @@
+/* =========================
+   BASE
+   ========================= */
+
 .welcome-container {
   font-family: system-ui, sans-serif;
   color: #1f2937;
@@ -20,48 +24,46 @@
   font-size: 1.1rem;
 }
 
+/* =========================
+   SECTIONS
+   ========================= */
+
 .section {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.section-inner {
   display: flex;
-  gap: 3rem;
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: auto;
+  gap: 4rem;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  margin: 0 auto;
   align-items: center;
 }
 
-.section.reverse {
-  flex-direction: row-reverse;
-}
+
+/* =========================
+   TEXT
+   ========================= */
 
 .text {
   flex: 1;
+  max-width: 700px;
 }
 
-.image {
-  flex: 1;
-  height: 220px;
-  border-radius: 8px;
+.text h2 {
+  margin-bottom: 1rem;
 }
 
-.placeholder {
-  background: repeating-linear-gradient(
-    45deg,
-    #e5e7eb,
-    #e5e7eb 10px,
-    #f3f4f6 10px,
-    #f3f4f6 20px
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6b7280;
+.text p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-.cta {
-  text-align: center;
-  padding: 3rem 2rem;
-  background: #f9fafb;
-}
+
+/* =========================
+   BUTTONS
+   ========================= */
 
 button.primary {
   background: #2563eb;
@@ -72,11 +74,53 @@ button.primary {
   cursor: pointer;
 }
 
-button.secondary {
-  background: #374151;
-  color: white;
-  padding: 0.7rem 1.4rem;
-  border: none;
-  border-radius: 6px;
+/* =========================
+   VIDEO
+   ========================= */
+
+.video-container {
+  position: relative;
   cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  max-width: 900px;
+  width: 100%;
+}
+
+.video-container img,
+.video-container video {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+  background: rgba(0,0,0,0.3);
+  transition: background 0.2s ease;
+}
+
+.video-container:hover .play-button {
+  background: rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .section-inner {
+    flex-direction: column;
+  }
+
+  .text {
+    max-width: 100%;
+  }
 }

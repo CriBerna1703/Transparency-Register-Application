@@ -23,6 +23,7 @@ export class DashboardComponent {
   isFilterCollapsed = false;
   isOverviewCollapsed = true;
   isControlPanelCollapsed = false;
+  isTopCollapsed = false;
   isBottomCollapsed = false;
   isHistogramPanelCollapsed = true;
   labelSize = 14;
@@ -62,6 +63,9 @@ export class DashboardComponent {
 
   collapseBottom() {
     this.isBottomCollapsed = !this.isBottomCollapsed;
+    if (this.isBottomCollapsed) {
+      this.isTopCollapsed = false;
+    }
   }
 
   onCancel() {
@@ -72,6 +76,13 @@ export class DashboardComponent {
 
   toggleControlPanel() {
     this.isControlPanelCollapsed = !this.isControlPanelCollapsed;
+  }
+
+  toggleTopPanel() {
+    this.isTopCollapsed = !this.isTopCollapsed;
+    if (this.isTopCollapsed) {
+      this.isBottomCollapsed = false;
+    }
   }
 
   toggleHistogramPanel() {

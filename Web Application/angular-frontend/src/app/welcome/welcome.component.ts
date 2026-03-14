@@ -13,6 +13,12 @@ export class WelcomeComponent {
 
   constructor(private router: Router) {}
 
+  showVideo = false;
+
+  playVideo() {
+    this.showVideo = true;
+  }
+
   enterApp() {
     localStorage.setItem('welcome_seen', 'true');
     this.router.navigateByUrl('/');

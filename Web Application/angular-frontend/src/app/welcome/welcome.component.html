@@ -10,54 +10,28 @@
     <button class="primary" (click)="enterApp()">Enter the application</button>
   </section>
 
-  <!-- WHAT -->
-  <section class="section">
-    <div class="text">
-      <h2>What is this application?</h2>
-      <p>
-        This tool allows you to explore data from the EU Transparency Register,
-        focusing on meetings between lobbyists and European Commission officials.
-      </p>
-      <p>
-        The application combines network graphs, timelines and statistics
-        to help you understand <strong>who meets whom, when, and how often</strong>.
-      </p>
+  <section class="section video-section">
+    <div class="section-inner">
+      <div class="text">
+        <h2>See the application in action</h2>
+        <p>
+          Watch a short demonstration of how to filter meetings,
+          explore the graph view and access detailed information tabs.
+        </p>
+      </div>
+
+      <div class="video-container">
+        <ng-container *ngIf="!showVideo; else videoTpl">
+          <img src="/Placeholder video image.png" alt="Video preview">
+          <div class="play-button" (click)="playVideo()">▶</div>
+        </ng-container>
+
+        <ng-template #videoTpl>
+          <video controls autoplay>
+            <source src="/video breve.mp4" type="video/mp4">
+          </video>
+        </ng-template>
+      </div>
     </div>
-    <div class="image placeholder">Image placeholder</div>
   </section>
-
-  <!-- HOW -->
-  <section class="section reverse">
-    <div class="text">
-      <h2>How does it work?</h2>
-      <ul>
-        <li>Use filters to select a time range and meeting criteria</li>
-        <li>Explore relationships through an interactive graph</li>
-        <li>Analyze trends over time using the temporal view</li>
-        <li>Inspect detailed information by selecting nodes</li>
-      </ul>
-    </div>
-    <div class="image placeholder">Image placeholder</div>
-  </section>
-
-  <!-- VIEWS -->
-  <section class="section">
-    <div class="text">
-      <h2>Main views</h2>
-      <ul>
-        <li><strong>Overview:</strong> aggregated statistics and summaries</li>
-        <li><strong>Graph view:</strong> relationships between actors</li>
-        <li><strong>Temporal view:</strong> meetings distributed over time</li>
-        <li><strong>Histogram:</strong> frequency analysis by entity</li>
-      </ul>
-    </div>
-    <div class="image placeholder">Image placeholder</div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <p>You can always come back to this introduction from the dashboard.</p>
-    <button class="secondary" (click)="enterApp()">Start exploring</button>
-  </section>
-
 </div>

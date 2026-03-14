@@ -36,13 +36,36 @@ export class D3Service {
   emitLabelText(text: string): void {
     this.labelTextChange$.next(text);
   }
-  createSvg(element: HTMLElement, width: number, height: number, zoomLevel: number){
-    return d3.select(element)
-    .append('svg')
-    .attr('viewBox', `0 0 ${width} ${height}`)
-    .attr('preserveAspectRatio', 'xMidYMid meet')
-    .style('height', '100%')
-    .style('width', `${zoomLevel}%`);
+
+  createSvg(element: HTMLElement, width: number, height: number, zoomLevel: number): d3.Selection<SVGGElement, unknown, null, undefined> {
+    d3.select(element).select('svg').remove();
+
+    const svg = d3.select(element)
+      .append('svg')
+      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('preserveAspectRatio', 'xMidYMid meet')
+      .style('width', `${zoomLevel}%`)
+      .style('height', '100%');
+
+    const zoomGroup = svg.append('g').attr('class', 'zoom-group');
+
+    const zoomBehavior = d3.zoom<SVGSVGElement, unknown>()
+      .scaleExtent([0.1, 10])
+      .on('zoom', function (event: d3.D3ZoomEvent<SVGSVGElement, unknown>) {
+        const e = event ?? (d3 as any).event;
+        if (e && e.transform) {
+          zoomGroup.attr('transform', e.transform.toString());
+        } else {
+          console.warn('[d3.zoom] no transform found on event', e);
+        }
+      });
+
+    svg.call(zoomBehavior as any);
+
+    const transform = d3.zoomIdentity;
+    svg.call((zoomBehavior as any).transform, transform);
+
+    return zoomGroup;
   }
 
   drawHistogram(container: HTMLElement, data: number[], labels: string[], width: number, height: number, maxDegree?: number): void {
@@ -111,7 +134,7 @@ export class D3Service {
   }
 
 
-  drawTimeline(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, width: number, height: number): void {
+  drawTimeline(svg: d3.Selection<SVGGElement, unknown, null, undefined>, width: number, height: number): void {
     svg.append('line')
       .attr('x1', 50)
       .attr('x2', width - 50)
@@ -126,7 +149,7 @@ export class D3Service {
   }
 
   drawMonths(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     width: number,
     height: number,
     startDate: Date,
@@ -222,7 +245,7 @@ export class D3Service {
   }
 
   drawMeetingNode(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     date: Date,
     x: number,
     y: number,
@@ -253,7 +276,7 @@ export class D3Service {
   }
 
   drawNode(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     x: number,
     y: number,
     size: number,
@@ -281,7 +304,7 @@ export class D3Service {
   }
 
   drawGroupedNode(
-    svg: d3.Selection<SVGSVGElement, unknown, null, undefined>,
+    svg: d3.Selection<SVGGElement, unknown, null, undefined>,
     x: number,
     y: number,
     size: number,
@@ -296,19 +319,19 @@ export class D3Service {
       .attr('fill', fill)
       .attr('stroke', stroke)
       .attr('stroke-width', strokeWidth)
-      .attr("x", x - 10)
-      .attr("y", y - 10)
-      .attr("width", 20)
-      .attr("height", 20)
-      .attr("rx", 5)
-      .attr("ry", 5)
+      .attr("x", x - size)
+      .attr("y", y - size)
+      .attr("width", 2 * size)
+      .attr("height", 2 * size)
+      .attr("rx", size / 2)
+      .attr("ry", size / 2)
       .style("cursor", "pointer")
       .attr('class', className);
 
     return node;
   }
 
-  drawLabel(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, x: number, y: number, text: string, fontSize: string, fill: string, className: string) {
+  drawLabel(svg: d3.Selection<SVGGElement, unknown, null, undefined>, x: number, y: number, text: string, fontSize: string, fill: string, className: string) {
     return svg.append('text')
       .attr('x', x)
       .attr('y', y)
@@ -319,7 +342,7 @@ export class D3Service {
       .attr('class', className);
   }
 
-  drawConnection(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, path: string, entity: { id: string; type: string }, meetingId: string) {
+  drawConnection(svg: d3.Selection<SVGGElement, unknown, null, undefined>, path: string, entity: { id: string; type: string }, meetingId: string) {
     let self = this;
     return svg.append('path')
       .attr('d', path)
@@ -342,7 +365,7 @@ export class D3Service {
       });
   }
 
-  drawDottedLine(svg: d3.Selection<SVGSVGElement, unknown, null, undefined>, x1: number, y1: number, x2: number, y2: number) {
+  drawDottedLine(svg: d3.Selection<SVGGElement, unknown, null, undefined>, x1: number, y1: number, x2: number, y2: number) {
     return svg.append('line')
       .attr('x1', x1)
       .attr('x2', x2)
