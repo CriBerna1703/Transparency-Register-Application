@@ -8,6 +8,12 @@ export class WelcomeGuard implements CanActivate {
 
   canActivate(): boolean | UrlTree {
     const seen = localStorage.getItem('welcome_seen');
-    return seen ? true : this.router.parseUrl('/welcome');
+    const email = localStorage.getItem('user_email');
+
+    if (seen && email) {
+      return true;
+    }
+
+    return this.router.parseUrl('/welcome');
   }
 }

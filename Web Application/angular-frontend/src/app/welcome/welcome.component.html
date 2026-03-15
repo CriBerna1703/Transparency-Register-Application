@@ -7,7 +7,41 @@
       Explore meetings between interest representatives and European Commission officials
       through interactive visualizations.
     </p>
-    <button class="primary" (click)="enterApp()">Enter the application</button>
+    <!-- LOGIN FORM -->
+      <div class="login-box">
+      <!-- CASO NON LOGGATO -->
+      <ng-container *ngIf="!alreadyLogged">
+        <input
+          type="email"
+          [(ngModel)]="email"
+          placeholder="Enter your email to continue"
+          class="email-input"
+          (keyup.enter)="enterApp()"
+          [class.error-input]="emailError"
+        />
+        <div *ngIf="emailError" class="error-message">
+          Please enter a valid email address
+        </div>
+        <button class="primary" (click)="enterApp()">
+          Login
+        </button>
+      </ng-container>
+      <!-- CASO GIA LOGGATO -->
+      <ng-container *ngIf="alreadyLogged">
+        <div class="logged-info">
+          Logged in as
+          <span class="email-highlight">{{email}}</span>
+        </div>
+        <div class="logged-buttons">
+          <button class="primary" (click)="enterApp()">
+            Enter the application
+          </button>
+          <button class="secondary" (click)="logout()">
+            Logout
+          </button>
+        </div>
+      </ng-container>
+    </div>
   </section>
 
   <section class="section video-section">

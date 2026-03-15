@@ -613,49 +613,104 @@ button:disabled {
   cursor: not-allowed;
 }
 
-.help-btn {
+.account-btn {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 9999;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  background-color: #f0f4f8;
-  border: 2px solid #e0e8f0;
+  top: 18px;
+  right: 18px;
+  z-index: 99999;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
+  border: 1px solid #dbe5f2;
+  background: linear-gradient(135deg, #ffffff, #eef3fb);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
-.help-btn:hover {
-  background-color: #e8f0f8;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  transform: scale(1.1);
+.account-btn:hover {
+  transform: scale(1.05);
+  background: #f7faff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-.help-btn:hover::after {
-  content: 'How this app works';
+.account-btn:hover::after {
+  content: 'Account options';
   position: absolute;
-  right: 70px;
   top: 50%;
+  right: 75px;
   transform: translateY(-50%);
-  background-color: #f0f4f8;
-  color: #333;
-  padding: 10px 14px;
+  white-space: nowrap;
+  background: #fff;
+  color: #1b2838;
+  border: 1px solid #d7e0ec;
+  padding: 6px 10px;
   border-radius: 6px;
   font-size: 12px;
-  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   pointer-events: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  border: 1px solid #e0e8f0;
+  z-index: 999999;
 }
 
-.help-btn:active {
-  transform: scale(0.95);
+.account-menu {
+  position: fixed;
+  top: 80px;
+  right: 18px;
+  z-index: 99998;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #ecf1f7;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+  padding: 10px;
+  overflow: hidden;
+  animation: fadeIn 0.2s ease;
+}
+
+.account-menu::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: 24px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+}
+
+.account-menu .email {
+  font-size: 13px;
+  color: #33475b;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #f0f3f9;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.account-menu button {
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 8px;
+  background: #f8fbff;
+  margin-top: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.account-menu button:hover {
+  background: #eaf0ff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
 }

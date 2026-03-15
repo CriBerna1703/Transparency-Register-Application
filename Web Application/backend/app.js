@@ -10,6 +10,9 @@ const directorateRoutes = require('./routes/directorateRoutes');
 const commissionRepresentativeRoutes = require('./routes/commissionRepresentativeRoutes');
 const similarityRoutes = require('./routes/similarityRoutes');
 const cabinetRoutes = require('./routes/cabinetRoutes');
+const userRoutes = require('./routes/userRoutes');
+const apiLogger = require('./middleware/apiLogger');
+const logRoutes = require('./routes/logRoutes');
 
 // Creazione dell'app Express
 const app = express();
@@ -19,14 +22,16 @@ const cors = require('cors'); // Importa il middleware CORS
 // Configura CORS
 const corsOptions = {
     origin: '*',
-    methods: 'GET, POST', 
-    allowedHeaders: 'Content-Type,Authorization',
+    methods: 'GET, POST, PUT, DELETE, OPTIONS',
+    allowedHeaders: 'Content-Type,Authorization,X-User-Email',
+    exposedHeaders: 'Content-Type,Authorization',
 };
 
 app.use(cors(corsOptions));
 
 // Middleware
 app.use(bodyParser.json());
+app.use('/api', apiLogger);
 
 // Rotte protette
 app.use('/api/lobbyists', lobbyistRoutes);
@@ -39,5 +44,7 @@ app.use('/api/directorates', directorateRoutes);
 app.use('/api/commission-representatives', commissionRepresentativeRoutes);
 app.use('/api/similarities', similarityRoutes);
 app.use('/api/cabinets', cabinetRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/logs', logRoutes);
 
 module.exports = app;

@@ -89,4 +89,7 @@ export class DataService {
     return this.http.post(`${this.apiUrl}/similarities`, payload);
   }
   
+  getApiLogs(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/logs`);
+  }
 }

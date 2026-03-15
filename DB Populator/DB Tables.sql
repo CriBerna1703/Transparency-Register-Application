@@ -139,8 +139,17 @@ CREATE TABLE IF NOT EXISTS representative_allocation (
 
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL UNIQUE,
-    password_hash VARCHAR(255) NOT NULL,
-    role VARCHAR(50) DEFAULT 'user', -- ad esempio: 'admin', 'read-only', ecc.
-    last_password_change DATETIME DEFAULT CURRENT_TIMESTAMP
+    email VARCHAR(255) NOT NULL UNIQUE,
+    is_admin BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE api_logs (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_email VARCHAR(255),
+    method VARCHAR(10),
+    endpoint VARCHAR(255),
+    query_params TEXT,
+    body JSON,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

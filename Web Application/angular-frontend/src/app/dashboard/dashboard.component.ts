@@ -11,6 +11,10 @@ import { OverviewComponent } from '../overview/overview.component';
 import { MeetingSummaryComponent } from '../meeting-summary/meeting-summary.component';
 import { FilterService } from '../services/filter.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
+import { CsvService } from '../services/csv.service';
+import { DataService } from '../services/data.service';
+import { firstValueFrom } from 'rxjs';
 
 @Component({
   selector: 'app-dashboard',
@@ -40,11 +44,21 @@ export class DashboardComponent {
   public maxDate?: Date = new Date();
   public hasMeetings: boolean = true;
   public circumference = 2 * Math.PI * 14;
+  menuOpen = false;
+  email = '';
+  isAdmin = false;
 
   @ViewChild(TemporalViewComponent) temporalViewComponent!: TemporalViewComponent;
   @ViewChild(OverviewComponent) overviewComponent!: OverviewComponent;
 
-  constructor(private cdr: ChangeDetectorRef, public filterService: FilterService, private router: Router) {}
+  constructor(
+    private cdr: ChangeDetectorRef,
+    public filterService: FilterService,
+    private router: Router,
+    private auth: AuthService,
+    private dataService: DataService,
+    private csvService: CsvService
+  ) {}
 
   toggleFilter() {
     this.isFilterCollapsed = !this.isFilterCollapsed;
@@ -160,5 +174,45 @@ export class DashboardComponent {
   public onLabelTextChange(newText: string) {
     this.labelText = newText;
     this.cdr.detectChanges();
+  }
+
+  ngOnInit() {
+    this.email = this.auth.getEmail() || '';
+    this.isAdmin = this.auth.isAdmin();
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  logout() {
+    this.auth.logout();
+    localStorage.removeItem('welcome_seen');
+    this.router.navigateByUrl('/welcome');
+  }
+
+  async downloadLogs() {
+    try {
+      const logs = await firstValueFrom(
+        this.dataService.getApiLogs()
+      );
+      const cleanedLogs = logs.map(l => ({
+        id: l.id,
+        user_email: l.user_email,
+        method: l.method,
+        endpoint: l.endpoint,
+        query_params: l.query_params,
+        body: JSON.stringify(l.body),
+        created_at: l.created_at
+      }));
+
+      this.csvService.downloadCSV(
+        cleanedLogs,
+        'api_logs.csv',
+        ';'
+      );
+    } catch (err) {
+      console.error('Error downloading logs', err);
+    }
   }
 }

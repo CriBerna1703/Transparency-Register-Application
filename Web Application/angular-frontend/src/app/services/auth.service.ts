@@ -1,71 +1,43 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Router } from '@angular/router';
-import { tap, map } from 'rxjs/operators';
-import { jwtDecode } from 'jwt-decode';
 import { environment } from '../../environments/environment';
-import { Observable, of } from 'rxjs';
-
-interface JwtPayload {
-  exp: number;
-}
+import { firstValueFrom } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = environment.apiBaseUrl + '/auth';
 
-  constructor(private http: HttpClient, private router: Router) {}
+  private apiUrl = environment.apiBaseUrl;
 
-  login(username: string, password: string) {
-    return this.http.post<{ accessToken: string; refreshToken: string }>(`${this.apiUrl}/login`, { username, password })
-      .pipe(
-        tap(response => {
-          localStorage.setItem('access_token', response.accessToken);
-          localStorage.setItem('refresh_token', response.refreshToken);
-        })
-      );
+  constructor(private http: HttpClient) {}
+
+  async login(email: string): Promise<any> {
+
+    const res: any = await firstValueFrom(
+      this.http.post(`${this.apiUrl}/users/login`, { email })
+    );
+
+    localStorage.setItem('user_email', res.email);
+    localStorage.setItem('user_admin', res.isAdmin);
+
+    return res;
   }
 
   logout() {
-    localStorage.removeItem('access_token');
-    localStorage.removeItem('refresh_token');
-    this.router.navigate(['/login']);
+    localStorage.removeItem('user_email');
+    localStorage.removeItem('user_admin');
   }
 
-  getToken(): string | null {
-    return localStorage.getItem('access_token');
+  getEmail() {
+    return localStorage.getItem('user_email');
   }
 
-  private getRefreshToken(): string | null {
-    return localStorage.getItem('refresh_token');
+  isAdmin() {
+    return localStorage.getItem('user_admin') === 'true';
   }
 
-  refreshToken(): Observable<string | null> {
-    const refresh = this.getRefreshToken();
-    if (!refresh) return of(null);
-
-    return this.http.post<{ accessToken: string }>(`${this.apiUrl}/refresh`, { refreshToken: refresh })
-      .pipe(
-        tap(response => {
-          localStorage.setItem('access_token', response.accessToken);
-        }),
-        map(response => response.accessToken)
-      );
-  }
-
-  isLoggedIn(): boolean {
-    const token = this.getToken();
-    if (!token) return false;
-
-    try {
-      const decoded = jwtDecode<JwtPayload>(token);
-      const now = Math.floor(Date.now() / 1000);
-      return decoded.exp > now;
-    } catch (err) {
-      console.warn('Token non valido:', err);
-      return false;
-    }
+  isLogged() {
+    return !!localStorage.getItem('user_email');
   }
 }
